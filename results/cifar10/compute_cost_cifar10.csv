@@ -1,0 +1,4 @@
+rho,method,n_seeds,train_sec_mean,train_sec_std,train_min_mean,infer_sec_mean,infer_sec_std,peak_mem_mb_mean,peak_mem_mb_std,trainable_params
+100,cb,2,8343.67,90.11,139.06,7.91,1.36,2670.2,0.28,475866
+100,ce,5,15194.78,15365.95,253.25,171.35,327.95,2542.37,115.93,475866
+100,la_posthoc,5,15194.78,15365.95,253.25,171.35,327.95,2542.37,115.93,475866

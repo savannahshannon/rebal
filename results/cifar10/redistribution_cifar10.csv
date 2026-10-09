@@ -1,0 +1,5 @@
+region,n_classes,n_seeds,baseline_mean,rebal_mean,delta,dz,p,classes_improved_mean
+head,10,5,0.694,0.6813,-0.0126,-1.115,0.06732,2.8
+mid,0,5,nan,nan,nan,,nan,0.0
+tail,0,5,nan,nan,nan,,nan,0.0
+ALL (F1==0 count),10,5,0.0,0.0,0.0,,,

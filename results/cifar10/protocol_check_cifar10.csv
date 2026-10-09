@@ -1,0 +1,6 @@
+cell,seed,arch,rho,val_fraction,use_early_stopping,early_stop_metric,cls_epochs,mismatch
+main,0,resnet32,100.0,0.1,False,bacc,200,
+main,1,resnet32,100.0,0.1,False,bacc,200,
+main,2,resnet32,100.0,0.1,False,bacc,200,
+main,3,resnet32,100.0,0.1,False,bacc,200,
+main,4,resnet32,100.0,0.1,False,bacc,200,

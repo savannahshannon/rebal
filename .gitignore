@@ -1,0 +1,64 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+
+# Virtual environments
+env/
+venv/
+.venv/
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Research artifacts (too big / regenerable)
+experiments/
+checkpoints/
+*.h5
+*.ckpt
+*.pb
+*.tfrecord
+*.npy
+*.npz
+*.pkl
+*.pickle
+*.bak
+*.pre_*.bak
+sample_bank/
+cgan_runs/
+
+# Logs
+*.log
+nohup.out
+
+# Secrets
+.env
+.secrets
+**/credentials*.json
+**/service-account*.json
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Dataset mirrors (readers should download themselves)
+cifar-10-batches-py/
+cifar-100-python/
