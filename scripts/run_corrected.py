@@ -24,13 +24,17 @@ Tiers
 
 Usage
 -----
-    python run_corrected.py --dry-run          # show the plan, run nothing
-    python run_corrected.py --tier 1           # just the main grid
-    python run_corrected.py --tier 1 2 3       # the blocking set
-    python run_corrected.py                    # all tiers, in order
-    python run_corrected.py --tier 1 --seeds 0 # one cell, to smoke-test
+    python scripts/run_corrected.py --dry-run          # show the plan
+    python scripts/run_corrected.py --tier 1           # just the main grid
+    python scripts/run_corrected.py --tier 1 2 3       # the blocking set
+    python scripts/run_corrected.py                    # all tiers, in order
+    python scripts/run_corrected.py --tier 1 --seeds 0 # one cell
 
 Re-running is always safe. Add --force to redo completed cells.
+The sweep supplies its own protocol settings. External sample banks can be
+selected with --sample-bank-dir and --per-class-fid-csv; the corresponding
+REBAL_SAMPLE_BANK_DIR and REBAL_PER_CLASS_FID_CSV environment variables remain
+supported. Other inherited REBAL_* overrides are ignored.
 
 Colab
 -----
@@ -52,12 +56,14 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parent
+ROOT = Path(__file__).resolve().parents[1]
 FRAMEWORK = ROOT / "framework.py"
 BASELINES = ROOT / "baselines.py"
 RHO = 100
 SEEDS = [0, 1, 2, 3, 4]
 DATASET = "cifar100"  # overridden by --dataset
+ARTIFACT_ENV_KEYS = ("REBAL_SAMPLE_BANK_DIR", "REBAL_PER_CLASS_FID_CSV")
+ARTIFACT_OVERRIDES = {}
 
 
 def _corrected_root():
@@ -81,6 +87,7 @@ PROTOCOL = {
 def _protocol():
     p = dict(PROTOCOL)
     p["REBAL_DATASET"] = DATASET
+    p.update(ARTIFACT_OVERRIDES)
     return p
 
 EST_HOURS = {"main": 2.85, "eq": 2.85, "ablation": 2.85,
@@ -132,6 +139,40 @@ def protocol_of(j, kind):
     return got
 
 
+def protocol_mismatches(j, kind, dataset=None, rho=None):
+    """List unproved or incompatible protocol fields, without loading TF.
+
+    Older baseline records do not store the holdout fraction; ``holdout``
+    verifies the source of validation data, but not the exact split identity.
+    """
+    dataset = DATASET if dataset is None else dataset
+    rho = RHO if rho is None else rho
+    if not isinstance(j, dict) or not isinstance(j.get("config"), dict):
+        return ["config"]
+    cfg = j["config"]
+    want = {"architecture": "resnet32", "dataset": dataset,
+            "imbalance_protocol": "cui2019"}
+    bad = [key for key, value in want.items() if cfg.get(key) != value]
+    try:
+        if float(cfg.get("rho")) != float(rho):
+            bad.append("rho")
+    except (TypeError, ValueError):
+        bad.append("rho")
+    if j.get("cls_epochs") != 200:
+        bad.append("cls_epochs")
+    if j.get("use_early_stopping") is not False:
+        bad.append("use_early_stopping")
+    if kind == "baseline":
+        if j.get("val_mode") != "holdout":
+            bad.append("val_mode")
+    else:
+        if j.get("val_fraction") != 0.1:
+            bad.append("val_fraction")
+        if j.get("early_stop_metric") != "bacc":
+            bad.append("early_stop_metric")
+    return bad
+
+
 def protocol_ok(j, kind):
     """True only if the run used the corrected protocol.
 
@@ -139,34 +180,49 @@ def protocol_ok(j, kind):
     run that completed happily under the wrong config, so a cell only counts
     as done if it can prove which protocol it used, and on the right dataset.
     """
-    g = protocol_of(j, kind)
-    want_val = "holdout" if kind == "baseline" else 0.1
-    ds = j.get("config", {}).get("dataset")
-    return (g["arch"] == "resnet32"
-            and float(g["rho"] or 0) == float(RHO)
-            and g["epochs"] == 200
-            and g["early_stop"] is False
-            and g["val"] == want_val
-            and ds == DATASET)
+    return not protocol_mismatches(j, kind)
+
+
+def cell_mismatches(j, cell):
+    """Ensure a result belongs to the seed and method at this output path."""
+    if not isinstance(j, dict) or not isinstance(j.get("config"), dict):
+        return ["config"]
+    bad = []
+    if j.get("seed") != cell["seed"]:
+        bad.append("seed")
+    if cell["kind"] == "baseline":
+        if j.get("method") != cell["method"]:
+            bad.append("method")
+    else:
+        ablation = cell.get("ablate")
+        flags = {"cgan": "use_cgan_aug", "eq": "use_equalization",
+                 "rw": "use_reweighting", "feature_smote": "use_feature_smote"}
+        for module, key in flags.items():
+            if j.get("config", {}).get(key) is not (module != ablation):
+                bad.append(key)
+    return bad
 
 
 def done(cell, verbose=False):
     """Complete = a parseable results file that used the corrected protocol."""
     kind = "baseline" if cell["kind"] == "baseline" else "framework"
-    for fn in ("results.json", "metrics.json"):
+    for fn in (("results.json",) if kind == "baseline" else ("metrics.json",)):
         p = cell["out"] / fn
         if not p.exists():
             continue
         try:
-            j = json.load(open(p))
+            with p.open() as handle:
+                j = json.load(handle)
         except Exception:
             if verbose:
                 print(f"  ! {cell['name']}: unreadable {fn}, will re-run")
             return False
-        if protocol_ok(j, kind):
+        if protocol_ok(j, kind) and not cell_mismatches(j, cell):
             return True
         if verbose:
-            g = protocol_of(j, kind)
+            g = protocol_mismatches(j, kind)
+            if isinstance(j, dict):
+                g += cell_mismatches(j, cell)
             print(f"  ! {cell['name']}: results exist but under the WRONG "
                   f"protocol ({g}) -- will re-run and overwrite")
         return False
@@ -174,7 +230,11 @@ def done(cell, verbose=False):
 
 
 def build_cmd_env(cell):
-    env = os.environ.copy()
+    # A previous shell experiment must not silently turn the main arm into
+    # an ablation or shorten its schedule. External bank paths are explicit
+    # artifact inputs; preserve the two documented environment controls.
+    env = {key: value for key, value in os.environ.items()
+           if not key.startswith("REBAL_")}
     if cell["kind"] == "baseline":
         cmd = [sys.executable, "-u", str(BASELINES),
                "--method", cell["method"],
@@ -183,12 +243,15 @@ def build_cmd_env(cell):
                "--arch", "resnet32",
                "--protocol", "cui2019",
                "--dataset", DATASET,
+               "--epochs", "200", "--val-frac", "0.1",
                # Explicit even though baselines.py now defaults to holdout:
                # this sweep must never silently inherit the old protocol.
                "--val-mode", "holdout",
                "--out-dir", str(cell["out"])]
         return cmd, env
 
+    env.update({key: os.environ[key] for key in ARTIFACT_ENV_KEYS
+                if os.environ.get(key)})
     env.update(_protocol())
     env["REBAL_OUT_DIR"] = str(cell["out"])
     if cell["kind"] == "ablate":
@@ -204,11 +267,8 @@ def run_cell(cell, log_path):
     with open(log_path, "w") as logf:
         logf.write("# " + " ".join(cmd) + "\n")
         logf.write(f"# DATASET={DATASET}\n")
-        for k in sorted(_protocol()):
-            if k in env:
-                logf.write(f"# {k}={env[k]}\n")
-        if "REBAL_ABLATE" in env:
-            logf.write(f"# REBAL_ABLATE={env['REBAL_ABLATE']}\n")
+        for k in sorted(key for key in env if key.startswith("REBAL_")):
+            logf.write(f"# {k}={env[k]}\n")
         logf.flush()
         proc = subprocess.run(cmd, stdout=logf, stderr=subprocess.STDOUT,
                               env=env, cwd=str(ROOT))
@@ -237,13 +297,32 @@ def main():
     ap.add_argument("--dataset", choices=["cifar100", "cifar10"], default="cifar100",
                     help="cifar100 (default; writes to the original paths) or "
                          "cifar10 (writes to experiments/corrected/cifar10/...)")
+    ap.add_argument("--sample-bank-dir", type=Path,
+                    help="external cGAN sample directory; overrides REBAL_SAMPLE_BANK_DIR")
+    ap.add_argument("--per-class-fid-csv", type=Path,
+                    help="per-class FID gate file; overrides REBAL_PER_CLASS_FID_CSV")
     args = ap.parse_args()
+    if args.max_runs is not None and args.max_runs < 1:
+        ap.error("--max-runs must be positive")
 
     global DATASET
     DATASET = args.dataset
+    ARTIFACT_OVERRIDES.clear()
+    for option, key, directory in ((args.sample_bank_dir, "REBAL_SAMPLE_BANK_DIR", True),
+                                    (args.per_class_fid_csv, "REBAL_PER_CLASS_FID_CSV", False)):
+        supplied = option or os.environ.get(key)
+        if supplied:
+            path = Path(supplied).expanduser().resolve()
+            if not (path.is_dir() if directory else path.is_file()):
+                ap.error(f"{key}: path does not exist or has the wrong type: {path}")
+            ARTIFACT_OVERRIDES[key] = str(path)
+    inherited = sorted(key for key in os.environ if key.startswith("REBAL_")
+                       and key not in ARTIFACT_ENV_KEYS)
+    if inherited:
+        print("Sweep ignores inherited overrides: " + ", ".join(inherited))
 
     if not FRAMEWORK.exists():
-        sys.exit(f"error: {FRAMEWORK} not found. Run from the research folder.")
+        sys.exit(f"error: {FRAMEWORK} not found in the repository root.")
     src = FRAMEWORK.read_text()
     missing = [f for f in ("VAL_FRACTION", "_apply_arch_preset",
                            "REBAL_USE_EARLY_STOPPING") if f not in src]
@@ -280,7 +359,8 @@ def main():
 
     if not todo:
         print("\nNothing to do -- every cell has results. Aggregate with:")
-        print("  python aggregate_baselines.py")
+        print("  python scripts/aggregate_corrected.py")
+        print("  python scripts/aggregate_baselines.py")
         return
 
     by_tier = {}
@@ -335,8 +415,10 @@ def main():
               "to continue.")
     else:
         print("all cells complete. Aggregate with:")
-        print("  python aggregate_corrected.py")
-        print("  python aggregate_baselines.py")
+        print("  python scripts/aggregate_corrected.py")
+        print("  python scripts/aggregate_baselines.py")
+    if fail:
+        raise SystemExit(1)
 
 
 if __name__ == "__main__":

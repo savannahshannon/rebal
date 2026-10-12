@@ -1,15 +1,15 @@
 #!/usr/bin/env python3
 """
-Aggregate baseline runs, fold in the existing REBAL results, and emit
-paper-ready tables plus paired significance tests.
+Aggregate compatible corrected baseline and REBAL runs into tables.
 
 Outputs (into --out-dir, default the repo root):
   baselines_summary.csv        per-method mean/std for every metric and rho
   baseline_vs_rebal.csv        REBAL minus each baseline, with paired t-test
                                and Wilcoxon p-values across seeds
   compute_cost.csv             train/infer seconds, peak memory, params
-  significance_existing.csv    paired tests on the sprint2 and sprint4 results
-                               that already exist (no new runs needed)
+  significance_corrected.csv   paired tests within corrected REBAL runs
+  significance_legacy_sprint2.csv   optional descriptive legacy audit;
+                               never mixed into corrected comparisons
 
 Usage
 -----
@@ -27,6 +27,11 @@ import glob
 import json
 import os
 from collections import defaultdict
+from pathlib import Path
+
+from scripts.run_corrected import protocol_mismatches, cell_mismatches
+
+ROOT = Path(__file__).resolve().parents[1]
 
 import numpy as np
 
@@ -44,27 +49,73 @@ LOWER_IS_BETTER = {"head_tail_gap"}
 
 
 # ----------------------------------------------------------------------
-def load_baselines(root="experiments/baselines"):
+def load_baselines(root=None, dataset="cifar100"):
     """-> {(rho, method): {seed: metrics}}, {(rho, method): {seed: cost}}"""
     metrics = defaultdict(dict)
     costs = defaultdict(dict)
+    root = ROOT / "experiments" / "baselines" if root is None else root
     for path in sorted(glob.glob(os.path.join(root, "rho_*", "*", "seed_*",
                                               "results.json"))):
-        with open(path) as f:
-            r = json.load(f)
-        rho = int(float(r["config"]["rho"]))
-        seed = int(r["seed"])
-        metrics[(rho, r["method"])][seed] = r["metrics"]
-        costs[(rho, r["method"])][seed] = r.get("cost", {})
+        try:
+            with open(path) as f:
+                r = json.load(f)
+            location = Path(path)
+            rho = int(location.parents[2].name.replace("rho_", "", 1))
+            seed = int(location.parent.name.replace("seed_", "", 1))
+            method = location.parents[1].name
+            mism = protocol_mismatches(r, "baseline", dataset, rho)
+            mism += cell_mismatches(r, {"kind": "baseline", "seed": seed,
+                                       "method": method})
+            if mism:
+                raise ValueError("protocol mismatch: " + ", ".join(mism))
+            if not _valid_metrics(r.get("metrics")):
+                raise ValueError("missing or non-finite metrics")
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            print(f"  excluding {path}: {exc}")
+            continue
+        metrics[(rho, method)][seed] = r["metrics"]
+        costs[(rho, method)][seed] = r.get("cost", {})
         if "la_posthoc" in r:
-            metrics[(rho, "la_posthoc")][seed] = r["la_posthoc"]
-            costs[(rho, "la_posthoc")][seed] = r.get("cost", {})
+            if _valid_metrics(r["la_posthoc"]):
+                metrics[(rho, "la_posthoc")][seed] = r["la_posthoc"]
+                costs[(rho, "la_posthoc")][seed] = r.get("cost", {})
     return metrics, costs
 
 
-def load_sprint2(root="experiments/sprint2_grid"):
+def _valid_metrics(metrics):
+    return isinstance(metrics, dict) and all(
+        isinstance(metrics.get(key), (int, float)) and np.isfinite(metrics[key])
+        for key in METRICS)
+
+
+def load_corrected(root=None, dataset="cifar100"):
+    """Load corrected main arms; legacy sprint tables are never a fallback."""
+    root = ROOT / "experiments" / "corrected" if root is None else root
+    out = defaultdict(dict)
+    for path in sorted(glob.glob(os.path.join(root, "rho_*", "main", "seed_*",
+                                              "metrics.json"))):
+        try:
+            with open(path) as handle:
+                result = json.load(handle)
+            location = Path(path)
+            rho = int(location.parents[2].name.replace("rho_", "", 1))
+            seed = int(location.parent.name.replace("seed_", "", 1))
+            mism = protocol_mismatches(result, "framework", dataset, rho)
+            mism += cell_mismatches(result, {"kind": "main", "seed": seed})
+            if mism:
+                raise ValueError("protocol mismatch: " + ", ".join(mism))
+            for arm in ("baseline", "rebal", "rebal_crt"):
+                if arm in result and _valid_metrics(result[arm]):
+                    out[(rho, arm)][seed] = result[arm]
+        except (OSError, ValueError, KeyError, TypeError) as exc:
+            print(f"  excluding {path}: {exc}")
+    return out
+
+
+def load_sprint2(root=None):
     """Parse the existing per-seed REBAL tables into the same shape."""
     out = defaultdict(dict)
+    root = ROOT / "experiments" / "sprint2_grid" if root is None else root
     for path in sorted(glob.glob(os.path.join(root, "table_rho*.csv"))):
         rho = int(os.path.basename(path).replace("table_rho", "").replace(".csv", ""))
         with open(path) as f:
@@ -204,10 +255,7 @@ def write_costs(costs, out_path):
 
 
 def write_existing_significance(rebal, out_path):
-    """Paired tests on results that already exist. No new runs required.
-
-    This alone answers Reviewer 4's significance request for the sprint2 grid.
-    """
+    """Paired tests within one explicitly selected result protocol."""
     rows = []
     pairs = [("rebal", "baseline"), ("rebal_crt", "baseline"),
              ("rebal_crt", "rebal")]
@@ -255,41 +303,56 @@ def main():
     p.add_argument("--baselines-root", default=None,
                    help="default: experiments/baselines for cifar100, "
                         "experiments/baselines/cifar10 for cifar10")
-    p.add_argument("--sprint2-root", default="experiments/sprint2_grid")
-    p.add_argument("--out-dir", default=".")
+    p.add_argument("--corrected-root", default=None,
+                   help="REBAL runs under the corrected validation protocol")
+    p.add_argument("--sprint2-root", default=None,
+                   help="optional legacy audit only; excluded from corrected comparisons")
+    p.add_argument("--out-dir", default=str(ROOT))
     p.add_argument("--dataset", choices=["cifar100", "cifar10"], default="cifar100")
     p.add_argument("--rho", type=int, default=None,
                    help="restrict every table to one imbalance factor")
     args = p.parse_args()
 
     if args.baselines_root is None:
-        args.baselines_root = ("experiments/baselines" if args.dataset == "cifar100"
-                               else f"experiments/baselines/{args.dataset}")
+        args.baselines_root = str(ROOT / "experiments" / "baselines")
+        if args.dataset != "cifar100":
+            args.baselines_root = os.path.join(args.baselines_root, args.dataset)
+    if args.corrected_root is None:
+        args.corrected_root = str(ROOT / "experiments" / "corrected")
+        if args.dataset != "cifar100":
+            args.corrected_root = os.path.join(args.corrected_root, args.dataset)
     suffix = "" if args.dataset == "cifar100" else f"_{args.dataset}"
 
     if not HAVE_SCIPY:
         print("NOTE: scipy not found -- effect sizes still computed, "
               "p-values left blank. pip install scipy")
 
-    bl_metrics, bl_costs = load_baselines(args.baselines_root)
-    rebal = load_sprint2(args.sprint2_root) if args.dataset == "cifar100" else {}
+    bl_metrics, bl_costs = load_baselines(args.baselines_root, args.dataset)
+    rebal = load_corrected(args.corrected_root, args.dataset)
+    legacy = load_sprint2(args.sprint2_root) if args.sprint2_root else {}
+    if legacy and args.dataset != "cifar100":
+        p.error("legacy sprint2 tables have no CIFAR-10 dataset provenance")
 
     if args.rho is not None:
         keep = lambda d: {k: v for k, v in d.items() if k[0] == args.rho}
         bl_metrics, bl_costs, rebal = keep(bl_metrics), keep(bl_costs), keep(rebal)
+        legacy = keep(legacy)
 
     print(f"\nloaded {len(bl_metrics)} baseline arms, {len(rebal)} REBAL arms")
 
     od = args.out_dir
-    # This one works even with zero baseline runs -- run it today.
     if rebal:
         write_existing_significance(
-            rebal, os.path.join(od, f"significance_existing{suffix}.csv"))
+            rebal, os.path.join(od, f"significance_corrected{suffix}.csv"))
+    if legacy:
+        print("  Legacy sprint2 uses a different selection protocol; its audit "
+              "does not establish corrected-protocol performance.")
+        write_existing_significance(
+            legacy, os.path.join(od, "significance_legacy_sprint2.csv"))
 
     if not bl_metrics:
-        print("\nNo baseline runs found yet. significance_existing.csv is "
-              "still written from the sprint2 results.\nRun ./run_baselines.sh "
-              "to populate the rest.")
+        print("\nNo compatible baseline runs found. Run "
+              "python scripts/run_corrected.py --tier 3 to populate them.")
         return
 
     write_summary(bl_metrics, os.path.join(od, f"baselines_summary{suffix}.csv"))

@@ -32,6 +32,11 @@ import glob
 import json
 import os
 from collections import defaultdict
+from pathlib import Path
+
+from scripts.run_corrected import protocol_mismatches, cell_mismatches
+
+ROOT = Path(__file__).resolve().parents[1]
 
 import numpy as np
 
@@ -64,12 +69,16 @@ def load_runs(root, rho):
     pat = os.path.join(root, f"rho_{rho}", "*", "seed_*", "metrics.json")
     for p in sorted(glob.glob(pat)):
         try:
-            j = json.load(open(p))
+            with open(p) as handle:
+                j = json.load(handle)
+            seed = int(Path(p).parent.name.removeprefix("seed_"))
+            if not isinstance(j, dict) or not isinstance(j.get("config"), dict):
+                raise ValueError("result and config must be JSON objects")
         except Exception as e:
             print(f"  skipping unreadable {p}: {e}")
             continue
         cell = p.split(os.sep)[-3]
-        out[cell][int(j["seed"])] = j
+        out[cell][seed] = j
     return out
 
 
@@ -79,7 +88,8 @@ def load_per_class(root, rho, cell):
     pat = os.path.join(root, f"rho_{rho}", cell, "seed_*", "per_class_f1.csv")
     for p in sorted(glob.glob(pat)):
         seed = int(os.path.basename(os.path.dirname(p)).split("_")[1])
-        out[seed] = list(csv.DictReader(open(p)))
+        with open(p) as handle:
+            out[seed] = list(csv.DictReader(handle))
     return out
 
 
@@ -109,17 +119,20 @@ def table2(runs, out_path):
         return
     seeds = sorted(main)
     rows = []
-    base = {m: [main[s]["baseline"][m] for s in seeds] for m in METRICS}
     for arm in ARMS:
+        # Feature-SMOTE ablations can legitimately have no cRT result.
+        arm_seeds = [s for s in seeds if arm in main[s]]
+        if not arm_seeds:
+            continue
         for m in METRICS:
-            vals = [main[s][arm][m] for s in seeds]
-            row = {"arm": arm, "metric": m, "n_seeds": len(seeds),
+            vals = [main[s][arm][m] for s in arm_seeds]
+            row = {"arm": arm, "metric": m, "n_seeds": len(arm_seeds),
                    "mean": round(float(np.mean(vals)), 4),
                    "std": round(float(np.std(vals, ddof=0)), 4),
                    "delta_vs_baseline": "", "dz": "", "p": "",
                    "sig_at_05": ""}
             if arm != "baseline":
-                t = paired(vals, base[m])
+                t = paired(vals, [main[s]["baseline"][m] for s in arm_seeds])
                 if t:
                     row["delta_vs_baseline"] = round(t["delta"], 4)
                     row["dz"] = round(t["dz"], 3) if t["dz"] != "" else ""
@@ -131,7 +144,8 @@ def table2(runs, out_path):
             "delta_vs_baseline", "dz", "p", "sig_at_05"])
 
     # The null result on top-1 needs stating explicitly, not inferring.
-    t = paired([main[s]["rebal"]["acc"] for s in seeds], base["acc"])
+    t = paired([main[s]["rebal"]["acc"] for s in seeds],
+               [main[s]["baseline"]["acc"] for s in seeds])
     if t:
         print(f"\n  top-1, REBAL - baseline: {t['delta']:+.4f} "
               f"(n={t['n']}, p={t['p'] if t['p']=='' else round(t['p'],4)})")
@@ -151,6 +165,14 @@ def redistribution(root, rho, runs, out_path):
         print("  no per-class data yet -- skipping redistribution")
         return
     seeds = sorted(set(main) & set(pc))
+    if not seeds:
+        print("  no matching valid per-class seeds -- skipping redistribution")
+        return
+    for seed in seeds:
+        if any(not any(row["region"] == region for row in pc[seed])
+               for region in REGIONS):
+            raise ValueError(f"seed {seed}: per-class data lacks head/mid/tail "
+                             "regions; check dataset-specific class boundaries")
     rows = []
     for reg in REGIONS:
         b = [np.mean([float(r["baseline_f1"]) for r in pc[s] if r["region"] == reg])
@@ -239,38 +261,49 @@ def ablations(runs, out_path):
               "Report it per region, not on top-1.")
 
 
-def protocol_check(runs, out_path):
-    """Catch a cell that silently ran under the wrong protocol."""
-    want = {"val_fraction": 0.1, "use_early_stopping": False,
-            "early_stop_metric": "bacc", "cls_epochs": 200}
+def protocol_check(runs, out_path, dataset="cifar100", rho=100):
+    """Write an audit and return only runs proved compatible for aggregation."""
     rows, bad = [], 0
+    valid = defaultdict(dict)
     for cell in sorted(runs):
         for seed in sorted(runs[cell]):
             j = runs[cell][seed]
             row = {"cell": cell, "seed": seed,
                    "arch": j.get("config", {}).get("architecture", "?"),
-                   "rho": j.get("config", {}).get("rho", "?")}
-            mism = []
-            for k, v in want.items():
+                   "rho": j.get("config", {}).get("rho", "?"),
+                   "dataset": j.get("config", {}).get("dataset", "?")}
+            mism = protocol_mismatches(j, "framework", dataset, rho)
+            expected = {"kind": "main", "seed": seed}
+            if cell.startswith("ablate_"):
+                expected.update(kind="ablate", ablate=cell[len("ablate_"):])
+                if expected["ablate"] not in ("cgan", "eq", "rw", "feature_smote"):
+                    mism.append("unknown_ablation")
+            elif cell != "main":
+                mism.append("unknown_cell")
+            mism.extend(cell_mismatches(j, expected))
+            for arm in ("baseline", "rebal") + (("rebal_crt",) if "rebal_crt" in j else ()):
+                if not isinstance(j.get(arm), dict) or any(
+                        not isinstance(j[arm].get(metric), (int, float))
+                        or not np.isfinite(j[arm][metric]) for metric in METRICS):
+                    mism.append(arm + "_metrics")
+            for k in ("val_fraction", "use_early_stopping", "early_stop_metric", "cls_epochs"):
                 got = j.get(k, "MISSING")
                 row[k] = got
-                if got != v:
-                    mism.append(k)
-            if j.get("config", {}).get("architecture") != "resnet32":
-                mism.append("arch")
             row["mismatch"] = ";".join(mism)
             if mism:
                 bad += 1
+            else:
+                valid[cell][seed] = j
             rows.append(row)
     _write(out_path, rows,
-           ["cell", "seed", "arch", "rho", "val_fraction", "use_early_stopping",
+           ["cell", "seed", "arch", "rho", "dataset", "val_fraction", "use_early_stopping",
             "early_stop_metric", "cls_epochs", "mismatch"])
     if bad:
         print(f"\n  WARNING: {bad} run(s) did not use the corrected protocol. "
-              "See the mismatch column -- exclude or re-run those before "
-              "putting anything in a table.")
+              "They are excluded from all result tables; see the mismatch column.")
     else:
         print("\n  protocol check: all runs used the corrected protocol.")
+    return valid
 
 
 def main():
@@ -280,12 +313,13 @@ def main():
                          "experiments/corrected/cifar10 for cifar10")
     ap.add_argument("--rho", type=int, default=100)
     ap.add_argument("--dataset", choices=["cifar100", "cifar10"], default="cifar100")
-    ap.add_argument("--out-dir", default=".")
+    ap.add_argument("--out-dir", default=str(ROOT))
     args = ap.parse_args()
 
     if args.root is None:
-        args.root = ("experiments/corrected" if args.dataset == "cifar100"
-                     else f"experiments/corrected/{args.dataset}")
+        args.root = str(ROOT / "experiments" / "corrected")
+        if args.dataset != "cifar100":
+            args.root = os.path.join(args.root, args.dataset)
     suffix = "" if args.dataset == "cifar100" else f"_{args.dataset}"
 
     if not HAVE_SCIPY:
@@ -301,7 +335,10 @@ def main():
         print(f"  {cell}: {len(runs[cell])} seed(s)")
 
     od = args.out_dir
-    protocol_check(runs, os.path.join(od, f"protocol_check{suffix}.csv"))
+    runs = protocol_check(runs, os.path.join(od, f"protocol_check{suffix}.csv"),
+                          dataset=args.dataset, rho=args.rho)
+    if not runs:
+        raise SystemExit("No compatible corrected-protocol runs remain.")
     table2(runs, os.path.join(od, f"table2_corrected{suffix}.csv"))
     redistribution(args.root, args.rho, runs,
                    os.path.join(od, f"redistribution{suffix}.csv"))
