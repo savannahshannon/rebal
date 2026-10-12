@@ -1,0 +1,27 @@
+{
+  "scope": "Complete matched frozen DeiT/ResNet encoder and REBAL adapter comparison",
+  "protocol": "d3df8ea7cd7484045aadc71d7e243d09b3cc9270fd9efd27d6f4b32c4c620558",
+  "file_sha256": {
+    "aggregate.json": "86dcd6c4cdf916975b6ea438168f950e5b3f459516e86d48cc40f0dc6879fd4b",
+    "encoder_effects.png": "fd771ed78ef5391d0cc1bdb4fbe631fcb6cbca7e9a029e4d975b2697c2d78f85",
+    "evidence_archive_audit.json": "b828efe8f40aa427b666336b727cac7dad18fefe2de7b39a8a83a615ef4d4d2a",
+    "evidence_archive_manifest.json": "39345574e15fdfed262ef658e1b5b91ad345e15de8c9761baad0b19502d125fc",
+    "experimental_report.pdf": "ef8f41a435498bf19a89ec8f6381daf5b7be7dad66d8002635172d23d945ffef",
+    "feature_provenance.json": "15139be5699911b39ff726050bba86dd5c3f6de33f3284b77d3ee38a660aea14",
+    "independent_verification.json": "52b78a996b6193ca3dfab60c802ab7c2380c530a9fa2b09de8602f2a30eb93b4",
+    "mechanism_effects.png": "f4f421b0726cdd409b073b1119f454fbea12e496e22c116e4f32ce65b5517c36",
+    "paired_comparisons.csv": "21c57f4c723d1c4f3ce6a62c554037e3c9731388e0e2e9c76e6e7febdc180d3a",
+    "per_class_results.csv": "07ff46c98460ee22fba65dc87bbc83f29a823e4facc026dda3c2033287fb76d3",
+    "per_seed_results.csv": "b3ca392c5ee747a34e86b1d634aae7d07c08178f0629f20f61927c1b4fc847cb",
+    "performance.png": "871ce1ce52a4e828baa186ef654b24168a0166b534993bc760cf8167f12faa5d",
+    "protocol.json": "09990bb03ab926157d8eaf301831d443563f4b9195fa7ab6395e9a39d7926e64",
+    "runtimes.csv": "b29e0087cd5a9a1c6a0ddc87bf3bd1afe398c246aece5e26713fa50140d79876",
+    "runtimes.png": "5eb6860cc7c102f66b1dda42c273d9a33bdcfffb51cd20ef96b1328af79057cd",
+    "study_plan.json": "9feb5a2d9cb2e58e8b5339d1cb9fa1738247869efbdf8eac67bcb8574d2991c6",
+    "summary.csv": "9817cd32a55504d3506f1bdcabc10ed16a2bb71d2bdd2d0397a1f730b3f32e5b",
+    "validation_summary.json": "a5acf8933fd7732f3580af17cf194cccdd356933443c08e25740cae62b2374c1"
+  },
+  "elapsed_downstream_seconds": 823,
+  "raw_prediction_archive": "Separate local 6,595,693,993-byte evidence ZIP; omitted from Git due size; SHA256 4be247089d6f1971244cf74795891027e338912fcb5723ad73562717925e58db",
+  "exclusions": "Raw images, frozen feature arrays, pretrained weights, model/optimizer states, private operational logs and credentials are not Git artifacts"
+}

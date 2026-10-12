@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-10-12T18:27:04.618730+00:00",
+  "execution": "full_study",
+  "expected_cells": 30,
+  "named_readouts_per_cell": 27,
+  "primary_family": 15,
+  "protocol": "d3df8ea7cd7484045aadc71d7e243d09b3cc9270fd9efd27d6f4b32c4c620558"
+}

@@ -1,0 +1,33 @@
+{
+  "archive": "REBAL_ViT_Experimental_Evidence.zip",
+  "archive_bytes": 6595693993,
+  "archive_comment_empty": true,
+  "archive_sha256": "4be247089d6f1971244cf74795891027e338912fcb5723ad73562717925e58db",
+  "audit_source_sha256": "7202f555860838714a24a08c2193d04312dadf6136c2c106ba30a8e952448991",
+  "audited_utc": "2026-10-12T18:46:14.273045+00:00",
+  "builder_sha256": "58f187ad7c399086d6b9f059baf0310470d4f054d98e8ccc185175b3e667878d",
+  "entries_rehashed": 391,
+  "excluded": [
+    "Raw source images and Tiny ImageNet source ZIP.",
+    "Frozen feature arrays and pretrained weight binaries.",
+    "Trained adapter/head/optimizer states and complete kNN graph arrays.",
+    "Controller/worker logs, connection records, private filesystem paths and operational notes."
+  ],
+  "full_study_verification_sha256": "52b78a996b6193ca3dfab60c802ab7c2380c530a9fa2b09de8602f2a30eb93b4",
+  "inner_and_outer_manifest_agreement": true,
+  "limitations": "Pattern-based privacy scan; numerical consistency audit. The reduced package does not repeat audits of omitted raw source/model/transform bytes and makes no superiority claim.",
+  "numeric_array_entries_header_checked": 107,
+  "portable_checker": {
+    "calibration_curves": 360,
+    "cells": 30,
+    "full_model_source_audit_repeated": false,
+    "method_superiority_claimed": false,
+    "paired_comparisons": 15,
+    "readouts": 810,
+    "status": "archive_hashes_calibration_metrics_and_aggregate_verified"
+  },
+  "private_path_credential_account_network_and_signed_url_scan": "passed",
+  "relative_paths_only": true,
+  "status": "archive_integrity_privacy_and_portable_recheck_passed",
+  "text_entries_privacy_scanned": 284
+}

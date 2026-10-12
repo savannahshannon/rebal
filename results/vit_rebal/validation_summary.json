@@ -1,0 +1,94 @@
+{
+  "repository_tests": 81,
+  "test_result": "passed before full run",
+  "targeted_verifier_tests": 9,
+  "targeted_runner_tests": 8,
+  "test_code_commit": "5a25efab7909d3dab51a586afef8f5f477ba0306",
+  "complete_cells": 30,
+  "trained_adapters": 90,
+  "retrained_heads": 270,
+  "epochs_per_adapter": 50,
+  "updates_per_retrained_head": 2000,
+  "verified_readouts": 810,
+  "verified_calibration_curves": 360,
+  "verified_primary_contrasts": 15,
+  "independent_source_check": "original source archive, independently parsed labels/order, and frozen feature cache hashes verified",
+  "independent_verifier_sha256": "fabd98308cb5df11640cefbfa5484ebf3586485d4a7ff15ba9c241b1e85f1c7a",
+  "aggregate_sha256": "86dcd6c4cdf916975b6ea438168f950e5b3f459516e86d48cc40f0dc6879fd4b",
+  "report_review": {
+    "status": "passed",
+    "created_utc": "2026-10-12T18:50:35.299569+00:00",
+    "pdf_sha256": "ef8f41a435498bf19a89ec8f6381daf5b7be7dad66d8002635172d23d945ffef",
+    "manifest_sha256": "fe2b29066a63d19d730f10a5d058d9977ba096039b049934ceb896fdba7c3368",
+    "builder_sha256": "f98fa7c57421708df5324b2d54e6c9b73cb12f836d6215ea421c811797cd82dd",
+    "pages": 16,
+    "numeric_checks": {
+      "seed_rows": 810,
+      "summary_rows": 162,
+      "paired_contrasts": 15,
+      "per_class_rows": 162000,
+      "runtime_rows": 90,
+      "pdf_summary_metric_cells": 972,
+      "pdf_cover_metric_cells": 18,
+      "pdf_primary_contrasts": 15,
+      "aggregate_identical": true
+    },
+    "privacy": {
+      "scanned_artifacts": 12,
+      "private_identifiers_found": false,
+      "pdf_metadata_checked": true,
+      "embedded_attachments": false
+    },
+    "visual_review": {
+      "status": "passed",
+      "pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "render_dpi": 110,
+      "render_stderr_bytes": 0,
+      "checks": [
+        "All final pages inspected",
+        "Complete27-readout tables legible on six condition pages",
+        "Shared performance chart scale covers every bar and error bar",
+        "Mechanism figure and caption remain together",
+        "Cover includes CE, CE+LA and requested pipeline, tail tradeoff and exact-test limits",
+        "Nominal and realized imbalance ratios distinguished",
+        "Headers, footers, references, charts and table columns have no visible clipping"
+      ]
+    },
+    "all_artifact_hashes": {
+      "REBAL_ViT_Experimental_Report.pdf": "ef8f41a435498bf19a89ec8f6381daf5b7be7dad66d8002635172d23d945ffef",
+      "REBAL_ViT_Verified_Aggregate.json": "86dcd6c4cdf916975b6ea438168f950e5b3f459516e86d48cc40f0dc6879fd4b",
+      "rebal_vit_encoder_effects.png": "fd771ed78ef5391d0cc1bdb4fbe631fcb6cbca7e9a029e4d975b2697c2d78f85",
+      "rebal_vit_mechanism_effects.png": "f4f421b0726cdd409b073b1119f454fbea12e496e22c116e4f32ce65b5517c36",
+      "rebal_vit_paired_comparisons.csv": "21c57f4c723d1c4f3ce6a62c554037e3c9731388e0e2e9c76e6e7febdc180d3a",
+      "rebal_vit_per_class_results.csv": "07ff46c98460ee22fba65dc87bbc83f29a823e4facc026dda3c2033287fb76d3",
+      "rebal_vit_per_seed_results.csv": "b3ca392c5ee747a34e86b1d634aae7d07c08178f0629f20f61927c1b4fc847cb",
+      "rebal_vit_performance.png": "871ce1ce52a4e828baa186ef654b24168a0166b534993bc760cf8167f12faa5d",
+      "rebal_vit_runtimes.csv": "b29e0087cd5a9a1c6a0ddc87bf3bd1afe398c246aece5e26713fa50140d79876",
+      "rebal_vit_runtimes.png": "5eb6860cc7c102f66b1dda42c273d9a33bdcfffb51cd20ef96b1328af79057cd",
+      "rebal_vit_summary.csv": "9817cd32a55504d3506f1bdcabc10ed16a2bb71d2bdd2d0397a1f730b3f32e5b"
+    },
+    "repairs": [
+      "Performance y-limit set from the complete six-panel range",
+      "Mechanism figure resized to retain caption on same page"
+    ],
+    "limits": "Numerical consistency, artifact integrity and presentation review do not establish model superiority or remove pretraining overlap"
+  },
+  "prediction_archive_replay": "30 cells,810 readouts,360 curves and15 contrasts reproduced after extraction"
+}
