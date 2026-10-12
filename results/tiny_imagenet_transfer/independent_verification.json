@@ -1,0 +1,473 @@
+{
+  "passed": true,
+  "primary": {
+    "created_utc": "2026-10-12T07:23:03.883676+00:00",
+    "root": "experiments/tiny_primary_4000",
+    "independent_library": "sklearn.metrics; scipy.stats; no benchmark imports",
+    "completed_cells_seen": 15,
+    "passed_cells": 15,
+    "expected_cells": 15,
+    "scalar_metrics_recomputed": 2520,
+    "max_scalar_metric_error": 0.0,
+    "aggregate_checked": true,
+    "expected_optimizer_updates": 4000,
+    "balanced_eval_count_per_class": 50,
+    "summaries": [
+      {
+        "rho": 10.0,
+        "seed": 0,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 1,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 2,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 3,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 4,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 0,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 1,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 2,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 3,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 4,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 0,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 1,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 2,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 3,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 4,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      }
+    ],
+    "errors": [],
+    "limitations": [
+      "SMOTE pool geometry is not saved: its target counts are metadata-checked.",
+      "Optimizer update counts are checked against saved logs, not replayed training."
+    ]
+  },
+  "sensitivity": {
+    "created_utc": "2026-10-12T07:23:03.839764+00:00",
+    "root": "experiments/tiny_sensitivity_1000",
+    "independent_library": "sklearn.metrics; scipy.stats; no benchmark imports",
+    "completed_cells_seen": 15,
+    "passed_cells": 15,
+    "expected_cells": 15,
+    "scalar_metrics_recomputed": 2520,
+    "max_scalar_metric_error": 0.0,
+    "aggregate_checked": true,
+    "expected_optimizer_updates": 1000,
+    "balanced_eval_count_per_class": 50,
+    "summaries": [
+      {
+        "rho": 10.0,
+        "seed": 0,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 1,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 2,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 3,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 10.0,
+        "seed": 4,
+        "training_examples": 34765,
+        "min_train": 44,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 0,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 1,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 2,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 3,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 100.0,
+        "seed": 4,
+        "training_examples": 19168,
+        "min_train": 4,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 0,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 1,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 2,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 3,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      },
+      {
+        "rho": 50.0,
+        "seed": 4,
+        "training_examples": 22309,
+        "min_train": 8,
+        "max_train": 445,
+        "regions": [
+          66,
+          67,
+          67
+        ],
+        "arms": 7,
+        "checks": "passed"
+      }
+    ],
+    "errors": [],
+    "limitations": [
+      "SMOTE pool geometry is not saved: its target counts are metadata-checked.",
+      "Optimizer update counts are checked against saved logs, not replayed training."
+    ]
+  },
+  "publication_redaction": {
+    "redacted_fields": [
+      "primary.root",
+      "sensitivity.root"
+    ],
+    "replacement": "Portable experiment-relative paths replace private absolute workspace locations.",
+    "scientific_results_modified": false,
+    "original_evidence_preserved": true,
+    "hashes": "All existing scientific artifact hashes are unchanged and refer to the original artifacts."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-10-12T07:15:18.649639+00:00",
+  "stage": "specified before any Tiny ImageNet classifier final evaluation",
+  "base_commit": "60e801a79e09a4911468af77d34ebf1726749a52",
+  "branch": "kishor_dev",
+  "primary": {
+    "steps": 4000,
+    "rhos": [
+      10,
+      50,
+      100
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "arms": [
+      "ce",
+      "cb",
+      "ros",
+      "smote",
+      "ce_la",
+      "smote_la",
+      "ncm"
+    ],
+    "primary_endpoint": "tail macro F1",
+    "paired_comparisons": [
+      "smote minus ros",
+      "smote minus ce_la"
+    ],
+    "family_size": 6
+  },
+  "sensitivity": {
+    "steps": 1000,
+    "rhos": [
+      10,
+      50,
+      100
+    ],
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "interpretation": "descriptive budget sensitivity; not a second chance for significance"
+  },
+  "optimizer": {
+    "name": "SGD",
+    "lr": 0.01,
+    "momentum": 0.9,
+    "weight_decay": 0.0005,
+    "batch_size": 512,
+    "constant_learning_rate": true
+  },
+  "model_selection": "final fixed update; no early stopping; LA tau selected on train-derived balanced holdout only",
+  "scope": "fixed ImageNet-pretrained ResNet18 at native64, classifier-only transfer. Not full REBAL-F or clean from-scratch generalization.",
+  "hygiene": "deduplicate decoded training RGB and exclude train hashes overlapping official validation; 50/class calibration; cap445"
+}

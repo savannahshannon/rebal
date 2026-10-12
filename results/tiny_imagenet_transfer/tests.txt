@@ -1,0 +1,52 @@
+Publication copy: private virtual-environment prefixes in three warning stack-trace paths are replaced with <VIRTUAL_ENV> below. Test outcomes and warning contents are unchanged; the original log is preserved locally.
+
+test_aggregator_clis_create_output_directories_outside_repository (test_reproducibility.AggregationTests.test_aggregator_clis_create_output_directories_outside_repository) ... ok
+test_baseline_loader_excludes_test_selected_and_misidentified (test_reproducibility.AggregationTests.test_baseline_loader_excludes_test_selected_and_misidentified) ... ok
+test_comparison_source_is_corrected_and_dataset_checked (test_reproducibility.AggregationTests.test_comparison_source_is_corrected_and_dataset_checked) ... ok
+test_framework_csv_boundaries_match_summary_regions_without_import (test_reproducibility.AggregationTests.test_framework_csv_boundaries_match_summary_regions_without_import) ... ok
+test_loader_uses_directory_seed_to_detect_misplaced_record (test_reproducibility.AggregationTests.test_loader_uses_directory_seed_to_detect_misplaced_record) ... ok
+test_missing_per_class_regions_raise_instead_of_nan (test_reproducibility.AggregationTests.test_missing_per_class_regions_raise_instead_of_nan) ... ok
+test_paired_comparison_uses_only_shared_seed_metrics (test_reproducibility.AggregationTests.test_paired_comparison_uses_only_shared_seed_metrics) ... ok
+test_protocol_audit_excludes_mismatch_and_keeps_evidence (test_reproducibility.AggregationTests.test_protocol_audit_excludes_mismatch_and_keeps_evidence) ... ok
+test_ablation_is_explicit_and_not_inherited (test_reproducibility.RunnerTests.test_ablation_is_explicit_and_not_inherited) ... ok
+test_external_bank_artifacts_remain_supported (test_reproducibility.RunnerTests.test_external_bank_artifacts_remain_supported) ... ok
+test_inherited_overrides_cannot_change_main_or_baselines (test_reproducibility.RunnerTests.test_inherited_overrides_cannot_change_main_or_baselines) ... ok
+test_output_roots_separate_datasets (test_reproducibility.RunnerTests.test_output_roots_separate_datasets) ... ok
+test_paths_and_dry_run_work_outside_repository (test_reproducibility.RunnerTests.test_paths_and_dry_run_work_outside_repository) ... ok
+test_protocol_rejects_missing_and_malformed_fields (test_reproducibility.RunnerTests.test_protocol_rejects_missing_and_malformed_fields) ... ok
+test_resume_requires_correct_seed_and_ablation (test_reproducibility.RunnerTests.test_resume_requires_correct_seed_and_ablation) ... ok
+test_run_cell_uses_repository_working_directory (test_reproducibility.RunnerTests.test_run_cell_uses_repository_working_directory) ... ok
+test_dedup_cap_and_pixel_partition_isolation (test_tiny_features.ProtocolTests.test_dedup_cap_and_pixel_partition_isolation) ... ok
+test_holdout_disjoint_nested_and_semantics_randomized (test_tiny_features.ProtocolTests.test_holdout_disjoint_nested_and_semantics_randomized) ... ok
+test_matched_initialization_updates_and_deterministic_repeat (test_tiny_features.ProtocolTests.test_matched_initialization_updates_and_deterministic_repeat) ... ok
+test_metrics_use_randomized_rank_and_zero_division (test_tiny_features.ProtocolTests.test_metrics_use_randomized_rank_and_zero_division) ... ok
+test_ncm_matches_original_cosine_rule (test_tiny_features.ProtocolTests.test_ncm_matches_original_cosine_rule) ... ok
+test_paired_intervals_and_holm_family (test_tiny_features.ProtocolTests.test_paired_intervals_and_holm_family) ... ok
+test_resampling_only_uses_supplied_train_and_same_target (test_tiny_features.ProtocolTests.test_resampling_only_uses_supplied_train_and_same_target) ... <VIRTUAL_ENV>/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py:134: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "<VIRTUAL_ENV>/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py", line 264, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_darwin()
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<VIRTUAL_ENV>/lib/python3.12/site-packages/joblib/externals/loky/backend/context.py", line 420, in _count_physical_cores_darwin
+    return int(cpu_info)
+           ^^^^^^^^^^^^^
+ok
+test_resume_rejects_changed_protocol_and_artifact (test_tiny_features.ProtocolTests.test_resume_rejects_changed_protocol_and_artifact) ... ok
+test_small_complete_cell_saves_tuning_evidence_and_resumes (test_tiny_features.ProtocolTests.test_small_complete_cell_saves_tuning_evidence_and_resumes) ... rho=2 seed=0 arm=ce train_n=22
+  0.0s; final macro-F1=0.3000
+rho=2 seed=0 arm=cb train_n=22
+  0.0s; final macro-F1=0.3000
+rho=2 seed=0 arm=ros train_n=22
+  0.0s; final macro-F1=0.3000
+rho=2 seed=0 arm=smote train_n=22
+  0.0s; final macro-F1=0.3000
+resume: rho=2 seed=0 verified
+ok
+test_tau_uses_holdout_and_breaks_ties_low (test_tiny_features.ProtocolTests.test_tau_uses_holdout_and_breaks_ties_low) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 2.286s
+
+OK
