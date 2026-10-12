@@ -1,0 +1,13 @@
+# Separate environment for the non-image adaptation.
+# The numeric/data-library versions below were installed in the verified local
+# Python 3.12.14 environment on 2026-10-12. Local torch was 2.14.1.
+# Keep torch unpinned so an existing device-compatible CPU/CUDA/MPS build is used.
+# The runner records actual versions and rejects incompatible resume protocols.
+torch
+numpy==2.5.4
+scipy==1.18.1
+scikit-learn==1.9.1
+Pillow==12.3.0
+pyarrow==26.0.0
+# Optional Covertype ECOD sensitivity only: install pyod separately and record
+# its actual version. The primary protocol leaves ECOD off.
