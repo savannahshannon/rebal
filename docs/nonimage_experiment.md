@@ -2,9 +2,27 @@
 
 ## Status and scope
 
-As of October 12, 2026, real source acquisition and preparation are complete for Covertype and DBpedia-14 at nominal imbalance ratios 10 and 100. Source hashes, split membership, label counts and duplicate separation have been independently checked. The repository has 44 passing tests, including nine non-image tests; seven additional synthetic preparation checks passed. Full 50-epoch, five-seed non-image results are not reported here. Train-only CPU and MPS pilots have passed for all three conditions; CPU was faster in those pilots. These pilots are separate from completed benchmark runs.
+Completed on October 12, 2026: all 15 condition-by-seed cells, 45 trained representations, 135 retrained classifiers and 405 named readouts passed independent numerical verification. Every representation completed 50 epochs and every retrained classifier completed 2,000 updates. Three CPU workers completed the full declared grid in 56 minutes 1 second, including aggregation; stage timing sums differ from elapsed wall time.
 
 The experiment trains tabular/text representations from scratch, then compares classifier retraining on the frozen learned representations. It is a controlled non-image adaptation of REBAL-F. It uses neither the original image architecture nor a pretrained language model or generator. HIGGS is a researched secondary option and is not implemented or evaluated by these scripts. The existing Tiny ImageNet report describes a separate study.
+
+## Results and evidence
+
+The verified bundle includes the [experimental report](../results/nonimage_fullscale/experimental_report.pdf), [all-method summary](../results/nonimage_fullscale/summary.csv), [seed-level results](../results/nonimage_fullscale/per_seed_results.csv), [paired comparisons](../results/nonimage_fullscale/paired_comparisons.csv), [aggregate](../results/nonimage_fullscale/aggregate.json) and [independent verification](../results/nonimage_fullscale/independent_verification.json).
+
+Mean macro-F1 percentages across five seeds (selected readouts for context; all 27 are in the report):
+
+| Condition | CE + LA | CB+EQ / natural | CB+EQ / ROS | CB+EQ / SMOTE |
+|---|---:|---:|---:|---:|
+| Covertype | 78.574 | 77.149 | 70.930 | 71.079 |
+| DBpedia 10:1 | 95.000 | 94.674 | 95.726 | 95.727 |
+| DBpedia 100:1 | 76.389 | 67.062 | 85.892 | 85.899 |
+
+SMOTE-minus-ROS paired macro-F1 effects are **+0.149 percentage points** for Covertype, **+0.001** for DBpedia 10:1, and **+0.007** for DBpedia 100:1. Covertype's small interpolation effect survives the parametric six-comparison Holm test (adjusted p=0.000575), but its exact sign-flip adjusted p is 0.375. None of the six primary contrasts reaches 0.05 under the exact adjusted test. With only five paired seeds, the minimum unadjusted two-sided exact p is 0.0625.
+
+The absolute controls matter: on Covertype, balanced ROS/SMOTE heads are substantially below natural classifier retraining on the same CB+EQ representation. On DBpedia, balancing the classifier helps under this protocol, but interpolation adds little over ROS. Equalization-versus-CB with natural heads gives -0.039, +0.002 and -0.020 percentage points, respectively; there is no consistent improvement. These are conditional experimental findings, not evidence of universal superiority or equivalence.
+
+The 405 named readout evaluations come from 45 trained trunks and 135 retrained linear heads. They include 90 uniform-prior LA aliases with the same predictions as the corresponding ROS/SMOTE heads. The primary comparisons isolate streaming latent SMOTE versus ROS on the same CB+EQ representations and EQ versus matched CB training with natural classifier heads. NCM comparisons are exploratory representation evidence. Five seeds, fixed dataset splits and the six-comparison family constrain inference; neither the number of test records nor duplicate readout names creates additional independent fits.
 
 ## Verified data and splits
 
@@ -74,6 +92,7 @@ python3 -m venv ../rebal-nonimage-venv
 . ../rebal-nonimage-venv/bin/activate
 python -m pip install -r requirements-nonimage.txt
 python -m unittest discover -s tests -p 'test_nonimage.py' -v
+python -m unittest discover -s tests -p 'test_verify_nonimage.py' -v
 
 python scripts/prepare_nonimage.py acquire --dataset covertype --output data/nonimage/sources/covertype
 python scripts/prepare_nonimage.py acquire --dataset dbpedia --output data/nonimage/sources/dbpedia
@@ -108,3 +127,26 @@ OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -u scripts/tra
 Use a separately validated CUDA run with `--device cuda --knn-device cuda` and a new output directory when an appropriate GPU is free. Different devices, budgets, conditions or sources require separate outputs. For parallel execution, initialize the same declared grid with `--aggregate-only`, then use distinct visible GPUs and `--worker-index 0`, `1`, or `2` with `--worker-count 3 --defer-aggregate`. Each worker receives disjoint condition/seed cells. A file lock protects shared transforms. After all workers finish, run one aggregator with the identical scientific arguments and `--aggregate-only`; do not run concurrent aggregators.
 
 Keep source, dependencies and protocol settings unchanged for resume. Checkpoints, training histories, split identities, transforms, graph hashes, head states and logits are retained. Aggregate-only validates both result artifacts and fitted transforms. Only validated complete cells enter the final result table. Raw datasets, private paths, credentials and operational connection records are not publication artifacts.
+
+
+## Independent verification
+
+After every declared cell completes, aggregate once with the original scientific arguments and `--aggregate-only`. Then recompute the saved metrics, calibration choices, summary statistics and all six contrasts using the independent verifier:
+
+```sh
+python scripts/verify_nonimage.py \
+  --data data/nonimage/covertype/natural data/nonimage/dbpedia/rho10 data/nonimage/dbpedia/rho100 \
+  --run experiments/nonimage_full_cpu \
+  --sources-root data/nonimage/sources \
+  --out experiments/nonimage_full_cpu/independent_verification.json
+```
+
+Require `verified_complete`, 15 completed and expected cells, 405 verified evaluations, no missing cells, and `aggregate_status` equal to `independently recomputed and verified`. Verify that the aggregate hash still matches the current file. A partial or pilot run is not a completed experiment. The full verifier checks saved model/graph bytes but does not rerun model inference or reconstruct exact-neighbor optimality. Its 11 portable synthetic and tamper checks exercise the checking software separately from the real study.
+
+The portable prediction-evidence archive excludes raw datasets, model/optimizer states, token caches/vocabulary and graph arrays. Its included checker can rehash the packaged evidence and recompute test metrics, but cannot repeat full audits of omitted bytes. Original artifact inventories preserve the hashes of excluded files. Do not present the reduced archive as a complete training-state backup.
+
+## Method sources and adaptations
+
+Effective-number weighting follows [Cui et al. (CVPR 2019)](https://arxiv.org/abs/1901.05555); separating representation and classifier learning follows [Kang et al. (ICLR 2020)](https://arxiv.org/abs/1910.09217). This study changes CB beta and normalization for larger class counts and uses its declared deferred schedule. The repository-specific normalized-feature EQ objective is separately under test.
+
+Latent streaming interpolation adapts [Chawla et al. (JAIR 2002)](https://arxiv.org/abs/1106.1813), whose arXiv copy dates from 2011. Post-hoc adjustment follows [Menon et al. (ICLR 2021)](https://arxiv.org/abs/2007.07314) with head-specific priors and calibration-only tau selection. The text encoder is related to embedding-average classifiers such as [Joulin et al. (EACL 2017; preprint 2016)](https://aclanthology.org/E17-2068/), but adds nonlinear layers and is not an exact fastText implementation. It does not execute the character-level CNN in the original DBpedia benchmark paper.
