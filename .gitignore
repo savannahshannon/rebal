@@ -62,3 +62,6 @@ nohup.out
 # Dataset mirrors (readers should download themselves)
 cifar-10-batches-py/
 cifar-100-python/
+
+# Tiny ImageNet source and feature cache
+data/
