@@ -27,6 +27,7 @@ def state_hash(state):
  return h.hexdigest()
 def load(path):return json.loads(Path(path).read_text())
 def close(x,y,message):require(math.isfinite(float(x)) and math.isfinite(float(y)) and abs(float(x)-float(y))<=1e-10,message)
+def close_lr(x,y,message):require(math.isfinite(float(x)) and math.isfinite(float(y)) and math.isclose(float(x),float(y),rel_tol=1e-10,abs_tol=1e-16),message)
 
 class ExpectedModel(nn.Module):
  def __init__(self,name,seed,backbone=None,scaler=None,width=192,classes=200):
@@ -78,7 +79,7 @@ def verify_record(folder,identity,expected,epochs,steps):
  factor=min(1.,(last_step+1)/max(1,.1*total_steps))*.5*(1+math.cos(math.pi*max(0,last_step-.1*total_steps)/max(1,.9*total_steps)))
  for actual,(parameters,base_lr) in zip(actual_groups,groups):
   ids=actual['params'];require(len(ids)==len(parameters),'AdamW trainable tensor count differs');all_ids+=ids
-  close(actual['base_lr'],base_lr,'AdamW base learning rate differs');close(actual['lr'],base_lr*factor,'AdamW final scheduled learning rate differs')
+  close_lr(actual['base_lr'],base_lr,'AdamW base learning rate differs');close_lr(actual['lr'],base_lr*factor,'AdamW final scheduled learning rate differs')
   require(actual['weight_decay']==.01 and tuple(actual['betas'])==(.9,.999) and actual['eps']==1e-8 and actual['amsgrad'] is False and actual['maximize'] is False,'AdamW hyperparameters differ')
   for pid,(name,parameter) in zip(ids,parameters):
    require(pid in optimizer['state'] and name in eligible and name in parameter_names,'AdamW parameter eligibility differs')
