@@ -1337,7 +1337,8 @@ def main(seed=None):
             header += ["rebal_crt_f1", "rebal_crt_acc"]
         writer.writerow(header)
         for c in range(CFG.NUM_CLASSES):
-            region = "head" if c < 33 else ("mid" if c < 67 else "tail")
+            region = ("head" if c < CFG.NUM_CLASSES // 3 else
+                      "mid" if c < 2 * CFG.NUM_CLASSES // 3 else "tail")
             row = [c, region,
                 f"{base_metrics['per_class_f1'][c]:.6f}",
                 f"{base_metrics['per_class_recall'][c]:.6f}",

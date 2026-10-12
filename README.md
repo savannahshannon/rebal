@@ -1,5 +1,11 @@
 # REBAL: Feature-Space Rebalancing for Long-Tailed Recognition
 
+## Larger-data extension (October 12, 2026)
+
+The `kishor_dev` branch adds a [completed Tiny ImageNet transfer study](docs/tiny_imagenet_experiment.md), an [experimental report](results/tiny_imagenet_transfer/experimental_report.pdf), and a [source reproducibility audit](docs/source_audit_2026-10-12.md). The study covers five paired seeds, three imbalance levels, seven methods, and two fixed optimization budgets. It evaluates classifier rebalancing on shared frozen ImageNet-pretrained features; it does not reproduce end-to-end REBAL-F or establish representation gains. Original CIFAR results below are preserved historical reports, not newly rerun results.
+
+Use `requirements-tiny.txt` in a separate environment for this extension. The original launcher and aggregators also receive path/protocol checks and corrected CSV region labels; open scientific comparison issues are documented in the audit.
+
 Code and aggregated results for the paper *"When Image Synthesis Hurts: Feature-Space Rebalancing for Long-Tailed Recognition"* (Shannon, submitted 2026).
 
 ## What the paper finds
