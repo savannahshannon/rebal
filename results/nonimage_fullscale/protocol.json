@@ -1,0 +1,89 @@
+{
+  "CB": "beta=1-1/n_max; stableexpm1; weights normalized to mean1 over fit examples; intentionallarge-dataadaptation",
+  "LA": "calibrationmacroF1; taus(0.0, 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 2.0); use head-specific trainingprior, uniform forROS/SMOTE; CBnativeusesfinalweightedobjectiveprior",
+  "SMOTE": "latentstreaming freshsynthetics withprobability1-n_class/n_max; exactblockwise kNN on retainedfitrepresentations; neverinterpolatetokenIDs orrawcategories",
+  "architecture": "tabular54->256->256->128; text random128-dimensional embedding mean->256->128; ReLU,dropout.1,sharedlinearhead",
+  "execution": "full_study",
+  "feature_geometry": "raw learned128D; no extra standardization for any head",
+  "fingerprint": "03e25e8a0dd6f9f1f7cd9db1daaba2850e04e2857d55cb6d0be5e41b241de0a5",
+  "head_budget": {
+    "batch_size": 2048,
+    "linear_kernel_l2": 0.0005,
+    "lr": 0.01,
+    "momentum": 0.9,
+    "nesterov": false,
+    "updates": 2000
+  },
+  "inputs": {
+    "covertype__natural": "564ec1b3ce1cb61f5f4872103a0a449230694821469b3adb084f4505c9b40f80",
+    "dbpedia__rho10": "f196b0e6be8dc11f3910709ff4994772111f8b84136d0a241788ec9179193b47",
+    "dbpedia__rho100": "f49298e75b2dab0a6e4822ca8e18a6be2aab917c81594f0cb877fafb6a5e0c62"
+  },
+  "optimizer": {
+    "defer_fraction": 0.8,
+    "eq_lambda": 0.05,
+    "linear_kernel_l2": 0.0005,
+    "momentum": 0.9,
+    "name": "SGD",
+    "nesterov": true,
+    "per_tensor_clipnorm": 1.0
+  },
+  "primary_comparisons": [
+    "rebal_crt_smote minus rebal_crt_ros",
+    "rebal_crt_natural minus cb_crt_natural"
+  ],
+  "primary_endpoint": "macro_f1",
+  "runtime": {
+    "CUDA": null,
+    "GPU_name": null,
+    "OS": "Darwin",
+    "OS_release": "25.6.0",
+    "architecture": "arm64",
+    "cudnn_deterministic": true,
+    "determinism_warn_only": true,
+    "deterministic_algorithms": true,
+    "device": "cpu",
+    "matmul_TF32": false,
+    "python": "3.12.14",
+    "repeatability_limit": "CUDA EmbeddingBag backward and floating-point top-k ties may vary; seeds do not guarantee bitwise cross-device reproduction"
+  },
+  "sampling": "paired natural row order for every trunk; fit-only transformations; fixedsplitandranks across optimizationseeds",
+  "scope": "from-scratch non-image REBAL adaptation; neither original image architecture nor a transformer benchmark",
+  "selection": "fixed final epochs and updates; no test-set model or epoch selection",
+  "settings": {
+    "batch_size": 1024,
+    "checkpoint_every": 5,
+    "device": "cpu",
+    "ecod": false,
+    "epochs": 50,
+    "head_batch_size": 2048,
+    "head_steps": 2000,
+    "knn_device": "cpu",
+    "knn_query_block": 256,
+    "knn_reference_block": 8192,
+    "lr": 0.05,
+    "max_tokens": 256,
+    "max_words": 50000,
+    "pilot_steps": 0,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "smote_k": 5,
+    "threads": 4,
+    "warmup_epochs": 5
+  },
+  "shared_helpers_sha256": "3d9de9336c7dc636f641286eddc0e9290f532048ea669d5eb934ed7ef123b61d",
+  "software": {
+    "numpy": "2.5.4",
+    "scikit-learn": "1.9.1",
+    "scipy": "1.18.1",
+    "torch": "2.14.1"
+  },
+  "source_sha256": "be58b2706400b85340736c0ca0e3f07cbcb23895c4d07e92a6789de86d072b21",
+  "statistical_family": 6,
+  "version": 1
+}

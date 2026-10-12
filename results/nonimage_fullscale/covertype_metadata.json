@@ -1,0 +1,94 @@
+{
+  "citation": "Blackard, J. (1998). Covertype. DOI:10.24432/C50K5N",
+  "classes": [
+    "Spruce/Fir",
+    "Lodgepole Pine",
+    "Ponderosa Pine",
+    "Cottonwood/Willow",
+    "Aspen",
+    "Douglas-fir",
+    "Krummholz"
+  ],
+  "condition": "natural",
+  "created_utc": "2026-10-12T17:17:26.449880+00:00",
+  "dataset": "covertype",
+  "dedup_audit": {
+    "canonical_development_rows": 581012,
+    "development_duplicate_groups": 0,
+    "excluded_conflicting_label_rows": 0,
+    "excluded_redundant_development_rows": 0,
+    "excluded_test_overlap_rows": 0,
+    "native_development_rows": 581012,
+    "native_test_redundant_full_record_rows": 0,
+    "native_test_rows": 0,
+    "test_labels_used_for_exclusions": false
+  },
+  "files_sha256": {
+    "features.npy": "cb4eab76306a67841743f02db1633efbcd813baf6610f7598438270e6fea88af",
+    "labels.npy": "9acdb93911b00f09e470cf825a958be8cabb8f9e52901e9d4906eff8e10659e5",
+    "split.npz": "84ff83b6ac0355f53a16c55d8bee340877b88f65601466c892da6b8c537c4e5c"
+  },
+  "fitted_preprocessing": "none; downstream transforms must fit train indices only",
+  "license": "CC BY 4.0 (current UCI dataset page); retain original attribution notice",
+  "n_classes": 7,
+  "preparation_source_sha256": "0974b57c45a010d92016b35b51d481badabc5594f91dc99cd25f9364ad206919",
+  "protocol_fingerprint": "4fe73bc52c7adba63ba20a54adffc40192453085efb67f450c4a833ba923946d",
+  "rank_semantics": "ordered_class_ids_head_to_tail",
+  "row_id_semantics": "zero-based original source row; native train precedes native test",
+  "rows": 581012,
+  "source": {
+    "citation": "Blackard, J. (1998). Covertype. DOI:10.24432/C50K5N",
+    "created_utc": "2026-10-12T17:16:58.858024+00:00",
+    "dataset": "covertype",
+    "distribution": "uci-original-gzip",
+    "files": {
+      "covtype.data.gz": {
+        "bytes": 11240707,
+        "sha256": "614360d0257557dd1792834a85a1cdebfadc3c4f30b011d56afee7ffb5b15771",
+        "url": "https://archive.ics.uci.edu/ml/machine-learning-databases/covtype/covtype.data.gz"
+      }
+    },
+    "license": "CC BY 4.0 (current UCI dataset page); retain original attribution notice",
+    "version": 1
+  },
+  "source_page": "https://archive.ics.uci.edu/dataset/31/covertype",
+  "split_class_counts": {
+    "calibration": [
+      31776,
+      42495,
+      5363,
+      412,
+      1423,
+      2605,
+      3076
+    ],
+    "test": [
+      31776,
+      42496,
+      5364,
+      413,
+      1425,
+      2606,
+      3078
+    ],
+    "train": [
+      148288,
+      198310,
+      25027,
+      1922,
+      6645,
+      12156,
+      14356
+    ]
+  },
+  "split_counts": {
+    "calibration": 87150,
+    "test": 87158,
+    "train": 406704
+  },
+  "split_protocol": "stratified 70/15/15 after exact development deduplication; floor train/cal per class",
+  "split_seed": 1729,
+  "task_type": "tabular",
+  "unused_source_rows": 0,
+  "version": 1
+}

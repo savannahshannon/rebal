@@ -1,0 +1,720 @@
+{
+  "archive": "REBAL_Nonimage_Experimental_Evidence.zip",
+  "archive_bytes": 1815731419,
+  "archive_sha256": "9a7e05d766a9c21794e4289860bafda6624323d70ba4ea205ac23e676b800407",
+  "builder_sha256": "e5a5d5adfb491dd01f4471587fb02e5ac8e38225bf9ec50501235589d4a5e698",
+  "entries": {
+    "CHECK_ARCHIVE.py": {
+      "bytes": 2606,
+      "sha256": "2ca1e71e3232d121dd6a16da7aed5f762fff93bff65c95b7dbf132dc20b20a87"
+    },
+    "MANIFEST.json": {
+      "bytes": 28813,
+      "sha256": "ea92a0d7759ac25b402e35a81c00da4d1df123769fb5f862771df9048366f7d2"
+    },
+    "PROVENANCE.json": {
+      "bytes": 2564,
+      "sha256": "526246125c1cb3c3d7d9c739a9724df36df7517e3625685b662573b6dd0bc917"
+    },
+    "README.md": {
+      "bytes": 4613,
+      "sha256": "464fe1a95851d3d9a69c79fbccc91125f1b985806f023023c07a83a9d9a1db83"
+    },
+    "data/nonimage/covertype/natural/labels.npy": {
+      "bytes": 4648224,
+      "sha256": "9acdb93911b00f09e470cf825a958be8cabb8f9e52901e9d4906eff8e10659e5"
+    },
+    "data/nonimage/covertype/natural/metadata.json": {
+      "bytes": 2861,
+      "sha256": "564ec1b3ce1cb61f5f4872103a0a449230694821469b3adb084f4505c9b40f80"
+    },
+    "data/nonimage/covertype/natural/split.npz": {
+      "bytes": 1861063,
+      "sha256": "84ff83b6ac0355f53a16c55d8bee340877b88f65601466c892da6b8c537c4e5c"
+    },
+    "data/nonimage/dbpedia/rho10/labels.npy": {
+      "bytes": 5040128,
+      "sha256": "31510dd84dafbe1e9511864f8a75d496e9630195f917ad4f21a92bf3671ea8a9"
+    },
+    "data/nonimage/dbpedia/rho10/metadata.json": {
+      "bytes": 4694,
+      "sha256": "f196b0e6be8dc11f3910709ff4994772111f8b84136d0a241788ec9179193b47"
+    },
+    "data/nonimage/dbpedia/rho10/split.npz": {
+      "bytes": 732523,
+      "sha256": "dedb90fe5652e2c134c2d9d5fecdeffa88ac07d75c0b499b4a2b9eb75aa07371"
+    },
+    "data/nonimage/dbpedia/rho100/labels.npy": {
+      "bytes": 5040128,
+      "sha256": "31510dd84dafbe1e9511864f8a75d496e9630195f917ad4f21a92bf3671ea8a9"
+    },
+    "data/nonimage/dbpedia/rho100/metadata.json": {
+      "bytes": 4682,
+      "sha256": "f49298e75b2dab0a6e4822ca8e18a6be2aab917c81594f0cb877fafb6a5e0c62"
+    },
+    "data/nonimage/dbpedia/rho100/split.npz": {
+      "bytes": 476687,
+      "sha256": "e64a5dc9e260417ee351e9d46056556ee7bb89ea36e75ee6d4b4e7d51aa71c9f"
+    },
+    "data/nonimage/sources/covertype/source.json": {
+      "bytes": 550,
+      "sha256": "720f302f4fe449414c29eeb03be9ed061d9fa9e2180c74850de6827b7052e203"
+    },
+    "data/nonimage/sources/dbpedia/source.json": {
+      "bytes": 1254,
+      "sha256": "15c41e3d48c486702c465c170292ca8c3851322a7876c1b6a9fe71979bc5cdee"
+    },
+    "packaging/build_evidence_package.py": {
+      "bytes": 29826,
+      "sha256": "e5a5d5adfb491dd01f4471587fb02e5ac8e38225bf9ec50501235589d4a5e698"
+    },
+    "references.json": {
+      "bytes": 8111,
+      "sha256": "1d4e7a47c4a5227458de7a21f1d19aa91db07a27c20e2092a32dcc4cc082627f"
+    },
+    "repository/LICENSE": {
+      "bytes": 1073,
+      "sha256": "ab3d0ea88322e9875616c77b7eca05e7fc1c56d7b5f657f1a1149d3433a9560a"
+    },
+    "repository/docs/nonimage_experiment.md": {
+      "bytes": 13913,
+      "sha256": "0f78e10737caa95ad7e1a320ffac00dcb76047417439b26d35a0ac8ec48c0dde"
+    },
+    "repository/requirements-nonimage.txt": {
+      "bytes": 586,
+      "sha256": "1889f14ae0ca264f25e9e2d27217f7c601ef68a77f3c9760a5b1774a38550aa1"
+    },
+    "repository/scripts/prepare_nonimage.py": {
+      "bytes": 26256,
+      "sha256": "0974b57c45a010d92016b35b51d481badabc5594f91dc99cd25f9364ad206919"
+    },
+    "repository/scripts/train_nonimage.py": {
+      "bytes": 42878,
+      "sha256": "be58b2706400b85340736c0ca0e3f07cbcb23895c4d07e92a6789de86d072b21"
+    },
+    "repository/scripts/train_tiny_fullscale.py": {
+      "bytes": 39983,
+      "sha256": "3d9de9336c7dc636f641286eddc0e9290f532048ea669d5eb934ed7ef123b61d"
+    },
+    "repository/scripts/verify_nonimage.py": {
+      "bytes": 28614,
+      "sha256": "cdc93b840851a0e7f71d4c6075750c730d023a10de24d60431e1fcc900fbd4a8"
+    },
+    "repository/tests/test_nonimage.py": {
+      "bytes": 10616,
+      "sha256": "466b81cd747096efb2ed4a8cfb7b70bb7c7bf2cef15427b3e5d8d510705e7045"
+    },
+    "repository/tests/test_tiny_fullscale.py": {
+      "bytes": 8376,
+      "sha256": "62bdd1ba7bba0708e8ad6eac277dfed70c114310fc78c110708642f8f07e817f"
+    },
+    "repository/tests/test_verify_nonimage.py": {
+      "bytes": 7760,
+      "sha256": "d77df900f61bd3e966dce3d5928621d81c6182887ed82713fbc5307e915f7b4b"
+    },
+    "study/aggregate.json": {
+      "bytes": 322926,
+      "sha256": "aa7380f83410c4eb87f070e8d700f5695928c4f8fd1d0766da507bebbc8621bd"
+    },
+    "study/covertype__natural/seed_0/cb/history.json": {
+      "bytes": 16996,
+      "sha256": "ceda2e67931834c609b65aaffd49b42b075ffe7f71fbd184ddd33e1cac7ba70a"
+    },
+    "study/covertype__natural/seed_0/cb/knn.json": {
+      "bytes": 1055,
+      "sha256": "52f5023ee3a78a770c90dca6254d54cab1a36292303e60faf5632362f60f9d32"
+    },
+    "study/covertype__natural/seed_0/ce/history.json": {
+      "bytes": 16998,
+      "sha256": "2f4d3e74c411258a7e7262c896daa36333cd1b8ae6a7ab41fcbdaa52c4063556"
+    },
+    "study/covertype__natural/seed_0/ce/knn.json": {
+      "bytes": 1055,
+      "sha256": "c6f4005d59c295373d8a59ecf5f404e84cb3365fa1ebd6faaa98cea05f8b2589"
+    },
+    "study/covertype__natural/seed_0/fit_indices.npy": {
+      "bytes": 3253760,
+      "sha256": "14cb872dfa122e38ab85f84b4cf91977ef717e01df32f413be9a2667b71903e6"
+    },
+    "study/covertype__natural/seed_0/metrics.json": {
+      "bytes": 96841,
+      "sha256": "c2a12ed25781627515148234a59643bf49936da447ae5cd0acf652b8c9bd5d52"
+    },
+    "study/covertype__natural/seed_0/predictions.npz": {
+      "bytes": 120846394,
+      "sha256": "4bc1b3480ad05c4867163fde76bbdcd7add341893f7462c37f07fb8524492744"
+    },
+    "study/covertype__natural/seed_0/rebal/history.json": {
+      "bytes": 16973,
+      "sha256": "30f2fc907cf7b694840c753fe04a03c46b1ea1fbdeadd32c5e5e7bf66b6b9d68"
+    },
+    "study/covertype__natural/seed_0/rebal/knn.json": {
+      "bytes": 1057,
+      "sha256": "148d54b8b30fd0fe543e08df6b91f9041527472276c7e29c4ef9ae296945b8d4"
+    },
+    "study/covertype__natural/seed_1/cb/history.json": {
+      "bytes": 17012,
+      "sha256": "08cc2d79a3c715bee35b37cc3daf8871eed300a0a4c77244bfaf5cd6539f4d19"
+    },
+    "study/covertype__natural/seed_1/cb/knn.json": {
+      "bytes": 1054,
+      "sha256": "ed6a0bfb43a34f199021405fbd91d2f689ac44701594f19eaac0976ccb51cc6f"
+    },
+    "study/covertype__natural/seed_1/ce/history.json": {
+      "bytes": 17009,
+      "sha256": "aef739b2def409c42b8acf0be65bea7c0dd4869748ca6dd2e48a9b3869c62d27"
+    },
+    "study/covertype__natural/seed_1/ce/knn.json": {
+      "bytes": 1054,
+      "sha256": "0a2d30c064e7274ed7e94e641a9f4513ead467904101b1ea4267635ceef21fef"
+    },
+    "study/covertype__natural/seed_1/fit_indices.npy": {
+      "bytes": 3253760,
+      "sha256": "14cb872dfa122e38ab85f84b4cf91977ef717e01df32f413be9a2667b71903e6"
+    },
+    "study/covertype__natural/seed_1/metrics.json": {
+      "bytes": 96817,
+      "sha256": "35a5bace1aefa377a67eca65ae99caa0233bac3b471c1fe85d91f331b3bdefbe"
+    },
+    "study/covertype__natural/seed_1/predictions.npz": {
+      "bytes": 120469020,
+      "sha256": "c24a18b89f44a48c4f228836114dc4be950341af876975107fbe007c29838066"
+    },
+    "study/covertype__natural/seed_1/rebal/history.json": {
+      "bytes": 16993,
+      "sha256": "00e157fc5ec9530090216a044eeca4744459e0aab392fa54de505744c619142d"
+    },
+    "study/covertype__natural/seed_1/rebal/knn.json": {
+      "bytes": 1056,
+      "sha256": "0cd8e04ac46205b34e994d688d1025e95587f899b086db25025ad3bfe011d83a"
+    },
+    "study/covertype__natural/seed_2/cb/history.json": {
+      "bytes": 16996,
+      "sha256": "9ef614d944e004151846b472daccbe7887e43a33f47dc9c4961bfd5058fe422e"
+    },
+    "study/covertype__natural/seed_2/cb/knn.json": {
+      "bytes": 1054,
+      "sha256": "ad1daa68e026ce804d8c65b7194d714a58c08b4665ae809b9a574881615ebfc7"
+    },
+    "study/covertype__natural/seed_2/ce/history.json": {
+      "bytes": 17005,
+      "sha256": "db1fde814436e850e40589042300a0557e17d82b12014cf6f83fd1bc2eb59dda"
+    },
+    "study/covertype__natural/seed_2/ce/knn.json": {
+      "bytes": 1054,
+      "sha256": "bc7a5ddf687e294cefc84faff317129d544333911f7444daaecefe03bc46e021"
+    },
+    "study/covertype__natural/seed_2/fit_indices.npy": {
+      "bytes": 3253760,
+      "sha256": "14cb872dfa122e38ab85f84b4cf91977ef717e01df32f413be9a2667b71903e6"
+    },
+    "study/covertype__natural/seed_2/metrics.json": {
+      "bytes": 96783,
+      "sha256": "5d885977ff3f08e809c5e01840ed1bd0cd3ed9b994e1d9a5d349eaea2384b553"
+    },
+    "study/covertype__natural/seed_2/predictions.npz": {
+      "bytes": 120756323,
+      "sha256": "ab9b6e7101a624d2f7b155ca38846eed3cc143984c1694e13b70dca8c4702686"
+    },
+    "study/covertype__natural/seed_2/rebal/history.json": {
+      "bytes": 16981,
+      "sha256": "3037a7625ea4764ad3710e7345b7e1d3c9735710b13a69587d7d20a22bbc98f4"
+    },
+    "study/covertype__natural/seed_2/rebal/knn.json": {
+      "bytes": 1057,
+      "sha256": "ce0be800632e61a3b66efdefc040cd7f2bb9aca2df424bf30670c394995caedc"
+    },
+    "study/covertype__natural/seed_3/cb/history.json": {
+      "bytes": 16992,
+      "sha256": "1677d25b3676e12217cd5ac5bcbeff356a25ff9b551be327e18389f495b7c0ad"
+    },
+    "study/covertype__natural/seed_3/cb/knn.json": {
+      "bytes": 1053,
+      "sha256": "21242b71b5ba485f5ddf86645d2fdd091381c451afb491e9ec8e22016bb881af"
+    },
+    "study/covertype__natural/seed_3/ce/history.json": {
+      "bytes": 16993,
+      "sha256": "d28c4c8e6a9520c6febc46333608d8163746e099e84256c285c0645df02c9a57"
+    },
+    "study/covertype__natural/seed_3/ce/knn.json": {
+      "bytes": 1051,
+      "sha256": "4e5cdfa8eecb446c5e8ac105de72e7f36fe913a59144ddee814b006b29df26cc"
+    },
+    "study/covertype__natural/seed_3/fit_indices.npy": {
+      "bytes": 3253760,
+      "sha256": "14cb872dfa122e38ab85f84b4cf91977ef717e01df32f413be9a2667b71903e6"
+    },
+    "study/covertype__natural/seed_3/metrics.json": {
+      "bytes": 96820,
+      "sha256": "ce451a624edc9c14d14366a078188fb25824fb4d9d8c1b1f1f44cc7c791966fd"
+    },
+    "study/covertype__natural/seed_3/predictions.npz": {
+      "bytes": 120718572,
+      "sha256": "6513e47176582cb5b181b61ab61526d3be0d34f3f125e64f2173a9cf78ce6b0e"
+    },
+    "study/covertype__natural/seed_3/rebal/history.json": {
+      "bytes": 17005,
+      "sha256": "3f6588f0ebf3dd4438348ef16a5f6441109916c7550d8b5d16dceb139cfa96de"
+    },
+    "study/covertype__natural/seed_3/rebal/knn.json": {
+      "bytes": 1057,
+      "sha256": "b7c69cdf5ce48bebfeada909df95006a3f7dc7ef545986653edafbdd6a02a677"
+    },
+    "study/covertype__natural/seed_4/cb/history.json": {
+      "bytes": 16999,
+      "sha256": "b9f3a2f8c29dd57f95c5c9d67d5550932395c451fdff60b8cb533a0cd8a2f208"
+    },
+    "study/covertype__natural/seed_4/cb/knn.json": {
+      "bytes": 1054,
+      "sha256": "e5345ee52e46af538debe2add9e47444a90a60953f805378de475b2319b773ea"
+    },
+    "study/covertype__natural/seed_4/ce/history.json": {
+      "bytes": 16989,
+      "sha256": "3c9daff8060bc794a385b7709e2b5d9fd58b7ce23353b7ed17a8e278d0b7ed7d"
+    },
+    "study/covertype__natural/seed_4/ce/knn.json": {
+      "bytes": 1054,
+      "sha256": "e2ac2bf367844a13c0a212463d6ee17b2d407cd2b467e3fa3932f73861162161"
+    },
+    "study/covertype__natural/seed_4/fit_indices.npy": {
+      "bytes": 3253760,
+      "sha256": "14cb872dfa122e38ab85f84b4cf91977ef717e01df32f413be9a2667b71903e6"
+    },
+    "study/covertype__natural/seed_4/metrics.json": {
+      "bytes": 96837,
+      "sha256": "5e6f8d1e9da2132b4ab081405ebf9d1009f51f303a3b4a3380a0d69303890520"
+    },
+    "study/covertype__natural/seed_4/predictions.npz": {
+      "bytes": 120607430,
+      "sha256": "1aff8ea1e19d19d1ff28238d7e6844b1904bb14d733bd96155bb1fb5f39c5bbb"
+    },
+    "study/covertype__natural/seed_4/rebal/history.json": {
+      "bytes": 17003,
+      "sha256": "31e5043b19a69674f6d19be224a52fef81e82b52cfaa24669b9a3403f1d5f92e"
+    },
+    "study/covertype__natural/seed_4/rebal/knn.json": {
+      "bytes": 1058,
+      "sha256": "38aac2a03a4c33ca98964ce24a640051a6c94b3b6c680327f915972be1f3c900"
+    },
+    "study/covertype__natural/transforms/excluded_ecod.npy": {
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    "study/covertype__natural/transforms/fit_indices.npy": {
+      "bytes": 3253760,
+      "sha256": "14cb872dfa122e38ab85f84b4cf91977ef717e01df32f413be9a2667b71903e6"
+    },
+    "study/covertype__natural/transforms/scaler.npz": {
+      "bytes": 553,
+      "sha256": "c35f34f7fcd975a17f974688332a35ed91b93320697d9d6a61139ef443124afe"
+    },
+    "study/covertype__natural/transforms/transforms.json": {
+      "bytes": 1202,
+      "sha256": "a343f2f86f437b018a2b5aa9b1d784d8e97153a35bdf31083082bccb69b67917"
+    },
+    "study/dbpedia__rho10/seed_0/cb/history.json": {
+      "bytes": 20146,
+      "sha256": "e84f0ba9ebd53d1a3c8e0c4f57ec5c482d115653b8f4f484e0eabc3c16c16288"
+    },
+    "study/dbpedia__rho10/seed_0/cb/knn.json": {
+      "bytes": 1048,
+      "sha256": "aceb12eb6670802c9fb3e92928d33752545dcc7887d9f43d7594d240583fedb7"
+    },
+    "study/dbpedia__rho10/seed_0/ce/history.json": {
+      "bytes": 20149,
+      "sha256": "20f40e880a05e5a45b647fd57077c918800220c0f03d62fb2ac874b2ed2bbc70"
+    },
+    "study/dbpedia__rho10/seed_0/ce/knn.json": {
+      "bytes": 1049,
+      "sha256": "d67df140b34c130697f32ef842f5fb501b243c7a27c1a4b6d0d22dee887c0c41"
+    },
+    "study/dbpedia__rho10/seed_0/fit_indices.npy": {
+      "bytes": 1621872,
+      "sha256": "ccfdd6b58ec99b2125d8b837f2be88bad353f88b2af433170738ba133acb1fed"
+    },
+    "study/dbpedia__rho10/seed_0/metrics.json": {
+      "bytes": 169818,
+      "sha256": "9f72de0eaa0ccd971861537d41514282d64a630ad8632b4515efa6709306673c"
+    },
+    "study/dbpedia__rho10/seed_0/predictions.npz": {
+      "bytes": 125900978,
+      "sha256": "3d94be8221cd1849b445cf9fb0d0ef87963d48d4259d9da6b1d59c1e60816bcc"
+    },
+    "study/dbpedia__rho10/seed_0/rebal/history.json": {
+      "bytes": 20136,
+      "sha256": "1946bbc444d5ca13cd44d3a6a5ca49ca91974c0023673f1e6ac8cc6d2352575c"
+    },
+    "study/dbpedia__rho10/seed_0/rebal/knn.json": {
+      "bytes": 1051,
+      "sha256": "f58d14b343f59293b1db533914dd5e8e1e30d400c7dadc6134a7878f4df3b725"
+    },
+    "study/dbpedia__rho10/seed_1/cb/history.json": {
+      "bytes": 20147,
+      "sha256": "f193da26a9b4580ecb454f6c351fd5120b59c66844134f5f6177d23fe818aa54"
+    },
+    "study/dbpedia__rho10/seed_1/cb/knn.json": {
+      "bytes": 1048,
+      "sha256": "eba00673b180063502755fc258542433dc94c7d937eb919989b5592ea063a44f"
+    },
+    "study/dbpedia__rho10/seed_1/ce/history.json": {
+      "bytes": 20151,
+      "sha256": "160fad3a159ce51a0c3dc97d91f21d1e6ce4724537814de5dc8720aa02977222"
+    },
+    "study/dbpedia__rho10/seed_1/ce/knn.json": {
+      "bytes": 1048,
+      "sha256": "1020b36f11558c02602616033f86b66bcd8fc8f7ebbd82ceb71994e736f41d7f"
+    },
+    "study/dbpedia__rho10/seed_1/fit_indices.npy": {
+      "bytes": 1621872,
+      "sha256": "ccfdd6b58ec99b2125d8b837f2be88bad353f88b2af433170738ba133acb1fed"
+    },
+    "study/dbpedia__rho10/seed_1/metrics.json": {
+      "bytes": 169856,
+      "sha256": "c5f97c8cf2164f162492ad08375aabf6818f5dbe450af4dacf8867694bf2ae32"
+    },
+    "study/dbpedia__rho10/seed_1/predictions.npz": {
+      "bytes": 125990597,
+      "sha256": "18ad086a0aecd176f5371e405d636ca9255a23c06bfb532b924d2107b8cd8d3f"
+    },
+    "study/dbpedia__rho10/seed_1/rebal/history.json": {
+      "bytes": 20136,
+      "sha256": "e2bbff344bf3b4d59a596c3096bf16f744b29f44e9c5016603bbc23bd38fded8"
+    },
+    "study/dbpedia__rho10/seed_1/rebal/knn.json": {
+      "bytes": 1051,
+      "sha256": "f18321f0a44681fb43698ca472163ef024fa53dae3db072e114790b99a4f68f3"
+    },
+    "study/dbpedia__rho10/seed_2/cb/history.json": {
+      "bytes": 20153,
+      "sha256": "26772ae0844c5f0244a0f695256a3603542311cd56c69127f18527cab02c19e1"
+    },
+    "study/dbpedia__rho10/seed_2/cb/knn.json": {
+      "bytes": 1048,
+      "sha256": "2be29052f478d3a41cb93d0e13d4ab14231ca081a7b37a1c2d8eaa2802d2dccd"
+    },
+    "study/dbpedia__rho10/seed_2/ce/history.json": {
+      "bytes": 20141,
+      "sha256": "ffd43de153bb11c80bb2dcf790e5beedaacff83f22e8935c78dbcaa525f33a9c"
+    },
+    "study/dbpedia__rho10/seed_2/ce/knn.json": {
+      "bytes": 1048,
+      "sha256": "8fc0c41be59d733363917b7808030e109955671c45a12443c7ada9c38ca07519"
+    },
+    "study/dbpedia__rho10/seed_2/fit_indices.npy": {
+      "bytes": 1621872,
+      "sha256": "ccfdd6b58ec99b2125d8b837f2be88bad353f88b2af433170738ba133acb1fed"
+    },
+    "study/dbpedia__rho10/seed_2/metrics.json": {
+      "bytes": 170068,
+      "sha256": "d27e504ac34c865b73bf895eba0039ab7e280af8d30b9025cbbb51c4c47a21bb"
+    },
+    "study/dbpedia__rho10/seed_2/predictions.npz": {
+      "bytes": 125981000,
+      "sha256": "6cc4ef73083ea71a97d3eb8b1a5ba6ac4610d6d506ccf05521d3367c268b149b"
+    },
+    "study/dbpedia__rho10/seed_2/rebal/history.json": {
+      "bytes": 20148,
+      "sha256": "9e591961d7baa611a8750a3f360978c1bbcfd438bda8f723cd9949f9cfc52226"
+    },
+    "study/dbpedia__rho10/seed_2/rebal/knn.json": {
+      "bytes": 1051,
+      "sha256": "6d0b4ef24313846b6e4d9c128ce0886d5dc6881ce4ccbe4cee2ad550a4f3c24f"
+    },
+    "study/dbpedia__rho10/seed_3/cb/history.json": {
+      "bytes": 20153,
+      "sha256": "09446e71ee829bd01ecfc809f4f5cec736cd7904c0b6e1f95e873a2600b3e8f3"
+    },
+    "study/dbpedia__rho10/seed_3/cb/knn.json": {
+      "bytes": 1048,
+      "sha256": "c854f6f36f1216fd93fbad77704de0136125c4728c728afd105fa1da21abc160"
+    },
+    "study/dbpedia__rho10/seed_3/ce/history.json": {
+      "bytes": 20161,
+      "sha256": "47261a89ba3398380ee2b1c997d582efd4a12a3c6016664d44a2521ff1e8e66f"
+    },
+    "study/dbpedia__rho10/seed_3/ce/knn.json": {
+      "bytes": 1048,
+      "sha256": "78fb0221455dcc436db40244b59f31ae94f5741bb91cfe047d985fa0c1c1448f"
+    },
+    "study/dbpedia__rho10/seed_3/fit_indices.npy": {
+      "bytes": 1621872,
+      "sha256": "ccfdd6b58ec99b2125d8b837f2be88bad353f88b2af433170738ba133acb1fed"
+    },
+    "study/dbpedia__rho10/seed_3/metrics.json": {
+      "bytes": 170136,
+      "sha256": "5d7e3ce34f89441b4467d7fe51c765a83a51befde449dbe86b4a3e4826981649"
+    },
+    "study/dbpedia__rho10/seed_3/predictions.npz": {
+      "bytes": 125966224,
+      "sha256": "f529d891f3ddcb0d77b737e32f2699d5eaae9cc980b2bf16efa253e4ad10260e"
+    },
+    "study/dbpedia__rho10/seed_3/rebal/history.json": {
+      "bytes": 20144,
+      "sha256": "41f5cd1caa9a805c4edec0cbd2163bd68dbddd2692acd344d25ccfba1afbf85d"
+    },
+    "study/dbpedia__rho10/seed_3/rebal/knn.json": {
+      "bytes": 1051,
+      "sha256": "a075f8bca30b81ee68e7339b3339c183db5a5c86b8a4a89655e0e1524940532c"
+    },
+    "study/dbpedia__rho10/seed_4/cb/history.json": {
+      "bytes": 20150,
+      "sha256": "a410823fe6a113c53b6ce6a7cdd0421f9440548e9517f0f4dd33da87078254f0"
+    },
+    "study/dbpedia__rho10/seed_4/cb/knn.json": {
+      "bytes": 1048,
+      "sha256": "1854c706954a89aa32572ab0340eda997696c9fa41d9df35a89cc80798a54d89"
+    },
+    "study/dbpedia__rho10/seed_4/ce/history.json": {
+      "bytes": 20159,
+      "sha256": "9ec9f47e4c24f4230e53840b3b31cf57952be9d25337279885834d05489b060f"
+    },
+    "study/dbpedia__rho10/seed_4/ce/knn.json": {
+      "bytes": 1049,
+      "sha256": "b2d82b64618521db755b4256c5cf796947c6b906ca4f6604c7bed09409992c12"
+    },
+    "study/dbpedia__rho10/seed_4/fit_indices.npy": {
+      "bytes": 1621872,
+      "sha256": "ccfdd6b58ec99b2125d8b837f2be88bad353f88b2af433170738ba133acb1fed"
+    },
+    "study/dbpedia__rho10/seed_4/metrics.json": {
+      "bytes": 169946,
+      "sha256": "e7dd442ce9b88897d5237e79fc6f8c5915254b52752750fc3742ca37204ed4d9"
+    },
+    "study/dbpedia__rho10/seed_4/predictions.npz": {
+      "bytes": 126237660,
+      "sha256": "2a9146f39abd2546b9cec770888cd50100a73b0755a012afd2edf1c17e1f4946"
+    },
+    "study/dbpedia__rho10/seed_4/rebal/history.json": {
+      "bytes": 20148,
+      "sha256": "7ce44d1db1c114d6d4358ffa0984587ae1a7bc110e7c72b04693e71e8a1692a4"
+    },
+    "study/dbpedia__rho10/seed_4/rebal/knn.json": {
+      "bytes": 1051,
+      "sha256": "fe7f70d1cdcf365a20d07c716d8321aa28e5112877e3264078d264dd64ab8d19"
+    },
+    "study/dbpedia__rho10/transforms/excluded_ecod.npy": {
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    "study/dbpedia__rho10/transforms/fit_indices.npy": {
+      "bytes": 1621872,
+      "sha256": "ccfdd6b58ec99b2125d8b837f2be88bad353f88b2af433170738ba133acb1fed"
+    },
+    "study/dbpedia__rho10/transforms/transforms.json": {
+      "bytes": 4654,
+      "sha256": "33b3e6e32616410213ea91ff0fc56af98d4962ecf70b168c5acd706fd22bfa95"
+    },
+    "study/dbpedia__rho100/seed_0/cb/history.json": {
+      "bytes": 20806,
+      "sha256": "c6c381439e3a4157588c102a1116e925d5f8f33b28651d33097b97c8e7e6176c"
+    },
+    "study/dbpedia__rho100/seed_0/cb/knn.json": {
+      "bytes": 1050,
+      "sha256": "c3d62b4f6d5c4055c4384fcb895fb85a9f78eba137b4d80afee6d44e3cb3f1d5"
+    },
+    "study/dbpedia__rho100/seed_0/ce/history.json": {
+      "bytes": 20814,
+      "sha256": "215ea47fc0f694109c70a38394210a4b2dc4190c4b98812ab463e5975d692410"
+    },
+    "study/dbpedia__rho100/seed_0/ce/knn.json": {
+      "bytes": 1050,
+      "sha256": "798b4c5d23f6ea8bd75fdb130ea150a581c1f4a3beee4858c8b5bc68e461239e"
+    },
+    "study/dbpedia__rho100/seed_0/fit_indices.npy": {
+      "bytes": 956536,
+      "sha256": "af2ce1cbaa00b30503817879150566f12eb3d2c85c1afd74aa5ea0d56d1ad0a8"
+    },
+    "study/dbpedia__rho100/seed_0/metrics.json": {
+      "bytes": 170607,
+      "sha256": "5890d51a17efa53590c2cf128467fff90cfb3532b76a6bf226366f53240eb8b6"
+    },
+    "study/dbpedia__rho100/seed_0/predictions.npz": {
+      "bytes": 113133452,
+      "sha256": "b50aa6e53f1e8c8cd164282d34716ddc3e90e6025a1d314cd71146ccb5c976c8"
+    },
+    "study/dbpedia__rho100/seed_0/rebal/history.json": {
+      "bytes": 20804,
+      "sha256": "3050599044cbfa5791fe0fde0db810b0b87dd9e78d59ae5a6702dbbb7b7db4b8"
+    },
+    "study/dbpedia__rho100/seed_0/rebal/knn.json": {
+      "bytes": 1053,
+      "sha256": "9670df26eec8524482fff91db6b18943c5a658eea785746819906631e0c43308"
+    },
+    "study/dbpedia__rho100/seed_1/cb/history.json": {
+      "bytes": 20829,
+      "sha256": "cf18005ec40b61d491fe13b00a3e82d5157c4b87b634a3bfb34564106a93d034"
+    },
+    "study/dbpedia__rho100/seed_1/cb/knn.json": {
+      "bytes": 1049,
+      "sha256": "154603151a18ff818b94af145c3c6eb14044d634b5aff797957e8804071f3447"
+    },
+    "study/dbpedia__rho100/seed_1/ce/history.json": {
+      "bytes": 20821,
+      "sha256": "292b08a9a8eb1138b672da5c69ddd8687466eb80ac18196f739068d9101d1df5"
+    },
+    "study/dbpedia__rho100/seed_1/ce/knn.json": {
+      "bytes": 1050,
+      "sha256": "1e37b951ebea1dccc711e75f25834e96d007413fe2dce3d3e8cfa4c1717662ec"
+    },
+    "study/dbpedia__rho100/seed_1/fit_indices.npy": {
+      "bytes": 956536,
+      "sha256": "af2ce1cbaa00b30503817879150566f12eb3d2c85c1afd74aa5ea0d56d1ad0a8"
+    },
+    "study/dbpedia__rho100/seed_1/metrics.json": {
+      "bytes": 170563,
+      "sha256": "7ee56200bd78bf2a6bef7347bf0e02042b0ae487fe93c3ca067f621b0e134705"
+    },
+    "study/dbpedia__rho100/seed_1/predictions.npz": {
+      "bytes": 113019192,
+      "sha256": "82169233d59d7d2f91d8cf0c604390e9ac0050614b4f3f680944a7d332ba786a"
+    },
+    "study/dbpedia__rho100/seed_1/rebal/history.json": {
+      "bytes": 20815,
+      "sha256": "0b61f8da9aaa331591b27950c21e69d617f183125965296ecde347a39e492430"
+    },
+    "study/dbpedia__rho100/seed_1/rebal/knn.json": {
+      "bytes": 1053,
+      "sha256": "9e2ac206f0b0350d56e48c5eecf5f4b901d7cc80da49285674c9030c31897a84"
+    },
+    "study/dbpedia__rho100/seed_2/cb/history.json": {
+      "bytes": 20824,
+      "sha256": "1e1dd6dd624bdb0d758a939854992522cfc8eddb120521a202d272ca905922f5"
+    },
+    "study/dbpedia__rho100/seed_2/cb/knn.json": {
+      "bytes": 1050,
+      "sha256": "93a8ef582ec55bcc0968c5a804e61f66c5824c9c55ff3ecf543db43dbfa39c78"
+    },
+    "study/dbpedia__rho100/seed_2/ce/history.json": {
+      "bytes": 20823,
+      "sha256": "3dea7907ffe5090256f148c2a72de61b1919bb0053055c16f64a3c325a1564e9"
+    },
+    "study/dbpedia__rho100/seed_2/ce/knn.json": {
+      "bytes": 1049,
+      "sha256": "e799d99b7a41a98cc7e871639a32a9be9a7aed653d9f8bac2317e8902ed6910d"
+    },
+    "study/dbpedia__rho100/seed_2/fit_indices.npy": {
+      "bytes": 956536,
+      "sha256": "af2ce1cbaa00b30503817879150566f12eb3d2c85c1afd74aa5ea0d56d1ad0a8"
+    },
+    "study/dbpedia__rho100/seed_2/metrics.json": {
+      "bytes": 170416,
+      "sha256": "a3ed4cd4defdf2c34c514870ed6ec7ac6e59a83c5b1f951dc1811679aeb467bc"
+    },
+    "study/dbpedia__rho100/seed_2/predictions.npz": {
+      "bytes": 113069340,
+      "sha256": "67b864b26af96800d2fd47a2ded54b2386fbffab2d5fddebafc656a6bd6fb9f2"
+    },
+    "study/dbpedia__rho100/seed_2/rebal/history.json": {
+      "bytes": 20813,
+      "sha256": "ff0a2d4d9105956384d3dd9f3cfb4154e76e956fe8ce590fd971c8661dae0df8"
+    },
+    "study/dbpedia__rho100/seed_2/rebal/knn.json": {
+      "bytes": 1053,
+      "sha256": "6897a88ffe3360cfe01431035f772c61f02c85b5db98372effc78693143110c6"
+    },
+    "study/dbpedia__rho100/seed_3/cb/history.json": {
+      "bytes": 20801,
+      "sha256": "14c48cf03676c3ad41e0f63eefdc7f2d1c8107e3589ce631a43e7fa800156548"
+    },
+    "study/dbpedia__rho100/seed_3/cb/knn.json": {
+      "bytes": 1049,
+      "sha256": "d4736b581d5fe8718af07919bcbfca0275ee21edecf1c3cf77a4c215945efced"
+    },
+    "study/dbpedia__rho100/seed_3/ce/history.json": {
+      "bytes": 20815,
+      "sha256": "51f8b2d88aa98d9cb7b1a02b629b077a7606ab08a50421d8e0eedb8b43ce0b74"
+    },
+    "study/dbpedia__rho100/seed_3/ce/knn.json": {
+      "bytes": 1050,
+      "sha256": "d23c30144ca4ad28e06ad81859719e24ea64c06549efe739053020e6006343a0"
+    },
+    "study/dbpedia__rho100/seed_3/fit_indices.npy": {
+      "bytes": 956536,
+      "sha256": "af2ce1cbaa00b30503817879150566f12eb3d2c85c1afd74aa5ea0d56d1ad0a8"
+    },
+    "study/dbpedia__rho100/seed_3/metrics.json": {
+      "bytes": 170588,
+      "sha256": "04216aebe06c6758710228a970dc127e7f5d4adb0f7b546a0f1a6dc7c22c750e"
+    },
+    "study/dbpedia__rho100/seed_3/predictions.npz": {
+      "bytes": 112946999,
+      "sha256": "57c06b549cd56f001a6dcf0923a335e8d6d3768906a6878273a4c41a450a310f"
+    },
+    "study/dbpedia__rho100/seed_3/rebal/history.json": {
+      "bytes": 20797,
+      "sha256": "2e408ae2ea2a6ea017af588d3b6df2d1598697d31b7020e55fa2dca67402c39a"
+    },
+    "study/dbpedia__rho100/seed_3/rebal/knn.json": {
+      "bytes": 1053,
+      "sha256": "826b48efb230adcdc9c6a46bb38287efd60fcbf5c0d48fab81e4959c8c2cc0e1"
+    },
+    "study/dbpedia__rho100/seed_4/cb/history.json": {
+      "bytes": 20824,
+      "sha256": "843afc18916159549d789e6fe77514b1614fa072a67d109e3a881ea33d2b2129"
+    },
+    "study/dbpedia__rho100/seed_4/cb/knn.json": {
+      "bytes": 1048,
+      "sha256": "f62f82d698023cb86b9b7c6e2092d74f3b787746ce34b349fb8b8877abab1261"
+    },
+    "study/dbpedia__rho100/seed_4/ce/history.json": {
+      "bytes": 20826,
+      "sha256": "d624211dfba114f2e61d89e90ab8cdb2b32328e8d715fe995a645e3823b18f73"
+    },
+    "study/dbpedia__rho100/seed_4/ce/knn.json": {
+      "bytes": 1049,
+      "sha256": "221499af3638f1b33fa9bec949c2ba9d5e3e512c2125778349c6bd4f5e15200f"
+    },
+    "study/dbpedia__rho100/seed_4/fit_indices.npy": {
+      "bytes": 956536,
+      "sha256": "af2ce1cbaa00b30503817879150566f12eb3d2c85c1afd74aa5ea0d56d1ad0a8"
+    },
+    "study/dbpedia__rho100/seed_4/metrics.json": {
+      "bytes": 170502,
+      "sha256": "3edd4e23f03cf4e6ecd45b83e6141f023adb572cf670e33880f10233e22e28e1"
+    },
+    "study/dbpedia__rho100/seed_4/predictions.npz": {
+      "bytes": 113115236,
+      "sha256": "c9106fd72f3f3d38aebe2eba9afcdeaae745a1e2c93bfa5eacfd7dc21ddd41c2"
+    },
+    "study/dbpedia__rho100/seed_4/rebal/history.json": {
+      "bytes": 20823,
+      "sha256": "9ea3de8271578d8dfea382057fb5839c7ad17cf19e6d7c0ad4ce7ed6f5192372"
+    },
+    "study/dbpedia__rho100/seed_4/rebal/knn.json": {
+      "bytes": 1052,
+      "sha256": "1dd074173726c54d75c7fb116fc19bacc7ae80330114c2952804affbadc45f83"
+    },
+    "study/dbpedia__rho100/transforms/excluded_ecod.npy": {
+      "bytes": 128,
+      "sha256": "e734dac55ea9fbbe782af2d8c02c3c5992131906228afb2aaaf137d6f3ed74db"
+    },
+    "study/dbpedia__rho100/transforms/fit_indices.npy": {
+      "bytes": 956536,
+      "sha256": "af2ce1cbaa00b30503817879150566f12eb3d2c85c1afd74aa5ea0d56d1ad0a8"
+    },
+    "study/dbpedia__rho100/transforms/transforms.json": {
+      "bytes": 4612,
+      "sha256": "3459d669aee37825e6a75f8a02b333ed09bfbc4682aec72aaba614bbf578d7ab"
+    },
+    "study/protocol.json": {
+      "bytes": 3220,
+      "sha256": "36f2559c92ee2c16488c2fef8d5e873a2ece9b9ed0f6e741225698abee020593"
+    },
+    "study/verification.json": {
+      "bytes": 358758,
+      "sha256": "39cd61c37f9a268cefa5ede02250edfadc6202dd320c9777593d2657a9134005"
+    }
+  },
+  "entries_count": 175,
+  "exclusions": [
+    "Raw Covertype feature rows, DBpedia title/content records, and source gzip/parquet archives.",
+    "Transformed input arrays, token caches, and fitted vocabulary text.",
+    "Model and optimizer checkpoints, trained head state files, and kNN graph arrays.",
+    "Controller and worker logs, connection records, private paths, and operational notes."
+  ],
+  "independent_verification_sha256": "39cd61c37f9a268cefa5ede02250edfadc6202dd320c9777593d2657a9134005",
+  "payload_bytes": 1855620433,
+  "protocol_fingerprint": "03e25e8a0dd6f9f1f7cd9db1daaba2850e04e2857d55cb6d0be5e41b241de0a5",
+  "readback": "Every ZIP entry rehashed successfully",
+  "version": 1
+}

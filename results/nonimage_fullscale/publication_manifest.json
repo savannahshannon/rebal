@@ -1,0 +1,28 @@
+{
+  "scope": "Completed 15-cell non-image study; 405 independently recomputed readouts",
+  "protocol": "03e25e8a0dd6f9f1f7cd9db1daaba2850e04e2857d55cb6d0be5e41b241de0a5",
+  "report_visual_review": "All 11 pages reviewed; 81 method rows and six contrasts independently checked",
+  "runtime_seconds": 3361,
+  "file_sha256": {
+    "experimental_report.pdf": "3e534370d059d5a56240e6ca7dad3fa95b12241b7e959c21c91fdf14a355854a",
+    "summary.csv": "1476c2c6beafc9e2c53fcb158bff2f24ed4552a275d3b5053df21ed5ae1ed8ae",
+    "per_seed_results.csv": "24c5e22a60ba52b672760638720bc5b8d409cbcf68c99e395a950616b58b5046",
+    "per_class_results.csv": "1c4e0c557387a7ea99e9deca9a2a38537f772b26c794e406920379b689d5bf71",
+    "paired_comparisons.csv": "66356b35f4beae83aa63dd41cbed2fd177196a4687c529329a7ad53313fa8b15",
+    "runtimes.csv": "819e9c090dbd482cb774250e0d7a2723007bd456a7b1fc0c20eeff9d27c30c6b",
+    "performance.png": "924970a208722d52d50b60f62da653a5a5a6f389ebbedbc8daf466ec45628e2b",
+    "paired_differences.png": "090b84fd03c169486525d12cedc2506f7f059508bc43c5d3d0120e1d6cff73a9",
+    "runtimes.png": "1a173d762d7374beffb1843e708ed5eeaff2c0c64f9066030681a8c03ebb4d47",
+    "independent_verification.json": "39cd61c37f9a268cefa5ede02250edfadc6202dd320c9777593d2657a9134005",
+    "aggregate.json": "aa7380f83410c4eb87f070e8d700f5695928c4f8fd1d0766da507bebbc8621bd",
+    "protocol.json": "36f2559c92ee2c16488c2fef8d5e873a2ece9b9ed0f6e741225698abee020593",
+    "study_plan.json": "1a247f55f07d6c9d4a62f8d408a5f1bdb370590b65014a76f628e264cd186d41",
+    "covertype_metadata.json": "564ec1b3ce1cb61f5f4872103a0a449230694821469b3adb084f4505c9b40f80",
+    "dbpedia_rho10_metadata.json": "f196b0e6be8dc11f3910709ff4994772111f8b84136d0a241788ec9179193b47",
+    "dbpedia_rho100_metadata.json": "f49298e75b2dab0a6e4822ca8e18a6be2aab917c81594f0cb877fafb6a5e0c62",
+    "evidence_archive_manifest.json": "11da1c4954ec99f6ea119cd38c0d44d872d84640ca2338cbe433ce716da1cf7d",
+    "evidence_archive_audit.json": "bb0f16a7e01e882032ed990ddbafb474d9e71864b84b0bcd9af61a5d678b1362"
+  },
+  "raw_prediction_archive": "Separate local 1,815,731,419-byte evidence ZIP; omitted from Git due size; SHA256 9a7e05d766a9c21794e4289860bafda6624323d70ba4ea205ac23e676b800407",
+  "exclusions": "Raw source data, caches, model/optimizer states, private operational logs and credentials are not Git publication artifacts"
+}

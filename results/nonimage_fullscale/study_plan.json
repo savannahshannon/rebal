@@ -1,0 +1,19 @@
+{
+  "created_utc": "2026-10-12T17:26:55.703736+00:00",
+  "execution": "full_study",
+  "expected_cells": 15,
+  "planned_conditions": [
+    "covertype__natural",
+    "dbpedia__rho10",
+    "dbpedia__rho100"
+  ],
+  "primary_family": 6,
+  "protocol": "03e25e8a0dd6f9f1f7cd9db1daaba2850e04e2857d55cb6d0be5e41b241de0a5",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

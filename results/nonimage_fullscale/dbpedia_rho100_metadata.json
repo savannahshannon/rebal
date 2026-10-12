@@ -1,0 +1,153 @@
+{
+  "calibration_candidate_n_max": 4000,
+  "calibration_thinning": "same rank-dependent retention fractions as training; at least one/class",
+  "candidate_development_counts": [
+    39995,
+    39991,
+    40000,
+    40000,
+    39997,
+    39997,
+    39998,
+    39915,
+    39998,
+    39995,
+    39993,
+    39997,
+    40000,
+    39984
+  ],
+  "citation": "Zhang, X., Zhao, J., LeCun, Y. (2015). Character-level Convolutional Networks for Text Classification. NeurIPS 28.",
+  "classes": [
+    "Company",
+    "EducationalInstitution",
+    "Artist",
+    "Athlete",
+    "OfficeHolder",
+    "MeanOfTransportation",
+    "Building",
+    "NaturalPlace",
+    "Village",
+    "Animal",
+    "Plant",
+    "Album",
+    "Film",
+    "WrittenWork"
+  ],
+  "condition": "rho100",
+  "created_utc": "2026-10-12T17:17:56.115498+00:00",
+  "dataset": "dbpedia",
+  "dedup_audit": {
+    "canonical_development_rows": 559860,
+    "development_duplicate_groups": 96,
+    "excluded_conflicting_label_rows": 0,
+    "excluded_redundant_development_rows": 121,
+    "excluded_test_overlap_rows": 19,
+    "limitation": "No claim of paraphrase/entity-level deduplication; native test duplicates retained and counted",
+    "native_development_rows": 560000,
+    "native_test_redundant_full_record_rows": 0,
+    "native_test_rows": 70000,
+    "normalization": "NFKC + Unicode casefold + collapsed whitespace; full title/content and nonempty content-only SHA256 keys",
+    "test_labels_used_for_exclusions": false
+  },
+  "feasible_train_n_max": 35915,
+  "files_sha256": {
+    "labels.npy": "31510dd84dafbe1e9511864f8a75d496e9630195f917ad4f21a92bf3671ea8a9",
+    "split.npz": "e64a5dc9e260417ee351e9d46056556ee7bb89ea36e75ee6d4b4e7d51aa71c9f",
+    "texts.jsonl": "7acf0c568b67d366f0ab562b6fc9b5cf9a87dd32c168c34a3819419aac420af1"
+  },
+  "fitted_preprocessing": "none; downstream transforms must fit train indices only",
+  "license": "CC BY-SA 3.0 and GNU Free Documentation License (DBpedia-14 dataset card); preserve attribution/license notices",
+  "n_classes": 14,
+  "preparation_source_sha256": "0974b57c45a010d92016b35b51d481badabc5594f91dc99cd25f9364ad206919",
+  "protocol_fingerprint": "0d66ca55b56f5f2beebb3bd415212dad35dd84bc0c3a0cf7b16772f785d9355a",
+  "rank_seed": 2026,
+  "rank_semantics": "ordered_class_ids_head_to_tail",
+  "requested_rho": 100.0,
+  "row_id_semantics": "zero-based original source row; native train precedes native test",
+  "rows": 630000,
+  "source": {
+    "citation": "Zhang, X., Zhao, J., LeCun, Y. (2015). Character-level Convolutional Networks for Text Classification. NeurIPS 28.",
+    "created_utc": "2026-10-12T17:16:58.928774+00:00",
+    "dataset": "dbpedia",
+    "distribution": "huggingface-parquet",
+    "files": {
+      "dbpedia_14/test-00000-of-00001.parquet": {
+        "bytes": 13272475,
+        "sha256": "05fed41640e97f93ffd442757f6a84170348cf0c7500ecbda9e95ddcd928c631",
+        "url": "https://huggingface.co/datasets/fancyzhx/dbpedia_14/resolve/9abd46cf7fc8b4c64290f26993c540b92aa145ac/dbpedia_14/test-00000-of-00001.parquet?download=true"
+      },
+      "dbpedia_14/train-00000-of-00001.parquet": {
+        "bytes": 106151899,
+        "sha256": "0640e4664a99cc94c47db1d7b2e01c14455d5bbecb8183ad1f93bde59f3f28ee",
+        "url": "https://huggingface.co/datasets/fancyzhx/dbpedia_14/resolve/9abd46cf7fc8b4c64290f26993c540b92aa145ac/dbpedia_14/train-00000-of-00001.parquet?download=true"
+      }
+    },
+    "hf_repo": "fancyzhx/dbpedia_14",
+    "license": "CC BY-SA 3.0 and GNU Free Documentation License (DBpedia-14 dataset card); preserve attribution/license notices",
+    "metadata_url": "https://huggingface.co/api/datasets/fancyzhx/dbpedia_14",
+    "revision": "9abd46cf7fc8b4c64290f26993c540b92aa145ac",
+    "version": 1
+  },
+  "source_page": "https://github.com/zhangxiangxiao/Crepe",
+  "split_class_counts": {
+    "calibration": [
+      680,
+      2806,
+      477,
+      235,
+      57,
+      164,
+      4000,
+      81,
+      1969,
+      1382,
+      40,
+      335,
+      969,
+      115
+    ],
+    "test": [
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000,
+      5000
+    ],
+    "train": [
+      6110,
+      25201,
+      4287,
+      2111,
+      511,
+      1481,
+      35915,
+      729,
+      17684,
+      12409,
+      359,
+      3008,
+      8707,
+      1039
+    ]
+  },
+  "split_counts": {
+    "calibration": 13310,
+    "test": 70000,
+    "train": 119551
+  },
+  "split_protocol": "native test intact; 4000 calibration candidates/class before matched long-tail thinning",
+  "split_seed": 1729,
+  "task_type": "text",
+  "unused_source_rows": 427139,
+  "version": 1
+}

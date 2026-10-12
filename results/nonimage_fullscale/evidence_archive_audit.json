@@ -1,0 +1,31 @@
+{
+  "archive": "REBAL_Nonimage_Experimental_Evidence.zip",
+  "archive_bytes": 1815731419,
+  "archive_comment_empty": true,
+  "archive_sha256": "9a7e05d766a9c21794e4289860bafda6624323d70ba4ea205ac23e676b800407",
+  "audit_source_sha256": "9d3d13fb5478411c8b63918a49159d638df649f20c169a842f59f6536fec945e",
+  "audited_utc": "2026-10-12T18:25:11.266495+00:00",
+  "builder_sha256": "e5a5d5adfb491dd01f4471587fb02e5ac8e38225bf9ec50501235589d4a5e698",
+  "entries_rehashed": 175,
+  "excluded": [
+    "Raw Covertype feature rows, DBpedia title/content records, and source gzip/parquet archives.",
+    "Transformed input arrays, token caches, and fitted vocabulary text.",
+    "Model and optimizer checkpoints, trained head state files, and kNN graph arrays.",
+    "Controller and worker logs, connection records, private paths, and operational notes."
+  ],
+  "full_study_verification_sha256": "39cd61c37f9a268cefa5ede02250edfadc6202dd320c9777593d2657a9134005",
+  "inner_and_outer_manifest_agreement": true,
+  "limitations": "Pattern-based privacy scan; numerical consistency audit. The reduced package does not repeat audits of omitted raw source/model/transform bytes and makes no superiority claim.",
+  "numeric_array_entries_header_checked": 43,
+  "portable_checker": {
+    "cells": 15,
+    "full_model_source_audit_repeated": false,
+    "method_superiority_claimed": false,
+    "readouts": 405,
+    "status": "archive_hashes_and_test_metrics_verified"
+  },
+  "private_path_credential_account_network_and_signed_url_scan": "passed",
+  "relative_paths_only": true,
+  "status": "archive_integrity_privacy_and_portable_recheck_passed",
+  "text_entries_privacy_scanned": 132
+}
