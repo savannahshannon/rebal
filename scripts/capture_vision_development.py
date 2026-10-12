@@ -1,0 +1,16 @@
+"""Retain and independently check selected-epoch development predictions."""
+from pathlib import Path
+import argparse,importlib.util,json,math
+import numpy as np
+import torch
+spec=importlib.util.spec_from_file_location('vision_science',Path(__file__).with_name('benchmark_vision_followup.py'));b=importlib.util.module_from_spec(spec);spec.loader.exec_module(b)
+p=argparse.ArgumentParser();p.add_argument('--out',type=Path,required=True);p.add_argument('--partition',type=Path,required=True);p.add_argument('--deit-cache',type=Path,required=True);p.add_argument('--archive',type=Path,required=True);p.add_argument('--original-manifest',type=Path,required=True);p.add_argument('--deit-weights',type=Path,required=True);p.add_argument('--dino-weights',type=Path,required=True);p.add_argument('--device',default='mps');p.add_argument('--threads',type=int,default=1);p.add_argument('--epochs',type=int,default=15);p.add_argument('--batch-size',type=int,default=128);p.add_argument('--eval-batch',type=int,default=256);args=p.parse_args();torch.set_num_threads(args.threads)
+torch.set_num_interop_threads(1);torch.use_deterministic_algorithms(True,warn_only=args.device!='cpu')
+protocol,split,y,order=b.prepare(args);b.validate_extraction(args,protocol);selection=json.loads((args.out/'selection.json').read_text());records=[]
+for name,obj in b.ARMS:
+ for seed,lr,target in [(901,lr,args.out/'tuning'/(name+'__'+obj)/str(lr)) for lr in ([1e-5,3e-5] if name=='deit_last2' else [.001,.003])]+[(seed,selection['selection'][name+'__'+obj]['lr'],args.out/'final'/(name+'__'+obj)/str(seed)) for seed in range(10,20)]:
+  identity=dict(protocol=protocol['fingerprint'],name=name,objective=obj,seed=seed,lr=lr);receipt=b.validate_training_receipt(args,target,identity,math.ceil(len(split['fit'])/args.batch_size));model,a,lookup,scaler=b.create_training_model(args,split,name,seed);checkpoint=torch.load(target/'checkpoint.pt',map_location=args.device,weights_only=False);b.validate_checkpoint(checkpoint,model,identity,b.extractor.state_hash(model),args.epochs,math.ceil(len(split['fit'])/args.batch_size));model.load_state_dict(checkpoint['best_state'])
+  tune=b.logits_for(model,a,lookup,split['tune'],scaler,args);cal=b.logits_for(model,a,lookup,split['calibration'],scaler,args);counts=np.bincount(y[split['fit']],minlength=200);prior=counts/counts.sum() if obj=='ce' else np.ones(200)/200;tau,curve=b.calibration(cal,y[split['calibration']],prior,order);score=b.metric(tune-tau*np.log(prior),y[split['tune']],order)['macro_f1'];b.require(abs(score-receipt['best_tune'])<1e-12,'Selected checkpoint does not reproduce tuning score')
+  np.savez_compressed(target/'selected_development_logits.npz',tune_logits=tune,calibration_logits=cal)
+  row=dict(identity=identity,best_epoch=receipt['best_epoch'],selected_tau=tau,tuning_macro_f1=score,calibration_curve=curve,predictions_sha256=b.sha(target/'selected_development_logits.npz'));b.write_json(target/'development_capture.json',row);records.append(row);print(json.dumps(dict(stage='development_capture',arm=name+'__'+obj,seed=seed)),flush=True)
+b.write_json(args.out/'development_capture_complete.json',dict(protocol=protocol['fingerprint'],models=72,confirmation_accessed=False,selection_sha256=b.sha(args.out/'selection.json'),records=records))
