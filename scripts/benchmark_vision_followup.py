@@ -133,6 +133,8 @@ def prepare(args):
     protocol=dict(version=VERSION,source_sha256=sha(__file__),source_helper_sha256=sha(extractor.__file__),packages={k:importlib.metadata.version(k) for k in ('torch','torchvision','timm','numpy')},partition_sha256=sha(args.partition),deit_cache_manifest_sha256=sha(Path(args.deit_cache)/'manifest.json'),
         official_archive_sha256=extractor.OFFICIAL_ARCHIVE_SHA256,dino_weight_sha256=DINO_SHA,deit_weight_sha256=extractor.ENCODERS['deit_tiny']['expected_sha256'],
         source_rows=110000,prefix_rows=len(ids),fit_rows=len(split['fit']),tune_rows=len(split['tune']),cal_rows=len(split['calibration']),confirmation_rows=len(split['confirmation']),settings=settings)
+    # Canonicalize tuples to JSON arrays before comparing later phase receipts.
+    protocol=json.loads(json.dumps(protocol))
     protocol['fingerprint']=fingerprint(protocol)
     path=args.out/'protocol.json'
     if path.exists():
