@@ -4,6 +4,10 @@
 
 The `kishor_dev` branch adds a [completed Tiny ImageNet transfer study](docs/tiny_imagenet_experiment.md), an [experimental report](results/tiny_imagenet_transfer/experimental_report.pdf), and a [source reproducibility audit](docs/source_audit_2026-10-12.md). The study covers five paired seeds, three imbalance levels, seven methods, and two fixed optimization budgets. It evaluates classifier rebalancing on shared frozen ImageNet-pretrained features; it does not reproduce end-to-end REBAL-F or establish representation gains. Original CIFAR results below are preserved historical reports, not newly rerun results.
 
+The [completed Covertype/DBpedia non-image study](docs/nonimage_experiment.md) trains a tabular MLP and a word-embedding mean-pooling model from scratch. All 15 cells, 45 representations, 135 retrained classifiers and 405 readouts passed [independent verification](results/nonimage_fullscale/independent_verification.json). The [report](results/nonimage_fullscale/experimental_report.pdf) preserves every control: interpolation adds a small 0.149-point macro-F1 gain over ROS on Covertype and near-zero gains on text; equalization shows no consistent benefit under these settings. Balanced heads on Covertype remain below natural retraining.
+
+A separate [GAN-free ViT feature encoder plus REBAL comparison](docs/vit_rebal_experiment.md) is running with matched 224-pixel DeiT-tiny and ResNet18 feature caches. Its complete 30-cell result is pending; no interim accuracy claim is made.
+
 Use `requirements-tiny.txt` in a separate environment for this extension. The original launcher and aggregators also receive path/protocol checks and corrected CSV region labels; open scientific comparison issues are documented in the audit.
 
 Code and aggregated results for the paper *"When Image Synthesis Hurts: Feature-Space Rebalancing for Long-Tailed Recognition"* (Shannon, submitted 2026).
