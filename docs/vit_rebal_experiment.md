@@ -2,11 +2,33 @@
 
 ## Status and question
 
-Protocol specified on October 12, 2026, before inspecting results from this comparison. Implementation and execution are in progress; no ViT performance result is claimed yet. The user selected a ViT feature encoder with REBAL, rather than a ViT image generator.
+Protocol specified on October 12, 2026, before inspecting comparison results, and completed the same day. All 30 cells, 90 trained adapters, 270 retrained classifiers, 810 readouts and 360 calibration curves passed independent verification. Every adapter completed 50 epochs and each retrained classifier completed 2,000 updates. The user selected a GAN-free ViT feature encoder with REBAL.
 
 The question is whether a frozen ViT encoder improves the performance of a trained REBAL feature adapter and its classifiers relative to a frozen convolutional encoder under the same downstream conditions. The primary ViT is the official **non-distilled DeiT-tiny/16**, pretrained on ImageNet-1K, with 192-dimensional class-token features. The convolutional comparator is torchvision ResNet18 with `IMAGENET1K_V1` weights and 512-dimensional pooled features.
 
 Both paths are GAN-free. This is a new encoder comparison, not a causal estimate of replacing a GAN: a GAN synthesizes images, whereas these encoders extract features. Existing repository GAN results concern a different CIFAR experiment and remain historical context. They cannot be subtracted from these Tiny ImageNet results to estimate a GAN effect. The separate from-scratch remote ResNet32 study and earlier frozen ResNet18/64px transfer study also remain distinct experiments.
+
+## Verified results
+
+The [experimental report](../results/vit_rebal/experimental_report.pdf), [all-method summary](../results/vit_rebal/summary.csv), [paired contrasts](../results/vit_rebal/paired_comparisons.csv), [seed-level results](../results/vit_rebal/per_seed_results.csv), [aggregate](../results/vit_rebal/aggregate.json), and [independent verification](../results/vit_rebal/independent_verification.json) retain every declared control.
+
+Primary encoder comparison: CB+EQ adapter plus streaming-SMOTE classifier. Macro-F1 is in percent; mean +/- sample SD across five paired seeds. Effect intervals are unadjusted paired-t 95% intervals in percentage points.
+
+| Nominal ratio | ResNet18 + REBAL-SMOTE | DeiT-tiny + REBAL-SMOTE | DeiT minus ResNet, 95% interval |
+|---|---:|---:|---:|
+| 10:1 | 55.55 +/- 0.41 | 64.40 +/- 0.14 | +8.85 [+8.24, +9.46] |
+| 50:1 | 46.54 +/- 0.63 | 59.12 +/- 0.63 | +12.58 [+11.49, +13.67] |
+| 100:1 | 41.48 +/- 0.56 | 54.90 +/- 0.91 | +13.42 [+12.53, +14.30] |
+
+All five paired encoder effects are positive at every ratio. The large observed gains have parametric support (Holm-adjusted paired-t p approximately 0.0000313, 0.0000730 and 0.0000285), but the five-pair exact sign-flip tests have raw p=0.0625 and adjusted p=0.9375. The t intervals are not familywise intervals, and a five-seed normality assumption is difficult to assess. This is an encoder-package comparison; pretraining recipes, feature widths, capacity and adapter input projections differ.
+
+**The encoder gain does not establish an advantage for every REBAL component.** SMOTE-minus-ROS macro-F1 effects range from -0.123 to +0.093 percentage points across the six encoder/ratio conditions, with every paired-t interval crossing zero. Equalization-minus-CB with natural classifier retraining has a tiny negative mean in all six conditions (-0.0007 to -0.0201 points), with intervals crossing zero. These findings do not prove equivalence or rule out effects under other schedules.
+
+A prespecified but descriptively compared calibrated control, CE+LA, has higher mean macro-F1 than REBAL-SMOTE in all six conditions. For DeiT, CE+LA reaches **64.93%, 60.11%, and 56.37%**, versus **64.40%, 59.12%, and 54.90%** for REBAL-SMOTE. The CE+LA-versus-REBAL comparison is outside the primary 15-contrast family and is not a new confirmatory test. This is not dominance across every metric: DeiT REBAL-SMOTE has higher tail-F1 than CE+LA by 0.925, 1.993 and 3.045 points, respectively; at nominal 100:1 the tail values are 45.98% versus 42.93%. The complete tables also preserve CB, native CB+EQ, NCM, natural retraining, ROS, SMOTE and all LA views. Tail and NCM comparisons remain descriptive/exploratory rather than replacing the prespecified macro-F1 endpoint.
+
+All ratio labels are nominal. Integer thinning produces realized maximum/minimum fit ratios 445/44=10.11:1, 445/8=55.625:1 and 445/4=111.25:1.
+
+Three CPU workers, each using four PyTorch threads, completed downstream training and aggregation in **13 minutes 43 seconds**. Frozen feature extraction ran separately on MPS for all 110,000 source images per encoder: recorded inference time was about 165.46 seconds for ResNet18 and 160.29 seconds for DeiT, excluding cache persistence and hashing. All 81 repository tests passed before full training. The independent verifier checks stored logits and artifact consistency without rerunning the frozen encoders or loading pickle model states.
 
 ## Data and preprocessing
 
@@ -79,7 +101,25 @@ python scripts/extract_vit_comparison_features.py extract \
 
 Select `--device cpu` or a separately validated CUDA environment when MPS is unavailable; do not silently change the backend of a partial cache. Extraction resumes only with the same source, code, weights, preprocessing and runtime plan, and rechecks every committed feature block. Cached vectors contain all110,000 source images in the original order. Final manifests are written only after both arrays are complete and hashed. Acquisition refuses to overwrite an incomplete weight directory; preserve it for investigation and choose a fresh destination.
 
-The adapter runner is `scripts/benchmark_vit_rebal.py`. Its `--pilot-steps` mode is restricted to fitted training rows and does not evaluate calibration/test images, construct neighbors or save benchmark scores. `scripts/verify_vit_rebal.py` independently checks the final30-cell production study, including raw predictions, calibration choices, fit-only scalers, reconstructed splits, optimization budgets and the15-comparison family. Device and measured-runtime details will be added after the pilots and complete run are verified.
+The adapter runner is `scripts/benchmark_vit_rebal.py`. Its `--pilot-steps` mode is restricted to fitted training rows and does not evaluate calibration/test images, construct neighbors or save benchmark scores. `scripts/verify_vit_rebal.py` independently checks the final30-cell production study, including raw predictions, calibration choices, fit-only scalers, reconstructed splits, optimization budgets and the15-comparison family. The completed run used CPU for adapters and exact neighbors, selected by train-only throughput pilots; all scientific budgets were fixed before scoring.
+
+
+The full serial command below reproduces the declared scientific grid. To run three CPU workers, first initialize with `--aggregate-only`, then run this same command for distinct `--worker-index 0`, `1`, and `2`, each with `--worker-count 3 --defer-aggregate`. Aggregate once with the same settings and `--aggregate-only` after all workers exit successfully. Keep scientific settings and source unchanged for resume.
+
+```sh
+OMP_NUM_THREADS=4 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 python -u scripts/benchmark_vit_rebal.py \
+  --features data/vit_comparison_224/resnet18 data/vit_comparison_224/deit_tiny \
+  --out experiments/vit_rebal_full_cpu --device cpu --knn-device cpu --threads 4 \
+  --seeds 0 1 2 3 4 --rhos 10 50 100 --epochs 50 --warmup-epochs 5 \
+  --batch-size 1024 --lr 0.05 --head-steps 2000 --head-batch-size 2048
+
+python scripts/verify_vit_rebal.py \
+  --features data/vit_comparison_224/resnet18 data/vit_comparison_224/deit_tiny \
+  --run experiments/vit_rebal_full_cpu --archive data/tiny-imagenet-200.zip \
+  --out experiments/vit_rebal_full_cpu/independent_verification.json
+```
+
+Require `verified_complete`, 30/30 cells, 810 verified readouts, 360 calibration curves, no missing cells and an independently recomputed aggregate. Preserve the raw predictions and current artifact hashes. A separate complete local evidence archive contains all saved base logits, reconstructed-view definitions, split/scaler/history/source metadata and a portable checker; its size exceeds the ordinary Git upload limit. Raw source images, encoder weights/features, model states, full neighbor arrays and private operational logs are excluded from publication, with original artifact hashes retained where applicable.
 
 ## Sources
 
