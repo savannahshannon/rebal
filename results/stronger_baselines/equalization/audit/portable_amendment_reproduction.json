@@ -1,0 +1,31 @@
+{
+  "status": "prospective_amendment_semantically_reproduced",
+  "semantic_fields": [
+    "status",
+    "protocol",
+    "selection",
+    "analysis_amendment",
+    "amendment_sha256",
+    "original_aggregate_sha256",
+    "independent_verification_sha256",
+    "seeds",
+    "completed_tuning_cells",
+    "confirmation_cells",
+    "readouts",
+    "summary",
+    "paired_comparisons",
+    "primary_family_size",
+    "secondary_comparisons",
+    "source_and_training_unchanged",
+    "primary_role",
+    "historical_runner_primary_role",
+    "inference_limit"
+  ],
+  "frozen_amended_aggregate_sha256": "d01fa2c535892c6d929afb4461b0abfd020c7624eeb0226f41ec57f64c434d27",
+  "reproduced_aggregate_sha256": "b70c0b572f16bb87dfa627207d0b1e61e37a0a5d073ce38b1f551668db2b49b1",
+  "maximum_numeric_discrepancy": 0,
+  "primary_comparisons": 6,
+  "secondary_comparisons": 2,
+  "scientific_source_sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705",
+  "protocol": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1"
+}
