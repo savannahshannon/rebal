@@ -28,6 +28,12 @@ DECLARED_NAMES = {
              ('last1_bsoftmax','last0_bsoftmax'),('last2_bsoftmax','last0_bsoftmax')]},
     'tabular': {a+'__minus__mlp_ce_la' for a in ['ft_transformer_la','xgboost_la','mlp_cb_la']},
 }
+# The frozen vision runner names its DINO loss contrast with `_dino_frozen`.
+# Keep the previously declared report identifier; only this exact source alias
+# is accepted. Its paired observations and statistical family remain unchanged.
+IDENTIFIER_ALIASES = {
+    'vision': {'balanced_softmax_vs_ce_dino_frozen': 'balanced_softmax_vs_ce_dino'},
+}
 
 def require(condition, message):
     if not condition:
@@ -102,6 +108,7 @@ def normalize(study, aggregate):
             require(np.isfinite(claim) and abs(claim-replay) < 1e-12, 'Paired statistic mismatch')
         require(np.max(np.abs(np.asarray(claimed_ci)-computed['ci95'])) < 1e-12, 'Paired interval mismatch')
         name = c.get('name', c.get('a', '')+'__minus__'+c.get('b', ''))
+        name = IDENTIFIER_ALIASES.get(study, {}).get(name, name)
         rows.append(dict(study=study, name=name, endpoint='confirmation_macro_f1',
                          seeds=SEEDS, **computed))
     require(len({r['name'] for r in rows}) == len(rows), 'Duplicate comparison identity')
