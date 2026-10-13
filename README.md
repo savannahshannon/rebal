@@ -119,3 +119,10 @@ MIT — see [LICENSE](LICENSE).
 ## Acknowledgments
 
 Baselines reproduce Cui et al. 2019 (class-balanced loss), Cao et al. 2019 (LDAM / LDAM-DRW), Menon et al. 2021 (logit adjustment), and Kang et al. 2020 (decoupled representation-classifier training). The cGAN uses StyleGAN2-ADA (Karras et al. 2020) pretrained on CIFAR-100-LT. Representation evaluation uses the nearest-class-mean protocol as in Snell et al. 2017.
+
+
+## Stronger-baseline follow-up (October 13, 2026)
+
+The [completed follow-up report](results/stronger_baselines/report/experimental_report.pdf) extends the current image, text and tabular studies with stronger controls, protected confirmation partitions and ten paired optimization seeds. It covers 320 image-EQ adapter fits plus 220 linear heads, 12 tuning/60 final image-encoder fits, 26 tuning/130 final Text fits and 8 tuning/40 final Tabular fits. The six, five, eight and three primary paired-comparison families retain improvements, negative effects and non-detections; the 22-comparison global Holm analysis is a separate sensitivity check.
+
+The [evidence overview](results/stronger_baselines/README.md), [reproduction guide](results/stronger_baselines/reproduction/README.md), [final presentation evidence](results/stronger_baselines/evidence.json) and [global analysis](results/stronger_baselines/global_analysis.json) provide source-bound results and audit scopes. The Git evidence scope contains derived tables, protocols, choices, figures, the report and receipts. Complete weight-free raw numeric evidence remains in the separate local archive; a raw catalog in Git does not imply its multi-gigabyte arrays were uploaded. Portable replay loads zero model states, while original actual-state audits cover the retained working-run models. These checks do not establish independent retraining, external replication, probability calibration or a matched GAN-versus-ViT intervention. The earlier repository sections are preserved without rerunning their historical claims in this follow-up.
