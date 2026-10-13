@@ -44,6 +44,25 @@ Tree models use UBJSON; neural states use torch checkpoints. Publication/evidenc
 packaging may omit model weights while retaining the numeric prediction records
 required for replay; original actual-state audits remain separately identified.
 
+## Confirmed results
+
+All values below are percentages on the 58,110 confirmation records. Intervals are unadjusted 95% t intervals across ten optimization seeds on the same fixed partition.
+
+| Model | Raw macro-F1 | Adjusted macro-F1 [95% interval] | Adjusted macro recall | Adjusted uniform-prior macro-F1 | Adjusted tail F1 |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Natural CE MLP | 91.536 | 91.536 [91.427, 91.645] | 91.864 | 91.953 | 85.459 |
+| Effective-number MLP | 88.037 | 88.037 [87.917, 88.156] | 94.824 | 94.816 | 79.035 |
+| Local FT-Transformer | 89.805 | 89.805 [89.570, 90.040] | 90.549 | 90.653 | 82.872 |
+| XGBoost histogram | 93.257 | 93.104 [93.069, 93.140] | 94.003 | 94.050 | 88.731 |
+
+For the three declared adjusted comparisons against CE MLP, XGBoost improves native-prior macro-F1 by 1.568 percentage points (paired interval 1.458 to 1.678), FT is lower by 1.731 points (interval −1.999 to −1.463), and the weighted MLP is lower by 3.500 points (interval −3.629 to −3.370). Each exact sign-flip p-value is 0.001953125, or 0.005859375 after Holm correction across the three comparisons. This comparison supports XGBoost under the declared configurations and budgets; it does not establish a ranking of all possible transformer configurations.
+
+The weighted MLP increases macro recall and uniform-prior diagnostic F1 while reducing native-prior macro-F1 and tail F1. The class prior and endpoint therefore change which trade-off looks favorable. All CE, weighted-MLP and FT fits select tau 0. Every XGBoost fit selects tau 0.25 on calibration data, but its confirmation native-prior macro-F1 decreases from 93.257% raw to 93.104% adjusted. Its macro recall and uniform-prior diagnostic F1 increase. Calibration-set selection did not guarantee improvement of the primary confirmation endpoint.
+
+The production actual-state audit checks all eight tuning trials and forty final fits, covering 84 actual weight files. The integrity overlay checks 78 weight artifacts because its tuning capture check covers the selected weight artifact per trial; the final states are also checked. The separate independent formula auditor reproduces every final metric and calibration candidate with maximum discrepancy 0.0. The independent statistical replay confirms all 64 method/endpoint summaries and all three paired comparisons.
+
+Shared-load final phase wall times are 137.435 minutes for the thirty CPU fits/scoring and 178.362 minutes for the ten FT fits/scoring. The phases overlap. Mean retained training times per fitted model are 449.610 s for CE MLP, 419.821 s for weighted MLP, 371.750 s for XGBoost and 1,035.322 s for FT. These counts distinguish retained training from model preparation, tuning inference, serialization, discarded work and shared-load phase wall time; they do not establish isolated hardware efficiency.
+
 ## Reproduction
 
 The following commands use the study workspace root, with the repository at
@@ -103,7 +122,16 @@ Use Python 3.12 and the recorded package versions: NumPy 2.5.4, SciPy 1.18.1,
 PyTorch 2.14.1, scikit-learn 1.9.1 and XGBoost 3.2.0. This Mac's XGBoost links
 the official Torch package's OpenMP runtime through an operational environment
 variable; no private installation path is required in published protocol files.
-Other platforms should use their supported XGBoost/OpenMP setup. Protocol
+When that OpenMP runtime is needed on macOS, discover it from the active
+environment instead of copying an installation path:
+
+```bash
+export DYLD_LIBRARY_PATH="$(python -c 'from pathlib import Path; import torch; print(Path(torch.__file__).parent / "lib")')"
+```
+
+Other platforms should use their supported XGBoost/OpenMP setup. For CPU training,
+pass `--ft-device cpu` to both pilot and tuning; the controlled final runner
+inherits the frozen protocol device. Protocol
 fingerprints bind package versions, source, data and device settings, so a fresh
 run on a different supported environment receives a different identity rather
 than overwriting the published run's receipts. The two historical source-row
@@ -111,4 +139,4 @@ and transform auditor scripts retain the original relative `work/data` and
 `work/experiments/rebal_next_tabular` acquisition layout; their receipts and
 source hashes document the completed production checks.
 
-Status: implementation, canonical source-row and fit-only transformation audits, training-only pilots, 11 unit tests and complete fixture prediction/statistical replay passed. All eight full-budget tuning trials are complete, their tuning predictions independently reproduce the recorded scores, and the global selection is frozen. Selected settings are width 96 for FT, learning rate 0.003 for both MLP objectives, and depth 10/learning rate 0.04 for XGBoost. The forty final fits are running or trained; calibration/confirmation scoring opens only after the eight capture receipts. Final results, actual-state audits, statistical verification and the weight-free evidence bundle remain in progress.
+Status: all eight full-budget tuning trials and forty final fits are complete, with eighty readouts. Canonical source-row and fit-only transformation audits, 11 model/protocol unit tests, 14 independent prediction-replay tests and a separate read-only peer test replay passed. Global configurations are frozen: FT width 96, MLP learning rate 0.003, and XGBoost depth 10/learning rate 0.04. Complete actual-state, original numeric/integrity, independent formula and independent statistical audits passed. The portable manifest binds the fresh zero-weight replay and preserves original production-state provenance separately.

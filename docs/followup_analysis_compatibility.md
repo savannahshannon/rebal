@@ -1,0 +1,11 @@
+# Follow-up analysis identifier compatibility
+
+Recorded at 2026-10-12T23:50:23.698862+00:00, after inspection of the completed vision aggregate's identifiers.
+
+The frozen vision protocol already declares `balanced_softmax_vs_ce_dino`. Its aggregation code emits `balanced_softmax_vs_ce_dino_frozen`, because it constructs the identifier from the `dino_frozen` arm name. The reporting normalizer now accepts that one exact raw identifier and retains the previously declared canonical report identifier. This is the same contrast: confirmation macro-F1 with the classification decision offset for frozen DINO Balanced Softmax minus frozen DINO CE, paired over optimization seeds 10–19.
+
+This correction changes no hypothesis, observations, training or selection setting, metric, statistical formula, threshold, seed list or Holm family. The vision family remains five comparisons and the combined sensitivity remains twenty-two. Duplicate identities after normalization and genuinely undeclared contrasts remain errors. The completed vision scientific source, aggregate, numeric verifiers and portable bundle were preserved.
+
+The prior analysis helper SHA256 was `2efe587bee9a2c5a1373782f8a8e5ce8b4be69465178e026c7da782cab30a441`; the corrected helper is `faec1269a4a916c8ace36f9333ce149ef19131db6f557188f6744b0055f47953`. The vision scientific source is `20711dd400a1e2c1c926344c91aec8c9bc1157546078a1cf6bf0c67665c6be3f`, and its completed aggregate is `bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539`. An AST comparison confirms that the only executable additions are the exact identifier-alias dictionary and the name lookup in `normalize`; every remaining source AST node is identical.
+
+Six public analysis tests cover raw/canonical equality, input preservation and rejection of undeclared or duplicate identities. Twenty-four report formatter/binding tests pass with a fully synthetic fixture using the raw frozen-runner identifier. Separate checks on the real completed EQ and vision aggregates reproduce every normalized numeric field; their six and five canonical identifiers resolve the existing report labels. Full combined analysis still requires all four complete study aggregates. No missing text or tabular outcomes were supplied for this correction.
