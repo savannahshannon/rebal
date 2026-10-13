@@ -1,0 +1,4 @@
+# Matched frozen ResNet18/DeiT-tiny extraction and REBAL adapter study.
+# Keep this separate from existing environments used by running experiments.
+-r requirements-tiny.txt
+timm==1.0.30
