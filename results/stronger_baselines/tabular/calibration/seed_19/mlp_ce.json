@@ -1,0 +1,59 @@
+{
+  "calibration": {
+    "curve": [
+      {
+        "macro_f1": 0.9175559415139812,
+        "tau": 0.0
+      },
+      {
+        "macro_f1": 0.9145426086963669,
+        "tau": 0.25
+      },
+      {
+        "macro_f1": 0.8992307760771299,
+        "tau": 0.5
+      },
+      {
+        "macro_f1": 0.8771379588897888,
+        "tau": 0.75
+      },
+      {
+        "macro_f1": 0.8505463088495148,
+        "tau": 1.0
+      },
+      {
+        "macro_f1": 0.8254658454400108,
+        "tau": 1.25
+      },
+      {
+        "macro_f1": 0.7967005566843319,
+        "tau": 1.5
+      },
+      {
+        "macro_f1": 0.7380385240571338,
+        "tau": 2.0
+      }
+    ],
+    "prior": [
+      0.3646091506353515,
+      0.487602777449939,
+      0.06153615405798812,
+      0.0047257956646602935,
+      0.016338663991502418,
+      0.0298890593650419,
+      0.03529839883551674
+    ],
+    "selection_part": "calibration",
+    "tau": 0.0,
+    "tie_rule": "smallesttau"
+  },
+  "calibration_ids_array_sha256": "3a34ef0d888c0c4bb9e93d12038761cda77d85233c92bc76ad62f1b6196bbd26",
+  "calibration_logits_array_sha256": "9088dc9bf619231a4ac5842c4127e9001e33e4d5f80da912ed7fad9c615e0372",
+  "created_utc": "2026-10-12T22:34:43Z",
+  "family": "mlp_ce",
+  "fingerprint": "df520293009eb290949b46fe04101093c68e80d8e20aafca8b8b7ae433f5bffb",
+  "freeze": "863207e1b641fc5cd2c903f09b85e06218dac272b858323d77de769ed34546da",
+  "persisted_before_confirmation_inference": true,
+  "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "seed": 19
+}
