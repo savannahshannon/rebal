@@ -1,0 +1,17 @@
+{
+  "status": "verified_numerical_export_complete",
+  "summary_rows": 64,
+  "per_seed_rows": 80,
+  "per_class_rows": 560,
+  "runtime_rows": 40,
+  "contrast_rows": 3,
+  "aggregate_sha256": "a08f2f433bfe51740949ccc0e1057c431a6c65ba50c2d7fbc02afb2e480914e7",
+  "verification_sha256": "2e01d2e80f6197e5776acf9ff6c3ef73aafebf2bd1f2bfaab6e7bcf15287767a",
+  "files": {
+    "per_seed_results.csv": "7c7b4a06ec2f9f608610e3a04bf1f60c7e67efdc92b96a7764a8e8905a40a0d6",
+    "summary.csv": "3bc329009d2bbcd1621c8aab58ddf9f7022a065d9b39bed822b5f2d36560680a",
+    "per_class_results.csv": "eeecc3cd8c2bfd9153a20ade65d1ff47f39615595f9a0f41df63d7c611ec9d50",
+    "paired_comparisons.csv": "74f01c5e1ed706eef2703e5a551cb64b58c29bb0f1af8d9a59aa36243c24fd58",
+    "runtimes.csv": "9b0769135433203fab660c623b815bd527efc74f787e3a62fdf3fa2b9703e179"
+  }
+}
