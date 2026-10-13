@@ -1,0 +1,21 @@
+{
+  "confirmation_access_before_family_freeze": false,
+  "family": "mlp_cb",
+  "fingerprint": "791afd3dec6d6ae247aacfcd8d9f673adb98515844ea0a7c06d5af78a2fae2c9",
+  "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "selected": {
+    "config": {
+      "dropout": 0.1,
+      "lr": 0.003,
+      "weight_decay": 0.0001,
+      "width": 256
+    },
+    "index": 1,
+    "tuning_macro_f1": 0.8845887068067066
+  },
+  "selection_uses_only": "tuning_raw_macro_f1",
+  "trials_sha256": [
+    "079eb54df90f6535d099272dffb7942a9d78e5f62c00d6967e76e8e3a977b2de",
+    "f535b8a1310d0b0db24f7d805ea9c6ad20cbf3727bcaa6e87e89dbd279319bce"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "confirmation_access_before_family_freeze": false,
+  "family": "xgboost",
+  "fingerprint": "eca6d1ec1a7c61e96f8e6323dc573bd0943b353b48fb9942913425c97c2a7688",
+  "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "selected": {
+    "config": {
+      "colsample_bytree": 0.9,
+      "learning_rate": 0.04,
+      "max_depth": 10,
+      "min_child_weight": 1.0,
+      "n_estimators": 600,
+      "reg_lambda": 1.0,
+      "subsample": 0.8
+    },
+    "index": 1,
+    "tuning_macro_f1": 0.932777835042897
+  },
+  "selection_uses_only": "tuning_raw_macro_f1",
+  "trials_sha256": [
+    "2ad0f3c77e5d543f3129f12c98b8c35e1873bfe781d11c980443ad6763cd3026",
+    "48dd7b64bc255a96e06ea0ff9ccca9c108754f429a5c73eb67ebcbedb0610782"
+  ]
+}

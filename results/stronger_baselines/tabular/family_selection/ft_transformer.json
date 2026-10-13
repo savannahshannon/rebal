@@ -1,0 +1,23 @@
+{
+  "confirmation_access_before_family_freeze": false,
+  "family": "ft_transformer",
+  "fingerprint": "d2013a9c1e8daef6ea9b8c9d1ba09f29ff8270b6e63abc5b57236b9a4122d4bf",
+  "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "selected": {
+    "config": {
+      "blocks": 2,
+      "dropout": 0.1,
+      "heads": 4,
+      "lr": 0.0003,
+      "weight_decay": 0.0001,
+      "width": 96
+    },
+    "index": 1,
+    "tuning_macro_f1": 0.9040775643108467
+  },
+  "selection_uses_only": "tuning_raw_macro_f1",
+  "trials_sha256": [
+    "161e8b9603810b85179e69ecde3166ec0e841b7b80751448c2f28e72bc3711d3",
+    "fff296b45bf6c62b381cde47d019253c343e6767bf0a82f9aa86197319e34672"
+  ]
+}
