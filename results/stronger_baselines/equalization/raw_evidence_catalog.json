@@ -1,0 +1,4097 @@
+{
+  "status": "complete_local_weight_free_EQ_numeric_archive_independently_replayed",
+  "identity": {
+    "protocol": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1",
+    "scientific_source_sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705",
+    "selection": "7364508d76a3162df6e91179212826aefd5ec75609165d922bd2f87b13afb9a8",
+    "counts": {
+      "tuning_cells": 320,
+      "confirmation_cells": 10,
+      "confirmation_readouts": 660,
+      "calibration_curves": 330,
+      "primary_comparisons": 6,
+      "secondary_comparisons": 2
+    },
+    "portable_numeric_verification_sha256": "8667ab7e03a04bc2ba275af41aee38b67112ccd7d583f95d183d3e2b3be3eb36",
+    "amendment_replay_sha256": "7f64d1faa21ee2669602b55268afa097459cccdffdaa741149d23937ce28c4d0",
+    "original_actual_state_verification_sha256": "4a16321367f3f798e9cda4fe7afe7765eb80151bec2e50950eb33c70c0669cb2",
+    "original_adapter_states_verified": 320,
+    "original_head_states_verified": 220,
+    "portable_checkpoint_states_loaded": 0,
+    "checkpoint_states_omitted": 540,
+    "archive_scope": "local full raw numeric archive; raw NPZ blobs are not part of the Git publication"
+  },
+  "identity_fingerprint": "c8e15a9aa1155245b7d83bfb768981aa1bb6c1d7aed391439c5d6c4d09616259",
+  "files": {
+    "analysis/aggregate.json": {
+      "bytes": 95516,
+      "sha256": "d01fa2c535892c6d929afb4461b0abfd020c7624eeb0226f41ec57f64c434d27"
+    },
+    "analysis/amendment_verification.json": {
+      "bytes": 6807,
+      "sha256": "a26d770419ffac1b09752ffa1890a02d899d2a7968f0714e917aa9d299f83144"
+    },
+    "analysis/analysis_amendment.json": {
+      "bytes": 3073,
+      "sha256": "78678ee383c2dfac3b1e96a26b38c6c6c2d73b7dad2ae3bf11d0bb9fa81241e4"
+    },
+    "analysis/completion.json": {
+      "bytes": 3440,
+      "sha256": "44c7da003ce766ff602ce8cfdb397a72e85090f8034bf064623f8654761a302c"
+    },
+    "analysis/paired_comparisons.csv": {
+      "bytes": 1119,
+      "sha256": "3975ff0c7778530350d59ec8e7a43f6bed6f914650384a2ca788f6c4ee55a99f"
+    },
+    "analysis/preconfirmation_controller_state.json": {
+      "bytes": 709,
+      "sha256": "a7852165e0bcaebe76e4cd218a0cd4fc61a873deda04211b1630db1dfe8d356c"
+    },
+    "analysis/public_reproduction_receipt.json": {
+      "bytes": 1923,
+      "sha256": "3c8a5cd69111a9f00d6fced2c969673b52b79621865a3ba516c77ccc8377d594"
+    },
+    "analysis/results.md": {
+      "bytes": 12189,
+      "sha256": "ae9e0081a3d8d194bc2c16c4dd158bec62a50b323bceec706530a14299e89a71"
+    },
+    "analysis/secondary_comparisons.csv": {
+      "bytes": 374,
+      "sha256": "58c3d6f7651402ac9a9ed7f152e1646ddd671c97d63b4abda31b39a84eeb9287"
+    },
+    "audit/amended_aggregate_reproduced.json": {
+      "bytes": 97405,
+      "sha256": "b70c0b572f16bb87dfa627207d0b1e61e37a0a5d073ce38b1f551668db2b49b1"
+    },
+    "audit/amendment_reproduction.json": {
+      "bytes": 1040,
+      "sha256": "7f64d1faa21ee2669602b55268afa097459cccdffdaa741149d23937ce28c4d0"
+    },
+    "audit/original_actual_state_verification.json": {
+      "bytes": 1260,
+      "sha256": "4a16321367f3f798e9cda4fe7afe7765eb80151bec2e50950eb33c70c0669cb2"
+    },
+    "audit/portable_numeric_verification.json": {
+      "bytes": 94631,
+      "sha256": "8667ab7e03a04bc2ba275af41aee38b67112ccd7d583f95d183d3e2b3be3eb36"
+    },
+    "data/cache_manifest.json": {
+      "bytes": 15107291,
+      "sha256": "1f19f85e164231aca8e823db2d698d71f7ac413eca4d7b71813ff54cd8434605"
+    },
+    "data/labels.npy": {
+      "bytes": 880128,
+      "sha256": "bfc9d0d71ba3f871c73562509bf99bf20c695f6f1acea031fddaca165d1a5ad9"
+    },
+    "docs/followup_eq.md": {
+      "bytes": 13341,
+      "sha256": "e499227cecb5ef559e2602f273df35c501b1a5fb0aab6081383108074fe53bde"
+    },
+    "figures/fixed_factorial_macro_f1.png": {
+      "bytes": 62426,
+      "sha256": "ed4b2eacd3284fea0407b0e2d6897cc52c6c108807a9842353b979a6650b13ba"
+    },
+    "figures/primary_paired_effects.png": {
+      "bytes": 106003,
+      "sha256": "89ae2b2c58f7aa252d850a2d18a9f161858d8cd97a943ae7871f1e1db54c7d92"
+    },
+    "figures/sampling_eligibility.png": {
+      "bytes": 66450,
+      "sha256": "f97ac3b25da98d26036230ab41498127b8d587d60e9081568cf92c6b80ebc79f"
+    },
+    "run/aggregate.json": {
+      "bytes": 89604,
+      "sha256": "df5f65652c301032a3921894cbbb8132fc7f791fd4ee440e95d2f3129811648c"
+    },
+    "run/confirmation/seed_10/metrics.json": {
+      "bytes": 1049637,
+      "sha256": "4dde4729d6851291446a2eb76c0aaef8d309c195c30599820dfe584d954aba8a"
+    },
+    "run/confirmation/seed_10/predictions.npz": {
+      "bytes": 588423487,
+      "sha256": "dc55ce78fb206dc6f745f9609c07d4fae2d48a7c1a75f8730f91170d57d7afa5"
+    },
+    "run/confirmation/seed_11/metrics.json": {
+      "bytes": 1050098,
+      "sha256": "9dc0cc45aca21851e25497197ec8730aeca3a183fbc3f0f490920b0a68eee336"
+    },
+    "run/confirmation/seed_11/predictions.npz": {
+      "bytes": 588363282,
+      "sha256": "43316a70c8db15d63e9abf863e05750a5afe889021612c399f3b442b66f309d1"
+    },
+    "run/confirmation/seed_12/metrics.json": {
+      "bytes": 1050774,
+      "sha256": "1680cf2cd779e7c9e25d4bb551e8501f4598a570810c78653f239d6990ebaa5c"
+    },
+    "run/confirmation/seed_12/predictions.npz": {
+      "bytes": 588393068,
+      "sha256": "56ec5d7eac56e290de817c4ccf536901def7cf011cedb4fc5ab58033ccdbaa47"
+    },
+    "run/confirmation/seed_13/metrics.json": {
+      "bytes": 1052234,
+      "sha256": "b7f1a2aa743b9d93fa94370aa1dbc3008fb0b1e525622abeb93c79b8ed5aa89d"
+    },
+    "run/confirmation/seed_13/predictions.npz": {
+      "bytes": 588356191,
+      "sha256": "6e6245e9d8684dc8bb883e1f3114446ed7b67e77fba8bf9ae17770a95aeb00f8"
+    },
+    "run/confirmation/seed_14/metrics.json": {
+      "bytes": 1051624,
+      "sha256": "12b557ccd0e80165e2430f3e3a687c7c46f09acc7a44299131461c2abc5a1606"
+    },
+    "run/confirmation/seed_14/predictions.npz": {
+      "bytes": 588290245,
+      "sha256": "89320e7955e7a2a0929d8af412c2bbc1168f19deae3b600a25cb5b8c89b510a9"
+    },
+    "run/confirmation/seed_15/metrics.json": {
+      "bytes": 1050506,
+      "sha256": "036dc254b024d4715468c44084a3f97953e4042931f8e59ea0022eca29987abd"
+    },
+    "run/confirmation/seed_15/predictions.npz": {
+      "bytes": 588322533,
+      "sha256": "7b1c6477f08e7bef3f692edf76c9b648f2aacf2ffcd081f4327b1f1d0ac20e8f"
+    },
+    "run/confirmation/seed_16/metrics.json": {
+      "bytes": 1050919,
+      "sha256": "236dc1a3c3b7e3283393ee53204441eb95d2d30bfc0901ffa5b10bb07a95cd05"
+    },
+    "run/confirmation/seed_16/predictions.npz": {
+      "bytes": 588259080,
+      "sha256": "d8ce40c933997e98701631ee68bc8ac96f2f72ee9d040718c38bdf42c746232c"
+    },
+    "run/confirmation/seed_17/metrics.json": {
+      "bytes": 1050754,
+      "sha256": "08cbec2c250094f53a2cfc753c0b663fa8a67943ae97880379ee59d01d7fc2ec"
+    },
+    "run/confirmation/seed_17/predictions.npz": {
+      "bytes": 588373362,
+      "sha256": "f826be04822d3ed9d602136d111b1fcf5c35de30332ab8f34fda88f9d1aee5aa"
+    },
+    "run/confirmation/seed_18/metrics.json": {
+      "bytes": 1050880,
+      "sha256": "14e60f45ed8f611143ca4c760393cf635cf783eb085021b4bd587668a6a14d65"
+    },
+    "run/confirmation/seed_18/predictions.npz": {
+      "bytes": 588348558,
+      "sha256": "77c22c425663659dbf2144aa4759ccd13134dda1dd6ab68343e4b711e406af12"
+    },
+    "run/confirmation/seed_19/metrics.json": {
+      "bytes": 1050023,
+      "sha256": "f422f815c262bbbc867f2692c784a1584ecc511fe131fce312e2d5aa037bd449"
+    },
+    "run/confirmation/seed_19/predictions.npz": {
+      "bytes": 588351585,
+      "sha256": "2fc5bbb3d1b2f65cc5c1fa7d5c4e8ad199db5f6287cb60e5f1f8e6a799e90e6c"
+    },
+    "run/partition.npz": {
+      "bytes": 225928,
+      "sha256": "9313a1e24ce50dd4eb0818fff62d43e6084c15f5f59502980fdb9540d0104d69"
+    },
+    "run/partition_identity.json": {
+      "bytes": 1857,
+      "sha256": "0cc727af7cca9f91bc6bd1f4b1198efefbb56cf568383293be17725c20653910"
+    },
+    "run/protocol.json": {
+      "bytes": 11420,
+      "sha256": "d20dcb79d09427be80f1ee183e40d12398f9c9924e3441574788d44d674f6daa"
+    },
+    "run/scaler/scaler.json": {
+      "bytes": 430,
+      "sha256": "9ee7f252307c1041475c30db452945022d8d3bcf37b3ffb5123ff6a677098050"
+    },
+    "run/scaler/scaler.npz": {
+      "bytes": 3400,
+      "sha256": "b7954ba69c8ce8a7db85c43399c26cfb8c362bccd0c10ef586778cc0d4a24c20"
+    },
+    "run/selection.json": {
+      "bytes": 110626,
+      "sha256": "0480ab8b293a95e17acadd031984a16e6b9892626eaec78e1507a511fff886eb"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109403,
+      "sha256": "30242bb2b7130c89b80e02bea3f83213928b850c3a5047a768ced8c10dc50fdf"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3628,
+      "sha256": "ac327557977e424f3278656c9cb29f1aaa39da007e67ee86e307ac8831e1b7fc"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2973024,
+      "sha256": "edab7e4bebd391eb98322a1304c4e8ef1aebf989551f0be08dab564e62a19c45"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109409,
+      "sha256": "52340f6c7b7d9cd50e3627e54c579accef3ab7cbe624ecdafa2d177a4ce0166d"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3633,
+      "sha256": "d47f598046fa9a9ab07a42110783151b045862e73ea1662cc78af9e6b260e379"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2970767,
+      "sha256": "51802c9ec3de992d079a28890e1b3f553199f5216585d7740d1e70b38ba51482"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109402,
+      "sha256": "2d22d83fe1a2ee0aff671280dc1f65137e6682ac7944fab85157de1a8a636288"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3631,
+      "sha256": "6a83f81a32e3526543ecefba455ece2131162f65003bc9d071a71532229df886"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2967694,
+      "sha256": "5d930d950f71572d27b95a13fd344eb492ccebaff7d0302d08339c7b7a2d85a9"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109421,
+      "sha256": "abd6a12a4ce36dd99698e6d3286d970c396f1ce4bef65d2f4015cf9c5428d172"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3633,
+      "sha256": "88dced9fbee7e9b9acec6ef24a0519d79d12a0a6a9606761153e561be959f60c"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2967698,
+      "sha256": "ccc0491a42dfa1bf5a7fab8307ed20e46ffbff862adf6f252ec6c70cddfe3a1a"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109411,
+      "sha256": "eb300561c07e826b5ad471741bf8143eb94ccde16bd7cf4da5eedbf66d80c749"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3628,
+      "sha256": "237f90991e4dc1ea67cdf3d848e5459c002820f17587bf1a8b6c7af5d4e36978"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967396,
+      "sha256": "c10d008ce1b1141097c6b751ca73767ed84b084bf5231ffd6e0303fccfbb9110"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109420,
+      "sha256": "dfe51dbfd776aaddc45754273ca0de4ebf8c79193040c42a40f1f913f01b9e3f"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3629,
+      "sha256": "8d5a98679d16e2097c2a5f4adb0391a74440a4d6e3c83de51770c9d7a59497e0"
+    },
+    "run/tuning/seed_10/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2967255,
+      "sha256": "89c07156c6166886c9363c675e661759bbc05d46365cb2811ae0ec010adae352"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109400,
+      "sha256": "d57f7e464487c24e641caf37bceca734d27fb512838df9133049717285667e8b"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "5e12ff539942cff6e2dc310a95081172a31cfcda343431cf842811f4bd82dd6e"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2928446,
+      "sha256": "044da0f556157b37e179f2b9cd537afece562e5057a0e9fe74dd5a866c9c3954"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109400,
+      "sha256": "4627b9e3f01d4aa8bb8e0b895c2712fbe73fff35b9c78f61e493ad6613e5376e"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "79520a5c863612020c83759f886e4c8be9b555008c89b81eab4b1dea0e0b50da"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2956620,
+      "sha256": "dcda11b7d1cdafc978c27fd19b5b20f67fa285a6681df9472f0fb9c7446ca472"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109406,
+      "sha256": "92d16f71462e698f839fad67cf9e0e1c36c584628328a33c8b567b6f5ecdd43d"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "22da78b22f483a5c812013fbf379fe81cb848829f6aa895a53814d3e41ff8e82"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2820982,
+      "sha256": "5263fbdfe2300359f8a5dc5106ff5c67a19c2eba5cd42efa4e957e7caa806c19"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109405,
+      "sha256": "b7793d6a7f4757e0722473ac30199106192ca06537b05bc466787310b1efdd55"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "e244b7a1fc231000cf3bcec5711ac29e918e789058e1f77e34ef01304378d4fc"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2928365,
+      "sha256": "db563ab086d0d4fc49feb2ef9a398a83517977578223db17f28ed8f5f5f17971"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109397,
+      "sha256": "d07ecf33ca22bce601ebade1000a16c3d72de35e6801f2a430fc066b5efaf4d2"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "e7f5a0eb1ec81a7e6451155d2dd7cdef25bd053eae225f23b0a15e3d2661cb4d"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2802381,
+      "sha256": "e987f640bcf86a6a9e68e2cd0a79e4cb74fe0b3e603bacd738d42f1ab02ca1e0"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109408,
+      "sha256": "7b37a8e230e53a4083a447ecd1f4d746199d830362f26c694d87e134e7ec756e"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "a2b192efbd835bfe5dca0a778182ccd5c1730fd96b1df4a2ccc87d88b8ce4a23"
+    },
+    "run/tuning/seed_10/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2933545,
+      "sha256": "8add86c16011b7b9be615fae2de118d6df2a534ec17bb273684995857bbce3f0"
+    },
+    "run/tuning/seed_10/ce__lr0.01/history.json": {
+      "bytes": 109401,
+      "sha256": "a8793688891ae988db2a5e7d64324acf04348b4fe3c4ed262dfdf550859e62f4"
+    },
+    "run/tuning/seed_10/ce__lr0.01/tune.json": {
+      "bytes": 13162,
+      "sha256": "2d9b879e061c0075913bf796cbc5386ccd38375aa3564077284c311525f05cad"
+    },
+    "run/tuning/seed_10/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5946682,
+      "sha256": "719d51aabf855761513b0b707eebd77f8ea55d18a0eee199f0691ba2be717000"
+    },
+    "run/tuning/seed_10/ce__lr0.025/history.json": {
+      "bytes": 109405,
+      "sha256": "e5d1824aa5b667ec9758f539aadbb8ba71be157939ead34a4513143bce19f3b9"
+    },
+    "run/tuning/seed_10/ce__lr0.025/tune.json": {
+      "bytes": 13164,
+      "sha256": "e210b11d1b83f72a0e2c8a261f8e637d154e298f25ce5d0b1c80eeb68a1f0a59"
+    },
+    "run/tuning/seed_10/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5953035,
+      "sha256": "87763c0b1b482fb788cc0a124684812ba953dbe337036f8ed5a02303bb9e0f4b"
+    },
+    "run/tuning/seed_10/ce__lr0.05/history.json": {
+      "bytes": 109390,
+      "sha256": "1f0411d8860b94d22f06db7055793b539c9e24fdb5646bf9eb90f35079b6c981"
+    },
+    "run/tuning/seed_10/ce__lr0.05/tune.json": {
+      "bytes": 13162,
+      "sha256": "61a50fa078fcfdab7afe8ccf37af2a53bfd64666549f9471f8884f0cf36d753f"
+    },
+    "run/tuning/seed_10/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5955837,
+      "sha256": "b4e2287841d176dcc867d55417c799f328461922920c4878a2035188ff39567f"
+    },
+    "run/tuning/seed_10/ce__lr0.075/history.json": {
+      "bytes": 109393,
+      "sha256": "76fd4c559f71b46179b4127b5b3585156b4bd1e0c3ad158f221366e48ca69c87"
+    },
+    "run/tuning/seed_10/ce__lr0.075/tune.json": {
+      "bytes": 13160,
+      "sha256": "6ac5466b57fb53461814bca249dcadcc74e8196d0a5feb409debb73ceb3585da"
+    },
+    "run/tuning/seed_10/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5956168,
+      "sha256": "f173904082548bd78291490d42fd27c8656304394acd35bed853bbf8371aa688"
+    },
+    "run/tuning/seed_10/ce__lr0.1/history.json": {
+      "bytes": 109408,
+      "sha256": "a8580ff7f9377f68f801754865b470b83123b95ff775bc9240b70b9d4cde3699"
+    },
+    "run/tuning/seed_10/ce__lr0.1/tune.json": {
+      "bytes": 13154,
+      "sha256": "850228a46ac69fa04fe9e15276dfe4d275f65d466594f9b95ced0638467340c5"
+    },
+    "run/tuning/seed_10/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5955313,
+      "sha256": "a4ac6c4f8559da06fde4a6c05b213fb1825158b85fc57b8196b96011fde6db2e"
+    },
+    "run/tuning/seed_10/ce__lr0.2/history.json": {
+      "bytes": 109408,
+      "sha256": "c5ab6e7253baca995b769e1411decfc4505280f3615c49fed449470b16b57746"
+    },
+    "run/tuning/seed_10/ce__lr0.2/tune.json": {
+      "bytes": 13156,
+      "sha256": "a074d2174e1e1d41e53b5076c4ff798ab1ac81e62cd32fd949921227116ad5dc"
+    },
+    "run/tuning/seed_10/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5951692,
+      "sha256": "26056a02f845f500eb5f06c66afbb65e64aeba2262fb3c25c7e1a4effe30bf5d"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__off/history.json": {
+      "bytes": 114157,
+      "sha256": "b8d3c35c32b2b7c3115452ab246e25df85e4efaeb36227151d3ed5d2ec163cf3"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__off/tune.json": {
+      "bytes": 5815,
+      "sha256": "25c0b28ae8417caed6c42a3e0bb1197b182542768d7a30a185534f1a800fc414"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970874,
+      "sha256": "86075e0f16d93f6de9859b92431be7689440cddd4a15d848aa66b6a9ca33a7d7"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114129,
+      "sha256": "2b6c220634faa02fc6bf18f184017a058b6c4e8b1bd417fba1b9c5d35aa195fe"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "ba49c55c9d14ffdec62f04740414979a5f423cde86cd82d1b846f6e235294433"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970728,
+      "sha256": "781d6b57959ec1c783787fd11e3557968995423572a79912149f81ac32ba5d94"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114123,
+      "sha256": "01fe199ce24932cf96deb661b0ba7630ce7735e162ca1e7d58c439ab1c632bfc"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5830,
+      "sha256": "47c184f811ca577f041b4866f15baa85a7c77bab62357644b9b07150c5cecf24"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970905,
+      "sha256": "e2ca8ee32a97ac58f2e06b28b0411070419f7d355a38e8207d3249b6d9e6b311"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114139,
+      "sha256": "e6cfb75ab798b98d82538ec024d15482c4c9a70375953e953d0a2ac0afcef486"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5829,
+      "sha256": "f1fb759bb10cfba3150d83cbb7b89a78c60a4ff64533b70330cccc41175b46e0"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970697,
+      "sha256": "dbbd54e75ac361a734c79cb1f50ae7b7ae38a50c0b572868aa1091599b16341e"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114132,
+      "sha256": "7d87c9d304ee4d4dbcbcac10da99adf271c9220a00e3a149f448799c565f0fb9"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5831,
+      "sha256": "eebee4febe06de20aac1446557a8521fee1da4fcd986bd49b40ae8eaae96c44a"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970817,
+      "sha256": "9110c4bbb7a1239c0bf0e8288cf2387ff81a0ddf7b46db17e72bb7ade818939f"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114159,
+      "sha256": "95b386f42ccfa5a061360b4d5beb4e9cf1e6c82ee93b466d15d68a42bda40a93"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "62673ba184d86f0aaf94d0d024818d01bcd25b7b8d022a79c07b384ecd78ec03"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970873,
+      "sha256": "3da952ec74d7f14f7045ca739bbee9249b118163071c1b8b217da7cb0ef29935"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114149,
+      "sha256": "7e2932f2dd77c41961c429ed6e8538980b6759e25cb37f2109c6518831e66fc5"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "94e96cdbe6d5ce7a5fa0dd0617b436a20db369289bcc6807f8917d62d2b5ec17"
+    },
+    "run/tuning/seed_10/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970697,
+      "sha256": "748e65ceabec040bcc969f008d1e51563a990cd7dd065c0c32895561be5bf5e1"
+    },
+    "run/tuning/seed_10/class_balanced__natural__off/history.json": {
+      "bytes": 109421,
+      "sha256": "49f6348bb51ee39846ecdad377ed41a75bb06ce867dfd9e47ac9753695ac3d0a"
+    },
+    "run/tuning/seed_10/class_balanced__natural__off/tune.json": {
+      "bytes": 8757,
+      "sha256": "4e8c8ef81dd13ee2a91349635806a50de0dba1f7c7967e6f967b2ff91834fc8b"
+    },
+    "run/tuning/seed_10/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970604,
+      "sha256": "a74ed24bdb5fc16e24d458055e9c7845d8323b33c24459b597602ea7d8a4b003"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109359,
+      "sha256": "51a13fc6fcad36eafbb0e722bce254cf755dec77b721f4f35e994abac201ada9"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8774,
+      "sha256": "2802170cfa59b6f9143d1bd47277525aa7fa43cbc1925a9b54b9e3b3d1871d70"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970875,
+      "sha256": "a4ed19ead0bc5b3e060c306b29a81653c49c12f721a417debb413261081ccbd9"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109368,
+      "sha256": "f14ef52a02888111b51c94e414bd48213493371b72581a71ec0313157ee8ac7f"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "ac7b73c71ba78bbfc0875e41d13f346b30788b1a909ff0dcf6458a52c72ba171"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970766,
+      "sha256": "357c5d1b6ea039b951086873de56cfbd02a881387465e580d74e0c7b169ce271"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109377,
+      "sha256": "ef9faee90f8fbd806f69148d1bdab642bc4ad5dfd444ff319dad42f559709fd7"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "a9d709dea9b284846ad342ae5cbe8bb7f01a5d9c702cce5a654b435cde872a6d"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970625,
+      "sha256": "b9407f4879ac24418cbda3b26a0750eaacf5775741289c0bf2d4c3ec39104300"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109395,
+      "sha256": "d9cc66b921e1d479cc9a5c31e3e0865063329bf3e744deea89386002e1fd73d7"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "8a7d221963ef2a1bb1ec61bd7bb2b74751352b8d7c4d482631f4f36c08fe920f"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970714,
+      "sha256": "8730ae759d382688df735ecc4476893d67fe82c4e6524c9d60cfa5da258dab0e"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109410,
+      "sha256": "291efca9e5d99e9e4e2e3fc0a6c31efdf296c86785b71cee31f33135f89ac67a"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "2abec14b3e676f8e0c0b1a947f4c7162ced012c66d2238c7cc8cf8e5f460f6e1"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970912,
+      "sha256": "9b66de896570b63fe7a9e4bcc8eaa8fd78de08031e291dbe4c2d207e12d127f5"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109403,
+      "sha256": "c7a48ec4d1bb5748bba09421dd5a31184cb9b70bc182456a4bf6096548e330ac"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "eb4864da9ac4a572a7fffaeb39d12b8d3ab1cf154b3a4d994e1208431ef9c9eb"
+    },
+    "run/tuning/seed_10/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970676,
+      "sha256": "035b405b81bf40135fec69a658ba5aa4ffda23ec9cfe735763b94e7928fc6be0"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109362,
+      "sha256": "da6a5a48cae696e6977dec1d8de5aa3861c674e080a3e852cb4abc6f2f9cc1c3"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3630,
+      "sha256": "bd857cf1220aacd772fbedcd4a8fa767b2000831fa8db6ee63f373cd4a7adfd2"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2973641,
+      "sha256": "db8db5f66dcc4ff6719f91316bdb41266b721035e27e79224b340df97307e2cb"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109373,
+      "sha256": "fd7e0dee8c8df7f76da060b6eff91f6a14325d382321a27c1627cb5ed1ad48fa"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3635,
+      "sha256": "5ccb6d43d5adcc3519c46687798231ea73b680479627278aba0e960434924a79"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2971301,
+      "sha256": "b61da9c1f528d8a1274239e65e40d53c2d0322f13c04880ad720343f903dbd54"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109377,
+      "sha256": "9f7164692479ef57743e2305ed5872e291f0cd5225e10823d0839cd76fa17167"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3631,
+      "sha256": "ab2ae861fed34a8d9813808cac3c545f0d026aeea3fe5d824130ab6485047c99"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2968292,
+      "sha256": "02d5705beb3c632555825641522ac5c99e1a74037537d98209d6d2208a9a29f3"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109382,
+      "sha256": "0544d428afd7aec55e80a930d1359c14494deb14320bfc54d892c4fdfa5fda79"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3633,
+      "sha256": "bfc53d227947344f5578a482dc773055943de4bde6c942723be072bb500ca91b"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2968130,
+      "sha256": "c1ed7a3d4cfad90529ca2b5c7e2c170f6be0f35f9e2ecbba925aa8ff905c0ca7"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109378,
+      "sha256": "c9f309cfcec0d6b252a19a49e8ae54a8581bb2b791770f19cac7893f7c734975"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3629,
+      "sha256": "d8faf47f6d631b9d53c8ce76fbe10f3c5357500242f001f7040208d999c234db"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967775,
+      "sha256": "4aec16152e173f10ace4b8804aeaa6775711ef324255c91240e3d8e88dd7ed2d"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109381,
+      "sha256": "b5ae5e5d4f8a28a505139cf987706a8f85a36a0b3e9cb4e82197692e4bb53dd0"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3628,
+      "sha256": "32798b1cf7fadd2c6770067bb1cfcb59ea5fe39229af0c078a857c2a3910bd8b"
+    },
+    "run/tuning/seed_11/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2967748,
+      "sha256": "143a14f1f95c8b56796fbf4a10db7a0aa39d862f0262f8d9387d762124eb84b1"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109372,
+      "sha256": "5244030ef4bbf9d49953f7e4708f47f15c6d35706d8cd842de92ae8b5590759c"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "d9b6d569dc37451e13c41547f6e509db60f6ac4e47fbad63b808adfcb88a5b91"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2930896,
+      "sha256": "08176bc79c1b7bb6a433ce4b3fd0843c93d8d16692a28481f756e0e428fecd2a"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109362,
+      "sha256": "424e9dbeeec8bdaf780e2808016443da03c52abe4bfc0f5a96a4d787edb19b49"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "43a0beb8cae4baa0649cbb1585b1e89cc7e44104994f8b2ffa74109fbdc457df"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2957465,
+      "sha256": "1afd90749df98cb40c854e565de4e4b956d6c1e1a500ae72b0f8a5b4cd9ee985"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109374,
+      "sha256": "36ccd4d84af11efd67c6667ae9580bdb5e7bf5f967806b1439bc2690f597e125"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "2a2b459b2c0f287e84968137f8f3a11bac21b7aff38150ae7788db82ae2aaa46"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2821242,
+      "sha256": "46d1cb275ef39f2fdae16c3c7ed362014a74b81bffd4479f37df5187180fdb83"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109374,
+      "sha256": "33712d54c516e9d60838b2edb07fed2f02fc225e39ed2bcd3be9ffb082ebd801"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "10e1c082c4b16e3459d69dd41edd281017cee583261621ae3ada2326c44e6705"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2928767,
+      "sha256": "74fe63d91fa970b3f1701e2dbbadd03d05c179629167e588cd83e294741ea681"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109365,
+      "sha256": "6771ca1356cefd0928ccec6ea8c62541e0e65a66220024b38fff86749aeecafd"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "0f61c00ad09e003e36b2b4767f8042649a9b419f7b808a8e4769f0e4fc6f80a3"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2801609,
+      "sha256": "87a4f4689f233191313f47e75423f240bb3e97f1990e8a2079bb596efded5a2c"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109364,
+      "sha256": "5bcfec8f3d8f3ce4d7c1217a3c36e03a5bdef0b525fd5a3f33ea4302cff02652"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "b8ef03703c68e7c65cf0c2e6bdc43c452ca77007baebfa8936038315655c91c2"
+    },
+    "run/tuning/seed_11/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2932970,
+      "sha256": "7a6b4fa08ab1523b7c3a6ade2b3ae6822fbd725fa1dc6c3354e6a369c57f1a97"
+    },
+    "run/tuning/seed_11/ce__lr0.01/history.json": {
+      "bytes": 109361,
+      "sha256": "0f2b0ba667c08175c8262a403fb88c0c63e79a5687f2abab0080a172bbe12f5f"
+    },
+    "run/tuning/seed_11/ce__lr0.01/tune.json": {
+      "bytes": 13163,
+      "sha256": "ba15443e8e373c85065c9149244c4239d711941855d613237664498a539b6f74"
+    },
+    "run/tuning/seed_11/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5949655,
+      "sha256": "1bb87e7f1285410c771acca4f6e4c10162c8dea9695008096bf6c8ea2db463e3"
+    },
+    "run/tuning/seed_11/ce__lr0.025/history.json": {
+      "bytes": 109372,
+      "sha256": "aabe0050cf5882eca26aa28a2269d611958575df1d37e39dc97af97173a1b24d"
+    },
+    "run/tuning/seed_11/ce__lr0.025/tune.json": {
+      "bytes": 13168,
+      "sha256": "a3d1aae6b3ce11ed784a2a25d11d5da9c2fe2f62005dc51b45b699c541dc429c"
+    },
+    "run/tuning/seed_11/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5952248,
+      "sha256": "2f3d06cae7b9553815ae62cefe8accca8ac41f84f729b9fabb8bc3892c6d5aee"
+    },
+    "run/tuning/seed_11/ce__lr0.05/history.json": {
+      "bytes": 109378,
+      "sha256": "ddba25e308fa7cd958ff82f7bcff82471f334a8c9120a9d4b1a91bcd2dbdeb10"
+    },
+    "run/tuning/seed_11/ce__lr0.05/tune.json": {
+      "bytes": 13161,
+      "sha256": "8655e3dafe1831858da904b4126030e8b8ab23953baf822168ff0732bf908c3c"
+    },
+    "run/tuning/seed_11/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5954644,
+      "sha256": "9997fea95e2df06a0692a74e52375b6cd07df995dc46159df0ba7e13ad1265fe"
+    },
+    "run/tuning/seed_11/ce__lr0.075/history.json": {
+      "bytes": 109374,
+      "sha256": "94855c0d48b1f659274408c752548a0bc2cd96fa4ccc31d8df64ea7e76e546e9"
+    },
+    "run/tuning/seed_11/ce__lr0.075/tune.json": {
+      "bytes": 13161,
+      "sha256": "e33ac28227ede61f0368dbeb7ed49384d4308794184570ac9a02fd2772d5e211"
+    },
+    "run/tuning/seed_11/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5954552,
+      "sha256": "63e7964cee22238ce631673549b047d667bb6daa9a66f9bfb4232156ca58f9c7"
+    },
+    "run/tuning/seed_11/ce__lr0.1/history.json": {
+      "bytes": 109381,
+      "sha256": "1a64c1c8cdada8d20adc768e4d0339d5c61fe07a45cfc283ecbc1b7913bd7dc8"
+    },
+    "run/tuning/seed_11/ce__lr0.1/tune.json": {
+      "bytes": 13156,
+      "sha256": "53cdd66605463d3c881ce35b6f791b4857d8c9729f68dcacca445d21d81a144f"
+    },
+    "run/tuning/seed_11/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5954215,
+      "sha256": "b87a2b6283f65d5141b13d7ae726aaa20ef490c8c70e378ca3a701d9f8fffda8"
+    },
+    "run/tuning/seed_11/ce__lr0.2/history.json": {
+      "bytes": 109381,
+      "sha256": "674f69f693118644d5a2dddf7f3945dbbf8d3159cc9b07c455e36340d1eea5a4"
+    },
+    "run/tuning/seed_11/ce__lr0.2/tune.json": {
+      "bytes": 13154,
+      "sha256": "d691aefb860e92b566b9bdb611c5c596376cb809c47217ac1d3699fb712a6dde"
+    },
+    "run/tuning/seed_11/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5951325,
+      "sha256": "2d7e0a3d285b54309aae91f3c873aeb01649dc3477a0df13b31b6dcb86bec22d"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__off/history.json": {
+      "bytes": 114160,
+      "sha256": "0df423f2b38d09f1c45daa06a2f17f88670c0b6b80944a55f50520adf103ed8e"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__off/tune.json": {
+      "bytes": 5814,
+      "sha256": "e1321f8d6f8f17ba962acdd32b4618f5bb386a870d4bd0b6b81aecbd6f0ae8cd"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970183,
+      "sha256": "b71bbdd24c92b6d33e8b36aae8a6d5bb0db847131f5fb1503985cef11be60ca1"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114112,
+      "sha256": "8415b2ba1d87859ac73d86ce893a84e37e2e7d0e5f9958d55fe4f6ac7386a809"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5833,
+      "sha256": "7b558e25846b0b84fdd32271c5cb3c61aa7acff7778adf8cdb5bbaa5579f92a9"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970074,
+      "sha256": "dfc21d615fa4b7bbf72b9cabec27709a37a1447b1c9cde05769d28b8f298485a"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114116,
+      "sha256": "2042b158c00110ce8d73ecf1f8542c691da8e3c05b14079b31036bf0c7a08e76"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "3c2526b7b16183223156676dee6116008c7331d3ca05ad4c80bbe85c47fe68c3"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970174,
+      "sha256": "1182550593c91058d3a765aa488e52104faf7ccdcc1064fdb84aa914b12cb6e0"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114133,
+      "sha256": "c8cfdd162df5d55528853d44a623b492785168e9a3a622a439338497de1549dc"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "63844823de8801c2977cb45a1d3cd49cef07d67d052db3c7b5c8041aaf44583d"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970449,
+      "sha256": "ce39832979290aca76e348bed715c750d467e5692297f0c08ff1e5e4c881b594"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114127,
+      "sha256": "0a418a345c1ae173c4d682cb25734fabf7fa24480bb96fd02738cf45cfd7fe86"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "7b357db15ca0e904eb251a0ad829395286107ee5536294f351bd5f37d9592e4a"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970262,
+      "sha256": "dfac7cb9314b427aba2f210b257dbf5941e43e36e0524e0574c7d9e677fcaeee"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114148,
+      "sha256": "646e6df8389dbb43bc18c15d4167efe99c89b0475834e3243040cf1e62d3ecad"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "038b628e208eee7af77eb9a6d353bc2d881fa01e1e7b3dc10422e7f559969e64"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970438,
+      "sha256": "0268464d862f9c429cdbe5a1f4609c26b43e3899fef66e7b6747ace98e2407b2"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114147,
+      "sha256": "4cf639ca78f7e354d707aaafd12f0c55f99d8a6c8fb018a67891589e13eaf001"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "7fea312ac9649097550de055a4d3189f21df1306811c8dd3f38dace101555739"
+    },
+    "run/tuning/seed_11/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970383,
+      "sha256": "1dddb93b10a94eb58d81bf314eb3af921df7e6cb299854d8768f1f8beb8a7d78"
+    },
+    "run/tuning/seed_11/class_balanced__natural__off/history.json": {
+      "bytes": 109355,
+      "sha256": "e2361d0fba4e7f829336235dc6e2b523c78ca733aeec0be2f369597ec22a94f1"
+    },
+    "run/tuning/seed_11/class_balanced__natural__off/tune.json": {
+      "bytes": 8758,
+      "sha256": "e2c30ac2a0f8a295d25fa18705750fdc8a5db04119ccfb148d4b9a0908b590f4"
+    },
+    "run/tuning/seed_11/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970691,
+      "sha256": "a6af9734091a1a004bc93df56364885f948e7517c84750ceacec2be63f870933"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109308,
+      "sha256": "92a2496554d24003624b82f2e85c2717b144f7ab695211c2ca120d3c613c2059"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8774,
+      "sha256": "b1c4e8fda8bdae106ad69d76eac07874c2394a6b7442cee3db27300a08f87632"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970779,
+      "sha256": "0a458aa0a1ceb367d4ae8f607db87aaa46490cf96d5a1ec0216ae0a12d5c47f5"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109326,
+      "sha256": "d42b34daf586302e0fe5d0765bad9221082218e0e4634c13d5cd4c1217af1fbb"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "0fe4bef8fde356a13c346700cf3f70f88203cc7c33463d126889b14ab46912c0"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970672,
+      "sha256": "cd68ae80596b44bcb4bc81b68b6e6d89d0b7b5accb62e4ceae8b9b4f02ee5a49"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109339,
+      "sha256": "3d4cc0b501617f4ca79adf3e68c3d29762e0d1e516bb4fe0a62af90ab084381b"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "82aed0b554b9c14c0e20d173715bc55ae6b09ae53843f2c9798da0f8a690ca9e"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970746,
+      "sha256": "28bc61a96d3806f942658e3cc40e6b73755a7cc1dfa1a5dc554b190e1b76a5af"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109344,
+      "sha256": "cbfbff0750475d4299e577063490a365563145c91ecc20a81647b2db054007f4"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "eab9dec7bf08988902754e7535a5359f501c14a0b1c100cf2b02cab2862447a6"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970535,
+      "sha256": "c66988b2c24f5ed44f075aa657ababcaf367babfd9cbdef72b566fe96b1f8245"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109358,
+      "sha256": "8d4c43fcd5656a6ed780a70ecaf3e8963e5431ecd7da2c7c8b765ee1a55b208c"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "d6a53cb5a15bfd87cc81233264a3fa79238a7972d6bcd580ec233645909f35fd"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970722,
+      "sha256": "3831db4f5e99d84963d11db2541626ba2cc75942acffe95f51b4c4888302cb2d"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109363,
+      "sha256": "7e911e63e082658f2d0813d7b7b55ab6fbb04e3fde3d7371801bfc606d3d5cd3"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "9edce3461d26b508b9ef71c995db5b983cb1c1610decf7b2ae6c62b403dacbc3"
+    },
+    "run/tuning/seed_11/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970870,
+      "sha256": "53853bc44d2221c6d1582648d886efc80e5d17745a1416f46850ccf5024f9df8"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109364,
+      "sha256": "04628dec00b535ad78b3b0a9a28a673441c9a4bdcbe162909436adae32f08b14"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3632,
+      "sha256": "f04b44b534572316c03ed40b7f8b88400d82e890d8f067ec67c78d33affae74d"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2972358,
+      "sha256": "edd644c290cba7326a03eebd7f576cc7846271be426268a4aeb45d7ddf83e23a"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109362,
+      "sha256": "1c069b8f2705fe79868889347f38c9f9aa3fc8dec4a8c6cbb7084711ccd9278b"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3635,
+      "sha256": "49234c0b60839304a90fe30e1aca903464a1d4084c76b5fbb64e8f90ab49e9ff"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2970403,
+      "sha256": "d5bf7c897f65aebadc0b2108d19991373e75414770b24924cec65c07af57c77b"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109363,
+      "sha256": "c834dc9ee9df2ad407d4c2b896c8f126f7605d56b470cf85564ffcafccef1c43"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3631,
+      "sha256": "aec7a05722b794da0c6eeb0dadfa08174a3e6719d3b272136831367ea2dd32e6"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2968237,
+      "sha256": "281bcfb62e44a8649fc99267d8ed488165bc7187d6f903d2d111c27a095e5043"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109366,
+      "sha256": "30cec2b7b2d8193493d21a7b4a34ce48ae89a8d6414565bbc3dbb08ed127b768"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3633,
+      "sha256": "36188ef01076e0aef71b7a4921f6dff3c771868a65f9e2998153bc800dc54ee8"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2967427,
+      "sha256": "35270f23c9be5c2b3192c63ccd9291b6a71117eb8d0b0e0343af562856ff5c96"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109361,
+      "sha256": "4fc2227fa0690f1d968c3a0060b85fce1a640f5a07fc17f5a42b5a09e6f795eb"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3629,
+      "sha256": "b8eeb00f7bba53954f738efbbb6bc6ed48731aa1449b2c5a3e5cd3160b0dbe1d"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967275,
+      "sha256": "47fc542fbcc4eeef8867cdd2b84b4fcf73da75f863a0ed539d4eb4c50ed2482d"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109372,
+      "sha256": "aac90583cae6c2e436c8d8bda291d6cc29939c8240cef1392ec2cf375c12937e"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3629,
+      "sha256": "80963fbb774502bab1dacfeef408bc27bf5641b79c7768c26f7738f33a157b17"
+    },
+    "run/tuning/seed_12/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2966958,
+      "sha256": "3eb79d90fa17271dca1e09a40c8f9fb8f1dde81aca6d83337b0fbff454579fee"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109353,
+      "sha256": "d8064b0fce9b29b5c82330f1e34646f1bb6a779da6cca5b9b8dd837e36d01a48"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "7835b2a87e1ec6ed156869b77e7a46b3f2248cf44f915d7501c836c87a75b4c0"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2926153,
+      "sha256": "3edb8cb0dafbe8254a8599151bc833504b0ea07bf6e863f822c0d30e44070aef"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109340,
+      "sha256": "da28a59e1d1794da5d60a89f6313e1b2833bed8504493d45c3a49eb7523ba71d"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "c405fffbdcb20eb69cbfc6f6f63e540ceeecf49aa06459b97c68efe54035de0a"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2955888,
+      "sha256": "4ede031883dddea5040adc9052fa10bf90388e71d6ae47917badbc7f34da1c0b"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109358,
+      "sha256": "ef61d964f4de9c2bb300d73592d47ab94bcad3e08dc5a1da826fc98d0cfafb5f"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "202865c7ab55e35264b31001626c04ba4a3608aeed8ca37a916271b418983a00"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2817460,
+      "sha256": "c54f015a6693404f32e58b752eafa90aaa4c855fbde516f2ed0f0a1862f6a5f0"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109356,
+      "sha256": "7af30c6f0bc04ddd886d6292ca1118e87df61984a3265d779cb96b52df65297a"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "8fd7b5183349c355f0eac5a4ac7d3b696a68799cbcda44deb1233260ed7a34af"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2926530,
+      "sha256": "d776a8a9831fe2137e3d8ad4bfdd11422802ddee428d25f2e1c7d17b182ad103"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109341,
+      "sha256": "2070c23cd82719a18a4c5c51db3240d1b731d68520c9473d30a34ce87c327763"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "a742167e3e6c08f63ce9b807f2449b9eda9e850cd9c24ad4f7b17c48c5df097d"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2802145,
+      "sha256": "7eb8ebbb73b44684862ec30622c9766f6c60b2b57f2278346ca33a5643fb951e"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109356,
+      "sha256": "393063af9834912087816ba3b4aeaa54e237e85a4e8114aeb16876fe68f3e12a"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "bca99460c18471235485f2d6cd0e36063b1a482ec71fb25be3c10ceca6579f22"
+    },
+    "run/tuning/seed_12/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2933087,
+      "sha256": "bbc56da8cbd499e61cc171dca981b00dbb1cf0b52c0166485ee319be01ac9467"
+    },
+    "run/tuning/seed_12/ce__lr0.01/history.json": {
+      "bytes": 109348,
+      "sha256": "187203d77854b91d2067337838fdf35a8d7aa3fcfa79b965c2c79a0ade5aa24d"
+    },
+    "run/tuning/seed_12/ce__lr0.01/tune.json": {
+      "bytes": 13162,
+      "sha256": "1c179ffc9b3e9aa02fd27b133bec14fe3821ce1f01547e1821d294668dfa10a6"
+    },
+    "run/tuning/seed_12/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5947763,
+      "sha256": "620b9a99d7c49d609beaa40595657e46aa17f16fd921b964c3af1cd9481bdbbd"
+    },
+    "run/tuning/seed_12/ce__lr0.025/history.json": {
+      "bytes": 109359,
+      "sha256": "4a9bcbe418710936122b3e2e9ec485784ac89ac9afb9bd04e21038c43f17b25c"
+    },
+    "run/tuning/seed_12/ce__lr0.025/tune.json": {
+      "bytes": 13164,
+      "sha256": "e9e3b4ac61209693bc2433e247076b72f904e5f64f1fc83e698d835a95a935a2"
+    },
+    "run/tuning/seed_12/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5952801,
+      "sha256": "4a0f59f773c1a9a5c7134c6f8fdda8e0a19c2f01db17173a893c2646b99c4ce2"
+    },
+    "run/tuning/seed_12/ce__lr0.05/history.json": {
+      "bytes": 109361,
+      "sha256": "28e3babad8630e1b23dc331464e50f6ab6d439c5cd95e29b11ba348edb4a704e"
+    },
+    "run/tuning/seed_12/ce__lr0.05/tune.json": {
+      "bytes": 13158,
+      "sha256": "ff8b610bd6befa7cfa75db59a5ad09b6060ff7b509e69d08be1bdc40a0a783fe"
+    },
+    "run/tuning/seed_12/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5955181,
+      "sha256": "2c8b0fe9bfff551b956405dc4ab447982322de060683f8313b44fa1aa884962b"
+    },
+    "run/tuning/seed_12/ce__lr0.075/history.json": {
+      "bytes": 109365,
+      "sha256": "b59f52aef108e93cd10bfaa659a3ce4a8fcae032f2ef70ae1a672fdc7e369768"
+    },
+    "run/tuning/seed_12/ce__lr0.075/tune.json": {
+      "bytes": 13160,
+      "sha256": "9d657b0f93d330d6e4bb40d118b79c3a13d48f9ca328a7637e77c32d365195f0"
+    },
+    "run/tuning/seed_12/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5955709,
+      "sha256": "313c6140edaec9d39ff39d24e81e67f918c0191d3a1ec27b89d7ba86fb2a1565"
+    },
+    "run/tuning/seed_12/ce__lr0.1/history.json": {
+      "bytes": 109367,
+      "sha256": "e1fdd9e230f1a252810e8e33d1ac6921990447e221c5874efd542a2543177ff8"
+    },
+    "run/tuning/seed_12/ce__lr0.1/tune.json": {
+      "bytes": 13156,
+      "sha256": "ed9258c4d1c710a459cb13c3a07df363b2fdddaaca0af85a6b4bada290e3e9d5"
+    },
+    "run/tuning/seed_12/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5954917,
+      "sha256": "4e5cdf078539dc4be375f3abb03fe57bc62610c2a5107ee7bcbcda6422425ae3"
+    },
+    "run/tuning/seed_12/ce__lr0.2/history.json": {
+      "bytes": 109369,
+      "sha256": "049fdc83c7fa49dedcf4e9730f83650e28b874b1229fa7c540ef8a0bf33682a8"
+    },
+    "run/tuning/seed_12/ce__lr0.2/tune.json": {
+      "bytes": 13155,
+      "sha256": "bbb0ef00e9352eb6d59cb485ecd6dbc4dd99246e65e27328b13de8794fad2775"
+    },
+    "run/tuning/seed_12/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5952361,
+      "sha256": "9cd3b3dfe1e8e4b012d898dc2c3241ca47603b7545cf9b04abfedefe6d8e47f7"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__off/history.json": {
+      "bytes": 114160,
+      "sha256": "fc61145e7296da2d7f8de1c616f7afbecd32fd8b98176f49f27ee8bb5711d73e"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__off/tune.json": {
+      "bytes": 5811,
+      "sha256": "1abdf38c9d04dda961b65b072fb8b00c83484aee6e6f6eec110324eb2495d2e4"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970441,
+      "sha256": "8c498bbf6d697a0dd8c67f92db17cdfbfbf40ecb62019755188ade23e035fe3a"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114118,
+      "sha256": "9d6c5cef99a3d692c7787ff08c32387f67d6fdc483b93638f52f0c7c591ebca2"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "ff361fa5f8ba5285b4aa9f9140a16f2edb37069ae3ac30d69f942e57bcb415e2"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970324,
+      "sha256": "c64a4adc5e37b68adc86606f564a9fc0bc616b2b5279f7d5c8e3574015dd5c67"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114104,
+      "sha256": "b1e8c372bd5baed1f84a8585cc129f700d1cdf74dbade42339c7b50f95e6567f"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "a45475031341cffe13f55f9c43f732aa26f7a6ac28814629c98bed46c672758e"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2969864,
+      "sha256": "7deff71002d33567a91844ee0cba12890393f2549b1c5e44139aad671573ea5d"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114129,
+      "sha256": "55324ca4e3d8759d1e2357f21f0a7d4cf72a8fa1ec3cd93f0664e04b40415883"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5831,
+      "sha256": "27d2f062648774872b576288eb36a3a9cb452ce88f8d4fd04701970b61596361"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970460,
+      "sha256": "5648c5277120ac6da79f6d8ea0af48fa1c4075b14ed2e27ed841954b81ddb3a9"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114125,
+      "sha256": "7962976e0fb74d028a522daddbd25d09be1dee12a4888e00487051f1c811422d"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5829,
+      "sha256": "e66cc3c1d7d9b62e3b081f859a32f3fe9d863f67d6a0824077450d831e8d4a98"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970366,
+      "sha256": "047374034b7faaad260781be7f3e9d798fedb091691ea366442e7455320690d5"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114135,
+      "sha256": "77b9f539bd1fb869a70a0d90f2ad4c72264137cd0f4d8ca1ec106f239c8915ce"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5830,
+      "sha256": "9d5d1506d1493042f57ce5e4f75273c67d86813efca54dc13e09b8878bf8a665"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970304,
+      "sha256": "e577b09ef8f0925e4937bafa2b4e4d2d2b3febbd61160c77008c3845ccd360aa"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114131,
+      "sha256": "ee0d4d03419bcda609053251d47a991c58997f83714c52585d9746d7dc9c1418"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "d01cebc34b55f7c7249cafe536a88c3cee7e31a03f7329b1377d7a0eb4e3836a"
+    },
+    "run/tuning/seed_12/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970262,
+      "sha256": "801efe514501f930bd190fab514fe1dd71bd438f503216a6bd4bfb5f6bf0930b"
+    },
+    "run/tuning/seed_12/class_balanced__natural__off/history.json": {
+      "bytes": 109366,
+      "sha256": "8eba97bd17f7514024f6fca20d6cce9c2896eb0e2ddff3015c9ba3e4997756c6"
+    },
+    "run/tuning/seed_12/class_balanced__natural__off/tune.json": {
+      "bytes": 8756,
+      "sha256": "25efa449f7cadc386538c32490619a52bca455c7619cedf04f3e435ff24a64ad"
+    },
+    "run/tuning/seed_12/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970352,
+      "sha256": "e3bfea3b77cec2621a6224829b81dfb75a9239021b6a1972142e4a91febee9b4"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109321,
+      "sha256": "9df2279d6cd8123a474015905e4ae0e89d85af56ebe231adc0e32c7781953e10"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "925b03b60f022170e2769702df7f2fd4c88d4e3d2c070aea8375ff1c0da234de"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970302,
+      "sha256": "e6584dad8e4f0e9ff8c68056a172db850b07ea3cca68e25a4f1da8b9b1541c2f"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109322,
+      "sha256": "9f846163c20ad6073c178936dc3340552a549d92e18b32e351025e8402da3e9b"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8774,
+      "sha256": "101b42b2412829cc8344f95406d5a21e72c992f9a92906648362f3679384d8dc"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970116,
+      "sha256": "05caa74ddc80db2cb671ad87967f36fc8e2923a16274ea684f45f0f5c5ff87a1"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109327,
+      "sha256": "a4b77c0ac7d7256e08018c1c103200d185073e43169f608a69bfa6224c290c6d"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "439f123051c0a7e639e2d03e440839fbd14f338cce64c2993cf04a4c143907dd"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970489,
+      "sha256": "3187c5ccff264d1924eef6340aadf2deba1e5471aadea325d79c5e47deec262c"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109339,
+      "sha256": "2e77a0a14abe6df6e435a20efd1411414838f69ba21dff9b1709cebf86fddd53"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "0ef29c8dac7962b83b2ad8cd70897fbcd1b7c421efbca34863c3aa4f7d247852"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970197,
+      "sha256": "40d27c0530f2e1ffe58d65b77cb362822bcb4c10e03582f477a1c4bc9d7b0b1a"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109349,
+      "sha256": "ccdd0c5625c3cfaf3a6a3c454a2917216c4f0d4786704b4006a94526d1251b7b"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "0b3dc685aa384c8eace47b46c907abeaf27e53ca06eee1f0d0e6778fad2e4953"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970480,
+      "sha256": "e5db3a3887640c91c7c06dff1e0e9c0b7c5ef1e4021f70e86f4397600898d17b"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109352,
+      "sha256": "ee082a95631b7eaf8d73609ed0601a20813265ecfc3c37dc28fb499f03e0e723"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "1f0c089b2c5f515d3090d6eae0684125424935ec6b5424a8b9df807c6ea68cfe"
+    },
+    "run/tuning/seed_12/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970293,
+      "sha256": "1875d49f8dad2181bf76c227d95e172f80664fc1735352e838eca51aa6e437f1"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109375,
+      "sha256": "4c78d6f615765328ae37e7358ad46456844a2ef2d3da9f388fc8b31db1b6d18f"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3633,
+      "sha256": "108a49ce9d8c1e9e8ec6590dd6d3d2a095d9fd3832292ed45f38115e14d108cb"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2971079,
+      "sha256": "9b26f78cf54d361839080905652e15c9623099dd8ccb2bf5ec914c43d325c210"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109384,
+      "sha256": "c86b060b72418418bb79be8695f15ce9ee48f30b8a47a4db95bf024d508ee036"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3634,
+      "sha256": "cae160dcbbf592eb49b9b2353fa980f3df7d7fdc8a8f83f8022583cf3165b1c0"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2969421,
+      "sha256": "df190b50004fda505040fbcc56aea9d2df96d634fb666407ca35060ab2aa8785"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109387,
+      "sha256": "249b1a00736962a48f479051e2510c9def9a3cf27560b5ae46cdce7b7aefdd06"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3631,
+      "sha256": "eeaf1059917142cb02f2be4d33ee59e59847596ca0416e0482f9f07547333bb4"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2967803,
+      "sha256": "0745c30f20427760a2fe043b3de2053b9c26f606cfa16a9db400ec1863f95535"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109388,
+      "sha256": "5fc393921dc3ad5f67824dc32a2d1e182fa6aad6b243ff70897197522813c19d"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3633,
+      "sha256": "9530106f586ed2efec87d76687fb3a79a5cf733dc14f6638f6fe29f1994f873c"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2967033,
+      "sha256": "3a9ce6f0ec7c2ac83f8a5c7f171916a738a63ac33be4f725c551eb6ec4cbc190"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109380,
+      "sha256": "eaee6acdaf7a888a15c9bdf6c20c4c01e696105398e0f2789dd24a1fa601c7e7"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3629,
+      "sha256": "b8c395421eef87085bdc7a9e779d67fd99c265e6d92697b2dd8c14a87c0d9061"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967026,
+      "sha256": "42ac7df106ffa212d1aa2eb35509ffcf22862143ddf7f691e4b8c7a933cb44ef"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109386,
+      "sha256": "85d28f099a876828066e8435e4b09c3bf980bdf7c8cfbefc4f9288add95627f0"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3629,
+      "sha256": "975d3a66243fa69f827a86a9e02abe9bd484f97b5aaa429cdb1472ca96e2caec"
+    },
+    "run/tuning/seed_13/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2966705,
+      "sha256": "e9836f890bfbf9420bacb85339fd74a1cbbc9b812a9304ca0fe7c3f27d9651a7"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109378,
+      "sha256": "04f79ce12b8bdecb839e00efd0ae632e24c9441565233084694508ffac478fba"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "42558bb2fbedbc54e433486a959726b71bf6b63482be95aae2cfdcd4583279b1"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2923792,
+      "sha256": "23371d1656c82d9f0ba458ac56de66689faae7f57698f118ea8d9e9d8406c9e1"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109385,
+      "sha256": "2e225e85dcb4464082e73596a92ca82e279ed455b61cd6a76e9bb0b3eeab253c"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "948b48154bffdd88b7122b1fddd56969a37b2a588f9dacdef05285e5c6185de6"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2953711,
+      "sha256": "1c62155b321573d827d6452dc92462355bcd9cb7f0fdd9cfe6a3c0608123bc63"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109377,
+      "sha256": "9e39649a12c5bb470fbdb4dc926a2df4ace8e38fff630e0f6e1da95e2b981383"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "b84e7a0883873227c327cd1140542f9cfe6b0f85115f2ee844ce7f3d4a16a6b6"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2815855,
+      "sha256": "1a18a6ce2a77861b3f20504d72a72df77a75b6d1490d42db423a697cb89bd36f"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109374,
+      "sha256": "b3ba2ace4652991a13dd8a5e4202415623d8bf3df40cd555a8a5726fcf3ae708"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "4dd0e271c073f3addbf8c720fad2d66d796233d66ac72b01dd21fd10f100e937"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2923536,
+      "sha256": "cc50a4d3b2857ba36767560b79b06552da39d788e6892898257c140e10353625"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109368,
+      "sha256": "fc4a59835fdd8dc3d621494548cd3d70b605d039da0fa39fd2f07809e5a0105e"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "d05b77ecca63ad676ef87be8a77bd1c1cc9962ff0b8857851d91e45130337035"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2801335,
+      "sha256": "24526fc1e123af7f1139b424facfbf3b949a9f48ece45838b1be4ba998e8a7fa"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109372,
+      "sha256": "750f60c72968496137b437d000a4fce09eca7c7ef5d7ba85219780a919f12976"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "c29faf16218b46b8fc1305a647d886107886c83b72bfc31fd2dac9c8a4bddfe3"
+    },
+    "run/tuning/seed_13/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2929952,
+      "sha256": "7b67a3025f8d47154412c152a244170c77c8daacfdf4c102a28133d682cae909"
+    },
+    "run/tuning/seed_13/ce__lr0.01/history.json": {
+      "bytes": 109379,
+      "sha256": "61b28c8071617d22f8cf4dc0f53c1402061e83ddff95e3ad84e2b451ae310139"
+    },
+    "run/tuning/seed_13/ce__lr0.01/tune.json": {
+      "bytes": 13164,
+      "sha256": "44728e2727cd5fe7866e95872f9265c447a5ec5ce4fe08089c3a749b5213cd3c"
+    },
+    "run/tuning/seed_13/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5945479,
+      "sha256": "a28dba7c461624c444219fdc186a35d4947846f210aac6816df550e0b00185e5"
+    },
+    "run/tuning/seed_13/ce__lr0.025/history.json": {
+      "bytes": 109382,
+      "sha256": "88a24cd42f30ee5af293b7c48b4a8b48574b95bb9256fb60d526e320a0faa724"
+    },
+    "run/tuning/seed_13/ce__lr0.025/tune.json": {
+      "bytes": 13163,
+      "sha256": "80278106a75a72f46b1e7eb4079aa03c512fc8d354a70ef7c4de3c1011a6c9fd"
+    },
+    "run/tuning/seed_13/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5953830,
+      "sha256": "88472955be21e3043270b0e98fd5bf76d4a15c011e21e0220995c1d5aec44abb"
+    },
+    "run/tuning/seed_13/ce__lr0.05/history.json": {
+      "bytes": 109388,
+      "sha256": "728037c3bb528c3caf5d3fe246cd299dacfa2104c27077de22a78a87d17803c8"
+    },
+    "run/tuning/seed_13/ce__lr0.05/tune.json": {
+      "bytes": 13158,
+      "sha256": "d746c753e95283954539c57297f1bcb68c58e07f88a29864778c9996e3ca6b13"
+    },
+    "run/tuning/seed_13/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5955710,
+      "sha256": "76c0db45daed64635714edc42e05cd1066c99c2f21f215e8fc155772a456beb3"
+    },
+    "run/tuning/seed_13/ce__lr0.075/history.json": {
+      "bytes": 109372,
+      "sha256": "d80a52db609c6268ab70ddc60d3e3671d2686f6555a00d298a98f26eef5eaaf4"
+    },
+    "run/tuning/seed_13/ce__lr0.075/tune.json": {
+      "bytes": 13162,
+      "sha256": "7ccc1ac270b66caf165969768f4ce96824d265478608807c756621001892c921"
+    },
+    "run/tuning/seed_13/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5955979,
+      "sha256": "9a0be83fe34a3b7a4230f9749a5814a88f4fd7da1aadb69b03d3daa49c7f099e"
+    },
+    "run/tuning/seed_13/ce__lr0.1/history.json": {
+      "bytes": 109385,
+      "sha256": "cd9eae208b6e17526b86dcd56874826a09b8f3a7f9392b12d44fba0a4ceabbae"
+    },
+    "run/tuning/seed_13/ce__lr0.1/tune.json": {
+      "bytes": 13159,
+      "sha256": "fe1aabf55f99c335000422ca3678d1c4cfddf561715f7dd7bf1ceba2ee621052"
+    },
+    "run/tuning/seed_13/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5954955,
+      "sha256": "8c3f3625cd228c12aaa161134c532a928296059834b88e4caf5dc803d9833419"
+    },
+    "run/tuning/seed_13/ce__lr0.2/history.json": {
+      "bytes": 109383,
+      "sha256": "626e0313b8d9de7654584ae7d5d1be7900ed79a4657055f6edd1eb8e4689ed0f"
+    },
+    "run/tuning/seed_13/ce__lr0.2/tune.json": {
+      "bytes": 13156,
+      "sha256": "cba3b5589d30e1391327c3147261b10f982814d3dca891492014b581240be9c1"
+    },
+    "run/tuning/seed_13/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5952422,
+      "sha256": "1ec1739ef0bb960032367d898766ddec0729ec69b7e848e1ba8452f0de9cf395"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__off/history.json": {
+      "bytes": 114153,
+      "sha256": "35dc3ad3749f4f996da3de053a1fc7bf1c5617d0ac9ae12a986d31db61cb944a"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__off/tune.json": {
+      "bytes": 5814,
+      "sha256": "7c0ac57c58bf6edbece5d7be7c2e3b7862dae7654eefd7c69787b8fe80526b0f"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970601,
+      "sha256": "6863bb423ecab105bd6466803409170edd6438588f08bc05796a25ad78fcf68d"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114116,
+      "sha256": "3adeff88f20593e3cf12272f586f05d92cd7dc3381728aff034d57169a670088"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "1f9c44d3ea36e8a39c8c773018ff1893bc6ac69f92effc15b652ec60dfb3ebea"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970539,
+      "sha256": "aef7642aadb8cc32b52833aaff1369bb6f45a5b51da717a43aa617f73a59cd64"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114122,
+      "sha256": "a9455e1d136ab119ed03b8f8107aa194ade44d26c391e8ba1a75c6f4d8237199"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "4a985b58a20e793004c471b17467e1719c2ca1d5d7f7f6b0c08b870c58124584"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970062,
+      "sha256": "33aa3829032fc51e0ed732c35053a755541e3e3ec810a7901596029754d03e8b"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114138,
+      "sha256": "bf6e0f4c952593bbd06c6e9f0aecd18ea557afb82280e019d36515c37cb99b7e"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "cf0695ac2bdf354a1cfbce234295cc8a9a2e09b4e4c65c3e648f151430a4b3f5"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970724,
+      "sha256": "7a56bdb15cf88dc5c0e2084a8ffae2dea83754211c0a9e9aef0a0d8d20573f5a"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114134,
+      "sha256": "876d5efaf033dc387fc3e4c4a46fe9515d26cde74615756412b9e68dff6ddabb"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "eb2d84571a4d9224c4c8267788b87bbf04c0d892869a999988511c50e5c3e425"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970466,
+      "sha256": "3dbb9d153b65d887f250cea07cf398d4e037830513f180220c00cb84bfed1df8"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114148,
+      "sha256": "555c4da7f37a1e1d866365f8901e833d0095d2938d43022d23ffee2b96bf4a38"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "c01023f0bdf0d92008ed65e7be9a160328ca9aa6099a39c137ebdfdb38a863aa"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970729,
+      "sha256": "71847116cde13d6a40f137bd69ea6c1abc51294455a35e313098d6bf2e79ef69"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114152,
+      "sha256": "824a25584d224289427a22714b2152f6520dd86f377a34a2df8b665abb7b2e06"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "ed9fcde2070b79c3e65afdaade2f6c732c3fd958926db66d72067c55a2d67fb2"
+    },
+    "run/tuning/seed_13/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970356,
+      "sha256": "ab6f53b9f500251b99108287c8d3fdcdca366ddae6d088d99d7ceb086ff32ecc"
+    },
+    "run/tuning/seed_13/class_balanced__natural__off/history.json": {
+      "bytes": 109387,
+      "sha256": "c76dd64ee0f23445dcac31a71183bf0a5c31fe6522a806c2fb949165e37d9f1d"
+    },
+    "run/tuning/seed_13/class_balanced__natural__off/tune.json": {
+      "bytes": 8757,
+      "sha256": "eec235ee49db18400b29f9d4a9074dca4377e4d64a88cb3488b6c00ff49a3910"
+    },
+    "run/tuning/seed_13/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970585,
+      "sha256": "d4d963857be9a9cd06536301ccd61003228d52f30203ea81c548f4a73b933dae"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109344,
+      "sha256": "1f52966863612c7a74850c51a209c60bb658ca4fc012ce8e961bf9a2b00bd35c"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "962de5c2fa63aa9e7d2798ccf1cd1aed59b9d6452c01457d160c78e74a94cbea"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970687,
+      "sha256": "d671deba85021825bbf85b5c2a4282db90f5472de985ec94be8f268bbb1f060d"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109348,
+      "sha256": "bb939ec3e88247b1482110ae14b9c320c2a0e69450a4c32a514b04031ac44a73"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "dcd46a44d4e832784dd78c8d370e3ece7316f8501d1481ce7cfc1a9c86f8f652"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970873,
+      "sha256": "e54a23c46cb138cf27bd2bf4f81e6316ba4c41ffa69889fbace065d8170de3d7"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109360,
+      "sha256": "e94e97fd0b2f83cb6322eb1a78cc0efddb5fb40b917cc0ac3608ce642a611ff7"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "cf9d28e8a03e160413a7f0c4c373dfaeb8788952749bd0ba6ef3af8899b9e49b"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970519,
+      "sha256": "d31f30ef5c49d6e60c1e4c34bfb6f76bb3c5f8f1fdb57a4849f5f47f8f931cb1"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109368,
+      "sha256": "d276a05dbd10bb2d660aaa66ad0dd0b362c03e0d1f8f70e359133ec73841234d"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "597639db3f0912a035424846457f543e7d137296da6c023b3bbe95d50ef71665"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970854,
+      "sha256": "737758f670f860195c771786be3c659996cee5e76720d2d4bf798460246f6d3e"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109376,
+      "sha256": "3c8d98ce370f6074f7dabf5b90b60c82ff4062cfd986646ba7f8e6901032aa64"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "011bd972fbacd7248c33139105d7e94fc9c28a37774f0bcf72e299130006d80d"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970686,
+      "sha256": "e09144c21d7f17a6fd3b327bd702ba245f16a86b5400157c69de0108f9279e2b"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109373,
+      "sha256": "d000c331356c429370112943dbcdd0980788849285848491fe56b592e7d1eef1"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "a9a828fd4931e0cec3a8cb4e59137f54359e2cb9f474710252e7bf4c0a87e956"
+    },
+    "run/tuning/seed_13/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970813,
+      "sha256": "f252f12bf8f21839a878c7aab85a4529e7095e8c360f8b5e2603e58768dfe866"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109355,
+      "sha256": "9d2b8fdc90f7e797a90549e19009ca5142a994e576a95488af8a2185054f1fb0"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3632,
+      "sha256": "8444540a44fbd4a69b88fd76c34e7a443c9b278f9f15e211d29ee8cccee8cba6"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2973714,
+      "sha256": "abda663667a1e477160b73d5ae3dbeee91fdc21dd8864bfefed7aa9444bef74d"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109350,
+      "sha256": "15675c1efb90a4621eead9862503fb970d2f439e786a51136fceba8801c36ef6"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3634,
+      "sha256": "537c1edf5ceed87a60b40b8fd76a4f4df976ae50adb38767faa76c267ccb0394"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2970333,
+      "sha256": "0966901107dfa8c374253f619d0dcf48c2f95c20ee0c1be6391c4d4733788fba"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109331,
+      "sha256": "378f75c98ba436c8b03cfe0387d4d39917ec2626e1c2c3b3cdd00d0e3dd70a3f"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3631,
+      "sha256": "ba07e1f770189b3742986384e6f2d203762e2e2bd0d0a02baac015403839f09f"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2968076,
+      "sha256": "1c95f6763275b336b3c1423734b313bf6d7458cc1bb66146ffc4bdf8ebec474b"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109343,
+      "sha256": "a1af5d4dba2c2964f929264e0796e221f4727e5d7a0b4a3063d58f2ddab4f483"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3630,
+      "sha256": "fe52f844d9651a71f6aa0db0061ba77b167a8299e179732914534d6ed62bf11b"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2967830,
+      "sha256": "db8a1044e34c3d5906ab17ee24a6a71bcc0bc7ec5b6a154da73dfffa02dfc28c"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109367,
+      "sha256": "03600de86cba4bd8be1939101438dec74707b1c60f77d90f9a81c987aa036d25"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3629,
+      "sha256": "4ebb325daf3f190f9053b7c3f21415f9a13e46034366e3c61a83172582c2fa47"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967552,
+      "sha256": "04d93f2ce008ce252cdab1e6674a8929b05bd123495e1cd08d947b6dc77417b6"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109360,
+      "sha256": "cc3009e5438a35c931fd09af99e824a916e0a3d11fa2cd1863e04a676317211b"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3627,
+      "sha256": "71bec16e475a138c631f770fba55cdb5357d97f109f804305513119608638497"
+    },
+    "run/tuning/seed_14/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2967711,
+      "sha256": "841617d1d19f90e5acac5230a9fab07af5a98a47c3486377fa3b803f3413fb35"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109341,
+      "sha256": "b48eaa5ef1b4b37da14fc62492727c44cac292d7a48edd2b2c345df6d35e3a1b"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "b26ce9be99efab51a7f3bded1efcc9df9ae7fb599bc719491f3affe6e67fe1ac"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2932683,
+      "sha256": "19688a0b5b82adcb5837a1c02419174636d53479e56a70e422a602ca156cfaf0"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109359,
+      "sha256": "712341e0682b6181b574e697fda2d177660cb61cf95ed37879b75608a588917a"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "edb2fa2fb7ca015960bdd0a5683e30a19d1af7b6d890b1de428da4dfa2621686"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2959253,
+      "sha256": "e6ecf7e8237afe0c08a14b3f65a11a8cb0fbb861fd92782286c4204a1ae5b01d"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109342,
+      "sha256": "96007b67d190543798d9d9dc3fcc0b7638e682aee42831c88364fe5e311d5de9"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "8bbebbf65c3d2aae5525b643ecc3eca95254ef7b199325ba9d56781dabcc6f94"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2822270,
+      "sha256": "f27e0e61eadc7ff8a14d144ab9d49e41e021a931ddd4c27c0ac731a494490ef8"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109349,
+      "sha256": "939d37cc157e2e4dfbc564163449ae84e88ac6e959855bfb2142e19c52519f86"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "cb9a816cb7682b042f043a32b0187d278e7798918294021abd2e5c7ad86f737f"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2931288,
+      "sha256": "28d02fec69bb9d9c13f17bf6223bd9e2175bfe7b910ba420359dfeb07a7ec731"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109351,
+      "sha256": "8a2fa9fe46612437d48ac3dda6929531eb08691a99b50459c53997c0e6816d7e"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3647,
+      "sha256": "4784b12dc0237d15563aa3a280f61ba7dd34a8cb9a5cab5e0937971a328fb00c"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2803723,
+      "sha256": "ac7009de3817a33b3fbff74ca00ef0dbe2f7c4a1fcb87d2e31e6bc160920992d"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109343,
+      "sha256": "67329fffac4e345bc25398af48b9697d51501cf38ffb26c499f0b9ed174bf472"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "a8695986b21a42c95039cbc24c2a0a705316e95a14029161b750e79a57a9ace1"
+    },
+    "run/tuning/seed_14/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2935875,
+      "sha256": "029d8312e66014b56e70625140ff144f2c3e08af5f44a89f26d82307a0bce68a"
+    },
+    "run/tuning/seed_14/ce__lr0.01/history.json": {
+      "bytes": 109351,
+      "sha256": "8c5246a1c2a2977b5ba7d2cd3ab564d20983ea416db530d0cf08ca9b9b611b40"
+    },
+    "run/tuning/seed_14/ce__lr0.01/tune.json": {
+      "bytes": 13164,
+      "sha256": "aa049efbfc2158e014a53dae5e55612940358fc153011d22fe86a9662aed94b3"
+    },
+    "run/tuning/seed_14/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5948701,
+      "sha256": "8e27196e0c6ef0e7779f1dd6d76ab41b8723f7e5c377c226be3837a2e8f8110a"
+    },
+    "run/tuning/seed_14/ce__lr0.025/history.json": {
+      "bytes": 109358,
+      "sha256": "e420f322184deb755ae4a49dbb456f8f0ed5decbac252d61f67c53d68b1573c6"
+    },
+    "run/tuning/seed_14/ce__lr0.025/tune.json": {
+      "bytes": 13162,
+      "sha256": "c853d8a06254a9ad461f4cae9557bb9efc400ea62ab5da24ab6b3114849b464e"
+    },
+    "run/tuning/seed_14/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5952314,
+      "sha256": "cfef2127ae01d487d4dd9270be452b089fe1036d4753765789a9faaa5ca3d06a"
+    },
+    "run/tuning/seed_14/ce__lr0.05/history.json": {
+      "bytes": 109366,
+      "sha256": "1909da8926600c8f8b78489c0e88363f71ec2e3a98ad4cbb7e42a9e4be562458"
+    },
+    "run/tuning/seed_14/ce__lr0.05/tune.json": {
+      "bytes": 13157,
+      "sha256": "38d671cec7660e38870d42c9e36f6785be1e23058b1e3cd4ca32d2df4b4baf8a"
+    },
+    "run/tuning/seed_14/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5955384,
+      "sha256": "e2eb508c2b93bf9b94ba50f7a9f3bfbf8dfa14f90abd2981a566f2254688071c"
+    },
+    "run/tuning/seed_14/ce__lr0.075/history.json": {
+      "bytes": 109360,
+      "sha256": "f6ba28373d5489460dfe1d831c8f8a2ac803f95cab7505a5dcbe9394db6d870e"
+    },
+    "run/tuning/seed_14/ce__lr0.075/tune.json": {
+      "bytes": 13161,
+      "sha256": "577bbdf6929403706faf8548fe781c29c6655014503f827f4696bd7e28fae4a6"
+    },
+    "run/tuning/seed_14/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5954214,
+      "sha256": "4a11afdb559ba3519e9e234e22a19cbcce420b850d3a30e44b5f656d1cd9c984"
+    },
+    "run/tuning/seed_14/ce__lr0.1/history.json": {
+      "bytes": 109367,
+      "sha256": "917ec848c10b5595a7e977d7bd6709771e7c236b9460c67fe14d8047d2b26ec5"
+    },
+    "run/tuning/seed_14/ce__lr0.1/tune.json": {
+      "bytes": 13157,
+      "sha256": "2bbbb2211f31ef9d562fc48fb65875bd577e57c400e95477e86c61ee39a539d0"
+    },
+    "run/tuning/seed_14/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5952805,
+      "sha256": "a96ead642d0f23be277a1612a39350fe2d7b138ba186072d82b57469e33a922a"
+    },
+    "run/tuning/seed_14/ce__lr0.2/history.json": {
+      "bytes": 109364,
+      "sha256": "bee756a062bc146081390a7dfbbae2773edc21113d47180768b5ed2bddab2d4c"
+    },
+    "run/tuning/seed_14/ce__lr0.2/tune.json": {
+      "bytes": 13157,
+      "sha256": "1afcb148bb8d9f31d9b62747ffb28bf3c7e222637a3b5c64bfa54c0f6d20060e"
+    },
+    "run/tuning/seed_14/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5951567,
+      "sha256": "b5b837eda5edb4bf79ddb4cbdd0b7d37ed28744bc4c3048c62e2791cedbb0e45"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__off/history.json": {
+      "bytes": 114162,
+      "sha256": "34990d47f61f4de2723e7964e0485c1b9a842f052c3ca093fe9ca22f8f651038"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__off/tune.json": {
+      "bytes": 5814,
+      "sha256": "6bb1b49b2ac3455f74103dea46af69c944be7ea1f03fb9db59e1dda4c0516153"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970308,
+      "sha256": "e9a106856f2f9b6f5d1cd4ed1470fd154b8360fcfbf1cfe06f37be9964d45fd2"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114116,
+      "sha256": "0235bf2ae38328a20b52c6e3a5caec42146f2762b714045fceec5cfdfead00af"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5833,
+      "sha256": "fa8603ca6e3a7146dce690ad3afc9023c479ff1ac92b76526fac44e3a981ec7d"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970150,
+      "sha256": "5ea2a91d758167bd4f5b22d3c569a1c72f290bfb9bf71e4500b49174841c39a8"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114112,
+      "sha256": "69202d5615addfc5c2499cc96e13c819a99bba85c48ee519c016bd58aa888d9e"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "25158f370c21ef48de404c436f2ce64d84a241d264ccc2a47afbc850908f3568"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970169,
+      "sha256": "a0adc743a0cb13faa3b067f2125154a6d0b9bb3d6ddd0812b8f8683a3ba6d645"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114131,
+      "sha256": "55f6dbb3390fccac513218ad84bded2b3b8332ce3363be69d06e5d7aa3489b73"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "98889fa6ee13a64c3cb5e1c5409b4d3e30341e54de67f280c1965146b410baea"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970475,
+      "sha256": "530ce5845adcfc484639115785b3bdd6440fd7b1c89fdc5038971d3a7e9e68f6"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114136,
+      "sha256": "059b439df87ceba71f4868c3b2f8dc736fc21bfd361d7a8989fe514da8fa5968"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5831,
+      "sha256": "6976a0ea9c4e868dbf803fb6261f21218c84de81cce151067b207bc90f324017"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970470,
+      "sha256": "3124a4d5c90a046263b0695aaadc95f857bf129770e57fcf27a86ecd029260c4"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114142,
+      "sha256": "f1c9c4b1abf486841a9ec5e51ba0e7ea9b5f96f4681d99aaa2de7c25c7cdf28a"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "d22900e46f508f895c83330ece323d5f6232ab6e9931c52dfe945c0067acf878"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970169,
+      "sha256": "6714f84aa6c2f9f547266ee7ce383143216df0a928b406f0fc99b977438de055"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114150,
+      "sha256": "51cc49e086952e8ec10e181d8b334ea00eab369acfe9b09ba7eccf864b691ff5"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "48110516ec4c074f70eba345279c9cfab8194aca90b8d598452e7a515e115c14"
+    },
+    "run/tuning/seed_14/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2969985,
+      "sha256": "09155f9a534004a57a1c1bedbab32ae8fdb490c51851ba5b362b813518d343ef"
+    },
+    "run/tuning/seed_14/class_balanced__natural__off/history.json": {
+      "bytes": 109361,
+      "sha256": "84784b9392cb5880ccb0a25bfecffd1cf6e9f8dd51378a787d2a51cd1c2cfb73"
+    },
+    "run/tuning/seed_14/class_balanced__natural__off/tune.json": {
+      "bytes": 8756,
+      "sha256": "6957dcbe0efaf37473dcb1ac4e876984378e00f45c210acb38bbfd7c9b916ab2"
+    },
+    "run/tuning/seed_14/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970780,
+      "sha256": "81fb61d9c91512ed279ae6c5af2d74bedc12d09482721ebe1b049e1f0f0f7178"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109316,
+      "sha256": "4952075c5d9ef3e28be58b04ff06006f4252bfff9874dbdd9c6e62356ac2aeea"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "77e26c8616e52242b99ca5433e58cb765631cf07940503312b87f3fd02b55b59"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970791,
+      "sha256": "190ad629a412cc995869a089f658b42800966eca858aa475f4f2b6f491110c84"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109327,
+      "sha256": "3322a238507faa0773865a9d8c99cdba31876a08fd9eac8e7a0f72211a426408"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "39caa9598ca47ba24157ce8381feb55bf0b645eddcee0a204745ad08ad471041"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970426,
+      "sha256": "4c373af253bf04fe916c7402ad0d695c67bda83018cc2ad8ddc95c0e871df42e"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109330,
+      "sha256": "0d38c5d46d8ef573e456bc6ff9576c6592574c54e6bea960772fa71c8552fb6b"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "6f3db542b67cc3e542919f73dddc92f84e55b989e95ead145081e34cdac7406f"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970718,
+      "sha256": "d5245bfa642eaa4cc6a635b8f0e5d24f40f460bdf136b284f347dd87733dedbb"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109341,
+      "sha256": "8c3d3c2afd5f96e73a9b96b4775eed0f94905517a63c675548cc24d7c48d12c6"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8774,
+      "sha256": "1a125a2c97fdac473daf59e17df6622be6b2c4d168253f2810086305646fe450"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970578,
+      "sha256": "3352fe5772d3a1f754129a6cc5e5c65154251fab60ac988d9c16697608750c0a"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109347,
+      "sha256": "2997cc12f22807abd298f75c31f50dc55b5f9adb4aa514d45c7be96c5a546a32"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "785bfaad1665e2261792ea5892ea7275903e2b18a65663853eb5227d378fdb20"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970750,
+      "sha256": "e0a5fbce3770ab4f7413cb4bc64d42e31baf1885bad4f0ef343333574c3aebd9"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109356,
+      "sha256": "5de240379149314bfef633a49c22519cae3bad46ac5cf05bf4eb54dab0a66fcf"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "fd30bddd3e085abdcc161a97094b4d497870fa79dd322bce08057ba4c340d447"
+    },
+    "run/tuning/seed_14/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970611,
+      "sha256": "31fda01203b0deecc76b6b2230f4432d3384c984677e2644ac39bbe72113fb0b"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109369,
+      "sha256": "74b770209cf8bfaff111e4cc7344d95612b624c9edd1e88e523bd8c41239ed16"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3631,
+      "sha256": "539ff1d1efec2b477dca03b49f4a21bccaf10aa77d791963a0209dc0326dcf44"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2974162,
+      "sha256": "e3352c8eef88a1ac9bbe73adaadce85831aa84372089e894b678f1aab3754dbc"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109370,
+      "sha256": "9fdb34550e459f7a8d0ae76ac2e9fde4f377b459a50c58644b728937d40c5878"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3633,
+      "sha256": "4cd91783ea4fc111a2b41c56ad065c3edc42d567a1438961e2814fe595e443b2"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2971793,
+      "sha256": "7dc17bdbc409f94fbf28d930e2947360ff71fec39fbd97abac4b3580211653a5"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109368,
+      "sha256": "b275a745da7a10c680888f3ad24faaf84ba0d6b591d2d8d09f9ac5b2d7460333"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3631,
+      "sha256": "43b0d05ac2298ad3fd2350129caed7b426420a28fa9a44c76c822b6e535a2002"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2968878,
+      "sha256": "4a00ff1feee245805aa74a5383763adcb5c766bbf490ca8926398324382f0981"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109375,
+      "sha256": "c7db7184e6e39ca5f2bc02a8fbd5b8d7305186a068c095665e8abd4f184ae716"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3633,
+      "sha256": "6e63bf40b5a440c4a276c5a6cdc6cc772087ed2f1c78acd2d8485a0260432991"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2968193,
+      "sha256": "e3df7e988032266fba81febc234d3807b57a0df0349c6fbf5d008c1a46990ad5"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109383,
+      "sha256": "6f72775014e32a206de8d7ed832fadec0c74f82526b80f388accad5cb7026432"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3629,
+      "sha256": "ddde8900973d3764c03f84fa651aa7ca1ccfa513487695312b5b774ac6f85086"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967941,
+      "sha256": "66e5b7e41279ea221e74e838697e637219123f3e87a6a9c6b6f1136d93e1a01b"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109379,
+      "sha256": "d39c965ac45520788f41c14eced04e52f8a0c2da9b34a53f0be6a21f85ee45e2"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3629,
+      "sha256": "cd70211e21e9ed307b6c0a6402b7c6d360cf764c49fd5c1757cb9c25377f1f8b"
+    },
+    "run/tuning/seed_15/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2968016,
+      "sha256": "ab77cd71ea8d2ba0f5573fc375cacd8088fa0a4705ae51f9e75d12b8936997da"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109364,
+      "sha256": "94ffa2d8ff7cc9a83dcf66fa48d3a59b64f915e88c478fea801ef2b8031249c6"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "f14e960aca0c66457c3b698ed56b8acf5b50762c595dc36492b38ca208451e76"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2931663,
+      "sha256": "9f724bee69f4e68a5b5965af9aba50cb3957ab0fc9e5d63e731ab5b79bc28847"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109367,
+      "sha256": "5f97ce06dae83274d73a686b0c48eb1629cb5fa4b5961c88d6a73371776472e5"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "6c59a040fa592ddcc175840f8f6075be1e1e43ad874757676a988c6ddf72bed1"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2958591,
+      "sha256": "aa373a8c34598e5c553b2568a5a34171cf1fd8d2abc23cf285869eb56de1dcbb"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109361,
+      "sha256": "9965d0542d4006d3ea578876746692b51b3603c063af52c17c8a1f62a7d0aaa4"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "2f1e4580f9935ce07493f7cdc018f47c1733aec0023e10f815cbbee6cfd516da"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2821399,
+      "sha256": "47b2563b4e879589b40562b81addc5058a76053f3f6413f1ca1dff3921f54c28"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109364,
+      "sha256": "d8f7466e3511bc2e6bf8cfc7764c3348d409bb82835c2d77cf9eeb387dfee4f1"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "599bb206c4b6fb0cdb5ced635cae50a535efc2f48e60c5ff7eaa33cd50d5f488"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2929521,
+      "sha256": "f92dd44c0a72acab2d7d3f215ea39e03c7bf4ba7bba95be066760f65fb5b1b7f"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109363,
+      "sha256": "0a9f71609ae7d5cbe900e8ef6b109140d65db593db93a274ba310fa5821977d0"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3646,
+      "sha256": "df25988ed257fda48f01d96b086bebe350cf5ea89bef115983cef819d62e45b2"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2802118,
+      "sha256": "e3ac79946bc6c649f116dc61151c35f19be15eac09c22e50f562cd253a3854e5"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109363,
+      "sha256": "5f2010010ff8c0bfd1b2ce96a2d0030dfdec420e584e4c1dacf7eb8fa5fa49ea"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "fd69faa856b57913982c9141df21311c8b4f398e1cbf5f5b2730a7a23407395f"
+    },
+    "run/tuning/seed_15/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2934196,
+      "sha256": "6a20fbc73afcbb75670482a3307813110773a513110969b18c625c2bbb05be28"
+    },
+    "run/tuning/seed_15/ce__lr0.01/history.json": {
+      "bytes": 109352,
+      "sha256": "11433a9102d6ccc57f5c7f939099852362c36a491f918e2b0294bb44442f289c"
+    },
+    "run/tuning/seed_15/ce__lr0.01/tune.json": {
+      "bytes": 13161,
+      "sha256": "8682574da0c27c1b09d2ffa32dddc6126e13b287571002db3690b6485790bc24"
+    },
+    "run/tuning/seed_15/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5947063,
+      "sha256": "81578312a5c95a70aa54cf61de1d54077d42aa0e1e499776d3af427bde10b17c"
+    },
+    "run/tuning/seed_15/ce__lr0.025/history.json": {
+      "bytes": 109373,
+      "sha256": "d511de696a3a3a630765a7b10dd9618888045ed2fa54bdebc32c1892d0acde79"
+    },
+    "run/tuning/seed_15/ce__lr0.025/tune.json": {
+      "bytes": 13161,
+      "sha256": "1524b30db6421081a3bb5a9be5d0553f6a70e7a17d4e2718a83fcb50eb8407a1"
+    },
+    "run/tuning/seed_15/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5951740,
+      "sha256": "6fd7772e0dac16aa68a755b8feb3ba4fd83b69bf8fb16813c05dbca5901533e2"
+    },
+    "run/tuning/seed_15/ce__lr0.05/history.json": {
+      "bytes": 109371,
+      "sha256": "d65f8a4a19a6c0bf095df6a6bf9358934f14cf12965f1b1ef9a96afeb93e34be"
+    },
+    "run/tuning/seed_15/ce__lr0.05/tune.json": {
+      "bytes": 13159,
+      "sha256": "8a0a8079b1cb6d9fddd3db0bde080d05eb8d668ddd6dbbd4a8e5d146c60e0409"
+    },
+    "run/tuning/seed_15/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5954717,
+      "sha256": "357e2ec677e6482e41d09d6df71c90ed0df16521f8b3b3bb2bb27bc7705f71be"
+    },
+    "run/tuning/seed_15/ce__lr0.075/history.json": {
+      "bytes": 109363,
+      "sha256": "50d66d0b78ee2ca51fefdf22a1d3a4fe8eb3ddd6ea039905245ad85e79da6d33"
+    },
+    "run/tuning/seed_15/ce__lr0.075/tune.json": {
+      "bytes": 13161,
+      "sha256": "1de8f58cf54efe60f5f6d8d2874f0bab48d6422729b193979bf81fdfbf570676"
+    },
+    "run/tuning/seed_15/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5954810,
+      "sha256": "89ca69b094310ed7e607e8fba045be30a9d469fecbc6d10cd78cd37ad649db15"
+    },
+    "run/tuning/seed_15/ce__lr0.1/history.json": {
+      "bytes": 109378,
+      "sha256": "ae49775ea34b0071a066ba53fef8770fb8204e98af84aa8ba5bbb2877fc55c36"
+    },
+    "run/tuning/seed_15/ce__lr0.1/tune.json": {
+      "bytes": 13154,
+      "sha256": "a08ed0a4e1a94ec2fab744bd032dbc8ee979bd96154686d2c86041f2f7f90254"
+    },
+    "run/tuning/seed_15/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5954043,
+      "sha256": "11e20c942cf48d27640c9860035722a0d45181b9a109be7dbb80ad6e9ab8f8b2"
+    },
+    "run/tuning/seed_15/ce__lr0.2/history.json": {
+      "bytes": 109377,
+      "sha256": "5e38f27ee16961af26b6f5560571e57a8041ed7279640b8df1a018bcec2d20af"
+    },
+    "run/tuning/seed_15/ce__lr0.2/tune.json": {
+      "bytes": 13154,
+      "sha256": "f0be0df9c22005d173fe75956a4a97d4d1cc15f65f08b21bba2fb472e48f0d32"
+    },
+    "run/tuning/seed_15/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5951613,
+      "sha256": "7c495d7408ec4f35611cb98ccc0e8b0dcbccc0a94d35948118c6dd651fa12db6"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__off/history.json": {
+      "bytes": 114157,
+      "sha256": "bf209b67dae8624bb8c732955d7a646c9fecce87221c7c54e65320bd82e64dde"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__off/tune.json": {
+      "bytes": 5814,
+      "sha256": "5ae36773c5a795f94fb5e7c43c055b7281950222269dcf33e7343aa0b339e5bc"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970427,
+      "sha256": "1703a775656763e094c69f6df74f5aadd05a2474f76dd7e84e6807bf8c0098b6"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114119,
+      "sha256": "0b099c6ade719be600a7c811939b777f43cdda6872fb4e15d28e5c3e3c9c37d2"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5833,
+      "sha256": "c83bcb5a2da02f7e77a441e8280875cf509c0af76397e3b2aa6be45178852f60"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970350,
+      "sha256": "195a7ce3002d5be94214c16dc4b43658ec15bbe7b2590cf856b77761636f00e7"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114113,
+      "sha256": "0a2d1eb64a5858a514a20752a4c35fc8f2a645bf012cf87182e1804dad217df1"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5830,
+      "sha256": "2b6baed5172730cde8186da77ca9ee011db7898bc30da0dbb98d41e91203ef65"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2969958,
+      "sha256": "65457cb2083354d9832fd6f1a6a63634bef9b8ce7d7e24832918a67a91c2af95"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114142,
+      "sha256": "2386326c2d929afe277c4ac4a3825f9abee590e43a02beced293e3565d16f8a3"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5831,
+      "sha256": "ff12de16ca2a40b1575cd4c3c987948e9e17f403567395c98d02ab1c45f02555"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970376,
+      "sha256": "7d81c473cd97623e4a87ddd1b612ccdab390a9bbb06df12e1adb0b25c2821437"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114144,
+      "sha256": "f1e5f8b8d094ce3b36431328722eb351bf409f89b418da404723aaa834110b07"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "088fb2059591b1bbda1bda5b9a6993d554d1c2948d45df57a0e177aadb8c1644"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970258,
+      "sha256": "6a5c5125c5466e00e290efc2bb878f094a584ad244f7f0b0ecb65df0de0b9434"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114144,
+      "sha256": "a9dd3600b39dfddf0ed7128574a8d0eb7218c1a472f86c3a8f6c3f9b52f96e94"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5830,
+      "sha256": "7aa09b98a831e3200cfe9e355d295ec21253fcd09cd85b37fe7b92cf0069b67f"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970360,
+      "sha256": "0aaa7a54b3d20352e038a1424baa31a08414029c3d29e4dd3c8fddb7b45bae08"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114143,
+      "sha256": "3ff5c3a1525a27cd2179bfffa1f63098d145c5d097ca8e74581c737636b439bf"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "332e4b860734032c027a46249cf0c3e61b9849b0335477f0cd32d33381cf0be0"
+    },
+    "run/tuning/seed_15/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970233,
+      "sha256": "2714cdf2eac31d5cad77a2fbb542da4527d165816a844cbb9137b606bc6a0a17"
+    },
+    "run/tuning/seed_15/class_balanced__natural__off/history.json": {
+      "bytes": 109379,
+      "sha256": "c73c86fdf18f1de74fece8729f9b03cf324f3771a4c7f2dbacf6ed9b23f224c3"
+    },
+    "run/tuning/seed_15/class_balanced__natural__off/tune.json": {
+      "bytes": 8757,
+      "sha256": "b1d575be797a7fa9f5d7e52e1a1cacdb76b0071a59145ec7a193e03f9eafbf4a"
+    },
+    "run/tuning/seed_15/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2969776,
+      "sha256": "f5eb8fde2f15f6761e7510e846118c9801d9823b1b13ecf783ebccee3c08606d"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109325,
+      "sha256": "2884ef1750170712760bbd5605b0a7237b24d690198e52aaf9ed95956f95036a"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "84373baf02ea44a53358459dfd0a6e5513d79498a6650baebe0de7018afd03df"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2969930,
+      "sha256": "11e958f76046f87d850e8e01a19cb48d6ddb0c119e0dbf544baddf95f5ae6a08"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109333,
+      "sha256": "d3c95b3a3169a34b04669dacd26b4e1db2ee3c0ff504901021c00663aa8eaa15"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "47b9690ab629d24cbb469b3f4221b243508712a1edb4d2ecefad7bb554b8daa9"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970096,
+      "sha256": "547fe5eab0631b30db541c2569f4cf67ea54e3d98762df0144333fd7d5cc9995"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109345,
+      "sha256": "ea9ff33fb55abaf0275a05b11797c03d50d662a5f2df7595151d31f79bbc01d5"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "db5eafaa034b18c4ca4966e9abf0b3c6d2e3d3660f5d80baf5d8f4d6836b80d7"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970245,
+      "sha256": "7490d64c2389632714020d43f5edc02c0379648ff38003150c2cf483fef9be7d"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109339,
+      "sha256": "78fe3009a0a4fd4d2b5f047ae0e4f9745e6839f38a1e28cadc9b6a3b415d0734"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "3640d4567336c81670fe58eb4c60a44f5ba5ffb916a0267b34a3639bbc176e89"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970058,
+      "sha256": "b11f337c352865d066a98a60c7d8c673fd882d8b4fc30bb182663162c176d531"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109370,
+      "sha256": "a1cae7076b55e4381605daf7ea97049f3bf28789e4b50e4eefa744e91c7a608c"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "717c9a3e276a9b0fde769f3458dce722f8e0dd55b8e15194b39810f717126f7b"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2969839,
+      "sha256": "e984c0b4607fb009506f6c925cb14666956ca70cdbba15f9d2b9cc26ae825797"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109372,
+      "sha256": "ed0eae5e16980e391885893750905f68804c13fbd7cac4a986ec4190564f35ad"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8774,
+      "sha256": "c0d9c832048b6f2a33695a57d450d7b4580915db1fb23fd62a751949362891cb"
+    },
+    "run/tuning/seed_15/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970020,
+      "sha256": "ff53b836e59a32f87abb09a7fd972ed78203c529d687a700c5f1c3a35f3fea43"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109356,
+      "sha256": "d7dc2c1d60638e31019aa55984edb7e0fe0e1b661bd53f09fa3242c7f6defe8c"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3633,
+      "sha256": "cbaf152879cb73bb7f049532b020ef8e9d83dc995073263f3ea107312b78f3b1"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2975217,
+      "sha256": "7496bf5a180444e6ccc898653416f22af5358aca367af30232593f3804d20691"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109368,
+      "sha256": "c7e5b725215641b2a91b9a8ba9263bc3bb007739ad551397c73889b496ccadad"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3632,
+      "sha256": "69674780fcb2f4685ccdd7ba13831ff75fa3896e5817b744693fd8c14f37259c"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2970796,
+      "sha256": "d324d4d6dc4a3cd6d856aa6c87deefcd3656c45412f6484d763f605a5e3a37f8"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109369,
+      "sha256": "389d11e5aadb05d7203abb016cdc3978251300fd3adf613e517b0359622e1e23"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3630,
+      "sha256": "266180aa871e29646d45fde420123951d60481df6300734b1e452e0f07c94815"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2968654,
+      "sha256": "88e2eab6c5796a075d69c69de5aa2a80e8e852c6fae45cf57d941ebbc004f0cb"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109378,
+      "sha256": "766fa5f549a457c13d1301ef219e3cb64179b0d97767285dd55074702f9d1a02"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3633,
+      "sha256": "e8a96d81b911bc16a41fe618d7d4ede05ecd71d95c2134e75f3d01ee6934937c"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2968136,
+      "sha256": "d41a4cc2d11ddd95027d85d082d59522b0654f088dcd261cd3b8e92b8b65cd90"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109367,
+      "sha256": "f2897785d98064756cc27a3816e5d96c05b547d54d9c4b3f38b89c3846e9584f"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3629,
+      "sha256": "2f5eee97726ecdd7e43d8668ceb280c4bc936512c400c5b534e696314e7cd4f9"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967800,
+      "sha256": "08a567aaaa91f7ea7daf1c5d099824f0cce2109c138e7c9ce345eefe04884dec"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109373,
+      "sha256": "8a4c3fa2faad960efbb1ccf8a7a3739353d148c851ebae8c51eaeea9dfeb0eec"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3629,
+      "sha256": "00c88d309c0fdd3d274f5903be4a8847f085ba6ed922e8e757afcb8c1afebae7"
+    },
+    "run/tuning/seed_16/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2967322,
+      "sha256": "34ac32c243443a5abc37db94d65d7e064f6bdbe786d559372a0b49c54b192c89"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109361,
+      "sha256": "0fef4e6215878a63ea95ed5b67ec348cc5ac8b1672be5c6c6b66d4dfddaf4302"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "a22e2cd73e53ac23ab1538357fe684286b7240c6867b7158ecf51255e56b90fd"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2932144,
+      "sha256": "81c4520e7c8e708dd9037a27d19f692172b98d8b803e0c1c725d576a0fea66fb"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109360,
+      "sha256": "36e4f918d0ad60a2e2070e996d3aa8bf565071c8dcb489797deb4f481c3fffd8"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "645a9c90ee1588bb75a4497b08abb5fc881b51a11a526bdee9b7a34a5d92a087"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2958365,
+      "sha256": "cc8bc3954fec45cf94e74cfbab86a4ff9c9902a21e23aaba28a91cd7fa9e07ba"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109351,
+      "sha256": "409eb51dc99794b4a7cfc04e61a9e5db7d3f914d4da2a73d0c90fb4516d2b24f"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "f7d41376536d21252ff3285748916a5ec9794573486921a06a8916bc8594e6f8"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2822092,
+      "sha256": "b4523551365b5276b422cb29e0d18ee28eb46fd5839b52d731b0214b60d3cb59"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109363,
+      "sha256": "51719e78c625b321b9d583a23b40ab154a9ccdf9df2a0face37e7ba93d66849e"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "56f38d5d53d7e804f6de02ef5617d2dc7e0b1ed7acedd476d2544e100f1bd6a3"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2928209,
+      "sha256": "d8dfbf8b8d978643487a6acd952315e6dd68725dfce1dddac024915de1df2a88"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109348,
+      "sha256": "9c3a52e7ff12a5e6848ff59a9f19c25b3f016ace7b2dd5e86c6c2411c09ca220"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "6f483ca74934554e97e41d8652294632adf0dbc6cb273ac13a6be09677f8c31a"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2803674,
+      "sha256": "20815e59d4c488d42ce6b97597e7196117e817e8a5439361877d3e3cc87b04d5"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109353,
+      "sha256": "b85ae73d12e5b592297e42c7ce15aada6562626c61450b083195bbd12cbce9bf"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "de891781f19c87e51a240f6f587b37e35bf3bdfc2e1bea07ea18c25e435db248"
+    },
+    "run/tuning/seed_16/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2931969,
+      "sha256": "2323c955b1e91c09f366059a11e3cc0f3bfc9b6bc6af6bfbd62ad792a2d0be69"
+    },
+    "run/tuning/seed_16/ce__lr0.01/history.json": {
+      "bytes": 109361,
+      "sha256": "7f91b4869b974b699222610b278447af878469842566f2b95367c28f9320f7df"
+    },
+    "run/tuning/seed_16/ce__lr0.01/tune.json": {
+      "bytes": 13159,
+      "sha256": "683f328320bd438afa09c2c23ce0a89c748f5c481b4ce508e4262a0ce3ca695a"
+    },
+    "run/tuning/seed_16/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5947088,
+      "sha256": "feec770eb68a4bf760925f179781bfc88cabe2c9dcc1d0b915550aaa5a83d2e7"
+    },
+    "run/tuning/seed_16/ce__lr0.025/history.json": {
+      "bytes": 109360,
+      "sha256": "192d06ffb78ece4f204100eecdd2b56725d1382f9ba08e4230d78c79f3a80e7d"
+    },
+    "run/tuning/seed_16/ce__lr0.025/tune.json": {
+      "bytes": 13166,
+      "sha256": "47151f78d6582e577335dde3f600acc4fe88001ce607ad180f85aaf84e116957"
+    },
+    "run/tuning/seed_16/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5952029,
+      "sha256": "f5eefae1e6bf48a61ecd5bd8a35114a290b7fecca3777b0412e5f07ce59bb599"
+    },
+    "run/tuning/seed_16/ce__lr0.05/history.json": {
+      "bytes": 109366,
+      "sha256": "7c47b063947ec9edf10a8adc2fade2be3e58f49db0e064201963f7cc2e0dd3d5"
+    },
+    "run/tuning/seed_16/ce__lr0.05/tune.json": {
+      "bytes": 13159,
+      "sha256": "31e0d4eae40e6e189e7660ae1ec9f6e7f7d3c1b7dc4009c0ab2ded2c6107fa43"
+    },
+    "run/tuning/seed_16/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5954055,
+      "sha256": "7b3d40027a5bd637588df65611a1ba0f4b5aa62d511805b5f4900d1775bde6e1"
+    },
+    "run/tuning/seed_16/ce__lr0.075/history.json": {
+      "bytes": 109367,
+      "sha256": "353d088a5cd2d3c78e8f7f40ab82a9141fd9e2a1cfc3d7b3825fae69a75300af"
+    },
+    "run/tuning/seed_16/ce__lr0.075/tune.json": {
+      "bytes": 13161,
+      "sha256": "725c1ea26537c6fec1924293fcf1df558ebdad7d9fbebdc7042188880e252dc7"
+    },
+    "run/tuning/seed_16/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5952825,
+      "sha256": "dc3901a60305436571ab977ab9bfd259f87a9fbf6b61bbc3982f01930018ec09"
+    },
+    "run/tuning/seed_16/ce__lr0.1/history.json": {
+      "bytes": 109371,
+      "sha256": "5f9ab359dfe550329d6a193bbb1f714b02e79c42f1ee6347a12826992f636e3a"
+    },
+    "run/tuning/seed_16/ce__lr0.1/tune.json": {
+      "bytes": 13152,
+      "sha256": "94fbc1310b4a307f9a81a210e3d0f0a8a1e0a4d8e788700ec1443bf4229c0c28"
+    },
+    "run/tuning/seed_16/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5951955,
+      "sha256": "f2a6d788cfaf20e0e70a215c078940a87d756332836f426ce79233fd5ae1057a"
+    },
+    "run/tuning/seed_16/ce__lr0.2/history.json": {
+      "bytes": 109371,
+      "sha256": "f9a8728cff14fb2e52baf769e7c7ad5ec939c3d2d9dc1c14487713fb2f7ff7b6"
+    },
+    "run/tuning/seed_16/ce__lr0.2/tune.json": {
+      "bytes": 13155,
+      "sha256": "04efe07f933cd15964423f5ef244b2b85670c399ee88412268fcb13eaad93729"
+    },
+    "run/tuning/seed_16/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5950255,
+      "sha256": "e46163704d47d0480339440b0fac620d7d1c785a64445da487d63eb1588ddd01"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__off/history.json": {
+      "bytes": 114160,
+      "sha256": "68fcf0fda9822654c667d2e7414d6d1ee5c95ef5682d2ec8da2cecf68233ed2f"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__off/tune.json": {
+      "bytes": 5814,
+      "sha256": "00ecef20bd3c1aa98f08a36413835296730b9ac133411224f316be8be5fd3cb7"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970259,
+      "sha256": "2ff4e85a3f2913a259ab3d636f8412ba58457d1535fd6cde09476006d5a3794a"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114117,
+      "sha256": "a6eaa8f0050bf1953a096dd74fd3c4bb8dc1dfa293efa35902488e4f72d9575e"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5833,
+      "sha256": "a1f4bc1f9ff8d6c2803198829ae0a0ffa9c118aaa065db6008c1a245380e5606"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970086,
+      "sha256": "872662a7f884d833200ac17909e81cd03fa9822669898a5f370a375a8e5ea87a"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114112,
+      "sha256": "9ae199102b70eed5d3d5ebd365713fb5abd4bcbc763d73d2d27242cce6f4c77f"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "900e4d75505af57afa25f4f1c597efc71db799ac1d847516b33d53fdda0c9517"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970190,
+      "sha256": "071d8800cea3cecd281ae17b207a4b9b765c37b26468998a51757b18144ecb21"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114142,
+      "sha256": "f8d68b81cd46a434cb5e09b0b9b0715b331d88cfaaabc5b8fc4fea39e3c1e785"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "335909fecceb3d24333fa4a93768b0fd20438e30a6b91fbeab0b1a2a292b9a4b"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970129,
+      "sha256": "304665af64ec99a59e81caa77ada4bc17383eae1be76e1916deed6b94d38f0dd"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114130,
+      "sha256": "14467f62f0335ebe58438bcc4f79a630db68d60aa6ca0fd84aedde93551136dc"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "f1ebaffd84a4ee35f0c8abd54f033a1799e531133740e96d9f6afbd4bba4be95"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970235,
+      "sha256": "a176e9faac2fe60a0fe5a76f6a52286c47645bb3328630ee3899301061e68c99"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114124,
+      "sha256": "ef50a9ced64e0af84c1b2bf00e24fa9380d9a36d12827c3fe297ae5f2b64eb8f"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "542c3baab34227254430747a99b98c6d2ffa9b4ead2a795cd1c71f94d7228a79"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970223,
+      "sha256": "a1218a10d24ee71121b9d441b00c6e8eb229d7a258c626b26739bc5b34ca1eac"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114137,
+      "sha256": "2e2c4c5a27351c0ab68cd5fa4c83880acb578d2c9342e4564026c3bc4acdd629"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "123c7f4391cb782582df6c52c058953cf6bf2584026f48f9d9eb883b27353b8d"
+    },
+    "run/tuning/seed_16/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970239,
+      "sha256": "f7e520857dea2117b17ebacfef7f9fb8812d557319ad9f96babbe6a4a21e6b2b"
+    },
+    "run/tuning/seed_16/class_balanced__natural__off/history.json": {
+      "bytes": 109357,
+      "sha256": "12255c4ba409554e68585387a81cc43436601581eb8054fcdb9fc1d49af01128"
+    },
+    "run/tuning/seed_16/class_balanced__natural__off/tune.json": {
+      "bytes": 8757,
+      "sha256": "25c6627d9cc6e63fc3934effc4a5471b63518f6aa1fe64fc315686788f312072"
+    },
+    "run/tuning/seed_16/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970360,
+      "sha256": "20a5e67007bc15883d9795be84925455b3ac9b379c7bf76e6aa53528bce31ae6"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109329,
+      "sha256": "e87eb66042f7440a8d04cc07b29072510481846d1b10255175cebe675c10ba9c"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8774,
+      "sha256": "cab2de1c837f6f4e88c0e3e5edc9050c6eeb756929ef4e0d1b8203d0b6c9d228"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970582,
+      "sha256": "7bce262fadae0ea6c92b6b7d283ea3010c482d802d573648aed7f3cf2beeba5e"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109323,
+      "sha256": "30d49afc26da0acd73e633060a66e031423ce712f07ad27a3c1156cb226d495b"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "f6d5043fcdbf403441f9349bbdb0e43a2ece7e322d6ba800f2f563b95c29b952"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970344,
+      "sha256": "ed2c8b692b08660cc2ac5074b58a39783344a9f833f72656bf169364a1ac2cfa"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109334,
+      "sha256": "38af71649872f7e2893dc325801ee52d3606c1bb7597ca02df3f97a84b7ff942"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "74e612d04d4ec900489b66d4f536d282aa02e1da333076d0130fd33c7600b0f4"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970324,
+      "sha256": "dc87c95e680d028a5bc78128ca2f80b83dbc72537c26dfca2379b6a190711216"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109338,
+      "sha256": "c26e375b20e90c37decceeee5df542e19e98b347c42ac6e129ec69d62ece248d"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "66626a6fba82326be23c328ff147e7543ed23ba95197284bdeb72a4df3ae69d9"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970328,
+      "sha256": "b2cc46af8151cbc83ed226f30a26873fd4fca3a831d8edf24b492f7dd6135e21"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109356,
+      "sha256": "75cc81569b8a98005be4a527675f8999478cc6234d4c7fa56e1116a40c97643d"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "95a3ceb08e19966ce3921ea17ef87f95f0f2538b7ddc0638201372b43c1f416a"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970314,
+      "sha256": "b5fc48309bdb02aad7692485e33cc42b6aa040cac1f03c44be56910292e9aa6a"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109347,
+      "sha256": "152a5fbe6f23f0a54744d3f083052335f86e21762d6679737aab6e984ceab3df"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "3cc3b622bfe2d8b0e072d17a8c9819b8454d277352621c694ae7caecfdd21de7"
+    },
+    "run/tuning/seed_16/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970516,
+      "sha256": "720f02c16f62ceea55bd1f47c9cc6d0f1f951b54a5860d28669ff2e7920b9bb0"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109371,
+      "sha256": "9a5515bbb126bb64db6aed89a0387e19a9074d63eecb1638b0df9e901307ecd0"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3634,
+      "sha256": "4024fb73252d3e06303decbb602dec0a665c88f834c3c2560366431ec0c635d4"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2973845,
+      "sha256": "f78c6b37641ddef35f7668abc879594ec5bdde019120f34a287e4f7752e364b4"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109369,
+      "sha256": "ccda5d0d3a4523bfd6cda1a24b6b39b7d4b2994801f217ab81c3e3324b99bb15"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3633,
+      "sha256": "911a6dfe25ef4364aa99266ef1daf8e4a5b3d7cb93ae7f98c7473e449a9a84dd"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2970815,
+      "sha256": "79c7e5e78032fcb727979d875ea19d8fbe3dfca56dbd2d25a497475380cb7329"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109364,
+      "sha256": "efa5576ac2a681f4ef92fbd3e617dda0900a632f48af9417eaee1d18cc961b17"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3632,
+      "sha256": "a716100c4ee0489d137e7006fa5eb063c4993fed470d6906bc03cdeb13627da1"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2967633,
+      "sha256": "94b686a1b9a175fe61aa5991aa739c23b27b54f269fb1b588867ff6dad642819"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109367,
+      "sha256": "3dcace54a6953910373635274b7cef7d0d304e8d907c43f8567f8f7d72b885b2"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3633,
+      "sha256": "89ac7d4cb59f82eb3c95de0a09c21b4743c8ac1758bc065dba7f76b46c6d35ce"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2967284,
+      "sha256": "24ebd478943d8d0afba493727c75dd25f7232f6345d3cbb81ec90bab829a5c9b"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109372,
+      "sha256": "df542597fa9dba94ef141821f661de3811b4532067f373dd130cf672b62392b1"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3629,
+      "sha256": "2198be78678027d396ad9b15121aa3c80860e614b5c3f7dcacf71a75f3362e07"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2966770,
+      "sha256": "fa43d7ac7ec3c9a1323bdb1e597536446f92712aa50587fb75625e93d8eea976"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109369,
+      "sha256": "9bb3c3af746e2c8a6167539c49f41465c655537a1c9a3066140e2eadc23a37d7"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3629,
+      "sha256": "fdbad17644418c4fc2666fb055fb708319d3d73f4ddacd9e00ed2a2a59aa1801"
+    },
+    "run/tuning/seed_17/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2967369,
+      "sha256": "209e4b0b7bb6f25143d7f0e215b961473fbd53e268faaa500ae3375bf4b3b7d6"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109360,
+      "sha256": "fcc3d49e42cea1c78f870107d53fc807c56bd62050542212517c349c2319b633"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3647,
+      "sha256": "7864d7872a14f3cda0d5cc3b14b685e0112d5eb57c847ebefc5d557a1d1c4261"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2928425,
+      "sha256": "072f01329263aa3e46bbde1b4a8a89e9be429b69e1c4f9a49d07aa0ad42d58dc"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109360,
+      "sha256": "6bf9b9b1351d59ef0d2fe95b88c9d5b56fd05564d96218e24306ed908f17d7e7"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3645,
+      "sha256": "b2d4498dc4978b37699f6560e7e75ec0eb4683e0b0e5d9b0a3d63856a0185aea"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2956553,
+      "sha256": "75f28c91c49474c0d6bfd5628a434f38d0240831037e5d6335b50f2d5b90c051"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109353,
+      "sha256": "0e0738b034b5804b6982876d51021aa6713798b592ff1c96ee49298bc5030bb7"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3647,
+      "sha256": "f1f079a2557504cea8cf2a7a0938b3b410f92b1573f436f2639c52b10c284bd4"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2820872,
+      "sha256": "3d0c3293a964dd2fe60ba3964910a84ed6860bae529e17165ad0a059fa837a39"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109360,
+      "sha256": "a8584e4f769dd4e118a16b9fc5cdbaa2558301f2930a240753c68313a1635db2"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "9878304d5f26427d83df300419bacf7f9bdb29470f43a2e9028424798e7a0d6c"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2927792,
+      "sha256": "3845090f506d0922721224b0427ca1d26e37875b0b698a7753f69d8baae4158a"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109362,
+      "sha256": "902a01d91f7454c9c5ab1a69db46191de945f4dea2a6118f999286dd1aa73b3d"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "8c53c12e410153cec023b6891515967044517492c0a1e45fc3406d1a71a74e01"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2803451,
+      "sha256": "280b4fbe790acd5cf9f22596d3228fc52297ad17ccc9e40b0db4c94c17e7a11f"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109365,
+      "sha256": "5448da61d3e444ffaf22df6386f668cdc93e463fd878ee51bff6d848e78d237d"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3643,
+      "sha256": "80d29899482aa8393a28e861a2e7f33cec1cd613860d6e723f2c28e19c127134"
+    },
+    "run/tuning/seed_17/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2933571,
+      "sha256": "13101714bcb0465916fbc06d119f5a1f8899eb3db6ad9fc8583346999ec44bf9"
+    },
+    "run/tuning/seed_17/ce__lr0.01/history.json": {
+      "bytes": 109352,
+      "sha256": "e99aea9a29f3e28422129a0060ee8731e613d877fc80c13a5a484adcb9939a51"
+    },
+    "run/tuning/seed_17/ce__lr0.01/tune.json": {
+      "bytes": 13161,
+      "sha256": "c4bfa88f77f7139538c189cef05ca70ff2175e523dd1e5f8c190b212306a14b8"
+    },
+    "run/tuning/seed_17/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5947354,
+      "sha256": "f99897a1d6add72b69a96e2f930e8e380634cbb8d3458c047ab32f62ea74880a"
+    },
+    "run/tuning/seed_17/ce__lr0.025/history.json": {
+      "bytes": 109353,
+      "sha256": "4ed0e130facff098fdc849f2a23b06331bc5aa8f59f6ba2cf7fa367d2859a88d"
+    },
+    "run/tuning/seed_17/ce__lr0.025/tune.json": {
+      "bytes": 13161,
+      "sha256": "e896559f304415d96985d3a5f5a10f0f4985209b4a8f5ee22b52f51b7dda5f91"
+    },
+    "run/tuning/seed_17/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5952890,
+      "sha256": "89b92dad17cda93068fab0c04201435379050d8695f583baf703fd1b3c9c1806"
+    },
+    "run/tuning/seed_17/ce__lr0.05/history.json": {
+      "bytes": 109374,
+      "sha256": "d7b01b6b7004ea4a2f4f68e08ec77c3709cd9f635870f29faa6061f429cee138"
+    },
+    "run/tuning/seed_17/ce__lr0.05/tune.json": {
+      "bytes": 13158,
+      "sha256": "34feb8237ef5d9b7bba17da39cd579eba7c8c6d2870024db7b0ae772cd3e4bbb"
+    },
+    "run/tuning/seed_17/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5955334,
+      "sha256": "ff734d70b62a5d95219a6c230125d41be50d29604a3b2b24481742f19898aa61"
+    },
+    "run/tuning/seed_17/ce__lr0.075/history.json": {
+      "bytes": 109381,
+      "sha256": "c03adc366ca70b6645b74670c5bcc65754e63f7b6f51fc3670ee79c6c87ff0df"
+    },
+    "run/tuning/seed_17/ce__lr0.075/tune.json": {
+      "bytes": 13158,
+      "sha256": "62b9548abde86ff39d966a9f82ad10e7fd088426cafbdefd06d5068491e3aefe"
+    },
+    "run/tuning/seed_17/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5955551,
+      "sha256": "088f3757952b9542af599784a6607a513533f30eb80e54739f6efe371f213394"
+    },
+    "run/tuning/seed_17/ce__lr0.1/history.json": {
+      "bytes": 109373,
+      "sha256": "40116d9261cb4293454c346ceccac4ff7bf6ddcebfb73be1ad645d5dcf2b4a81"
+    },
+    "run/tuning/seed_17/ce__lr0.1/tune.json": {
+      "bytes": 13155,
+      "sha256": "69dae75d16f04d6d36cd0bf578c74abfbfa251306f257fb6313d0bacd526baa6"
+    },
+    "run/tuning/seed_17/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5954456,
+      "sha256": "b5ed031e83fcc24d26a2516ccb94fef71a12a5470dd29844d3b4b93d48f297ab"
+    },
+    "run/tuning/seed_17/ce__lr0.2/history.json": {
+      "bytes": 109372,
+      "sha256": "929e624f460e030644106b5c833afa52697696bfa23d04d11eecf4cc56e8ea7a"
+    },
+    "run/tuning/seed_17/ce__lr0.2/tune.json": {
+      "bytes": 13158,
+      "sha256": "728790ef37cbbc828019a2ba93c5c0aa2649a4680fcd571eee51769298d3d0f3"
+    },
+    "run/tuning/seed_17/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5951361,
+      "sha256": "56f2ba80719297ab9048cd2167a7ed1b9d7de1315a7bafe486bd2e20c3ef2922"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__off/history.json": {
+      "bytes": 114158,
+      "sha256": "183e8396e320c1ca7e4558c245458a0554f2efb7f28d98376989876b3d70259c"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__off/tune.json": {
+      "bytes": 5814,
+      "sha256": "4f5dddd5b3c523405ec276aaf20e010d41b83d584ebf0ce17e1d0b1c1323f99f"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970480,
+      "sha256": "25968b4efdb750706a1e051a37cb64a1997398c745c9a77d2d79ea5352978d76"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114112,
+      "sha256": "dfa598f6685b02a58ab78bb33e8e838abeafc3081a38c371d3726f0874f8ccb7"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5833,
+      "sha256": "209fc279127093c8841e604fff5b6cdef1ce0d04f8044d832aec9857b24f895a"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970203,
+      "sha256": "3b5ad328e7f68d4ae6d10b05e878e397647604aee65cb5ccb776806ffd86caf0"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114108,
+      "sha256": "c186e3901c21a2fb231d009e451c26f76c111b0724651c7f384cccae603679e0"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "2d75901917988fb4b166bbc766ae5dd75825dd77f227137bd2d6e70a8f984981"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970095,
+      "sha256": "fef936f9798967267241836ab211c8eb455abec450a61e322e5985c8eaed5d20"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114132,
+      "sha256": "d994d36087f5ba65b412978356d68c882ca583931197aae6ac533a94f87489f2"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "7eb647dba41c3c0e7b2c3d698bd4c9ca85376b27a0e71c85f73d5ea8ae654518"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970342,
+      "sha256": "3ca7bf5dc38d41061ff2c74b0460afa3625f1e123552012dd316e4bc2759e7e8"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114129,
+      "sha256": "bd39b5f82b1ac4dd51ab696893be8588a3172dec085bef268dabbd11fd581dd3"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "4543d5b6ae54be1f7244f31a8d6b49519c1450d5dc480a4ff4f225a6146a69cc"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970415,
+      "sha256": "fb8f6ab8b08206d0444b32fd1b50a7ac20589b72cf6811a261541b13362d7785"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114152,
+      "sha256": "6a1c3481b34ccab6af001f4e29011452a3478c52a234ba102605e649997acb73"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "f7ee47c1860eb99e2a9b44334fd5438dd4a4c2bff66906eef4ff4824863dd3fb"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970189,
+      "sha256": "4bd53d50dc1445683ba79bbb3488cc2be34cea204bf1a1c8e519f5dfbf89e79d"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114151,
+      "sha256": "1ea69b416ea7a8268babb99c505ba8bee8f0642958fb7888b657a32b71d3f08a"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "fee581313f8cf02f47dc0d2b15c65f44484a77e5e7020869740bae6a212c4e78"
+    },
+    "run/tuning/seed_17/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970213,
+      "sha256": "852e8706ffe650189aa61297401ee4cf2457174de22bd856d84183fd0979d969"
+    },
+    "run/tuning/seed_17/class_balanced__natural__off/history.json": {
+      "bytes": 109369,
+      "sha256": "43b771ca9d4b793782fb40ddb094b25d71297097b0032dd1f371dac737af33c9"
+    },
+    "run/tuning/seed_17/class_balanced__natural__off/tune.json": {
+      "bytes": 8756,
+      "sha256": "6efa12815bd1ec5515d758f5090d632fd4e2abf9609279b0b7eda323843c1495"
+    },
+    "run/tuning/seed_17/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970372,
+      "sha256": "77e6e4a9c22a855d465589b4a1788741fa23e74562872802a13397f528b7dea6"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109326,
+      "sha256": "8f85d9551745734679d70b811e07fa63ba4e35eb296709d618900fb966691c0c"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "6afd94d7024fbaea71add3792aeaba741d193ea9bcf453b6858fca30a57c0b83"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970262,
+      "sha256": "8cdfa4e13149145b4f7a2ba1aa2a938c4e77b7fc9905f1c82189a40aa9f7f787"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109321,
+      "sha256": "ed3163bc410bce891ff325b8a89fbb6abb5c54ff1eeae36c20523a3beaa32aad"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "f50df213c3e5563d3536f54d0ad6d5bf0706ada02852bb1811673b811e909ec4"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970436,
+      "sha256": "f2a9f46abafefe39bb44b96e94c9ec0764371da43b43df2a01f3b142a869483b"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109340,
+      "sha256": "b8029682b59e0a06b806bb0cdddc306e2b0cbf30e3185f95cd97af4c1ed6e55e"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "778af107ee96244eb05892c352d4e77efb76425dee9e0f4b21dd8f0f7455e211"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970296,
+      "sha256": "bd4c338edd7493873c40b32720c8fff3559dfed1cf70a3298c06effa1b9a321a"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109339,
+      "sha256": "475caa8a54717e9cc3647575a4630e34dfadefb5b9207a111e6ab04078cf6ae6"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "e466604f9c12a4a17331d3926a335678f446f7af8b2033f818b6bcd70f0142cb"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970496,
+      "sha256": "6d667f959513d74aa3a6c48188e5f5e742db47fd8c06150a4b6050b3c9047d38"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109357,
+      "sha256": "9f388aecce81f5bc41022b06ea9ec8962e5f384b828a82bf09dba50b285270dc"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "0a2b136e241d2ae71271d8cec5e52b7f43641d5e34f45d745e999114534e0c2f"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970156,
+      "sha256": "0d28be5dcfa80efa60d59e65e3c337bddf8c27e2b38786fe66116d05e381f6c3"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109352,
+      "sha256": "c0763e7829221a385940c80497dccb028df37ec4fdaae3ce677eeceac6010fd3"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "db1c423abb06af9564a9add5be5c0f34a22814819c38c403d638869b9886bd40"
+    },
+    "run/tuning/seed_17/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970196,
+      "sha256": "cb8b1b143da18f06c87e6421ab0199228e1ffff9b3946d43cb11a9977915d151"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109329,
+      "sha256": "0bff7c42598ffc8c0f1e5333973a487faaf75ccf31088180144891c36b91f6c0"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3633,
+      "sha256": "4ece33a6ccfa2e43dd4b7deb9ba4969623da70a76925579e51c5e93a90ef43c7"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2971473,
+      "sha256": "6e8b53c8f909332bf687133bc9ad0dd8c1faa74dbf1f49da10afc3fb096c0ef7"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109333,
+      "sha256": "20bc0f19078ed2d07aed4b6495716cc3ad07dc7fa6a727273e3842f2433c96f7"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3634,
+      "sha256": "e0ed43987d3714c41fbee688688fdb7926741b390aa39fc3bc407c5bd04b1b9c"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2969778,
+      "sha256": "f4c95ddadb44a5cd21f36e4707af2293baa890824aeabaa411154d5f6cec802b"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109322,
+      "sha256": "6d4273e801b1ed6adf71e6c64f74977e5f591137355c7b5811a11e28259fcbf7"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3630,
+      "sha256": "a2c66326071a12a981fa4d4bc82885d8ee062d038e6958c8e91efbe96a4097ab"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2967997,
+      "sha256": "075f02b4a0e28c9979cd88b67a44f3d3d3ce2c69d09b1d8e9b1ab092e22fa7e6"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109324,
+      "sha256": "3805c801864e1a2885bbe3bd141edda32191abb7f9374fe6f0bc5d45c9468e64"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3634,
+      "sha256": "7ada3c6a49b51761e316bfc52fd107bd82ff33bf1551a130f4b8b03b59cbcf42"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2967494,
+      "sha256": "5795ca3c2eed2bd6f45d83e20b985ae9d62061dae0f2d0530e628b1fdba56bf9"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109338,
+      "sha256": "c923ddde0ac8c332783daf63dc7f6b76214474ea5a1664b7af92f392d8b5b910"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3630,
+      "sha256": "4bf3305a82a1cf5aea459e8fa5d8612ee620569f62397dc2dc7f9ea18227da65"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967130,
+      "sha256": "9a8075f35cd38b3fbf0b9dc17f52a599cacae46b1beebea9bd5c33701623c7e9"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109338,
+      "sha256": "709d7d13600a583223b1cb289b86b104546b97215c9b214855397a4aac9b1da7"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3630,
+      "sha256": "54f0c86dd8f0e086ceef19e1e484b495c4f449a14094bc090cca75889fd09646"
+    },
+    "run/tuning/seed_18/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2966698,
+      "sha256": "ebcb6a63353f1973f6137b47529bb76526ceb0e77fd5a3d80a4996779a34471a"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109318,
+      "sha256": "843a63b2365145baa71217a59037a03325f527d8e91e30dd4414a5fa9d518f69"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "ee0f779aed1d3308dcc0ca88685cc061e3e8a898a4df8888acf61f65fcff0bb3"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2926552,
+      "sha256": "ded76b8004eacac70a4636be5035147858d71b1b1f3158fb3c4151581c376e24"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109322,
+      "sha256": "fd7720d3658280667d42420ce2849f418ec1bc5f27766c87b06448677b35bdea"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3645,
+      "sha256": "76dac58062de956c90c5c825b00697fbe764a26a22e59d73123eb4585e49ba49"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2955585,
+      "sha256": "f7e6d3ccd8674621275f6d7c02ecf80e4da278c6bea0174a5f39bbeda1136f26"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109316,
+      "sha256": "fe2f92ae6b06cade44bd80767752d52043c88be73748c30ced4c38addfbee76a"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "b361c8f54310d36db97efc852d6cadf6caf93ab97d8e6ed87eaba210ccf770bc"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2820269,
+      "sha256": "d2d28979f5d46e15ed18ddd380488ea73ee27cdcc1fa44dfcc2a8a1aa521e82d"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109314,
+      "sha256": "4edf31b1751c26cd37e86780fcdc647f78db92f2a5c61966fb7b186dd526edf6"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "1ab278ffdfa814372aabe651b52f9aeee52dbc05ba6ae7aa915d0eca300052a0"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2926834,
+      "sha256": "ef2bf83cf78f671ec2abf455bf3447d3f6ae574f6b19b1e7def2642940694082"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109320,
+      "sha256": "fb4006f45a75eb12be4a5d8fa15cc0e76c8e652fe7240742bcb02f1c7b76ddf2"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "1feafdab44411b0a24588b09fcb6b3490e6b65b49243e80b9aa7a09297aeb56a"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2801451,
+      "sha256": "8f9526a28ad6c37e66472fc992a74a5e1265cc03392586493802bcc2519c1fd1"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109309,
+      "sha256": "cc7fc597ac80b9c690f770e95e3b2c65a15769f72ea522ecd46c7c20bbea3a61"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "dbeac9649906574c66146fc0bb2c7811380d06841122011402959de1f7a44362"
+    },
+    "run/tuning/seed_18/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2933900,
+      "sha256": "7ac95b52729d2d42a1546807c5ee8ccf909df9c20141e292013217c129141d08"
+    },
+    "run/tuning/seed_18/ce__lr0.01/history.json": {
+      "bytes": 109336,
+      "sha256": "d6b818070341ab126d9df779ac7fa201aa20aa4f22838e5c6a5e7d9a279fc0b4"
+    },
+    "run/tuning/seed_18/ce__lr0.01/tune.json": {
+      "bytes": 13163,
+      "sha256": "2dea51c5cef70366cece72245ec73ec1e8aac4470711a189d99665722b336412"
+    },
+    "run/tuning/seed_18/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5946167,
+      "sha256": "1b29e596f84ca92f9b9709e96ab870ade3c5540d8cc59763daa71ffc16db6df7"
+    },
+    "run/tuning/seed_18/ce__lr0.025/history.json": {
+      "bytes": 109330,
+      "sha256": "76c48254a84e2b5d81012e172be03fcccea85efc33e3b7d06843ba9749a36733"
+    },
+    "run/tuning/seed_18/ce__lr0.025/tune.json": {
+      "bytes": 13162,
+      "sha256": "65e0db241af66aecbde6402bd69ba4b0400cdcbb1e5587c62a18ba2cd7cef5d4"
+    },
+    "run/tuning/seed_18/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5953486,
+      "sha256": "17865b462c09675dfd9145412e1ccd22a61aca3f49d1228e8ea0fb9dd60bea15"
+    },
+    "run/tuning/seed_18/ce__lr0.05/history.json": {
+      "bytes": 109341,
+      "sha256": "e34d83d6401e71e8f773130e07568904cc4da5f5d223a0e80301247f041e8799"
+    },
+    "run/tuning/seed_18/ce__lr0.05/tune.json": {
+      "bytes": 13159,
+      "sha256": "264fa4182d4eda338622bb2be48011053e948d242b9e1df742ea70d429ce58fe"
+    },
+    "run/tuning/seed_18/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5955451,
+      "sha256": "c66b56bde340861932b7e87e1dee2a4adf2607da1589cf9ee24ddb26d827b2ed"
+    },
+    "run/tuning/seed_18/ce__lr0.075/history.json": {
+      "bytes": 109332,
+      "sha256": "348a8d28c92077cecdad61738275aef041ad302c231145cbb79682b87f860bba"
+    },
+    "run/tuning/seed_18/ce__lr0.075/tune.json": {
+      "bytes": 13161,
+      "sha256": "b0476110fdfb45043661351a2c4f7e1b8e06eb37ef8ef1f5e14ce3580cf61cd1"
+    },
+    "run/tuning/seed_18/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5955567,
+      "sha256": "98234be2c8b64224f97df7089dbd5b40fb9e44cfcb63397b02d0e87c779e8793"
+    },
+    "run/tuning/seed_18/ce__lr0.1/history.json": {
+      "bytes": 109340,
+      "sha256": "1a5c68abb7994f9c7df0b97aa47c1cfe1f17883dd8cd98159b8bfeb6967065b3"
+    },
+    "run/tuning/seed_18/ce__lr0.1/tune.json": {
+      "bytes": 13157,
+      "sha256": "85dcde5d80dd077aff18984ac94ef7dead1e20ab15216bef1018254de861910f"
+    },
+    "run/tuning/seed_18/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5955553,
+      "sha256": "d84a2870bc48b923d9c195ad057077a823330aaa691e7a3cd2b48ee3a9e0d362"
+    },
+    "run/tuning/seed_18/ce__lr0.2/history.json": {
+      "bytes": 109344,
+      "sha256": "f99d8b11e81ac963fe126b45aef757d4ed57e9f7d968ffb1f83738aafa404aab"
+    },
+    "run/tuning/seed_18/ce__lr0.2/tune.json": {
+      "bytes": 13156,
+      "sha256": "2a2583f3961a0468c3620751a19f2f5e2f2a07375ee4978bd70dc7bddf3d25a4"
+    },
+    "run/tuning/seed_18/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5951966,
+      "sha256": "47490095febc1645f1157e80015ce997c3e2259f5276d8d4358c543eb3b2d56d"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__off/history.json": {
+      "bytes": 114156,
+      "sha256": "fdc8a9d6055f867a2f5706c6970b96cb0053da1cdea369bb265f4536e63e9268"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__off/tune.json": {
+      "bytes": 5813,
+      "sha256": "468b35a8d5bbc1b64aea5be50a840725332b8c781881e63a9dced81197f731ca"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2969898,
+      "sha256": "e30fbeab09ebf9889f59df39e34692bc263a8481b9e19a2afbcf7bba77f28d9e"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114101,
+      "sha256": "2f9bb448729488d4631b980b94eb70a5f958fd335f3cc4564433d06fcadf2a81"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5830,
+      "sha256": "2d9c4cc19206263b280e1168e1bf32051b0347680eea1a667dceb6b02ad25e0d"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970050,
+      "sha256": "dc7c1f0181c5afa84441df8237e767d7565f93ed8f50be3054424024bec50a81"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114119,
+      "sha256": "1e5d7fede83b17f4f0ada1e03c565acdb086298a5e1a5e0958c7bdeaa6d6fe9c"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "2170031d7886a2078be229f789032d52c629200f0c108485807eaf1aace03ae1"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2969897,
+      "sha256": "172116b5b93a516f979675de578292aa662541aea60a66ca765f413400ec4d6c"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114128,
+      "sha256": "c77c0b542dea0a5cda88b38fc142dfbad045a133084825875d553f3cb071a97c"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "652319301dc250bb8299dda0f29c914bb26b2e160e1b5ace8d6d7bacb32f772d"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970081,
+      "sha256": "8329d42b6ce84c8b171fcec545b78dd69d4ec0a9f350ca8d584fb77487dc66c4"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114127,
+      "sha256": "e05710f599e5d7c2e53f5934aea781a25ad51f98140a1fb75354913da89c3dc8"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "14e20430848ffc106bdc445797e6d7c975b373cd227bdb59e7307a366ac673e6"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970101,
+      "sha256": "71ea7434c1da89ece28e9d89004ebb4e1600ed40763f83a4315140c35d3ffb36"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114146,
+      "sha256": "793370f19b7f30563b3e3825901b717787f4bae39eb012c7de82773a301c4203"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5832,
+      "sha256": "c8a8af41b782b6df7fe650554691623d3bdf3ea3d61e73b2f23dc04c753c4e29"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970035,
+      "sha256": "6d17a0a6f2d3034aed086ca5160f8fcfac526494394a3ce8a6cfb1b30f190f5a"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114147,
+      "sha256": "218a6668a26bbf38aacc0c584f2b7aed3f34f8fa0c2433807bdda434848c76f2"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5831,
+      "sha256": "0761aee96196a2925e88971d9dedb16dead15e6b84f46f94dff39716d3b6f254"
+    },
+    "run/tuning/seed_18/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970138,
+      "sha256": "4bc0145fc497c5bba2d6f4ba18e9009ef4082da1fe7dd53b04d1af989c41e706"
+    },
+    "run/tuning/seed_18/class_balanced__natural__off/history.json": {
+      "bytes": 109341,
+      "sha256": "158153d49b02ad19ea4d518ec3a50f6d7006ae8b8bfaf77b13d2356cd032a81f"
+    },
+    "run/tuning/seed_18/class_balanced__natural__off/tune.json": {
+      "bytes": 8757,
+      "sha256": "c86704d371f207bc8f1a41d317cc9cc6ff783df6c529a54841c7d374a9d83332"
+    },
+    "run/tuning/seed_18/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970133,
+      "sha256": "f1fadc9748e17aa984afee690653e145a035a7ee47ae34dace0d00418f3907df"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109288,
+      "sha256": "58a84c95a8a45046fe8284028e1ac5e395624192a158f9a1dfda672ec8ea540c"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8775,
+      "sha256": "b944b197d90b2c7c9ba4da08cbeabdd2ea9a71d0576accb3f4d0e7a7d7c9ed9c"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970205,
+      "sha256": "fd63ad731bf50fa80d1b51e8a9d5782d3c471716fd47970f75999a8ef702b43f"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109289,
+      "sha256": "5a21344c2e7f4cddb4f2368a68ef145ecaa9f2a3012aec3582cd818466bcb5ab"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "a38bea3372b1b8129e9a22374b41817c6c4730d99733a61699a6a1a12457655a"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970128,
+      "sha256": "5ca5a86b319848e513c6cc2816e406561a33dc86519db03ca360a4f3b80477b9"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109313,
+      "sha256": "c852ab7a87dff2e49db3b88e736f3f1474950e26aa78305b7ad2e194dccc8ec6"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8774,
+      "sha256": "b28b4adbf162c874bd7886b8ae70ba510c2dba71eb9b38396a76c8995ccc5575"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970406,
+      "sha256": "107bd9e4a2be5da527e6625700dbea10ab08f0eaaa5ac79a4b3739b174c2b63a"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109316,
+      "sha256": "389305ccbe419d4abb4eed8e76fc6807401c2e9d8d1a9c153c96ed2038b425b4"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "a81df052f8388d7babb4e7df0e148172a25138c1f546b2afaf234aea3aeaa1b1"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970246,
+      "sha256": "27e3be394bb46204f5a6d8ba9e8885cc9c6bcc99aaeca66a1f797df3dc6851b0"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109324,
+      "sha256": "c37f4455cfd62748be49b5f1d2d5e77f3981a6aacc075ba08002976184ad9782"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8774,
+      "sha256": "cebb805a63c8dbe157a900ba732f636ea929f7f30c454311565091b9b963e65b"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970386,
+      "sha256": "d6e4ac213b184083bad5b532aae6191d97e7dcdeddaa3762dec0fcf465ac9bc0"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109327,
+      "sha256": "1e83af7306e9d52c408baf3b8f01de28ccca41175bb66ffeaa6373cf93487b84"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8773,
+      "sha256": "ae6774f3193df40a7fc1595d8208b6d233100ea4bddf49bdc6f9a397faf7642b"
+    },
+    "run/tuning/seed_18/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970266,
+      "sha256": "c955a0f9b5fff92acb81b2b79ddeb5bd8803332af10f1db289098d8e1be82d0e"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.01/history.json": {
+      "bytes": 109356,
+      "sha256": "293efdc5fc707476afff897a0024177fed6cdf0c0d84c7190a52eab89cad0bda"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.01/tune.json": {
+      "bytes": 3631,
+      "sha256": "787b7021d08965c5b903f686e620e35d0e380ea03af962b522adf8d01c35c087"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.01/tune_logits.npz": {
+      "bytes": 2972997,
+      "sha256": "9fa51c25a972c7b22070bf17fd9331bd82fda73ae6c23fb08fe93920f239d290"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.025/history.json": {
+      "bytes": 109356,
+      "sha256": "1bb763b3831c37b0de78291e6c98999d8c45232e7557bacafae7e6ac24c2486e"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.025/tune.json": {
+      "bytes": 3634,
+      "sha256": "79fcfe2b7ebe85979c62ca331aaa428e5a270fbd4f10038cc687a91a78ac8bcf"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.025/tune_logits.npz": {
+      "bytes": 2970517,
+      "sha256": "247fa32184a76c76aa47dcc95bf86eb294fe6fdfb8e5ff099a88dae1a9424b7d"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.05/history.json": {
+      "bytes": 109371,
+      "sha256": "e2b2ecc5627beab25a15faa54a86325f7218ab0a2dd421ecb22ae884e145063c"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.05/tune.json": {
+      "bytes": 3632,
+      "sha256": "e005904006b80450d552960bd638a2220f502113c6eba4bc2103ca0a17464a64"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.05/tune_logits.npz": {
+      "bytes": 2967673,
+      "sha256": "97cbd8a0e5b4d6d4894b6f50b19f13344af75a6ae5b7e19332e7a79849853af6"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.075/history.json": {
+      "bytes": 109368,
+      "sha256": "5b92e5cc8c8d93cecd34af219124246c05e8d0ac476fce3ee71c81f3091794bd"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.075/tune.json": {
+      "bytes": 3634,
+      "sha256": "349e4de5cc79a3d76c46e8329db0d9b7c2c34c01cb8f81079812b607de834eee"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.075/tune_logits.npz": {
+      "bytes": 2967565,
+      "sha256": "29f53b2afa0fcd6ec9d2fe472be09893e66b437e43b94c5c059623be222d99b8"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.1/history.json": {
+      "bytes": 109379,
+      "sha256": "c32bab49eb259c6d6638c0a79b6e2d144c090fb98ea8be382de6c3cc4a67b431"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.1/tune.json": {
+      "bytes": 3630,
+      "sha256": "923cc271e363db7f5f85f37a89ddb15cde314ea92f2d203fb3a726f628759bf8"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.1/tune_logits.npz": {
+      "bytes": 2967429,
+      "sha256": "16f3fc2731ac069aad469e314bd1b91492bad5d4b66387b83418ca6835825d8c"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.2/history.json": {
+      "bytes": 109370,
+      "sha256": "c42112054c71937179c1ec78062dacb2b43db3c2226cc2bdc57ea36e61ff8c31"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.2/tune.json": {
+      "bytes": 3630,
+      "sha256": "4f664a218d12fca6a6bdcfedd1cd1098363adebcdc7acd8bf6a4de2ab7bdf4d9"
+    },
+    "run/tuning/seed_19/balanced_softmax__lr0.2/tune_logits.npz": {
+      "bytes": 2967669,
+      "sha256": "8953a6faa84239faf4dcad9079a1974fe395cd026f4dce3c67dac86d3a580fe1"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.05__temperature0.07/history.json": {
+      "bytes": 109360,
+      "sha256": "8b043d6687272e1d7cfb2ffa15e5f3eeca1412a39822648d9f542635b29dec82"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.05__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "efeacfb69bec48f36a14eb0454beda997302358ea8ec449554ecbed65dfcefa2"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.05__temperature0.07/tune_logits.npz": {
+      "bytes": 2927923,
+      "sha256": "bbc3c5928f5b6399147a3d5d372e0884562d3aba72edf67b014230c4e70592d2"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.05__temperature0.1/history.json": {
+      "bytes": 109346,
+      "sha256": "696a0f853c3e71e2d2d3a1250a155d90e047289538bf438d258e6e1cba717b85"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.05__temperature0.1/tune.json": {
+      "bytes": 3646,
+      "sha256": "58d4c1a2f38b69ae9accbaf766b1b9f2040b59f65cea982d6ff02c3e888f83f2"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.05__temperature0.1/tune_logits.npz": {
+      "bytes": 2955995,
+      "sha256": "e777c78b1a7ea9e3f18a02d13e8863b091d3019ad427ae7e005ebc3067c8013f"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.2__temperature0.07/history.json": {
+      "bytes": 109344,
+      "sha256": "5b5df1abeb3b851f43b6fba02c4bc171e737866b6881bc3a37bb5ceec4003d6e"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.2__temperature0.07/tune.json": {
+      "bytes": 3648,
+      "sha256": "8136327185c6e122a0f266e442bb73e5686ad885a02e2fc63c0074686f19fe1f"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.2__temperature0.07/tune_logits.npz": {
+      "bytes": 2819539,
+      "sha256": "b49b03c7024f5d1255190b8c7e1a844633c7a81a54adea8af7c22b622ae5e165"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.2__temperature0.1/history.json": {
+      "bytes": 109342,
+      "sha256": "5b9bbf3911f9dfb85544bb0e1e75b63d95a3626c40d5ef38827f5087b35ad255"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.2__temperature0.1/tune.json": {
+      "bytes": 3645,
+      "sha256": "90d790cf0bccecf073706c75a4ab5f1163d12d6bffe1a29c84e509b0ce0767ef"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.2__temperature0.1/tune_logits.npz": {
+      "bytes": 2927625,
+      "sha256": "cfe95a9c349f968f1d5dd2e00548ce5a2838b348d97dfd87c41212c048350e18"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.5__temperature0.07/history.json": {
+      "bytes": 109347,
+      "sha256": "b8fe0a45da536f5edf79f52219aa63c7808ae67d94f07cbe659d4e804afed244"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.5__temperature0.07/tune.json": {
+      "bytes": 3647,
+      "sha256": "52e9a34e1e0a3c3ba362439aec5cc0272eb2434e3c4235dc819fc5546014f13f"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.5__temperature0.07/tune_logits.npz": {
+      "bytes": 2801976,
+      "sha256": "a0c2d03d4b0bea51b88a00cdbc81051f0c77206d03f3168426bb7be9bbbd1f66"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.5__temperature0.1/history.json": {
+      "bytes": 109339,
+      "sha256": "bf78e7dde6578ca72239d5ac19b4566a04a1eb8ced22aaddcb661e512c43620a"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.5__temperature0.1/tune.json": {
+      "bytes": 3644,
+      "sha256": "5719f62d370c99e50aa4b083a141933eeb7623bb32046b7f76c5ca32541e2c73"
+    },
+    "run/tuning/seed_19/bcl_dropout__lambda0.5__temperature0.1/tune_logits.npz": {
+      "bytes": 2934228,
+      "sha256": "4b2af6caa6d5d578fd347b9b28787bba3bd17464ce92293f9c42962addd047d4"
+    },
+    "run/tuning/seed_19/ce__lr0.01/history.json": {
+      "bytes": 109350,
+      "sha256": "efb677915683843c94291c38661ef0d4f2527fdd6c248d89fe6cc591dbb2a7b5"
+    },
+    "run/tuning/seed_19/ce__lr0.01/tune.json": {
+      "bytes": 13165,
+      "sha256": "34dbd3310475f57c5b7557cc92f3c7b2a2e80fd768c11ab969517f61aea59136"
+    },
+    "run/tuning/seed_19/ce__lr0.01/tune_logits.npz": {
+      "bytes": 5947830,
+      "sha256": "8b4a355af962b01305995dacd29d6308927a495f2516e76a158f0de382a6f5a6"
+    },
+    "run/tuning/seed_19/ce__lr0.025/history.json": {
+      "bytes": 109358,
+      "sha256": "a987079bacefa5c3cf2dd4526209fac173fac426486934ad0bbbceec4b15dbff"
+    },
+    "run/tuning/seed_19/ce__lr0.025/tune.json": {
+      "bytes": 13165,
+      "sha256": "17cb4309ba28a67ef6be63c44e2ef49df15f6d737f2d40e8a4aeb4b366c01bb9"
+    },
+    "run/tuning/seed_19/ce__lr0.025/tune_logits.npz": {
+      "bytes": 5952775,
+      "sha256": "5710a5a59ff050fc3f697b2cfbd19afb89225a0955d7c5eaca2b70b74be25a6c"
+    },
+    "run/tuning/seed_19/ce__lr0.05/history.json": {
+      "bytes": 109352,
+      "sha256": "d7e63859f4cb1df7ac6f737b29a15b12e5f12f8b3672648667925dc121c34415"
+    },
+    "run/tuning/seed_19/ce__lr0.05/tune.json": {
+      "bytes": 13162,
+      "sha256": "0db9df66259632c8b064bb9bcd478e488d38a4d88712e626b7678d7e236474be"
+    },
+    "run/tuning/seed_19/ce__lr0.05/tune_logits.npz": {
+      "bytes": 5955490,
+      "sha256": "e5cbad8bc2feaef81568c67d3a66789df383210bb3878141073cf590ad88edfb"
+    },
+    "run/tuning/seed_19/ce__lr0.075/history.json": {
+      "bytes": 109359,
+      "sha256": "268ef5601180e1843fd98b97d42203e5dc2e674808722639e6700e61e9d33508"
+    },
+    "run/tuning/seed_19/ce__lr0.075/tune.json": {
+      "bytes": 13163,
+      "sha256": "6f744ab68a14bb9e0eabe6a075fb2f078542c647c25c79e3e99577838be39191"
+    },
+    "run/tuning/seed_19/ce__lr0.075/tune_logits.npz": {
+      "bytes": 5955479,
+      "sha256": "c74e91ae0aedded08ed15f111414e22b2fd8769233dc0afef6ef64f87f226346"
+    },
+    "run/tuning/seed_19/ce__lr0.1/history.json": {
+      "bytes": 109361,
+      "sha256": "a9cc2789a2b3e22a9eb1e3691fd94cd06fa90ac2acc255d9af5ba4a3d6754b4e"
+    },
+    "run/tuning/seed_19/ce__lr0.1/tune.json": {
+      "bytes": 13157,
+      "sha256": "9c40829aae4f9747813d3aeac4f5d7dc0a3991ef296f38892edba49d910ea733"
+    },
+    "run/tuning/seed_19/ce__lr0.1/tune_logits.npz": {
+      "bytes": 5954190,
+      "sha256": "1e12419a2af805de237604ba33c3c469b191848ff75b23fc4d6b4f9a3abe387d"
+    },
+    "run/tuning/seed_19/ce__lr0.2/history.json": {
+      "bytes": 109365,
+      "sha256": "c2218faa5a0b38c8dd85b7c62bb326485758fa6ef3ec02de1b5e68bc84e22dd0"
+    },
+    "run/tuning/seed_19/ce__lr0.2/tune.json": {
+      "bytes": 13158,
+      "sha256": "094d49c37ed8655d3b07fc1c35f343e49b73ba313329996316470f2112cf0296"
+    },
+    "run/tuning/seed_19/ce__lr0.2/tune_logits.npz": {
+      "bytes": 5951235,
+      "sha256": "90e573c2298403fe9a1d71f363003c541384d3240210d5bf4983cc92fdb2ba88"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__off/history.json": {
+      "bytes": 114155,
+      "sha256": "d84d01ff7dc06290e0f1dfd7f153461e852e02007ff67770989d3978fffcb769"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__off/tune.json": {
+      "bytes": 5815,
+      "sha256": "27274e8e2b4c66a9f68516e8fd3313837a22bff1f2492a0539034ac5ad0c7f45"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__off/tune_logits.npz": {
+      "bytes": 2970207,
+      "sha256": "e7321925b611e3bd2c08335049e144ae8f9babb14620101853eaf938b6932e63"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.2__lambda0.01/history.json": {
+      "bytes": 114103,
+      "sha256": "c549ed556eca4e5d05064a43b6fdf2456b3e33582e3abb28813d6035fdde6576"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.2__lambda0.01/tune.json": {
+      "bytes": 5831,
+      "sha256": "7e76e3c5a5b06b9615ce5b52dff10200c4a227d2748c16d4bd69113eb9089782"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2970240,
+      "sha256": "b94e980b53a00ff3e74c86006379a5952eebe58faf7b762c61efa3e8eec6e399"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.2__lambda0.05/history.json": {
+      "bytes": 114103,
+      "sha256": "fa8c054fe91871589cb213fa3caa15c299794cd4544ca4d8f47da4c1fdff30de"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.2__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "ef1f01cd653ec40e8303c4397b876e62801a7577a8a814d7e449cac3799ba984"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2970155,
+      "sha256": "881793f1a3973f44fd78631891aa63061977105cfca51815308e58a0dcc17def"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.5__lambda0.01/history.json": {
+      "bytes": 114120,
+      "sha256": "e5112ee5c43d709f142db24e54dcacf672f064b50eb65c92587bc353e8d5d73e"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.5__lambda0.01/tune.json": {
+      "bytes": 5833,
+      "sha256": "1e8fafbe33b52f9ba9636466ba148ba8b459f2415af4cab68ef7eadc61f93639"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970220,
+      "sha256": "a286dc60c9b04c9b26224d3aa7ec6ea6f57abb77a3d5325669566fa1cd12ec9c"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.5__lambda0.05/history.json": {
+      "bytes": 114117,
+      "sha256": "0c02612f876df01d7ac5700f5c546b01e1afbeb3a2b81716795cda3dec8054b9"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.5__lambda0.05/tune.json": {
+      "bytes": 5832,
+      "sha256": "fc84587da2648dc847e56607d6293af1e07b1059371be7fcc5a476fb2b0f9a0c"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970311,
+      "sha256": "ab9a2583d66610607193428d86534f9e81ff8c9bda83a76249bbeb3b44d2c303"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.8__lambda0.01/history.json": {
+      "bytes": 114141,
+      "sha256": "2529d8508465a9c2ec1aac15a5ab8e154004968c3ab428ac485b4b1cbe6bcacc"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.8__lambda0.01/tune.json": {
+      "bytes": 5833,
+      "sha256": "40f2e89225a6653a5bfc107ba688268abb1ef379a7c726fb0f815b437f61368e"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970146,
+      "sha256": "fd0ed3433058ee0596e82e7a2bbfbd8fddaaae9747f19deae5fd5175f2a5999b"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.8__lambda0.05/history.json": {
+      "bytes": 114141,
+      "sha256": "a87dacba9d0ea64aa6d5b3ca2c7ce4f7fd1f75b960fac0fe31b86d6801586ad6"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.8__lambda0.05/tune.json": {
+      "bytes": 5833,
+      "sha256": "2722d666e6ecfbe2264dffd6c28ad1d9a39a59a78520cbaf0aaa54db722ce84b"
+    },
+    "run/tuning/seed_19/class_balanced__balanced__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970195,
+      "sha256": "1a88ff526745b1c1521d4efef67691a97b8a7213d235fc44d6704d54fe9fdbb4"
+    },
+    "run/tuning/seed_19/class_balanced__natural__off/history.json": {
+      "bytes": 109353,
+      "sha256": "00ebf5cd1056eef5ed89a67b12c9647ba99c198c26ec51746e6370dcc5bcd369"
+    },
+    "run/tuning/seed_19/class_balanced__natural__off/tune.json": {
+      "bytes": 8758,
+      "sha256": "5cac4e5782435de8c8c9c5525a78a7a5024390ca1117cbea6e8ab32294bd210d"
+    },
+    "run/tuning/seed_19/class_balanced__natural__off/tune_logits.npz": {
+      "bytes": 2970118,
+      "sha256": "92dced629b1621bcb8b871cc7d2abe8d59993c2f61700912cf2428ece4530834"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.2__lambda0.01/history.json": {
+      "bytes": 109314,
+      "sha256": "c6596664be5fffb2fd362208f76d260b757db42dd3c707b2ec33e74bab2bea8e"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.2__lambda0.01/tune.json": {
+      "bytes": 8776,
+      "sha256": "3d5f068826bda58685f8779fae3dffed7010ec14dbc6ab32b15d1fb00f080d6f"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.2__lambda0.01/tune_logits.npz": {
+      "bytes": 2969868,
+      "sha256": "3d0ea4c0b49ee6fd0bd6df5c7643866db1574a1de2d282a0c577af444f08ce4c"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.2__lambda0.05/history.json": {
+      "bytes": 109313,
+      "sha256": "d19ed26e2de9679234c681def744d3cc00d4b446692d8dbf5f17d65e3420f9cf"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.2__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "70c5bb9a3f03ca69fe31af97d7269fd1ce93ea93d6deba0f6b1fe4f151999841"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.2__lambda0.05/tune_logits.npz": {
+      "bytes": 2969938,
+      "sha256": "03f0e79ce2cdfc9fb8252cc9ff957b8c557f6cf66e0fbf25a67091fbd2967a13"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.5__lambda0.01/history.json": {
+      "bytes": 109330,
+      "sha256": "ea73bfa990c2e519f21a3208880271ee89ba4feffc589f6a18fc969ed508064d"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.5__lambda0.01/tune.json": {
+      "bytes": 8774,
+      "sha256": "3d4e008c928f6ee224c3f4148b306575e982ea0e7839f5164a5899e9b2326187"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.5__lambda0.01/tune_logits.npz": {
+      "bytes": 2970051,
+      "sha256": "cf2e3cf9e33431d36ede8ecfab7cb68a89c86c12d32f884b60327fa0e3c79e9f"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.5__lambda0.05/history.json": {
+      "bytes": 109321,
+      "sha256": "7a2e0c3fbd2212014cdf1502c48164c72584e4e58a5421095a98aecf38f935bf"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.5__lambda0.05/tune.json": {
+      "bytes": 8776,
+      "sha256": "f4a37181480aadad704eddac98746ad76e2b31de9e942a729d241e85db52d312"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.5__lambda0.05/tune_logits.npz": {
+      "bytes": 2970192,
+      "sha256": "f644352366f269fe79264f10e8f98da02269efa5d9a0df46f142fd990b938e79"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.8__lambda0.01/history.json": {
+      "bytes": 109351,
+      "sha256": "8d17668d4e4597903b58b272ac89784a8a8d31894ee94f91890c7e58047cf88a"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.8__lambda0.01/tune.json": {
+      "bytes": 8771,
+      "sha256": "2f9988cada52ae0f7351c432e15dfd415376892da31e8491502ed0e4464da29d"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.8__lambda0.01/tune_logits.npz": {
+      "bytes": 2970038,
+      "sha256": "3208747a988a5d579372a7e05e4bfc74cbc091bd27c0e881fadf4adf594bf0e2"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.8__lambda0.05/history.json": {
+      "bytes": 109356,
+      "sha256": "b3405bf9eeffdb8e223c2c915de71a349912f91d2030726ca71b9457cdc5ae14"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.8__lambda0.05/tune.json": {
+      "bytes": 8775,
+      "sha256": "2e0162e2a03b061edd5f1f11059bafac864737d694367c712455504b1d7aef95"
+    },
+    "run/tuning/seed_19/class_balanced__natural__onset0.8__lambda0.05/tune_logits.npz": {
+      "bytes": 2970064,
+      "sha256": "cc608776bdf61d5391a8f6f347eb30d0d64cc4f261b0563cb6db1c4867a14442"
+    },
+    "scripts/apply_followup_amendment.py": {
+      "bytes": 15647,
+      "sha256": "cec4468527f35d946eb6456c7cd89077b2d9a5a958d1687655bd56cc7e7b63d8"
+    },
+    "scripts/benchmark_vit_rebal.py": {
+      "bytes": 46559,
+      "sha256": "0520feeca4505c6a0dc0e012b9d02867237b96cb65fbf44034f9af95ef23fdd8"
+    },
+    "scripts/followup_eq.py": {
+      "bytes": 34490,
+      "sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705"
+    },
+    "scripts/train_nonimage.py": {
+      "bytes": 42878,
+      "sha256": "be58b2706400b85340736c0ca0e3f07cbcb23895c4d07e92a6789de86d072b21"
+    },
+    "scripts/train_tiny_fullscale.py": {
+      "bytes": 39983,
+      "sha256": "3d9de9336c7dc636f641286eddc0e9290f532048ea669d5eb934ed7ef123b61d"
+    },
+    "scripts/verify_eq_followup.py": {
+      "bytes": 34379,
+      "sha256": "de177eff0007cfe6acf3e6c35c44a987e3a0ed9bb6d55a768cdd77c638d04a00"
+    },
+    "tests/test_followup_amendment.py": {
+      "bytes": 8759,
+      "sha256": "c726fd3311d7c7847bb3f8b64c3c17be26c385a86125fde2aacd9db2e0b61f65"
+    },
+    "tests/test_followup_eq.py": {
+      "bytes": 7815,
+      "sha256": "ccf14de9eb512899e7edec6298c1106af701938183d43841612f2a52ec7faaab"
+    },
+    "tests/test_verify_eq_followup.py": {
+      "bytes": 16567,
+      "sha256": "3f6a4765cdb0151813841cc2381f0c7c150f9878da19ab30f9eb7f8fc84f38db"
+    }
+  },
+  "file_count": 1015,
+  "total_bytes": 7073661581,
+  "completed_utc": "2026-10-12T22:45:13Z",
+  "omissions": [
+    "all model and optimizer checkpoint tensors",
+    "cached feature arrays",
+    "source image bytes",
+    "operational logs"
+  ],
+  "limitations": "Stored raw logits, label/rank/partition arrays and metadata are replayed without inference or optimizer update reconstruction; original actual-state audit retained separately."
+}

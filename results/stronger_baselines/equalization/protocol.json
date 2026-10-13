@@ -1,0 +1,600 @@
+{
+  "BCL": "Class-averaged contrastive denominator, all-class classifier-weight prototypes, two independent adapter-dropout views of first64random batch examples/update, plus BalancedSoftmax; frozen-feature adaptation, not original image-augmentation/two-projection-branch reproduction",
+  "BCL_source": "https://github.com/FlamieZhu/Balanced-Contrastive-Learning/blob/main/loss/contrastive.py; https://openaccess.thecvf.com/content/CVPR2022/html/Zhu_Balanced_Contrastive_Learning_for_Long-Tailed_Visual_Recognition_CVPR_2022_paper.html",
+  "batch_policy": "Fixed full batches, replacement sampling, ceil(N/B) updates per epoch for every arm; paired initialization/dropout streams",
+  "bcl_grid": [
+    {
+      "coefficient": 0.05,
+      "temperature": 0.07
+    },
+    {
+      "coefficient": 0.05,
+      "temperature": 0.1
+    },
+    {
+      "coefficient": 0.2,
+      "temperature": 0.07
+    },
+    {
+      "coefficient": 0.2,
+      "temperature": 0.1
+    },
+    {
+      "coefficient": 0.5,
+      "temperature": 0.07
+    },
+    {
+      "coefficient": 0.5,
+      "temperature": 0.1
+    }
+  ],
+  "cache_manifest_sha256": "1f19f85e164231aca8e823db2d698d71f7ac413eca4d7b71813ff54cd8434605",
+  "configurations": [
+    {
+      "coefficient": 0.0,
+      "objective": "class_balanced",
+      "onset": 0.0,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.01,
+      "objective": "class_balanced",
+      "onset": 0.2,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.2,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.01,
+      "objective": "class_balanced",
+      "onset": 0.5,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.5,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.01,
+      "objective": "class_balanced",
+      "onset": 0.8,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.8,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "class_balanced",
+      "onset": 0.0,
+      "sampler": "balanced"
+    },
+    {
+      "coefficient": 0.01,
+      "objective": "class_balanced",
+      "onset": 0.2,
+      "sampler": "balanced"
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.2,
+      "sampler": "balanced"
+    },
+    {
+      "coefficient": 0.01,
+      "objective": "class_balanced",
+      "onset": 0.5,
+      "sampler": "balanced"
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.5,
+      "sampler": "balanced"
+    },
+    {
+      "coefficient": 0.01,
+      "objective": "class_balanced",
+      "onset": 0.8,
+      "sampler": "balanced"
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.8,
+      "sampler": "balanced"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "ce",
+      "onset": 0.0,
+      "peak_lr": 0.01,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "ce",
+      "onset": 0.0,
+      "peak_lr": 0.025,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "ce",
+      "onset": 0.0,
+      "peak_lr": 0.05,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "ce",
+      "onset": 0.0,
+      "peak_lr": 0.075,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "ce",
+      "onset": 0.0,
+      "peak_lr": 0.1,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "ce",
+      "onset": 0.0,
+      "peak_lr": 0.2,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "balanced_softmax",
+      "onset": 0.0,
+      "peak_lr": 0.01,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "balanced_softmax",
+      "onset": 0.0,
+      "peak_lr": 0.025,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "balanced_softmax",
+      "onset": 0.0,
+      "peak_lr": 0.05,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "balanced_softmax",
+      "onset": 0.0,
+      "peak_lr": 0.075,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "balanced_softmax",
+      "onset": 0.0,
+      "peak_lr": 0.1,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.0,
+      "objective": "balanced_softmax",
+      "onset": 0.0,
+      "peak_lr": 0.2,
+      "sampler": "natural"
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "bcl_dropout",
+      "onset": 0.0,
+      "sampler": "natural",
+      "temperature": 0.07
+    },
+    {
+      "coefficient": 0.05,
+      "objective": "bcl_dropout",
+      "onset": 0.0,
+      "sampler": "natural",
+      "temperature": 0.1
+    },
+    {
+      "coefficient": 0.2,
+      "objective": "bcl_dropout",
+      "onset": 0.0,
+      "sampler": "natural",
+      "temperature": 0.07
+    },
+    {
+      "coefficient": 0.2,
+      "objective": "bcl_dropout",
+      "onset": 0.0,
+      "sampler": "natural",
+      "temperature": 0.1
+    },
+    {
+      "coefficient": 0.5,
+      "objective": "bcl_dropout",
+      "onset": 0.0,
+      "sampler": "natural",
+      "temperature": 0.07
+    },
+    {
+      "coefficient": 0.5,
+      "objective": "bcl_dropout",
+      "onset": 0.0,
+      "sampler": "natural",
+      "temperature": 0.1
+    }
+  ],
+  "confirmation_note": "New seed-independent canonical dev holdout for this followup; rows were potentially used to train historical adapters; all new models restart from identical random adapter initialization",
+  "control_lr_grid": [
+    0.01,
+    0.025,
+    0.05,
+    0.075,
+    0.1,
+    0.2
+  ],
+  "evaluation": "Native plus2000-update natural/ROS heads, with calibration-only logit adjustment; no new SMOTE graphs or officialeval scores",
+  "fingerprint": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1",
+  "grid": [
+    {
+      "coefficient": 0.01,
+      "onset": 0.2
+    },
+    {
+      "coefficient": 0.05,
+      "onset": 0.2
+    },
+    {
+      "coefficient": 0.01,
+      "onset": 0.5
+    },
+    {
+      "coefficient": 0.05,
+      "onset": 0.5
+    },
+    {
+      "coefficient": 0.01,
+      "onset": 0.8
+    },
+    {
+      "coefficient": 0.05,
+      "onset": 0.8
+    }
+  ],
+  "helper_sha256": {
+    "benchmark_vit_rebal.py": "0520feeca4505c6a0dc0e012b9d02867237b96cb65fbf44034f9af95ef23fdd8",
+    "train_nonimage.py": "be58b2706400b85340736c0ca0e3f07cbcb23895c4d07e92a6789de86d072b21",
+    "train_tiny_fullscale.py": "3d9de9336c7dc636f641286eddc0e9290f532048ea669d5eb934ed7ef123b61d"
+  },
+  "holdouts_per_class": {
+    "calibration": 20,
+    "confirmation": 100,
+    "tune": 20
+  },
+  "hygiene": {
+    "clean_class_counts": [
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      499,
+      500,
+      500,
+      499,
+      500,
+      499,
+      500,
+      500,
+      499,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      499,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      499,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      499,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      497,
+      500,
+      500,
+      497,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      499,
+      500,
+      500,
+      499,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      499,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      500,
+      498,
+      495,
+      500,
+      498,
+      500,
+      500,
+      500,
+      500,
+      500,
+      498,
+      500,
+      500,
+      500
+    ],
+    "duplicate_train_excluded": [
+      8073,
+      9525,
+      21297,
+      48869,
+      67558,
+      67815,
+      67847,
+      74725,
+      76395,
+      87649,
+      93551,
+      93577,
+      94002,
+      94072,
+      94263,
+      94460,
+      95258,
+      95376,
+      98198,
+      98277
+    ],
+    "eval_duplicate_extra_rows": 0,
+    "excluded_indices": [
+      5879,
+      7250,
+      8073,
+      9525,
+      21297,
+      48869,
+      60033,
+      66044,
+      66221,
+      66443,
+      67558,
+      67815,
+      67847,
+      74725,
+      76395,
+      87649,
+      93551,
+      93577,
+      94002,
+      94072,
+      94263,
+      94386,
+      94460,
+      95258,
+      95376,
+      98198,
+      98277
+    ],
+    "max_train_per_class": 445,
+    "policy": "exclude every train hash present in final eval, then retain first remaining train hash",
+    "retained_examples": 99973,
+    "train_eval_overlap_excluded": [
+      5879,
+      7250,
+      60033,
+      66044,
+      66221,
+      66443,
+      94386
+    ]
+  },
+  "objective": "Same class-balanced expected cross-entropy across factorial samplers from epoch1, natural importance N/(C*n_c), balanced weight1; separate CE and BalancedSoftmax controls",
+  "primary_endpoint": "native_macro_f1",
+  "primary_family": [
+    "natural_EQ_effect",
+    "balanced_EQ_effect",
+    "sampling_effect_EQoff",
+    "factorial_interaction"
+  ],
+  "reference": {
+    "coefficient": 0.05,
+    "onset": 0.8
+  },
+  "selection": "Global mean tuning macroF1 over10pairedseeds; equal6candidate budgets for each EQsampler, BCL, CE and BalancedSoftmax. CE uses calibration-selected LA before tuning-score selection. Exact ties choose smaller coefficient/onset, temperature or LR. Factorial off remains matched fixedLR.05",
+  "settings": {
+    "batch_size": 1024,
+    "checkpoint_every": 5,
+    "device": "cpu",
+    "epochs": 50,
+    "head_batch_size": 2048,
+    "head_steps": 2000,
+    "lr": 0.05,
+    "rho": 100,
+    "seeds": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "split_seed": 20261013,
+    "threads": 1,
+    "warmup_epochs": 5
+  },
+  "source_archive_sha256": "6198c8ae015e2b3e007c7841da39ec069199b9aa3bfa943a462022fe5e43c821",
+  "source_sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705",
+  "version": 1
+}

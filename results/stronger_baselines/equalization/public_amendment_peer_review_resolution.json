@@ -1,0 +1,14 @@
+{
+  "status": "independent_review_passed_and_provenance_scope_refinements_resolved",
+  "created_utc": "2026-10-12T21:41:41.529012+00:00",
+  "reviewer": "tabular_followup",
+  "helper_sha256": "cec4468527f35d946eb6456c7cd89077b2d9a5a958d1687655bd56cc7e7b63d8",
+  "test_source_sha256": "c726fd3311d7c7847bb3f8b64c3c17be26c385a86125fde2aacd9db2e0b61f65",
+  "test_count": 9,
+  "findings": [
+    "Six primary and two secondary prescribed contrasts, paired ten-seed differences, exact 1024 sign flips, Holm six, global selection and timezone-aware prospective ordering passed read-only review.",
+    "Scientific source is required and its SHA256 must match the frozen amendment before unchanged-source claims are emitted.",
+    "Timestamp checks verify supplied preserved hash-bound receipts; they do not constitute external time attestation."
+  ],
+  "scientific_source_unchanged": true
+}

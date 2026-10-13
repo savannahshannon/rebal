@@ -1,0 +1,11 @@
+# Equalization: derived evidence in Git
+
+This directory contains saved derived tables, the completed amended aggregate, protocol and frozen selection/amendment records, scientific audit receipts, and three figures. It contains no raw logits, numeric source arrays, features, model weights or optimizer states.
+
+`raw_evidence_catalog.json` is the exact catalog of a **separate complete local weight-free raw archive** (1,015 payload files). The catalog's listed raw prediction members are not included in this Git directory. `source_evidence_catalog.json` records the source outer evidence collection; its original member paths also describe that collection rather than the renamed Git layout. `derived_evidence_manifest.json` lists the files actually present here and their hashes. Raw predictions remain in the local research archive and are excluded from the Git upload.
+
+The saved tables have 660 per-seed readouts, 132,000 per-class rows, 66 summaries and 2,640 calibration-candidate rows. The 330 calibration curves each have eight candidates. The amended primary family contains four contrasts at the shared fixed EQ treatment (onset 0.8, coefficient 0.05) plus two selected strong-control comparisons; two validation-selected EQ contrasts remain secondary. The historical aggregate and original audit retain the historical four-contrast family with their original role.
+
+The original audit checked 320 actual adapter checkpoint states and 220 actual head states. `audit/portable_numeric_verification.json` separately replayed all 320 tuning captures, 660 confirmation readouts and 330 calibration curves with zero checkpoint states loaded and 540 states omitted. Neither audit reran frozen feature extraction or checkpoint inference. These receipts document completed checks of the original/local archives; the small Git set alone cannot replay metrics from raw predictions.
+
+The current six-primary/two-secondary amendment can be reproduced from the small `public_amendment_inputs` records using the command in the repository's `docs/followup_eq.md` and `scripts/apply_followup_amendment.py`. Full raw numeric replay requires the separate local archive and `scripts/verify_followup_eq_numeric.py`. The preserved small preconfirmation counter snapshot is scientific freeze provenance; private operational logs are excluded.

@@ -1,0 +1,14 @@
+{
+  "status": "public_documentation_only_revision_full_local_raw_reproduction",
+  "revision": 5,
+  "created_utc": "2026-10-12T22:47:09Z",
+  "previous_doc_sha256": "e499227cecb5ef559e2602f273df35c501b1a5fb0aab6081383108074fe53bde",
+  "public_doc_sha256": "bbc26d302eea925b1f8b3a73228858d245df1064025ed9ab8e2fcc9491bc0fb3",
+  "scientific_source_sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705",
+  "scientific_source_or_numeric_changes": false,
+  "portable_auditor_sha256": "de177eff0007cfe6acf3e6c35c44a987e3a0ed9bb6d55a768cdd77c638d04a00",
+  "portable_manifest_sha256": "d92ff60cbea0f2d5828fb0482bdfaefe5b79bb9cbce24eba34f6b114bdf1ab4f",
+  "portable_numeric_verification_sha256": "8667ab7e03a04bc2ba275af41aee38b67112ccd7d583f95d183d3e2b3be3eb36",
+  "raw_prediction_blobs_uploaded_to_git": false,
+  "scope": "Adds local complete raw replay CLI, explicit zero-state and source-ID limitations, publication coverage, sign-flip and conditional interval assumptions. Frozen portable catalog retains the earlier documentation revision as a historical copy."
+}

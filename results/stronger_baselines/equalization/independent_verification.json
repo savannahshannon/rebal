@@ -1,0 +1,30 @@
+{
+  "status": "independently_verified_complete",
+  "protocol": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1",
+  "selection": "7364508d76a3162df6e91179212826aefd5ec75609165d922bd2f87b13afb9a8",
+  "tuning_cells_recomputed": 320,
+  "confirmation_cells": 10,
+  "readouts_recomputed": 660,
+  "calibration_curves_recomputed": 330,
+  "matched_initializations": true,
+  "completed_adapter_updates": 750,
+  "completed_head_updates": 2000,
+  "adapter_checkpoint_states_verified": 320,
+  "head_checkpoint_states_verified": 220,
+  "primary_family_size": 4,
+  "aggregate_sha256": "df5f65652c301032a3921894cbbb8132fc7f791fd4ee440e95d2f3129811648c",
+  "eligibility": {
+    "natural": {
+      "head": 0.9958101010101011,
+      "mid": 0.667028855721393,
+      "tail": 0.10588656716417909
+    },
+    "balanced": {
+      "head": 0.9642909090909091,
+      "mid": 0.9637810945273632,
+      "tail": 0.9637194029850746
+    }
+  },
+  "limitations": "Saved logits and numerical artifacts replayed; actual checkpoint states, initial/final hashes, SGD momentum mappings and history/update budgets checked. No checkpoint inference or frozen encoder extraction rerun. Confirmation rows were potentially historical fit rows.",
+  "verified_utc": "2026-10-12T21:07:46Z"
+}

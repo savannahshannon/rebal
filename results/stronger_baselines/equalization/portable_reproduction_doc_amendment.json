@@ -1,0 +1,33 @@
+{
+  "status": "publication_only_portable_reproduction_documentation",
+  "created_utc": "2026-10-12T22:00:26.379224+00:00",
+  "previous_doc_sha256": "f2d9275cd7be6f60891be4fe56287d2b8f305bea58baf106cbf2cd9bad6cc315",
+  "current_doc_sha256": "e499227cecb5ef559e2602f273df35c501b1a5fb0aab6081383108074fe53bde",
+  "helper_sha256": "cec4468527f35d946eb6456c7cd89077b2d9a5a958d1687655bd56cc7e7b63d8",
+  "scientific_source_unchanged": true,
+  "notes": "Publication documentation only: six-primary/two-secondary reproduction command now points to results/stronger_baselines/equalization/public_amendment_inputs. Copied local directory equivalence explained. Required source/hash/timestamp scopes retained; scientific source and numeric fields unchanged.",
+  "previous_revision_doc_sha256": "ad9fb93b3c3e7e3e9672dfa7f081e22bb8ca4aa135e5982f76271b0da1ab9ce8",
+  "directory_replay_sha256": "dd1358dd327fc9d59ca44ead5f560606e8db650c0485e893d782925921b12937",
+  "semantic_fields_identical": [
+    "status",
+    "protocol",
+    "selection",
+    "analysis_amendment",
+    "amendment_sha256",
+    "original_aggregate_sha256",
+    "independent_verification_sha256",
+    "seeds",
+    "completed_tuning_cells",
+    "confirmation_cells",
+    "readouts",
+    "summary",
+    "paired_comparisons",
+    "primary_family_size",
+    "secondary_comparisons",
+    "source_and_training_unchanged",
+    "primary_role",
+    "historical_runner_primary_role",
+    "inference_limit"
+  ],
+  "max_numeric_discrepancy": 0.0
+}

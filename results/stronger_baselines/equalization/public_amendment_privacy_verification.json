@@ -1,0 +1,20 @@
+{
+  "status": "public_projection_and_source_privacy_scan_passed",
+  "created_utc": "2026-10-12T22:00:26.379224+00:00",
+  "files_scanned": 22,
+  "issues": [],
+  "snapshot_sha256": "a7852165e0bcaebe76e4cd218a0cd4fc61a873deda04211b1630db1dfe8d356c",
+  "source_sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705",
+  "helper_sha256": "cec4468527f35d946eb6456c7cd89077b2d9a5a958d1687655bd56cc7e7b63d8",
+  "scope": "Pattern scan covers helper/test/docs/public receipts and all minimum projected numeric inputs. Exact snapshot contains scientific counts/time/protocol, ephemeral PIDs and relative log names; whole operational logs are excluded.",
+  "pattern_categories": [
+    "absolute personal filesystem paths",
+    "GitHub token prefixes",
+    "API token prefixes",
+    "private key markers",
+    "password assignment",
+    "authorization headers",
+    "API key assignment"
+  ],
+  "public_doc_sha256": "e499227cecb5ef559e2602f273df35c501b1a5fb0aab6081383108074fe53bde"
+}

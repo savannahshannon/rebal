@@ -1,0 +1,51 @@
+{
+  "status": "portable_inputs_projected_and_privacy_scanned",
+  "created_utc": "2026-10-12T21:33:22Z",
+  "inputs_sha256": {
+    "historical_aggregate.json": "df5f65652c301032a3921894cbbb8132fc7f791fd4ee440e95d2f3129811648c",
+    "selection.json": "0480ab8b293a95e17acadd031984a16e6b9892626eaec78e1507a511fff886eb",
+    "analysis_amendment.json": "78678ee383c2dfac3b1e96a26b38c6c6c2d73b7dad2ae3bf11d0bb9fa81241e4",
+    "independent_verification.json": "4a16321367f3f798e9cda4fe7afe7765eb80151bec2e50950eb33c70c0669cb2",
+    "preconfirmation_controller_state.json": "a7852165e0bcaebe76e4cd218a0cd4fc61a873deda04211b1630db1dfe8d356c"
+  },
+  "original_metrics_sha256": {
+    "10": "4dde4729d6851291446a2eb76c0aaef8d309c195c30599820dfe584d954aba8a",
+    "11": "9dc0cc45aca21851e25497197ec8730aeca3a183fbc3f0f490920b0a68eee336",
+    "12": "1680cf2cd779e7c9e25d4bb551e8501f4598a570810c78653f239d6990ebaa5c",
+    "13": "b7f1a2aa743b9d93fa94370aa1dbc3008fb0b1e525622abeb93c79b8ed5aa89d",
+    "14": "12b557ccd0e80165e2430f3e3a687c7c46f09acc7a44299131461c2abc5a1606",
+    "15": "036dc254b024d4715468c44084a3f97953e4042931f8e59ea0022eca29987abd",
+    "16": "236dc1a3c3b7e3283393ee53204441eb95d2d30bfc0901ffa5b10bb07a95cd05",
+    "17": "08cbec2c250094f53a2cfc753c0b663fa8a67943ae97880379ee59d01d7fc2ec",
+    "18": "14e60f45ed8f611143ca4c760393cf635cf783eb085021b4bd587668a6a14d65",
+    "19": "f422f815c262bbbc867f2692c784a1584ecc511fe131fce312e2d5aa037bd449"
+  },
+  "public_metrics_sha256": {
+    "10": "cbef0d2685e6f9d6feac52a2f45e9bc733d83641a02c954723986be1e16073c7",
+    "11": "83e234837f819be7a7f0ca57bf6580dbc8c6b97018b09fc579f1f8514bc02554",
+    "12": "99ea2e0fde0d0847fef93ea20ef29ba885227b0c5f8fae766c3e51a79ec76054",
+    "13": "c1d0609772ffad6d26f7abb16ecaff531ac1d43dc94e6666f347f2f463ddf37f",
+    "14": "81c969e303afe8998d91ef739b88951a474ad9d3afd790eedd61dbf4a952833b",
+    "15": "43e6ef2f1a68d8dacc4473eca6d978e734c9bd3d8b20be092b38746e84a5828c",
+    "16": "f3dcebe6de85ce2ebd54c1f624fa9b0ccfa3dd7671d814301e73009d4c80c9cb",
+    "17": "e0359dc1ed15d087990b7f98446a4d5f8d6c41812267f1cddea9a7b62db66735",
+    "18": "19b0a0e7d1bc081996e0c7454c476e73066af92dedb4a189685faf88c110da93",
+    "19": "e81979572a8a284d049ceee704b7a05f98073c4f502066d656d185d3c476bb95"
+  },
+  "projection": "Ten per-seed records retain seed/protocol/selection/completion time and every scalar endpoint; training/optimizer/checkpoint operational metadata, prediction views, array metrics and calibration objects excluded. All scalar values are unchanged.",
+  "snapshot_scope": "Exact original preconfirmation snapshot contains only protocol, phase/counts/timestamps, ephemeral process IDs and relative log names. No credential/private path pattern found; exact bytes preserved for amendment hash.",
+  "scan_patterns": [
+    "/Users/",
+    "/home/",
+    "/private/",
+    "github_pat_",
+    "gh[pousr]_[A-Za-z0-9]{20,}",
+    "\\bsk-[A-Za-z0-9_-]{20,}",
+    "-----BEGIN .*PRIVATE KEY",
+    "password\\s*[=:]",
+    "Authorization\\s*:",
+    "api[_-]?key\\s*[=:]"
+  ],
+  "issues": [],
+  "independent_amendment_expression_verification_sha256": "a26d770419ffac1b09752ffa1890a02d899d2a7968f0714e917aa9d299f83144"
+}
