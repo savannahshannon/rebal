@@ -1,0 +1,875 @@
+{
+  "calibration_records": 130,
+  "configuration_records": 13,
+  "protocol_fingerprint": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342",
+  "raw_archive_modified": false,
+  "raw_evidence_catalog_sha256": "db1986e5d411dcfcb7a721bbbb3c8d55d37d1c02fc684692c745a5cd3c229dbb",
+  "raw_predictions_or_model_states_included": false,
+  "record_count": 143,
+  "records": [
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_10/calibration_choice.json",
+      "sha256": "eee1aba37e5412b26aa5c0432996db7e6ddd9ece9eaeaaf7fbe1c8cf960fdd97"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_11/calibration_choice.json",
+      "sha256": "6c81378d27b54028d3d6838e2387c6f08e3ab40b9cdab7ac1673079d62bbc25d"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_12/calibration_choice.json",
+      "sha256": "23a574199e86748c5d2328d12812cb8a092fcba6218590e9cee7a3569b8d1ab4"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_13/calibration_choice.json",
+      "sha256": "f1904fb74f580b1a1e2b62473682947cf190e53e74f9251773a8e50948901532"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_14/calibration_choice.json",
+      "sha256": "f5bf1dfbfd3174a353f890d77f71ef99fce7c4c9a569487daf1a7a4ccf446c10"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_15/calibration_choice.json",
+      "sha256": "ede1b6e283f3799fd8ff6a63e1d78eb538e8ef661c6c0da7404e54d0a018e8f0"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_16/calibration_choice.json",
+      "sha256": "65f3ff7077b3bc2c9beaf3a7cfabd64cea9a1b9a8af80e6a7464fcf7161e0534"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_17/calibration_choice.json",
+      "sha256": "f5c0d45bcdf4317d8bfdf41db6359745aae71e522aed62414cb205ec058995a4"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_18/calibration_choice.json",
+      "sha256": "ed67366a9bd72070274c8cc500708c642e59f38e25d1128f1436a90a170b3d65"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_ce__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/seed_19/calibration_choice.json",
+      "sha256": "fffefa0d7e8320ef7d0b1061ad3bea1d23f6de49f5ec3878220a9b1c67803f58"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_10/calibration_choice.json",
+      "sha256": "73094dac420624a6ef7fe125b54110c336e76c14ec93a79b0400a4734e928ab6"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_11/calibration_choice.json",
+      "sha256": "5693fa17346f4332838e2844fc3720949482e7821c8094d2cb4564fe3037f0a7"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_12/calibration_choice.json",
+      "sha256": "39fe73b7835d675288811baafe0eb6829ccd35ac7ef2878e754a98d0b20198ae"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_13/calibration_choice.json",
+      "sha256": "87a557554195398338d41d699a070e6722e2d577143354ba24fac8470d224857"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_14/calibration_choice.json",
+      "sha256": "66ba758e937d12076ad8cc19b3d8f3ff0567b3f069554180cb6311a02e18c4ab"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_15/calibration_choice.json",
+      "sha256": "1c0c1a911606aa7a0ad6a4985b5979a5d558932e648b19d85b8984b9c99a26c0"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_16/calibration_choice.json",
+      "sha256": "59486d6debb785f5259952b8ee8248a14f25a0c14fdbb8d83e26bff2f790ffd4"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_17/calibration_choice.json",
+      "sha256": "70e7832b6dbeea91d53e2bc9534d2681dc9d27fdcdd9f32f9db363b30a79bc0b"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_18/calibration_choice.json",
+      "sha256": "e9762be05cc928ae1e7a2b312b8cbc112bed7fc32d231697e3c57802a00ee48d"
+    },
+    {
+      "bytes": 209,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_balanced_eq__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/seed_19/calibration_choice.json",
+      "sha256": "209d068a9798b39a98116d2e0ddd1e61ace977ca28718d68ab9d9b27a7c6c216"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_10/calibration_choice.json",
+      "sha256": "b2664db965141967cb6406eb7e591608f0d8d36737c1b4d5cbf31a1a53bc27d2"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_11/calibration_choice.json",
+      "sha256": "2f2fe622afdbb923e644d29faeb88b2e2dec92327f8e61df8bf8e477ee96454e"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_12/calibration_choice.json",
+      "sha256": "6ff30b22924aaa376cc7f6450deed2507247da37ef39bc854569a2431beb244c"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_13/calibration_choice.json",
+      "sha256": "9b768c47eed2a8e5c0bcaf98b641ed1ae8581277587a7f9a77c3e5819baba962"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_14/calibration_choice.json",
+      "sha256": "2cc11471a7f130ebd30038231e210e845d16a560894839f01e761262481286cd"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_15/calibration_choice.json",
+      "sha256": "a8bd3c7f869aa647399fdd6d1356b1f7e1d51aa7c1afa3dffe0fdaec8170797c"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_16/calibration_choice.json",
+      "sha256": "60ff5bc0ab5aa28fe56946de3237a861752e62003ab0b8ef48057c5a48708f79"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_17/calibration_choice.json",
+      "sha256": "abef5082e37f81c8a9304cd0b17bfa13d59fab77b16ecb3e558a18caf2380898"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_18/calibration_choice.json",
+      "sha256": "48307e6448b65ec966f3315e09b41bb8266ca25e33cc98b57cb8ffc272b8ce6a"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_bsoftmax__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/seed_19/calibration_choice.json",
+      "sha256": "abc1376c14c4cec5f221efbbb34ec6e93f1e0029d199789ee9f63efcaab165ee"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_10/calibration_choice.json",
+      "sha256": "b5fe46cf0e781c51619be28009b5efd7f63e5fad824921a69c1fecedb567da38"
+    },
+    {
+      "bytes": 1306,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_11/calibration_choice.json",
+      "sha256": "11d1c51a6803e7b317f1b6e9271beb004b620086824dc28c82e4e5f0b33a5586"
+    },
+    {
+      "bytes": 1307,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_12/calibration_choice.json",
+      "sha256": "31939fb26146070e4c5fed811f50d5be6f65444622e36dd4fece9068c8099456"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_13/calibration_choice.json",
+      "sha256": "f2d3643bad9730a39f201b593a376248fac38552e58feeedffcdc0227be05411"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_14/calibration_choice.json",
+      "sha256": "e91edf6bfed3b57ff704c7b70291b1f6ea575a9e26d67193c7d8e0905770b8e4"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_15/calibration_choice.json",
+      "sha256": "ff534a738257f5354ad9fcf0024f46e8488c07b305cd1142ff719eafaca8004b"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_16/calibration_choice.json",
+      "sha256": "ed4b139d351de8b5f56162eef89743934c3d6f069b9afe85bb84d56e9d2b4331"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_17/calibration_choice.json",
+      "sha256": "2679d9086ad1b812bed3031c0bd195a04b885bdc12deaa0bef5929be4ecdc811"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_18/calibration_choice.json",
+      "sha256": "2083306c95cb5ba793f3780f414158595475fce71eb35ecdc0602a903313b695"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_ce__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_ce/seed_19/calibration_choice.json",
+      "sha256": "715ce0344ee5c6eb1c5375c062e15099d18fc625200ee79eb02f90e48e1c1209"
+    },
+    {
+      "bytes": 1317,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_10/calibration_choice.json",
+      "sha256": "5bf257ecd55f835f81a88e1413ea02300f9fa431c60736593247ff5d9e3fe52f"
+    },
+    {
+      "bytes": 1315,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_11/calibration_choice.json",
+      "sha256": "cea1657d9c05cc334fb3f72825adfad5ae17451a5d2f7db90294632e1f7c7c0f"
+    },
+    {
+      "bytes": 1316,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_12/calibration_choice.json",
+      "sha256": "1df9717d50c09cd3906e10a5dccc1603e179d5e559a3b4aa0cde4e994e1f0212"
+    },
+    {
+      "bytes": 1316,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_13/calibration_choice.json",
+      "sha256": "24f83490f71c35c905263e2f8c679d3927a156243cde877a7c5622938e1861fe"
+    },
+    {
+      "bytes": 1317,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_14/calibration_choice.json",
+      "sha256": "d16faf46cdfb2c13dd09f767833396e4e27b191e51cf0d26140a2f88628fa07a"
+    },
+    {
+      "bytes": 1317,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_15/calibration_choice.json",
+      "sha256": "57047a19ef6df002ecee7c7a3312776ed5532b468c1804973ddde22cc6160fd5"
+    },
+    {
+      "bytes": 1316,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_16/calibration_choice.json",
+      "sha256": "6007f56d8b7cd0924589198c3d3ba0833c4592bd21a73eb7f80eb4b1e3664c12"
+    },
+    {
+      "bytes": 1317,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_17/calibration_choice.json",
+      "sha256": "a1c29e6772bc23e4610ff79f453ac1e1807f962c332e1ccad4b2973167cbd6ff"
+    },
+    {
+      "bytes": 1317,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_18/calibration_choice.json",
+      "sha256": "38e85d26daa71ab33c9b98255533d6305819f19dbbb6f74fe903e73c57552ace"
+    },
+    {
+      "bytes": 1314,
+      "git_relative_path": "results/stronger_baselines/text/calibration/bert_natural_eq__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/bert_natural_eq/seed_19/calibration_choice.json",
+      "sha256": "62dbf1eaabee5040522fe4790a24b256d9843cabd7922170cb5f9cbb65f0fcbf"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_10/calibration_choice.json",
+      "sha256": "309805741139b628a22a475f6d11599ec9b6648d5faf87b06460d36fde6a816b"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_11/calibration_choice.json",
+      "sha256": "d0e848ee9b02e1cc4e2b92cca031efbd881246124a95737cb1fbf8a957933cbd"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_12/calibration_choice.json",
+      "sha256": "c8c644f4b33e66a43af36d683bbe5555a5c8ee398ff64596a8b23efde1634f45"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_13/calibration_choice.json",
+      "sha256": "5007de8e618218b51319d202908707f0c2a518990919b51d1ced9674f800efb7"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_14/calibration_choice.json",
+      "sha256": "4df670dc4bbc2d9f78b06c35281037d0c18cd59a5b59e787557dfb531070ee6d"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_15/calibration_choice.json",
+      "sha256": "161a68e61f5f06b78b4570d8117d75e3c10ee3b7f178a8c03b7b631865ed8bf3"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_16/calibration_choice.json",
+      "sha256": "d32fd9992ea8a4ab5cb9baff822b1df4a7370b5a5be13bdb6beb3fbe4619ee80"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_17/calibration_choice.json",
+      "sha256": "7247b41ead5d7c6c10bdae0bce4ea0c82253d89726c33086d6ef4fc7311e8798"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_18/calibration_choice.json",
+      "sha256": "9aa16302884bc76387b76ce6b36f1c54f6464a1900ee88ccd8fd4e00b1c296c7"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_bsoftmax__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/seed_19/calibration_choice.json",
+      "sha256": "3d9e25f99eaadad7a34c88b45baaed4d4dd6ba3af4681cf3448a2c4eaf7dd2c4"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_10/calibration_choice.json",
+      "sha256": "6736469b873f102add3b3c6731b3b64c681719717064e76cabd662acece33de9"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_11/calibration_choice.json",
+      "sha256": "60e8b35f82bbe2a5e4504ffc295c1ba8654b0c0d789fb30b9f443bf585e55273"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_12/calibration_choice.json",
+      "sha256": "b9404d850bca38a20e36c10d038452caebab44896d5b1adaf3788f56fb00e2b6"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_13/calibration_choice.json",
+      "sha256": "6914eb424d617e5d2cecf7fb7c79fe98e51f5238f703ba11e803903df7a14eac"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_14/calibration_choice.json",
+      "sha256": "2be95805e302c477729e955e29baceb9e7601ecab15173c21d2e62bbbdb8700c"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_15/calibration_choice.json",
+      "sha256": "1b407deaa6b5dccb8fde812c9b5cd286b1cba1352c390bde65848b42baf0ed6c"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_16/calibration_choice.json",
+      "sha256": "8fe05af0709492bb7bc4f576da6df82b135ea43ede5b4813d41935b36755cba6"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_17/calibration_choice.json",
+      "sha256": "e123ae487a23b80ef51ef09c672384ebec795e5067cb6e6a54bc76c95deaeb7f"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_18/calibration_choice.json",
+      "sha256": "09992792f5fafdb6cfc6cb566c6ed68c4627e0c6ccd36de2dfbdc9c28fa19b38"
+    },
+    {
+      "bytes": 1311,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last0_ce__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/last0_ce/seed_19/calibration_choice.json",
+      "sha256": "d61c7ef89f9bddb5133db69f978f661dd5a77adc51c5e633a3bc94704fec3fa5"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_10/calibration_choice.json",
+      "sha256": "112461883cb9293d5b021f952a7050de40e311680a92170b5acf2c72c1dbe509"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_11/calibration_choice.json",
+      "sha256": "7d8b44b9fa731e535f78a0ac0c390b11bfd078bca1d3c65a558b4fe757742b9a"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_12/calibration_choice.json",
+      "sha256": "38965fcf375274dbeb5e7ec89362bab8e09db78904112bc3aa4e12363d64d073"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_13/calibration_choice.json",
+      "sha256": "db7d1153dc10be1017fd3fee4a62703ddbcf622562d58928234cfc6a4bded163"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_14/calibration_choice.json",
+      "sha256": "5f20a09337f9eef3bfc36f473f21c20a5f80c683506638b539f03fab23b59075"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_15/calibration_choice.json",
+      "sha256": "3833850ae9c973e95dd5d92f63a5bb1547a7cac081127296227e283575c85898"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_16/calibration_choice.json",
+      "sha256": "d4ff694b9321a4040598b02a9d7ef0ffe235dc33851600f587befddc00c2cf86"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_17/calibration_choice.json",
+      "sha256": "5f7f17a776aedc58035f842c53759a8b587017d514eb51b03fda0badf2da44a6"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_18/calibration_choice.json",
+      "sha256": "82628e14935699dab27b17373ea2fd54de41b7b386f2b749089f11aa22b9f864"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_bsoftmax__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/seed_19/calibration_choice.json",
+      "sha256": "8c0b38b7e956e9eb1b9fdfcac9a2fa19ffe6ab61a3b525b7342f2e5ca7ade1ea"
+    },
+    {
+      "bytes": 1311,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_10/calibration_choice.json",
+      "sha256": "b96636942fd4f3e478588f7a6dfec0ae66704341aa17b89ca93b4c78a825829a"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_11/calibration_choice.json",
+      "sha256": "33b098f03cdd6556a4a50df92339a6d959d26f6dd15e97a9edebc3bddb8698fe"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_12/calibration_choice.json",
+      "sha256": "4721a07628e9c082035207f817e62bcb6af9e12efc8a19f3abbb41c4adfecc4e"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_13/calibration_choice.json",
+      "sha256": "db7309bda272f651ff0093fb8a5605543fe652a0537429984455a60f51f57a56"
+    },
+    {
+      "bytes": 1307,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_14/calibration_choice.json",
+      "sha256": "5ff2ccc949772e8e20c6f26fd9d92e8174c09a1506ef5119ccfb6db5e1ad3c0a"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_15/calibration_choice.json",
+      "sha256": "d4c0b4bb0162a158c0307c635d56a86424aaa3adf346cad0fbc314d8a0794497"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_16/calibration_choice.json",
+      "sha256": "5c0a0bc58f7f19ac065e27762b5a667008a8b13958bf4d7ec65eecd369fefd23"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_17/calibration_choice.json",
+      "sha256": "321d614638669dec3f50445bd18eaae5ec12912ac996f8d5267bf8d42754c667"
+    },
+    {
+      "bytes": 1311,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_18/calibration_choice.json",
+      "sha256": "05140290ebeea8041daac5722500844f852ad42f6c9750aa765d053c201e10f7"
+    },
+    {
+      "bytes": 1311,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last1_ce__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/last1_ce/seed_19/calibration_choice.json",
+      "sha256": "ead4660622e4b463fb8f2c79892719f53333ae6ae2e0bb15ed9d81d6f681fb67"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_10/calibration_choice.json",
+      "sha256": "82a257833afa60d40cf71bf664f19d711f675e55bb577db7425fb9f1c06022f4"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_11/calibration_choice.json",
+      "sha256": "69cec3e92a3dea75224d4abc59b529d13653d2c2929e3b1d9d9334c270f07efc"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_12/calibration_choice.json",
+      "sha256": "8c993651415333510bf915726596db9ba345c935c459bb6491d8e37fda257ac6"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_13/calibration_choice.json",
+      "sha256": "a27497b3bb4a55b6ce0cd30c64ec9b89cc49b99d86dcc33cb251da5d1109a19f"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_14/calibration_choice.json",
+      "sha256": "d9814c751727c66ad5f1db194342659bbfee3a2c8fc4043c10a9807117c5c57f"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_15/calibration_choice.json",
+      "sha256": "62114ad3cc2ad1bbf4e49cb91496a458bb209dea37b1f2caee60fdcb0fbfd54f"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_16/calibration_choice.json",
+      "sha256": "f021c20d05ff1a50ae1b19d960b20eb82bd515138554877e961df5dacf806a48"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_17/calibration_choice.json",
+      "sha256": "9a51ab4d94869832aa93bf30ee15798465ff58cf3c343ebb17f1c6994ab00119"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_18/calibration_choice.json",
+      "sha256": "0b4f648d1440de951589c1e6a6bcbb28d3612c2a5402fa9e541a3da618ae452f"
+    },
+    {
+      "bytes": 207,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_bsoftmax__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/seed_19/calibration_choice.json",
+      "sha256": "d10f50af632b2e284e5eed3c62e383c683472a0a8639310f8d2305ac39c0cd09"
+    },
+    {
+      "bytes": 1311,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_10/calibration_choice.json",
+      "sha256": "10375b764934cfba38dd4fb4a0145e8240d7b05dc084bff0ef23f7dfb0178c25"
+    },
+    {
+      "bytes": 1311,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_11/calibration_choice.json",
+      "sha256": "fccae42aa8c68ce843734a4960ed7eb475ed1ea021f848694d178e5d0ac1a4d2"
+    },
+    {
+      "bytes": 1311,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_12/calibration_choice.json",
+      "sha256": "4e32d74e595191987f4516afcc80da2dc651d37378b70fd07d869b73e7d0ca0e"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_13/calibration_choice.json",
+      "sha256": "e3c524df39f70d9e6c3027e53a8f6fd207769e641010053447cdfc785313ee79"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_14/calibration_choice.json",
+      "sha256": "0a1c276f6e514d2ff86fd828899025c1c16e26d4f286b5aa6f03dcac9b5899e4"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_15/calibration_choice.json",
+      "sha256": "5bd9f4a211f1882a1c7724cb2b9a0c40dcaf4326e806e4bbfbfe9b975827753d"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_16/calibration_choice.json",
+      "sha256": "52d340a60387363b4fd5af51f7d1968e0a12bd4212272754ef1e9c6668c7f9c7"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_17/calibration_choice.json",
+      "sha256": "efecbeeaae273ac64ad2201635379a4aade583530aa6e59259477c78e64add89"
+    },
+    {
+      "bytes": 1310,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_18/calibration_choice.json",
+      "sha256": "52b32787d3f60485c54c63192e7611749baa07a8954858e076458faf43db4f7f"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/last2_ce__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/last2_ce/seed_19/calibration_choice.json",
+      "sha256": "f90dd24c83c221d1ae90fbdf488eb723809b43da75d159c3ade06e5ccad4100c"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_10/calibration_choice.json",
+      "sha256": "e08d5a8977ed467711170de457d98f7abd0b0d8ee4b59578366436fc5381db4d"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_11/calibration_choice.json",
+      "sha256": "17e859c93c2d4e190825dbbb818c8b488a1c1fdbe9c3aa59f140388d9ada228f"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_12/calibration_choice.json",
+      "sha256": "bcc55eb102cd0d2b45c46c567005376e67bdae4ee99aa4b65f6248fed8c1c5cd"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_13/calibration_choice.json",
+      "sha256": "ed076e72080093ee47b7ff4a8de1bf66648982e12466cc94622ae657d6d55d3c"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_14/calibration_choice.json",
+      "sha256": "025c060b8d5ee489226fed09e97c49df91afdc56883034ad5bb026cc00e7b93d"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_15/calibration_choice.json",
+      "sha256": "5c804b564efed21f7285f73dd8ccd784ebebadc63d97fcd8222b18ef52baeac5"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_16/calibration_choice.json",
+      "sha256": "833fb42238a14c67a85d57afb683cdcd049595892eace64258239567f74711f2"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_17/calibration_choice.json",
+      "sha256": "19cdd144c85b47c88a054dc01a1c4b6f400a34193225da9694d76f900d6f68f8"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_18/calibration_choice.json",
+      "sha256": "98b1b12c879948598ee4840c866737e9b5d0e8de038bb6579fabb0c4be2641ce"
+    },
+    {
+      "bytes": 206,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_bsoftmax__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/seed_19/calibration_choice.json",
+      "sha256": "714be23e3aa745927ee7c29b76a9e7cb1f8659e523d0ace5b772b521ccc5b0bf"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_10__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_10/calibration_choice.json",
+      "sha256": "cf1321e7570e673936ad2c533fd016b03593b88cb16d8988877de28e8175340b"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_11__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_11/calibration_choice.json",
+      "sha256": "013c8fb1347cae6aba756efd3ca73218c5a24148fae4ef72f1fc15ab92a3e261"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_12__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_12/calibration_choice.json",
+      "sha256": "f2225c305be1c213cf122e3f1401f23078e36fe25ab9c538c8b01eee0b536cc4"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_13__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_13/calibration_choice.json",
+      "sha256": "3d6bf72fbb1e635b5fe7f8987d4d698930d501dd1f9947f520e012abcf23e862"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_14__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_14/calibration_choice.json",
+      "sha256": "7b208ada66a2753905d516d26a8f7c62d689d442b0c7edcea6ab831f06f12226"
+    },
+    {
+      "bytes": 1307,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_15__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_15/calibration_choice.json",
+      "sha256": "e05f6a91f1564e4b4bd53815f165e5bb2772e61f64c46381867a6adbf605940b"
+    },
+    {
+      "bytes": 1309,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_16__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_16/calibration_choice.json",
+      "sha256": "ac9d55c83dc4537b2f70431843d99791dca1bb3a8f54ff8020df912c4b1a7d32"
+    },
+    {
+      "bytes": 1308,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_17__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_17/calibration_choice.json",
+      "sha256": "1b99c21baa12284ec107dd1ce38a268b13161f3d14030e80ae08366014e504cf"
+    },
+    {
+      "bytes": 1307,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_18__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_18/calibration_choice.json",
+      "sha256": "9c51644980fbdfe22dde6401a64a244a840360b48367caea291728652dff5d6f"
+    },
+    {
+      "bytes": 1307,
+      "git_relative_path": "results/stronger_baselines/text/calibration/mean_ce__seed_19__calibration_choice.json",
+      "original_bundle_path": "experiment/mean_ce/seed_19/calibration_choice.json",
+      "sha256": "619dc4056f20a22f8aef80e892747e2b6758f77827af7c8c74234051b8102ce8"
+    },
+    {
+      "bytes": 2417,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/bert_balanced_ce__hyperparameters.json",
+      "original_bundle_path": "experiment/bert_balanced_ce/hyperparameters.json",
+      "sha256": "7dc5144ec4a574337f5b108fb7f1dd6469ace6c29d9acd2e37903c031a8a0d44"
+    },
+    {
+      "bytes": 2420,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/bert_balanced_eq__hyperparameters.json",
+      "original_bundle_path": "experiment/bert_balanced_eq/hyperparameters.json",
+      "sha256": "9446f875a7b367c835bac63b1b8c4487ef9b2d6b50477d68aa93052d6404e03c"
+    },
+    {
+      "bytes": 2414,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/bert_bsoftmax__hyperparameters.json",
+      "original_bundle_path": "experiment/bert_bsoftmax/hyperparameters.json",
+      "sha256": "64db4d3e21b28e543e990a043402bbf252256cae535cc8d7f05bd99cd475329b"
+    },
+    {
+      "bytes": 2401,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/bert_ce__hyperparameters.json",
+      "original_bundle_path": "experiment/bert_ce/hyperparameters.json",
+      "sha256": "4e634bd8af60bc5cdc7e32c008ceae975aafdcbfbe138adfd2f55af0397b42cb"
+    },
+    {
+      "bytes": 2417,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/bert_natural_eq__hyperparameters.json",
+      "original_bundle_path": "experiment/bert_natural_eq/hyperparameters.json",
+      "sha256": "b5d6edffd4d74983e27352aaa95e5d004201f364e826c30fcd24aff668c631fc"
+    },
+    {
+      "bytes": 2415,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/last0_bsoftmax__hyperparameters.json",
+      "original_bundle_path": "experiment/last0_bsoftmax/hyperparameters.json",
+      "sha256": "508d837a17e63f5326fbff214652f0e35761376b243eff2b9db98d721db03ff0"
+    },
+    {
+      "bytes": 2402,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/last0_ce__hyperparameters.json",
+      "original_bundle_path": "experiment/last0_ce/hyperparameters.json",
+      "sha256": "4b46ee2882921dbdb0c5f2a7751d075bf08747707d22c347e3cc1812c6692467"
+    },
+    {
+      "bytes": 2435,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/last1_bsoftmax__hyperparameters.json",
+      "original_bundle_path": "experiment/last1_bsoftmax/hyperparameters.json",
+      "sha256": "823431a6448eac651ca38bb59d7822a3d34445ad38955e716488eae13db0a603"
+    },
+    {
+      "bytes": 2423,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/last1_ce__hyperparameters.json",
+      "original_bundle_path": "experiment/last1_ce/hyperparameters.json",
+      "sha256": "90aa44d9e4fcb35ff19e58c324abbc748c385fbf398314a3a75afab95141509b"
+    },
+    {
+      "bytes": 2437,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/last2_bsoftmax__hyperparameters.json",
+      "original_bundle_path": "experiment/last2_bsoftmax/hyperparameters.json",
+      "sha256": "ca92a9b6a1f4c91cf22a33b3ba95dae31fa471e60586607e356f84a2682f0aa0"
+    },
+    {
+      "bytes": 2425,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/last2_ce__hyperparameters.json",
+      "original_bundle_path": "experiment/last2_ce/hyperparameters.json",
+      "sha256": "aa775cabcdfbe7941e4afb2439e1bb0767d0075e70efaf01fbc9c7e4801ef43e"
+    },
+    {
+      "bytes": 2416,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/mean_bsoftmax__hyperparameters.json",
+      "original_bundle_path": "experiment/mean_bsoftmax/hyperparameters.json",
+      "sha256": "36267ba0194132c46b9d66b4571a798b807ab68abf73c5bec0a65567ddf9fa66"
+    },
+    {
+      "bytes": 2406,
+      "git_relative_path": "results/stronger_baselines/text/frozen_choices/mean_ce__hyperparameters.json",
+      "original_bundle_path": "experiment/mean_ce/hyperparameters.json",
+      "sha256": "873caf1d538906871676a4969dec2ad20c064013c8851c6d450a4dd81e63be82"
+    }
+  ],
+  "scientific_source_sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c",
+  "scope": "Git-only presentation; all original raw archive paths and file bytes remain unchanged.",
+  "source_privacy_scan_receipt_sha256": "6641b55c47e65b675a244247f9e914171839fb63aed7ba0c9497979a481aa4d9",
+  "source_privacy_schema_sha256": "abb2aea4facecf5d70d19c20438dc241f401a94e121a29132e8a3d69287f2eb0",
+  "status": "derived_git_path_identity_map_from_complete_scanned_text_bundle",
+  "study": "text"
+}

@@ -1,0 +1,130 @@
+{
+  "TAUS": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "adapter_epochs": 50,
+  "adapter_lrs": [
+    0.01,
+    0.05
+  ],
+  "adapter_steps_per_epoch": 104,
+  "attention": "sdpa",
+  "batch_size": 1024,
+  "cache_fingerprint": "70e9d9eaac48c9d2507b82e57515433e363de23a0a0b6a91c74d51557abb5478",
+  "calibration": "CE/naturalEQ natural training prior corrected by tau grid; BS and class-balanced objectives use uniform effective prior and no duplicate LA readout",
+  "cls_cache_fingerprint": "561f74cecbba1b2682b967fbf4362842f7789a8d4a8976a3d6a1b7d6697da344",
+  "dataset_fingerprint": "cc6db35a62a5d543547bdece06991c9b3f01765ae8be96ea1891d79ee1694498",
+  "device_by_kind": {
+    "frozen": "cpu",
+    "matched": "cpu",
+    "mean": "cpu",
+    "partial": "mps"
+  },
+  "eq_weight": 0.05,
+  "evaluation": "balanced fresh train-derived confirmation primary; native 70k test exploratory only for frozen/mean arms",
+  "extractor_sha256": "06783e463168ab40b2ce7d254bcfc9e9d30eea4a76b52ef2733b39712b8c2062",
+  "fingerprint": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342",
+  "fit_examples": 106232,
+  "fit_length_bucket_counts": {
+    "128": 21729,
+    "32": 11020,
+    "64": 36002,
+    "96": 37481
+  },
+  "frozen_baseline": "Fit-only768Dmean/std sharedscaler; BERT first10 frozen eval, FP16 hidden cache roundtrip, last2 frozen eval;768→256→128adapter",
+  "grad_scaler_init_scale": 1024.0,
+  "inference_order": "LengthbucketpartialpredictionsscatteredbacktooriginalsourceIDorder",
+  "matched": "FrozenBERTCLS cache, fit-onlyCLS scaler; same3epochs1024batchbucketorder/AdamWheadLR10×referenceLR aspartial; last2blocks frozen eval; samefit scaler; identicalheadinitialization; transformer dropout difference makespartialtraining-regime comparison, notgradient-only",
+  "max_words": 50000,
+  "mean_baseline": "fit-only50k vocabulary;128token cap; random128DEmbeddingBag mean followed by256→128adapter",
+  "methods": [
+    "bert_ce",
+    "bert_bsoftmax",
+    "bert_natural_eq",
+    "bert_balanced_ce",
+    "bert_balanced_eq",
+    "mean_ce",
+    "mean_bsoftmax",
+    "last0_ce",
+    "last0_bsoftmax",
+    "last1_ce",
+    "last1_bsoftmax",
+    "last2_ce",
+    "last2_bsoftmax"
+  ],
+  "nonimage_helper_sha256": "be58b2706400b85340736c0ca0e3f07cbcb23895c4d07e92a6789de86d072b21",
+  "numeric_helper_sha256": "3d9de9336c7dc636f641286eddc0e9290f532048ea669d5eb934ed7ef123b61d",
+  "objective": "CE; Balanced Softmax is CE(logits+log fit counts), sampled naturally; balanced methods use CE without extra class weights",
+  "partial": "CLS pooling withfit-onlyCLSscaler matchedlast0; finalBERTblock computesCLSquery/output only,K/Valltokens; exactdropout0,marginaldropoutlaw withchangedRNGordering; same prefix/adapter; last1 orlast2 blocks train; frozen layer10 stays eval forlast1;AdamWencoderLR,adapter10×LR",
+  "partial_batch_size": 1024,
+  "partial_epochs": 3,
+  "partial_length_buckets": true,
+  "partial_lrs": [
+    2e-05,
+    5e-05
+  ],
+  "partial_precision": "amp_float16",
+  "partial_steps_per_epoch": 106,
+  "prefix_transfer": "native float16 direct toMPS underAMP; FP32masterweights",
+  "preparation_helper_sha256": "0974b57c45a010d92016b35b51d481badabc5594f91dc99cd25f9364ad206919",
+  "pretraining_overlap_risk": "BERT pretrained Wikipedia; DBpedia abstracts derive from Wikipedia, so fresh supervised partitions do not establish independence from pretraining texts; this is a transfer/model-package comparison",
+  "primary_comparisons": [
+    [
+      "bert_ce_la",
+      "mean_ce_la"
+    ],
+    [
+      "bert_bsoftmax",
+      "bert_ce_la"
+    ],
+    [
+      "bert_balanced_eq",
+      "bert_balanced_ce"
+    ],
+    [
+      "bert_natural_eq_la",
+      "bert_ce_la"
+    ],
+    [
+      "last1_ce_la",
+      "last0_ce_la"
+    ],
+    [
+      "last2_ce_la",
+      "last0_ce_la"
+    ],
+    [
+      "last1_bsoftmax",
+      "last0_bsoftmax"
+    ],
+    [
+      "last2_bsoftmax",
+      "last0_bsoftmax"
+    ]
+  ],
+  "sampling": "natural shuffled rows or class-uniform replacement, equal updates/examples budget",
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "source_sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c",
+  "threads": 2,
+  "torch_version": "2.14.1",
+  "tuning": "two final-epoch LR candidates per method at dedicated seed9; freeze one global method LR before ten final seeds10..19; macro-F1 on tune only; deterministic smaller-LR tie break",
+  "version": 1
+}

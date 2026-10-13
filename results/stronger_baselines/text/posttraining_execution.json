@@ -1,0 +1,50 @@
+{
+  "aggregate_sha256": "51d33f599706786a918bf1a2c32f748f47185d7fb5ada74eb90cf44365f5a060",
+  "all156_training_artifact_sets_unchanged": true,
+  "checkpoint_model_optimizer_or_training_updates_changed": false,
+  "checkpoint_rng_cpu_decode_compatibility_source_sha256": "5b3392105acb104a746e40720a87471e1d1bb040b54e596d3ff006a1b9a7cf75",
+  "checkpoint_rng_storage_bytes_changed": false,
+  "completed_utc": "2026-10-13T03:00:00.973248+00:00",
+  "confirmation_readouts": 190,
+  "failed_attempt_history": [
+    {
+      "confirmation_cells_predicted": 0,
+      "device": "mps",
+      "exit_code": 1,
+      "phase": "evaluate_mps4",
+      "reason": "Saved MPS RNG byte storage required CPU decode before restoring the checkpoint"
+    }
+  ],
+  "final_fits": 130,
+  "native_exploratory_readouts": 100,
+  "paired_primary_contrasts": 8,
+  "phases": [
+    {
+      "device": "cpu",
+      "exit_code": 0,
+      "phase": "evaluate_cpu9",
+      "wall_seconds": 181.969166
+    },
+    {
+      "device": "mps",
+      "exit_code": 0,
+      "phase": "evaluate_mps4",
+      "wall_seconds": 1149.030962
+    },
+    {
+      "device": "cpu",
+      "exit_code": 0,
+      "phase": "verify_aggregate",
+      "wall_seconds": 42.532609
+    }
+  ],
+  "preserved_CPU_confirmation_files": 360,
+  "preserved_failed_execution_sha256": "2423b6dc8577e986e6dcc8ac3bba62844f0cd82f6e2473a5c4add04afa4319bc",
+  "private_operational_receipt_sha256": "e8298b485b1830a987f6f987b8ab5cbd62d72a5f3ab3635fa9838058f82a9171",
+  "protocol_fingerprint": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342",
+  "recovery_controller_source_sha256": "0bdf18c1b03627ee03bd44b378e267f1d3ad801bb349779ae0c6225bc27ff844",
+  "scientific_source_search_seeds_budgets_changed": false,
+  "scope": "Operational completion and unchanged training-file hashes; independent numeric and original-state audits remain separate. Process identities and commands are retained only in the private operational receipt.",
+  "source_sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c",
+  "status": "all_text_confirmation_and_aggregate_phases_complete"
+}
