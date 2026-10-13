@@ -1,0 +1,30 @@
+{
+  "status": "fit_only_population_scaler_and_all_prepared_inputs_independently_verified",
+  "rows": 581012,
+  "fit_rows": 406704,
+  "tolerance": 1e-06,
+  "maximum_numeric_absolute_difference": 0.0,
+  "scaler_mean_difference_max": 0.0,
+  "scaler_scale_difference_max": 0.0,
+  "categorical_reconstruction_exact": true,
+  "flat_binary_preserved_exactly": true,
+  "class_rank_from_fit": [
+    1,
+    0,
+    2,
+    6,
+    5,
+    4,
+    3
+  ],
+  "class_names": [
+    "Spruce/Fir",
+    "Lodgepole Pine",
+    "Ponderosa Pine",
+    "Cottonwood/Willow",
+    "Aspen",
+    "Douglas-fir",
+    "Krummholz"
+  ],
+  "verification_source_sha256": "92a39127ac587f53a34ff9e5b3229e4d5d25062caaf5398181c50d0f8815638b"
+}

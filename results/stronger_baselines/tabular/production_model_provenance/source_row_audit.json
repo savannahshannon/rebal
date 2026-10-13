@@ -1,0 +1,12 @@
+{
+  "status": "canonical_original_gzip_every_row_and_label_verified",
+  "rows": 581012,
+  "blocks": 142,
+  "feature_columns": 54,
+  "label_rule": "originalsourcecolumn54minus1",
+  "source_gzip_sha256": "614360d0257557dd1792834a85a1cdebfadc3c4f30b011d56afee7ffb5b15771",
+  "feature_array_sha256": "cb4eab76306a67841743f02db1633efbcd813baf6610f7598438270e6fea88af",
+  "label_array_sha256": "9acdb93911b00f09e470cf825a958be8cabb8f9e52901e9d4906eff8e10659e5",
+  "seconds": 2.502334542106837,
+  "verification_source_sha256": "9a6dd3b49a86ed20fc3c3c0793072f9822c86e3f0eaa805faef9fef7a930b8b5"
+}

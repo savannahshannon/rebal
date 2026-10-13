@@ -1,0 +1,14 @@
+{
+  "ast_equal_excluding_module_documentation": true,
+  "changed_ast_node": "module documentation string only",
+  "independent_prediction_receipt_sha256": "f5395a443d541498ca50c78ae884f4312f07776e8b87702f688b337356d731df",
+  "original_completion_receipt_sha256": "b876e2eb5bda900c99224d7c233a0fc1ff06808dad1c7ddd73091521f9c8e1a4",
+  "original_sha256": "1b8d1fde3b54cad116e85a0d5395f68e8531865a88a86789416fe7a3a8ddd846",
+  "original_source": "work/next_round/tabular/verify_portable.py",
+  "public_source": "work/next_round/tabular/public_verify_tabular_followup.py",
+  "raw_ast_equal": false,
+  "revised_sha256": "18098480dd35eca935d183b0bc8431f21bbfcdefa8532acf0a6d3ea29fc6139a",
+  "source_protocol_training_settings_unchanged": true,
+  "status": "public_only_module_documentation_correction_verified",
+  "verification_receipt_difference_scope": "The helper source identity changes with its documentation string. Executable statements, scientific source, numeric results, budgets and settings are unchanged. The original production source and receipt remain in portable provenance."
+}
