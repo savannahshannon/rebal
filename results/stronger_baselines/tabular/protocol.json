@@ -1,0 +1,137 @@
+{
+  "cb_rule": "Count-aware effective-number loss weights all epochs normalized expectedfitweight1",
+  "confirm_readouts": [
+    "raw",
+    "calibrated_logit_adjustment"
+  ],
+  "data_fingerprint": "57115598b99588d54734d24ea95c020b104ba6a8d6fffecb64d22aec5740ffbf",
+  "fingerprint": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "ft_batch_size": 1024,
+  "ft_device": "mps",
+  "grids": {
+    "ft_transformer": [
+      {
+        "blocks": 2,
+        "dropout": 0.1,
+        "heads": 4,
+        "lr": 0.0003,
+        "weight_decay": 0.0001,
+        "width": 64
+      },
+      {
+        "blocks": 2,
+        "dropout": 0.1,
+        "heads": 4,
+        "lr": 0.0003,
+        "weight_decay": 0.0001,
+        "width": 96
+      }
+    ],
+    "mlp_cb": [
+      {
+        "dropout": 0.1,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "width": 256
+      },
+      {
+        "dropout": 0.1,
+        "lr": 0.003,
+        "weight_decay": 0.0001,
+        "width": 256
+      }
+    ],
+    "mlp_ce": [
+      {
+        "dropout": 0.1,
+        "lr": 0.001,
+        "weight_decay": 0.0001,
+        "width": 256
+      },
+      {
+        "dropout": 0.1,
+        "lr": 0.003,
+        "weight_decay": 0.0001,
+        "width": 256
+      }
+    ],
+    "xgboost": [
+      {
+        "colsample_bytree": 0.9,
+        "learning_rate": 0.08,
+        "max_depth": 6,
+        "min_child_weight": 1.0,
+        "n_estimators": 600,
+        "reg_lambda": 1.0,
+        "subsample": 0.8
+      },
+      {
+        "colsample_bytree": 0.9,
+        "learning_rate": 0.04,
+        "max_depth": 10,
+        "min_child_weight": 1.0,
+        "n_estimators": 600,
+        "reg_lambda": 1.0,
+        "subsample": 0.8
+      }
+    ]
+  },
+  "mlp_batch_size": 2048,
+  "mlp_device": "cpu",
+  "neural_epochs": 50,
+  "neural_optimizer": "AdamW,5-epochlinearwarmup thencosine,all50epochsrun; besttune macro-F1checkpoint",
+  "posthoc_taus": [
+    0.0,
+    0.25,
+    0.5,
+    0.75,
+    1.0,
+    1.25,
+    1.5,
+    2.0
+  ],
+  "primary_contrasts": [
+    [
+      "ft_transformer_la",
+      "mlp_ce_la"
+    ],
+    [
+      "xgboost_la",
+      "mlp_ce_la"
+    ],
+    [
+      "mlp_cb_la",
+      "mlp_ce_la"
+    ]
+  ],
+  "seed_inference": "10optimizationseeds on one fixeddatasetpartition; intervalcapturesoptimizationvariation,notdataset/geographicuncertainty",
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "selection": "Two predeclared configurations per family on optimizationseed9. No calibration/confirmation forward pass before configurationfreeze. Equal trial count, model-specific compute budgets disclosed.",
+  "source_sha256": "a75df97f8351324e047bf19b298d9e421e489a6f9ffc679248580199c7869a67",
+  "threads": 4,
+  "tree_rule": "XGBoostCPUhist,max_bin256,600rounds,checkpointcomparisonat50-roundstepsbytunemacroF1",
+  "tuning_seed": 9,
+  "version": 1,
+  "versions": {
+    "packages": {
+      "numpy": "2.5.4",
+      "scikit-learn": "1.9.1",
+      "scipy": "1.18.1",
+      "torch": "2.14.1",
+      "xgboost": "3.2.0"
+    },
+    "platform": "macOS-26.6.2-arm64-arm-64bit",
+    "python": "3.12.14"
+  }
+}

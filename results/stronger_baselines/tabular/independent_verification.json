@@ -1,0 +1,13 @@
+{
+  "aggregate_sha256": "a08f2f433bfe51740949ccc0e1057c431a6c65ba50c2d7fbc02afb2e480914e7",
+  "calibration_curves": 40,
+  "completed_fits": 40,
+  "contrasts": 3,
+  "freeze": "863207e1b641fc5cd2c903f09b85e06218dac272b858323d77de769ed34546da",
+  "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "readouts": 80,
+  "scalar_metrics": 640,
+  "source_sha256": "a75df97f8351324e047bf19b298d9e421e489a6f9ffc679248580199c7869a67",
+  "status": "verified_complete",
+  "verification_scope": "Numericpredictionreplay,identities,labels/splits,trainingbudgets,calibrationchoices,pairedsummaries; modelinferenceandtrainingnotindependentlyrerun"
+}

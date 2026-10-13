@@ -1,0 +1,509 @@
+{
+  "checkpoint_states_included": false,
+  "files": [
+    {
+      "bytes": 3003,
+      "path": "README.md",
+      "role": "derived_evidence_scope",
+      "sha256": "1f347a8dfe1763f88c352e3f2e06b01fd3ebfeb1cab3c2195e76938ab5c0d85e"
+    },
+    {
+      "bytes": 17171,
+      "path": "aggregate.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "a08f2f433bfe51740949ccc0e1057c431a6c65ba50c2d7fbc02afb2e480914e7"
+    },
+    {
+      "bytes": 1539,
+      "path": "calibration/seed_10/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "749ece557b557714e58df6cca55542075675d0d26785a548ce3fda2a96c16fb2"
+    },
+    {
+      "bytes": 1531,
+      "path": "calibration/seed_10/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "96c98d64efe0de956d5df0e10d00f9b9b0abd92a3bc5ebf2020238edc5c0da38"
+    },
+    {
+      "bytes": 1532,
+      "path": "calibration/seed_10/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "e9554da136b2263effdc5d33ee0b115aee37290d24888ba20f3a79734ebd4c7c"
+    },
+    {
+      "bytes": 1535,
+      "path": "calibration/seed_10/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "8ceb90fa87a5e4cc9cf925b8ecdb52af85abe88deaa07bb8781614a9b0098fa0"
+    },
+    {
+      "bytes": 1540,
+      "path": "calibration/seed_11/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "e7b5b5fb3982081c6ac5d58e8b2794ba938373de6750070a347bc47cf2f2ef78"
+    },
+    {
+      "bytes": 1532,
+      "path": "calibration/seed_11/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "8c5581f194fffd48cc74c29202da80e49c18e71ee5e65a42f7c74a9437dfa853"
+    },
+    {
+      "bytes": 1533,
+      "path": "calibration/seed_11/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "fc2bdd282d2cdab94f8d3d855ba954d76330f85ca3da53212a2aa17526bfe6c4"
+    },
+    {
+      "bytes": 1534,
+      "path": "calibration/seed_11/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "efef2f320eb205d4d393af540dc927e78a4ee5b2ab6ab2f833fad34d7b545c5c"
+    },
+    {
+      "bytes": 1541,
+      "path": "calibration/seed_12/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "9a39b7e56a87030f12ffe212e54213ea1f4106401793e07ac23712a1c04924c7"
+    },
+    {
+      "bytes": 1531,
+      "path": "calibration/seed_12/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "9d07c5b5059201ae794ff7af177c620d3cb2023e3f37ed1bdf49c73b1d2d7dd8"
+    },
+    {
+      "bytes": 1531,
+      "path": "calibration/seed_12/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "017be2473fbb69cde43a3655e8dd6c9549f6b71c766c97d20cc3558ee478978a"
+    },
+    {
+      "bytes": 1534,
+      "path": "calibration/seed_12/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "3fc30c57c1db3be14519d4a0d189b3ac7ddbcafb1d1eac8a7d9f8df3896360d6"
+    },
+    {
+      "bytes": 1541,
+      "path": "calibration/seed_13/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "7eca8ade1d262a3c346c793844fef3941285c55ee75b83cd8073dfc1cb471321"
+    },
+    {
+      "bytes": 1532,
+      "path": "calibration/seed_13/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "3853b802e9987d98ff402ce5664f3d014bccb95eef738d27e4804a7e5b19d084"
+    },
+    {
+      "bytes": 1532,
+      "path": "calibration/seed_13/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "600bc1fc84ec897694fd490529131379d84fa5e9dc426d7f9ab6b7256bfb332e"
+    },
+    {
+      "bytes": 1535,
+      "path": "calibration/seed_13/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "5d36c1f594e0e28c4dbcfc3b0c22561642ae35771506e672de19f04d4801db94"
+    },
+    {
+      "bytes": 1541,
+      "path": "calibration/seed_14/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "6b504c1921077ccc504cfc8abbd680c2091aa8bfdf360c91e1a451f1fb3d8c49"
+    },
+    {
+      "bytes": 1531,
+      "path": "calibration/seed_14/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "13076afa8717c3ab197c1b20df03fd56ef8aba38048125157dbeeac45df9a610"
+    },
+    {
+      "bytes": 1533,
+      "path": "calibration/seed_14/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "e8a6b4e15dd25849928a789e8e6aec6cf8f34e0dc77930c487821e2569b6de61"
+    },
+    {
+      "bytes": 1534,
+      "path": "calibration/seed_14/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "2be107880586c657592db6fedb9634ff8d349056e4821bf9e70b39ccfbdd0acc"
+    },
+    {
+      "bytes": 1540,
+      "path": "calibration/seed_15/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "c5efd15ba73ce11226fc780789a6857f61fd6c256a613811d39ec9b9d4058500"
+    },
+    {
+      "bytes": 1531,
+      "path": "calibration/seed_15/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "282c0b936cff0430f7296720d00da36db206eed415501d4542e7eee46d88a574"
+    },
+    {
+      "bytes": 1533,
+      "path": "calibration/seed_15/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "5c3da23d3d97d9cdede114a30805236cb116355326cf159f512933707773618e"
+    },
+    {
+      "bytes": 1534,
+      "path": "calibration/seed_15/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "bf1b13552191e1f70a523f3739f256a4e67b928afbf7c2bfa5071205192059c3"
+    },
+    {
+      "bytes": 1541,
+      "path": "calibration/seed_16/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "b29c4d79fd60b8d660367611970d470b30cc460cad934c76b0a85795ea234920"
+    },
+    {
+      "bytes": 1530,
+      "path": "calibration/seed_16/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "4a5f48a0fe94b5974043e0e18d767a5b8d95c1eb0685a79c697de57d1e3c06b9"
+    },
+    {
+      "bytes": 1531,
+      "path": "calibration/seed_16/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "fa18186e8d06780253f5a0674879523ce40aea0c0ab9238b42c63ca9c0b6572f"
+    },
+    {
+      "bytes": 1534,
+      "path": "calibration/seed_16/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "e08c9485e9634934e342dd82dee3acec0b049e61822ff82af20212de3e1fe122"
+    },
+    {
+      "bytes": 1539,
+      "path": "calibration/seed_17/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "bb08a7c4a59201f563dd4d10608ee0d8d5dfc48fd619f577bf6e00ccab6dbef1"
+    },
+    {
+      "bytes": 1532,
+      "path": "calibration/seed_17/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "28c25c9e9531e149e2544210567fdf630bcaf581b7e9a8b0b4ed25468d8c5cc3"
+    },
+    {
+      "bytes": 1533,
+      "path": "calibration/seed_17/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "39ac040de5da7d16bcc76b6b954a172750493493f904ba9627ac1009c8b854ed"
+    },
+    {
+      "bytes": 1535,
+      "path": "calibration/seed_17/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "e5c61eb009756b407db118de05e22836a5244be10c61a26f45cb41bcb19c44ee"
+    },
+    {
+      "bytes": 1538,
+      "path": "calibration/seed_18/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "0ac51dc3225d4474793c430f379e519b09061c3d9aa0c375e516eace74a5d7f1"
+    },
+    {
+      "bytes": 1527,
+      "path": "calibration/seed_18/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "81a5ab9b2570604d1bb3b55734245c449d34743adcde6f03ea8b52570da9f504"
+    },
+    {
+      "bytes": 1531,
+      "path": "calibration/seed_18/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "fd3d7b4ed6ab117fc32d7ff2dddc687547016ec45c2714508163814ef5c770e6"
+    },
+    {
+      "bytes": 1534,
+      "path": "calibration/seed_18/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "f04c5e1f32ee5b7d139b3d48086c5d6a38de1f409039dd9ce26704b62bd0f5d9"
+    },
+    {
+      "bytes": 1539,
+      "path": "calibration/seed_19/ft_transformer.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "ed50f854999d5e410b0042697ede6cba33106a4146ca14c03933275c3fd5d3c1"
+    },
+    {
+      "bytes": 1529,
+      "path": "calibration/seed_19/mlp_cb.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "2c5f92a41cccc1c8fd068c210315fe5e23d933d693c84c95cfad21866caca5da"
+    },
+    {
+      "bytes": 1533,
+      "path": "calibration/seed_19/mlp_ce.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "38fc185f93dfa7acbf7ef7cd137344d7cc46f3eeb91aca270c3d32ce07d33eb7"
+    },
+    {
+      "bytes": 1535,
+      "path": "calibration/seed_19/xgboost.json",
+      "role": "copied_saved_calibration_choice_and_curve",
+      "sha256": "c76ee48a415adc5232c7fb2b32e89686faf9b7d8f39e220488f8d82086aeac90"
+    },
+    {
+      "bytes": 2387,
+      "path": "data_metadata.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "125a46307de5c4caa031f7c490186ec86cc8b4e6b5cbb02c0041c6e18c09470b"
+    },
+    {
+      "bytes": 699,
+      "path": "family_selection/ft_transformer.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "12df9031860da21f0bf956869aa83778138321c3ce25a3100e03fe836477d77b"
+    },
+    {
+      "bytes": 654,
+      "path": "family_selection/mlp_cb.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "b90ab985e6339ec17bff71f6613c07f1b405c688e0da04bf5d61e4487bdce0ad"
+    },
+    {
+      "bytes": 654,
+      "path": "family_selection/mlp_ce.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "43123a376d2ebc0d59dc8374ffe183ade3708622f6083b39612b488a035f7801"
+    },
+    {
+      "bytes": 753,
+      "path": "family_selection/xgboost.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "23b0998ad42a5a4ece7fdcabb7782fb5c4c0b7ce0e64bff927de3614aafa88c6"
+    },
+    {
+      "bytes": 17206,
+      "path": "frozen_selection.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "bf272f6b81b52b3ce97bad8eb72e8454653901c0da3b57d774b3bd97015ddb3e"
+    },
+    {
+      "bytes": 12693,
+      "path": "independent_prediction_verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "c36935bcc8d7f01e98293bca67f4eace38af31155dad98e4795dad3a53d7232d"
+    },
+    {
+      "bytes": 663,
+      "path": "independent_verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "80562bc50e37986d606b7794eb8ca54775a506a5157f3c065fa9c87b6a928567"
+    },
+    {
+      "bytes": 1586,
+      "path": "portable_verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "d781ea4be89917c5aa3d6980ed8987231caf84c12dcc736f5527148a5bd19a79"
+    },
+    {
+      "bytes": 21236,
+      "path": "production_model_provenance/checkpoint_audit_complete.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "97800349a47fa55fff35e080f8252ea65b555b1315648b855a5935bb505c948e"
+    },
+    {
+      "bytes": 12693,
+      "path": "production_model_provenance/independent_prediction_verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "f5395a443d541498ca50c78ae884f4312f07776e8b87702f688b337356d731df"
+    },
+    {
+      "bytes": 1086,
+      "path": "production_model_provenance/public_helper_documentation_correction.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "14fba75e8ff2261214b9ff820ca73911bed735e192d9ba7e4de07f1e7f873203"
+    },
+    {
+      "bytes": 589,
+      "path": "production_model_provenance/source_row_audit.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "70b8b4c6eeacddb95c535e50f0d24bdb11611a7cbee70f12257f7fae40e9e505"
+    },
+    {
+      "bytes": 699,
+      "path": "production_model_provenance/transform_audit.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "d2f9becef61175b0b3b161e09ef26b82c18e28f5e255016205eb51a81e54d536"
+    },
+    {
+      "bytes": 1588,
+      "path": "production_model_provenance/verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "2e01d2e80f6197e5776acf9ff6c3ef73aafebf2bd1f2bfaab6e7bcf15287767a"
+    },
+    {
+      "bytes": 3131,
+      "path": "protocol.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "68a171650e6baf408f83aff4861db397d2249149be8a0b75cce40ceb3ccd78ab"
+    },
+    {
+      "bytes": 47406,
+      "path": "raw_evidence_catalog.json",
+      "role": "separate_local_raw_archive_catalog",
+      "sha256": "63644cb782238e2757ce334d0df867dbffe8964051a8d175ea18358597c3ed46"
+    },
+    {
+      "bytes": 16795,
+      "path": "statistical_replay.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "a56ac4ce3707924dded985ebaa2336c21318de06a729c640e6280365b87209f3"
+    },
+    {
+      "bytes": 833,
+      "path": "tables/export_manifest.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "86901b4f36eb07f58fec3874c98a3e39a1387cdd4af3c6aef1deb56ac82b0b0e"
+    },
+    {
+      "bytes": 653,
+      "columns": [
+        "a",
+        "b",
+        "exact_signflip_p",
+        "exact_signflip_p_holm",
+        "mean",
+        "sd",
+        "t_p",
+        "t_p_holm",
+        "ci95_low",
+        "ci95_high",
+        "unit"
+      ],
+      "path": "tables/paired_comparisons.csv",
+      "role": "copied_saved_derived_evidence",
+      "rows": 3,
+      "sha256": "74f01c5e1ed706eef2703e5a551cb64b58c29bb0f1af8d9a59aa36243c24fd58"
+    },
+    {
+      "bytes": 54704,
+      "columns": [
+        "dataset",
+        "seed",
+        "method",
+        "class_id",
+        "fit_frequency_rank",
+        "group",
+        "precision",
+        "recall",
+        "f1",
+        "support"
+      ],
+      "path": "tables/per_class_results.csv",
+      "role": "copied_saved_derived_evidence",
+      "rows": 560,
+      "sha256": "eeecc3cd8c2bfd9153a20ade65d1ff47f39615595f9a0f41df63d7c611ec9d50"
+    },
+    {
+      "bytes": 14670,
+      "columns": [
+        "dataset",
+        "seed",
+        "method",
+        "accuracy",
+        "balanced_accuracy",
+        "balanced_macro_f1",
+        "macro_f1",
+        "macro_recall",
+        "head_f1",
+        "mid_f1",
+        "tail_f1",
+        "selected_tau"
+      ],
+      "path": "tables/per_seed_results.csv",
+      "role": "copied_saved_derived_evidence",
+      "rows": 80,
+      "sha256": "7c7b4a06ec2f9f608610e3a04bf1f60c7e67efdc92b96a7764a8e8905a40a0d6"
+    },
+    {
+      "bytes": 5585,
+      "columns": [
+        "seed",
+        "family",
+        "training_seconds",
+        "fit_and_tune_seconds",
+        "completed_epochs",
+        "optimizer_updates",
+        "selected_epoch",
+        "parameters",
+        "completed_boosting_rounds",
+        "selected_boosting_rounds",
+        "tree_count",
+        "calibration_inference_seconds",
+        "confirmation_inference_seconds",
+        "confirmation_rows",
+        "confirmation_rows_per_second",
+        "device"
+      ],
+      "path": "tables/runtimes.csv",
+      "role": "copied_saved_derived_evidence",
+      "rows": 40,
+      "sha256": "9b0769135433203fab660c623b815bd527efc74f787e3a62fdf3fa2b9703e179"
+    },
+    {
+      "bytes": 7430,
+      "columns": [
+        "method",
+        "metric",
+        "n",
+        "mean",
+        "sd",
+        "ci95_low",
+        "ci95_high",
+        "unit"
+      ],
+      "path": "tables/summary.csv",
+      "role": "copied_saved_derived_evidence",
+      "rows": 64,
+      "sha256": "3bc329009d2bbcd1621c8aab58ddf9f7022a065d9b39bed822b5f2d36560680a"
+    },
+    {
+      "bytes": 5247,
+      "path": "tuning_capture_manifest.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "040977936a0cae3cca4d6fd81d8e4345314dc4e7d90e56a7bf110e5c3d23e969"
+    }
+  ],
+  "inference_or_scientific_metric_recomputation_performed": false,
+  "original_audit_scope": {
+    "actual_weight_files": 84,
+    "best_neural_checkpoints": 36,
+    "boosted_tree_artifacts": 12,
+    "final_fit_identities": 40,
+    "last_neural_checkpoints": 36,
+    "separate_integrity_overlay_selected_artifacts": 78,
+    "total_trained_model_identities": 48,
+    "tuning_fit_identities": 8
+  },
+  "portable_audit_scope": {
+    "calibration_candidates": 320,
+    "calibration_curves": 40,
+    "independent_final_prediction_models": 40,
+    "independent_prediction_readouts": 80,
+    "model_weight_artifacts_present_verified": 0,
+    "neural_checkpoint_states_present_verified": 0,
+    "primary_contrasts": 3
+  },
+  "raw_predictions_included": false,
+  "scope": "Derived JSON/CSV tables, figures and receipts only. Raw catalogs describe a separate complete local archive; their members are not all included here.",
+  "source_privacy_scan": {
+    "receipt_sha256": "b69cc5084e4b285f1c3b4c4ccc0d479def8c5f5c356bd53ebf4cdcbac4fe5d23",
+    "scanned_files": 287,
+    "schema_sha256": "54b708d0306f258f5ff1570e76e36ce09e1433860e8b8c7de33b9c65291941fd",
+    "status": "passed"
+  },
+  "status": "derived_git_evidence_prepared_not_published",
+  "study": "tabular"
+}

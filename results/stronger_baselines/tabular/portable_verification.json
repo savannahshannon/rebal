@@ -1,0 +1,26 @@
+{
+  "calibration_choices_persisted_before_confirmation_verified": 40,
+  "canonical_source_sha256": "614360d0257557dd1792834a85a1cdebfadc3c4f30b011d56afee7ffb5b15771",
+  "final_fit_configs_and_budgets_verified": 40,
+  "freeze": "863207e1b641fc5cd2c903f09b85e06218dac272b858323d77de769ed34546da",
+  "model_weight_artifacts_present_verified": 0,
+  "model_weight_scope": "When present, trustedownweights_only states andactualweightfiledigests checked; portablebundlesmayomitweights,withzeroorlowerpresencecounts. Numericreplayneverrequiresweights.",
+  "neural_checkpoint_states_present_verified": 0,
+  "numeric_replay": {
+    "aggregate_sha256": "a08f2f433bfe51740949ccc0e1057c431a6c65ba50c2d7fbc02afb2e480914e7",
+    "calibration_curves": 40,
+    "completed_fits": 40,
+    "contrasts": 3,
+    "freeze": "863207e1b641fc5cd2c903f09b85e06218dac272b858323d77de769ed34546da",
+    "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+    "readouts": 80,
+    "scalar_metrics": 640,
+    "source_sha256": "a75df97f8351324e047bf19b298d9e421e489a6f9ffc679248580199c7869a67",
+    "status": "verified_complete",
+    "verification_scope": "Numericpredictionreplay,identities,labels/splits,trainingbudgets,calibrationchoices,pairedsummaries; modelinferenceandtrainingnotindependentlyrerun"
+  },
+  "overlay_source_sha256": "18098480dd35eca935d183b0bc8431f21bbfcdefa8532acf0a6d3ea29fc6139a",
+  "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "status": "independent_integrity_selection_and_numeric_replay_passed",
+  "tuning_trials_verified": 8
+}

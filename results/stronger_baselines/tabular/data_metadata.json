@@ -1,0 +1,85 @@
+{
+  "categorical_rule": "Lossless decode columns10:14 wilderness4 and14:54 soil40; exact one-hot reconstruction checked",
+  "class_rank": [
+    1,
+    0,
+    2,
+    6,
+    5,
+    4,
+    3
+  ],
+  "confirmation_limit": "Fresh partition of previously studied source dataset; not an independent geographic/external dataset. Prior report exposed aggregate outcomes on other splits.",
+  "dataset": "Covertype",
+  "files": {
+    "categorical.npy": "99f88a57733b2f4408643e3a3197d6e2703f2c0c1d10b8a85d03e52274d3f5c7",
+    "flat.npy": "08a30fb8884987d21a2357acde2780237b4f742bcc443621db9350f57c1ff865",
+    "labels.npy": "9acdb93911b00f09e470cf825a958be8cabb8f9e52901e9d4906eff8e10659e5",
+    "numeric.npy": "707fe50c12251c7c0b269f991f8434d665dc4dcc40d9e7b815a11eb1edf74dce",
+    "scaler.npz": "bf35b10b8eea0dc4d6b9961b79499532e561bbaea2831d64769d0004bda8a514",
+    "split.npz": "94f340658612b49ab77b67422500120633feb45232a80af0bcc351e9a4299652"
+  },
+  "fingerprint": "57115598b99588d54734d24ea95c020b104ba6a8d6fffecb64d22aec5740ffbf",
+  "input_features": {
+    "categorical_cardinalities": [
+      4,
+      40
+    ],
+    "continuous": 10,
+    "one_hot_binary": 44
+  },
+  "prior_study_test_overlap_with_new_confirmation": 8669,
+  "scaler_fit_part": "fit",
+  "source_features_sha256": "cb4eab76306a67841743f02db1633efbcd813baf6610f7598438270e6fea88af",
+  "source_gzip_sha256": "614360d0257557dd1792834a85a1cdebfadc3c4f30b011d56afee7ffb5b15771",
+  "source_labels_sha256": "9acdb93911b00f09e470cf825a958be8cabb8f9e52901e9d4906eff8e10659e5",
+  "source_rows": 581012,
+  "source_url": "https://archive.ics.uci.edu/ml/machine-learning-databases/covtype/covtype.data.gz",
+  "split_class_counts": {
+    "calibration": [
+      21184,
+      28330,
+      3575,
+      274,
+      949,
+      1736,
+      2051
+    ],
+    "confirmation": [
+      21184,
+      28331,
+      3577,
+      277,
+      950,
+      1739,
+      2052
+    ],
+    "fit": [
+      148288,
+      198310,
+      25027,
+      1922,
+      6645,
+      12156,
+      14356
+    ],
+    "tune": [
+      21184,
+      28330,
+      3575,
+      274,
+      949,
+      1736,
+      2051
+    ]
+  },
+  "split_counts": {
+    "calibration": 58099,
+    "confirmation": 58110,
+    "fit": 406704,
+    "tune": 58099
+  },
+  "split_rule": "Class-stratified70/10/10/10, per-class floor fit/tune/cal, confirmation receives remainder",
+  "split_seed": 314159,
+  "version": 1
+}
