@@ -1,0 +1,59 @@
+{
+  "calibration": {
+    "curve": [
+      {
+        "macro_f1": 0.9302744265151084,
+        "tau": 0.0
+      },
+      {
+        "macro_f1": 0.9309004824918613,
+        "tau": 0.25
+      },
+      {
+        "macro_f1": 0.9211670280769576,
+        "tau": 0.5
+      },
+      {
+        "macro_f1": 0.9001884645752629,
+        "tau": 0.75
+      },
+      {
+        "macro_f1": 0.8672921316833426,
+        "tau": 1.0
+      },
+      {
+        "macro_f1": 0.829167702123548,
+        "tau": 1.25
+      },
+      {
+        "macro_f1": 0.7862437777814023,
+        "tau": 1.5
+      },
+      {
+        "macro_f1": 0.7101383420809019,
+        "tau": 2.0
+      }
+    ],
+    "prior": [
+      0.3646091506353515,
+      0.487602777449939,
+      0.06153615405798812,
+      0.0047257956646602935,
+      0.016338663991502418,
+      0.0298890593650419,
+      0.03529839883551674
+    ],
+    "selection_part": "calibration",
+    "tau": 0.25,
+    "tie_rule": "smallesttau"
+  },
+  "calibration_ids_array_sha256": "3a34ef0d888c0c4bb9e93d12038761cda77d85233c92bc76ad62f1b6196bbd26",
+  "calibration_logits_array_sha256": "ae71aecba04f4989aafcb10aa930eb2a8ae2d0fd8d3f4e584e17c1279f6f03b9",
+  "created_utc": "2026-10-12T21:41:27Z",
+  "family": "xgboost",
+  "fingerprint": "fb0ac053e42561cac3f11457355aa9f71bb9842b481c2cbd0f6175e1f58e07fd",
+  "freeze": "863207e1b641fc5cd2c903f09b85e06218dac272b858323d77de769ed34546da",
+  "persisted_before_confirmation_inference": true,
+  "protocol": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932",
+  "seed": 15
+}
