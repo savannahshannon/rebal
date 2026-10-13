@@ -1,0 +1,220 @@
+{
+  "checkpoint_states_included": false,
+  "files": [
+    {
+      "bytes": 2537,
+      "path": "README.md",
+      "role": "derived_evidence_scope",
+      "sha256": "ccd125ccc9b7c510f4f4594dcb5403aeec6e0a83b0a2f30b31b39f246447d00a"
+    },
+    {
+      "bytes": 24994,
+      "path": "aggregate.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539"
+    },
+    {
+      "bytes": 76886,
+      "path": "audit/actual_checkpoint_verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "831c11c8a1746ea44dd7ef52d005a99046cc91976d9a34a4494b8fc668e4f0c3"
+    },
+    {
+      "bytes": 1924,
+      "path": "audit/independent_verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "1bc83746f84a34f690ab0eaabb0dfe7d363ae35acada62f1dad3dc49a6be3c03"
+    },
+    {
+      "bytes": 1923,
+      "path": "audit/portable_numeric_verification.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "2e7d60c5f17ab8bafa85af647d6cad0eaeb8899aa3df0e77f189e5e62e8b28e9"
+    },
+    {
+      "bytes": 136319,
+      "columns": [
+        "arm",
+        "seed",
+        "tau",
+        "macro_f1"
+      ],
+      "path": "calibration_curves.csv",
+      "role": "saved_numeric_record_projection",
+      "rows": 2460,
+      "sha256": "482734fee0dc8f6fd226b20b1522c2d7775630e83a406c904aa2b310cc5eca0b",
+      "source_json_sha256": {
+        "run/results.json": "e261e76db8b5b137bbb44d2264ca0b4c3cbb0482d2e05f55b5df4c4775627015"
+      }
+    },
+    {
+      "bytes": 298676,
+      "path": "development_capture_complete.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "97c65ba36abc2f0091d4fb4f58eed7ed20b1c5506e7048242beda3d5b64fa5b0"
+    },
+    {
+      "bytes": 1124,
+      "path": "extraction_complete.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "be1316905eaecb2c2323522fba93dbcf95157447a4a3171be12251007d016b01"
+    },
+    {
+      "bytes": 6282,
+      "path": "final_training_complete.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "7883fe0776d42a8280e0a23d8111adec09c73203904aef7d9ff844f7bae91579"
+    },
+    {
+      "bytes": 873,
+      "columns": [
+        "name",
+        "mean",
+        "ci95_low",
+        "ci95_high",
+        "t_p",
+        "t_p_holm",
+        "exact_p",
+        "exact_p_holm"
+      ],
+      "path": "paired_comparisons.csv",
+      "role": "saved_numeric_record_projection",
+      "rows": 5,
+      "sha256": "ad0cf4faf6f52da7c5a4c6bc40f6df5095d3946e68837250edb682eb31609180",
+      "source_json_sha256": {
+        "run/aggregate.json": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539"
+      }
+    },
+    {
+      "bytes": 2704,
+      "columns": [
+        "name",
+        "seed",
+        "difference"
+      ],
+      "path": "paired_seed_differences.csv",
+      "role": "saved_numeric_record_projection",
+      "rows": 50,
+      "sha256": "4f98c1bae824b195adf71cedd1913542381f20b7297292733bbe8be477ba0e03",
+      "source_json_sha256": {
+        "run/aggregate.json": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539"
+      }
+    },
+    {
+      "bytes": 2468298,
+      "columns": [
+        "arm",
+        "seed",
+        "endpoint",
+        "class_id",
+        "f1",
+        "support"
+      ],
+      "path": "per_class_results.csv",
+      "role": "saved_numeric_record_projection",
+      "rows": 36000,
+      "sha256": "90123dec4c1f8529a47544d9970e73fc93e05eb309463c93040bdd5499f75674",
+      "source_json_sha256": {
+        "run/results.json": "e261e76db8b5b137bbb44d2264ca0b4c3cbb0482d2e05f55b5df4c4775627015"
+      }
+    },
+    {
+      "bytes": 25985,
+      "columns": [
+        "arm",
+        "seed",
+        "endpoint",
+        "selected_tau",
+        "accuracy",
+        "macro_f1",
+        "macro_recall",
+        "head_f1",
+        "mid_f1",
+        "tail_f1"
+      ],
+      "path": "per_seed_results.csv",
+      "role": "saved_numeric_record_projection",
+      "rows": 180,
+      "sha256": "6076825430bc3616becb0147545da52f23fa428234a733e492a057edcc714232",
+      "source_json_sha256": {
+        "run/results.json": "e261e76db8b5b137bbb44d2264ca0b4c3cbb0482d2e05f55b5df4c4775627015"
+      }
+    },
+    {
+      "bytes": 3998,
+      "path": "protocol.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "8fa0a078c2fcb1ec24eb08682b714919822c117ac32204a773f1d1d053a194f2"
+    },
+    {
+      "bytes": 962,
+      "path": "provenance/protocol_serialization_amendment.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "58a123c5e572e208dc59298e3d4bbffe3ee84b372cc9895de534b606a7776ca5"
+    },
+    {
+      "bytes": 83325,
+      "path": "raw_evidence_catalog.json",
+      "role": "separate_local_raw_archive_catalog",
+      "sha256": "5eb0b1a204bfe83b2df3e50accbdab3228bb1948ad788e570c8056c492cdaad8"
+    },
+    {
+      "bytes": 2145515,
+      "path": "results.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "e261e76db8b5b137bbb44d2264ca0b4c3cbb0482d2e05f55b5df4c4775627015"
+    },
+    {
+      "bytes": 1485,
+      "path": "selection.json",
+      "role": "copied_saved_derived_evidence",
+      "sha256": "1bc9cebf8a0303dafd28f544a1a54b65f15c3fe3ee7041bb90ddb7a0331a74b9"
+    },
+    {
+      "bytes": 9774,
+      "columns": [
+        "arm",
+        "endpoint",
+        "metric",
+        "n",
+        "mean",
+        "sd"
+      ],
+      "path": "summary.csv",
+      "role": "saved_numeric_record_projection",
+      "rows": 108,
+      "sha256": "43cc3476577975aacc13dcb9725df508f75ba4202a345668a7fea7bece6f8831",
+      "source_json_sha256": {
+        "run/aggregate.json": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539"
+      }
+    }
+  ],
+  "inference_or_scientific_metric_recomputation_performed": false,
+  "original_audit_scope": {
+    "actual_checkpoint_states_verified": 72,
+    "actual_final_states": 60,
+    "actual_tuning_states": 12,
+    "adamw_steps_per_parameter": 1800,
+    "development_captures": 72,
+    "epochs_per_state": 15,
+    "numeric_models": 60,
+    "numeric_readouts": 180
+  },
+  "portable_audit_scope": {
+    "checkpoint_hashes_checked": 0,
+    "checkpoint_states_loaded": 0,
+    "development_captures": 72,
+    "numeric_models": 60,
+    "numeric_readouts": 180
+  },
+  "raw_predictions_included": false,
+  "scope": "Derived JSON/CSV tables, figures and receipts only. Raw catalogs describe a separate complete local archive; their members are not all included here.",
+  "source_privacy_scan": {
+    "receipt_sha256": "a2bd8088836be9cd032f9a80268f996afec111fbc9dbdbeab52b8c963252845e",
+    "scanned_files": 436,
+    "schema_sha256": "9b2a5dda467a8ce5d6e27842c738949e8c32f91b70412a7023d7a07fe51404d9",
+    "status": "passed"
+  },
+  "status": "derived_git_evidence_prepared_not_published",
+  "study": "vision"
+}

@@ -1,0 +1,22 @@
+{
+  "dino_positions": "Official518px positional grid resized by reviewed timm bicubic+antialias to224; common224transform controls resolution",
+  "dino_rows": 110000,
+  "dino_sha256": "8918817a0200e87c5d4ab6a1a8f9d2b83f900e4161ce84f28495fa916126d433",
+  "encoders_frozen_during_extraction": true,
+  "ids_sha256": "4ced2b2ace71a5baa99c9b88070afe9689f70a8b44e530def914b1527076f808",
+  "pilot": {
+    "cls_only_max_absolute_error_vs_full_final_block": 2.0265579223632812e-06,
+    "confirmation_scored": false,
+    "max_absolute_prefix_feature_error": 0.0016651153564453125,
+    "mean_absolute_prefix_feature_error": 0.00021903014567214996,
+    "rows": 256,
+    "seconds": 4.584107375238091,
+    "train_only": true
+  },
+  "prefix_rows": 53268,
+  "prefix_sha256": "478ea749bcadbbd1e5962586ca6b68bc588bdf527a2f4d5365632c16a1af8097",
+  "protocol": "f548c396fcf87f4e70aaa6d39da1b0f91f918de3934dc54ccec91e9927af4912",
+  "seconds": 1107.5823561670259,
+  "source_reader_sha256": "3029034a852abff53c22ce67cecbb85985319b2b1a727d821a0cdae23eb1f527",
+  "weight_sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9"
+}

@@ -1,0 +1,2196 @@
+{
+  "status": "complete_weight_free_bundle_independently_replayed",
+  "protocol": "f548c396fcf87f4e70aaa6d39da1b0f91f918de3934dc54ccec91e9927af4912",
+  "files": [
+    {
+      "path": "audit/actual_checkpoint_verification.json",
+      "bytes": 76886,
+      "sha256": "831c11c8a1746ea44dd7ef52d005a99046cc91976d9a34a4494b8fc668e4f0c3"
+    },
+    {
+      "path": "audit/independent_verification.json",
+      "bytes": 1924,
+      "sha256": "1bc83746f84a34f690ab0eaabb0dfe7d363ae35acada62f1dad3dc49a6be3c03"
+    },
+    {
+      "path": "audit/portable_numeric_verification.json",
+      "bytes": 1923,
+      "sha256": "2e7d60c5f17ab8bafa85af647d6cad0eaeb8899aa3df0e77f189e5e62e8b28e9"
+    },
+    {
+      "path": "cache/labels.npy",
+      "bytes": 880128,
+      "sha256": "bfc9d0d71ba3f871c73562509bf99bf20c695f6f1acea031fddaca165d1a5ad9"
+    },
+    {
+      "path": "cache/manifest.json",
+      "bytes": 15107291,
+      "sha256": "1f19f85e164231aca8e823db2d698d71f7ac413eca4d7b71813ff54cd8434605"
+    },
+    {
+      "path": "data/partition.npz",
+      "bytes": 225928,
+      "sha256": "9313a1e24ce50dd4eb0818fff62d43e6084c15f5f59502980fdb9540d0104d69"
+    },
+    {
+      "path": "docs/vision_followup.md",
+      "bytes": 7118,
+      "sha256": "11e19366d2bd7d85f4d50bc9be49aa4069791ac95f270b77a0f797944b6dbebb"
+    },
+    {
+      "path": "provenance/protocol_serialization_amendment.json",
+      "bytes": 962,
+      "sha256": "58a123c5e572e208dc59298e3d4bbffe3ee84b372cc9895de534b606a7776ca5"
+    },
+    {
+      "path": "requirements-followup.txt",
+      "bytes": 337,
+      "sha256": "8c8dc74c8abbbd2e216d96dd26118f4edd4c4ad9c267140cd1b1821b558c616e"
+    },
+    {
+      "path": "run/aggregate.json",
+      "bytes": 24994,
+      "sha256": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539"
+    },
+    {
+      "path": "run/development_capture_complete.json",
+      "bytes": 298676,
+      "sha256": "97c65ba36abc2f0091d4fb4f58eed7ed20b1c5506e7048242beda3d5b64fa5b0"
+    },
+    {
+      "path": "run/extraction_complete.json",
+      "bytes": 1124,
+      "sha256": "be1316905eaecb2c2323522fba93dbcf95157447a4a3171be12251007d016b01"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/10/development_capture.json",
+      "bytes": 3396,
+      "sha256": "bec87d653f15e4b47644d9de3672eaa8a970b53fe7cf8a16137192249a539b4b"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/10/history.json",
+      "bytes": 4050,
+      "sha256": "528e00c2ee1f8c3c77498ad79ff62733fb7edd50d609b402b21c1a8e3c7bef7b"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/10/predictions.npz",
+      "bytes": 25265406,
+      "sha256": "0196d781b8ea26dd8c00f1456edfde6103e37c6552892283eb1d76289364a920"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/10/results.json",
+      "bytes": 27845,
+      "sha256": "c17248dd1e6b7ed6a4d26d29e2a11da1964dfbd875d6aa916cee028e3b07466b"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/10/selected_development_logits.npz",
+      "bytes": 5945028,
+      "sha256": "5beb23d4ab1ec65773002a05bd6c201b2b9cc3ce1a2e8a8d5090ced6c79252b5"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/10/training_complete.json",
+      "bytes": 614,
+      "sha256": "907fb48106f9bb4661ec2350b3dc05f978f5023ecbc6ebbc5e0512ab782d79e2"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/11/development_capture.json",
+      "bytes": 3437,
+      "sha256": "4ab61bb9b791ba2342704d4044e4220dc8e76b70659f3c707a49f7668183b016"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/11/history.json",
+      "bytes": 4041,
+      "sha256": "4d6f33933e4bea977b82d59c4b3d94799258354da236c3e3fda9d8008e297a5a"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/11/predictions.npz",
+      "bytes": 25268122,
+      "sha256": "cf23c3d2adb1fb8e2e4bc1747f793a72d7e6435378d82a9a6db5ad772eebe744"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/11/results.json",
+      "bytes": 27885,
+      "sha256": "f1aa3237f18722edaa0e07eceeda5ac72ca93b4dc468d18ede7675656c37a1df"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/11/selected_development_logits.npz",
+      "bytes": 5946093,
+      "sha256": "1541698eb721771d1c5684330535b1d91e9f780a2753ef35cf6338c0feb254a2"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/11/training_complete.json",
+      "bytes": 615,
+      "sha256": "99000e3f9dbcbbf7f544462e0fdb916dca23d016e2bf8353792591d7f38fe48d"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/12/development_capture.json",
+      "bytes": 3436,
+      "sha256": "b314220237df3386ccccb5202ee58ca66bf0f352f751d239dbe58ab9dfa80430"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/12/history.json",
+      "bytes": 4038,
+      "sha256": "fba47be0b6ddedb835327ac050e16cce62154882fcc3db10e598ba4b432938c5"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/12/predictions.npz",
+      "bytes": 25260940,
+      "sha256": "c58fc83cc0f48a76f11e4c90c117bba9ca0ca8f0d217054a84168c636dfd6328"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/12/results.json",
+      "bytes": 27746,
+      "sha256": "6334c52281b81b552c827985e551edd0db5ddb7017b160dc13cc4efc182463c7"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/12/selected_development_logits.npz",
+      "bytes": 5944318,
+      "sha256": "f61196eea1802e6cdc78dc71b5f15380b71a10c0548ebd953b455391711260ef"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/12/training_complete.json",
+      "bytes": 613,
+      "sha256": "d81df9b0384fb5259139750793e56936bd44d8da9b9339a7e39157874f4987fa"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/13/development_capture.json",
+      "bytes": 3437,
+      "sha256": "7ef7f91db55a917706ca4be0a865d6ddfb8dd7da097d2e4858a0557183ecdaa8"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/13/history.json",
+      "bytes": 4046,
+      "sha256": "2187bf97ed65ee72d3ec4cde97150b45a14a25866eb7b175eadcdadb7a5eba65"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/13/predictions.npz",
+      "bytes": 25267278,
+      "sha256": "b7762484b5daec2895f281a924792bc43158723c4e8435c5cea5f6de0d0f9a94"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/13/results.json",
+      "bytes": 27776,
+      "sha256": "53570928809de023cea18ada9c0b099c36b71ab66734528fa11c89bc704a6d02"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/13/selected_development_logits.npz",
+      "bytes": 5945427,
+      "sha256": "6aefe3eca0d64b45188b4db33f37ab4768044fea9e75e3b301c80576e060af69"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/13/training_complete.json",
+      "bytes": 614,
+      "sha256": "d376ba47ff144ae7b175b0a1e03604aea3ffac3e9fb2c9ccc9ceb2dfed5507f7"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/14/development_capture.json",
+      "bytes": 3437,
+      "sha256": "d5faabe291a2d780bb2b698e1926cef1ca49348f1ea84587e621550cdce72c9a"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/14/history.json",
+      "bytes": 4047,
+      "sha256": "ca165ecaf954b6e5cd7f3079f7e4a87b407e035e18b60a6ec9b0e674c45c8a34"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/14/predictions.npz",
+      "bytes": 25267437,
+      "sha256": "bc3d73abedb1e756cb2f358d82e714b9f7cb8b15ce28ced2435a01947bad0329"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/14/results.json",
+      "bytes": 27939,
+      "sha256": "7259c7208e5ed4ce4d53659659f459a266d76aad7814c4bf3eeba67c7c0c3486"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/14/selected_development_logits.npz",
+      "bytes": 5945691,
+      "sha256": "bbb4ea819234f861597aaf95c72eb1af6c3b5df75449b2eaaa6164d29cd83436"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/14/training_complete.json",
+      "bytes": 614,
+      "sha256": "93631c794f58d315b33c0e48574cb4d76f13f31c608f814d07121bd128168397"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/15/development_capture.json",
+      "bytes": 3437,
+      "sha256": "523c7b403227f9fcca2c55f77daa1b42a8c5a4e5d06ce512c93421384aaef344"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/15/history.json",
+      "bytes": 4047,
+      "sha256": "83f4ffd7c95f121256fce5edd100b1e83369633ee001b15a826e126710b5cb86"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/15/predictions.npz",
+      "bytes": 25265826,
+      "sha256": "21607dc9ffbd6cc28da049cc010670c6c8df204e8023efa1e2afa475dc4f20e3"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/15/results.json",
+      "bytes": 27708,
+      "sha256": "bbb93d932a85c735a0df6af4d9fb2ba38e8b75d9cbb7d77bf8b84fa5bdb4b0c0"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/15/selected_development_logits.npz",
+      "bytes": 5945149,
+      "sha256": "46f5f930414f503191404d8966a74e784f7d51ca91f878316049f21a0c22a5f2"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/15/training_complete.json",
+      "bytes": 614,
+      "sha256": "12a1b1b77d89984749740490fe07a67a5b369d9afd5960d9efae99a4d50be088"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/16/development_capture.json",
+      "bytes": 3395,
+      "sha256": "361da01b09bf2fdd777951837bc2ae8f72c4318318b36790717ec0ed7ea33fe4"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/16/history.json",
+      "bytes": 4044,
+      "sha256": "fbfc09026c6b9d887f99ce3f91feefdb5409cd0a05f579c869ba01cc774fcd14"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/16/predictions.npz",
+      "bytes": 25263176,
+      "sha256": "f5cd167fe356065cdd3a0604d4d70ca7891223b19191cd7003f06a2d87666cc9"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/16/results.json",
+      "bytes": 27785,
+      "sha256": "8330e2ab950f85a1eedb51eddd08bb676d05da0b33a57dca5ea275298a3e0795"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/16/selected_development_logits.npz",
+      "bytes": 5944627,
+      "sha256": "00f6ed2a87814f7f810944e5e994d80308a0962cd424e96d9fb51e5e26997328"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/16/training_complete.json",
+      "bytes": 614,
+      "sha256": "d99dee4cdc802e0401cab25c45e4eeb3ffd46dc48f0880e8657183e15ad4e874"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/17/development_capture.json",
+      "bytes": 3437,
+      "sha256": "55d0540ac29ccf4c9cf514058dcb5bdfcfbca05f918f91304ecf7b4ac97f67d5"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/17/history.json",
+      "bytes": 4053,
+      "sha256": "59dcb6a78e888f826b52cfbd3781c1d27b2c129a54cfae3c471b394a737d9cfb"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/17/predictions.npz",
+      "bytes": 25265643,
+      "sha256": "59e36ff6d626dc2a702ab16b1ab9fb64a7d1b2ba364e3f2a91835cf512a7b4ea"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/17/results.json",
+      "bytes": 27728,
+      "sha256": "1b8857e222793ec9749e6cb32afa80ea7a7b7b0000bfb4bd9315e215be49cb5d"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/17/selected_development_logits.npz",
+      "bytes": 5945342,
+      "sha256": "9e225b7418a1f08bde339cd104379f26bae28eeaeb0da285a44b82468ab4e616"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/17/training_complete.json",
+      "bytes": 614,
+      "sha256": "37cd948c86b0e01680993b558a0291eef9efa5787f147faaf2a855b6dc9b84b4"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/18/development_capture.json",
+      "bytes": 3437,
+      "sha256": "cd5e16f01eb7fcd854c7cad395252d021e9727e9383ec0b27ca63635d7e976b3"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/18/history.json",
+      "bytes": 4046,
+      "sha256": "f3ce95efc0d6b3f90ce9f0fb08e2dc8ca401a811f703ec1975a4650d0b84eb87"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/18/predictions.npz",
+      "bytes": 25267081,
+      "sha256": "8e28e7a8bb34201c3aa3137fe89bc134a712e3419b9d9add49616404c6e8fe26"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/18/results.json",
+      "bytes": 27866,
+      "sha256": "28490e6250852bdfd348a31ddc39b6991f3c02092f0cb26ceb5cb6bf14eb0a2e"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/18/selected_development_logits.npz",
+      "bytes": 5945771,
+      "sha256": "2b2ebb27265f6303460141e1520404a6a30d682bd14798e4c6a45f8f32d2eea0"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/18/training_complete.json",
+      "bytes": 614,
+      "sha256": "71cb653742548725273fab231ba5efd3f8d15534ebf13da5230bf10b3168dccd"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/19/development_capture.json",
+      "bytes": 3437,
+      "sha256": "b52072e1cd6dcf30c4d2c2737528e04d1624d8d4770c2f86639e69eeb9c3ceef"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/19/history.json",
+      "bytes": 4041,
+      "sha256": "658af7e5c2c67dc345410f2efae6994d9f1d8091ccfdf394ffe0db57d7763631"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/19/predictions.npz",
+      "bytes": 25263435,
+      "sha256": "3474dea926b94bdf3aba14f9feac22bf53deb638e9cb8ad44e82baf58d7be348"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/19/results.json",
+      "bytes": 27870,
+      "sha256": "588ac93cd06f9ab47cf570f5bd4e3dd189d6eb35b899b1dabb33b3a2505c0472"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/19/selected_development_logits.npz",
+      "bytes": 5944935,
+      "sha256": "bd82afd238943d02dce9242ca8f854c5bc6e88fe81fd81cf678f51155cfaecb9"
+    },
+    {
+      "path": "run/final/deit_frozen__balanced_softmax/19/training_complete.json",
+      "bytes": 614,
+      "sha256": "f714b371274961a43f764b6d3b77872112bdc16bce4e3837f226a60ab947e2d7"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/10/development_capture.json",
+      "bytes": 3431,
+      "sha256": "dd43dd5784837cfcccdc59820fb510de992f0f6aab1042503ba010914cbda02c"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/10/history.json",
+      "bytes": 4221,
+      "sha256": "e6423dd102ba160cc09707ef1866af06128b90df25c9595db398adb37bc3d2a0"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/10/predictions.npz",
+      "bytes": 25249564,
+      "sha256": "d465286dc4f242f61ffad235d23db4efe6570de6c9aa9b50e07b3ee4c4d3323f"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/10/results.json",
+      "bytes": 30819,
+      "sha256": "5b66ed473c915f305fb8e85ebff384f0d59b55f0bf59d06fe26d16789c50e5f6"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/10/selected_development_logits.npz",
+      "bytes": 5941226,
+      "sha256": "52bdc38251f8e0fbfd392a33880f504cc65410fc5684d870de747eed47891e24"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/10/training_complete.json",
+      "bytes": 599,
+      "sha256": "07a23e2e590c19358da16d3d6a4854076d866e453cccea2bf5e8eb3cf4dc5335"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/11/development_capture.json",
+      "bytes": 3430,
+      "sha256": "4b07f0868393c631ae849593d638680c11cd64f94c4348834153472d7822f749"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/11/history.json",
+      "bytes": 4163,
+      "sha256": "d0c982f4851213de8dd289fabf6bc7f9b9adf3bfe05bb9e7cd1b0413bbf95b31"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/11/predictions.npz",
+      "bytes": 25258335,
+      "sha256": "b69092edc9f938acb327121d4b0c27fb6f55cb03d6f0b16e1d1787af127dc9fe"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/11/results.json",
+      "bytes": 30906,
+      "sha256": "8cb897ac41405e780d866ff44df4d439e46c5bbed4828c3c28092bc5ad1f521d"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/11/selected_development_logits.npz",
+      "bytes": 5943353,
+      "sha256": "ed48406320863132837e1d992387a0bde2e992a2b9c5e272b5ad1f183217f75d"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/11/training_complete.json",
+      "bytes": 600,
+      "sha256": "0d8929f13ab9a402a9dedd979eaa861624318677c6ebc2259d55f3b05ac99b99"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/12/development_capture.json",
+      "bytes": 3417,
+      "sha256": "231cb93729358c0c892aaf420614828aa8e01ec57ecdea5bb097a52518b56e24"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/12/history.json",
+      "bytes": 4125,
+      "sha256": "794ff6fae4ec03c6fa220fbfb6a40024a836b4a162723632e5521abae9c6f30d"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/12/predictions.npz",
+      "bytes": 25260671,
+      "sha256": "26890136c1301f2005abf68bf5dd0430edee714f40963f1483e13903a452ea36"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/12/results.json",
+      "bytes": 30910,
+      "sha256": "5f79644a612fa230ba54de3e22342e9d311b945a387763ad7dd7cbc3b3585d41"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/12/selected_development_logits.npz",
+      "bytes": 5944160,
+      "sha256": "58eeb081f0e4305eea581e78824380c4f32a9bc184d004df6906725e475306fd"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/12/training_complete.json",
+      "bytes": 600,
+      "sha256": "467be35d1e1c5a9f7cc83c5d9a8852fe4684a82519c5cc8f6ca9a3c73763c5f2"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/13/development_capture.json",
+      "bytes": 3434,
+      "sha256": "7a5f1d70e833003e17ce6236791b40127453ab8be27e9fbd53f8412c50de6064"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/13/history.json",
+      "bytes": 4163,
+      "sha256": "87f74522ab65f688703b126bb126320d1d9834c242ee0fb1dfc236930a94c7e4"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/13/predictions.npz",
+      "bytes": 25261683,
+      "sha256": "6d797ce1fcc5dd1f8948d170a5b9973c8857a774e7e8c52959d7f0bfac3c0b5d"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/13/results.json",
+      "bytes": 30825,
+      "sha256": "17e8dae40ce8152072e59977ab1004c5d483dda7c4f67d5cc094fa84298062a2"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/13/selected_development_logits.npz",
+      "bytes": 5944407,
+      "sha256": "6077e03605d8cf2e17f911ee74cdffe6d9611207aca04d180542b35560fe5618"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/13/training_complete.json",
+      "bytes": 601,
+      "sha256": "64d36a8ca46a04ccb5910c468fd45cde49e2ec3d898446cdc879e2d8aebb0efe"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/14/development_capture.json",
+      "bytes": 3419,
+      "sha256": "02803a3074ab29f766dd4a372969f867873ae06d9bad475b7fcd4eecc850661a"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/14/history.json",
+      "bytes": 4209,
+      "sha256": "f38dc58431dd20738efa47578dbcd8681eb0537bb1fd8a8bcaa360a5ff3ef28e"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/14/predictions.npz",
+      "bytes": 25258008,
+      "sha256": "aa0fe56452e3dd9d4ea195f90cbed8891e5e20ae595655b5a1200b7751b8f69c"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/14/results.json",
+      "bytes": 30921,
+      "sha256": "d451e419468fc9f8b84bff0993d382a4f13997def7cd33df8deec3be4df71651"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/14/selected_development_logits.npz",
+      "bytes": 5943350,
+      "sha256": "7aa66b1186af94267307bc5bb616a84f4aa76ec5700a6602b68ade2daf1f9698"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/14/training_complete.json",
+      "bytes": 600,
+      "sha256": "f8ec1ea4c872b3a90495477cce688e650e39f2f52cf5d27b2dfa453a90c99ddb"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/15/development_capture.json",
+      "bytes": 3420,
+      "sha256": "35f83feb69e986dcab1c59e7c2932bbde2352561527e60a8681ae26487a4c838"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/15/history.json",
+      "bytes": 4172,
+      "sha256": "1fe2009e9f0aefb349c333d808d6e4f76767d0d0a373783609faa43317e697ff"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/15/predictions.npz",
+      "bytes": 25255558,
+      "sha256": "3ecc29f0274a09d7acecd1060f4daaab0f62d6efa405efa66f5a8e5f927069e8"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/15/results.json",
+      "bytes": 30921,
+      "sha256": "63847117e3c256bfe63f0f74fe5af5350eaf4cfe114178d2b773b3858afb5168"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/15/selected_development_logits.npz",
+      "bytes": 5942980,
+      "sha256": "e98807b1200b8bea0f3db340fb8b5f783941a1681b51b15dd084c1db6b474741"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/15/training_complete.json",
+      "bytes": 599,
+      "sha256": "5e865559ffe5c7e90e629379d21a148854508466cb490e91b27a426f94603fa3"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/16/development_capture.json",
+      "bytes": 3432,
+      "sha256": "eaab9af09b2af117d785ef6c3b1d80ae3686a164329219a78a8624ce6151113c"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/16/history.json",
+      "bytes": 4211,
+      "sha256": "754554ddada5db96364b47be910848ddeda912a3f8516554e3dda8668c57acfb"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/16/predictions.npz",
+      "bytes": 25258311,
+      "sha256": "d5fff39778f4b00d8f113a6280f2a5953f431f177a4ddee7f62d5adea31b62ca"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/16/results.json",
+      "bytes": 31058,
+      "sha256": "3c0decf687cab7208e6d6f45612866dde4d09617f2cefe2dd5f3b516ade87564"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/16/selected_development_logits.npz",
+      "bytes": 5943472,
+      "sha256": "549582582a8129fea85ccaaed0bc27777dc93900e25622a7e7647e3383c6a3c5"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/16/training_complete.json",
+      "bytes": 601,
+      "sha256": "8167f5595f79638edfdce73950a8c730cbbe78648f53f2746152a64f41868a70"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/17/development_capture.json",
+      "bytes": 3417,
+      "sha256": "e5f5d39ace99ef41ff128f7083e63c67acc28729789b6871b28375bcafc842bb"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/17/history.json",
+      "bytes": 4108,
+      "sha256": "f2ba20fbe249d659f53f31c9c21ffdcd8b6796f1c8b5f2b1cae35e7cfee64ffb"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/17/predictions.npz",
+      "bytes": 25258686,
+      "sha256": "7e61c553651372f9444289af33fb0adff3a77243ee56d2204da92d6c1e956e4b"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/17/results.json",
+      "bytes": 31031,
+      "sha256": "0c7207399b0bccc2ce97bd3a1ad7fd5a5389641945c39c1e360bbb5252b51ea3"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/17/selected_development_logits.npz",
+      "bytes": 5943725,
+      "sha256": "b3365f36c2bdd674d2911a3d32b420cd30e2674ee75697a14b48c385e9de181e"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/17/training_complete.json",
+      "bytes": 600,
+      "sha256": "6959cce23feb5199d801080ed616628c8c5c1df83c27f05fc6302bbd229545e9"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/18/development_capture.json",
+      "bytes": 3417,
+      "sha256": "f848523d1bfad84d00ff06439574003b873523bbe493bf3aa14f537ea85c83b1"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/18/history.json",
+      "bytes": 4148,
+      "sha256": "84fadc851342ebc162dd9bf78fcd5c666c142cb5d344a00010492ed7da8f6728"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/18/predictions.npz",
+      "bytes": 25259255,
+      "sha256": "525a2ca69d3b54f7d284c66c6f1a342ab90258e6ec6aed32a41e5db676a54a1a"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/18/results.json",
+      "bytes": 30841,
+      "sha256": "384a016cbfa79d6dd1f302c771b7a1b23573718a248912ca4c805465f8ea243f"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/18/selected_development_logits.npz",
+      "bytes": 5943370,
+      "sha256": "2afe22c8d60bb8c4eb61a090544582623cca05d9b022031971d04eea16fb27e8"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/18/training_complete.json",
+      "bytes": 600,
+      "sha256": "32bf3c09f5667a306c7f6cde6159cd84667eb4718b636a4a1745879ee05ea747"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/19/development_capture.json",
+      "bytes": 3428,
+      "sha256": "cda2bf2ef86770f09e6e07253a5b64faacc79e5b538889a2c363553be76052b9"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/19/history.json",
+      "bytes": 4238,
+      "sha256": "c15b5a422461ab53e64d609c9f4f11cd52a69c9a7205617bc96c64e06a296fc7"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/19/predictions.npz",
+      "bytes": 25256226,
+      "sha256": "4d862587bb7af400583a52ceaf81d87df9ba96a463970b4184f4ba32c882231a"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/19/results.json",
+      "bytes": 30819,
+      "sha256": "755906f8bcd9026d99eb9d39cfee279ce32e4969616a8bf975854e930ebc18cb"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/19/selected_development_logits.npz",
+      "bytes": 5943340,
+      "sha256": "094843c543637ccc619fbf740b9745d712c4b61100c14405b8492020693a85b0"
+    },
+    {
+      "path": "run/final/deit_frozen__ce/19/training_complete.json",
+      "bytes": 600,
+      "sha256": "7b1468b9c96889063e3e92ce33fab006f0e4e84adcb662f9253c1c61f04878ff"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/10/development_capture.json",
+      "bytes": 3435,
+      "sha256": "ecea34a14645fc62404305a8f003fd2e6eca96ccb457a6a05b1e542274013584"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/10/history.json",
+      "bytes": 4028,
+      "sha256": "2a77b53ce1ddd9848d5c6fad53593946fab05e76b7cb7462f182e082db1a1a32"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/10/predictions.npz",
+      "bytes": 25269817,
+      "sha256": "7fe0a1c7c63d008ed46feb281d7ee4d15f0f07f71e830ea4eb025c4a7da735b4"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/10/results.json",
+      "bytes": 27565,
+      "sha256": "726a424990527e464ef7adf15fb750ce71c5a7c398d80a3ae6e2a7559568ed11"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/10/selected_development_logits.npz",
+      "bytes": 5945861,
+      "sha256": "a657839965e0f28b806446cf1e450604bc73eafd390a171ac47afbe06df5be31"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/10/training_complete.json",
+      "bytes": 614,
+      "sha256": "6e8bcc77d362143c2f3277dac1f3ba06385be86595aa53667d19be797170d77c"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/11/development_capture.json",
+      "bytes": 3434,
+      "sha256": "2de1b23da5317d323b0671b241af0845a5a9aa295130152eded6d1b798f1aa1e"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/11/history.json",
+      "bytes": 4022,
+      "sha256": "1d54775b416d1ed9b581bdde89029c7628de6c6e2cf4200699b37476199727f8"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/11/predictions.npz",
+      "bytes": 25268446,
+      "sha256": "0640d0a76531d5836e5183dc88efdb593ad21881566984c79b5ec12b527252a2"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/11/results.json",
+      "bytes": 28008,
+      "sha256": "6ef17b141f5f9e31e676ecfdd98857fc4cbad5ad1c854fabde3b00f911d7a779"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/11/selected_development_logits.npz",
+      "bytes": 5945845,
+      "sha256": "ec5f72318719527221ebf6d0eab5585a7e96736f811b167ee14d05260c912d35"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/11/training_complete.json",
+      "bytes": 613,
+      "sha256": "926b6a7651bd951f07647b5f81bcc880c64ce8f9d73e1ae31b118c496e0e9386"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/12/development_capture.json",
+      "bytes": 3436,
+      "sha256": "dec52366728480a923ee7945c6dbd89272bb98b676fa3021219f6d4eeb47e537"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/12/history.json",
+      "bytes": 4033,
+      "sha256": "f88d9f8ab5b157199e823b3ec5412ecd1c5dd978f9e7f169cec4cdc4db11b755"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/12/predictions.npz",
+      "bytes": 25279537,
+      "sha256": "cc85b652394c4ef75d4c4d4144bf41759fa4265f821dce4c2fdf89928f99c40a"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/12/results.json",
+      "bytes": 27739,
+      "sha256": "989508a9d7a3e53125f97e58aafc6a1df2c9f3c747f8f84adf6dd1c0ca9fd7a6"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/12/selected_development_logits.npz",
+      "bytes": 5948443,
+      "sha256": "18dea420e693509d9c6c15b6f64af2f2a9cd477a51b0ec8af2405f832cce93c8"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/12/training_complete.json",
+      "bytes": 615,
+      "sha256": "92b2d4f3a8ec287308f2742360796fa87d6cceb52a0b458a789a4d3cd0366678"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/13/development_capture.json",
+      "bytes": 3436,
+      "sha256": "03f1838a9e9fb3854640b51867266cd306c084e19ff7231e72471abb98d75b4c"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/13/history.json",
+      "bytes": 4033,
+      "sha256": "0eef654abeb96ed619a821ef85afde01454c5ee6e017f3c45aef1cc623b32fa3"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/13/predictions.npz",
+      "bytes": 25280520,
+      "sha256": "4293d58f6a1c43805409e2cfcd42514a034477f4bd1ff184036e02ff51c6535f"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/13/results.json",
+      "bytes": 27814,
+      "sha256": "ef37650bde27237e872c59d9a60f574ecacf800e8902f66f30f2868afc8fbb29"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/13/selected_development_logits.npz",
+      "bytes": 5948179,
+      "sha256": "d4538b2b68e2f2885482b6209cf75d8cb88cbfc05d5edb5e14483faf62349510"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/13/training_complete.json",
+      "bytes": 614,
+      "sha256": "734bf5d452506b9fd504cfafcf6d50ca58ce49edf48d7ace7103129ce538ea7f"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/14/development_capture.json",
+      "bytes": 3435,
+      "sha256": "b45eb9420fceffe16ed76a0218ccfa7c2ba62fdaf0e5053b768b896882f30e33"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/14/history.json",
+      "bytes": 4029,
+      "sha256": "c980d77dc265a8b9994e556ecfaefe2d911ddb96cba5916b5d430a53b2dfa682"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/14/predictions.npz",
+      "bytes": 25278559,
+      "sha256": "a9707cae604e1a5f401fa0412782bccfb55dad12c0969751f9dec0447589a79e"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/14/results.json",
+      "bytes": 27913,
+      "sha256": "d63a4067af19b821575e626027bc962a097b703604b7ea89f2fd508b74cf126d"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/14/selected_development_logits.npz",
+      "bytes": 5948304,
+      "sha256": "8fa3148a8e4b164fc5500a0a4020d084d16d48a425c4d71c1679522127aa70dc"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/14/training_complete.json",
+      "bytes": 614,
+      "sha256": "6427d2cf3de7ea06f81b36907eb6a0b0abfd6cc7bac3613ec4aa8206d1577341"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/15/development_capture.json",
+      "bytes": 3436,
+      "sha256": "3e2bb1bee4d2d47e35b2b76124d7533f790a63a797da6017e189a68cff69c8ba"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/15/history.json",
+      "bytes": 4032,
+      "sha256": "392535c7357ae0ac339d9535aa8d33a1f924e07aefce66faba7bebff4fec3036"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/15/predictions.npz",
+      "bytes": 25279359,
+      "sha256": "39dc1c4c683eb11fead6ef244948ee6ecf2961dc223f15c4db2e81e9cf10ac2e"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/15/results.json",
+      "bytes": 27711,
+      "sha256": "c995511f1ca01bc83b65074714e33bacc23bec235e99be380510129034f992d6"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/15/selected_development_logits.npz",
+      "bytes": 5948424,
+      "sha256": "470c5af27325413d17858b24f95b32d511bcaca2481844988b7e29fcf5a3fbe8"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/15/training_complete.json",
+      "bytes": 615,
+      "sha256": "2d342a635ffc2ab8548f101e1acc39318538e65ad5f6a4acc8a0123c2a2a6a3d"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/16/development_capture.json",
+      "bytes": 3436,
+      "sha256": "74fd93064876357dea1f374c124c72f2373a4cf38a0863fbe72322805330ec53"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/16/history.json",
+      "bytes": 4036,
+      "sha256": "5da517e11f334e4d86763f3c54cb082135e47bccbf26a8ac2d6716faa1516a08"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/16/predictions.npz",
+      "bytes": 25279566,
+      "sha256": "29066d7a13ec95d69b9336ba6c8e60693fe7c85c2a1601a6f248f8950d61a4d3"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/16/results.json",
+      "bytes": 27685,
+      "sha256": "3a21a8a6d9c06fd788f7f46beafbf2ec7c7e5854fefb294534007bc94b6b26bf"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/16/selected_development_logits.npz",
+      "bytes": 5948815,
+      "sha256": "20fdb8758977473202ee8d41139fe1a9164dbb850f9fac9c00f382d343e21fcf"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/16/training_complete.json",
+      "bytes": 615,
+      "sha256": "c50acf663fbebb902041564d3d734f9d3120467bee32869b8f21737e26698cb2"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/17/development_capture.json",
+      "bytes": 3435,
+      "sha256": "34b9dafc386df085b7a6807212258b88c654bbdce9119398bf069c4b3312ac28"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/17/history.json",
+      "bytes": 4035,
+      "sha256": "c9e6b518709ce49c27d2ae425d04e5d64bfe432da502cf8c54f422e1370d152b"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/17/predictions.npz",
+      "bytes": 25277378,
+      "sha256": "21f47645b6ab1431118fac6ff33b735efbee97d4fc8ef8c02e8ba258a1f91283"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/17/results.json",
+      "bytes": 27727,
+      "sha256": "dd287cd9b6de7de5deda424bc823ca98d82a11bff309177806fca27c3708d9ed"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/17/selected_development_logits.npz",
+      "bytes": 5947561,
+      "sha256": "04a152c7c8f691cdde9564dc3c6bdd403804242114c06d3249a8df591e482e87"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/17/training_complete.json",
+      "bytes": 614,
+      "sha256": "1687b31a1c9b829515ec0c89940b407a108644a25698a842b774728404ea11dc"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/18/development_capture.json",
+      "bytes": 3434,
+      "sha256": "820124eb38c92e0fc0354a80b9b6ae77e9314af07fe4d33d36517259b842bb02"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/18/history.json",
+      "bytes": 4035,
+      "sha256": "4e256b21acca8a56d0e2b42e3bd0eacc67043df0314ee6c442cebbaa9751da21"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/18/predictions.npz",
+      "bytes": 25279476,
+      "sha256": "8786573f109ff6ec0d15de574dbaaad4eadf766212b43eb12d03e501891d5aaf"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/18/results.json",
+      "bytes": 27781,
+      "sha256": "548a178446d53d31f8d2d46562f91b85c6dbd81e4003b0a37a6e65a0d4ce9f58"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/18/selected_development_logits.npz",
+      "bytes": 5948669,
+      "sha256": "c02430e1b80f59ca82cd29da628b2f97c455c3e7883d1c4512215af5cb04a8fb"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/18/training_complete.json",
+      "bytes": 613,
+      "sha256": "877af5409eb37686d526d51758b7f4c1a3ba57a28b861d81b685943de9f5a1e5"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/19/development_capture.json",
+      "bytes": 3436,
+      "sha256": "420b5d813e1f1de6a83d4bfb6000d969afcdd770a5bb72afbe9a77c6929eb75c"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/19/history.json",
+      "bytes": 4038,
+      "sha256": "e2f49e930cea30d63ce267b3821875725ba0306e133c0f21717b2d221f6949f4"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/19/predictions.npz",
+      "bytes": 25279650,
+      "sha256": "63672471bf2dba61fef42bc2176daf2df9ad2da41e3ab3549a10053686e06521"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/19/results.json",
+      "bytes": 27651,
+      "sha256": "a3bf7139c6c0e85d73efc83b30ad25194ac1daa9dcba020051385efe3648a3c1"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/19/selected_development_logits.npz",
+      "bytes": 5948385,
+      "sha256": "607cf552b2412794cadd384f79bece5834f48dbb7dae27196ec8c058493c98e9"
+    },
+    {
+      "path": "run/final/deit_last2__balanced_softmax/19/training_complete.json",
+      "bytes": 615,
+      "sha256": "df6349ea3ef4f66ad569319d03813c6c819b022c82c69b1c4519f13071ff1e46"
+    },
+    {
+      "path": "run/final/deit_last2__ce/10/development_capture.json",
+      "bytes": 3416,
+      "sha256": "0027e8c13d83410d3832e7048ab717fc3f4b40ab91191892e6208e064a2b47e9"
+    },
+    {
+      "path": "run/final/deit_last2__ce/10/history.json",
+      "bytes": 4175,
+      "sha256": "94e85e366ba5d255325454ddbf7dfa44b3b52fbd6ae6b06e4dd82287b7b43862"
+    },
+    {
+      "path": "run/final/deit_last2__ce/10/predictions.npz",
+      "bytes": 25203179,
+      "sha256": "d0f4c360644096f89dbc57b0d64343e311ee2a4de5503033b21ae30d102d0da9"
+    },
+    {
+      "path": "run/final/deit_last2__ce/10/results.json",
+      "bytes": 31077,
+      "sha256": "dd094ce314573967d4164ca8e62c9d353172a09ec6139d73707d9717f4f896f9"
+    },
+    {
+      "path": "run/final/deit_last2__ce/10/selected_development_logits.npz",
+      "bytes": 5930213,
+      "sha256": "18f8ca08ec239c4380aec92f4cbb2434cf1bd00355d6c424dbc9e0c6141849cd"
+    },
+    {
+      "path": "run/final/deit_last2__ce/10/training_complete.json",
+      "bytes": 600,
+      "sha256": "249aa94ec9446c00e307b7d487eb183976d3677771ec47160f480f757456bda5"
+    },
+    {
+      "path": "run/final/deit_last2__ce/11/development_capture.json",
+      "bytes": 3419,
+      "sha256": "80471d3b317eb108533ed7d37505a49716cc7ab45f01bd8d8a78c6b7431505b0"
+    },
+    {
+      "path": "run/final/deit_last2__ce/11/history.json",
+      "bytes": 4200,
+      "sha256": "15e6d55aaa4ded84622fc9474dc41f9b38bd305efa7cbdbd83e18a7b4c9cf67e"
+    },
+    {
+      "path": "run/final/deit_last2__ce/11/predictions.npz",
+      "bytes": 25207909,
+      "sha256": "1c7f9186b765c7b51c109f50a1e96a3730534e3435c291ed953d791c8d2909c2"
+    },
+    {
+      "path": "run/final/deit_last2__ce/11/results.json",
+      "bytes": 30863,
+      "sha256": "b00f66d95a1583f21957f087df0ef868f8c57db4a93e13a841f9c080c5daa9d1"
+    },
+    {
+      "path": "run/final/deit_last2__ce/11/selected_development_logits.npz",
+      "bytes": 5931102,
+      "sha256": "5302699cbc498815f7b08097da0698cae99aefe560d71298e02bbb80ab15c0bb"
+    },
+    {
+      "path": "run/final/deit_last2__ce/11/training_complete.json",
+      "bytes": 600,
+      "sha256": "6d1cf8c55ba25796a83d90cf788d98a8e6c56d49b9d68697130ddcee0142aaf9"
+    },
+    {
+      "path": "run/final/deit_last2__ce/12/development_capture.json",
+      "bytes": 3419,
+      "sha256": "12504e140c6090920cbd5acb95f18343c19afbbb54e9f8ec2b779b587d8186eb"
+    },
+    {
+      "path": "run/final/deit_last2__ce/12/history.json",
+      "bytes": 4157,
+      "sha256": "174ab0bdb8df816d20081ea984878c9191ec99e16c1b9eb1514a2abec4304673"
+    },
+    {
+      "path": "run/final/deit_last2__ce/12/predictions.npz",
+      "bytes": 25206326,
+      "sha256": "32fbf03b9e21a599d6c2b5f463de4c18e1e249d6dae0e2f4620f9a41425214ae"
+    },
+    {
+      "path": "run/final/deit_last2__ce/12/results.json",
+      "bytes": 30946,
+      "sha256": "dbfffa48a1097bb72b6966bd1a7a6dbe656f220dc0b7b8613fc5dda1d9c336b0"
+    },
+    {
+      "path": "run/final/deit_last2__ce/12/selected_development_logits.npz",
+      "bytes": 5930980,
+      "sha256": "ccf2aff9ed1b8bc546004bdfca0ab3117d62155c920134b074d17fd2d4e9e977"
+    },
+    {
+      "path": "run/final/deit_last2__ce/12/training_complete.json",
+      "bytes": 601,
+      "sha256": "c7f852fe0ba997a86157ea655ba71fd1962a761549aced2e44e240a43b53f566"
+    },
+    {
+      "path": "run/final/deit_last2__ce/13/development_capture.json",
+      "bytes": 3431,
+      "sha256": "86d35e52d5e947c6554d53b5e3f25859f04c1e9d34b39ce21eecbb4f58bc5c11"
+    },
+    {
+      "path": "run/final/deit_last2__ce/13/history.json",
+      "bytes": 4212,
+      "sha256": "ef908105e73f9c41fab623524949aa219cd22e19bd37ffff62b96eeb482e5a7d"
+    },
+    {
+      "path": "run/final/deit_last2__ce/13/predictions.npz",
+      "bytes": 25211165,
+      "sha256": "a58955dcc6a767893b57915aa2d945f027d4ca9ae981d6cf0ff92abfeebd79a4"
+    },
+    {
+      "path": "run/final/deit_last2__ce/13/results.json",
+      "bytes": 30846,
+      "sha256": "23457d50bb9ea7120d8ca5ee97b1db9e830c1fb9de92d2bf7e411be703806903"
+    },
+    {
+      "path": "run/final/deit_last2__ce/13/selected_development_logits.npz",
+      "bytes": 5932386,
+      "sha256": "e3febfe19beee34a4543e37cbbb6ea98308892f45835d022f3244a5451b3d9a8"
+    },
+    {
+      "path": "run/final/deit_last2__ce/13/training_complete.json",
+      "bytes": 601,
+      "sha256": "2ce8a8232cd04a034b975f50c3031a31653f85c9da9051bfd6661b4afe8a4d86"
+    },
+    {
+      "path": "run/final/deit_last2__ce/14/development_capture.json",
+      "bytes": 3419,
+      "sha256": "92c78e3e6ec8793c657d4c1f1236ee5b22e7747a80cb91ab9b47efcd670a4aee"
+    },
+    {
+      "path": "run/final/deit_last2__ce/14/history.json",
+      "bytes": 4158,
+      "sha256": "5bd03ba2e5e1909f7ecd19de01ca0aae8888907cd734545dfdf3c79f011e1a9c"
+    },
+    {
+      "path": "run/final/deit_last2__ce/14/predictions.npz",
+      "bytes": 25208971,
+      "sha256": "92f291dd9796d315888f2435eb802b767629528f72fd61e75667fa39f47ab4a4"
+    },
+    {
+      "path": "run/final/deit_last2__ce/14/results.json",
+      "bytes": 30927,
+      "sha256": "2516b7119f17bbd01459cf26026ed5d825d4628ea56a9b0640815c787ea8b351"
+    },
+    {
+      "path": "run/final/deit_last2__ce/14/selected_development_logits.npz",
+      "bytes": 5931799,
+      "sha256": "9445ebd221574c318c2dc17afd62d74342f14df2625d75194d9b4293efa94fd0"
+    },
+    {
+      "path": "run/final/deit_last2__ce/14/training_complete.json",
+      "bytes": 601,
+      "sha256": "4f848597cd851bba0624f20e1a644f7e97792ac01a63a743a12d08e9ba7abcc7"
+    },
+    {
+      "path": "run/final/deit_last2__ce/15/development_capture.json",
+      "bytes": 3416,
+      "sha256": "ed0476bed080bf9a59a5cb5b7ace305ada2e832399e98ad9a062264705097330"
+    },
+    {
+      "path": "run/final/deit_last2__ce/15/history.json",
+      "bytes": 4174,
+      "sha256": "aef6fc14e7364b3a9b0336e804fc83260d294f2f2c2002503968d6299d28185c"
+    },
+    {
+      "path": "run/final/deit_last2__ce/15/predictions.npz",
+      "bytes": 25200110,
+      "sha256": "4d41b5194c2fc5869cebde1edfae5c8679a34c8d6bb37c2f583cd2e4c3a4d8fa"
+    },
+    {
+      "path": "run/final/deit_last2__ce/15/results.json",
+      "bytes": 30896,
+      "sha256": "c8973ed7a7c2367e85318e87a3d2898f80d84afc4b0fa3326c256b9ba55db4fa"
+    },
+    {
+      "path": "run/final/deit_last2__ce/15/selected_development_logits.npz",
+      "bytes": 5929756,
+      "sha256": "064f624c85db269243d9c2f7b1e3067ff2b6ee121c76a0c122eabf9014dae7a4"
+    },
+    {
+      "path": "run/final/deit_last2__ce/15/training_complete.json",
+      "bytes": 599,
+      "sha256": "ad9829ff14259dcf4981ff5f2bb0109f95699fb89b6ec7ad70edf128fad56d51"
+    },
+    {
+      "path": "run/final/deit_last2__ce/16/development_capture.json",
+      "bytes": 3430,
+      "sha256": "935a2a43740fe8c41d90bf61e6903485f2a612353600f6abaf935ce2c110a2f9"
+    },
+    {
+      "path": "run/final/deit_last2__ce/16/history.json",
+      "bytes": 4132,
+      "sha256": "844c9bfbca2d245c8fa9f1d031e3b28ee425f4bf5a2c73e79fc24799cf05baa3"
+    },
+    {
+      "path": "run/final/deit_last2__ce/16/predictions.npz",
+      "bytes": 25193885,
+      "sha256": "2c2228e32c6113402b94b9432b71a4ec17cd3ac0d0f41a9e7a952f1f40c756f2"
+    },
+    {
+      "path": "run/final/deit_last2__ce/16/results.json",
+      "bytes": 30859,
+      "sha256": "4d209d0a6ada10a2917759e8ab923357a7cc63feef28572aab43dde47c1d56d8"
+    },
+    {
+      "path": "run/final/deit_last2__ce/16/selected_development_logits.npz",
+      "bytes": 5928365,
+      "sha256": "0e66da65e80da2ace320ff2ae3fad73c51127b919850be3b49c53b6474ea1471"
+    },
+    {
+      "path": "run/final/deit_last2__ce/16/training_complete.json",
+      "bytes": 600,
+      "sha256": "ab7703defdd21b755ad86e35ddd303b8a14782fd7367d124838d70f533761841"
+    },
+    {
+      "path": "run/final/deit_last2__ce/17/development_capture.json",
+      "bytes": 3416,
+      "sha256": "e87a1c415967e0b6fadb360b56f53ec8e552cffbc88a20230ca21a53bd6bdbf3"
+    },
+    {
+      "path": "run/final/deit_last2__ce/17/history.json",
+      "bytes": 4142,
+      "sha256": "32e28c1c260cedd3d4f95e309a3775a2502c96123d4bee2e7f4a12506aeeaad5"
+    },
+    {
+      "path": "run/final/deit_last2__ce/17/predictions.npz",
+      "bytes": 25201668,
+      "sha256": "da9dd56f54caf464988d9ba57c5616533f42234cf2c3834757d0642178bf51a0"
+    },
+    {
+      "path": "run/final/deit_last2__ce/17/results.json",
+      "bytes": 30853,
+      "sha256": "7c717d21bb385aaf9bb97d97564c6a51f35abb02421bfe1f1644fe9b26c3323c"
+    },
+    {
+      "path": "run/final/deit_last2__ce/17/selected_development_logits.npz",
+      "bytes": 5929800,
+      "sha256": "efa30567acca8465ea041334b8ef5a43371ededd6bda62fa2fcf1be1842e8653"
+    },
+    {
+      "path": "run/final/deit_last2__ce/17/training_complete.json",
+      "bytes": 601,
+      "sha256": "a6da82946ca564416446a771e7a4e5d8d1ffb9938c6e8b067829d9fff86b6bd5"
+    },
+    {
+      "path": "run/final/deit_last2__ce/18/development_capture.json",
+      "bytes": 3435,
+      "sha256": "244d13d766556a5eb41fed06fcaa2a40fd4ef037f2e41d0d3aab1e0f0b6f65aa"
+    },
+    {
+      "path": "run/final/deit_last2__ce/18/history.json",
+      "bytes": 4160,
+      "sha256": "f1d281bb427290544c9c374db8c2e2c7d7ef0eda7e1eae1d43c0252cdbe413a1"
+    },
+    {
+      "path": "run/final/deit_last2__ce/18/predictions.npz",
+      "bytes": 25209130,
+      "sha256": "8b83dae268af7fd2800d8050634ca2ae4ec8082a72814b3b4ed6a113f2a57290"
+    },
+    {
+      "path": "run/final/deit_last2__ce/18/results.json",
+      "bytes": 30916,
+      "sha256": "26e19bfb65f5e9e56e96bd2d1d58b240ceda3508b4b60a06789259d53cf68719"
+    },
+    {
+      "path": "run/final/deit_last2__ce/18/selected_development_logits.npz",
+      "bytes": 5931721,
+      "sha256": "7116591892b16e696c1b4d03409f8564b0a508f3bb84faa02b7e33c594093f78"
+    },
+    {
+      "path": "run/final/deit_last2__ce/18/training_complete.json",
+      "bytes": 600,
+      "sha256": "d2a3344d5ac1fcc5d4a81dd3e503f6501a32c0ffa8ef36fd6f0716186b0c511c"
+    },
+    {
+      "path": "run/final/deit_last2__ce/19/development_capture.json",
+      "bytes": 3419,
+      "sha256": "c463a320eb1715d1002ed2ff43bbfef63d1fa144e2a51d18640db2cd64158d29"
+    },
+    {
+      "path": "run/final/deit_last2__ce/19/history.json",
+      "bytes": 4175,
+      "sha256": "4851187902fd51837ed7138a1d431a9c957c30756e163c73b9e28c055e2a50da"
+    },
+    {
+      "path": "run/final/deit_last2__ce/19/predictions.npz",
+      "bytes": 25201411,
+      "sha256": "651a7fed10d36ed4a92f03bdb1880d95148041b9783965e2992c8c732f0ff053"
+    },
+    {
+      "path": "run/final/deit_last2__ce/19/results.json",
+      "bytes": 30924,
+      "sha256": "b5679a318d1d013b84bd8a8f305421c25ccb29e50a3e4fd784bf4c3b069859b8"
+    },
+    {
+      "path": "run/final/deit_last2__ce/19/selected_development_logits.npz",
+      "bytes": 5930060,
+      "sha256": "a0cb90f3864587cc9712e28cdc612dc743c23ec4bc9ef478175c59dfaa614c67"
+    },
+    {
+      "path": "run/final/deit_last2__ce/19/training_complete.json",
+      "bytes": 600,
+      "sha256": "1a75dd072da3e598885c4fe26d4b1081e9ae5f961dafcecbdcf38718db12e27f"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/10/development_capture.json",
+      "bytes": 3436,
+      "sha256": "11e779e94b785f0a7f5461b1d6878f5955a36a6bd19b659fd7736c3eb490df36"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/10/history.json",
+      "bytes": 4054,
+      "sha256": "7fc1a0093c74bc06b57a9985d6d097b45892290e281952399e61f6e0fdaec81c"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/10/predictions.npz",
+      "bytes": 25262286,
+      "sha256": "1034a4c48addf60992c3cb97bd33ef1bbcf02b90c3d0c783f221557f1ecd5e55"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/10/results.json",
+      "bytes": 27735,
+      "sha256": "d175c2a1059ab37e26c79b7533094baa473ab3834e5324b3b5fdb45ed021ee14"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/10/selected_development_logits.npz",
+      "bytes": 5944656,
+      "sha256": "d05ce35fae9457e7cde86fd49647064e2371545d16f31b7e17c92f169f729e53"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/10/training_complete.json",
+      "bytes": 612,
+      "sha256": "8906acebe6c37f5b35265fa06a54b3bf0d2611f51f2f26e33deebdb5fd5bd4b0"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/11/development_capture.json",
+      "bytes": 3436,
+      "sha256": "30c1a859e725314cadd32287f7ec8e71942e5ff996513d3fd87d92c5d9cf38e0"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/11/history.json",
+      "bytes": 4053,
+      "sha256": "39eaf221bba251150703d6011e67d193ebf35a159ceec6bf40d490a7a719d74f"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/11/predictions.npz",
+      "bytes": 25270345,
+      "sha256": "54415f9ea9df9b207e73274707b0371876ace815e22531aff83c7039950624a2"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/11/results.json",
+      "bytes": 27760,
+      "sha256": "1d35044ab42f9d34f897a6b29fbfb3955e0e76aaf6512232943bcb43338933a6"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/11/selected_development_logits.npz",
+      "bytes": 5946491,
+      "sha256": "8984d844f734132b20000d82963f005b71bb3a29a3802b340e505decbe52e9ff"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/11/training_complete.json",
+      "bytes": 612,
+      "sha256": "effb2c2783aac85e33fe6ef2262865160e6dda87fd4559bf6dca0766bf9df2ca"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/12/development_capture.json",
+      "bytes": 3436,
+      "sha256": "c6908ee6f30264027e2945d9eb5af7c50be9e3ae4371bfdd39ccf0d4f9b5129f"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/12/history.json",
+      "bytes": 4047,
+      "sha256": "049a7c597818ef61391ba424335b1da2670a1cd2e615d2f4f07e5257b3ee0c28"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/12/predictions.npz",
+      "bytes": 25262459,
+      "sha256": "2ad922f71a6266ca9d645063f8dfeafbb053c56e2fd6adb25ad8f58ed049f097"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/12/results.json",
+      "bytes": 27574,
+      "sha256": "cf3566fad26853f6001651482fa1b9a8b14206162240db55f104cfb3f705b9c8"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/12/selected_development_logits.npz",
+      "bytes": 5944515,
+      "sha256": "a4839f63bf76a84ed1659069e7137af9dae8a93e54d9aaf1ca94d7a54577f6af"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/12/training_complete.json",
+      "bytes": 611,
+      "sha256": "29ac68aba06e6431c5b2b632b8e3ec39b4830e3c6985db627e7f00f3c9e6c2e9"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/13/development_capture.json",
+      "bytes": 3436,
+      "sha256": "321f57aa928a5204dfd44ec767eecbba8d04dfce9b6035158f27e9f9212d6ca3"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/13/history.json",
+      "bytes": 4052,
+      "sha256": "eb7aaa5609d94f5a6363ab250656b426d7459907df32efe51a9394cd5f606881"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/13/predictions.npz",
+      "bytes": 25269515,
+      "sha256": "b46a5b1ef96dedee140f4f0403cc1423eb8cf684e56484470c6f790645d46350"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/13/results.json",
+      "bytes": 27766,
+      "sha256": "031e4d42cb8c64ae3737d5a6b7e3b76a574d0fda347b33727a5b633bc33d8481"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/13/selected_development_logits.npz",
+      "bytes": 5945953,
+      "sha256": "f964f18cfd94c46a38bb8337958f1e3857b9976ffd5fc4018c37265e283b7c36"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/13/training_complete.json",
+      "bytes": 612,
+      "sha256": "a4c2ae36595acfd6167f97ed3b7892fdf5573d8c4a6d5ac62a6c3a79f01e2daa"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/14/development_capture.json",
+      "bytes": 3436,
+      "sha256": "7a0cec8620a74760012f6bae1c08ac3d08cc7cdaee170a2eb26bd49b744554ab"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/14/history.json",
+      "bytes": 4050,
+      "sha256": "2fa04550540b1822a73e450aef15ab3f1acdb8f1ee40a32967d9ad1d4066e856"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/14/predictions.npz",
+      "bytes": 25276784,
+      "sha256": "bcb238e68b823b1934675669d2429aa4c812da9006ae922717c7f9c0b1101cf2"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/14/results.json",
+      "bytes": 27484,
+      "sha256": "a16a574bf6b7dbdfa039389d9f4dc27f76d73fbe777c8e7d8d945b42d323ed6b"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/14/selected_development_logits.npz",
+      "bytes": 5947646,
+      "sha256": "84d4d78d253a593fb66f18bbe190c8a8c45425b8b8f06a184a8b0b5ccdd8f4e1"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/14/training_complete.json",
+      "bytes": 612,
+      "sha256": "c394ceac2b99e219701a674f17acccc6ce856f3bd69c295b018acf24152a7d52"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/15/development_capture.json",
+      "bytes": 3436,
+      "sha256": "6c487226ab897b130b656e9f095b103c8f13067b7177843dbce22c88ce0b2b0e"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/15/history.json",
+      "bytes": 4044,
+      "sha256": "79ed198ff334c21a55b46bd276acf823b7cfdad360a4e215b6125c4a906e272d"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/15/predictions.npz",
+      "bytes": 25269709,
+      "sha256": "f38592e7857a8dd7e21d14c7ae3e0a7aa75abed3aacbc9d4b4cb337f4c59b2aa"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/15/results.json",
+      "bytes": 27760,
+      "sha256": "d8978b0ed5b89c82825a7ed8b6aefeebb0a937e4f6b2e1e69b06fed7cfa28204"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/15/selected_development_logits.npz",
+      "bytes": 5946199,
+      "sha256": "a71061b1d5f04b41a1605bae58b6b15b41d8d03a4059e5bbb0bcfca880741ac8"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/15/training_complete.json",
+      "bytes": 612,
+      "sha256": "37bf6912ebb2804d037573e0f5f898afa2ff82a1718a30e75eb9211ad859e7ae"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/16/development_capture.json",
+      "bytes": 3436,
+      "sha256": "9d6746bf5dc696bfdd7e50d6f0d0c6e56b781157ecac4b052ba0ed475d317331"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/16/history.json",
+      "bytes": 4051,
+      "sha256": "a2f90770b55d09f0d1e82f692698fb4f3569735276082c5509bab858d6a28885"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/16/predictions.npz",
+      "bytes": 25262454,
+      "sha256": "a60b7db76a9124bbfb0094f3391b15c14dc9baf3fe218b3dc9fd63bc38255ef3"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/16/results.json",
+      "bytes": 27602,
+      "sha256": "bc9b60fc1e91199f15181598da3e501315a89d62ab152ef917745669aba42eaa"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/16/selected_development_logits.npz",
+      "bytes": 5944462,
+      "sha256": "aba0a5faf6b09d186a14419daff313b1e4e0097f16e9869baf126ac97dbc9eaf"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/16/training_complete.json",
+      "bytes": 612,
+      "sha256": "0122a0b7124b7f31213170e216177b377a657e9143bb5b7657247a65fb7e071e"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/17/development_capture.json",
+      "bytes": 3436,
+      "sha256": "f180bbda39c2e8ca607ddeac83e37c7b0012c7199af299221b0ef707988e43a9"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/17/history.json",
+      "bytes": 4051,
+      "sha256": "930489d6178a5e1ef7345fd7c10ccf6ebe427b204ecae21e6f1d378c9dc81814"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/17/predictions.npz",
+      "bytes": 25261745,
+      "sha256": "263d8b2c6c576777cba2e7d858f429b6e84fe877688c9d7c9d2dd2f42532aa87"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/17/results.json",
+      "bytes": 27561,
+      "sha256": "f228ea004b492a21e3d6b99ae5cacd1e7f96d1452404e30725466218ea79d73a"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/17/selected_development_logits.npz",
+      "bytes": 5944091,
+      "sha256": "e5d0592edf598fbfcc18ad0048fd804f50372ddf7202b09f1b18100f00f0f8bf"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/17/training_complete.json",
+      "bytes": 612,
+      "sha256": "627ab52333e0799d110fc5cbf8782494f723c9dd4b5a459e003d59bb6fea35f7"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/18/development_capture.json",
+      "bytes": 3394,
+      "sha256": "a190ed2ff4721edb4a66c15d2a260832298c4133720975c8b4220315870b9159"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/18/history.json",
+      "bytes": 4056,
+      "sha256": "15e68ecffbd0848eada1f23ffdf96e775ac56bd678a07c0cd66d10d473a2a40d"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/18/predictions.npz",
+      "bytes": 25269292,
+      "sha256": "9971dc1e616007d7b40a9ae73fe8738dca5144614be1f992990426cc14b50330"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/18/results.json",
+      "bytes": 27643,
+      "sha256": "3abd5a0ae8a22d06ccefb44077aaef205e914771606912014ba54753c70d6541"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/18/selected_development_logits.npz",
+      "bytes": 5946293,
+      "sha256": "9ecb206bf0bf4f90d91b954adad051a001f4c4fbff7520c75ef0208c06dc02fe"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/18/training_complete.json",
+      "bytes": 611,
+      "sha256": "73e517b829aabf6e82418b0b24377b8803d261837a4048a76a200a748416dbb4"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/19/development_capture.json",
+      "bytes": 3436,
+      "sha256": "527e5ffe673ef553d525d7b6c6189366d9d3dd00285532af6411203e7ad82aec"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/19/history.json",
+      "bytes": 4045,
+      "sha256": "4e696162fa5e0322f72f1fd2bee1d34803f1a5cecd722ef9b4fda521857d0a1c"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/19/predictions.npz",
+      "bytes": 25283163,
+      "sha256": "6804b292dfc0272fc073d468787930030db71479143254afdc79ab944a0a79ab"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/19/results.json",
+      "bytes": 27792,
+      "sha256": "91c132dfee14fdd84795514ea9838a2cf2f53ad95cbc60c179b350bcd0b247aa"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/19/selected_development_logits.npz",
+      "bytes": 5949395,
+      "sha256": "ef9ba03b8ff4932b7508079584cb40d02686628c16c1ecaff1ca42181f649b54"
+    },
+    {
+      "path": "run/final/dino_frozen__balanced_softmax/19/training_complete.json",
+      "bytes": 612,
+      "sha256": "83f3c71081229484f832076489fe826b73f0681049fd0e85bb7f4e4fc35a8c47"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/10/development_capture.json",
+      "bytes": 3432,
+      "sha256": "e24409a5c2d840ad0604d2eb2a96e24bdec184849aef1f57c3ed474681bf7efd"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/10/history.json",
+      "bytes": 4126,
+      "sha256": "b6f6da2f4f5d89e6ecda91c51df90c4b81c5848a36076433a282c04c8ec26e22"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/10/predictions.npz",
+      "bytes": 25255581,
+      "sha256": "4c86e68ed044a9ba87f46d2a3e6cbc0a9ac69a133fa12bbd2d105055c6d95424"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/10/results.json",
+      "bytes": 30773,
+      "sha256": "6dedff8385c9d2229bf01cdc03a54d3a31ac104fee8757b661e9e09a58bdeb06"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/10/selected_development_logits.npz",
+      "bytes": 5943002,
+      "sha256": "7fdc3476fef096f98994b64c1028f7bd8c1e307b6e6c1b9b7ca3e97d55ba0a80"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/10/training_complete.json",
+      "bytes": 599,
+      "sha256": "19c013218acacb1ac023b8d38dd3655e45c08d1caaa06e2f91450f8c4c4a5a2a"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/11/development_capture.json",
+      "bytes": 3417,
+      "sha256": "447777466a27862018e3f7751fe08e0c4c66fd27150c67f144304837a2b90eb8"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/11/history.json",
+      "bytes": 4076,
+      "sha256": "49ab438a8bd694d26821875402df98492014b6266f29b28507e675381db1aa7a"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/11/predictions.npz",
+      "bytes": 25257830,
+      "sha256": "eee82087055e6c5a6b0e8ba64e715f642040a1b0b0f3f63c3c00daeb7dddb3eb"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/11/results.json",
+      "bytes": 30937,
+      "sha256": "3132b0e8a64917040a93fb088779a58528ac86781a41d6ef742ff2a4a7b964cf"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/11/selected_development_logits.npz",
+      "bytes": 5943511,
+      "sha256": "43ef92dd98032adadaa655921b964b498a2aa374b4add0e81a4fe4b4dca8b5ce"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/11/training_complete.json",
+      "bytes": 599,
+      "sha256": "12d884974b9652ad3620f31bf4ae198268b2c3362163e0b4dba523ee0e4200dd"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/12/development_capture.json",
+      "bytes": 3421,
+      "sha256": "d1a961692c5c8c888c6214b43c19e3f5f766598c41fc66a79bf16a4808911505"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/12/history.json",
+      "bytes": 4198,
+      "sha256": "0c72268aeee78d04373553fbc44b48795cdac505fa8ca544c2a7d38ebf0295be"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/12/predictions.npz",
+      "bytes": 25263690,
+      "sha256": "d9bc063046e0979a9b634b725b3ede5baf3825f2738158c40378992e2c62e822"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/12/results.json",
+      "bytes": 30883,
+      "sha256": "6ee09a0f099f4b5e9810667b1fb4751c2ea588767b0114e2c7902345a65bfbad"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/12/selected_development_logits.npz",
+      "bytes": 5944929,
+      "sha256": "fefc57d531138e6e97169c2886c1416c169ac4a654fe83f62a74d759a291b095"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/12/training_complete.json",
+      "bytes": 599,
+      "sha256": "87c0ec43b8a24cf5204c9e768a3d9df6d9858d27f1c17b331dd620699fa8c6c7"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/13/development_capture.json",
+      "bytes": 3432,
+      "sha256": "3ea37d4f6ba17973709f4164cb48bc6edc943a132ea7b807fe56a42e4333eb21"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/13/history.json",
+      "bytes": 4115,
+      "sha256": "cebd19b85fcc6e6295af85e0f90b9b0c7916909c611fbf4aea002827ae2e622a"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/13/predictions.npz",
+      "bytes": 25245962,
+      "sha256": "fb62c43ee795f82d72725b8004b09a1522d883796129c12ba2381351d64544a6"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/13/results.json",
+      "bytes": 30820,
+      "sha256": "f3431b424ed1158cb14514be287c87c22dede699d6320a1a74b4b3cbdf3c991c"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/13/selected_development_logits.npz",
+      "bytes": 5940466,
+      "sha256": "09458bdc234bbb16094fa3742c75e55774d3e7b30087bade594ab2cf62486480"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/13/training_complete.json",
+      "bytes": 599,
+      "sha256": "50acc0daba03c040887adcfcf80a9a5a78216f0edeecbda887187c20ccd77d33"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/14/development_capture.json",
+      "bytes": 3434,
+      "sha256": "789b52c6d360fa1973b7a05b8ad716be5f12fd8b676358c0f6c6b087c7c648bb"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/14/history.json",
+      "bytes": 4152,
+      "sha256": "ef0b9fe406ea3d71411ac58098588378d2909cbd8010423cbcf6023083f5173e"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/14/predictions.npz",
+      "bytes": 25251267,
+      "sha256": "aff2e3572663f2a25b83e60868351b28f77b90bd0e1b1eb8c18db15f8042c277"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/14/results.json",
+      "bytes": 30825,
+      "sha256": "065ec8f1f59c935e0cfcdc4a55569c9598df0a694d86c5d58653e67dcfcaf3b1"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/14/selected_development_logits.npz",
+      "bytes": 5941726,
+      "sha256": "07c65d46a0c91ef98aedca1cbf86a52d9743eda0b8332a8276087f314d028867"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/14/training_complete.json",
+      "bytes": 599,
+      "sha256": "309b94c2e00d9c9d33213e5e0a8feb1fc632237128f4f6c9dd564ed1a274dcb3"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/15/development_capture.json",
+      "bytes": 3428,
+      "sha256": "2a7a7daa207032918fdcf852bc4d40477e7ce6241c65c6d70d65bddea91431cd"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/15/history.json",
+      "bytes": 4168,
+      "sha256": "f266ffb322c0d13357db30638f011b9d93b4b0adb7eb88c3ae8064a872cb69f4"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/15/predictions.npz",
+      "bytes": 25264752,
+      "sha256": "11d1245c4dd9c856720b293401c2b16c985b148a6f382da153b3c91012928701"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/15/results.json",
+      "bytes": 30570,
+      "sha256": "79db91bafd165c3ec9771f888dd32509841b85a2f186205781b3ea69c6b8647f"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/15/selected_development_logits.npz",
+      "bytes": 5945164,
+      "sha256": "965f149424bc91065a5d9ecd7e82f58b02ae40a3743918e9848cb4bd1e833cd3"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/15/training_complete.json",
+      "bytes": 598,
+      "sha256": "c9ed2392fe490aee02cdfe1925e3cf0cbec8d923aa700afc03ba64a30c8e6598"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/16/development_capture.json",
+      "bytes": 3417,
+      "sha256": "1dc92cc8d63b986f29633c246702dcc608bc4f33bc03a4f847ad3dcaa3951232"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/16/history.json",
+      "bytes": 4185,
+      "sha256": "1f7f6803f2a3ae8aacc39274db72670f6caccafae283263a92123c14177fac04"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/16/predictions.npz",
+      "bytes": 25257802,
+      "sha256": "e3539692566fb20880bcfc051588c131b8521feee30f2a80775e28989133fee8"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/16/results.json",
+      "bytes": 30777,
+      "sha256": "0c600a8e7ef90096396f9338dd63120a4e8129191e1718afe0a4a24dcecbdb00"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/16/selected_development_logits.npz",
+      "bytes": 5943678,
+      "sha256": "cd7f51e60474382d11c3d91b06467571fb22e5ea305d8f4ca79222f50d311364"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/16/training_complete.json",
+      "bytes": 599,
+      "sha256": "b96852bb04cc13652ca0ab86d89340392f1c76014f7662cb0f86ed8f86691f06"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/17/development_capture.json",
+      "bytes": 3415,
+      "sha256": "f61e39d8310d89b1af0b107deb8a8a77a84920bd0509f0b05ebfac666a171883"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/17/history.json",
+      "bytes": 4088,
+      "sha256": "a4a7e443148ae3f058fb504015ff724a0b6751bd1bca24d7ae5efc54adf22e18"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/17/predictions.npz",
+      "bytes": 25249912,
+      "sha256": "dee7b2412776f614f48279b2069010446dc75d12d4d75ba65f019db27a1dbd25"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/17/results.json",
+      "bytes": 30893,
+      "sha256": "651be46f1fa9305a2787fd6df7a96a0e460f37fc98a332b2096733dd850efbe2"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/17/selected_development_logits.npz",
+      "bytes": 5941532,
+      "sha256": "84c50f068eb0c21890d8ba69a4b391146b6bd6d877e37e66d6328c1289b898d2"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/17/training_complete.json",
+      "bytes": 598,
+      "sha256": "dbe76dac568b6b195bbd78468293097cfd68dc39fa0775f72b0d6678b07ffda6"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/18/development_capture.json",
+      "bytes": 3417,
+      "sha256": "ccf144b32f33e0569973d00d6021cf6348d70a654545792b7bdca157e6799a3d"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/18/history.json",
+      "bytes": 4117,
+      "sha256": "316f8278ddeb926628c93686c6f2baf09784c98728bc58d756add60e6e484860"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/18/predictions.npz",
+      "bytes": 25274220,
+      "sha256": "5e3e29d350950e46de6ac964e74215e6f1bf40d1afb412fdf07d4c86a835fd1b"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/18/results.json",
+      "bytes": 30901,
+      "sha256": "1a819d4a897aebe950a3cfca24c6aec8bc3b0b05e58fd653b43c9458df00a507"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/18/selected_development_logits.npz",
+      "bytes": 5947071,
+      "sha256": "89bfc982c5840ea93965489277253a56d375e059feb565b5e4f6e5618df4c01e"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/18/training_complete.json",
+      "bytes": 600,
+      "sha256": "563ae9ac7d34a78b248defa97c1a883290a48201d843af0c64f52ebf678af411"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/19/development_capture.json",
+      "bytes": 3416,
+      "sha256": "d47a61a283c2993861369e92e453f3406c128af99f7f600b9253023fa1472052"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/19/history.json",
+      "bytes": 4137,
+      "sha256": "e2f7e3790130717ce4692c6c8b030b618f4ffec654e675b8151d0e5a60642844"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/19/predictions.npz",
+      "bytes": 25256028,
+      "sha256": "176d60c253c1f1c81a84d4d10a4114c7e50533d5ec2b363499fd93f9f71bf67b"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/19/results.json",
+      "bytes": 30908,
+      "sha256": "ed64bc9d8903bda31234e6184e837012433bc090a09c39317bf40bfd23977d0a"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/19/selected_development_logits.npz",
+      "bytes": 5943032,
+      "sha256": "4f27926b917240b877e79389f1d752943455bd0992b3bfa76269fab99b545025"
+    },
+    {
+      "path": "run/final/dino_frozen__ce/19/training_complete.json",
+      "bytes": 599,
+      "sha256": "c6efd26bcb494d239808154e0a2f5107895534f11ec788ec8d66c0dbef849ae0"
+    },
+    {
+      "path": "run/final_training_complete.json",
+      "bytes": 6282,
+      "sha256": "7883fe0776d42a8280e0a23d8111adec09c73203904aef7d9ff844f7bae91579"
+    },
+    {
+      "path": "run/prefix_row_ids.npy",
+      "bytes": 426272,
+      "sha256": "4ced2b2ace71a5baa99c9b88070afe9689f70a8b44e530def914b1527076f808"
+    },
+    {
+      "path": "run/protocol.json",
+      "bytes": 3998,
+      "sha256": "8fa0a078c2fcb1ec24eb08682b714919822c117ac32204a773f1d1d053a194f2"
+    },
+    {
+      "path": "run/results.json",
+      "bytes": 2145515,
+      "sha256": "e261e76db8b5b137bbb44d2264ca0b4c3cbb0482d2e05f55b5df4c4775627015"
+    },
+    {
+      "path": "run/selection.json",
+      "bytes": 1485,
+      "sha256": "1bc9cebf8a0303dafd28f544a1a54b65f15c3fe3ee7041bb90ddb7a0331a74b9"
+    },
+    {
+      "path": "run/train_only_pilot.json",
+      "bytes": 307,
+      "sha256": "98601e51d8a49def54f0e9d42e4f1eafa83e698f78775732023fc7ad73f4bc0c"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.001/development_capture.json",
+      "bytes": 3438,
+      "sha256": "d781c25a794023f0461f48919559a138eaf34f3c2a0aa1ff2e09d11409b25447"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.001/history.json",
+      "bytes": 4040,
+      "sha256": "8ad3c2c533c87410103e21b5c1e5e1d4b1e2c4c750e03122a72e3aaa42ae0af2"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.001/selected_development_logits.npz",
+      "bytes": 5945193,
+      "sha256": "aacda1149740f2a4d0cfb295a9715a72cf85e0fc0f47be425d99606ffd9cc88d"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.001/training_complete.json",
+      "bytes": 615,
+      "sha256": "34e213225ee581a659e43d1433cd47fa782e85b644b719ff843ff66c5fa41b42"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.003/development_capture.json",
+      "bytes": 3437,
+      "sha256": "6102a18733c6a41f08f23f16e5d108930215735e03a5e38b3bcf87b155b6c5e3"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.003/history.json",
+      "bytes": 4040,
+      "sha256": "6a20b181a6f507b4fa98caee87138f2b37b93f5a308c4c462d10ddd43514821d"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.003/selected_development_logits.npz",
+      "bytes": 5948035,
+      "sha256": "832d09a83c137908035ac8d3f0a59c9b905b0a7accd98f7fce9ba295b8de169a"
+    },
+    {
+      "path": "run/tuning/deit_frozen__balanced_softmax/0.003/training_complete.json",
+      "bytes": 614,
+      "sha256": "9c4048ec3be8a276253f4f29007f0ba8b32e9775ac1196f8ea29bfb45a6bceb6"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.001/development_capture.json",
+      "bytes": 3418,
+      "sha256": "0ba0ac72a21ef4049587425066ef88a26af85a2f1b9a0bdd693c1c8246bbe0c7"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.001/history.json",
+      "bytes": 4173,
+      "sha256": "8cfd5b7600d2eecb599df8b825fbf339c3fc1de1306b044b75788c1ffe926f4b"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.001/selected_development_logits.npz",
+      "bytes": 5941490,
+      "sha256": "a363f2d6cb30bdbe905f751a73a4308680f0d3ea29192be05b56c68e06774bc6"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.001/training_complete.json",
+      "bytes": 600,
+      "sha256": "3fe1205f6ca6c99f0e7cb808fa67d6ca7fdd7399a3cb4de97275625276cd43cb"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.003/development_capture.json",
+      "bytes": 3417,
+      "sha256": "a1345f6ae137fc304dd42d7eaa9da3230765f41a5b11d84b1fbcce7956911534"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.003/history.json",
+      "bytes": 4084,
+      "sha256": "a9899214f26751fcbbc1e6cd6053b88efa7a4f7d0f8b02ddf18ab93ac013be35"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.003/selected_development_logits.npz",
+      "bytes": 5944075,
+      "sha256": "0c12e59df0c0a29143434555b7dece9f6306808623328f4399aa44843668ca70"
+    },
+    {
+      "path": "run/tuning/deit_frozen__ce/0.003/training_complete.json",
+      "bytes": 600,
+      "sha256": "11e63b1d1b18c64ee582760a2c116b0425c5463d12920946e20c2196bebd0c77"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/1e-05/development_capture.json",
+      "bytes": 3437,
+      "sha256": "2073209d54e7a23e425f8f114bdad01a92054bf9db7daeb15fa7b69e059de971"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/1e-05/history.json",
+      "bytes": 4036,
+      "sha256": "5394d973ad81eee847d114ca56c45f118ddf930b0082b781986609643aadffbe"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/1e-05/selected_development_logits.npz",
+      "bytes": 5948248,
+      "sha256": "d930dae4f6a4be79c21ff879f73eddf3a2aa46eef7859c26adea7c8161263dfd"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/1e-05/training_complete.json",
+      "bytes": 616,
+      "sha256": "46bae83ce4a1fe9123018418e5c8d6f399b59a06dca647f06c95b7ba88373b9e"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/3e-05/development_capture.json",
+      "bytes": 3436,
+      "sha256": "6bbbd2a0587a316dd3d74a7564ac1c37d76923a68333275cbfaa0e64c9a92643"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/3e-05/history.json",
+      "bytes": 4038,
+      "sha256": "cd217d055989b12a87822afb9fe08a4c8cc87d12139842039196ca937fb8bae8"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/3e-05/selected_development_logits.npz",
+      "bytes": 5949417,
+      "sha256": "4a3df7ab26f4afff5763ec659b679324c34f746b7b6ecebe97d87ec07b35e37d"
+    },
+    {
+      "path": "run/tuning/deit_last2__balanced_softmax/3e-05/training_complete.json",
+      "bytes": 615,
+      "sha256": "540c8c5a53e2f3e0f746bd0faa631702cd06443dbcef8ef57dc5e6d4191dc400"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/1e-05/development_capture.json",
+      "bytes": 3422,
+      "sha256": "d3922012fb020102ff6ee66f50d98b4274b1d06a5576b50685bc380b12314562"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/1e-05/history.json",
+      "bytes": 4120,
+      "sha256": "946d37467f481f2350320a735a8fe3f53c0501c2d8effe87a100f5abf77b4daf"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/1e-05/selected_development_logits.npz",
+      "bytes": 5931363,
+      "sha256": "2d9a770aac962f4c2976ead1abafe216576ee485e655aa0bdf3663132f78b440"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/1e-05/training_complete.json",
+      "bytes": 600,
+      "sha256": "68f6bf7e666039c96226713745fcfb242e080aa7125ea2e1c7a220bd47cb8bc5"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/3e-05/development_capture.json",
+      "bytes": 3412,
+      "sha256": "675b59bdfc829b0bfac86d1eed861739a5ad16eccf4f412510d55662eaac4532"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/3e-05/history.json",
+      "bytes": 4167,
+      "sha256": "55156605fcb7542412d323500b79b330bf365a63a6e8f39a7fa7071aabed9583"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/3e-05/selected_development_logits.npz",
+      "bytes": 5935060,
+      "sha256": "7827372299bc0a2a1d416dff369b9c7d9e00db9be9bd180441b1334e54696bf1"
+    },
+    {
+      "path": "run/tuning/deit_last2__ce/3e-05/training_complete.json",
+      "bytes": 600,
+      "sha256": "8baa3270d8e0b69a6705a32cf8e635c1d7ccec940f5ff2b3f7434beb474ad3bc"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.001/development_capture.json",
+      "bytes": 3437,
+      "sha256": "6ac97301b2f82a588c967e680f95e799720c1f38566382db456f68bb64b70a0f"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.001/history.json",
+      "bytes": 4051,
+      "sha256": "67f12aa8686b2e328c4b52a4f6a45092ca92c2c920baef47f66cec392846fc1f"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.001/selected_development_logits.npz",
+      "bytes": 5946060,
+      "sha256": "0f0286042664860572b238444a8701c0d3c416005115dee4c8d3400ca77d036e"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.001/training_complete.json",
+      "bytes": 614,
+      "sha256": "d79c2bca26175a4b5cc6616bb944b4f254bfdde383f2e5ac5cacff3ab0365ef1"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.003/development_capture.json",
+      "bytes": 3437,
+      "sha256": "676848d777709da19a47b7a5cb5cb540424f39a7200c298e9a211544e811bc87"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.003/history.json",
+      "bytes": 4054,
+      "sha256": "386af75987b6bdee575eb0925c8735fe325badaef87fcefcfdba4fe3f4c65c56"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.003/selected_development_logits.npz",
+      "bytes": 5949882,
+      "sha256": "155340db6e5ec4dc0b2c2b2a5142704a00336a8fcc8cc199e28a13e3c86ed49a"
+    },
+    {
+      "path": "run/tuning/dino_frozen__balanced_softmax/0.003/training_complete.json",
+      "bytes": 613,
+      "sha256": "6e202347551e99be4820e678736d50740f9c9352cd40ef1ac8eeb1de61703fcf"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.001/development_capture.json",
+      "bytes": 3433,
+      "sha256": "9ad3128634914051ce409e2f075f3e9683d97a480e7afec75d2a1deb92e2dc2d"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.001/history.json",
+      "bytes": 4149,
+      "sha256": "3b7640ab50fb04e28463b610cdd4f7d4b8ede5d41d3842ec2a17f6a8e2782bea"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.001/selected_development_logits.npz",
+      "bytes": 5943235,
+      "sha256": "9c96b085471ee4e8215df0a27b2b7d6240c57248b1ff1b774da6ce9021e1501a"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.001/training_complete.json",
+      "bytes": 600,
+      "sha256": "d0d0d2027d486f96179722742927cd6f3a552df6ac225c9c09002607bc517c8e"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.003/development_capture.json",
+      "bytes": 3433,
+      "sha256": "cfbe220cad3f06bbb1fb199670d259f4ed9985dccecef0a6af0e33370e7c4dd0"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.003/history.json",
+      "bytes": 4196,
+      "sha256": "376a88e9041e9617e5019a07c064f1bc6995896096db7521d062c7cd0099fb98"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.003/selected_development_logits.npz",
+      "bytes": 5948214,
+      "sha256": "70abac7b9cb683876b3e2de7162be50a45dc777609723289ff1d12f9f9bb1b40"
+    },
+    {
+      "path": "run/tuning/dino_frozen__ce/0.003/training_complete.json",
+      "bytes": 600,
+      "sha256": "6bfd50542fa0f838e14b62cff6606972c4cbfdd56aacedc699f4da7373be4f6c"
+    },
+    {
+      "path": "scripts/benchmark_vision_followup.py",
+      "bytes": 35096,
+      "sha256": "20711dd400a1e2c1c926344c91aec8c9bc1157546078a1cf6bf0c67665c6be3f"
+    },
+    {
+      "path": "scripts/capture_vision_development.py",
+      "bytes": 3285,
+      "sha256": "439e863a9b1f0c3e6e686dcc132ef1fc74a9622263b17673e50870ec325d4417"
+    },
+    {
+      "path": "scripts/extract_tiny_features.py",
+      "bytes": 5491,
+      "sha256": "e48692697a091d2459e9659f1d9440f9830577df0418fab240921701be6a36ef"
+    },
+    {
+      "path": "scripts/extract_vit_comparison_features.py",
+      "bytes": 26304,
+      "sha256": "3029034a852abff53c22ce67cecbb85985319b2b1a727d821a0cdae23eb1f527"
+    },
+    {
+      "path": "scripts/verify_vision_checkpoint_states.py",
+      "bytes": 14159,
+      "sha256": "3988ea96c0152340f451dff57e07690837f8985e1b5221057402e08e20ba03a5"
+    },
+    {
+      "path": "scripts/verify_vision_followup.py",
+      "bytes": 16910,
+      "sha256": "8dd55fa84422fca8ba6a0ab6e0d29e520d99dd76194ae2b9a534fadbabdaa20b"
+    },
+    {
+      "path": "tests/test_verify_vision_checkpoint_states.py",
+      "bytes": 6831,
+      "sha256": "2bf29a5236ff52b028b8d0b5846ddd234ab130212cdb3374fd8b8ee1f7000c95"
+    },
+    {
+      "path": "tests/test_verify_vision_followup.py",
+      "bytes": 4457,
+      "sha256": "3a79913ee47699631b5eb701fb857a76d60805329db21b11772c0517bf6c1381"
+    },
+    {
+      "path": "tests/test_vision_followup.py",
+      "bytes": 10873,
+      "sha256": "9ad404bd1190cc52bd2d683869bda504d757f7322fcee6ee9f47bf0f2ea836d8"
+    }
+  ],
+  "models": 60,
+  "confirmation_readouts": 120,
+  "official_exploratory_readouts": 60,
+  "development_captures": 72,
+  "portable_checkpoint_states_loaded": 0,
+  "production_checkpoint_states_verified": 72,
+  "excluded": [
+    "raw images",
+    "dense features",
+    "pretrained weights",
+    "model states",
+    "optimizer states",
+    "private operational logs",
+    "credentials"
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "confirmation_scored": false,
+  "protocol": "f548c396fcf87f4e70aaa6d39da1b0f91f918de3934dc54ccec91e9927af4912",
+  "selection": {
+    "deit_frozen__balanced_softmax": {
+      "lr": 0.001,
+      "score": 0.6221613316443637,
+      "training_sha256": "34e213225ee581a659e43d1433cd47fa782e85b644b719ff843ff66c5fa41b42"
+    },
+    "deit_frozen__ce": {
+      "lr": 0.001,
+      "score": 0.6262480728427409,
+      "training_sha256": "3fe1205f6ca6c99f0e7cb808fa67d6ca7fdd7399a3cb4de97275625276cd43cb"
+    },
+    "deit_last2__balanced_softmax": {
+      "lr": 1e-05,
+      "score": 0.6278553544402723,
+      "training_sha256": "46bae83ce4a1fe9123018418e5c8d6f399b59a06dca647f06c95b7ba88373b9e"
+    },
+    "deit_last2__ce": {
+      "lr": 1e-05,
+      "score": 0.6347028816346955,
+      "training_sha256": "68f6bf7e666039c96226713745fcfb242e080aa7125ea2e1c7a220bd47cb8bc5"
+    },
+    "dino_frozen__balanced_softmax": {
+      "lr": 0.001,
+      "score": 0.7396134775621971,
+      "training_sha256": "d79c2bca26175a4b5cc6616bb944b4f254bfdde383f2e5ac5cacff3ab0365ef1"
+    },
+    "dino_frozen__ce": {
+      "lr": 0.001,
+      "score": 0.7557203967874208,
+      "training_sha256": "d0d0d2027d486f96179722742927cd6f3a552df6ac225c9c09002607bc517c8e"
+    }
+  },
+  "selection_source": "Development data: calibration rows select CE offsets, tuning rows select learning rate and best epoch; dedicated tuning seed901 and epoch selection repeated for final seeds. Confirmation and officialeval excluded."
+}
