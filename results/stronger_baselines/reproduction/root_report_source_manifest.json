@@ -1,0 +1,149 @@
+{
+  "actual_report_or_results_included": false,
+  "combined_reproduction_guide_included": false,
+  "combined_reproduction_guide_owner": "EQ; separate until finalized",
+  "destination": "local_archive_reproduction_companion",
+  "files": [
+    {
+      "bytes": 54242,
+      "max_text_bytes": 54242,
+      "path": "reproduction/work/assemble_followup_evidence.py",
+      "role": "reproduction_reporting_source",
+      "sha256": "e5d27d64b864ca27a155f55a629185b14a73d911b977762ce6cb7bed0667e9ee"
+    },
+    {
+      "bytes": 38310,
+      "max_text_bytes": 38310,
+      "path": "reproduction/work/build_followup_report.py",
+      "role": "reproduction_reporting_source",
+      "sha256": "02ebeabf5a2e943d606113dbbece18ed9799c4a50218ab345f8595562313abcc"
+    },
+    {
+      "bytes": 19543,
+      "max_text_bytes": 19543,
+      "path": "reproduction/work/finalize_followup_presentation.py",
+      "role": "reproduction_reporting_source",
+      "sha256": "e88399fe50dff000ae0f5f9c226b89d7e387ca070a9734d2d6ff36b26303f800"
+    },
+    {
+      "bytes": 3085,
+      "max_text_bytes": 3085,
+      "path": "reproduction/work/next_round/plot_results.py",
+      "role": "reproduction_reporting_source",
+      "sha256": "549273bb0771095f9933cb05ec6e6cf5bbbffa23d0720aa4d1382f308370f314"
+    },
+    {
+      "bytes": 3426,
+      "max_text_bytes": 3426,
+      "path": "reproduction/work/next_round/report_references.json",
+      "role": "reproduction_references",
+      "sha256": "77d23ba521aed4f023effb5442ca173693e5df88f8fcb3928c0866c3ece2fa26"
+    },
+    {
+      "bytes": 239,
+      "max_text_bytes": 239,
+      "path": "reproduction/work/next_round/requirements-reporting.txt",
+      "role": "reproduction_dependency_requirements",
+      "sha256": "731dd98482b0767cadddd9851fa0328c1c62a1ecafc12ed9e67c495c241d898b"
+    },
+    {
+      "bytes": 2283,
+      "max_text_bytes": 2283,
+      "path": "reproduction/work/rebal/docs/followup_analysis_compatibility.md",
+      "role": "reproduction_guide_source",
+      "sha256": "bfe424dcf5e6891550f6b9dcbf77f58e8dc7105f0128eabbf36bacf4ac9cb569"
+    },
+    {
+      "bytes": 16271,
+      "max_text_bytes": 16271,
+      "path": "reproduction/work/rebal/docs/followup_eq.md",
+      "role": "reproduction_guide_source",
+      "sha256": "bbc26d302eea925b1f8b3a73228858d245df1064025ed9ab8e2fcc9491bc0fb3"
+    },
+    {
+      "bytes": 16956,
+      "max_text_bytes": 16956,
+      "path": "reproduction/work/rebal/docs/tabular_followup.md",
+      "role": "reproduction_guide_source",
+      "sha256": "2af01338540570313e0d8925045feccfeb38edcb77393b3ea079cf8150ec57c0"
+    },
+    {
+      "bytes": 13247,
+      "max_text_bytes": 13247,
+      "path": "reproduction/work/rebal/docs/text_followup.md",
+      "role": "reproduction_guide_source",
+      "sha256": "7efcaea3566b20fecadf94c7c07eb8ef5b09f859e0ebb7593eb04c0ed5e7aa42"
+    },
+    {
+      "bytes": 7118,
+      "max_text_bytes": 7118,
+      "path": "reproduction/work/rebal/docs/vision_followup.md",
+      "role": "reproduction_guide_source",
+      "sha256": "11e19366d2bd7d85f4d50bc9be49aa4069791ac95f270b77a0f797944b6dbebb"
+    },
+    {
+      "bytes": 337,
+      "max_text_bytes": 337,
+      "path": "reproduction/work/rebal/requirements-followup.txt",
+      "role": "reproduction_dependency_requirements",
+      "sha256": "8c8dc74c8abbbd2e216d96dd26118f4edd4c4ad9c267140cd1b1821b558c616e"
+    },
+    {
+      "bytes": 290,
+      "max_text_bytes": 290,
+      "path": "reproduction/work/rebal/requirements-tiny.txt",
+      "role": "reproduction_dependency_requirements",
+      "sha256": "f4469080010fbeea810d1ef1570a556debdc3a7373447b7277e895a48767778a"
+    },
+    {
+      "bytes": 187,
+      "max_text_bytes": 187,
+      "path": "reproduction/work/rebal/requirements-vit.txt",
+      "role": "reproduction_dependency_requirements",
+      "sha256": "384a9a0f15f87431f56177a0e882113a4fa1918630a37f667906093c153752f2"
+    },
+    {
+      "bytes": 8729,
+      "max_text_bytes": 8729,
+      "path": "reproduction/work/rebal/scripts/analyze_followup_comparisons.py",
+      "role": "reproduction_reporting_source",
+      "sha256": "faec1269a4a916c8ace36f9333ce149ef19131db6f557188f6744b0055f47953"
+    },
+    {
+      "bytes": 3993,
+      "max_text_bytes": 3993,
+      "path": "reproduction/work/rebal/tests/test_followup_analysis.py",
+      "role": "reproduction_analysis_tests",
+      "sha256": "adf92d13a63b3a02c74c89f43aa0b5b797ab78f25b70331dce2f847e5a6715e8"
+    },
+    {
+      "bytes": 10380,
+      "max_text_bytes": 10380,
+      "path": "reproduction/work/verify_followup_archive_identity.py",
+      "role": "reproduction_reporting_source",
+      "sha256": "d7a3a368ccf52eee9a1cd9d490cb495750154563a6428276c691c0e0e465dc8d"
+    },
+    {
+      "bytes": 7592,
+      "max_text_bytes": 7592,
+      "path": "reproduction/work/verify_followup_pdf_text.py",
+      "role": "reproduction_reporting_source",
+      "sha256": "700d5713756e66057a03a36ea743a91321098c9dad96c2b46ad5bf758c4d36ab"
+    }
+  ],
+  "layout": "Exact reproduction/work layout preserves reporting helper and analyzer imports",
+  "package_installation_performed": false,
+  "private_operations_or_mapping_included": false,
+  "publication_performed": false,
+  "scope": "explicit_publication_allowlist",
+  "source_bytes": 206228,
+  "source_execution_performed": false,
+  "source_files": 18,
+  "source_only": true,
+  "status": "reviewed_source_snapshot_exact_bytes_privacy_scan_pending",
+  "training_requirement_include_closure": [
+    "reproduction/work/rebal/requirements-followup.txt",
+    "reproduction/work/rebal/requirements-vit.txt",
+    "reproduction/work/rebal/requirements-tiny.txt"
+  ]
+}
