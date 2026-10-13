@@ -1,11 +1,29 @@
-# REBAL stronger-baseline follow-up: derived evidence
+# REBAL stronger-baseline follow-up
 
-The four completed studies in `equalization/`, `vision/`, `text/` and `tabular/` retain saved scalar, per-class and paired results, frozen scientific protocols/configurations, calibration choices, independent audits and evidence catalogs. Each study uses ten final paired optimization seeds on one fixed partition. Their prespecified primary families contain six, five, eight and three comparisons, respectively; any combined 22-comparison analysis and report are separately produced from the complete bound aggregates.
+The completed follow-up covers Tiny ImageNet, DBpedia-14 and Covertype with ten paired optimization seeds, protected current-round confirmation partitions, stronger controls and independent numeric verification. The report retains positive effects, negative effects and non-detections, with six image-EQ, five image-encoder, eight text and three tabular primary comparisons. The combined 22-comparison Holm analysis is a separate sensitivity analysis.
 
-This Git set is deliberately derived evidence. It excludes raw NPY/NPZ predictions and labels, input content, features, pretrained/trained model weights, checkpoints and private operational files. Each `raw_evidence_catalog.json` describes the separate complete local weight-free raw archive; its listed raw members are not all present in Git. Each `derived_evidence_manifest.json` inventories the files actually present here. Full raw numeric replay requires the local archive and the documented unchanged original paths.
+- [Experimental report](report/experimental_report.pdf): the corrected 23-page PDF.
+- [Reproduction guide](reproduction/README.md): archive identity checks, numeric replay, paired analysis and reporting commands.
+- [Final presentation evidence](evidence.json): bound model rows, comparisons, references and figure provenance.
+- [Assembled evidence](evidence_assembled.json): the unchanged input identified by the finalizer's recorded input SHA-256.
+- [Global paired analysis](global_analysis.json): all 22 declared comparisons and both Holm families.
+- [Numeric report QA](report/numeric_qa.json), [all-page visual QA](report/visual_qa.json), and [figure QA](report/figure_visual_qa.json).
 
-Original working-run actual-state audits and weight-free portable numeric replay cover different scopes. Equalization checks 320 adapter and 220 head states originally, Vision 72 states, Text 156 states, and tabular 48 trained identities across 84 weight files (with a separate 78-selected-artifact integrity overlay). Portable replay loads zero model states. The study READMEs state exact counts and limitations; no independent retraining, encoder extraction, external-data replication or broad architecture-isolated superiority follows from these audits.
+| Study directory | Completed fitted models | Confirmation readouts | Primary paired comparisons |
+| --- | --- | ---: | ---: |
+| [Equalization](equalization/) | 320 tuning adapters and 220 separately fitted linear heads | 660 | 6 |
+| [Vision](vision/) | 12 tuning and 60 final fits | 120 | 5 |
+| [Text](text/) | 26 tuning and 130 final fits | 190 | 8 |
+| [Tabular](tabular/) | 8 tuning and 40 final fits | 80 | 3 |
 
-Text has one explicit Git-only presentation map for 13 global configuration and 130 calibration records. It preserves original bundle paths and bytes for raw replay. Equalization's ten per-seed amendment `metrics.json` directories keep their original path structure. Text's separately scanned execution companion records the checkpoint-RNG decode recovery without changing scientific choices or training artifacts.
+Named readouts and uniform-prior aliases are not independent fitted models. Vision additionally retains 60 official-test exploratory readouts; Text retains 100. Current-round confirmation protects this round's selection, while historical model/source reuse and foundation-model pretraining remain limitations. The report explains the decision-offset selection rules, selected-pipeline learning-rate differences, cached-feature BCL adaptation and encoder-package confounding. Decision offsets were selected by macro-F1; the studies do not establish probability calibration or a fully matched GAN-versus-ViT intervention.
 
-Log-prior offsets were selected to improve decisions under macro-F1; they do not establish probability calibration. Paired seed intervals describe optimization variation conditional on the frozen partition and selected configurations, rather than external-data or hyperparameter-selection uncertainty. Exact sign-flip inference assumes paired sign exchangeability/symmetry under the null. Refer to the current study guides and separately bound report for method-specific findings and scope.
+This Git scope contains derived results, protocols, frozen choices, figures, the report and audit receipts. Files named `raw_evidence_catalog.json` describe complete **separate local weight-free raw bundles**; their multi-gigabyte predictions and source label/split arrays are not uploaded here. Full numeric replay needs that local archive and the unchanged bundle paths. No images, input text, tabular feature rows, tokens, feature caches, pretrained/trained weights or checkpoints are included in this Git evidence scope.
+
+Original working-run actual-state audits and portable replay have different coverage: 540 EQ states, 72 Vision states and 156 Text states were checked originally; Tabular covers 48 trained identities across 84 weight files, with a separate 78-selected-artifact integrity overlay. Portable replay loads zero model states. These receipts establish saved numeric and retained-state checks, not independent retraining, encoder extraction, external replication or manifest authenticity.
+
+Text's [143-record Git mapping](text/git_record_mapping.json) retains exact bytes while presenting 13 global configurations and 130 calibration records under compact unique names. The full archive keeps its original Text paths. Equalization's ten amendment seed directories are unchanged. Text operational compatibility companions remain outside its immutable raw archive tree; their narrow original-layout recovery scope is explained in the reproduction guide.
+
+The final presentation was assembled before a layout-only change to body spacing. Its historical builder SHA-256 resolves to [the preserved formatter](companions/report/build_followup_report_before_layout.py); [the public revision receipt](report/layout_revision.json) binds that formatter to the current reporting source without changing scientific evidence. `evidence.json` is the final presentation; the historical provenance filename `evidence.json` for its input is resolved by digest to the separately supplied `evidence_assembled.json`.
+
+Each study's derived manifest inventories its smaller Git set. [The root evidence catalog](root_evidence_manifest.json) inventories these report extras. Publication and combined ZIP creation are verified separately; preparing these files does not assert that either action has completed.

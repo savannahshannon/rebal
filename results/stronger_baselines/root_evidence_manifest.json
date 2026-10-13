@@ -1,0 +1,113 @@
+{
+  "all_page_visual_qa_sha256": "253f0d5c7991f854a09b48fc57adcecadb725e02ff65bf33bb23448571ecbd00",
+  "assembled_evidence_sha256": "54093543e648ac86fa5c81f313cbed48ea35e89661efdff2bc19a609b00aa9c0",
+  "destination": "local_evidence",
+  "files": [
+    {
+      "bytes": 4523,
+      "path": "README.md",
+      "role": "final_root_evidence_overview",
+      "sha256": "a4bb5f0e74d870af2fd710513bc009dffe9c9992e2d30cbd6b58e739b0a4b3f2"
+    },
+    {
+      "bytes": 38310,
+      "path": "companions/report/build_followup_report_before_layout.py",
+      "role": "historical_formatter_source_for_finalizer_provenance",
+      "sha256": "a2a4769e0fc2e7071f4c97a80335e6d1566bb21d26982991ececbf1d2e5594ed"
+    },
+    {
+      "bytes": 102945,
+      "path": "evidence.json",
+      "role": "final_source_bound_presentation",
+      "sha256": "95cfbff811f7f38d008d0e3c227c605ea3cd5d628e90e024331fcec9eafee8ac"
+    },
+    {
+      "bytes": 93240,
+      "path": "evidence_assembled.json",
+      "role": "original_assembled_evidence_by_recorded_input_digest",
+      "sha256": "54093543e648ac86fa5c81f313cbed48ea35e89661efdff2bc19a609b00aa9c0"
+    },
+    {
+      "bytes": 124584,
+      "path": "figures/rebal_followup_equalization_performance.png",
+      "role": "completed_scientific_figure",
+      "sha256": "39cadd7e81a4b3cb8a5d9c058ccca7c39c7120dbc0d2204de39664659e33d0b2"
+    },
+    {
+      "bytes": 377610,
+      "path": "figures/rebal_followup_paired_effects.png",
+      "role": "completed_scientific_figure",
+      "sha256": "cb3a8cbf0bca2c1dc0b67c9e82e3aca2a17227731579a4abfa646fbc8388cbd6"
+    },
+    {
+      "bytes": 85177,
+      "path": "figures/rebal_followup_tabular_performance.png",
+      "role": "completed_scientific_figure",
+      "sha256": "db56409d341c3f648be967c893ceb08dc94870c836a3269c0876240be6b2dca1"
+    },
+    {
+      "bytes": 189535,
+      "path": "figures/rebal_followup_text_performance.png",
+      "role": "completed_scientific_figure",
+      "sha256": "4a6030c6ed3e9f27d89dc04e371d295c7d214f30b24d2993b632e9cc06fe834c"
+    },
+    {
+      "bytes": 114058,
+      "path": "figures/rebal_followup_vision_performance.png",
+      "role": "completed_scientific_figure",
+      "sha256": "3cc757e97a456a6516d425822793efceb309cdaadd8d3cd7cce11a0ea8587ebb"
+    },
+    {
+      "bytes": 23595,
+      "path": "global_analysis.json",
+      "role": "verified_complete_22_comparison_analysis",
+      "sha256": "d7de2dfa20fc0baf7a60a83309f5a5a833b7ccc75539b6d23a37dcaa3d124ea6"
+    },
+    {
+      "bytes": 708483,
+      "path": "report/experimental_report.pdf",
+      "role": "completed_23_page_report",
+      "sha256": "bc7683dea024c76d25a1ec14c31f8fbcf9d6382608c68a1b2839e78c65ea467c"
+    },
+    {
+      "bytes": 2026,
+      "path": "report/figure_visual_qa.json",
+      "role": "all_five_scientific_figures_visual_qa",
+      "sha256": "62e26dca5ba3f7ba3726725a4a6dc92421b9bbc6f2b0d522cb0d4d2d633f4cb6"
+    },
+    {
+      "bytes": 1876,
+      "path": "report/layout_revision.json",
+      "role": "public_projection_of_layout_only_revision",
+      "sha256": "61f48caad17ebe0c0e8e8016e342abaeee9fc94b2b436d9065d1620a73354957"
+    },
+    {
+      "bytes": 1138,
+      "path": "report/numeric_qa.json",
+      "role": "completed_report_text_and_numeric_qa",
+      "sha256": "96a7af1f33443d9b4d174b82c24f3d001bd67e6dda5b57bb1fe4dd6190c04ee6"
+    },
+    {
+      "bytes": 1523,
+      "path": "report/visual_qa.json",
+      "role": "joined_all_23_page_visual_qa",
+      "sha256": "253f0d5c7991f854a09b48fc57adcecadb725e02ff65bf33bb23448571ecbd00"
+    },
+    {
+      "bytes": 15182,
+      "path": "reproduction/README.md",
+      "role": "final_reproduction_guide",
+      "sha256": "07ba9287e57d4d02d05be5f6b0cc3846a85bfdb3e4f18dbc122593efde86d54c"
+    }
+  ],
+  "git_publication_claimed": false,
+  "global_analysis_sha256": "d7de2dfa20fc0baf7a60a83309f5a5a833b7ccc75539b6d23a37dcaa3d124ea6",
+  "numeric_qa_sha256": "96a7af1f33443d9b4d174b82c24f3d001bd67e6dda5b57bb1fe4dd6190c04ee6",
+  "payload_scope": "Completed presentation/evidence/global analysis, report, five scientific figures, reproduction guide, public QA and layout-only historical formatter provenance. No raw arrays, states, private operations, scanner/producer scripts, fixtures or logs.",
+  "pdf_pages": 23,
+  "pdf_sha256": "bc7683dea024c76d25a1ec14c31f8fbcf9d6382608c68a1b2839e78c65ea467c",
+  "presentation_sha256": "95cfbff811f7f38d008d0e3c227c605ea3cd5d628e90e024331fcec9eafee8ac",
+  "scope": "explicit_publication_allowlist",
+  "status": "complete_four_study_report_extras_prepared_not_published",
+  "zip_creation_claimed": false
+}

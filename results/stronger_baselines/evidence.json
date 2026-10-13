@@ -1,0 +1,2515 @@
+{
+  "status": "all_studies_complete_independently_verified",
+  "completed_utc": "2026-10-13T03:02:53.213389+00:00",
+  "seeds": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19
+  ],
+  "studies": {
+    "equalization": {
+      "status": "independently_verified_complete",
+      "title": "Tiny ImageNet | EQ and stronger loss controls",
+      "source_sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705",
+      "evidence_files": [
+        {
+          "role": "aggregate",
+          "path": "equalization/aggregate.json",
+          "sha256": "d01fa2c535892c6d929afb4461b0abfd020c7624eeb0226f41ec57f64c434d27"
+        },
+        {
+          "role": "protocol",
+          "path": "equalization/protocol.json",
+          "sha256": "d20dcb79d09427be80f1ee183e40d12398f9c9924e3441574788d44d674f6daa"
+        },
+        {
+          "role": "independent_verification",
+          "path": "equalization/independent_verification.json",
+          "sha256": "4a16321367f3f798e9cda4fe7afe7765eb80151bec2e50950eb33c70c0669cb2"
+        },
+        {
+          "role": "amendment_verification",
+          "path": "equalization/amendment_verification.json",
+          "sha256": "a26d770419ffac1b09752ffa1890a02d899d2a7968f0714e917aa9d299f83144"
+        },
+        {
+          "role": "completion",
+          "path": "equalization/completion.json",
+          "sha256": "59d66ae6ab449bd52f80b87a65d4ec3d0935d15440065b41df80250b2a5c0c29"
+        },
+        {
+          "role": "selection",
+          "path": "equalization/public_amendment_inputs/selection.json",
+          "sha256": "0480ab8b293a95e17acadd031984a16e6b9892626eaec78e1507a511fff886eb"
+        },
+        {
+          "role": "analysis_amendment",
+          "path": "equalization/analysis_amendment.json",
+          "sha256": "78678ee383c2dfac3b1e96a26b38c6c6c2d73b7dad2ae3bf11d0bb9fa81241e4"
+        },
+        {
+          "role": "historical_aggregate",
+          "path": "equalization/historical_aggregate.json",
+          "sha256": "df5f65652c301032a3921894cbbb8132fc7f791fd4ee440e95d2f3129811648c"
+        },
+        {
+          "role": "portable_manifest",
+          "path": "equalization/portable/manifest.json",
+          "sha256": "d92ff60cbea0f2d5828fb0482bdfaefe5b79bb9cbce24eba34f6b114bdf1ab4f"
+        },
+        {
+          "role": "portable_verification",
+          "path": "equalization/portable/audit/portable_numeric_verification.json",
+          "sha256": "8667ab7e03a04bc2ba275af41aee38b67112ccd7d583f95d183d3e2b3be3eb36"
+        },
+        {
+          "role": "portable_amendment_reproduction",
+          "path": "equalization/portable/audit/amendment_reproduction.json",
+          "sha256": "7f64d1faa21ee2669602b55268afa097459cccdffdaa741149d23937ce28c4d0"
+        },
+        {
+          "role": "scientific_source",
+          "path": "equalization/portable/scripts/followup_eq.py",
+          "sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705"
+        },
+        {
+          "role": "package_manifest",
+          "path": "equalization/manifest.json",
+          "sha256": "2f15e761fd7a5d6ef737ff926bf967769b80d539eb72da00624181d7801aa1cf"
+        },
+        {
+          "role": "scientific_presentation_figure",
+          "path": "figures/rebal_followup_equalization_performance.png",
+          "sha256": "39cadd7e81a4b3cb8a5d9c058ccca7c39c7120dbc0d2204de39664659e33d0b2"
+        }
+      ],
+      "summary": [
+        {
+          "label": "Selected CE + LA",
+          "source_selector": {
+            "method": "ce__native_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.5668043329532713,
+              "sd": 0.0010011031686991741
+            },
+            "tail_f1": {
+              "mean": 0.463992726087158,
+              "sd": 0.003636460113681018
+            },
+            "accuracy": {
+              "mean": 0.55928,
+              "sd": 0.0025595355481458516
+            }
+          }
+        },
+        {
+          "label": "Selected Balanced Softmax",
+          "source_selector": {
+            "method": "balanced_softmax__native_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.557739296814123,
+              "sd": 0.0022971788320102723
+            },
+            "tail_f1": {
+              "mean": 0.47563641768014914,
+              "sd": 0.004684923026973912
+            },
+            "accuracy": {
+              "mean": 0.56435,
+              "sd": 0.002085798541459725
+            }
+          }
+        },
+        {
+          "label": "Selected cached-feature BCL adaptation",
+          "source_selector": {
+            "method": "bcl_dropout__native_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.5086969804602167,
+              "sd": 0.0030945885855914847
+            },
+            "tail_f1": {
+              "mean": 0.35616148238385703,
+              "sd": 0.0056649867530259275
+            },
+            "accuracy": {
+              "mean": 0.5323699999999999,
+              "sd": 0.00261833280288559
+            }
+          }
+        },
+        {
+          "label": "Natural sampler, EQ off; balanced objective",
+          "source_selector": {
+            "method": "natural_off__native"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.5375224553477288,
+              "sd": 0.0018815581269774463
+            },
+            "tail_f1": {
+              "mean": 0.46367948466018316,
+              "sd": 0.004035494265794147
+            },
+            "accuracy": {
+              "mean": 0.5498299999999999,
+              "sd": 0.0017807925825941149
+            }
+          }
+        },
+        {
+          "label": "Natural sampler, fixed EQ .8/.05",
+          "source_selector": {
+            "method": "natural_reference__native"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.537525447115364,
+              "sd": 0.001876328875064431
+            },
+            "tail_f1": {
+              "mean": 0.4636978414990631,
+              "sd": 0.003994723784486564
+            },
+            "accuracy": {
+              "mean": 0.54983,
+              "sd": 0.0017556575216520346
+            }
+          }
+        },
+        {
+          "label": "Class-uniform sampler, EQ off",
+          "source_selector": {
+            "method": "balanced_off__native"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.5375222410429558,
+              "sd": 0.002130430825571395
+            },
+            "tail_f1": {
+              "mean": 0.4630754867071614,
+              "sd": 0.0039793051847290765
+            },
+            "accuracy": {
+              "mean": 0.549955,
+              "sd": 0.0019199898726584854
+            }
+          }
+        },
+        {
+          "label": "Class-uniform sampler, fixed EQ .8/.05",
+          "source_selector": {
+            "method": "balanced_reference__native"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.5375408741501639,
+              "sd": 0.0021050714431715884
+            },
+            "tail_f1": {
+              "mean": 0.46310361702480785,
+              "sd": 0.00395437015331705
+            },
+            "accuracy": {
+              "mean": 0.5499649999999999,
+              "sd": 0.0018897457206960232
+            }
+          }
+        }
+      ],
+      "result_notes": [
+        "Tiny ImageNet | EQ and stronger loss controls: among the listed confirmation readouts, Selected CE + LA has the largest mean macro-F1, 56.68% (sample SD 0.10 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence."
+      ],
+      "contrast_notes": [
+        "The declared family contains 6 paired comparisons. 2 reach exact sign-flip Holm p <= 0.05 within this study (0 positive and 2 negative contrasts in the stated subtraction direction). The table retains every comparison, including undetected effects.",
+        "The stronger-control contrasts compare complete validation-selected pipelines; their learning rates can differ. All fixed factorial contrasts use the same loss target and the same prespecified EQ treatment. These statements do not establish a full GAN-versus-ViT causal ablation."
+      ],
+      "source_rows": 110000,
+      "fit_rows": 15268,
+      "confirmation_rows": 20000,
+      "tuning_rows": 4000,
+      "calibration_rows": 4000,
+      "canonical_development_rows": 99973,
+      "fit_pool_rows": 71973,
+      "tuning_fits": 320,
+      "final_fits": 220,
+      "final_fit_scope": "220 new linear heads; selected/reference adapters reused from tuning",
+      "confirmation_seeds": 10,
+      "confirmation_readouts": 660,
+      "budget_label": "50 epochs/750 adapter updates; 2,000 head updates",
+      "method_notes": [
+        "The full cached image source contains 100,000 development and 10,000 official-evaluation images. EQ uses the canonicalized development partitions and does not score the official 10,000-image endpoint in this round. The 110,000-source count therefore includes an unused evaluation source; canonical development is reported separately.",
+        "This GAN-free study holds the frozen DeiT feature cache fixed and compares EQ, sampling and stronger loss controls. Natural and class-uniform factorial sampling target the same expected class-balanced cross-entropy from epoch one. Natural samples receive importance weight N/(C*n_c); class-uniform samples receive weight one.",
+        "The same expected loss does not imply identical stochastic optimizer updates: sample variance, momentum and clipping can differ. The fixed primary EQ treatment begins at fraction 0.8 of training and uses coefficient 0.05 in both samplers, with matched learning rate 0.05.",
+        "CE + logit adjustment, Balanced Softmax, and a BCL adaptation use six prespecified candidates each. BCL implements class-averaged contrastive denominators and all-class classifier-weight prototypes with two adapter-dropout views of cached vectors. It is a frozen-feature adaptation, not a reproduction of BCL image augmentation or its complete original architecture."
+      ],
+      "partition_table": [
+        [
+          "Canonical development",
+          99973,
+          "Deduplicate and exclude official-evaluation content matches before splitting"
+        ],
+        [
+          "Fit pool before thinning",
+          71973,
+          "Separate pool; nominal 100:1 thinning follows holdout construction"
+        ],
+        [
+          "Imbalanced fit",
+          15268,
+          "Gradient updates; fit-only feature standardization"
+        ],
+        [
+          "Tuning",
+          4000,
+          "Global candidate selection across ten seeds"
+        ],
+        [
+          "Calibration",
+          4000,
+          "Decision-offset selection; also used in CE tuning policy"
+        ],
+        [
+          "Confirmation",
+          20000,
+          "100 rows per class; accessed after selection freeze"
+        ]
+      ],
+      "selection_and_compute": [
+        "The 32 adapter configurations each run all ten seeds, giving 320 complete 50-epoch fits and 750 updates per adapter. Mean adjusted tuning macro-F1 selects CE, while the other rules use their declared effective priors. Calibration is development selection data, not untouched data reserved until after global configuration freeze.",
+        "Each EQ sampler searches six onset/coefficient settings; CE and Balanced Softmax each search six learning rates; BCL searches six coefficient/temperature settings. EQ-off factorial controls remain fixed and matched. Equal candidate counts do not make the selected EQ-on pipeline an unchanged-treatment factorial intervention.",
+        "After all configuration choices freeze, eleven named adapter policies per seed supply native readouts and two newly fitted linear heads. This gives 220 new heads and 660 named raw/adjusted readouts. Uniform-prior adjusted aliases repeat predictions. The CPU backend/thread count was chosen by fit-only throughput measurements.",
+        "A hash-bound analysis amendment was recorded before any confirmation scores. It retains four fixed-treatment factorial contrasts and adds two selected stronger-control contrasts to one six-member primary family; two selected EQ pipeline effects are secondary. Supplied timestamps and a preserved zero-confirmation counter establish recorded ordering, without external time attestation.",
+        "The original audit verifies all 320 adapter and 220 linear-head states. A separate local weight-free replay verifies all 320 saved tuning captures, 660 confirmation readouts and 330 decision-offset curves with zero model-state loads. It independently regenerates the clean development split, rank and thinning; it does not recompute feature extraction or fit-scaler estimation."
+      ],
+      "secondary_tables": [
+        {
+          "source_kind": "selected_EQ_secondary",
+          "source_selectors": [
+            {
+              "comparison": "selected_natural_EQ_pipeline_effect"
+            },
+            {
+              "comparison": "selected_balanced_EQ_pipeline_effect"
+            }
+          ],
+          "headers": [
+            "Adaptive EQ pipeline contrast",
+            "Effect (pp)",
+            "Paired 95% CI (pp)",
+            "Exact p"
+          ],
+          "rows": [
+            [
+              "Selected natural EQ on minus off",
+              "+0.0003",
+              "[-0.0136, +0.0142]",
+              "0.962891"
+            ],
+            [
+              "Selected class-uniform EQ on minus off",
+              "-0.0105",
+              "[-0.0386, +0.0176]",
+              "0.337891"
+            ]
+          ],
+          "widths": [
+            0.44,
+            0.15,
+            0.27,
+            0.14
+          ],
+          "caption": "Secondary adaptive-pipeline effects use separately selected EQ coefficients/onsets. Exact p-values are unadjusted; these two effects are outside the six-member primary family. They do not define the fixed-treatment factorial interaction."
+        },
+        {
+          "source_kind": "EQ_head_diagnostic",
+          "source_selectors": [
+            {
+              "arm": "ce"
+            },
+            {
+              "arm": "balanced_softmax"
+            },
+            {
+              "arm": "bcl_dropout"
+            }
+          ],
+          "headers": [
+            "Selected representation",
+            "Native head",
+            "Natural refit head",
+            "ROS refit head"
+          ],
+          "rows": [
+            [
+              "Selected CE + LA",
+              "56.68 +/- 0.10",
+              "55.66 +/- 0.27",
+              "52.34 +/- 0.24"
+            ],
+            [
+              "Selected Balanced Softmax",
+              "55.77 +/- 0.23",
+              "55.80 +/- 0.29",
+              "52.44 +/- 0.26"
+            ],
+            [
+              "Selected BCL adaptation",
+              "50.87 +/- 0.31",
+              "54.29 +/- 0.24",
+              "52.81 +/- 0.21"
+            ]
+          ],
+          "widths": [
+            0.34,
+            0.22,
+            0.22,
+            0.22
+          ],
+          "caption": "Secondary confirmation macro-F1 (%), mean +/- sample SD. Natural and ROS readouts fit new linear classifiers for 2,000 updates on each fixed representation; ROS resamples actual fit vectors. Head changes can alter descriptive model ranking. These readouts are not additional independent encoder fits."
+        }
+      ],
+      "figure": "figures/rebal_followup_equalization_performance.png"
+    },
+    "vision": {
+      "status": "independently_verified_complete",
+      "title": "Tiny ImageNet | encoder and partial-tuning controls",
+      "source_sha256": "20711dd400a1e2c1c926344c91aec8c9bc1157546078a1cf6bf0c67665c6be3f",
+      "evidence_files": [
+        {
+          "role": "aggregate",
+          "path": "vision/run/aggregate.json",
+          "sha256": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539"
+        },
+        {
+          "role": "protocol",
+          "path": "vision/run/protocol.json",
+          "sha256": "8fa0a078c2fcb1ec24eb08682b714919822c117ac32204a773f1d1d053a194f2"
+        },
+        {
+          "role": "independent_verification",
+          "path": "vision/audit/independent_verification.json",
+          "sha256": "1bc83746f84a34f690ab0eaabb0dfe7d363ae35acada62f1dad3dc49a6be3c03"
+        },
+        {
+          "role": "checkpoint_verification",
+          "path": "vision/audit/actual_checkpoint_verification.json",
+          "sha256": "831c11c8a1746ea44dd7ef52d005a99046cc91976d9a34a4494b8fc668e4f0c3"
+        },
+        {
+          "role": "portable_verification",
+          "path": "vision/audit/portable_numeric_verification.json",
+          "sha256": "2e7d60c5f17ab8bafa85af647d6cad0eaeb8899aa3df0e77f189e5e62e8b28e9"
+        },
+        {
+          "role": "selection",
+          "path": "vision/run/selection.json",
+          "sha256": "1bc9cebf8a0303dafd28f544a1a54b65f15c3fe3ee7041bb90ddb7a0331a74b9"
+        },
+        {
+          "role": "scientific_source",
+          "path": "vision/scripts/benchmark_vision_followup.py",
+          "sha256": "20711dd400a1e2c1c926344c91aec8c9bc1157546078a1cf6bf0c67665c6be3f"
+        },
+        {
+          "role": "partition",
+          "path": "vision/data/partition.npz",
+          "sha256": "9313a1e24ce50dd4eb0818fff62d43e6084c15f5f59502980fdb9540d0104d69"
+        },
+        {
+          "role": "documentation",
+          "path": "vision/docs/vision_followup.md",
+          "sha256": "11e19366d2bd7d85f4d50bc9be49aa4069791ac95f270b77a0f797944b6dbebb"
+        },
+        {
+          "role": "package_manifest",
+          "path": "vision/manifest.json",
+          "sha256": "5eb0b1a204bfe83b2df3e50accbdab3228bb1948ad788e570c8056c492cdaad8"
+        },
+        {
+          "role": "scientific_presentation_figure",
+          "path": "figures/rebal_followup_vision_performance.png",
+          "sha256": "3cc757e97a456a6516d425822793efceb309cdaadd8d3cd7cce11a0ea8587ebb"
+        }
+      ],
+      "summary": [
+        {
+          "label": "Frozen DeiT / CE + LA",
+          "source_selector": {
+            "arm": "deit_frozen__ce",
+            "endpoint": "confirmation_la"
+          },
+          "metrics": {
+            "accuracy": {
+              "mean": 0.622765,
+              "sd": 0.0012804187683028447
+            },
+            "macro_f1": {
+              "mean": 0.6223740216445316,
+              "sd": 0.001051573548377917
+            },
+            "tail_f1": {
+              "mean": 0.5702864847779329,
+              "sd": 0.003630447902271346
+            }
+          }
+        },
+        {
+          "label": "Frozen DeiT / Balanced Softmax",
+          "source_selector": {
+            "arm": "deit_frozen__balanced_softmax",
+            "endpoint": "confirmation_la"
+          },
+          "metrics": {
+            "accuracy": {
+              "mean": 0.62122,
+              "sd": 0.0006156297588648443
+            },
+            "macro_f1": {
+              "mean": 0.6173817839340199,
+              "sd": 0.0007549592124533404
+            },
+            "tail_f1": {
+              "mean": 0.5723982759994886,
+              "sd": 0.0017408059679330135
+            }
+          }
+        },
+        {
+          "label": "Last-two-block DeiT / CE + LA",
+          "source_selector": {
+            "arm": "deit_last2__ce",
+            "endpoint": "confirmation_la"
+          },
+          "metrics": {
+            "accuracy": {
+              "mean": 0.626565,
+              "sd": 0.0021869626324095078
+            },
+            "macro_f1": {
+              "mean": 0.6283221110029553,
+              "sd": 0.001227838360941478
+            },
+            "tail_f1": {
+              "mean": 0.5774534030256975,
+              "sd": 0.0033032876727698223
+            }
+          }
+        },
+        {
+          "label": "Last-two-block DeiT / Balanced Softmax",
+          "source_selector": {
+            "arm": "deit_last2__balanced_softmax",
+            "endpoint": "confirmation_la"
+          },
+          "metrics": {
+            "accuracy": {
+              "mean": 0.6276300000000001,
+              "sd": 0.0011578716106143364
+            },
+            "macro_f1": {
+              "mean": 0.6251892658501369,
+              "sd": 0.0015061433161347552
+            },
+            "tail_f1": {
+              "mean": 0.5818478673332822,
+              "sd": 0.0022789516814769257
+            }
+          }
+        },
+        {
+          "label": "Frozen DINOv2 / CE + LA",
+          "source_selector": {
+            "arm": "dino_frozen__ce",
+            "endpoint": "confirmation_la"
+          },
+          "metrics": {
+            "accuracy": {
+              "mean": 0.74498,
+              "sd": 0.0016660332129542457
+            },
+            "macro_f1": {
+              "mean": 0.7459002030481786,
+              "sd": 0.001601481781424289
+            },
+            "tail_f1": {
+              "mean": 0.692362546996558,
+              "sd": 0.003312714930112498
+            }
+          }
+        },
+        {
+          "label": "Frozen DINOv2 / Balanced Softmax",
+          "source_selector": {
+            "arm": "dino_frozen__balanced_softmax",
+            "endpoint": "confirmation_la"
+          },
+          "metrics": {
+            "accuracy": {
+              "mean": 0.73834,
+              "sd": 0.0013025189271390898
+            },
+            "macro_f1": {
+              "mean": 0.7340652712378937,
+              "sd": 0.001252089942433319
+            },
+            "tail_f1": {
+              "mean": 0.6852568024511383,
+              "sd": 0.002328350630635413
+            }
+          }
+        }
+      ],
+      "result_notes": [
+        "Tiny ImageNet | encoder and partial-tuning controls: among the listed confirmation readouts, Frozen DINOv2 / CE + LA has the largest mean macro-F1, 74.59% (sample SD 0.16 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence."
+      ],
+      "contrast_notes": [
+        "The declared family contains 5 paired comparisons. 5 reach exact sign-flip Holm p <= 0.05 within this study (2 positive and 3 negative contrasts in the stated subtraction direction). The table retains every comparison, including undetected effects.",
+        "DINO versus DeiT compares model packages that differ in pretraining, width, patch size and capacity. Partial versus frozen DeiT changes trainable parameters and optimization. Neither contrast isolates architecture alone; the partial model is not full end-to-end fine-tuning. Reported wrapper parameter counts do not represent the whole pretrained backbone."
+      ],
+      "source_rows": 110000,
+      "fit_rows": 15268,
+      "confirmation_rows": 20000,
+      "tuning_rows": 4000,
+      "calibration_rows": 4000,
+      "tuning_fits": 12,
+      "final_fits": 60,
+      "confirmation_readouts": 120,
+      "official_exploratory_readouts": 60,
+      "budget_label": "15 epochs; 1,800 AdamW updates per fit",
+      "method_notes": [
+        "Six arms combine frozen DeiT-tiny, last-two-block DeiT-tiny tuning, or frozen DINOv2 ViT-S/14 with CE or Balanced Softmax. Frozen models train linear heads. Partial DeiT tunes the final two blocks, final norm and classifier; the first ten blocks stay frozen in evaluation mode.",
+        "All original 64x64 images use the same deterministic RGB, bicubic resize/crop to 224, and ImageNet normalization. Enlarging images adds no observed detail. This study introduces no stochastic image augmentation.",
+        "The FP16 frozen DeiT prefix has a train-only reconstruction-error gate. Its final trainable block computes only the CLS query/output while retaining all keys/values; zero-dropout outputs and gradients are independently checked against the complete block. DINO uses its own fit-only feature scaler."
+      ],
+      "partition_table": [
+        [
+          "Full source",
+          110000,
+          "100,000 development plus 10,000 official evaluation images"
+        ],
+        [
+          "Imbalanced fit",
+          15268,
+          "Same documented fixed image partition as EQ"
+        ],
+        [
+          "Tuning",
+          4000,
+          "Learning-rate and checkpoint selection"
+        ],
+        [
+          "Calibration",
+          4000,
+          "Decision adjustment within checkpoint/LR selection"
+        ],
+        [
+          "Confirmation",
+          20000,
+          "Primary calibrated macro-F1 after complete global freeze"
+        ],
+        [
+          "Official evaluation",
+          10000,
+          "Exploratory only"
+        ]
+      ],
+      "selection_and_compute": [
+        "Dedicated tuning seed 901 evaluates two learning rates for each of six arms, followed by ten final seeds. Every fit completes 15 epochs, batch 128, 120 updates per epoch and 1,800 total updates. AdamW uses warmup/cosine decay, weight decay 0.01 and clipping at 1.",
+        "CE selects a calibration-set decision offset at every epoch and ranks checkpoints by adjusted tuning macro-F1. Consequently calibration is development data in this study. All six learning rates and all sixty final fit receipts are verified before any confirmation or official-evaluation outcome is opened.",
+        "Frozen head learning rates are 0.001/0.003; partial encoder rates are 0.00001/0.00003 with a 100-fold head multiplier. Completed training budgets are retained even when an earlier checkpoint wins. Balanced Softmax has a uniform effective prior, so its confirmation LA view repeats raw predictions.",
+        "Independent numeric replay covers sixty final models, 180 named readouts and 72 tuning/final development captures. A separate read-only audit loads all 72 actual checkpoint states and verifies tensor inventories, trainable/frozen eligibility, paired initialization, AdamW moments/groups and all 1,800 steps. The portable bundle loads zero states and does not reconstruct encoder inference."
+      ],
+      "figure": "figures/rebal_followup_vision_performance.png"
+    },
+    "text": {
+      "status": "independently_verified_complete",
+      "title": "DBpedia-14 | contextual and selective-tuning controls",
+      "source_sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c",
+      "evidence_files": [
+        {
+          "role": "aggregate",
+          "path": "text/experiment/aggregate.json",
+          "sha256": "51d33f599706786a918bf1a2c32f748f47185d7fb5ada74eb90cf44365f5a060"
+        },
+        {
+          "role": "protocol",
+          "path": "text/experiment/protocol.json",
+          "sha256": "d9a6fd0b61e986ab3d7a3daaf9186885333a30824ee6f84b409a3e57f95fddb0"
+        },
+        {
+          "role": "independent_verification",
+          "path": "text/audits/original_independent_verification.json",
+          "sha256": "d4b967cfa6815c03dd9de2114adb151277fa7658c6e1c7c3fd674e1f9f6087e9"
+        },
+        {
+          "role": "portable_verification",
+          "path": "text/audits/portable_numeric_verification.json",
+          "sha256": "9088485a783ed08e8d591fb9d10c81628b36525984b00fd96833f3892bd00c93"
+        },
+        {
+          "role": "metadata",
+          "path": "text/data/dataset.json",
+          "sha256": "de6dde917bbff7c62ec1469ef7101f61104456bf11f9ed255f8dea6735ace2a9"
+        },
+        {
+          "role": "partition",
+          "path": "text/experiment/partition.npz",
+          "sha256": "5c6fda6d149a2b3247d291baeec42474e959e19402192d496ab4a1d79c3e2632"
+        },
+        {
+          "role": "source_partition",
+          "path": "text/data/split.npz",
+          "sha256": "b274dd1c2be1ae13acbddcc42f2d4efeab34ef224353d171611024a8f3884ff1"
+        },
+        {
+          "role": "scientific_source",
+          "path": "text/code/scripts/benchmark_text_followup.py",
+          "sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c"
+        },
+        {
+          "role": "documentation",
+          "path": "text/code/docs/text_followup.md",
+          "sha256": "7efcaea3566b20fecadf94c7c07eb8ef5b09f859e0ebb7593eb04c0ed5e7aa42"
+        },
+        {
+          "role": "package_manifest",
+          "path": "text/manifest.json",
+          "sha256": "db1986e5d411dcfcb7a721bbbb3c8d55d37d1c02fc684692c745a5cd3c229dbb"
+        },
+        {
+          "role": "scientific_presentation_figure",
+          "path": "figures/rebal_followup_text_performance.png",
+          "sha256": "4a6030c6ed3e9f27d89dc04e371d295c7d214f30b24d2993b632e9cc06fe834c"
+        }
+      ],
+      "summary": [
+        {
+          "label": "Frozen BERT mean / CE + LA",
+          "source_selector": {
+            "method": "bert_ce_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9868863819119909,
+              "sd": 0.00014576496484228226
+            },
+            "tail_f1": {
+              "mean": 0.9844868963836868,
+              "sd": 0.0003789361490049293
+            },
+            "accuracy": {
+              "mean": 0.9868875000000001,
+              "sd": 0.0001455719231419777
+            }
+          }
+        },
+        {
+          "label": "Frozen BERT mean / Balanced Softmax",
+          "source_selector": {
+            "method": "bert_bsoftmax"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9870335346125658,
+              "sd": 0.00012794181456798355
+            },
+            "tail_f1": {
+              "mean": 0.9847809167973048,
+              "sd": 0.0002308549444545777
+            },
+            "accuracy": {
+              "mean": 0.9870339285714287,
+              "sd": 0.0001280661367191033
+            }
+          }
+        },
+        {
+          "label": "Frozen BERT mean / natural EQ + LA",
+          "source_selector": {
+            "method": "bert_natural_eq_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9870343295799126,
+              "sd": 0.00019262948779774655
+            },
+            "tail_f1": {
+              "mean": 0.9846925168826417,
+              "sd": 0.00022996082839205572
+            },
+            "accuracy": {
+              "mean": 0.9870321428571428,
+              "sd": 0.00019229046669755714
+            }
+          }
+        },
+        {
+          "label": "Frozen BERT mean / class-uniform CE",
+          "source_selector": {
+            "method": "bert_balanced_ce"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9853853022747486,
+              "sd": 0.00022409346076998082
+            },
+            "tail_f1": {
+              "mean": 0.9826685136790795,
+              "sd": 0.0003702204960858486
+            },
+            "accuracy": {
+              "mean": 0.9853642857142857,
+              "sd": 0.00022449237269188518
+            }
+          }
+        },
+        {
+          "label": "Frozen BERT mean / class-uniform EQ",
+          "source_selector": {
+            "method": "bert_balanced_eq"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9855854230823956,
+              "sd": 0.00012387210515512684
+            },
+            "tail_f1": {
+              "mean": 0.9828622208573561,
+              "sd": 0.0002128481756847641
+            },
+            "accuracy": {
+              "mean": 0.9855642857142858,
+              "sd": 0.00012377517838639757
+            }
+          }
+        },
+        {
+          "label": "Random mean-pooled text / CE + LA",
+          "source_selector": {
+            "method": "mean_ce_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.8249473543846271,
+              "sd": 0.022554450169010726
+            },
+            "tail_f1": {
+              "mean": 0.6998057950228554,
+              "sd": 0.03581053479904505
+            },
+            "accuracy": {
+              "mean": 0.8264553571428571,
+              "sd": 0.021798913270074632
+            }
+          }
+        },
+        {
+          "label": "Random mean-pooled text / Balanced Softmax",
+          "source_selector": {
+            "method": "mean_bsoftmax"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.8419471315793137,
+              "sd": 0.019892628370732437
+            },
+            "tail_f1": {
+              "mean": 0.7104844602168413,
+              "sd": 0.0328210816078452
+            },
+            "accuracy": {
+              "mean": 0.8427053571428573,
+              "sd": 0.018927587294721934
+            }
+          }
+        },
+        {
+          "label": "Matched frozen BERT CLS / CE + LA",
+          "source_selector": {
+            "method": "last0_ce_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9717795903357631,
+              "sd": 0.0008185352368564906
+            },
+            "tail_f1": {
+              "mean": 0.9615789530596495,
+              "sd": 0.00206778724728063
+            },
+            "accuracy": {
+              "mean": 0.9717410714285715,
+              "sd": 0.0008173748317915519
+            }
+          }
+        },
+        {
+          "label": "Matched frozen BERT CLS / Balanced Softmax",
+          "source_selector": {
+            "method": "last0_bsoftmax"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9721329077643424,
+              "sd": 0.0008193362820708714
+            },
+            "tail_f1": {
+              "mean": 0.9621596802061442,
+              "sd": 0.002091956255251485
+            },
+            "accuracy": {
+              "mean": 0.9720964285714284,
+              "sd": 0.0008222132208246499
+            }
+          }
+        },
+        {
+          "label": "Last-one-block BERT CLS / CE + LA",
+          "source_selector": {
+            "method": "last1_ce_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9896900100944842,
+              "sd": 0.0002670638179637532
+            },
+            "tail_f1": {
+              "mean": 0.9877168156476985,
+              "sd": 0.0005497445966445723
+            },
+            "accuracy": {
+              "mean": 0.9896928571428573,
+              "sd": 0.0002655055503730633
+            }
+          }
+        },
+        {
+          "label": "Last-one-block BERT CLS / Balanced Softmax",
+          "source_selector": {
+            "method": "last1_bsoftmax"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9896280533129133,
+              "sd": 0.0002568309082801687
+            },
+            "tail_f1": {
+              "mean": 0.9879312353233134,
+              "sd": 0.00045670462356999376
+            },
+            "accuracy": {
+              "mean": 0.9896232142857142,
+              "sd": 0.0002574636997507388
+            }
+          }
+        },
+        {
+          "label": "Last-two-block BERT CLS / CE + LA",
+          "source_selector": {
+            "method": "last2_ce_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9904961056761271,
+              "sd": 0.0002244983647177772
+            },
+            "tail_f1": {
+              "mean": 0.988705563080303,
+              "sd": 0.0004568705049855262
+            },
+            "accuracy": {
+              "mean": 0.9904982142857144,
+              "sd": 0.00022247098463007295
+            }
+          }
+        },
+        {
+          "label": "Last-two-block BERT CLS / Balanced Softmax",
+          "source_selector": {
+            "method": "last2_bsoftmax"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9903564900675722,
+              "sd": 0.0001319647971412063
+            },
+            "tail_f1": {
+              "mean": 0.9888319745855683,
+              "sd": 0.0003148131022069261
+            },
+            "accuracy": {
+              "mean": 0.99035,
+              "sd": 0.0001331525134450469
+            }
+          }
+        }
+      ],
+      "result_notes": [
+        "DBpedia-14 | contextual and selective-tuning controls: among the listed confirmation readouts, Last-two-block BERT CLS / CE + LA has the largest mean macro-F1, 99.05% (sample SD 0.02 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence."
+      ],
+      "contrast_notes": [
+        "The declared family contains 8 paired comparisons. 8 reach exact sign-flip Holm p <= 0.05 within this study (8 positive and 0 negative contrasts in the stated subtraction direction). The table retains every comparison, including undetected effects.",
+        "Each text arm selects its own learning rate. EQ-on/off and Balanced Softmax/CE contrasts therefore compare selected pipelines and can include learning-rate differences; they do not isolate a loss toggle. Selective tuning is compared to the matched three-epoch frozen CLS group. Its contrast includes dropout, precision and backend effects. The fifty-epoch mean-pooled BERT baseline is a predictive reference; different pooling and budgets preclude attributing that difference solely to encoder tuning. Text sampler objectives differ, so their EQ contrasts do not establish an unchanged-objective factorial interaction."
+      ],
+      "source_rows": 630000,
+      "fit_rows": 106232,
+      "confirmation_rows": 56000,
+      "tuning_rows": 28000,
+      "calibration_rows": 28000,
+      "canonical_development_rows": 559860,
+      "tuning_fits": 26,
+      "final_fits": 130,
+      "confirmation_readouts": 190,
+      "native_exploratory_readouts": 100,
+      "budget_label": "50 epochs/5,200 updates or matched 3 epochs/318 updates",
+      "method_notes": [
+        "Thirteen text arms retrain random mean-pooled controls and official pretrained BERT controls on the new partitions. Seven predictive frozen/mean arms use fifty epochs; matched frozen CLS, last-one-block and last-two-block BERT each pair CE and Balanced Softmax under the same three-epoch batch lists.",
+        "The fifty-epoch BERT representation is attention-masked contextual mean pooling with a fit-only scaler. The matched/partial group uses final CLS and its own shared fit-only scaler. The random mean baseline uses a fit-only 50,000-word vocabulary, a 128-word cap and a randomly initialized embedding-bag model. Word caps and WordPiece positions are different text units.",
+        "Natural sampling uses the empirical fit distribution; class-uniform sampling uses replacement without an extra class weight. Balanced Softmax uses naturally sampled CE(logits + log(fit counts)) and evaluates raw logits with uniform effective prior. Natural CE/EQ alone receive calibration-selected LA. The text EQ coefficient is 0.05 throughout all fifty adapter epochs; the image fixed-reference treatment starts at fraction 0.8.",
+        "The matched frozen CLS control uses CPU float32; selective tuning uses MPS float16 autocast with float32 master weights. Activating transformer dropout is part of the partial regime. The prospective CLS-only final-layer computation preserves all K/V tokens and is output/gradient equivalent at zero dropout; training dropout has the same marginal law with changed RNG ordering."
+      ],
+      "partition_table": [
+        [
+          "Full native source",
+          630000,
+          "560,000 development and 70,000 native test records"
+        ],
+        [
+          "Canonical development",
+          559860,
+          "Normalized full-record/content exact deduplication before partitioning"
+        ],
+        [
+          "Long-tail fit",
+          106232,
+          "14 classes; nominal 100:1 thinning; fit-only vocabulary/scalers"
+        ],
+        [
+          "Tuning",
+          28000,
+          "2,000 records per class; global LR selection only"
+        ],
+        [
+          "Calibration",
+          28000,
+          "2,000 per class; freeze CE decision offset before confirmation inference"
+        ],
+        [
+          "Confirmation",
+          56000,
+          "4,000 per class; primary balanced train-derived holdout"
+        ],
+        [
+          "Native test",
+          70000,
+          "Exploratory for frozen/mean arms only"
+        ]
+      ],
+      "selection_and_compute": [
+        "Two full-budget learning-rate candidates per arm at dedicated seed 9 give 26 tuning fits. One global method learning rate is frozen before final seeds 10-19. Tune-only macro-F1 selects final-epoch candidates; all thirteen choices and all 130 final fits pass a whole-study gate before confirmation.",
+        "The fifty-epoch methods complete 5,200 updates; the matched/partial methods complete 318 updates on identical three-epoch fit coverage. Length buckets remove masked padding while keeping source IDs/valid tokens. Batch/backend scheduling was selected with fit-only throughput pilots.",
+        "Each CE calibration choice is persisted before its confirmation inference. All 190 named confirmation readouts and 100 exploratory native readouts retain exact labels, row IDs/ranks, logits, decision priors/tau and histories. Named raw/adjusted views are not additional independent encoder training fits.",
+        "Independent replay verifies 26 global tuning captures, 130 final cells, source-row binding, all metrics and the eight-member primary family. Its original audit loads all 156 candidate/final checkpoint states; the portable audit loads zero and explicitly declares 156 omitted states."
+      ],
+      "figure": "figures/rebal_followup_text_performance.png"
+    },
+    "tabular": {
+      "status": "independently_verified_complete",
+      "title": "Covertype | tabular model and objective controls",
+      "source_sha256": "a75df97f8351324e047bf19b298d9e421e489a6f9ffc679248580199c7869a67",
+      "evidence_files": [
+        {
+          "role": "aggregate",
+          "path": "tabular/aggregate.json",
+          "sha256": "a08f2f433bfe51740949ccc0e1057c431a6c65ba50c2d7fbc02afb2e480914e7"
+        },
+        {
+          "role": "protocol",
+          "path": "tabular/protocol.json",
+          "sha256": "68a171650e6baf408f83aff4861db397d2249149be8a0b75cce40ceb3ccd78ab"
+        },
+        {
+          "role": "independent_verification",
+          "path": "tabular/production_model_provenance/verification.json",
+          "sha256": "2e01d2e80f6197e5776acf9ff6c3ef73aafebf2bd1f2bfaab6e7bcf15287767a"
+        },
+        {
+          "role": "checkpoint_verification",
+          "path": "tabular/production_model_provenance/checkpoint_audit_complete.json",
+          "sha256": "97800349a47fa55fff35e080f8252ea65b555b1315648b855a5935bb505c948e"
+        },
+        {
+          "role": "portable_verification",
+          "path": "tabular/portable_verification.json",
+          "sha256": "d781ea4be89917c5aa3d6980ed8987231caf84c12dcc736f5527148a5bd19a79"
+        },
+        {
+          "role": "statistical_verification",
+          "path": "tabular/statistical_replay.json",
+          "sha256": "a56ac4ce3707924dded985ebaa2336c21318de06a729c640e6280365b87209f3"
+        },
+        {
+          "role": "independent_prediction_verification",
+          "path": "tabular/independent_prediction_verification.json",
+          "sha256": "c36935bcc8d7f01e98293bca67f4eace38af31155dad98e4795dad3a53d7232d"
+        },
+        {
+          "role": "independent_prediction_helper",
+          "path": "tabular/scripts/verify_tabular_followup_predictions.py",
+          "sha256": "31e86316c15a71ac50646231f0442dd9a58c9ef4c7b7704a52e6031bf3912930"
+        },
+        {
+          "role": "selection",
+          "path": "tabular/frozen_selection.json",
+          "sha256": "bf272f6b81b52b3ce97bad8eb72e8454653901c0da3b57d774b3bd97015ddb3e"
+        },
+        {
+          "role": "metadata",
+          "path": "tabular/data/metadata.json",
+          "sha256": "125a46307de5c4caa031f7c490186ec86cc8b4e6b5cbb02c0041c6e18c09470b"
+        },
+        {
+          "role": "partition",
+          "path": "tabular/data/split.npz",
+          "sha256": "94f340658612b49ab77b67422500120633feb45232a80af0bcc351e9a4299652"
+        },
+        {
+          "role": "source_labels",
+          "path": "tabular/data/labels.npy",
+          "sha256": "9acdb93911b00f09e470cf825a958be8cabb8f9e52901e9d4906eff8e10659e5"
+        },
+        {
+          "role": "scaler",
+          "path": "tabular/data/scaler.npz",
+          "sha256": "bf35b10b8eea0dc4d6b9961b79499532e561bbaea2831d64769d0004bda8a514"
+        },
+        {
+          "role": "scientific_source",
+          "path": "tabular/scripts/benchmark_tabular_followup.py",
+          "sha256": "a75df97f8351324e047bf19b298d9e421e489a6f9ffc679248580199c7869a67"
+        },
+        {
+          "role": "documentation",
+          "path": "tabular/docs/tabular_followup.md",
+          "sha256": "2af01338540570313e0d8925045feccfeb38edcb77393b3ea079cf8150ec57c0"
+        },
+        {
+          "role": "package_manifest",
+          "path": "tabular/bundle_manifest.json",
+          "sha256": "63644cb782238e2757ce334d0df867dbffe8964051a8d175ea18358597c3ed46"
+        },
+        {
+          "role": "scientific_presentation_figure",
+          "path": "figures/rebal_followup_tabular_performance.png",
+          "sha256": "db56409d341c3f648be967c893ceb08dc94870c836a3269c0876240be6b2dca1"
+        }
+      ],
+      "summary": [
+        {
+          "label": "Natural CE MLP + LA",
+          "source_selector": {
+            "method": "mlp_ce_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.9153632095578341,
+              "sd": 0.001523502069037266
+            },
+            "tail_f1": {
+              "mean": 0.8545925375805133,
+              "sd": 0.0055172077174699945
+            },
+            "accuracy": {
+              "mean": 0.9446257098606091,
+              "sd": 0.000987027998477865
+            }
+          }
+        },
+        {
+          "label": "Effective-number MLP + LA",
+          "source_selector": {
+            "method": "mlp_cb_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.880365699260231,
+              "sd": 0.0016713408436225727
+            },
+            "tail_f1": {
+              "mean": 0.7903481192728234,
+              "sd": 0.0044881021144704495
+            },
+            "accuracy": {
+              "mean": 0.9173601789709173,
+              "sd": 0.000989292315927071
+            }
+          }
+        },
+        {
+          "label": "FT-Transformer + LA",
+          "source_selector": {
+            "method": "ft_transformer_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.8980508830730691,
+              "sd": 0.0032831724919271327
+            },
+            "tail_f1": {
+              "mean": 0.8287236413931248,
+              "sd": 0.006169220844477037
+            },
+            "accuracy": {
+              "mean": 0.9365135088625023,
+              "sd": 0.001782502290085774
+            }
+          }
+        },
+        {
+          "label": "XGBoost + LA",
+          "source_selector": {
+            "method": "xgboost_la"
+          },
+          "metrics": {
+            "macro_f1": {
+              "mean": 0.931042194944653,
+              "sd": 0.0004946807064377703
+            },
+            "tail_f1": {
+              "mean": 0.8873066971461163,
+              "sd": 0.0015941577172710122
+            },
+            "accuracy": {
+              "mean": 0.9446979865771812,
+              "sd": 0.0004527785400194767
+            }
+          }
+        }
+      ],
+      "result_notes": [
+        "Covertype | tabular model and objective controls: among the listed confirmation readouts, XGBoost + LA has the largest mean macro-F1, 93.10% (sample SD 0.05 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence."
+      ],
+      "contrast_notes": [
+        "The declared family contains 3 paired comparisons. 3 reach exact sign-flip Holm p <= 0.05 within this study (1 positive and 2 negative contrasts in the stated subtraction direction). The table retains every comparison, including undetected effects.",
+        "The three primary effects compare adjusted FT, XGBoost and effective-number MLP to adjusted natural CE MLP. Natural-prior confirmation macro-F1 is primary. Uniform-prior reweighting is a secondary diagnostic on the same records, not another independent dataset."
+      ],
+      "source_rows": 581012,
+      "fit_rows": 406704,
+      "confirmation_rows": 58110,
+      "tuning_rows": 58099,
+      "calibration_rows": 58099,
+      "tuning_fits": 8,
+      "final_fits": 40,
+      "confirmation_readouts": 80,
+      "budget_label": "50 epochs; MLP 9,950/FT 19,900 updates; trees 600 rounds",
+      "method_notes": [
+        "Four families compare a natural CE MLP, effective-number-weighted MLP, a genuine FT-Transformer implementation and XGBoost histogram trees. This study retains the natural Covertype class frequencies and adds no synthetic observations.",
+        "Fit-only statistics standardize ten continuous variables. MLP/trees use all 54 original predictors; FT uses ten numeric feature tokens plus two categorical tokens that losslessly encode the four wilderness and forty soil indicators. Exact one-hot reconstruction is audited.",
+        "The FT implementation has numerical affine feature tokens, categorical embeddings/biases, CLS, and two attention/ReGLU blocks. It is an architecture-family implementation with disclosed settings, not the unmodified official RTDL code. Effective-number weighting applies throughout MLP fitting and is normalized to expected fit sample weight one."
+      ],
+      "partition_table": [
+        [
+          "Full source",
+          581012,
+          "All canonical UCI records; original row IDs retained"
+        ],
+        [
+          "Fit",
+          406704,
+          "Class-stratified 70% floor; transform and gradients"
+        ],
+        [
+          "Tuning",
+          58099,
+          "10% floor; raw-logit checkpoint/configuration selection"
+        ],
+        [
+          "Calibration",
+          58099,
+          "10% floor; decision-offset selection after global configuration freeze"
+        ],
+        [
+          "Confirmation",
+          58110,
+          "Per-class remainder; primary natural-prior evaluation"
+        ]
+      ],
+      "selection_and_compute": [
+        "Dedicated tuning seed 9 evaluates two configurations per family, giving eight full-budget trials; ten final seeds give forty models and eighty raw/adjusted readouts. Neural models complete 50 AdamW epochs with five-epoch warmup/cosine decay; MLP batch 2048 gives 9,950 updates and FT batch 1024 gives 19,900 updates.",
+        "XGBoost completes 600 multiclass boosting rounds (4,200 trees); the tuning set selects the reported iteration among 50-round intervals through 600. Equal two-trial searches use model-specific budgets and do not claim equal FLOPs or wall time.",
+        "Raw-logit tuning macro-F1 selects configurations/checkpoints. All eight tuning captures and four selected family configurations freeze before calibration/confirmation. Macro-F1 decision offsets use the effective weighted prior for the weighted MLP and the fit-frequency prior for the other families.",
+        "The fresh confirmation partition overlaps 8,669 rows of the previous study's test partition. Shared CPU/MPS load and checkpoint resumption affect invocation timings; retained training time and actual phase wall time are separate records. Runtime records do not establish isolated efficiency.",
+        "The original metadata/checkpoint audit includes the scientific runner\u2019s numeric self-replay. A separate verifier imports no scientific runner and recomputes all forty final prediction cells, eighty raw/adjusted readouts, forty eight-candidate decision-offset curves, scalar and per-class metrics with NumPy confusion matrices crosschecked against scikit-learn. The portable final prediction replay loads zero model weights and does not reconstruct inference."
+      ],
+      "figure": "figures/rebal_followup_tabular_performance.png"
+    }
+  },
+  "global_analysis": {
+    "status": "complete_replayed_global_sensitivity",
+    "family_size": 22,
+    "family_sizes": {
+      "equalization": 6,
+      "vision": 5,
+      "text": 8,
+      "tabular": 3
+    },
+    "seeds": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "comparisons": [
+      {
+        "study": "equalization",
+        "name": "fixed_natural_EQ_effect",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.00022198753511504243,
+          -6.210084995461607e-05,
+          -0.00022550757277672862,
+          9.688099630444924e-05,
+          -9.662705808877181e-05,
+          -3.564617904339151e-05,
+          -7.744990269298313e-05,
+          -0.0002868318703754813,
+          0.0002913758369214037,
+          0.0002038367409423758
+        ],
+        "mean": 2.9917676351298716e-06,
+        "sd": 0.00019396815615670804,
+        "ci95": [
+          -0.00013576469240996752,
+          0.00014174822768022726
+        ],
+        "signflip_p": 0.962890625,
+        "t_p": 0.9621638504281992,
+        "signflip_p_study_holm": 1.0,
+        "t_p_study_holm": 1.0,
+        "signflip_p_global_holm": 1.0,
+        "t_p_global_holm": 1.0,
+        "label": "Fixed EQ on minus off, natural sampler"
+      },
+      {
+        "study": "equalization",
+        "name": "fixed_balanced_EQ_effect",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -6.191414856582256e-06,
+          -0.00022709002671039702,
+          -5.8550234379728394e-05,
+          7.816018412343251e-05,
+          0.00030061340505826983,
+          5.320110409279266e-05,
+          -6.449651371920329e-05,
+          3.1605334701256815e-05,
+          2.5142207440098652e-05,
+          5.393702633105235e-05
+        ],
+        "mean": 1.8633107208099185e-05,
+        "sd": 0.0001331549802883955,
+        "ci95": [
+          -7.662022750559225e-05,
+          0.00011388644192179064
+        ],
+        "signflip_p": 0.625,
+        "t_p": 0.6685604235151922,
+        "signflip_p_study_holm": 1.0,
+        "t_p_study_holm": 1.0,
+        "signflip_p_global_holm": 1.0,
+        "t_p_global_holm": 1.0,
+        "label": "Fixed EQ on minus off, class-uniform sampler"
+      },
+      {
+        "study": "equalization",
+        "name": "sampling_effect_EQoff",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.0012483082487548813,
+          -0.0007132824497876333,
+          0.001499323441363165,
+          0.0009184643171497031,
+          0.0005979232899313569,
+          -0.0022143439096653506,
+          -6.945929521440242e-06,
+          -0.001783632938884061,
+          -0.001317252101248556,
+          0.0017692949841778827
+        ],
+        "mean": -2.143047730052139e-07,
+        "sd": 0.0014324173863446425,
+        "ci95": [
+          -0.0010249039743270949,
+          0.0010244753647810846
+        ],
+        "signflip_p": 1.0,
+        "t_p": 0.9996328335118734,
+        "signflip_p_study_holm": 1.0,
+        "t_p_study_holm": 1.0,
+        "signflip_p_global_holm": 1.0,
+        "t_p_global_holm": 1.0,
+        "label": "Class-uniform minus natural sampler, EQ off"
+      },
+      {
+        "study": "equalization",
+        "name": "fixed_factorial_interaction",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.0002281789499716247,
+          -0.00016498917675566993,
+          0.00016695733839711124,
+          -1.8720812181127755e-05,
+          0.00039724046314715267,
+          8.884728313618417e-05,
+          1.2953388973668822e-05,
+          0.00031843720507684914,
+          -0.000266233629481194,
+          -0.00014989971461121243
+        ],
+        "mean": 1.5641339573013725e-05,
+        "sd": 0.00022746914499578198,
+        "ci95": [
+          -0.00014708028419496138,
+          0.00017836296334098882
+        ],
+        "signflip_p": 0.830078125,
+        "t_p": 0.8327104756799484,
+        "signflip_p_study_holm": 1.0,
+        "t_p_study_holm": 1.0,
+        "signflip_p_global_holm": 1.0,
+        "t_p_global_holm": 1.0,
+        "label": "Fixed EQ effect: class-uniform minus natural"
+      },
+      {
+        "study": "equalization",
+        "name": "selected_balanced_softmax_vs_selected_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.006198808657782884,
+          -0.010911485103263785,
+          -0.00907483184196467,
+          -0.007553084313213998,
+          -0.008831777006477637,
+          -0.01387353229196231,
+          -0.009435081345675278,
+          -0.007713583390065559,
+          -0.011576239839304114,
+          -0.005481937601771181
+        ],
+        "mean": -0.009065036139148141,
+        "sd": 0.002542852078680897,
+        "ci95": [
+          -0.010884082934494381,
+          -0.007245989343801901
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 1.3086140255617751e-06,
+        "signflip_p_study_holm": 0.01171875,
+        "t_p_study_holm": 6.543070127808876e-06,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 1.3086140255617751e-05,
+        "label": "Selected Balanced Softmax minus selected CE + LA"
+      },
+      {
+        "study": "equalization",
+        "name": "selected_bcl_vs_selected_balanced_softmax",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.05465966596329752,
+          -0.04587237040778236,
+          -0.04617888806461401,
+          -0.04845508826979528,
+          -0.04827467387073647,
+          -0.05131597330551407,
+          -0.05059765450969622,
+          -0.048593590787677776,
+          -0.044856953266168786,
+          -0.051618305093781625
+        ],
+        "mean": -0.049042316353906414,
+        "sd": 0.0030309411229760917,
+        "ci95": [
+          -0.05121052101781784,
+          -0.04687411168999499
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 2.0884902033662097e-12,
+        "signflip_p_study_holm": 0.01171875,
+        "t_p_study_holm": 1.2530941220197258e-11,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 3.3415843253859356e-11,
+        "label": "Selected BCL adaptation minus selected Balanced Softmax"
+      },
+      {
+        "study": "vision",
+        "name": "partial_vs_frozen_ce",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.008834615778950505,
+          0.007297291520589,
+          0.006002782644874083,
+          0.006752359526794649,
+          0.004851118936028853,
+          0.006849604429511658,
+          0.004620882948498606,
+          0.005717618592975371,
+          0.0060734276246896535,
+          0.0024811915813243157
+        ],
+        "mean": 0.005948089358423669,
+        "sd": 0.0017213683235287188,
+        "ci95": [
+          0.004716696640468255,
+          0.007179482076379084
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 1.702787461783707e-06,
+        "signflip_p_study_holm": 0.009765625,
+        "t_p_study_holm": 3.405574923567414e-06,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 1.5325087156053364e-05,
+        "label": "Last-two-block DeiT CE + LA minus frozen DeiT CE + LA"
+      },
+      {
+        "study": "vision",
+        "name": "dino_vs_deit_ce",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.12764290415260826,
+          0.12350605760209399,
+          0.12589013402608618,
+          0.12115665419783028,
+          0.12463464848831507,
+          0.12456642939859974,
+          0.12239016897893229,
+          0.12387038505761927,
+          0.12138007391431316,
+          0.12022435822007238
+        ],
+        "mean": 0.12352618140364706,
+        "sd": 0.002294398289170149,
+        "ci95": [
+          0.12188486774244192,
+          0.1251674950648522
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 4.231627280261061e-17,
+        "signflip_p_study_holm": 0.009765625,
+        "t_p_study_holm": 2.1158136401305304e-16,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 9.309580016574335e-16,
+        "label": "Frozen DINO CE + LA minus frozen DeiT CE + LA"
+      },
+      {
+        "study": "vision",
+        "name": "balanced_softmax_vs_ce_deit_frozen",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.0028975435111381342,
+          -0.0041247784023698,
+          -0.006491888439050686,
+          -0.005729019715783434,
+          -0.0045902077913257955,
+          -0.003671564468869737,
+          -0.006003571099216454,
+          -0.005143964374169752,
+          -0.004794175475009821,
+          -0.006475663828184208
+        ],
+        "mean": -0.004992237710511782,
+        "sd": 0.0012075426487742934,
+        "ci95": [
+          -0.005856061683566582,
+          -0.004128413737456983
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 3.699381432416936e-07,
+        "signflip_p_study_holm": 0.009765625,
+        "t_p_study_holm": 1.1098144297250806e-06,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 4.06931957565863e-06,
+        "label": "Balanced Softmax minus CE + LA, frozen DeiT"
+      },
+      {
+        "study": "vision",
+        "name": "balanced_softmax_vs_ce_deit_last2",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.006111334085343589,
+          -0.005130341763368462,
+          -0.0028075408265550994,
+          -0.0038725690795446965,
+          -0.0005361728537183197,
+          -0.001963433386193536,
+          -0.0013608600998999965,
+          -0.0023420948861103685,
+          -0.004436351896952795,
+          -0.002767752650498334
+        ],
+        "mean": -0.0031328451528185195,
+        "sd": 0.0017391656272459644,
+        "ci95": [
+          -0.004376969294895723,
+          -0.0018887210107413161
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 0.000295665810954651,
+        "signflip_p_study_holm": 0.009765625,
+        "t_p_study_holm": 0.000295665810954651,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 0.002365326487637208,
+        "label": "Balanced Softmax minus CE + LA, last-two-block DeiT"
+      },
+      {
+        "study": "vision",
+        "name": "balanced_softmax_vs_ce_dino",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.013224064874449382,
+          -0.011356237081728171,
+          -0.012684931753453421,
+          -0.00994172862691034,
+          -0.012139359692077023,
+          -0.011075047080852385,
+          -0.013223941226439884,
+          -0.012215842673095945,
+          -0.010850656425563376,
+          -0.01163750866827995
+        ],
+        "mean": -0.011834931810284988,
+        "sd": 0.0010655135861696358,
+        "ci95": [
+          -0.012597154312557006,
+          -0.011072709308012971
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 6.074289229872796e-11,
+        "signflip_p_study_holm": 0.009765625,
+        "t_p_study_holm": 2.4297156919491183e-10,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 9.111433844809194e-10,
+        "label": "Balanced Softmax minus CE + LA, frozen DINO"
+      },
+      {
+        "study": "text",
+        "name": "bert_ce_la__minus__mean_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.13398877763841377,
+          0.20694222352942204,
+          0.18717653089037456,
+          0.1458798260189007,
+          0.14303440642838616,
+          0.15535332206622166,
+          0.15721734113453856,
+          0.16184741412147385,
+          0.14840286715045936,
+          0.17954756629544788
+        ],
+        "mean": 0.16193902752736386,
+        "sd": 0.022651173269497983,
+        "ci95": [
+          0.14573535430069035,
+          0.17814270075403738
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 3.072611562926582e-09,
+        "signflip_p_study_holm": 0.015625,
+        "t_p_study_holm": 1.2290446251706328e-08,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 3.9943950318045566e-08,
+        "label": "Frozen BERT mean CE + LA minus random mean CE + LA"
+      },
+      {
+        "study": "text",
+        "name": "bert_bsoftmax__minus__bert_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.00028646340614446597,
+          -5.310787205703438e-05,
+          -7.189745207436538e-05,
+          0.00010809663413513526,
+          0.00019836986357457675,
+          0.0001250224130571187,
+          0.00018135144861830543,
+          0.00023184098501405348,
+          7.24623237622346e-05,
+          0.00039292525557421687
+        ],
+        "mean": 0.00014715270057487074,
+        "sd": 0.00014393575874837086,
+        "ci95": [
+          4.418726153809613e-05,
+          0.00025011813961164534
+        ],
+        "signflip_p": 0.01171875,
+        "t_p": 0.01027392117199765,
+        "signflip_p_study_holm": 0.03515625,
+        "t_p_study_holm": 0.030821763515992952,
+        "signflip_p_global_holm": 0.08203125,
+        "t_p_global_holm": 0.07191744820398355,
+        "label": "Frozen BERT mean Balanced Softmax minus CE + LA"
+      },
+      {
+        "study": "text",
+        "name": "bert_balanced_eq__minus__bert_balanced_ce",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.0003203094625264802,
+          0.00019551100930648158,
+          0.0001973718717706019,
+          -1.2745455131302208e-06,
+          0.000589854221309305,
+          7.248270478155128e-05,
+          0.0003746991956680157,
+          -0.00014304618418459203,
+          0.0002134135721102437,
+          0.0001818867686934622
+        ],
+        "mean": 0.00020012080764684193,
+        "sd": 0.00020329731991559774,
+        "ci95": [
+          5.469066587989154e-05,
+          0.0003455509494137923
+        ],
+        "signflip_p": 0.01171875,
+        "t_p": 0.012461107593748523,
+        "signflip_p_study_holm": 0.03515625,
+        "t_p_study_holm": 0.030821763515992952,
+        "signflip_p_global_holm": 0.08203125,
+        "t_p_global_holm": 0.07476664556249114,
+        "label": "EQ minus CE, class-uniform frozen BERT mean"
+      },
+      {
+        "study": "text",
+        "name": "bert_natural_eq_la__minus__bert_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.0003593059752970973,
+          0.00011218005062607617,
+          0.00014325430550155005,
+          0.000504927578383163,
+          -3.264248073575615e-05,
+          0.0001454926618941199,
+          3.9988293363379945e-05,
+          -0.00010460990556748762,
+          -6.74802224240878e-05,
+          0.0003790604228773864
+        ],
+        "mean": 0.00014794766792154413,
+        "sd": 0.00020582894878947198,
+        "ci95": [
+          7.065079563130824e-07,
+          0.0002951888278867752
+        ],
+        "signflip_p": 0.048828125,
+        "t_p": 0.04912060458600385,
+        "signflip_p_study_holm": 0.048828125,
+        "t_p_study_holm": 0.04912060458600385,
+        "signflip_p_global_holm": 0.244140625,
+        "t_p_global_holm": 0.24560302293001923,
+        "label": "Natural EQ + LA minus CE + LA, frozen BERT mean"
+      },
+      {
+        "study": "text",
+        "name": "last1_ce_la__minus__last0_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.018617373158728023,
+          0.018165708992197382,
+          0.017322320818328074,
+          0.0178782822109409,
+          0.01904138351772311,
+          0.016361413464929475,
+          0.01801736666185838,
+          0.017004993854910833,
+          0.01818029136932442,
+          0.018515063538270926
+        ],
+        "mean": 0.017910419758721152,
+        "sd": 0.0008069150378172292,
+        "ci95": [
+          0.017333187513887016,
+          0.018487652003555288
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 1.2221558354182007e-13,
+        "signflip_p_study_holm": 0.015625,
+        "t_p_study_holm": 9.777246683345605e-13,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 2.5665272543782213e-12,
+        "label": "Last-one-block CE + LA minus matched frozen CLS CE + LA"
+      },
+      {
+        "study": "text",
+        "name": "last2_ce_la__minus__last0_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.01976349571692071,
+          0.01911629314775798,
+          0.017967337477822753,
+          0.018660016422611392,
+          0.01944978286666399,
+          0.016700122467965928,
+          0.019376335820833535,
+          0.01804338016146456,
+          0.018839839715033224,
+          0.019248549606565524
+        ],
+        "mean": 0.01871651534036396,
+        "sd": 0.0009195841258061339,
+        "ci95": [
+          0.018058684485347545,
+          0.019374346195380372
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 2.662645007711672e-13,
+        "signflip_p_study_holm": 0.015625,
+        "t_p_study_holm": 1.5975870046270031e-12,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 5.059025514652177e-12,
+        "label": "Last-two-block CE + LA minus matched frozen CLS CE + LA"
+      },
+      {
+        "study": "text",
+        "name": "last1_bsoftmax__minus__last0_bsoftmax",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.018836979649640373,
+          0.017744628724515987,
+          0.016845726886728918,
+          0.017143240349716815,
+          0.018788193686380184,
+          0.01648137889524981,
+          0.01740298011927377,
+          0.01656079710147018,
+          0.016924785316567825,
+          0.018222744756166365
+        ],
+        "mean": 0.017495145548571022,
+        "sd": 0.0008720506916573669,
+        "ci95": [
+          0.01687131806393743,
+          0.018118973033204613
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 3.0305395702159287e-13,
+        "signflip_p_study_holm": 0.015625,
+        "t_p_study_holm": 1.5975870046270031e-12,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 5.4549712263886715e-12,
+        "label": "Last-one-block Balanced Softmax minus matched frozen CLS"
+      },
+      {
+        "study": "text",
+        "name": "last2_bsoftmax__minus__last0_bsoftmax",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.019536736278115807,
+          0.017947911047273446,
+          0.017561324864006078,
+          0.017948995777346433,
+          0.019306164647844182,
+          0.01699934618374377,
+          0.01865584884010718,
+          0.017509514418762584,
+          0.017780838086710604,
+          0.0189891428883876
+        ],
+        "mean": 0.01822358230322977,
+        "sd": 0.0008474761249726626,
+        "ci95": [
+          0.01761733440458532,
+          0.01882983020187422
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 1.6250231391140182e-13,
+        "signflip_p_study_holm": 0.015625,
+        "t_p_study_holm": 1.1375161973798127e-12,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 3.2500462782280365e-12,
+        "label": "Last-two-block Balanced Softmax minus matched frozen CLS"
+      },
+      {
+        "study": "tabular",
+        "name": "ft_transformer_la__minus__mlp_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.02291530664327668,
+          -0.020198310634533367,
+          -0.014174859334118994,
+          -0.018603756456276987,
+          -0.018459767721417664,
+          -0.01629220938266973,
+          -0.00960811718202359,
+          -0.019404853847038717,
+          -0.014709514789046474,
+          -0.01875656885724608
+        ],
+        "mean": -0.01731232648476483,
+        "sd": 0.003744403519503039,
+        "ci95": [
+          -0.019990911401182188,
+          -0.014633741568347467
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 1.4087253468614293e-07,
+        "signflip_p_study_holm": 0.005859375,
+        "t_p_study_holm": 1.4087253468614293e-07,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 1.690470416233715e-06,
+        "label": "FT-Transformer + LA minus natural CE MLP + LA"
+      },
+      {
+        "study": "tabular",
+        "name": "xgboost_la__minus__mlp_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          0.013395479558424461,
+          0.013564006024556874,
+          0.01478394863453747,
+          0.015198980675469764,
+          0.01750674391392626,
+          0.015813750753526423,
+          0.01643923663104563,
+          0.016271477783191046,
+          0.01817795200629324,
+          0.015638277887216168
+        ],
+        "mean": 0.015678985386818733,
+        "sd": 0.0015367142176053214,
+        "ci95": [
+          0.01457968625875146,
+          0.016778284514886006
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 1.2973349295546208e-10,
+        "signflip_p_study_holm": 0.005859375,
+        "t_p_study_holm": 2.5946698591092417e-10,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 1.8162689013764691e-09,
+        "label": "XGBoost + LA minus natural CE MLP + LA"
+      },
+      {
+        "study": "tabular",
+        "name": "mlp_cb_la__minus__mlp_ce_la",
+        "endpoint": "confirmation_macro_f1",
+        "seeds": [
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
+        ],
+        "n": 10,
+        "differences": [
+          -0.03663322912616207,
+          -0.03441661360332848,
+          -0.03706174460822742,
+          -0.034452455954935735,
+          -0.03444555857299014,
+          -0.034917972221311655,
+          -0.03243908677303531,
+          -0.035784521718859486,
+          -0.032220787754430935,
+          -0.03760313264275128
+        ],
+        "mean": -0.03499751029760325,
+        "sd": 0.0018118902158479556,
+        "ci95": [
+          -0.03629365847637076,
+          -0.03370136211883574
+        ],
+        "signflip_p": 0.001953125,
+        "t_p": 4.2603241811140575e-13,
+        "signflip_p_study_holm": 0.005859375,
+        "t_p_study_holm": 1.2780972543342172e-12,
+        "signflip_p_global_holm": 0.04296875,
+        "t_p_global_holm": 7.2425511078938976e-12,
+        "label": "Effective-number MLP + LA minus natural CE MLP + LA"
+      }
+    ],
+    "practical_reference_macro_f1": 0.01,
+    "interpretation": "Per-study families remain primary. Global Holm is a cross-study sensitivity. Intervals describe paired optimization variation conditional on fixed source partitions; they do not measure external-dataset or foundation-model pretraining uncertainty.",
+    "input_sha256": {
+      "equalization": "d01fa2c535892c6d929afb4461b0abfd020c7624eeb0226f41ec57f64c434d27",
+      "vision": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539",
+      "text": "51d33f599706786a918bf1a2c32f748f47185d7fb5ada74eb90cf44365f5a060",
+      "tabular": "a08f2f433bfe51740949ccc0e1057c431a6c65ba50c2d7fbc02afb2e480914e7"
+    },
+    "analysis_source_sha256": "faec1269a4a916c8ace36f9333ce149ef19131db6f557188f6744b0055f47953"
+  },
+  "global_analysis_evidence": {
+    "path": "global_analysis.json",
+    "sha256": "d7de2dfa20fc0baf7a60a83309f5a5a833b7ccc75539b6d23a37dcaa3d124ea6"
+  },
+  "abstract": "This completed follow-up examines stronger long-tail classification controls across images, text and tabular data. Tiny ImageNet supports a fixed-treatment EQ/sampler study and an encoder/partial-tuning study; DBpedia-14 tests contextual BERT controls and selective tuning; Covertype tests weighted objectives, FT-Transformer and boosted trees. Every study retains ten paired optimization seeds, separate fit/tuning/calibration/confirmation partitions, full declared budgets, saved predictions and independent numeric verification. The primary families contain 6, 5, 8 and 3 paired macro-F1 comparisons. Per-study Holm tests are primary; a hash-bound 22-comparison global sensitivity is also retained. Results are conditional on these source partitions and model packages.",
+  "principal_findings": [
+    "Tiny ImageNet | EQ and stronger loss controls: among the listed confirmation readouts, Selected CE + LA has the largest mean macro-F1, 56.68% (sample SD 0.10 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence.",
+    "Tiny ImageNet | encoder and partial-tuning controls: among the listed confirmation readouts, Frozen DINOv2 / CE + LA has the largest mean macro-F1, 74.59% (sample SD 0.16 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence.",
+    "DBpedia-14 | contextual and selective-tuning controls: among the listed confirmation readouts, Last-two-block BERT CLS / CE + LA has the largest mean macro-F1, 99.05% (sample SD 0.02 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence.",
+    "Covertype | tabular model and objective controls: among the listed confirmation readouts, XGBoost + LA has the largest mean macro-F1, 93.10% (sample SD 0.05 percentage points). This ranking is descriptive; the declared paired comparisons supply the inferential evidence.",
+    "Across the 22 declared comparisons, 11 positive and 7 negative effects reach within-study exact sign-flip Holm p <= 0.05; 15 comparisons reach the separate global Holm sensitivity threshold. The complete tables retain signs, intervals and non-detections."
+  ],
+  "verification_notes": [
+    "Each package passes its completion marker, complete file catalog hashes, frozen protocol/source identities and original independent audit. The assembler selects table rows by exact source identifiers and reruns the report builder binding checks. The saved global analysis file is hashed separately from the report labels.",
+    "The EQ audit checks all 320 adapter and 220 head states. Vision has separate 72-state and 60-model/180-readout numeric audits. Text has 156-state and 130-model/190-confirmation/100-native coverage. Tabular retains eight tuning and forty final state/budget audits and eighty numeric readouts. These are original working-run scopes; portable archives omit states and declare their narrower replay scopes.",
+    "Numeric verification recomputes metrics, global choices, decision-offset selections and paired statistics from saved predictions and labels. Actual-state audits check identities, tensors and optimizer budgets where retained. They do not independently rerun training, all encoder inference or acquisition; SHA256 binds artifacts rather than proving external replication."
+  ],
+  "selection_notes": [
+    "Configuration and checkpoint selection never optimizes confirmation macro-F1. EQ averages development scores over its ten seeds; vision uses dedicated tuning seed 901; text and tabular use seed 9. Final seed pairing and fixed source partitions are prespecified.",
+    "Calibration here selects a classification decision offset by macro-F1; the studies do not measure probability reliability. EQ and vision use calibrated tuning policies, so their calibration rows are development selection data. Text and tabular select configurations using raw tuning metrics and persist calibration decisions after global choice freeze and before confirmation inference.",
+    "The EQ amendment precedes recorded confirmation access and changes analysis roles without changing training. Primary fixed-treatment contrasts use onset .8/coefficient .05; validation-selected onset/coefficient effects remain secondary. The native source evaluation partitions remain exploratory where earlier reports informed the direction.",
+    "The sign-flip reference distribution is exhaustively enumerated over 1,024 assignments, but its inferential validity assumes paired sign exchangeability or symmetry under the null. Paired-t intervals use a normality approximation for the mean of ten optimization-seed differences, conditional on the fixed partitions. Neither rule supplies external-dataset uncertainty."
+  ],
+  "recommendation_notes": [
+    "Use the within-study paired comparisons and their uncertainty when choosing a pipeline for these fixed partitions. Descriptive score leaders are not evidence of universal superiority. Small, undetected or negative improvements are retained rather than removed from the report.",
+    "Strong calibrated CE and Balanced Softmax controls remain necessary when evaluating EQ or contrastive methods. Compare selective tuning against the matched frozen control. Evaluate tabular attention alongside boosted trees and conventional MLP objectives under the natural data distribution.",
+    "Image EQ and sampling: retain the fixed-treatment comparisons separately from the selected stronger-loss pipelines. Fixed EQ on minus off with natural sampling: +0.0003 pp, 95% paired interval [-0.0136, +0.0142], study Holm p=1.000000; no nonzero effect is detected; this does not establish equivalence. Fixed EQ on minus off with class-uniform sampling: +0.0019 pp, 95% paired interval [-0.0077, +0.0114], study Holm p=1.000000; no nonzero effect is detected; this does not establish equivalence. Class-uniform minus natural sampling with EQ off: -0.0000 pp, 95% paired interval [-0.1025, +0.1024], study Holm p=1.000000; no nonzero effect is detected; this does not establish equivalence. Fixed EQ-by-sampling interaction: +0.0016 pp, 95% paired interval [-0.0147, +0.0178], study Holm p=1.000000; no nonzero effect is detected; this does not establish equivalence. Selected Balanced Softmax minus selected CE + LA: -0.9065 pp, 95% paired interval [-1.0884, -0.7246], study Holm p=0.011719; a negative effect is detected. Selected BCL adaptation minus selected Balanced Softmax: -4.9042 pp, 95% paired interval [-5.1211, -4.6874], study Holm p=0.011719; a negative effect is detected. Selected native adjusted macro-F1 means are CE 56.680%, Balanced Softmax 55.774% and BCL adaptation 50.870%. Keep CE and Balanced Softmax as controls. The fixed natural/class-uniform policies target the same class-balanced objective; selected loss pipelines can also differ in their selected settings. BCL uses cached features and adapter-dropout views, rather than full-backbone image augmentation. New natural/ROS heads are diagnostic readouts, not independent encoder fits.",
+    "Image encoders: compare each loss with its matched encoder control. Last-two-block DeiT CE + LA minus frozen DeiT CE + LA: +0.5948 pp, 95% paired interval [+0.4717, +0.7179], study Holm p=0.009766; a positive effect is detected. Frozen DINOv2 CE + LA minus frozen DeiT CE + LA: +12.3526 pp, 95% paired interval [+12.1885, +12.5167], study Holm p=0.009766; a positive effect is detected. Balanced Softmax minus CE + LA for frozen DeiT: -0.4992 pp, 95% paired interval [-0.5856, -0.4128], study Holm p=0.009766; a negative effect is detected. Balanced Softmax minus CE + LA for last-two-block DeiT: -0.3133 pp, 95% paired interval [-0.4377, -0.1889], study Holm p=0.009766; a negative effect is detected. Balanced Softmax minus CE + LA for frozen DINOv2: -1.1835 pp, 95% paired interval [-1.2597, -1.1073], study Holm p=0.009766; a negative effect is detected. Adjusted CE macro-F1 means are frozen DeiT 62.237%, last-two-block DeiT 62.832% and frozen DINOv2 74.590%. DINOv2 versus DeiT changes the whole encoder package, including capacity and pretraining, so its contrast does not isolate an architecture or loss intervention. Partial versus frozen DeiT compares the declared selected pipelines. Experimental partition disjointness does not establish independence from ImageNet pretraining.",
+    "Text selective tuning: use the four declared partial-versus-matched-frozen comparisons to assess tuning. Last-one-block CE + LA minus matched frozen CLS CE + LA: +1.7910 pp, 95% paired interval [+1.7333, +1.8488], study Holm p=0.015625; a positive effect is detected. Last-two-block CE + LA minus matched frozen CLS CE + LA: +1.8717 pp, 95% paired interval [+1.8059, +1.9374], study Holm p=0.015625; a positive effect is detected. Last-one-block Balanced Softmax minus matched frozen CLS Balanced Softmax: +1.7495 pp, 95% paired interval [+1.6871, +1.8119], study Holm p=0.015625; a positive effect is detected. Last-two-block Balanced Softmax minus matched frozen CLS Balanced Softmax: +1.8224 pp, 95% paired interval [+1.7617, +1.8830], study Holm p=0.015625; a positive effect is detected. Matched frozen CLS macro-F1 means are CE + LA 97.178% and Balanced Softmax 97.213%. Each arm selects its own learning rate; the prescribed tuning groups also change backend, precision and dropout. These effects therefore describe selected pipelines, not an isolated trainability toggle. The fifty-epoch mean-pooled BERT references use different pooling and budgets from the matched three-epoch CLS comparison. Do not substitute those references for the matched frozen control or interpret a non-detection as equivalence.",
+    "Tabular models: retain boosted trees and conventional CE MLP as predictive controls under the natural data distribution. Adjusted XGBoost minus adjusted natural CE MLP: +1.5679 pp, 95% paired interval [+1.4580, +1.6778], study Holm p=0.005859; a positive effect is detected. Adjusted local FT-Transformer minus adjusted natural CE MLP: -1.7312 pp, 95% paired interval [-1.9991, -1.4634], study Holm p=0.005859; a negative effect is detected. Adjusted effective-number MLP minus adjusted natural CE MLP: -3.4998 pp, 95% paired interval [-3.6294, -3.3701], study Holm p=0.005859; a negative effect is detected. Adjusted macro-F1 means are XGBoost 93.104% and CE MLP 91.536%. Effective-number versus CE MLP means are macro recall 94.824% versus 91.864%, uniform-prior diagnostic macro-F1 94.816% versus 91.953%, native-prior macro-F1 88.037% versus 91.536% and tail F1 79.035% versus 85.459%. XGBoost macro-F1 is 93.257% raw and 93.104% adjusted; its macro recall is 92.462% raw and 94.003% adjusted, and its uniform-prior diagnostic macro-F1 is 92.552% raw and 94.050% adjusted. Preserve the declared adjusted primary endpoint and both raw/adjusted views; calibration-set decision selection need not improve confirmation macro-F1. Uniform-prior diagnostics reweight the same records, not a separate dataset. The local FT result does not rank all transformer configurations. Evaluate future objectives or decision policies on new prespecified data rather than selecting them from confirmation results."
+  ],
+  "limitations": [
+    "The official DeiT checkpoint is ImageNet-pretrained, while Tiny ImageNet is sampled and downsampled from ImageNet. Item-level pretraining exclusion has not been established. Disjoint experimental partitions therefore do not establish independence from pretraining; this is a source-derived limitation, not a measured exact-item overlap rate.",
+    "The ten-seed intervals condition on the fixed source partitions and selected configurations. They do not cover hyperparameter-selection uncertainty or external dataset/cohort uncertainty.",
+    "The image studies reuse Tiny ImageNet source rows; historical models may have seen the new confirmation images. Covertype is a previously studied, spatially dependent source. New partitions protect this round from its own selection, but do not provide an independent dataset, geographic cohort or external replication.",
+    "BERT was pretrained on Wikipedia and DBpedia abstracts derive from Wikipedia. Normalized exact deduplication does not remove pretraining, entity or paraphrase overlap. Encoder-package contrasts also change pretraining/capacity, while partial tuning changes dropout, optimizer and sometimes precision/backend. Results do not isolate transformer architecture alone.",
+    "Ten optimization seeds quantify initialization/training variation conditional on fixed partitions. Their intervals exclude data resampling, dependence across entities/locations and foundation-model pretraining uncertainty. Non-significance does not establish equivalence; a degenerate zero-variance paired difference uses the declared finite statistics convention.",
+    "The studies do not conduct a fully matched GAN-versus-ViT intervention, full BCL image-augmentation reproduction, full backbone fine-tuning or probability-calibration reliability study. Optional SMOTE graphs and extra synthetic observations are absent from these primary follow-ups. Wrapper parameter counts must not be described as complete pretrained backbone capacity.",
+    "Reported training/phase timings reflect a shared machine, selected backends and some checkpoint resumption. They document resource use, not isolated throughput superiority or equal compute across model families."
+  ],
+  "reproduction_notes": [
+    "The public source and study documentation specify acquisition, canonicalization, source/model revisions, fit-only transformations, training grids, budgets and inference gates. Portable evidence retains scalar/class results, labels, source IDs/ranks, predictions, selected configuration records, histories and original audit receipts.",
+    "Full raw numeric portable archives remain local in the supplied evidence archive. Git contains smaller derived results, summaries, audit receipts, catalogs, report and source; the multi-gigabyte raw prediction blobs are not uploaded to Git. Image prediction row order is bound to saved partition indices and source labels rather than explicit per-prediction source-ID arrays.",
+    "To reproduce the current EQ analysis, run scripts/apply_followup_amendment.py on equalization/public_amendment_inputs with the frozen scientific source and counter snapshot. The historical runner aggregate remains archived; the amendment helper recreates the six-member primary and two secondary analyses.",
+    "Run each package numeric verifier in its documented weight-free mode; it must declare zero loaded model states. Original actual-state verification requires the omitted working checkpoints, dense inputs and pinned weights. Then run scripts/analyze_followup_comparisons.py on the four complete aggregates and this assembler before the report builder.",
+    "Scientific source hashes, protocol fingerprints, aggregate hashes, separate original/portable audit receipts and the global analysis identity are retained below. Credentials, private machine paths and operational logs are excluded from publication. Supplied record timestamps do not constitute external timestamp attestation."
+  ],
+  "references": [
+    {
+      "author": "Ren et al.",
+      "title": "Balanced Meta-Softmax for Long-Tailed Visual Recognition",
+      "url": "https://arxiv.org/abs/2007.10740"
+    },
+    {
+      "author": "Menon et al.",
+      "title": "Long-tail learning via logit adjustment",
+      "url": "https://arxiv.org/abs/2007.07314"
+    },
+    {
+      "author": "Zhu et al.",
+      "title": "Balanced Contrastive Learning for Long-Tailed Visual Recognition",
+      "url": "https://arxiv.org/abs/2207.09052"
+    },
+    {
+      "author": "Touvron et al.",
+      "title": "Training data-efficient image transformers & distillation through attention",
+      "url": "https://arxiv.org/abs/2012.12877"
+    },
+    {
+      "author": "Oquab et al.",
+      "title": "DINOv2: Learning Robust Visual Features without Supervision",
+      "url": "https://arxiv.org/abs/2304.07193"
+    },
+    {
+      "author": "Devlin et al.",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "url": "https://arxiv.org/abs/1810.04805"
+    },
+    {
+      "author": "Gorishniy et al.",
+      "title": "Revisiting Deep Learning Models for Tabular Data",
+      "url": "https://arxiv.org/abs/2106.11959"
+    },
+    {
+      "author": "Chen and Guestrin",
+      "title": "XGBoost: A Scalable Tree Boosting System",
+      "url": "https://arxiv.org/abs/1603.02754"
+    },
+    {
+      "author": "Blackard",
+      "title": "Covertype - UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/dataset/31/covertype"
+    },
+    {
+      "author": "Google BERT",
+      "title": "bert-base-uncased official model card",
+      "url": "https://huggingface.co/google-bert/bert-base-uncased"
+    },
+    {
+      "author": "Meta Research",
+      "title": "Official DINOv2 code and models",
+      "url": "https://github.com/facebookresearch/dinov2"
+    },
+    {
+      "author": "DBpedia-14 distribution",
+      "title": "DBpedia-14 dataset card and pinned Parquet distribution",
+      "url": "https://huggingface.co/datasets/fancyzhx/dbpedia_14"
+    },
+    {
+      "author": "Meta Research",
+      "title": "Official DeiT model zoo: ImageNet-2012 pretrained DeiT-tiny",
+      "url": "https://github.com/facebookresearch/deit/blob/main/README_deit.md"
+    },
+    {
+      "author": "Kim, Stanford CS231n",
+      "title": "Residual Networks for Tiny ImageNet: source relationship and transfer study",
+      "url": "https://cs231n.stanford.edu/reports/2016/pdfs/411_Report.pdf"
+    },
+    {
+      "author": "Stanford CS231n",
+      "title": "Official Tiny ImageNet challenge and dataset source",
+      "url": "https://cs231n.stanford.edu/2015/project.html"
+    }
+  ],
+  "reference_catalog_sha256": "77d23ba521aed4f023effb5442ca173693e5df88f8fcb3928c0866c3ece2fa26",
+  "figure_status": "Four study figures hash-bound for embedding; global figure retained standalone; actual PDF and all-page visual QA pending.",
+  "identity_table": [
+    {
+      "role": "equalization scientific source",
+      "sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705"
+    },
+    {
+      "role": "equalization protocol fingerprint",
+      "sha256": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1"
+    },
+    {
+      "role": "equalization aggregate",
+      "sha256": "d01fa2c535892c6d929afb4461b0abfd020c7624eeb0226f41ec57f64c434d27"
+    },
+    {
+      "role": "equalization independent_verification",
+      "sha256": "4a16321367f3f798e9cda4fe7afe7765eb80151bec2e50950eb33c70c0669cb2"
+    },
+    {
+      "role": "vision scientific source",
+      "sha256": "20711dd400a1e2c1c926344c91aec8c9bc1157546078a1cf6bf0c67665c6be3f"
+    },
+    {
+      "role": "vision protocol fingerprint",
+      "sha256": "f548c396fcf87f4e70aaa6d39da1b0f91f918de3934dc54ccec91e9927af4912"
+    },
+    {
+      "role": "vision aggregate",
+      "sha256": "bfb260a879ffdb1dfc75dc9eb7a269a5bc70765c7fc322ae6a4584a7f88b3539"
+    },
+    {
+      "role": "vision independent_verification",
+      "sha256": "1bc83746f84a34f690ab0eaabb0dfe7d363ae35acada62f1dad3dc49a6be3c03"
+    },
+    {
+      "role": "vision checkpoint_verification",
+      "sha256": "831c11c8a1746ea44dd7ef52d005a99046cc91976d9a34a4494b8fc668e4f0c3"
+    },
+    {
+      "role": "text scientific source",
+      "sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c"
+    },
+    {
+      "role": "text protocol fingerprint",
+      "sha256": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342"
+    },
+    {
+      "role": "text aggregate",
+      "sha256": "51d33f599706786a918bf1a2c32f748f47185d7fb5ada74eb90cf44365f5a060"
+    },
+    {
+      "role": "text independent_verification",
+      "sha256": "d4b967cfa6815c03dd9de2114adb151277fa7658c6e1c7c3fd674e1f9f6087e9"
+    },
+    {
+      "role": "tabular scientific source",
+      "sha256": "a75df97f8351324e047bf19b298d9e421e489a6f9ffc679248580199c7869a67"
+    },
+    {
+      "role": "tabular protocol fingerprint",
+      "sha256": "f8d9bd1ce23e7dced07a4223b9888b48dd75f3f74ae902d83117535a079d7932"
+    },
+    {
+      "role": "tabular aggregate",
+      "sha256": "a08f2f433bfe51740949ccc0e1057c431a6c65ba50c2d7fbc02afb2e480914e7"
+    },
+    {
+      "role": "tabular independent_verification",
+      "sha256": "2e01d2e80f6197e5776acf9ff6c3ef73aafebf2bd1f2bfaab6e7bcf15287767a"
+    },
+    {
+      "role": "tabular checkpoint_verification",
+      "sha256": "97800349a47fa55fff35e080f8252ea65b555b1315648b855a5935bb505c948e"
+    },
+    {
+      "role": "Global 22-comparison analysis file",
+      "sha256": "d7de2dfa20fc0baf7a60a83309f5a5a833b7ccc75539b6d23a37dcaa3d124ea6"
+    },
+    {
+      "role": "Global comparison helper source",
+      "sha256": "faec1269a4a916c8ace36f9333ce149ef19131db6f557188f6744b0055f47953"
+    }
+  ],
+  "presentation_provenance": {
+    "status": "complete_four_study_presentation_finalized",
+    "input_evidence_filename": "evidence.json",
+    "input_evidence_sha256": "54093543e648ac86fa5c81f313cbed48ea35e89661efdff2bc19a609b00aa9c0",
+    "finalizer_source_sha256": "e88399fe50dff000ae0f5f9c226b89d7e387ca070a9734d2d6ff36b26303f800",
+    "builder_source_sha256": "a2a4769e0fc2e7071f4c97a80335e6d1566bb21d26982991ececbf1d2e5594ed",
+    "plotter_source_sha256": "549273bb0771095f9933cb05ec6e6cf5bbbffa23d0720aa4d1382f308370f314",
+    "figures": [
+      {
+        "role": "global_paired_effects",
+        "path": "figures/rebal_followup_paired_effects.png",
+        "bytes": 377610,
+        "sha256": "cb3a8cbf0bca2c1dc0b67c9e82e3aca2a17227731579a4abfa646fbc8388cbd6",
+        "width": 2640,
+        "height": 2310,
+        "embedded": false
+      },
+      {
+        "role": "equalization",
+        "path": "figures/rebal_followup_equalization_performance.png",
+        "bytes": 124584,
+        "sha256": "39cadd7e81a4b3cb8a5d9c058ccca7c39c7120dbc0d2204de39664659e33d0b2",
+        "width": 2200,
+        "height": 990,
+        "embedded": true
+      },
+      {
+        "role": "vision",
+        "path": "figures/rebal_followup_vision_performance.png",
+        "bytes": 114058,
+        "sha256": "3cc757e97a456a6516d425822793efceb309cdaadd8d3cd7cce11a0ea8587ebb",
+        "width": 2200,
+        "height": 990,
+        "embedded": true
+      },
+      {
+        "role": "text",
+        "path": "figures/rebal_followup_text_performance.png",
+        "bytes": 189535,
+        "sha256": "4a6030c6ed3e9f27d89dc04e371d295c7d214f30b24d2993b632e9cc06fe834c",
+        "width": 2200,
+        "height": 1020,
+        "embedded": true
+      },
+      {
+        "role": "tabular",
+        "path": "figures/rebal_followup_tabular_performance.png",
+        "bytes": 85177,
+        "sha256": "db56409d341c3f648be967c893ceb08dc94870c836a3269c0876240be6b2dca1",
+        "width": 2200,
+        "height": 990,
+        "embedded": true
+      }
+    ],
+    "recommendation_paragraphs_added": 4,
+    "recommendations_use_existing_summary_and_primary_contrasts": true,
+    "interpretation_rule": "Direction of paired mean with per-study exact sign-flip Holm p <= 0.05; otherwise a non-detection, never equivalence.",
+    "numeric_statistical_and_source_fields_preserved": true,
+    "global_figure_embedded": false,
+    "prior_figure_status": "Awaiting root-owned scientific plotting and visual QA; no figures inserted by assembler",
+    "original_figure_status_preserved_in_provenance": true,
+    "figure_status_update_limited_to_presentation": true,
+    "figures_rendered_by_finalizer": false,
+    "pdf_authored": false
+  }
+}
