@@ -1,0 +1,23 @@
+{
+  "status": "isolated_MPS_rng_CPU_decode_roundtrip_passed",
+  "verified_utc": "2026-10-13T02:26:44.751112+00:00",
+  "source_sha256": "5b3392105acb104a746e40720a87471e1d1bb040b54e596d3ff006a1b9a7cf75",
+  "scientific_source_sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c",
+  "original_error_reproduced": "RNG state must be a torch.ByteTensor",
+  "stored_mps_rng_bytes_unchanged": true,
+  "decoded_mps_rng_device": "cpu",
+  "original_mapped_rng_device": "mps",
+  "CPU_random_draws_bitwise_equal": true,
+  "MPS_random_draws_bitwise_equal": true,
+  "MPS_state_shape": [
+    44
+  ],
+  "CPU_state_shape": [
+    5056
+  ],
+  "model_weights_loaded": 0,
+  "training_updates": 0,
+  "source_data_rows_read": 0,
+  "confirmation_predictions": 0,
+  "scope": "Isolated process generator/byte-storage microtest; no production model or heldout inference."
+}

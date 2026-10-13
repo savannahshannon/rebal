@@ -1,0 +1,45 @@
+{
+  "aggregate_sha256": "51d33f599706786a918bf1a2c32f748f47185d7fb5ada74eb90cf44365f5a060",
+  "archive_relative_root": "companions/text",
+  "checkpoint_states_included": 0,
+  "created_utc": "2026-10-13T03:02:09.940216+00:00",
+  "files": [
+    {
+      "bytes": 3367,
+      "path": "checkpoint_rng_cpu_decode_compatibility.py",
+      "role": "reviewed_public_text_execution_companion",
+      "sha256": "5b3392105acb104a746e40720a87471e1d1bb040b54e596d3ff006a1b9a7cf75"
+    },
+    {
+      "bytes": 869,
+      "path": "isolated_mps_rng_microtest.json",
+      "role": "reviewed_public_text_execution_companion",
+      "sha256": "f7b2e3ec6ff2b6308171f4c15d9ab8d2c424d5bc3559e38cdf0bc8e22db660a5"
+    },
+    {
+      "bytes": 2112,
+      "path": "posttraining_execution.json",
+      "role": "reviewed_public_text_execution_companion",
+      "sha256": "00c758ed83fa498f370dd1fb93b0551e8c2e725e6e27cb7b69dcc9769343f675"
+    },
+    {
+      "bytes": 4161,
+      "path": "test_checkpoint_rng_cpu_decode_compatibility.py",
+      "role": "reviewed_public_text_execution_companion",
+      "sha256": "34440cadedcb930b2b58a7401f79760c20d66989841763722d741261117d2e89"
+    },
+    {
+      "bytes": 2906,
+      "path": "usage.md",
+      "role": "reviewed_public_text_execution_companion",
+      "sha256": "2a9efb8b96b7a1c9722b21335a1f76aaf885c5009c943a95c97b94eac3c06804"
+    }
+  ],
+  "payload_files": 5,
+  "posttraining_execution_sha256": "00c758ed83fa498f370dd1fb93b0551e8c2e725e6e27cb7b69dcc9769343f675",
+  "protocol_fingerprint": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342",
+  "raw_text_manifest_sha256": "db1986e5d411dcfcb7a721bbbb3c8d55d37d1c02fc684692c745a5cd3c229dbb",
+  "scientific_source_sha256": "8f05dc4a87813a9ffa4c1ac1b1de322cb0315cdb0c3237914bcefaa0cb12b83c",
+  "scope": "Separate execution-only adapter, isolated generator evidence and operational completion. The raw Text archive and original-state/portable numeric audit scopes are unchanged. Original data, token/features/prefix caches, model assets and trained checkpoint states are omitted from the archive.",
+  "status": "exact_public_text_execution_companion_catalog"
+}
