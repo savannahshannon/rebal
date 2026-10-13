@@ -1,0 +1,8 @@
+# Versions already present in the experiment runtime for report reproduction.
+# Numeric replay and reporting only; no training or model downloads.
+numpy==2.5.4
+scipy==1.18.1
+matplotlib==3.11.2
+Pillow==12.3.0
+reportlab==5.0.1
+pypdf==6.20.0

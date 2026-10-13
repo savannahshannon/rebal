@@ -1,0 +1,98 @@
+{
+  "primary_sources": [
+    {
+      "key": "balanced_softmax",
+      "author": "Ren et al.",
+      "title": "Balanced Meta-Softmax for Long-Tailed Visual Recognition",
+      "url": "https://arxiv.org/abs/2007.10740"
+    },
+    {
+      "key": "logit_adjustment",
+      "author": "Menon et al.",
+      "title": "Long-tail learning via logit adjustment",
+      "url": "https://arxiv.org/abs/2007.07314"
+    },
+    {
+      "key": "balanced_contrastive",
+      "author": "Zhu et al.",
+      "title": "Balanced Contrastive Learning for Long-Tailed Visual Recognition",
+      "url": "https://arxiv.org/abs/2207.09052"
+    },
+    {
+      "key": "deit",
+      "author": "Touvron et al.",
+      "title": "Training data-efficient image transformers & distillation through attention",
+      "url": "https://arxiv.org/abs/2012.12877"
+    },
+    {
+      "key": "dinov2",
+      "author": "Oquab et al.",
+      "title": "DINOv2: Learning Robust Visual Features without Supervision",
+      "url": "https://arxiv.org/abs/2304.07193"
+    },
+    {
+      "key": "bert",
+      "author": "Devlin et al.",
+      "title": "BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding",
+      "url": "https://arxiv.org/abs/1810.04805"
+    },
+    {
+      "key": "ft_transformer",
+      "author": "Gorishniy et al.",
+      "title": "Revisiting Deep Learning Models for Tabular Data",
+      "url": "https://arxiv.org/abs/2106.11959"
+    },
+    {
+      "key": "xgboost",
+      "author": "Chen and Guestrin",
+      "title": "XGBoost: A Scalable Tree Boosting System",
+      "url": "https://arxiv.org/abs/1603.02754"
+    },
+    {
+      "key": "covertype",
+      "author": "Blackard",
+      "title": "Covertype - UCI Machine Learning Repository",
+      "url": "https://archive.ics.uci.edu/dataset/31/covertype"
+    },
+    {
+      "key": "bert_weights",
+      "author": "Google BERT",
+      "title": "bert-base-uncased official model card",
+      "url": "https://huggingface.co/google-bert/bert-base-uncased"
+    },
+    {
+      "key": "dinov2_weights",
+      "author": "Meta Research",
+      "title": "Official DINOv2 code and models",
+      "url": "https://github.com/facebookresearch/dinov2"
+    },
+    {
+      "key": "dbpedia_14",
+      "author": "DBpedia-14 distribution",
+      "title": "DBpedia-14 dataset card and pinned Parquet distribution",
+      "url": "https://huggingface.co/datasets/fancyzhx/dbpedia_14"
+    },
+    {
+      "key": "deit_weights",
+      "author": "Meta Research",
+      "title": "Official DeiT model zoo: ImageNet-2012 pretrained DeiT-tiny",
+      "url": "https://github.com/facebookresearch/deit/blob/main/README_deit.md"
+    },
+    {
+      "key": "tiny_imagenet_origin",
+      "author": "Kim, Stanford CS231n",
+      "title": "Residual Networks for Tiny ImageNet: source relationship and transfer study",
+      "url": "https://cs231n.stanford.edu/reports/2016/pdfs/411_Report.pdf"
+    },
+    {
+      "key": "tiny_imagenet_source",
+      "author": "Stanford CS231n",
+      "title": "Official Tiny ImageNet challenge and dataset source",
+      "url": "https://cs231n.stanford.edu/2015/project.html"
+    }
+  ],
+  "verified_utc": "2026-10-12T20:46:13.356232+00:00",
+  "usage": "Method motivation and dataset/weight provenance, not substitute benchmark outcomes.",
+  "dbpedia_card_verified_utc": "2026-10-12T22:09:03.103647+00:00",
+  "image_source_relationship_verified_utc": "2026-10-12T22:40:54.890582+00:00"
+}
