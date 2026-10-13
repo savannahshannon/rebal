@@ -1,0 +1,30 @@
+{
+  "status": "running",
+  "controller_pid": 79551,
+  "started_utc": "2026-10-12T19:52:27Z",
+  "protocol": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1",
+  "phases": [
+    {
+      "phase": "tune",
+      "started_utc": "2026-10-12T19:52:27Z",
+      "workers": [
+        {
+          "index": 0,
+          "pid": 79552,
+          "log": "tune_worker0.log",
+          "exit_code": null
+        },
+        {
+          "index": 1,
+          "pid": 79553,
+          "log": "tune_worker1.log",
+          "exit_code": null
+        }
+      ],
+      "completed_tuning_cells": 148,
+      "completed_confirmation_cells": 0
+    }
+  ],
+  "phase": "tune",
+  "last_observed_utc": "2026-10-12T20:05:48Z"
+}

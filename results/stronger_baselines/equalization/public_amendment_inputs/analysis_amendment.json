@@ -1,0 +1,77 @@
+{
+  "bcl_control_limit": "Selected BCL and selected BalancedSoftmax may use different validated learning rates. Their primary contrast compares selected pipelines, not an isolated contrastive-loss treatment.",
+  "calibration_scope": "Calibration is development data used for CE candidate offset selection and final offsets. Confirmation is the protected outcome partition.",
+  "completed_tuning_cells_at_freeze": 148,
+  "confirmation_cells_at_freeze": 0,
+  "confirmation_prediction_archives_at_freeze": 0,
+  "controller_counter_snapshot_sha256": "a7852165e0bcaebe76e4cd218a0cd4fc61a873deda04211b1630db1dfe8d356c",
+  "controller_phase_at_freeze": "tune",
+  "created_utc": "2026-10-12T20:05:52Z",
+  "fingerprint": "5d780339bffa0a11158d01a17cf68e021bc6f9f010adad33f1784a75d859b0bb",
+  "original_runner_aggregate_role": "Historical adaptive-policy four-comparison output; superseded as primary inference by amended aggregate. Its metric summaries remain valid.",
+  "primary_contrasts": [
+    {
+      "a": "natural_reference__native",
+      "b": "natural_off__native",
+      "endpoint": "macro_f1",
+      "name": "fixed_natural_EQ_effect"
+    },
+    {
+      "a": "balanced_reference__native",
+      "b": "balanced_off__native",
+      "endpoint": "macro_f1",
+      "name": "fixed_balanced_EQ_effect"
+    },
+    {
+      "a": "balanced_off__native",
+      "b": "natural_off__native",
+      "endpoint": "macro_f1",
+      "name": "sampling_effect_EQoff"
+    },
+    {
+      "endpoint": "macro_f1",
+      "name": "fixed_factorial_interaction",
+      "negative": [
+        "balanced_off__native",
+        "natural_reference__native"
+      ],
+      "positive": [
+        "balanced_reference__native",
+        "natural_off__native"
+      ]
+    },
+    {
+      "a": "balanced_softmax__native_la",
+      "b": "ce__native_la",
+      "endpoint": "macro_f1",
+      "name": "selected_balanced_softmax_vs_selected_ce_la"
+    },
+    {
+      "a": "bcl_dropout__native_la",
+      "b": "balanced_softmax__native_la",
+      "endpoint": "macro_f1",
+      "name": "selected_bcl_vs_selected_balanced_softmax"
+    }
+  ],
+  "primary_family_size": 6,
+  "primary_reason": "Independent peer review identified different validation-selected EQ schedules as an adaptive policy comparison. Fixed shared onset0.8/coefficient0.05 reference arms identify the fixed EQ by sampler factorial. The two selected strong-control pipeline comparisons join the same declared family.",
+  "run_budget_changed": false,
+  "secondary_contrasts": [
+    {
+      "a": "natural_on__native",
+      "b": "natural_off__native",
+      "name": "selected_natural_EQ_pipeline_effect"
+    },
+    {
+      "a": "balanced_on__native",
+      "b": "balanced_off__native",
+      "name": "selected_balanced_EQ_pipeline_effect"
+    }
+  ],
+  "selection_receipt_exists_at_freeze": false,
+  "source_protocol": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1",
+  "source_sha256": "874e9b744e27f99813d729a16b4dbb4cda5571bf0219f3ee1ea0351311ac2705",
+  "status": "frozen_before_confirmation",
+  "training_changed": false,
+  "version": 1
+}

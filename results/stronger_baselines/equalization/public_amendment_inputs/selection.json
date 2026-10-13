@@ -1,0 +1,4044 @@
+{
+  "candidates": {
+    "balanced": [
+      {
+        "config": {
+          "coefficient": 0.01,
+          "objective": "class_balanced",
+          "onset": 0.2,
+          "sampler": "balanced"
+        },
+        "mean_macro_f1": 0.5414066718427156
+      },
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "class_balanced",
+          "onset": 0.2,
+          "sampler": "balanced"
+        },
+        "mean_macro_f1": 0.541835798933784
+      },
+      {
+        "config": {
+          "coefficient": 0.01,
+          "objective": "class_balanced",
+          "onset": 0.5,
+          "sampler": "balanced"
+        },
+        "mean_macro_f1": 0.5415359701696529
+      },
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "class_balanced",
+          "onset": 0.5,
+          "sampler": "balanced"
+        },
+        "mean_macro_f1": 0.5419846372873678
+      },
+      {
+        "config": {
+          "coefficient": 0.01,
+          "objective": "class_balanced",
+          "onset": 0.8,
+          "sampler": "balanced"
+        },
+        "mean_macro_f1": 0.5415803348111536
+      },
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "class_balanced",
+          "onset": 0.8,
+          "sampler": "balanced"
+        },
+        "mean_macro_f1": 0.5417469358720586
+      }
+    ],
+    "balanced_softmax": [
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "balanced_softmax",
+          "onset": 0.0,
+          "peak_lr": 0.01,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.3085596785428988
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "balanced_softmax",
+          "onset": 0.0,
+          "peak_lr": 0.025,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.4405509903786724
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "balanced_softmax",
+          "onset": 0.0,
+          "peak_lr": 0.05,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5202575309210384
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "balanced_softmax",
+          "onset": 0.0,
+          "peak_lr": 0.075,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5464675003346765
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "balanced_softmax",
+          "onset": 0.0,
+          "peak_lr": 0.1,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5552740072249847
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "balanced_softmax",
+          "onset": 0.0,
+          "peak_lr": 0.2,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5580041697412101
+      }
+    ],
+    "bcl_dropout": [
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "bcl_dropout",
+          "onset": 0.0,
+          "sampler": "natural",
+          "temperature": 0.07
+        },
+        "mean_macro_f1": 0.5073682428079089
+      },
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "bcl_dropout",
+          "onset": 0.0,
+          "sampler": "natural",
+          "temperature": 0.1
+        },
+        "mean_macro_f1": 0.5063880173718752
+      },
+      {
+        "config": {
+          "coefficient": 0.2,
+          "objective": "bcl_dropout",
+          "onset": 0.0,
+          "sampler": "natural",
+          "temperature": 0.07
+        },
+        "mean_macro_f1": 0.48020529317449456
+      },
+      {
+        "config": {
+          "coefficient": 0.2,
+          "objective": "bcl_dropout",
+          "onset": 0.0,
+          "sampler": "natural",
+          "temperature": 0.1
+        },
+        "mean_macro_f1": 0.467127943408647
+      },
+      {
+        "config": {
+          "coefficient": 0.5,
+          "objective": "bcl_dropout",
+          "onset": 0.0,
+          "sampler": "natural",
+          "temperature": 0.07
+        },
+        "mean_macro_f1": 0.4704971124585565
+      },
+      {
+        "config": {
+          "coefficient": 0.5,
+          "objective": "bcl_dropout",
+          "onset": 0.0,
+          "sampler": "natural",
+          "temperature": 0.1
+        },
+        "mean_macro_f1": 0.43089464677579664
+      }
+    ],
+    "ce": [
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "ce",
+          "onset": 0.0,
+          "peak_lr": 0.01,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.3464533280863335
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "ce",
+          "onset": 0.0,
+          "peak_lr": 0.025,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.4656626429462076
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "ce",
+          "onset": 0.0,
+          "peak_lr": 0.05,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5332663111275268
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "ce",
+          "onset": 0.0,
+          "peak_lr": 0.075,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5554357280232415
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "ce",
+          "onset": 0.0,
+          "peak_lr": 0.1,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5641714489267406
+      },
+      {
+        "config": {
+          "coefficient": 0.0,
+          "objective": "ce",
+          "onset": 0.0,
+          "peak_lr": 0.2,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5663965081323088
+      }
+    ],
+    "natural": [
+      {
+        "config": {
+          "coefficient": 0.01,
+          "objective": "class_balanced",
+          "onset": 0.2,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5417520051320658
+      },
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "class_balanced",
+          "onset": 0.2,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5416837180241444
+      },
+      {
+        "config": {
+          "coefficient": 0.01,
+          "objective": "class_balanced",
+          "onset": 0.5,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5420727783002154
+      },
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "class_balanced",
+          "onset": 0.5,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5414547569193796
+      },
+      {
+        "config": {
+          "coefficient": 0.01,
+          "objective": "class_balanced",
+          "onset": 0.8,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5420553451330374
+      },
+      {
+        "config": {
+          "coefficient": 0.05,
+          "objective": "class_balanced",
+          "onset": 0.8,
+          "sampler": "natural"
+        },
+        "mean_macro_f1": 0.5421496938461808
+      }
+    ]
+  },
+  "completed_tuning_cells": 320,
+  "confirmation_access_before_freeze": false,
+  "fingerprint": "7364508d76a3162df6e91179212826aefd5ec75609165d922bd2f87b13afb9a8",
+  "protocol": "0dfd887a0676a0a2d7803a6fbd7b6db073421136968260def67c3335752c00c1",
+  "selected": {
+    "balanced": {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.5,
+      "sampler": "balanced"
+    },
+    "balanced_softmax": {
+      "coefficient": 0.0,
+      "objective": "balanced_softmax",
+      "onset": 0.0,
+      "peak_lr": 0.2,
+      "sampler": "natural"
+    },
+    "bcl_dropout": {
+      "coefficient": 0.05,
+      "objective": "bcl_dropout",
+      "onset": 0.0,
+      "sampler": "natural",
+      "temperature": 0.07
+    },
+    "ce": {
+      "coefficient": 0.0,
+      "objective": "ce",
+      "onset": 0.0,
+      "peak_lr": 0.2,
+      "sampler": "natural"
+    },
+    "natural": {
+      "coefficient": 0.05,
+      "objective": "class_balanced",
+      "onset": 0.8,
+      "sampler": "natural"
+    }
+  },
+  "selection_created_utc": "2026-10-12T20:23:44.870957+00:00",
+  "tuning_inventory": [
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5419969795998502,
+      "seed": 10,
+      "tune_json_sha256": "4e8c8ef81dd13ee2a91349635806a50de0dba1f7c7967e6f967b2ff91834fc8b"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.541643003248638,
+      "seed": 10,
+      "tune_json_sha256": "2802170cfa59b6f9143d1bd47277525aa7fa43cbc1925a9b54b9e3b3d1871d70"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5418582195447115,
+      "seed": 10,
+      "tune_json_sha256": "ac7b73c71ba78bbfc0875e41d13f346b30788b1a909ff0dcf6458a52c72ba171"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5413819610865565,
+      "seed": 10,
+      "tune_json_sha256": "a9d709dea9b284846ad342ae5cbe8bb7f01a5d9c702cce5a654b435cde872a6d"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5410273399805784,
+      "seed": 10,
+      "tune_json_sha256": "8a7d221963ef2a1bb1ec61bd7bb2b74751352b8d7c4d482631f4f36c08fe920f"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5419969795998502,
+      "seed": 10,
+      "tune_json_sha256": "2abec14b3e676f8e0c0b1a947f4c7162ced012c66d2238c7cc8cf8e5f460f6e1"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5426634820238138,
+      "seed": 10,
+      "tune_json_sha256": "eb4864da9ac4a572a7fffaeb39d12b8d3ab1cf154b3a4d994e1208431ef9c9eb"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5440940913364603,
+      "seed": 10,
+      "tune_json_sha256": "25c0b28ae8417caed6c42a3e0bb1197b182542768d7a30a185534f1a800fc414"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5438225114257976,
+      "seed": 10,
+      "tune_json_sha256": "ba49c55c9d14ffdec62f04740414979a5f423cde86cd82d1b846f6e235294433"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.544455578953984,
+      "seed": 10,
+      "tune_json_sha256": "47c184f811ca577f041b4866f15baa85a7c77bab62357644b9b07150c5cecf24"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.544068308260952,
+      "seed": 10,
+      "tune_json_sha256": "f1fb759bb10cfba3150d83cbb7b89a78c60a4ff64533b70330cccc41175b46e0"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5450316221868622,
+      "seed": 10,
+      "tune_json_sha256": "eebee4febe06de20aac1446557a8521fee1da4fcd986bd49b40ae8eaae96c44a"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5440940913364603,
+      "seed": 10,
+      "tune_json_sha256": "62673ba184d86f0aaf94d0d024818d01bcd25b7b8d022a79c07b384ecd78ec03"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5442415490776507,
+      "seed": 10,
+      "tune_json_sha256": "94e96cdbe6d5ce7a5fa0dd0617b436a20db369289bcc6807f8917d62d2b5ec17"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.3416242039089726,
+      "seed": 10,
+      "tune_json_sha256": "2d9b879e061c0075913bf796cbc5386ccd38375aa3564077284c311525f05cad"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.465532504131563,
+      "seed": 10,
+      "tune_json_sha256": "e210b11d1b83f72a0e2c8a261f8e637d154e298f25ce5d0b1c80eeb68a1f0a59"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5279311541437025,
+      "seed": 10,
+      "tune_json_sha256": "61a50fa078fcfdab7afe8ccf37af2a53bfd64666549f9471f8884f0cf36d753f"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5593750009084953,
+      "seed": 10,
+      "tune_json_sha256": "6ac5466b57fb53461814bca249dcadcc74e8196d0a5feb409debb73ceb3585da"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5636350258784765,
+      "seed": 10,
+      "tune_json_sha256": "850228a46ac69fa04fe9e15276dfe4d275f65d466594f9b95ced0638467340c5"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5700836835671184,
+      "seed": 10,
+      "tune_json_sha256": "a074d2174e1e1d41e53b5076c4ff798ab1ac81e62cd32fd949921227116ad5dc"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.308197310514246,
+      "seed": 10,
+      "tune_json_sha256": "ac327557977e424f3278656c9cb29f1aaa39da007e67ee86e307ac8831e1b7fc"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4443903371892698,
+      "seed": 10,
+      "tune_json_sha256": "d47f598046fa9a9ab07a42110783151b045862e73ea1662cc78af9e6b260e379"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5171450874448286,
+      "seed": 10,
+      "tune_json_sha256": "6a83f81a32e3526543ecefba455ece2131162f65003bc9d071a71532229df886"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5431861035641162,
+      "seed": 10,
+      "tune_json_sha256": "88dced9fbee7e9b9acec6ef24a0519d79d12a0a6a9606761153e561be959f60c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5500681215705725,
+      "seed": 10,
+      "tune_json_sha256": "237f90991e4dc1ea67cdf3d848e5459c002820f17587bf1a8b6c7af5d4e36978"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5556714501922265,
+      "seed": 10,
+      "tune_json_sha256": "8d5a98679d16e2097c2a5f4adb0391a74440a4d6e3c83de51770c9d7a59497e0"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5038640149343201,
+      "seed": 10,
+      "tune_json_sha256": "5e12ff539942cff6e2dc310a95081172a31cfcda343431cf842811f4bd82dd6e"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5034125288328596,
+      "seed": 10,
+      "tune_json_sha256": "79520a5c863612020c83759f886e4c8be9b555008c89b81eab4b1dea0e0b50da"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.4741217824462465,
+      "seed": 10,
+      "tune_json_sha256": "22da78b22f483a5c812013fbf379fe81cb848829f6aa895a53814d3e41ff8e82"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4612238978734484,
+      "seed": 10,
+      "tune_json_sha256": "e244b7a1fc231000cf3bcec5711ac29e918e789058e1f77e34ef01304378d4fc"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.4681843236727841,
+      "seed": 10,
+      "tune_json_sha256": "e7f5a0eb1ec81a7e6451155d2dd7cdef25bd053eae225f23b0a15e3d2661cb4d"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.43008453883278946,
+      "seed": 10,
+      "tune_json_sha256": "a2b192efbd835bfe5dca0a778182ccd5c1730fd96b1df4a2ccc87d88b8ce4a23"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5382425658670004,
+      "seed": 11,
+      "tune_json_sha256": "e2c30ac2a0f8a295d25fa18705750fdc8a5db04119ccfb148d4b9a0908b590f4"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.537938089928008,
+      "seed": 11,
+      "tune_json_sha256": "b1c4e8fda8bdae106ad69d76eac07874c2394a6b7442cee3db27300a08f87632"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5375521759053308,
+      "seed": 11,
+      "tune_json_sha256": "0fe4bef8fde356a13c346700cf3f70f88203cc7c33463d126889b14ab46912c0"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5385096583252046,
+      "seed": 11,
+      "tune_json_sha256": "82aed0b554b9c14c0e20d173715bc55ae6b09ae53843f2c9798da0f8a690ca9e"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5374137844931812,
+      "seed": 11,
+      "tune_json_sha256": "eab9dec7bf08988902754e7535a5359f501c14a0b1c100cf2b02cab2862447a6"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5382425658670004,
+      "seed": 11,
+      "tune_json_sha256": "d6a53cb5a15bfd87cc81233264a3fa79238a7972d6bcd580ec233645909f35fd"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5382723988793301,
+      "seed": 11,
+      "tune_json_sha256": "9edce3461d26b508b9ef71c995db5b983cb1c1610decf7b2ae6c62b403dacbc3"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5371435003669383,
+      "seed": 11,
+      "tune_json_sha256": "e1321f8d6f8f17ba962acdd32b4618f5bb386a870d4bd0b6b81aecbd6f0ae8cd"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5378729446490266,
+      "seed": 11,
+      "tune_json_sha256": "7b558e25846b0b84fdd32271c5cb3c61aa7acff7778adf8cdb5bbaa5579f92a9"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5378987025407601,
+      "seed": 11,
+      "tune_json_sha256": "3c2526b7b16183223156676dee6116008c7331d3ca05ad4c80bbe85c47fe68c3"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5371824446060427,
+      "seed": 11,
+      "tune_json_sha256": "63844823de8801c2977cb45a1d3cd49cef07d67d052db3c7b5c8041aaf44583d"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5388011148182056,
+      "seed": 11,
+      "tune_json_sha256": "7b357db15ca0e904eb251a0ad829395286107ee5536294f351bd5f37d9592e4a"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5371411194145573,
+      "seed": 11,
+      "tune_json_sha256": "038b628e208eee7af77eb9a6d353bc2d881fa01e1e7b3dc10422e7f559969e64"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5382378186422677,
+      "seed": 11,
+      "tune_json_sha256": "7fea312ac9649097550de055a4d3189f21df1306811c8dd3f38dace101555739"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.34212347065190973,
+      "seed": 11,
+      "tune_json_sha256": "ba15443e8e373c85065c9149244c4239d711941855d613237664498a539b6f74"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4650227967588742,
+      "seed": 11,
+      "tune_json_sha256": "a3d1aae6b3ce11ed784a2a25d11d5da9c2fe2f62005dc51b45b699c541dc429c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5340821635159466,
+      "seed": 11,
+      "tune_json_sha256": "8655e3dafe1831858da904b4126030e8b8ab23953baf822168ff0732bf908c3c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5555046712328001,
+      "seed": 11,
+      "tune_json_sha256": "e33ac28227ede61f0368dbeb7ed49384d4308794184570ac9a02fd2772d5e211"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5647873251867717,
+      "seed": 11,
+      "tune_json_sha256": "53cdd66605463d3c881ce35b6f791b4857d8c9729f68dcacca445d21d81a144f"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5639197820457293,
+      "seed": 11,
+      "tune_json_sha256": "d691aefb860e92b566b9bdb611c5c596376cb809c47217ac1d3699fb712a6dde"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.3052983100210645,
+      "seed": 11,
+      "tune_json_sha256": "bd857cf1220aacd772fbedcd4a8fa767b2000831fa8db6ee63f373cd4a7adfd2"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.43346538358946013,
+      "seed": 11,
+      "tune_json_sha256": "5ccb6d43d5adcc3519c46687798231ea73b680479627278aba0e960434924a79"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5147823731482463,
+      "seed": 11,
+      "tune_json_sha256": "ab2ae861fed34a8d9813808cac3c545f0d026aeea3fe5d824130ab6485047c99"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5449373579145533,
+      "seed": 11,
+      "tune_json_sha256": "bfc53d227947344f5578a482dc773055943de4bde6c942723be072bb500ca91b"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5550055438381074,
+      "seed": 11,
+      "tune_json_sha256": "d8faf47f6d631b9d53c8ce76fbe10f3c5357500242f001f7040208d999c234db"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5593450849736479,
+      "seed": 11,
+      "tune_json_sha256": "32798b1cf7fadd2c6770067bb1cfcb59ea5fe39229af0c078a857c2a3910bd8b"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.506726871035442,
+      "seed": 11,
+      "tune_json_sha256": "d9b6d569dc37451e13c41547f6e509db60f6ac4e47fbad63b808adfcb88a5b91"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5067856497454499,
+      "seed": 11,
+      "tune_json_sha256": "43a0beb8cae4baa0649cbb1585b1e89cc7e44104994f8b2ffa74109fbdc457df"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.4821577550941245,
+      "seed": 11,
+      "tune_json_sha256": "2a2b459b2c0f287e84968137f8f3a11bac21b7aff38150ae7788db82ae2aaa46"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4670250887409185,
+      "seed": 11,
+      "tune_json_sha256": "10e1c082c4b16e3459d69dd41edd281017cee583261621ae3ada2326c44e6705"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.46897739994953547,
+      "seed": 11,
+      "tune_json_sha256": "0f61c00ad09e003e36b2b4767f8042649a9b419f7b808a8e4769f0e4fc6f80a3"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4176864813732084,
+      "seed": 11,
+      "tune_json_sha256": "b8ef03703c68e7c65cf0c2e6bdc43c452ca77007baebfa8936038315655c91c2"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5515697364555037,
+      "seed": 12,
+      "tune_json_sha256": "25efa449f7cadc386538c32490619a52bca455c7619cedf04f3e435ff24a64ad"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5515186673651528,
+      "seed": 12,
+      "tune_json_sha256": "925b03b60f022170e2769702df7f2fd4c88d4e3d2c070aea8375ff1c0da234de"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5529830725125555,
+      "seed": 12,
+      "tune_json_sha256": "101b42b2412829cc8344f95406d5a21e72c992f9a92906648362f3679384d8dc"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5520374935931283,
+      "seed": 12,
+      "tune_json_sha256": "439f123051c0a7e639e2d03e440839fbd14f338cce64c2993cf04a4c143907dd"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5508348739900594,
+      "seed": 12,
+      "tune_json_sha256": "0ef29c8dac7962b83b2ad8cd70897fbcd1b7c421efbca34863c3aa4f7d247852"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5518097252117742,
+      "seed": 12,
+      "tune_json_sha256": "0b3dc685aa384c8eace47b46c907abeaf27e53ca06eee1f0d0e6778fad2e4953"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5519074177878516,
+      "seed": 12,
+      "tune_json_sha256": "1f0c089b2c5f515d3090d6eae0684125424935ec6b5424a8b9df807c6ea68cfe"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.553975070632563,
+      "seed": 12,
+      "tune_json_sha256": "1abdf38c9d04dda961b65b072fb8b00c83484aee6e6f6eec110324eb2495d2e4"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5541162534643873,
+      "seed": 12,
+      "tune_json_sha256": "ff361fa5f8ba5285b4aa9f9140a16f2edb37069ae3ac30d69f942e57bcb415e2"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5536530766912328,
+      "seed": 12,
+      "tune_json_sha256": "a45475031341cffe13f55f9c43f732aa26f7a6ac28814629c98bed46c672758e"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.554212259008372,
+      "seed": 12,
+      "tune_json_sha256": "27d2f062648774872b576288eb36a3a9cb452ce88f8d4fd04701970b61596361"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.55411453062256,
+      "seed": 12,
+      "tune_json_sha256": "e66cc3c1d7d9b62e3b081f859a32f3fe9d863f67d6a0824077450d831e8d4a98"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.553975070632563,
+      "seed": 12,
+      "tune_json_sha256": "9d5d1506d1493042f57ce5e4f75273c67d86813efca54dc13e09b8878bf8a665"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5539597407748147,
+      "seed": 12,
+      "tune_json_sha256": "d01cebc34b55f7c7249cafe536a88c3cee7e31a03f7329b1377d7a0eb4e3836a"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.34700549910039213,
+      "seed": 12,
+      "tune_json_sha256": "1c179ffc9b3e9aa02fd27b133bec14fe3821ce1f01547e1821d294668dfa10a6"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4726613239342426,
+      "seed": 12,
+      "tune_json_sha256": "e9e3b4ac61209693bc2433e247076b72f904e5f64f1fc83e698d835a95a935a2"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5324934162665186,
+      "seed": 12,
+      "tune_json_sha256": "ff8b610bd6befa7cfa75db59a5ad09b6060ff7b509e69d08be1bdc40a0a783fe"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5532778034313621,
+      "seed": 12,
+      "tune_json_sha256": "9d657b0f93d330d6e4bb40d118b79c3a13d48f9ca328a7637e77c32d365195f0"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5646240989110421,
+      "seed": 12,
+      "tune_json_sha256": "ed9258c4d1c710a459cb13c3a07df363b2fdddaaca0af85a6b4bada290e3e9d5"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5735046314508453,
+      "seed": 12,
+      "tune_json_sha256": "bbb0ef00e9352eb6d59cb485ecd6dbc4dd99246e65e27328b13de8794fad2775"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.31032233938300247,
+      "seed": 12,
+      "tune_json_sha256": "f04b44b534572316c03ed40b7f8b88400d82e890d8f067ec67c78d33affae74d"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.45505098008242967,
+      "seed": 12,
+      "tune_json_sha256": "49234c0b60839304a90fe30e1aca903464a1d4084c76b5fbb64e8f90ab49e9ff"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5338160550511077,
+      "seed": 12,
+      "tune_json_sha256": "aec7a05722b794da0c6eeb0dadfa08174a3e6719d3b272136831367ea2dd32e6"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5535397853203422,
+      "seed": 12,
+      "tune_json_sha256": "36188ef01076e0aef71b7a4921f6dff3c771868a65f9e2998153bc800dc54ee8"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5620316537181135,
+      "seed": 12,
+      "tune_json_sha256": "b8eeb00f7bba53954f738efbbb6bc6ed48731aa1449b2c5a3e5cd3160b0dbe1d"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5606909644877449,
+      "seed": 12,
+      "tune_json_sha256": "80963fbb774502bab1dacfeef408bc27bf5641b79c7768c26f7738f33a157b17"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5170224038436182,
+      "seed": 12,
+      "tune_json_sha256": "7835b2a87e1ec6ed156869b77e7a46b3f2248cf44f915d7501c836c87a75b4c0"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5137343159477112,
+      "seed": 12,
+      "tune_json_sha256": "c405fffbdcb20eb69cbfc6f6f63e540ceeecf49aa06459b97c68efe54035de0a"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.4857770139436122,
+      "seed": 12,
+      "tune_json_sha256": "202865c7ab55e35264b31001626c04ba4a3608aeed8ca37a916271b418983a00"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4794126818217045,
+      "seed": 12,
+      "tune_json_sha256": "8fd7b5183349c355f0eac5a4ac7d3b696a68799cbcda44deb1233260ed7a34af"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.47880376915732215,
+      "seed": 12,
+      "tune_json_sha256": "a742167e3e6c08f63ce9b807f2449b9eda9e850cd9c24ad4f7b17c48c5df097d"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4404936896173646,
+      "seed": 12,
+      "tune_json_sha256": "bca99460c18471235485f2d6cd0e36063b1a482ec71fb25be3c10ceca6579f22"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5430670215780747,
+      "seed": 13,
+      "tune_json_sha256": "eec235ee49db18400b29f9d4a9074dca4377e4d64a88cb3488b6c00ff49a3910"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5414877554111034,
+      "seed": 13,
+      "tune_json_sha256": "962de5c2fa63aa9e7d2798ccf1cd1aed59b9d6452c01457d160c78e74a94cbea"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5419484080986501,
+      "seed": 13,
+      "tune_json_sha256": "dcd46a44d4e832784dd78c8d370e3ece7316f8501d1481ce7cfc1a9c86f8f652"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5425826052936938,
+      "seed": 13,
+      "tune_json_sha256": "cf9d28e8a03e160413a7f0c4c373dfaeb8788952749bd0ba6ef3af8899b9e49b"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5423562228879087,
+      "seed": 13,
+      "tune_json_sha256": "597639db3f0912a035424846457f543e7d137296da6c023b3bbe95d50ef71665"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5430626099638076,
+      "seed": 13,
+      "tune_json_sha256": "011bd972fbacd7248c33139105d7e94fc9c28a37774f0bcf72e299130006d80d"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5430790199104502,
+      "seed": 13,
+      "tune_json_sha256": "a9a828fd4931e0cec3a8cb4e59137f54359e2cb9f474710252e7bf4c0a87e956"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5468607728788755,
+      "seed": 13,
+      "tune_json_sha256": "7c0ac57c58bf6edbece5d7be7c2e3b7862dae7654eefd7c69787b8fe80526b0f"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5462263309571711,
+      "seed": 13,
+      "tune_json_sha256": "1f9c44d3ea36e8a39c8c773018ff1893bc6ac69f92effc15b652ec60dfb3ebea"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5475902744258271,
+      "seed": 13,
+      "tune_json_sha256": "4a985b58a20e793004c471b17467e1719c2ca1d5d7f7f6b0c08b870c58124584"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5465280454080692,
+      "seed": 13,
+      "tune_json_sha256": "cf0695ac2bdf354a1cfbce234295cc8a9a2e09b4e4c65c3e648f151430a4b3f5"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5472573807148436,
+      "seed": 13,
+      "tune_json_sha256": "eb2d84571a4d9224c4c8267788b87bbf04c0d892869a999988511c50e5c3e425"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5468607728788755,
+      "seed": 13,
+      "tune_json_sha256": "c01023f0bdf0d92008ed65e7be9a160328ca9aa6099a39c137ebdfdb38a863aa"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5469317808759555,
+      "seed": 13,
+      "tune_json_sha256": "ed9fcde2070b79c3e65afdaade2f6c732c3fd958926db66d72067c55a2d67fb2"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.3500675439376717,
+      "seed": 13,
+      "tune_json_sha256": "44728e2727cd5fe7866e95872f9265c447a5ec5ce4fe08089c3a749b5213cd3c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.46506556524248055,
+      "seed": 13,
+      "tune_json_sha256": "80278106a75a72f46b1e7eb4079aa03c512fc8d354a70ef7c4de3c1011a6c9fd"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5333069720007599,
+      "seed": 13,
+      "tune_json_sha256": "d746c753e95283954539c57297f1bcb68c58e07f88a29864778c9996e3ca6b13"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5572254282776608,
+      "seed": 13,
+      "tune_json_sha256": "7ccc1ac270b66caf165969768f4ce96824d265478608807c756621001892c921"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5667287572152694,
+      "seed": 13,
+      "tune_json_sha256": "fe1aabf55f99c335000422ca3678d1c4cfddf561715f7dd7bf1ceba2ee621052"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5654293811232667,
+      "seed": 13,
+      "tune_json_sha256": "cba3b5589d30e1391327c3147261b10f982814d3dca891492014b581240be9c1"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.30783824237769297,
+      "seed": 13,
+      "tune_json_sha256": "108a49ce9d8c1e9e8ec6590dd6d3d2a095d9fd3832292ed45f38115e14d108cb"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.44032006603387486,
+      "seed": 13,
+      "tune_json_sha256": "cae160dcbbf592eb49b9b2353fa980f3df7d7fdc8a8f83f8022583cf3165b1c0"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5221388027827711,
+      "seed": 13,
+      "tune_json_sha256": "eeaf1059917142cb02f2be4d33ee59e59847596ca0416e0482f9f07547333bb4"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5459411705201781,
+      "seed": 13,
+      "tune_json_sha256": "9530106f586ed2efec87d76687fb3a79a5cf733dc14f6638f6fe29f1994f873c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5565047061664326,
+      "seed": 13,
+      "tune_json_sha256": "b8c395421eef87085bdc7a9e779d67fd99c265e6d92697b2dd8c14a87c0d9061"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5579001194046669,
+      "seed": 13,
+      "tune_json_sha256": "975d3a66243fa69f827a86a9e02abe9bd484f97b5aaa429cdb1472ca96e2caec"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5088749114934643,
+      "seed": 13,
+      "tune_json_sha256": "42558bb2fbedbc54e433486a959726b71bf6b63482be95aae2cfdcd4583279b1"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5077836708990328,
+      "seed": 13,
+      "tune_json_sha256": "948b48154bffdd88b7122b1fddd56969a37b2a588f9dacdef05285e5c6185de6"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.48549440138883215,
+      "seed": 13,
+      "tune_json_sha256": "b84e7a0883873227c327cd1140542f9cfe6b0f85115f2ee844ce7f3d4a16a6b6"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.46707414716428713,
+      "seed": 13,
+      "tune_json_sha256": "4dd0e271c073f3addbf8c720fad2d66d796233d66ac72b01dd21fd10f100e937"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.47268045435738093,
+      "seed": 13,
+      "tune_json_sha256": "d05b77ecca63ad676ef87be8a77bd1c1cc9962ff0b8857851d91e45130337035"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.43027451416230056,
+      "seed": 13,
+      "tune_json_sha256": "c29faf16218b46b8fc1305a647d886107886c83b72bfc31fd2dac9c8a4bddfe3"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5295184338384386,
+      "seed": 14,
+      "tune_json_sha256": "6957dcbe0efaf37473dcb1ac4e876984378e00f45c210acb38bbfd7c9b916ab2"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5299130121866862,
+      "seed": 14,
+      "tune_json_sha256": "77e26c8616e52242b99ca5433e58cb765631cf07940503312b87f3fd02b55b59"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5298007645866588,
+      "seed": 14,
+      "tune_json_sha256": "39caa9598ca47ba24157ce8381feb55bf0b645eddcee0a204745ad08ad471041"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5297364982177374,
+      "seed": 14,
+      "tune_json_sha256": "6f3db542b67cc3e542919f73dddc92f84e55b989e95ead145081e34cdac7406f"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.529631065425262,
+      "seed": 14,
+      "tune_json_sha256": "1a125a2c97fdac473daf59e17df6622be6b2c4d168253f2810086305646fe450"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5295184338384386,
+      "seed": 14,
+      "tune_json_sha256": "785bfaad1665e2261792ea5892ea7275903e2b18a65663853eb5227d378fdb20"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5299552824801808,
+      "seed": 14,
+      "tune_json_sha256": "fd30bddd3e085abdcc161a97094b4d497870fa79dd322bce08057ba4c340d447"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5335644857720281,
+      "seed": 14,
+      "tune_json_sha256": "6bb1b49b2ac3455f74103dea46af69c944be7ea1f03fb9db59e1dda4c0516153"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5335776171179112,
+      "seed": 14,
+      "tune_json_sha256": "fa8603ca6e3a7146dce690ad3afc9023c479ff1ac92b76526fac44e3a981ec7d"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5331893772956308,
+      "seed": 14,
+      "tune_json_sha256": "25158f370c21ef48de404c436f2ce64d84a241d264ccc2a47afbc850908f3568"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5335640850353583,
+      "seed": 14,
+      "tune_json_sha256": "98889fa6ee13a64c3cb5e1c5409b4d3e30341e54de67f280c1965146b410baea"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5338110557340109,
+      "seed": 14,
+      "tune_json_sha256": "6976a0ea9c4e868dbf803fb6261f21218c84de81cce151067b207bc90f324017"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5335644857720281,
+      "seed": 14,
+      "tune_json_sha256": "d22900e46f508f895c83330ece323d5f6232ab6e9931c52dfe945c0067acf878"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5333260008113271,
+      "seed": 14,
+      "tune_json_sha256": "48110516ec4c074f70eba345279c9cfab8194aca90b8d598452e7a515e115c14"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.35384471682649876,
+      "seed": 14,
+      "tune_json_sha256": "aa049efbfc2158e014a53dae5e55612940358fc153011d22fe86a9662aed94b3"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.46698772964666463,
+      "seed": 14,
+      "tune_json_sha256": "c853d8a06254a9ad461f4cae9557bb9efc400ea62ab5da24ab6b3114849b464e"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5294887386328948,
+      "seed": 14,
+      "tune_json_sha256": "38d671cec7660e38870d42c9e36f6785be1e23058b1e3cd4ca32d2df4b4baf8a"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5505795673224378,
+      "seed": 14,
+      "tune_json_sha256": "577bbdf6929403706faf8548fe781c29c6655014503f827f4696bd7e28fae4a6"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.561656532185723,
+      "seed": 14,
+      "tune_json_sha256": "2bbbb2211f31ef9d562fc48fb65875bd577e57c400e95477e86c61ee39a539d0"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5635301345988768,
+      "seed": 14,
+      "tune_json_sha256": "1afcb148bb8d9f31d9b62747ffb28bf3c7e222637a3b5c64bfa54c0f6d20060e"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.31153679706936677,
+      "seed": 14,
+      "tune_json_sha256": "8444540a44fbd4a69b88fd76c34e7a443c9b278f9f15e211d29ee8cccee8cba6"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4415128158395001,
+      "seed": 14,
+      "tune_json_sha256": "537c1edf5ceed87a60b40b8fd76a4f4df976ae50adb38767faa76c267ccb0394"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5177918289630175,
+      "seed": 14,
+      "tune_json_sha256": "ba07e1f770189b3742986384e6f2d203762e2e2bd0d0a02baac015403839f09f"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.54248345789387,
+      "seed": 14,
+      "tune_json_sha256": "fe52f844d9651a71f6aa0db0061ba77b167a8299e179732914534d6ed62bf11b"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5555763828548466,
+      "seed": 14,
+      "tune_json_sha256": "4ebb325daf3f190f9053b7c3f21415f9a13e46034366e3c61a83172582c2fa47"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.555093066565774,
+      "seed": 14,
+      "tune_json_sha256": "71bec16e475a138c631f770fba55cdb5357d97f109f804305513119608638497"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5072157332632509,
+      "seed": 14,
+      "tune_json_sha256": "b26ce9be99efab51a7f3bded1efcc9df9ae7fb599bc719491f3affe6e67fe1ac"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.506446027684681,
+      "seed": 14,
+      "tune_json_sha256": "edb2fa2fb7ca015960bdd0a5683e30a19d1af7b6d890b1de428da4dfa2621686"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.48118379240135495,
+      "seed": 14,
+      "tune_json_sha256": "8bbebbf65c3d2aae5525b643ecc3eca95254ef7b199325ba9d56781dabcc6f94"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.47122941617802283,
+      "seed": 14,
+      "tune_json_sha256": "cb9a816cb7682b042f043a32b0187d278e7798918294021abd2e5c7ad86f737f"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.47047338667721206,
+      "seed": 14,
+      "tune_json_sha256": "4784b12dc0237d15563aa3a280f61ba7dd34a8cb9a5cab5e0937971a328fb00c"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.43664459688261575,
+      "seed": 14,
+      "tune_json_sha256": "a8695986b21a42c95039cbc24c2a0a705316e95a14029161b750e79a57a9ace1"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5419791342083418,
+      "seed": 15,
+      "tune_json_sha256": "b1d575be797a7fa9f5d7e52e1a1cacdb76b0071a59145ec7a193e03f9eafbf4a"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5428591100787515,
+      "seed": 15,
+      "tune_json_sha256": "84373baf02ea44a53358459dfd0a6e5513d79498a6650baebe0de7018afd03df"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5414647692102399,
+      "seed": 15,
+      "tune_json_sha256": "47b9690ab629d24cbb469b3f4221b243508712a1edb4d2ecefad7bb554b8daa9"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5424017372379584,
+      "seed": 15,
+      "tune_json_sha256": "db5eafaa034b18c4ca4966e9abf0b3c6d2e3d3660f5d80baf5d8f4d6836b80d7"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5417248054538852,
+      "seed": 15,
+      "tune_json_sha256": "3640d4567336c81670fe58eb4c60a44f5ba5ffb916a0267b34a3639bbc176e89"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5419791342083418,
+      "seed": 15,
+      "tune_json_sha256": "717c9a3e276a9b0fde769f3458dce722f8e0dd55b8e15194b39810f717126f7b"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5419705338898114,
+      "seed": 15,
+      "tune_json_sha256": "c0d9c832048b6f2a33695a57d450d7b4580915db1fb23fd62a751949362891cb"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5444842604197357,
+      "seed": 15,
+      "tune_json_sha256": "5ae36773c5a795f94fb5e7c43c055b7281950222269dcf33e7343aa0b339e5bc"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5445736475890409,
+      "seed": 15,
+      "tune_json_sha256": "c83bcb5a2da02f7e77a441e8280875cf509c0af76397e3b2aa6be45178852f60"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.544979606611813,
+      "seed": 15,
+      "tune_json_sha256": "2b6baed5172730cde8186da77ca9ee011db7898bc30da0dbb98d41e91203ef65"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5444537172741678,
+      "seed": 15,
+      "tune_json_sha256": "ff12de16ca2a40b1575cd4c3c987948e9e17f403567395c98d02ab1c45f02555"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5445206216453187,
+      "seed": 15,
+      "tune_json_sha256": "088fb2059591b1bbda1bda5b9a6993d554d1c2948d45df57a0e177aadb8c1644"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5445213535693446,
+      "seed": 15,
+      "tune_json_sha256": "7aa09b98a831e3200cfe9e355d295ec21253fcd09cd85b37fe7b92cf0069b67f"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5447466928669478,
+      "seed": 15,
+      "tune_json_sha256": "332e4b860734032c027a46249cf0c3e61b9849b0335477f0cd32d33381cf0be0"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.35243964176171316,
+      "seed": 15,
+      "tune_json_sha256": "8682574da0c27c1b09d2ffa32dddc6126e13b287571002db3690b6485790bc24"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4699406643956286,
+      "seed": 15,
+      "tune_json_sha256": "1524b30db6421081a3bb5a9be5d0553f6a70e7a17d4e2718a83fcb50eb8407a1"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5409131230337977,
+      "seed": 15,
+      "tune_json_sha256": "8a0a8079b1cb6d9fddd3db0bde080d05eb8d668ddd6dbbd4a8e5d146c60e0409"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5561735615525172,
+      "seed": 15,
+      "tune_json_sha256": "1de8f58cf54efe60f5f6d8d2874f0bab48d6422729b193979bf81fdfbf570676"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5664438980650707,
+      "seed": 15,
+      "tune_json_sha256": "a08ed0a4e1a94ec2fab744bd032dbc8ee979bd96154686d2c86041f2f7f90254"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.569460503025289,
+      "seed": 15,
+      "tune_json_sha256": "f0be0df9c22005d173fe75956a4a97d4d1cc15f65f08b21bba2fb472e48f0d32"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.3081195602316395,
+      "seed": 15,
+      "tune_json_sha256": "539ff1d1efec2b477dca03b49f4a21bccaf10aa77d791963a0209dc0326dcf44"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4355026926450645,
+      "seed": 15,
+      "tune_json_sha256": "4cd91783ea4fc111a2b41c56ad065c3edc42d567a1438961e2814fe595e443b2"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5236102563980694,
+      "seed": 15,
+      "tune_json_sha256": "43b0d05ac2298ad3fd2350129caed7b426420a28fa9a44c76c822b6e535a2002"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5494305683720657,
+      "seed": 15,
+      "tune_json_sha256": "6e63bf40b5a440c4a276c5a6cdc6cc772087ed2f1c78acd2d8485a0260432991"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5567692517578466,
+      "seed": 15,
+      "tune_json_sha256": "ddde8900973d3764c03f84fa651aa7ca1ccfa513487695312b5b774ac6f85086"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5570431639994287,
+      "seed": 15,
+      "tune_json_sha256": "cd70211e21e9ed307b6c0a6402b7c6d360cf764c49fd5c1757cb9c25377f1f8b"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.504045998631566,
+      "seed": 15,
+      "tune_json_sha256": "f14e960aca0c66457c3b698ed56b8acf5b50762c595dc36492b38ca208451e76"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.504914387500896,
+      "seed": 15,
+      "tune_json_sha256": "6c59a040fa592ddcc175840f8f6075be1e1e43ad874757676a988c6ddf72bed1"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.4779598551106391,
+      "seed": 15,
+      "tune_json_sha256": "2f1e4580f9935ce07493f7cdc018f47c1733aec0023e10f815cbbee6cfd516da"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4657630646884393,
+      "seed": 15,
+      "tune_json_sha256": "599bb206c4b6fb0cdb5ced635cae50a535efc2f48e60c5ff7eaa33cd50d5f488"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.4713935564461792,
+      "seed": 15,
+      "tune_json_sha256": "df25988ed257fda48f01d96b086bebe350cf5ea89bef115983cef819d62e45b2"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4333592897787312,
+      "seed": 15,
+      "tune_json_sha256": "fd69faa856b57913982c9141df21311c8b4f398e1cbf5f5b2730a7a23407395f"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5518243843971536,
+      "seed": 16,
+      "tune_json_sha256": "25c6627d9cc6e63fc3934effc4a5471b63518f6aa1fe64fc315686788f312072"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.551080347700369,
+      "seed": 16,
+      "tune_json_sha256": "cab2de1c837f6f4e88c0e3e5edc9050c6eeb756929ef4e0d1b8203d0b6c9d228"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5500676767057915,
+      "seed": 16,
+      "tune_json_sha256": "f6d5043fcdbf403441f9349bbdb0e43a2ece7e322d6ba800f2f563b95c29b952"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5518135313590897,
+      "seed": 16,
+      "tune_json_sha256": "74e612d04d4ec900489b66d4f536d282aa02e1da333076d0130fd33c7600b0f4"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5516312777918095,
+      "seed": 16,
+      "tune_json_sha256": "66626a6fba82326be23c328ff147e7543ed23ba95197284bdeb72a4df3ae69d9"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5518243843971536,
+      "seed": 16,
+      "tune_json_sha256": "95a3ceb08e19966ce3921ea17ef87f95f0f2538b7ddc0638201372b43c1f416a"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5518047497635149,
+      "seed": 16,
+      "tune_json_sha256": "3cc3b622bfe2d8b0e072d17a8c9819b8454d277352621c694ae7caecfdd21de7"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5473327481791163,
+      "seed": 16,
+      "tune_json_sha256": "00ecef20bd3c1aa98f08a36413835296730b9ac133411224f316be8be5fd3cb7"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5476479736452046,
+      "seed": 16,
+      "tune_json_sha256": "a1f4bc1f9ff8d6c2803198829ae0a0ffa9c118aaa065db6008c1a245380e5606"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5487330311863174,
+      "seed": 16,
+      "tune_json_sha256": "900e4d75505af57afa25f4f1c597efc71db799ac1d847516b33d53fdda0c9517"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5475147393201975,
+      "seed": 16,
+      "tune_json_sha256": "335909fecceb3d24333fa4a93768b0fd20438e30a6b91fbeab0b1a2a292b9a4b"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5484433492200412,
+      "seed": 16,
+      "tune_json_sha256": "f1ebaffd84a4ee35f0c8abd54f033a1799e531133740e96d9f6afbd4bba4be95"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5473327481791163,
+      "seed": 16,
+      "tune_json_sha256": "542c3baab34227254430747a99b98c6d2ffa9b4ead2a795cd1c71f94d7228a79"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5475295930765056,
+      "seed": 16,
+      "tune_json_sha256": "123c7f4391cb782582df6c52c058953cf6bf2584026f48f9d9eb883b27353b8d"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.34806621598236065,
+      "seed": 16,
+      "tune_json_sha256": "683f328320bd438afa09c2c23ce0a89c748f5c481b4ce508e4262a0ce3ca695a"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4604797429746632,
+      "seed": 16,
+      "tune_json_sha256": "47151f78d6582e577335dde3f600acc4fe88001ce607ad180f85aaf84e116957"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5284887487735221,
+      "seed": 16,
+      "tune_json_sha256": "31e0d4eae40e6e189e7660ae1ec9f6e7f7d3c1b7dc4009c0ab2ded2c6107fa43"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5561589216344852,
+      "seed": 16,
+      "tune_json_sha256": "725c1ea26537c6fec1924293fcf1df558ebdad7d9fbebdc7042188880e252dc7"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5654856889209838,
+      "seed": 16,
+      "tune_json_sha256": "94fbc1310b4a307f9a81a210e3d0f0a8a1e0a4d8e788700ec1443bf4229c0c28"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5627179093694766,
+      "seed": 16,
+      "tune_json_sha256": "04efe07f933cd15964423f5ef244b2b85670c399ee88412268fcb13eaad93729"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.31525957180792485,
+      "seed": 16,
+      "tune_json_sha256": "cbaf152879cb73bb7f049532b020ef8e9d83dc995073263f3ea107312b78f3b1"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4355008883599669,
+      "seed": 16,
+      "tune_json_sha256": "69674780fcb2f4685ccdd7ba13831ff75fa3896e5817b744693fd8c14f37259c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5142194992594493,
+      "seed": 16,
+      "tune_json_sha256": "266180aa871e29646d45fde420123951d60481df6300734b1e452e0f07c94815"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5485922055573178,
+      "seed": 16,
+      "tune_json_sha256": "e8a96d81b911bc16a41fe618d7d4ede05ecd71d95c2134e75f3d01ee6934937c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5586145071498785,
+      "seed": 16,
+      "tune_json_sha256": "2f5eee97726ecdd7e43d8668ceb280c4bc936512c400c5b534e696314e7cd4f9"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5576446115232556,
+      "seed": 16,
+      "tune_json_sha256": "00c88d309c0fdd3d274f5903be4a8847f085ba6ed922e8e757afcb8c1afebae7"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5015889447746041,
+      "seed": 16,
+      "tune_json_sha256": "a22e2cd73e53ac23ab1538357fe684286b7240c6867b7158ecf51255e56b90fd"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5006400684486959,
+      "seed": 16,
+      "tune_json_sha256": "645a9c90ee1588bb75a4497b08abb5fc881b51a11a526bdee9b7a34a5d92a087"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.47986925868172037,
+      "seed": 16,
+      "tune_json_sha256": "f7d41376536d21252ff3285748916a5ec9794573486921a06a8916bc8594e6f8"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.46528894812535826,
+      "seed": 16,
+      "tune_json_sha256": "56f38d5d53d7e804f6de02ef5617d2dc7e0b1ed7acedd476d2544e100f1bd6a3"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.46979691240342014,
+      "seed": 16,
+      "tune_json_sha256": "6f483ca74934554e97e41d8652294632adf0dbc6cb273ac13a6be09677f8c31a"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4302832406177942,
+      "seed": 16,
+      "tune_json_sha256": "de891781f19c87e51a240f6f587b37e35bf3bdfc2e1bea07ea18c25e435db248"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5366625686716521,
+      "seed": 17,
+      "tune_json_sha256": "6efa12815bd1ec5515d758f5090d632fd4e2abf9609279b0b7eda323843c1495"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5364479242728841,
+      "seed": 17,
+      "tune_json_sha256": "6afd94d7024fbaea71add3792aeaba741d193ea9bcf453b6858fca30a57c0b83"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5351992516747173,
+      "seed": 17,
+      "tune_json_sha256": "f50df213c3e5563d3536f54d0ad6d5bf0706ada02852bb1811673b811e909ec4"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5369726045027265,
+      "seed": 17,
+      "tune_json_sha256": "778af107ee96244eb05892c352d4e77efb76425dee9e0f4b21dd8f0f7455e211"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5353641018739415,
+      "seed": 17,
+      "tune_json_sha256": "e466604f9c12a4a17331d3926a335678f446f7af8b2033f818b6bcd70f0142cb"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5369323197211203,
+      "seed": 17,
+      "tune_json_sha256": "0a2b136e241d2ae71271d8cec5e52b7f43641d5e34f45d745e999114534e0c2f"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5366842099501242,
+      "seed": 17,
+      "tune_json_sha256": "db1c423abb06af9564a9add5be5c0f34a22814819c38c403d638869b9886bd40"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5344640022747066,
+      "seed": 17,
+      "tune_json_sha256": "4f5dddd5b3c523405ec276aaf20e010d41b83d584ebf0ce17e1d0b1c1323f99f"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5335065691082883,
+      "seed": 17,
+      "tune_json_sha256": "209fc279127093c8841e604fff5b6cdef1ce0d04f8044d832aec9857b24f895a"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5321877052070241,
+      "seed": 17,
+      "tune_json_sha256": "2d75901917988fb4b166bbc766ae5dd75825dd77f227137bd2d6e70a8f984981"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5344627321674591,
+      "seed": 17,
+      "tune_json_sha256": "7eb647dba41c3c0e7b2c3d698bd4c9ca85376b27a0e71c85f73d5ea8ae654518"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5339209835587414,
+      "seed": 17,
+      "tune_json_sha256": "4543d5b6ae54be1f7244f31a8d6b49519c1450d5dc480a4ff4f225a6146a69cc"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5344640022747066,
+      "seed": 17,
+      "tune_json_sha256": "f7ee47c1860eb99e2a9b44334fd5438dd4a4c2bff66906eef4ff4824863dd3fb"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5344489736812538,
+      "seed": 17,
+      "tune_json_sha256": "fee581313f8cf02f47dc0d2b15c65f44484a77e5e7020869740bae6a212c4e78"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.3530819032842673,
+      "seed": 17,
+      "tune_json_sha256": "c4bfa88f77f7139538c189cef05ca70ff2175e523dd1e5f8c190b212306a14b8"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4684554940588405,
+      "seed": 17,
+      "tune_json_sha256": "e896559f304415d96985d3a5f5a10f0f4985209b4a8f5ee22b52f51b7dda5f91"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5406460418189702,
+      "seed": 17,
+      "tune_json_sha256": "34feb8237ef5d9b7bba17da39cd579eba7c8c6d2870024db7b0ae772cd3e4bbb"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.563452930107513,
+      "seed": 17,
+      "tune_json_sha256": "62b9548abde86ff39d966a9f82ad10e7fd088426cafbdefd06d5068491e3aefe"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5694164682639401,
+      "seed": 17,
+      "tune_json_sha256": "69dae75d16f04d6d36cd0bf578c74abfbfa251306f257fb6313d0bacd526baa6"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5676401290188098,
+      "seed": 17,
+      "tune_json_sha256": "728790ef37cbbc828019a2ba93c5c0aa2649a4680fcd571eee51769298d3d0f3"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.30673277682427874,
+      "seed": 17,
+      "tune_json_sha256": "4024fb73252d3e06303decbb602dec0a665c88f834c3c2560366431ec0c635d4"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4416416369761385,
+      "seed": 17,
+      "tune_json_sha256": "911a6dfe25ef4364aa99266ef1daf8e4a5b3d7cb93ae7f98c7473e449a9a84dd"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5213140087339001,
+      "seed": 17,
+      "tune_json_sha256": "a716100c4ee0489d137e7006fa5eb063c4993fed470d6906bc03cdeb13627da1"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5499805766159688,
+      "seed": 17,
+      "tune_json_sha256": "89ac7d4cb59f82eb3c95de0a09c21b4743c8ac1758bc065dba7f76b46c6d35ce"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5578733059491695,
+      "seed": 17,
+      "tune_json_sha256": "2198be78678027d396ad9b15121aa3c80860e614b5c3f7dcacf71a75f3362e07"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5604784062944029,
+      "seed": 17,
+      "tune_json_sha256": "fdbad17644418c4fc2666fb055fb708319d3d73f4ddacd9e00ed2a2a59aa1801"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5073457319374813,
+      "seed": 17,
+      "tune_json_sha256": "7864d7872a14f3cda0d5cc3b14b685e0112d5eb57c847ebefc5d557a1d1c4261"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5065182596992369,
+      "seed": 17,
+      "tune_json_sha256": "b2d4498dc4978b37699f6560e7e75ec0eb4683e0b0e5d9b0a3d63856a0185aea"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.48012596477221764,
+      "seed": 17,
+      "tune_json_sha256": "f1f079a2557504cea8cf2a7a0938b3b410f92b1573f436f2639c52b10c284bd4"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4680431379949266,
+      "seed": 17,
+      "tune_json_sha256": "9878304d5f26427d83df300419bacf7f9bdb29470f43a2e9028424798e7a0d6c"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.47414129951377226,
+      "seed": 17,
+      "tune_json_sha256": "8c53c12e410153cec023b6891515967044517492c0a1e45fc3406d1a71a74e01"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4327669745772241,
+      "seed": 17,
+      "tune_json_sha256": "80d29899482aa8393a28e861a2e7f33cec1cd613860d6e723f2c28e19c127134"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5441342260705446,
+      "seed": 18,
+      "tune_json_sha256": "c86704d371f207bc8f1a41d317cc9cc6ff783df6c529a54841c7d374a9d83332"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5437592674628803,
+      "seed": 18,
+      "tune_json_sha256": "b944b197d90b2c7c9ba4da08cbeabdd2ea9a71d0576accb3f4d0e7a7d7c9ed9c"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5453898714328482,
+      "seed": 18,
+      "tune_json_sha256": "a38bea3372b1b8129e9a22374b41817c6c4730d99733a61699a6a1a12457655a"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5442380515978278,
+      "seed": 18,
+      "tune_json_sha256": "b28b4adbf162c874bd7886b8ae70ba510c2dba71eb9b38396a76c8995ccc5575"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5434597938238392,
+      "seed": 18,
+      "tune_json_sha256": "a81df052f8388d7babb4e7df0e148172a25138c1f546b2afaf234aea3aeaa1b1"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5441185743641244,
+      "seed": 18,
+      "tune_json_sha256": "cebb805a63c8dbe157a900ba732f636ea929f7f30c454311565091b9b963e65b"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5441329806895062,
+      "seed": 18,
+      "tune_json_sha256": "ae6774f3193df40a7fc1595d8208b6d233100ea4bddf49bdc6f9a397faf7642b"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5356524553933968,
+      "seed": 18,
+      "tune_json_sha256": "468b35a8d5bbc1b64aea5be50a840725332b8c781881e63a9dced81197f731ca"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.535139443184541,
+      "seed": 18,
+      "tune_json_sha256": "2d9c4cc19206263b280e1168e1bf32051b0347680eea1a667dceb6b02ad25e0d"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5370790421776914,
+      "seed": 18,
+      "tune_json_sha256": "2170031d7886a2078be229f789032d52c629200f0c108485807eaf1aace03ae1"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5351850029426289,
+      "seed": 18,
+      "tune_json_sha256": "652319301dc250bb8299dda0f29c914bb26b2e160e1b5ace8d6d7bacb32f772d"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5366084243351006,
+      "seed": 18,
+      "tune_json_sha256": "14e20430848ffc106bdc445797e6d7c975b373cd227bdb59e7307a366ac673e6"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5353906263441592,
+      "seed": 18,
+      "tune_json_sha256": "c8a8af41b782b6df7fe650554691623d3bdf3ea3d61e73b2f23dc04c753c4e29"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5352041566227447,
+      "seed": 18,
+      "tune_json_sha256": "0761aee96196a2925e88971d9dedb16dead15e6b84f46f94dff39716d3b6f254"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.3385416916173709,
+      "seed": 18,
+      "tune_json_sha256": "2dea51c5cef70366cece72245ec73ec1e8aac4470711a189d99665722b336412"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4581623539481859,
+      "seed": 18,
+      "tune_json_sha256": "65e0db241af66aecbde6402bd69ba4b0400cdcbb1e5587c62a18ba2cd7cef5d4"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5317667583597524,
+      "seed": 18,
+      "tune_json_sha256": "264fa4182d4eda338622bb2be48011053e948d242b9e1df742ea70d429ce58fe"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5520295553399585,
+      "seed": 18,
+      "tune_json_sha256": "b0476110fdfb45043661351a2c4f7e1b8e06eb37ef8ef1f5e14ce3580cf61cd1"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5573097288634434,
+      "seed": 18,
+      "tune_json_sha256": "85dcde5d80dd077aff18984ac94ef7dead1e20ab15216bef1018254de861910f"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.562122151739758,
+      "seed": 18,
+      "tune_json_sha256": "2a2583f3961a0468c3620751a19f2f5e2f2a07375ee4978bd70dc7bddf3d25a4"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.30445183722719127,
+      "seed": 18,
+      "tune_json_sha256": "4ece33a6ccfa2e43dd4b7deb9ba4969623da70a76925579e51c5e93a90ef43c7"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4388047976660825,
+      "seed": 18,
+      "tune_json_sha256": "e0ed43987d3714c41fbee688688fdb7926741b390aa39fc3bc407c5bd04b1b9c"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.518540621885696,
+      "seed": 18,
+      "tune_json_sha256": "a2c66326071a12a981fa4d4bc82885d8ee062d038e6958c8e91efbe96a4097ab"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5420517158932975,
+      "seed": 18,
+      "tune_json_sha256": "7ada3c6a49b51761e316bfc52fd107bd82ff33bf1551a130f4b8b03b59cbcf42"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5456391287310987,
+      "seed": 18,
+      "tune_json_sha256": "4bf3305a82a1cf5aea459e8fa5d8612ee620569f62397dc2dc7f9ea18227da65"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5589482946215864,
+      "seed": 18,
+      "tune_json_sha256": "54f0c86dd8f0e086ceef19e1e484b495c4f449a14094bc090cca75889fd09646"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5052191601951553,
+      "seed": 18,
+      "tune_json_sha256": "ee0f779aed1d3308dcc0ca88685cc061e3e8a898a4df8888acf61f65fcff0bb3"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5025303617833028,
+      "seed": 18,
+      "tune_json_sha256": "76dac58062de956c90c5c825b00697fbe764a26a22e59d73123eb4585e49ba49"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.47330969951536916,
+      "seed": 18,
+      "tune_json_sha256": "b361c8f54310d36db97efc852d6cadf6caf93ab97d8e6ed87eaba210ccf770bc"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.46377681327193093,
+      "seed": 18,
+      "tune_json_sha256": "1ab278ffdfa814372aabe651b52f9aeee52dbc05ba6ae7aa915d0eca300052a0"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.46331134736688895,
+      "seed": 18,
+      "tune_json_sha256": "1feafdab44411b0a24588b09fcb6b3490e6b65b49243e80b9aa7a09297aeb56a"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4297837229068799,
+      "seed": 18,
+      "tune_json_sha256": "dbeac9649906574c66146fc0bb2c7811380d06841122011402959de1f7a44362"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5408325177956422,
+      "seed": 19,
+      "tune_json_sha256": "5cac4e5782435de8c8c9c5525a78a7a5024390ca1117cbea6e8ab32294bd210d"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5408728736661849,
+      "seed": 19,
+      "tune_json_sha256": "3d5f068826bda58685f8779fae3dffed7010ec14dbc6ab32b15d1fb00f080d6f"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5405729705699419,
+      "seed": 19,
+      "tune_json_sha256": "70c5bb9a3f03ca69fe31af97d7269fd1ce93ea93d6deba0f6b1fe4f151999841"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5410536417882301,
+      "seed": 19,
+      "tune_json_sha256": "3d4e008c928f6ee224c3f4148b306575e982ea0e7839f5164a5899e9b2326187"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5411043034733306,
+      "seed": 19,
+      "tune_json_sha256": "f4a37181480aadad704eddac98746ad76e2b31de9e942a729d241e85db52d312"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.541068724158763,
+      "seed": 19,
+      "tune_json_sha256": "2f9988cada52ae0f7351c432e15dfd415376892da31e8491502ed0e4464da29d"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5410268630872253,
+      "seed": 19,
+      "tune_json_sha256": "2e0162e2a03b061edd5f1f11059bafac864737d694367c712455504b1d7aef95"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "class_balanced",
+        "onset": 0.0,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5384590777097253,
+      "seed": 19,
+      "tune_json_sha256": "27274e8e2b4c66a9f68516e8fd3313837a22bff1f2492a0539034ac5ad0c7f45"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.537583427285788,
+      "seed": 19,
+      "tune_json_sha256": "7e76e3c5a5b06b9615ce5b52dff10200c4a227d2748c16d4bd69113eb9089782"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.2,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5385915942475589,
+      "seed": 19,
+      "tune_json_sha256": "ef1f01cd653ec40e8303c4397b876e62801a7577a8a814d7e449cac3799ba984"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5381883676732826,
+      "seed": 19,
+      "tune_json_sha256": "1e8fafbe33b52f9ba9636466ba148ba8b459f2415af4cab68ef7eadc61f93639"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.5,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5373372900379937,
+      "seed": 19,
+      "tune_json_sha256": "fc84587da2648dc847e56607d6293af1e07b1059371be7fcc5a476fb2b0f9a0c"
+    },
+    {
+      "config": {
+        "coefficient": 0.01,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5384590777097253,
+      "seed": 19,
+      "tune_json_sha256": "40f2e89225a6653a5bfc107ba688268abb1ef379a7c726fb0f815b437f61368e"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "class_balanced",
+        "onset": 0.8,
+        "sampler": "balanced"
+      },
+      "macro_f1": 0.5388430522911188,
+      "seed": 19,
+      "tune_json_sha256": "2722d666e6ecfbe2264dffd6c28ad1d9a39a59a78520cbaf0aaa54db722ce84b"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.33773839379217774,
+      "seed": 19,
+      "tune_json_sha256": "34dbd3310475f57c5b7557cc92f3c7b2a2e80fd768c11ab969517f61aea59136"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4643182543709326,
+      "seed": 19,
+      "tune_json_sha256": "17cb4309ba28a67ef6be63c44e2ef49df15f6d737f2d40e8a4aeb4b366c01bb9"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5335459947294031,
+      "seed": 19,
+      "tune_json_sha256": "0db9df66259632c8b064bb9bcd478e488d38a4d88712e626b7678d7e236474be"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5505798404251846,
+      "seed": 19,
+      "tune_json_sha256": "6f744ab68a14bb9e0eabe6a075fb2f078542c647c25c79e3e99577838be39191"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5616269657766855,
+      "seed": 19,
+      "tune_json_sha256": "9c40829aae4f9747813d3aeac4f5d7dc0a3991ef296f38892edba49d910ea733"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "ce",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5655567753839184,
+      "seed": 19,
+      "tune_json_sha256": "094d49c37ed8655d3b07fc1c35f343e49b73ba313329996316470f2112cf0296"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.01,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.3078400399725803,
+      "seed": 19,
+      "tune_json_sha256": "787b7021d08965c5b903f686e620e35d0e380ea03af962b522adf8d01c35c087"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.025,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.4393203054049377,
+      "seed": 19,
+      "tune_json_sha256": "79fcfe2b7ebe85979c62ca331aaa428e5a270fbd4f10038cc687a91a78ac8bcf"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.05,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5192167755432989,
+      "seed": 19,
+      "tune_json_sha256": "e005904006b80450d552960bd638a2220f502113c6eba4bc2103ca0a17464a64"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.075,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5445320616950552,
+      "seed": 19,
+      "tune_json_sha256": "349e4de5cc79a3d76c46e8329db0d9b7c2c34c01cb8f81079812b607de834eee"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.1,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5546574705137811,
+      "seed": 19,
+      "tune_json_sha256": "923cc271e363db7f5f85f37a89ddb15cde314ea92f2d203fb3a726f628759bf8"
+    },
+    {
+      "config": {
+        "coefficient": 0.0,
+        "objective": "balanced_softmax",
+        "onset": 0.0,
+        "peak_lr": 0.2,
+        "sampler": "natural"
+      },
+      "macro_f1": 0.5572265353493668,
+      "seed": 19,
+      "tune_json_sha256": "4f664a218d12fca6a6bdcfedd1cd1098363adebcdc7acd8bf6a4de2ab7bdf4d9"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.5117786579701873,
+      "seed": 19,
+      "tune_json_sha256": "efeacfb69bec48f36a14eb0454beda997302358ea8ec449554ecbed65dfcefa2"
+    },
+    {
+      "config": {
+        "coefficient": 0.05,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.5111149031768858,
+      "seed": 19,
+      "tune_json_sha256": "58d4c1a2f38b69ae9accbaf766b1b9f2040b59f65cea982d6ff02c3e888f83f2"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.48205340839082905,
+      "seed": 19,
+      "tune_json_sha256": "8136327185c6e122a0f266e442bb73e5686ad885a02e2fc63c0074686f19fe1f"
+    },
+    {
+      "config": {
+        "coefficient": 0.2,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.46244223822743336,
+      "seed": 19,
+      "tune_json_sha256": "90d790cf0bccecf073706c75a4ab5f1163d12d6bffe1a29c84e509b0ce0767ef"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.07
+      },
+      "macro_f1": 0.46720867504107083,
+      "seed": 19,
+      "tune_json_sha256": "52e9a34e1e0a3c3ba362439aec5cc0272eb2434e3c4235dc819fc5546014f13f"
+    },
+    {
+      "config": {
+        "coefficient": 0.5,
+        "objective": "bcl_dropout",
+        "onset": 0.0,
+        "sampler": "natural",
+        "temperature": 0.1
+      },
+      "macro_f1": 0.4275694190090586,
+      "seed": 19,
+      "tune_json_sha256": "5719f62d370c99e50aa4b083a141933eeb7623bb32046b7f76c5ca32541e2c73"
+    }
+  ]
+}
