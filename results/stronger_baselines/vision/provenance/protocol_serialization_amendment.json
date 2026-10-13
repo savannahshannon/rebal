@@ -1,0 +1,15 @@
+{
+  "status": "prospective_engineering_fix_before_extraction_or_training",
+  "created_utc": "2026-10-12T21:45:10.504969+00:00",
+  "failed_output": "work/experiments/rebal_next_vision_v3",
+  "fresh_output": "work/experiments/rebal_next_vision_v4",
+  "reason": "Python tuple arm metadata compared unequal to JSON array metadata on the next phase; canonical JSON normalization restores exact protocol comparisons. No scientific setting changed.",
+  "old_source_sha256": "24bc9c6f92badd02104b4a424dfd3af99b3f1de0114223273b00c37dc27dc1bd",
+  "new_source_sha256": "20711dd400a1e2c1c926344c91aec8c9bc1157546078a1cf6bf0c67665c6be3f",
+  "tests": 18,
+  "test_sha256": "9ad404bd1190cc52bd2d683869bda504d757f7322fcee6ee9f47bf0f2ea836d8",
+  "training_checkpoints_before_amendment": 0,
+  "confirmation_predictions_before_amendment": 0,
+  "preserved_failed_protocol_sha256": "c4bc41f437b971e0e38c2400c41fb2c30c4047b970f6d08e38c7481df28f0262",
+  "numeric_results_seen": false
+}
