@@ -1,0 +1,79 @@
+{
+  "completed_utc": "2026-10-13T03:32:22.872766+00:00",
+  "evidence_sha256": "95cfbff811f7f38d008d0e3c227c605ea3cd5d628e90e024331fcec9eafee8ac",
+  "pages": 23,
+  "pages_reviewed": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23
+  ],
+  "pdf_sha256": "bc7683dea024c76d25a1ec14c31f8fbcf9d6382608c68a1b2839e78c65ea467c",
+  "render_dpi": 130,
+  "review_receipts": [
+    {
+      "pages_reviewed": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "receipt_sha256": "0917f1bd0cc25c549ac5828852b363b23ae9848dc306633b8462ad6f8141ee21"
+    },
+    {
+      "pages_reviewed": [
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "receipt_sha256": "92b639ac8bde1252f4635c5b8a174c77449a127782689e93a1b776610c116301"
+    },
+    {
+      "pages_reviewed": [
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "receipt_sha256": "846ef13fada1de0af03e0f462a30e90ceff7a40383a385aaa25d5a4d5a750301"
+    },
+    {
+      "pages_reviewed": [
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "receipt_sha256": "ee48b67f6a1f7ae47fd99646f8ca6d666ccc633611f19ababea7518dc75c7deb"
+    }
+  ],
+  "scope": "Each full page inspected at original rendered resolution. Visual QA checks layout, readability and visible privacy; independent numeric QA is separate.",
+  "status": "all_pages_visually_reviewed"
+}

@@ -1,0 +1,60 @@
+{
+  "status": "all_five_scientific_figures_visually_reviewed",
+  "reviewed_utc": "2026-10-13T03:15:09.422043+00:00",
+  "files": [
+    {
+      "path": "figures/rebal_followup_equalization_performance.png",
+      "bytes": 124584,
+      "sha256": "39cadd7e81a4b3cb8a5d9c058ccca7c39c7120dbc0d2204de39664659e33d0b2",
+      "pixels": [
+        2200,
+        990
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "path": "figures/rebal_followup_vision_performance.png",
+      "bytes": 114058,
+      "sha256": "3cc757e97a456a6516d425822793efceb309cdaadd8d3cd7cce11a0ea8587ebb",
+      "pixels": [
+        2200,
+        990
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "path": "figures/rebal_followup_text_performance.png",
+      "bytes": 189535,
+      "sha256": "4a6030c6ed3e9f27d89dc04e371d295c7d214f30b24d2993b632e9cc06fe834c",
+      "pixels": [
+        2200,
+        1020
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "path": "figures/rebal_followup_tabular_performance.png",
+      "bytes": 85177,
+      "sha256": "db56409d341c3f648be967c893ceb08dc94870c836a3269c0876240be6b2dca1",
+      "pixels": [
+        2200,
+        990
+      ],
+      "visually_reviewed": true
+    },
+    {
+      "path": "figures/rebal_followup_paired_effects.png",
+      "bytes": 377610,
+      "sha256": "cb3a8cbf0bca2c1dc0b67c9e82e3aca2a17227731579a4abfa646fbc8388cbd6",
+      "pixels": [
+        2640,
+        2310
+      ],
+      "visually_reviewed": true
+    }
+  ],
+  "figure_count": 5,
+  "review_scope": "All five complete images viewed at original resolution. Labels, study/model order, full 0\u2013100 performance axes, signed paired-effect intervals, uncertainty captions and unobstructed boundaries inspected. No private content visible. Numerical inputs are bound separately by reviewed plotter and presentation provenance.",
+  "input_evidence_sha256": "54093543e648ac86fa5c81f313cbed48ea35e89661efdff2bc19a609b00aa9c0",
+  "plotter_sha256": "549273bb0771095f9933cb05ec6e6cf5bbbffa23d0720aa4d1382f308370f314"
+}

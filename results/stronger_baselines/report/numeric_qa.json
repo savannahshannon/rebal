@@ -1,0 +1,20 @@
+{
+  "artifact_identities_verified": 20,
+  "displayed_metrics_per_model": 3,
+  "evidence_sha256": "95cfbff811f7f38d008d0e3c227c605ea3cd5d628e90e024331fcec9eafee8ac",
+  "model_rows_verified": 30,
+  "ordered_global_sensitivity_rows_verified": 22,
+  "ordered_model_rows_verified": 30,
+  "ordered_primary_rows_verified": 22,
+  "pages": 23,
+  "pdf_sha256": "bc7683dea024c76d25a1ec14c31f8fbcf9d6382608c68a1b2839e78c65ea467c",
+  "primary_contrasts_verified": 22,
+  "reference_urls_verified": 15,
+  "rows_bound_to_declared_report_sections": true,
+  "scope": "Text extraction contains every source-bound displayed metric, paired effect/interval, primary p-value, identity and reference. Model, primary and global rows occur in their own uniquely bounded report sections. This does not prove spatial layout or independently validate training.",
+  "status": "completed_pdf_text_and_numeric_fields_verified",
+  "unique_ordered_section_headers_verified": 15,
+  "verified_utc": "2026-10-13T03:20:31.022251+00:00",
+  "verifier_sha256": "700d5713756e66057a03a36ea743a91321098c9dad96c2b46ad5bf758c4d36ab",
+  "visual_inspection_required_separately": true
+}

@@ -1,0 +1,24 @@
+{
+  "after_builder_sha256": "02ebeabf5a2e943d606113dbbece18ed9799c4a50218ab345f8595562313abcc",
+  "all_other_function_and_class_asts_unchanged": true,
+  "ast_reverts_exactly_with_only_two_style_arguments": true,
+  "before_builder_sha256": "a2a4769e0fc2e7071f4c97a80335e6d1566bb21d26982991ececbf1d2e5594ed",
+  "changed_function_asts": [
+    "create_pdf"
+  ],
+  "current_all_page_visual_qa_sha256": "253f0d5c7991f854a09b48fc57adcecadb725e02ff65bf33bb23448571ecbd00",
+  "current_formatter_archive_path": "reproduction/work/build_followup_report.py",
+  "current_numeric_qa_sha256": "96a7af1f33443d9b4d174b82c24f3d001bd67e6dda5b57bb1fe4dd6190c04ee6",
+  "current_pdf_sha256": "bc7683dea024c76d25a1ec14c31f8fbcf9d6382608c68a1b2839e78c65ea467c",
+  "current_presentation_sha256": "95cfbff811f7f38d008d0e3c227c605ea3cd5d628e90e024331fcec9eafee8ac",
+  "defect": "Page5 only contained fit-scaler estimation. continuation frompage4",
+  "historical_formatter_archive_path": "companions/report/build_followup_report_before_layout.py",
+  "only_changes": "ReportBody leading14 to13; spaceAfter9 to8; fontSize10 unchanged",
+  "original_revision_receipt_sha256": "03e303079686d552c7735412eb56d1ff6ff313efe7206fad0b0949bae008e7a4",
+  "original_revision_status": "layout_only_body_spacing_revision_prepared_rerender_pending",
+  "prior_pdf_sha256": "c26c411fe43f54d4a6b2eca64cc5f3cc249a653fac977ad59f1a628c47dc065d",
+  "revised_utc": "2026-10-13T03:20:29.486249+00:00",
+  "scientific_evidence_and_figures_modified": false,
+  "scope": "Two body-style spacing arguments changed to repair the historical orphan. Scientific evidence and numeric binding functions are unchanged. Historical formatter bytes resolve the finalizer recorded provenance; the current formatter is preserved separately in the reporting source catalog.",
+  "status": "layout_only_revision_applied_and_current_pdf_qa_complete"
+}
