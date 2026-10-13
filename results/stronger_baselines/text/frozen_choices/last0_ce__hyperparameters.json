@@ -1,0 +1,56 @@
+{
+  "candidates": [
+    {
+      "budget_sha256": "79e48926ee5656b402b034671dd7d2a3d99a78149531bafd82bf5ce52c29033f",
+      "checkpoint_sha256": "195fd5ab5714f4e0d4f95f1dc0f79987c44e9925c3a830111c899b1dd5d929f6",
+      "device": "cpu",
+      "epochs": 3,
+      "final_state_sha256": "da375b23152702302889e693ebe75d050914a73964cdb5abfa7212e6bdf29361",
+      "fit_examples": 106232,
+      "identity": {
+        "lr": 2e-05,
+        "method": "last0_ce",
+        "protocol": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342",
+        "seed": 9
+      },
+      "initial_head_state_sha256": "9b368253ffd12a02d5154106cfdb1a2859d881387f4b8a493e6c00fa0c715269",
+      "initial_state_sha256": "9b368253ffd12a02d5154106cfdb1a2859d881387f4b8a493e6c00fa0c715269",
+      "master_parameter_dtype": "float32",
+      "precision": "fp32",
+      "total_parameters": 231566,
+      "train_seconds": 12.85583629226312,
+      "trainable_parameters": 231566,
+      "tune_logits_sha256": "7eb9bb28e1cf2fad565f9cca7f8fe68092eeac6d26396628ab721c8de9f158bf",
+      "tune_macro_f1": 0.8463556011823309,
+      "updates": 318
+    },
+    {
+      "budget_sha256": "194579f9d535691cad6481a990f7ba5c40442827e4099f43a87899335a5e10a1",
+      "checkpoint_sha256": "72428b9eb288dc1fcc01eca8d8cfe06ccb3b6120cfdb8193c85e2992f98aa8e3",
+      "device": "cpu",
+      "epochs": 3,
+      "final_state_sha256": "b7a1ee1fe3390720e4b31e538f96841b63f579ce3bbceb790cfe156aeccd75b6",
+      "fit_examples": 106232,
+      "identity": {
+        "lr": 5e-05,
+        "method": "last0_ce",
+        "protocol": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342",
+        "seed": 9
+      },
+      "initial_head_state_sha256": "9b368253ffd12a02d5154106cfdb1a2859d881387f4b8a493e6c00fa0c715269",
+      "initial_state_sha256": "9b368253ffd12a02d5154106cfdb1a2859d881387f4b8a493e6c00fa0c715269",
+      "master_parameter_dtype": "float32",
+      "precision": "fp32",
+      "total_parameters": 231566,
+      "train_seconds": 11.645240749698132,
+      "trainable_parameters": 231566,
+      "tune_logits_sha256": "8d558d24764a75ffd8926853bed394357dd58e6f0201f1dd13f739bcae93743e",
+      "tune_macro_f1": 0.9348722099731945,
+      "updates": 318
+    }
+  ],
+  "confirmation_scored_at_freeze": false,
+  "protocol_fingerprint": "cd3fcb35f1b336cf7fab7c220c6f8edd1313a123d4e49eb145252d7a5bdd5342",
+  "selected_lr": 5e-05,
+  "tuning_seed": 9
+}
