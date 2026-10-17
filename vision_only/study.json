@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "study_id": "rebal-vision-fullscale-20261016",
+  "status": "prepared_not_executed",
+  "execution_requirement": "The user-authorized remote CUDA computer; no local scientific training substitute. Connection details are private and excluded from this repository.",
+  "datasets": {
+    "imagenet1k": {"train": 1281167, "confirmation": 50000, "classes": 1000, "regimes": ["native", "lt100"], "access": "existing approved ImageNet/ILSVRC access required"},
+    "cifar100": {"train": 50000, "confirmation": 10000, "classes": 100, "regimes": ["native", "lt100"], "access": "official CIFAR release"},
+    "inat2018": {"train": 437513, "confirmation": 24426, "classes": 8142, "regimes": ["native"], "access": "official research release; do not redistribute images"}
+  },
+  "encoders": {
+    "deit_small": "deit_small_patch16_224.fb_in1k",
+    "dinov2_small": "vit_small_patch14_dinov2.lvd142m"
+  },
+  "pretraining_scope": "Frozen pretrained representation adaptation. DeiT has already seen full ImageNet supervised labels. Long-tail subsampling does not erase pretraining. No from-scratch or isolated architecture superiority claim.",
+  "transform": {"resize_shorter": 256, "crop": 224, "interpolation": "bicubic", "mean": [0.485,0.456,0.406], "std": [0.229,0.224,0.225], "augmentation": "none; deterministic common transform", "dinov2_position_grid": "timm adapts pretrained grid to declared 224 input"},
+  "development": {"split_seed": 20261016, "tune_fraction": 0.05, "calibration_fraction": 0.05, "rare_class_rule": "For >=3 training examples reserve at least one tune, one calibration and one fit; for 1 or 2 retain fit and record absent development classes.", "confirmation": "official validation/test untouched until all final fits and selection freezes exist", "lt100": "declared seeded exponential thinning of remaining fit pool, actual counts recorded; not the standard ImageNet-LT release"},
+  "training": {"epochs": 50, "batch_size": 256, "adapter_width": 256, "adapter_dropout": 0.0, "optimizer": "AdamW", "weight_decay": 0.01, "warmup_fraction": 0.1, "gradient_clip": 1.0, "learning_rate_candidates": [0.001,0.003], "tuning_seed": 901, "final_seeds": [10,11,12,13,14,15,16,17,18,19,20,21], "precision": "float32 heads/adapters and float16 frozen cache, same for matched arms", "eq_coefficient": 0.05, "eq_onset_fraction": 0.8, "eq_lr_selection": "One common LR per encoder/regime selected by mean raw tuning macro-F1 of the two EQ-off factorial arms; all four factorial cells inherit it. Anchors select their own LR. Final epoch only, no confirmation selection."},
+  "arms": ["natural_balanced_off","natural_balanced_eq","uniform_off","uniform_eq","natural_ce","balanced_softmax"],
+  "primary": {"endpoint": "confirmation macro_f1 with frozen development decision offset", "comparisons_per_regime": ["natural_EQ_DeiT", "uniform_EQ_DeiT", "natural_EQ_DINOv2", "uniform_EQ_DINOv2", "natural_encoder_by_EQ_interaction", "uniform_encoder_by_EQ_interaction"], "multiplicity": "Holm within regime; combined 30-comparison sensitivity; 12 paired seeds give minimum exact two-sided p=2/4096; inference is conditional on fixed partitions"},
+  "metrics": ["macro_f1","top1","top5","macro_precision","macro_recall","head_f1","middle_f1","tail_f1","per_class_precision","per_class_recall","per_class_f1","active_phase_class_eligibility","EQ_to_CE_gradient_norm","feature_extraction_seconds","training_seconds","peak_GPU_memory"],
+  "cleanup": {"automatic_during_training": false, "precondition": "all expected runs and aggregates complete; non-dataset artifacts exported and byte-verified outside owned remote run root", "scope": "only this study's owned images, archives, feature caches and exported run artifacts; preserve code and unrelated user files"}
+}
