@@ -1,6 +1,6 @@
 # Vision-only full-source classification study
 
-This version prepares a controlled study on **full ImageNet-1K, CIFAR-100 and iNaturalist 2018**. The new experiments have **not been executed**. All new manuscript outcomes remain **Pending**. Unit-test fixtures are software checks, not benchmark measurements.
+This version implements a controlled study on **full ImageNet-1K, CIFAR-100 and iNaturalist 2018**. The remote pipeline has been launched and was downloading the full official CIFAR-100 release at the last live observation; frozen-feature extraction and the CIFAR classifier fits are queued to follow automatically. **No completed scientific fits or feature extractions have been verified.** All new manuscript outcomes remain **Pending**. See [STATUS.json](STATUS.json) for the dated observation and remaining source dependencies. Unit-test fixtures and the remote CUDA functionality check are software checks, not benchmark measurements.
 
 The standalone [IEEE manuscript](paper/main.tex) begins with image-cataloguing and biodiversity use cases and states the research goal before the protocol. The [study configuration](study.json) is the source of the planned experiment grid. It contains no credentials, remote connection address, private dataset paths or dataset images.
 
