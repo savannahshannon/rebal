@@ -1,7 +1,7 @@
 {
-  "status": "remote_classifier_tuning_running",
+  "status": "remote_access_unavailable_current_progress_unverified",
   "observed_utc": "2026-10-17T14:49:36.282673+00:00",
-  "scientific_execution": "Both frozen feature caches independently verified; CUDA classifier tuning running, with one completed 50-epoch tuning fit independently verified and no final fits verified",
+  "scientific_execution": "Last successful remote audit verified active CIFAR tuning, two complete feature caches, one complete tuning fit and no complete final fits; current remote progress has not been checked.",
   "verified_completed_scientific_fits": 1,
   "verified_completed_feature_extractions": 2,
   "planned_tuning_fits": 80,
@@ -54,9 +54,9 @@
   ],
   "pending_dependencies": {
     "imagenet1k": "approved full source location or official access route needed",
-    "inat2018": "official download awaits explicit acceptance of release terms"
+    "inat2018": "Terms confirmed; remote launch awaits legitimate access to the authorized CUDA computer."
   },
-  "observation_limit": "Dated live observation. AnyDesk displays a viewing-session time limit; later job progress must be rechecked.",
+  "observation_limit": "The observed_utc timestamp belongs to the last successful scientific checkpoint audit. No newer remote process, fit count, or download progress is verified.",
   "overleaf": "https://www.overleaf.com/project/6ad2ba2e3d7610b1cdfb6893",
   "manuscript_status": "six-page IEEE protocol; all new experimental outcomes Pending",
   "cleanup_status": "not_started; experiment and retained evidence incomplete",
@@ -124,7 +124,7 @@
     "completed_final_fits_verified": 0,
     "subsequent_tuning_fit_observed_running": true
   },
-  "recorded_utc": "2026-10-17T14:50:40.335931+00:00",
+  "recorded_utc": "2026-10-17T15:48:22.146012+00:00",
   "verified_completed_tuning_fits": 1,
   "verified_completed_final_fits": 0,
   "completed_counts_are_verified_lower_bounds": true,
@@ -135,5 +135,21 @@
     "optimizer_update_budget": true,
     "parameter_and_optimizer_finiteness": true,
     "confirmation_scored": false
+  },
+  "remote_access_status": "Further remote control is unavailable after an AnyDesk license-limit closure. Restore legitimate access before another remote launch or progress check.",
+  "next_dataset_pipeline": {
+    "dataset": "inat2018",
+    "full_source": true,
+    "expected_train_rows": 437513,
+    "expected_confirmation_rows": 24426,
+    "expected_classes": 8142,
+    "official_download_terms_confirmed_by_user": true,
+    "download_launch_verified": false,
+    "training_launch_verified": false,
+    "local_operations_helper": "prepared and independently reviewed; not deployed",
+    "download_source": "https://github.com/visipedia/inat_comp/blob/master/2018/README.md#data",
+    "queued_training_rule": "Only after independent validation of all 288 scheduled CIFAR final fits; do not score official confirmation early.",
+    "operations_helper_synthetic_tests_passed": 5,
+    "operations_helper_test_scope": "software fixtures only; no local dataset acquisition or scientific training"
   }
 }
