@@ -54,6 +54,16 @@ python -m vision_only.control --work /scratch/rebal-vision-study confirm
 python -m vision_only.control --work /scratch/rebal-vision-study analyze
 ```
 
+Datasets may be prepared, extracted and fitted incrementally as their full official sources become available. The optional `--datasets` flag only schedules work; it does not change the study, its 720 final fits, or the requirement to finish every dataset before confirmation. For example, a private paths JSON containing only the `cifar100` entry can start both full-CIFAR conditions while ImageNet and iNaturalist are being obtained:
+
+```bash
+python -m vision_only.control --work /scratch/rebal-vision-study prepare --datasets cifar100 --paths /scratch/private-cifar-paths.json
+python -m vision_only.control --work /scratch/rebal-vision-study extract --datasets cifar100
+python -m vision_only.control --work /scratch/rebal-vision-study fit --datasets cifar100
+```
+
+Place the stage before `--datasets` because that option accepts one or more dataset names. For filtered preparation, the paths JSON must contain exactly the selected datasets. Partial fitting validates the selected checkpoints and records their count as a scheduled subset; it creates no global seal and makes no all-study completion claim. Repeat these stages for the remaining full datasets, then run the unfiltered `fit` command to validate and seal the complete grid. `--datasets` is rejected for `seal`, `confirm`, `analyze` and `all`; confirmation, aggregate reporting, export and cleanup keep their complete-study requirements.
+
 Run the stages in a persistent remote terminal or job manager. Do not edit code/configuration during execution: resume, cache and global-seal checks deliberately reject identity changes. Fit stages resume only from coherent epoch-boundary checkpoints. Never infer completion from a detached process, existing output directory, partial cache or a passed pilot.
 
 Confirmation stores raw/adjusted top-5 and predicted labels, plus calibration predictions for every candidate offset. Aggregation independently replays reported metrics and offset selection. A full-source manifest, per-seed results, per-class results, comparisons, checkpoints, selection receipts and diagnostics must be exported before cleanup. Publish only sanitized code, protocol and validated aggregates; do not upload full image inventories containing private roots or any images.
