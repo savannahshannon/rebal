@@ -116,12 +116,69 @@ class VisionDataTests(unittest.TestCase):
         self.assertEqual(len(plan.excluded), 1)
         self.assertEqual(len(plan.fit + plan.tune + plan.calibration + plan.excluded), 13)
 
-    def test_conflicting_duplicate_labels_and_fake_partition_membership_are_rejected(self):
-        copied = self.root / "train/class1/0.png"
-        copied.write_bytes((self.root / "val/class0/0.png").read_bytes())
+    def test_confirmation_conflicting_labels_preserve_all_official_rows(self):
+        (self.root / "val/class1/0.png").write_bytes((self.root / "val/class0/0.png").read_bytes())
         manifest = data.inventory_imagefolder(self.root, self.spec)
-        with self.assertRaisesRegex(ValueError, "Conflicting labels"):
-            data.exclude_training_exact_duplicates(manifest)
+        clean = data.exclude_training_exact_duplicates(manifest)
+        self.assertEqual(clean.samples, manifest.samples)
+        self.assertEqual(clean.expected_counts, manifest.expected_counts)
+        self.assertFalse(clean.exclusions)
+        plan = data.make_partitions(clean, 11)
+        self.assertEqual(plan.confirmation, tuple(sorted(sample.sample_id for sample in manifest.samples
+                                                        if sample.source_split == "confirmation")))
+        self.assertEqual(plan.class_counts["confirmation"], [1, 1, 1])
+
+    def test_all_train_confirmation_overlaps_excluded_regardless_of_labels(self):
+        pixels = (self.root / "val/class0/0.png").read_bytes()
+        for relative in ("train/class0/0.png", "train/class1/0.png", "val/class1/0.png"):
+            (self.root / relative).write_bytes(pixels)
+        manifest = data.inventory_imagefolder(self.root, self.spec)
+        clean = data.exclude_training_exact_duplicates(manifest)
+        expected = {"train/class0/0.png", "train/class1/0.png"}
+        self.assertEqual(set(clean.exclusions), expected)
+        self.assertEqual(set(clean.exclusions.values()), {"exact_pixel_overlap_with_official_confirmation"})
+        self.assertEqual(clean.samples, manifest.samples)
+        self.assertEqual(clean.expected_counts, manifest.expected_counts)
+        plan = data.make_partitions(clean, 11)
+        self.assertEqual(set(plan.excluded), expected)
+        self.assertEqual(len(plan.confirmation), 3)
+        self.assertEqual(plan.class_counts["confirmation"], [1, 1, 1])
+
+    def test_training_conflicting_labels_exclude_entire_group(self):
+        pixels = (self.root / "train/class0/0.png").read_bytes()
+        for relative in ("train/class0/1.png", "train/class1/0.png"):
+            (self.root / relative).write_bytes(pixels)
+        manifest = data.inventory_imagefolder(self.root, self.spec)
+        clean = data.exclude_training_exact_duplicates(manifest)
+        expected = {"train/class0/0.png", "train/class0/1.png", "train/class1/0.png"}
+        self.assertEqual(set(clean.exclusions), expected)
+        self.assertEqual(set(clean.exclusions.values()), {"conflicting_label_training_exact_pixel_group"})
+        self.assertEqual(clean.samples, manifest.samples)
+        plan = data.make_partitions(clean, 11)
+        self.assertEqual(set(plan.excluded), expected)
+        self.assertTrue(all(plan.class_counts["fit"]))
+        self.assertEqual(data.exclude_training_exact_duplicates(clean).fingerprint, clean.fingerprint)
+
+    def test_same_label_training_duplicates_keep_first_id_independent_of_order(self):
+        (self.root / "train/class0/1.png").write_bytes((self.root / "train/class0/0.png").read_bytes())
+        manifest = data.inventory_imagefolder(self.root, self.spec)
+        clean = data.exclude_training_exact_duplicates(manifest)
+        self.assertEqual(clean.exclusions, {
+            "train/class0/1.png": "exact_training_pixel_duplicate_of:train/class0/0.png"})
+        reversed_clean = data.exclude_training_exact_duplicates(replace(manifest, samples=tuple(reversed(manifest.samples))))
+        self.assertEqual(reversed_clean.exclusions, clean.exclusions)
+        self.assertEqual(data.exclude_training_exact_duplicates(clean).fingerprint, clean.fingerprint)
+        data.make_partitions(clean, 11)
+
+    def test_duplicate_exclusion_cannot_remove_all_fit_support_for_a_class(self):
+        pixels = (self.root / "train/class0/0.png").read_bytes()
+        for relative in ("train/class2/0.png", "train/class2/1.png"):
+            (self.root / relative).write_bytes(pixels)
+        clean = data.exclude_training_exact_duplicates(data.inventory_imagefolder(self.root, self.spec))
+        with self.assertRaisesRegex(ValueError, "no fit examples"):
+            data.make_partitions(clean, 11)
+
+    def test_fake_partition_membership_is_rejected(self):
         plan = data.make_partitions(self.manifest, 11)
         bad = replace(plan, fit=plan.fit + plan.confirmation[:1])
         with self.assertRaises(ValueError):
