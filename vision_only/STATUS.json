@@ -1,16 +1,16 @@
 {
-  "status": "remote_pipeline_started_dataset_acquisition",
-  "observed_utc": "2026-10-17T06:14:00Z",
-  "scientific_execution": "full_cifar100_download_running; feature_extraction_and_classifier_fits_queued",
-  "verified_completed_scientific_fits": 0,
-  "verified_completed_feature_extractions": 0,
+  "status": "remote_classifier_tuning_running",
+  "observed_utc": "2026-10-17T14:49:36.282673+00:00",
+  "scientific_execution": "Both frozen feature caches independently verified; CUDA classifier tuning running, with one completed 50-epoch tuning fit independently verified and no final fits verified",
+  "verified_completed_scientific_fits": 1,
+  "verified_completed_feature_extractions": 2,
   "planned_tuning_fits": 80,
   "planned_final_fits": 720,
   "software_validation": {
-    "unit_tests_passed": 79,
+    "unit_tests_passed": 84,
     "location": "authorized_remote_CUDA_computer",
-    "duration_seconds": 44.156,
-    "scope": "synthetic fixtures; these are software checks, not benchmark outcomes"
+    "duration_seconds": 44.185,
+    "scope": "synthetic fixtures; software checks, not benchmark outcomes"
   },
   "remote_cuda_probe": {
     "passed": true,
@@ -28,10 +28,10 @@
       "native",
       "exponential_LT100"
     ],
-    "archive_download": "in_progress_at_last_live_observation",
-    "downloaded_bytes_approximately": 12500000,
+    "archive_download": "complete_checksum_verified",
+    "downloaded_bytes_approximately": 169001437,
     "archive_bytes_expected": 169001437,
-    "training_started_verified": false,
+    "training_started_verified": true,
     "queued_tuning_fits": 32,
     "queued_final_fits": 288,
     "encoders": [
@@ -44,7 +44,8 @@
       "extract_frozen_features",
       "fit"
     ],
-    "confirmation_scoring": "locked_until_all_720_final_fits_across_all_datasets_are_verified"
+    "confirmation_scoring": "locked_until_all_720_final_fits_across_all_datasets_are_verified",
+    "source_preparation": "verified_complete"
   },
   "datasets": [
     "ImageNet-1K full source, native and separately named exponential LT-100",
@@ -55,12 +56,84 @@
     "imagenet1k": "approved full source location or official access route needed",
     "inat2018": "official download awaits explicit acceptance of release terms"
   },
-  "observation_limit": "AnyDesk subsequently closed the viewing connection with the stated reason \"due to license limitations\"; job progress after the last live observation has not been verified",
+  "observation_limit": "Dated live observation. AnyDesk displays a viewing-session time limit; later job progress must be rechecked.",
   "overleaf": "https://www.overleaf.com/project/6ad2ba2e3d7610b1cdfb6893",
   "manuscript_status": "six-page IEEE protocol; all new experimental outcomes Pending",
-  "cleanup_status": "not_started; acquisition and experiment evidence must be retained until the full study and off-host export are verified",
+  "cleanup_status": "not_started; experiment and retained evidence incomplete",
   "cleanup_policy": "after complete grid, verified aggregation, and export, remove only study-owned dataset/archive/cache files and exported non-code run artifacts; preserve code and unrelated user data",
   "manuscript_pdf_sha256": "4bd00fcc0f79364865565a51bf39810ce03ee6273ca716659c97f3ec35ce2607",
-  "recorded_utc": "2026-10-17T06:16:10.413316+00:00",
-  "observed_time_precision": "approximate_minute"
+  "observed_time_precision": "checkpoint_audit_timestamp",
+  "study_id": "rebal-vision-fullscale-20261017-r2",
+  "source_inventory": {
+    "dataset": "cifar100",
+    "train": 50000,
+    "confirmation": 10000,
+    "classes": 100,
+    "official_archive_checksum_verified": true,
+    "training_exclusions": {
+      "total": 33,
+      "overlap_with_confirmation": 10,
+      "conflicting_training_group_members": 18,
+      "same_label_redundant_rows": 5
+    },
+    "all_official_confirmation_rows_and_labels_retained": true
+  },
+  "partition_counts": {
+    "native": {
+      "fit": 44995,
+      "tune": 2486,
+      "calibration": 2486,
+      "confirmation": 10000,
+      "excluded": 33,
+      "lt_omitted": 0
+    },
+    "lt100": {
+      "fit": 9777,
+      "tune": 2486,
+      "calibration": 2486,
+      "confirmation": 10000,
+      "excluded": 33,
+      "lt_omitted": 35218
+    }
+  },
+  "recovery": {
+    "initial_attempt": "stopped during source preparation before any scientific fits or feature extraction",
+    "cause": "strict duplicate checker rejected conflicting labels among exact duplicate official source images",
+    "correction": "preserve every official confirmation row and label; exclude training overlaps label-independently, all ambiguous training groups, and redundant same-label training rows",
+    "new_source_bound_attempt": true,
+    "prior_code_snapshot_and_failure_logs_preserved": true,
+    "verified_dataset_reused": true
+  },
+  "extraction": {
+    "deit_small": {
+      "rows": 60000,
+      "complete_receipt": true,
+      "cache_and_pilot_hashes_verified": true,
+      "confirmation_accuracy_scored": false
+    },
+    "dinov2_small": {
+      "rows": 60000,
+      "complete_receipt": true,
+      "cache_and_pilot_hashes_verified": true,
+      "confirmation_accuracy_scored": false
+    }
+  },
+  "training_progress": {
+    "stage": "tuning",
+    "completed_tuning_fits_verified": 1,
+    "completed_final_fits_verified": 0,
+    "subsequent_tuning_fit_observed_running": true
+  },
+  "recorded_utc": "2026-10-17T14:50:40.335931+00:00",
+  "verified_completed_tuning_fits": 1,
+  "verified_completed_final_fits": 0,
+  "completed_counts_are_verified_lower_bounds": true,
+  "checkpoint_validation": {
+    "receipt_identity": true,
+    "checkpoint_hash": true,
+    "completed_epochs": 50,
+    "optimizer_update_budget": true,
+    "parameter_and_optimizer_finiteness": true,
+    "confirmation_scored": false
+  }
 }
