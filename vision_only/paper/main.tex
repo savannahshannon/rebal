@@ -1,0 +1,290 @@
+\documentclass[conference]{IEEEtran}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs,array,tabularx}
+\usepackage{cite}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xurl}
+\setlength{\emergencystretch}{2em}
+\renewcommand{\arraystretch}{1.12}
+\newcommand{\CE}{\mathrm{CE}}
+\newcommand{\EQ}{\mathrm{EQ}}
+\newcommand{\Pending}{\textit{Pending}}
+
+\title{Learning from Uneven Visual Data:\\A Protocol for Matched Evaluation of Rebalancing at Scale}
+\author{\IEEEauthorblockN{Savannah Shannon, Kishor Datta Gupta, and Roy George}}
+\date{}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+An image catalogue may contain thousands of familiar objects but only a few examples of an unusual category. A biodiversity collection faces the same difficulty when common species are photographed far more often than rare ones. In both settings, a model can perform well overall while serving uncommon classes poorly. Our goal is to determine when class rebalancing adds useful value once the visual representation, classifier, and decision rule are controlled. We propose a vision-only study using the full ImageNet-1K source, CIFAR-100, and the naturally imbalanced iNaturalist 2018 benchmark. Native training distributions and deliberately constructed long-tail conditions serve different purposes and will be reported separately. A matched factorial design crosses two frozen visual encoder packages, natural or class-uniform sampling, and a feature equalization regularizer switched off or on. Importance weighting holds the expected classification objective fixed across the sampler comparison. The analysis will combine macro-F1, rare-class precision and recall, paired effect sizes, active-regularizer diagnostics, and measured computation. Additional comparisons will assess established class-balance objectives and selective encoder tuning. This manuscript presents the proposed protocol. New full-scale results remain pending, so it does not claim a performance gain, a completed training budget, or a general ranking of methods.
+\end{abstract}
+
+\begin{IEEEkeywords}
+long-tailed recognition, class imbalance, vision transformers, representation learning, controlled evaluation
+\end{IEEEkeywords}
+
+\section{Introduction}
+Consider an organisation building a visual catalogue. Familiar objects appear in many photographs, while uncommon categories have few examples and often require deliberate collection. A conservation team encounters a related problem: easily observed species contribute many images, while rare species remain poorly represented. Errors on these less frequent classes may matter even when they contribute little to overall accuracy. The practical question is how to improve recognition with the labels and computing resources already available.
+
+Rebalancing is one possible response. A training pipeline can repeat rare images, increase their loss weights, modify its class-prior correction, or alter the geometry of its features. A stronger visual representation is another response. These changes need different resources and can solve different parts of the problem. An encoder comparison alone cannot reveal the effect of a regularizer, and a sampling comparison that also changes the expected loss cannot isolate minibatch coverage.
+
+\paragraph{Goal} Our goal is to identify when rebalancing provides a useful improvement beyond a competitive visual representation and a clearly specified classifier. We focus on three questions. \emph{RQ1:} Does improved rare-class minibatch coverage change the effect of feature equalization when both samplers target the same expected classification loss? \emph{RQ2:} Does that equalization effect depend on the encoder package? \emph{RQ3:} Do any observed gains remain useful when rare-class errors, decision adjustment, and computational cost are considered together?
+
+The proposed contribution is an empirical design that makes those questions separable. Its primary factorial comparison will reuse the same partitions, cached representations, adapter and head family, optimizer schedule, and seed correspondence within each encoder regime. A second set of comparisons will ask which complete pipeline is a useful application choice. These practical comparisons will retain the differences in pretraining and model capacity that prevent a single-component causal interpretation.
+
+The study uses established object and species classification benchmarks. It does not evaluate a deployed catalogue or conservation service, and it does not claim that the selected datasets are objectively the most widely used. The study repository is referenced in a footnote.\footnote{\url{https://github.com/savannahshannon/rebal/tree/vision-only-fullscale}}
+
+\paragraph{Status of this manuscript} This version is a prospective study protocol. The dataset sizes below describe source releases, not completed training coverage. Experimental outcomes are pending. All execution settings identified as proposed must be fixed before confirmation outcomes are inspected; a revised protocol will state the final settings and any changes made before that inspection.
+
+\section{Related Work}
+\subsection{Representations, classifiers, and class balance}
+Long-tailed recognition concerns learning from unequal class support while maintaining useful performance across the class spectrum. The ImageNet-LT benchmark offers a reproducible artificial-tail setting \cite{liu2019oltr}. The iNaturalist dataset work highlights the difficulty of recognising infrequent, visually similar species under natural imbalance \cite{vanhorn2018inat}. These settings complement each other: one provides controlled thinning of an object benchmark, while the other retains a naturally collected frequency distribution.
+
+Decoupled training distinguishes learning the representation from fitting the classifier \cite{kang2020decoupling}. This distinction matters when a regularized representation is assessed only through its native training head. We will therefore retain a common classifier-refit diagnostic as well as each pipeline's selected prediction rule.
+
+Effective-number weighting moderates class contributions according to their support \cite{cui2019classbalanced}. LDAM and deferred reweighting address class-dependent margins and training schedules \cite{cao2019ldam}. Logit adjustment \cite{menon2021logit} and Balanced Softmax \cite{ren2020balanced} incorporate class-prior information in different ways. Balanced Contrastive Learning changes the treatment of classes in a contrastive objective \cite{zhu2022balanced}. These methods supply relevant controls; their published scores will not be substituted for new measurements.
+
+\subsection{Vision transformers and the interpretation of pretraining}
+Vision transformers learn image representations from patch sequences \cite{dosovitskiy2021vit}. DeiT investigates data-efficient supervised transformer training \cite{touvron2021deit}, while DINOv2 supplies self-supervised visual features from a different pretraining pipeline \cite{oquab2023dinov2}. The proposed comparison uses these as available encoder packages. Even when their feature dimensions and parameter counts are close, different data, objectives, patch sizes, and training histories remain possible explanations for a performance difference.
+
+ImageNet-pretrained models evaluated on ImageNet also require a precise description of what is being learned. A frozen encoder that has already seen ImageNet training labels is a test of the downstream adaptation and rebalancing pipeline under that pretraining, not learning all visual categories from the current long-tail labels alone. We will disclose this exposure and will not describe such a comparison as recognition in a proven unseen pretraining domain.
+
+\section{Benchmarks and Data Separation}
+\subsection{Full source distributions and long-tail conditions}
+Table~\ref{tab:data} gives the selected source releases. Full ImageNet-1K refers to the 1,000-class ILSVRC2012 source \cite{russakovsky2015ilsvrc,imagenetdownload}. The proposed native-distribution arm retains every eligible source training image apart from a declared training-derived development holdout and documented exclusions. We will report its exact fit count. Downloading the full archive and fitting only a thinned subset will not be reported as training on all source images.
+
+\begin{table*}[t]
+\centering\footnotesize
+\caption{Selected source releases and proposed roles. Counts describe the released data before this study's development allocation and exclusions. The ImageNet challenge test labels are not public; its 50,000-image validation source is the proposed protected confirmation endpoint.}
+\label{tab:data}
+\begin{tabularx}{\textwidth}{@{}lrrrX@{}}
+\toprule
+Source & Classes & Source train & Labeled evaluation & Proposed role\\
+\midrule
+ImageNet-1K & 1,000 & 1,281,167 & 50,000 & Full-source native-distribution arm; separately named long-tail condition\\
+CIFAR-100 & 100 & 50,000 & 10,000 & Full native distribution; controlled artificial-tail sensitivity\\
+iNaturalist 2018 & 8,142 & 437,513 & 24,426 & Full natural long-tail distribution; no artificial thinning\\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+CIFAR-100 contains native $32\times32$ images and balanced class counts \cite{krizhevsky2009cifar}. Its role is controlled imbalance sensitivity. Resizing those images for a pretrained encoder does not add observed detail or turn them into a large-image benchmark. The planned core includes its native distribution and an exponential long tail with nominal ratio 100. If classes have ranks $r_c\in\{0,\ldots,C-1\}$, the target fit count is
+\begin{equation}
+n_c=\left\lfloor n_{\max}\rho^{-r_c/(C-1)}\right\rfloor.
+\label{eq:tail}
+\end{equation}
+The final counts will account for the development holdout, integer rounding, and available images. Class ordering and within-class sample selection will be recorded. Additional ratios and class-order permutations would test whether an apparent effect depends on which visual classes become rare; they are optional sensitivity extensions outside the five core conditions. Such permutations would be additional conditions on the same dataset, not independent dataset replications.
+
+The planned ImageNet long-tail condition applies the exponential rule with nominal ratio 100 to the eligible training source. It is a study-specific construction and will be named ImageNet-1K exponential LT-100. It is distinct from the established ImageNet-LT benchmark, whose original protocol contains approximately 115,800 training images and 5 to 1,280 images per class \cite{liu2019oltr}. Both are subsets of the full source, not independent datasets. Native and thinned training arms will not be pooled into one result. The five planned core conditions are ImageNet-1K native and exponential LT-100, CIFAR-100 native and exponential LT-100, and iNaturalist 2018 native.
+
+The selected iNaturalist 2018 release has 8,142 species; these counts come from the 2018 competition release \cite{inat2018release}. The earlier dataset paper \cite{vanhorn2018inat} motivates the natural-imbalance task but describes a different release. We propose to preserve the 2018 source frequencies rather than create another artificial-tail dataset.
+
+\subsection{Protected development and confirmation}
+Only training-source data will be used to choose hyperparameters, checkpoints, or decision offsets. The proposed separation has fitting, tuning, and decision-adjustment roles, with nominal 5\% training-source allocations to tuning and decision adjustment. Rare-class allocations will adapt to the available support while preserving at least one fit image; classes with fewer than three source training images will have no training-derived holdout. Exact duplicate content and conflicting split memberships will be checked before feature extraction. Any content exclusion will be reported with its resulting class count. These checks cannot establish independence from upstream pretraining.
+
+Training-derived development allocation needs particular care for iNaturalist's low-support classes. For a class with at least three source training images, each development allocation is the larger of one image and the floor of 5\% of its support, reduced if necessary to leave at least one fit image. One- and two-image classes remain fit-only and are recorded as absent from development. The split seed is 20261016; realized partition counts remain pending. Selection on a development metric that omits some rare species will be disclosed rather than treated as balanced validation over every species.
+
+Official labeled evaluation sources will remain protected from current-round selection. A final confirmation set is protected from this round's decisions; it is not automatically independent of historical benchmark use. If a source was used in earlier development, that reuse will be disclosed. No early test score will be used to choose an encoder, regularizer schedule, or preferred long-tail construction.
+
+\section{Proposed Matched Experiments}
+\subsection{Primary factorial design}
+The proposed primary design crosses two frozen encoder packages with two samplers and EQ off or on. The planned regimes are DeiT-S/16 (checkpoint \nolinkurl{deit_small_patch16_224.fb_in1k}) and DINOv2 ViT-S/14 (\nolinkurl{vit_small_patch14_dinov2.lvd142m}), both with 384-dimensional encoder features and a common adapter output dimension of 256. This is frozen-feature transfer, not new backbone training from random initialization. The same encoder instance and deterministic feature cache will serve every on/off pair within a regime.
+
+The adapter applies LayerNorm, a 384-to-256 linear projection, GELU, and LayerNorm, followed by a linear classification head. Adapter dropout is zero. Encoder features are cached in float16, standardized with fit-only feature means and standard deviations, and converted to float32 for adapter/head fitting. One shared fit scaler serves the matched arms within each encoder and partition. EQ uses the unit-normalized adapter output, while the classifier receives its unnormalized output.
+
+Both encoder regimes use a deterministic RGB conversion, bicubic resize of the shorter side to 256 pixels, and a central $224\times224$ crop. Channel means are $(0.485,0.456,0.406)$ and standard deviations are $(0.229,0.224,0.225)$. The DINOv2 positional grid is adapted to the declared input size. The feature cache uses the encoder's pooled 384-dimensional output and one deterministic view per image. No stochastic image augmentation is introduced. This frozen-feature protocol does not reproduce end-to-end image augmentation.
+
+The primary sampler comparison targets the same class-balanced expected cross-entropy:
+\begin{equation}
+\mathcal L_{\mathrm{bal}}=\frac{1}{C}\sum_{c=1}^{C}\frac{1}{n_c}\sum_{i:y_i=c}\ell_{\CE}(x_i,y_i).
+\label{eq:balanced}
+\end{equation}
+Natural row sampling with replacement uses example weight $N/(Cn_c)$ for class $c$. Class-uniform sampling chooses a class uniformly and then an example uniformly within it, with weight one. This holds the expected classification objective fixed. It does not force the two minibatch gradient distributions, clipping events, or optimizer trajectories to be identical. The weighted loss will use the arithmetic batch mean; dividing by the realised sum of weights would define a different estimator.
+
+\subsection{Feature equalization treatment}
+EQ acts on normalized adapter features $\tilde h_i$. Let $S$ be the minibatch classes having at least two examples, $K=|S|$, $m_c$ their counts, and $\mu_c$ their feature means. For $K\geq2$,
+\begin{equation}
+\begin{aligned}
+\mathcal L_{\EQ}={}&\frac{1}{K}\sum_{c\in S}\frac{1}{m_c}\sum_{i:y_i=c}\|\tilde h_i-\mu_c\|_2^2\\
+&-\frac{2}{K(K-1)}\sum_{c<d;\,c,d\in S}\|\mu_c-\mu_d\|_2^2.
+\end{aligned}
+\label{eq:equalization}
+\end{equation}
+For one eligible class only the compactness term is used, and with none the penalty is zero. This is a within-class compactness and between-center separation objective, not covariance matching. The training loss is $\mathcal L_{\mathrm{bal}}+\lambda(t)\mathcal L_{\EQ}$.
+
+The proposed fixed treatment uses coefficient 0.05 after 80\% of the schedule, with zero EQ before that point. This setting is a protocol candidate, not a completed or optimized result. One common coefficient and onset will be fixed for all members of a primary factorial comparison. A separately selected coefficient/onset search can evaluate a practical pipeline, but its selected arms will not replace the common-treatment factorial or define a post hoc interaction.
+
+\subsection{Controls beyond the matched factorial}
+The planned practical controls are natural CE with development-selected decision adjustment and Balanced Softmax for each encoder \cite{menon2021logit,ren2020balanced}. Together with the eight primary factorial arms, these give twelve planned arms per dataset condition. Each control will receive a declared development search and fitting schedule. Effective-number weighting and LDAM with deferred reweighting are relevant optional extensions \cite{cui2019classbalanced,cao2019ldam}; they are not included in the present core completion inventory. Equal candidate counts alone do not imply equal computational resources or equal opportunities across hyperparameter spaces.
+
+A balanced contrastive control is another optional extension and will be included only if its implementation and budget are documented. A dropout-view cached-feature adaptation would be labeled as an adaptation, not the original end-to-end Balanced Contrastive Learning method \cite{zhu2022balanced}. A common linear-head refit on retained representations can help separate feature quality from the native training head \cite{kang2020decoupling}; any such diagnostic will be identified separately from the core arms.
+
+Selective tuning of the last encoder blocks is an optional secondary extension outside the core completion inventory. Frozen and tuned controls would share pooling, batch coverage, head initialization, backend, numerical precision, and dropout policy wherever these can be held fixed. Remaining differences would be part of the interpretation. This study does not perform a matched generator-versus-transformer intervention; its primary question concerns rebalancing on visual representations.
+
+\subsection{Budgets, diagnostics, and practical cost}
+The planned fitting budget is 50 sampling epochs for adapter/head training, with batch size 256 and AdamW \cite{loshchilov2019adamw}. Each epoch contains $\lceil N_{\mathrm{fit}}/256\rceil$ updates, each with a complete 256-row replacement-sampled batch. Thus an epoch describes a fixed number of draws rather than an exhaustive pass through distinct images; the last batch is not truncated. All matched treatments within a dataset condition have the same update count and retain the final 50-epoch model, with no earlier checkpoint selection. Weight decay is 0.01, the global gradient norm is clipped to 1, and the learning rate uses a 10\% linear warmup followed by cosine decay.
+
+The two learning-rate candidates are $10^{-3}$ and $3\times10^{-3}$. For each encoder and dataset condition, both candidates will be fitted under both EQ-off balanced-target samplers, and the mean raw tuning macro-F1 over those two samplers will choose one common learning rate for all four sampler--EQ cells. This prevents treatment-specific learning-rate selection from defining the interaction. Natural CE and Balanced Softmax will each receive their own two-candidate search. The tuning seed is 901. All configurations retain the final-epoch model, and decision offsets are selected only after fitting.
+
+Table~\ref{tab:budget} gives the proposed fit inventory. Every count is planned rather than completed, and feature extraction is separate. A small throughput run may determine whether a configuration fits available memory; it will not supply a final accuracy result or justify reporting an unfinished full run as complete.
+
+\begin{table}[t]
+\centering\footnotesize
+\caption{Planned fitting inventory for five dataset conditions and two encoder regimes. Final fits use twelve paired seeds. These are prospective budgets; completed counts are pending.}
+\label{tab:budget}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+\toprule
+Phase and arm group & Planned fits\\
+\midrule
+Tuning: EQ-off balanced-target sampler controls & 40\\
+Tuning: natural CE and Balanced Softmax & 40\\
+Final: matched sampler--EQ factorial & 480\\
+Final: natural CE and Balanced Softmax & 240\\
+\midrule
+Total proposed tuning / final & 80 / 720\\
+Total proposed fits & 800\\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+We will measure class eligibility during the final ten epochs, the phase in which EQ is active for treated arms, and compare the same phase in untreated controls. Replacement sampling can repeat the same source image within a batch. We will therefore distinguish eligibility based on at least two sampled rows from eligibility based on at least two distinct source images of a class. Repeated copies of one image satisfy the implemented row-count rule but do not supply independent within-class observations. Diagnostics will include the EQ and classification loss magnitudes, their gradient norms on shared trainable adapter parameters, and head/middle/tail participation. The weighted EQ-to-CE gradient-norm ratio will be sampled every 100 updates during active treatment. A near-zero performance effect with negligible EQ gradients has a different interpretation from an active regularizer that changes geometry without improving recognition.
+
+Measured training and feature-extraction time, peak device memory, cache size, and inference cost will be reported separately. Frozen feature extraction is not free simply because it occurs once. Reusing a cache across treatments will be described, and isolated timing will be distinguished from executions affected by other workloads. No hardware efficiency ranking is presently available.
+
+\section{Outcomes and Statistical Analysis}
+\subsection{Prediction rules and practical endpoints}
+Macro-F1 is the proposed primary predictive endpoint. Top-1 accuracy, macro recall, and per-class precision/recall will accompany it; ImageNet will additionally report top-5 accuracy. Tail F1 will be the mean class F1 for the declared lowest-frequency class group. Fit-frequency ranks and many/medium/few-shot thresholds will be fixed before evaluation, with class counts shown so that a group is not silently changed between conditions.
+
+For logits $z_c(x)$ and the effective fit prior $\pi_c$, the proposed decision adjustment is
+\begin{equation}
+\hat y(x)=\arg\max_c\{z_c(x)-\tau\log\pi_c\}.
+\label{eq:adjustment}
+\end{equation}
+For natural CE, $\pi_c$ is the fit-count prior and $\tau$ is selected from $\{0,0.05,\ldots,2\}$ using only decision-adjustment data. The balanced-target factorial and Balanced Softmax readouts use a uniform effective prior and $\tau=0$. Equivalent raw and adjusted names for those predictions are not independent models. Raw predictions and the selected adjusted endpoint will both be retained for natural CE; the better confirmation readout will not be substituted retrospectively for the primary one. Optimizing macro-F1 does not establish probability calibration.
+
+The evaluation prior will be stated for every endpoint. ImageNet and CIFAR source evaluation is class balanced. For iNaturalist 2018, natural training imbalance must not be mistaken for a long-tailed evaluation distribution: confirmation class counts will be verified from the official annotations. Its 24,426 labeled evaluation images cover 8,142 species, so class-level scores depend on very few evaluation examples. Because class precision depends on prevalence, macro-F1 under different priors answers different questions. A uniform-prior diagnostic on saved predictions can show that sensitivity, but it will remain separate from the primary endpoint and will not create new training fits.
+
+\subsection{Paired effects and interactions}
+Within each dataset condition, let $F_{r,s,e,j}$ be macro-F1 for encoder regime $r$, sampler $s$, EQ setting $e$, and optimization seed $j$. The conditional EQ effect is
+\begin{equation}
+D_{r,s,j}=F_{r,s,1,j}-F_{r,s,0,j}.
+\end{equation}
+The sampler--EQ interaction for regime $r$ is
+\begin{equation}
+G_{r,j}=D_{r,\mathrm{uniform},j}-D_{r,\mathrm{natural},j}.
+\end{equation}
+The encoder--EQ interaction within sampler $s$ is
+\begin{equation}
+I_{s,j}=D_{\mathrm{DINOv2},s,j}-D_{\mathrm{DeiT},s,j}.
+\end{equation}
+These contrasts directly test the conditional questions. A large encoder-package main effect alone does not show that equalization is unnecessary, and a small pooled EQ effect can conceal opposite conditional effects.
+
+The planned final evaluation uses twelve paired optimization seeds, 10 through 21, per core configuration. We will report mean within-seed differences in percentage points, paired 95\% intervals, and exact two-sided sign-flip tests where paired sign exchangeability or a justified symmetry assumption is appropriate. The paired-$t$ interval is $\bar d\pm t_{11,0.975}s_d/\sqrt{12}$; its assumptions and conditional target will be stated. With twelve seeds, the smallest attainable two-sided sign-flip probability is $2/4096$. This seed count was fixed before any new training or confirmation outcome. Effect estimates and practical trade-offs will remain central even when an adjusted test crosses a conventional threshold.
+
+The four conditional EQ effects and two encoder--EQ interactions form the six-comparison primary family within each dataset condition. Holm correction \cite{holm1979} will control that family. A combined correction across the 30 primary comparisons is a sensitivity analysis; its first-step minimum is $30\times2/4096\approx0.01465$, so the seed count permits a 0.05 rejection in principle. This resolution does not establish power for a particular effect size. A lack of rejection under either correction will not establish absence of a useful effect. The sampler--EQ interactions and secondary pipeline comparisons will be reported separately with their declared analysis scope; they will not be inserted into the primary family after outcomes are seen. Confidence intervals will be labeled as pointwise unless simultaneous coverage is actually computed.
+
+\subsection{What the uncertainty covers}
+Optimization seeds repeat fitting conditional on a partition and selected configuration. They are not twelve independent datasets. Class-order permutations and resampled training partitions address other sources of variation and will be reported separately. If more than one partition is executed, the dataset-condition and partition structure will be preserved instead of pooling all fits as exchangeable observations.
+
+Saved per-image predictions can support a paired bootstrap of evaluation images, with class-aware sampling and the resampling target stated. Such intervals describe finite-evaluation-sample uncertainty conditional on the learned systems; they do not establish generalization to a new dataset or remove pretraining overlap. Results across three benchmarks will remain three task-level replications, not a single score obtained by averaging their raw F1 values.
+
+Practical interpretation will use effect size and rare-class trade-offs, not a threshold crossing alone. No equivalence claim will be made without a justified margin and a corresponding analysis fixed in advance. The smallest practically useful improvement remains to be agreed before confirmation; it will not be selected after seeing the result.
+
+\section{Experimental Status and Reporting Plan}
+Table~\ref{tab:status} shows the present status. ``Pending'' means that this manuscript has no verified completed result for that item; it is not a zero score, evidence of a failure, or a forecast. No completed fit total is stated. Source counts and proposed training budgets must not be mistaken for observed completion.
+
+\begin{table*}[t]
+\centering\footnotesize
+\caption{Prospective experiment status. All performance, uncertainty, diagnostic, and efficiency fields await verified full runs. The final report will retain adverse, non-detected, and incomplete conditions alongside favorable results.}
+\label{tab:status}
+\begin{tabularx}{\textwidth}{@{}lXXXX@{}}
+\toprule
+Dataset condition & Matched factorial & Strong controls & Final predictive effects & Active-EQ and cost diagnostics\\
+\midrule
+ImageNet-1K native source & \Pending & \Pending & \Pending & \Pending\\
+ImageNet-1K exponential LT-100 & \Pending & \Pending & \Pending & \Pending\\
+CIFAR-100 native & \Pending & \Pending & \Pending & \Pending\\
+CIFAR-100 exponential LT-100 & \Pending & \Pending & \Pending & \Pending\\
+iNaturalist 2018 natural tail & \Pending & \Pending & \Pending & \Pending\\
+\bottomrule
+\end{tabularx}
+\end{table*}
+
+The completed report will show exact fit and evaluation counts, selected development settings, all primary arm scores, all declared paired contrasts, and per-class changes. An effect plot will display conditional EQ effects and their interactions on a common percentage-point scale. A rare-class precision--recall view will show whether a gain in recall is purchased by many additional false positives. The computation table will separate extraction, training, selection, and inference.
+
+A treatment that fails to complete its budget will be reported as incomplete with the observed reason. It will not be assigned a synthetic poor score or silently removed from the condition inventory. Any sensitivity repair will be labeled and kept distinct from the originally fixed configuration. Confirmation-driven choices will not be presented as prospective selections.
+
+\section{Scope and Limits}
+The motivating catalogue and biodiversity uses require decisions about error costs, distribution shift, and collection practices that these benchmarks do not settle. Tail recognition under a balanced evaluation source is not the same objective as performance under a field population's prevalence. Geographic or observer dependence in species photographs can also limit transfer beyond a row-level split.
+
+Artificial thinning varies label support while retaining a fixed source population. It cannot recreate every reason real categories become rare. Natural iNaturalist imbalance addresses a different collection process, but one species benchmark cannot represent all natural long tails. A more diverse task suite would strengthen external validity only if its fitting and evaluation conditions are actually completed and protected.
+
+Encoder packages differ in pretraining data, supervision, patch geometry, and architecture details. Matching adapter dimensions and update budgets reduces some confounds but does not make pretraining causal. Any overlap with pretrained sources remains relevant even after current train--confirmation duplicates are excluded. ImageNet adaptation will be described with particular care when the encoder was pretrained on ImageNet training data.
+
+The proposed primary frozen-feature study supports conclusions about the tested caches, adapters, samplers, and regularizer schedule. It does not establish that the same effect holds under full backbone training or stochastic image augmentation. Secondary selective-tuning results will extend that boundary only to the actual regimes executed. Small development searches also limit the strength of any ranking among established losses.
+
+\section{Conclusion}
+Uneven visual data can hide weak recognition of the categories that matter most to a user. Our goal is to test when rebalancing offers a useful benefit after controlling the representation, classifier, and decision rule. The proposed design combines full ImageNet-1K source coverage, controlled CIFAR-100 imbalance, and naturally long-tailed iNaturalist 2018 data. Its central comparison holds the expected classification loss fixed while crossing sampler coverage, feature equalization, and encoder package.
+
+The protocol is designed to distinguish an effective treatment from an inactive regularizer, a representation gain from a classifier change, and a repeated optimization result from independent dataset evidence. New experimental results remain pending. Conclusions about which pipeline to choose will require completed comparisons, protected confirmation outcomes, and a clear account of rare-class benefits and computational cost.
+
+\begin{thebibliography}{99}
+
+\bibitem{liu2019oltr}
+Z.~Liu, Z.~Miao, X.~Zhan, J.~Wang, B.~Gong, and S.~X.~Yu,
+``Large-scale long-tailed recognition in an open world,'' in \emph{Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition}, 2019. [Online]. Available: \url{https://arxiv.org/abs/1904.05160}
+
+\bibitem{vanhorn2018inat}
+G.~Van Horn \emph{et al.}, ``The iNaturalist species classification and detection dataset,'' in \emph{Proc. IEEE Conf. Computer Vision and Pattern Recognition}, 2018, pp.~8769--8778. [Online]. Available: \url{https://openaccess.thecvf.com/content_cvpr_2018/html/Van_Horn_The_INaturalist_Species_CVPR_2018_paper.html}
+
+\bibitem{kang2020decoupling}
+B.~Kang \emph{et al.}, ``Decoupling representation and classifier for long-tailed recognition,'' in \emph{Int. Conf. Learning Representations}, 2020. [Online]. Available: \url{https://openreview.net/forum?id=r1gRTCVFvB}
+
+\bibitem{cui2019classbalanced}
+Y.~Cui, M.~Jia, T.-Y.~Lin, Y.~Song, and S.~Belongie, ``Class-balanced loss based on effective number of samples,'' in \emph{Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition}, 2019, pp.~9268--9277. [Online]. Available: \url{https://openaccess.thecvf.com/content_CVPR_2019/html/Cui_Class-Balanced_Loss_Based_on_Effective_Number_of_Samples_CVPR_2019_paper.html}
+
+\bibitem{cao2019ldam}
+K.~Cao, C.~Wei, A.~Gaidon, N.~Arechiga, and T.~Ma, ``Learning imbalanced datasets with label-distribution-aware margin loss,'' in \emph{Advances in Neural Information Processing Systems}, 2019. [Online]. Available: \url{https://arxiv.org/abs/1906.07413}
+
+\bibitem{menon2021logit}
+A.~K.~Menon \emph{et al.}, ``Long-tail learning via logit adjustment,'' in \emph{Int. Conf. Learning Representations}, 2021. [Online]. Available: \url{https://openreview.net/forum?id=37nvvqkCo5}
+
+\bibitem{ren2020balanced}
+J.~Ren \emph{et al.}, ``Balanced meta-softmax for long-tailed visual recognition,'' in \emph{Advances in Neural Information Processing Systems}, vol.~33, 2020. [Online]. Available: \url{https://proceedings.neurips.cc/paper/2020/hash/2ba61cc3a8f44143e1f2f13b2b729ab3-Abstract.html}
+
+\bibitem{zhu2022balanced}
+J.~Zhu, Z.~Wang, J.~Chen, Y.-P.~P.~Chen, and Y.-G.~Jiang, ``Balanced contrastive learning for long-tailed visual recognition,'' in \emph{Proc. IEEE/CVF Conf. Computer Vision and Pattern Recognition}, 2022, pp.~6908--6917. [Online]. Available: \url{https://openaccess.thecvf.com/content/CVPR2022/html/Zhu_Balanced_Contrastive_Learning_for_Long-Tailed_Visual_Recognition_CVPR_2022_paper.html}
+
+\bibitem{dosovitskiy2021vit}
+A.~Dosovitskiy \emph{et al.}, ``An image is worth 16x16 words: Transformers for image recognition at scale,'' in \emph{Int. Conf. Learning Representations}, 2021. [Online]. Available: \url{https://arxiv.org/abs/2010.11929}
+
+\bibitem{touvron2021deit}
+H.~Touvron \emph{et al.}, ``Training data-efficient image transformers \& distillation through attention,'' in \emph{Proc. Int. Conf. Machine Learning}, vol.~139, 2021, pp.~10347--10357. [Online]. Available: \url{https://proceedings.mlr.press/v139/touvron21a.html}
+
+\bibitem{oquab2023dinov2}
+M.~Oquab \emph{et al.}, ``DINOv2: Learning robust visual features without supervision,'' \emph{arXiv:2304.07193}, 2023. [Online]. Available: \url{https://arxiv.org/abs/2304.07193}
+
+\bibitem{russakovsky2015ilsvrc}
+O.~Russakovsky \emph{et al.}, ``ImageNet large scale visual recognition challenge,'' \emph{Int. J. Comput. Vis.}, vol.~115, pp.~211--252, 2015. [Online]. Available: \url{https://arxiv.org/abs/1409.0575}
+
+\bibitem{imagenetdownload}
+ImageNet, ``Download ImageNet data,'' dataset documentation. Accessed: Oct.~16, 2026. [Online]. Available: \url{https://image-net.org/download.php}
+
+\bibitem{krizhevsky2009cifar}
+A.~Krizhevsky, ``Learning multiple layers of features from tiny images,'' University of Toronto, Tech. Rep., 2009. Dataset documentation: \url{https://www.cs.toronto.edu/~kriz/cifar.html}
+
+\bibitem{inat2018release}
+Visipedia, ``iNaturalist 2018 competition,'' dataset release and documentation, 2018. Accessed: Oct.~16, 2026. [Online]. Available: \url{https://github.com/visipedia/inat_comp/blob/master/2018/README.md}
+
+\bibitem{loshchilov2019adamw}
+I.~Loshchilov and F.~Hutter, ``Decoupled weight decay regularization,'' in \emph{Int. Conf. Learning Representations}, 2019. [Online]. Available: \url{https://arxiv.org/abs/1711.05101}
+
+\bibitem{holm1979}
+S.~Holm, ``A simple sequentially rejective multiple test procedure,'' \emph{Scandinavian Journal of Statistics}, vol.~6, no.~2, pp.~65--70, 1979. [Online]. Available: \url{https://www.jstor.org/stable/4615733}
+
+\end{thebibliography}
+\end{document}
