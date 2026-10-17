@@ -1,5 +1,9 @@
 # REBAL: Feature-Space Rebalancing for Long-Tailed Recognition
 
+## Vision-only full-source version
+
+The `vision-only-fullscale` branch contains the separate [full-source vision study](vision_only/README.md) and [IEEE manuscript](vision_only/paper/main.tex) for ImageNet-1K, CIFAR-100 and iNaturalist 2018. The new experiment grid is prepared and software-tested; its scientific results are **Pending**. The planned 800 tuning/final fits are not completed results. Dataset images, credentials and private connection details are excluded from this version. The earlier studies below are historical evidence from their stated protocols.
+
 ## Larger-data extension (October 12, 2026)
 
 The `kishor_dev` branch adds a [completed Tiny ImageNet transfer study](docs/tiny_imagenet_experiment.md), an [experimental report](results/tiny_imagenet_transfer/experimental_report.pdf), and a [source reproducibility audit](docs/source_audit_2026-10-12.md). The study covers five paired seeds, three imbalance levels, seven methods, and two fixed optimization budgets. It evaluates classifier rebalancing on shared frozen ImageNet-pretrained features; it does not reproduce end-to-end REBAL-F or establish representation gains. Original CIFAR results below are preserved historical reports, not newly rerun results.
