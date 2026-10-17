@@ -1,0 +1,9 @@
+{
+  "imagenet1k": {"root": "/scratch/rebal-vision-study/data/imagenet1k"},
+  "cifar100": {"root": "/scratch/rebal-vision-study/data/cifar100"},
+  "inat2018": {
+    "root": "/scratch/rebal-vision-study/data/inat2018",
+    "train_json": "/scratch/rebal-vision-study/data/inat2018/train2018.json",
+    "val_json": "/scratch/rebal-vision-study/data/inat2018/val2018.json"
+  }
+}
