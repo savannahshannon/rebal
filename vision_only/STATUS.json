@@ -1,22 +1,66 @@
 {
-  "status": "prepared_not_executed",
-  "scientific_execution": "not_started",
+  "status": "remote_pipeline_started_dataset_acquisition",
+  "observed_utc": "2026-10-17T06:14:00Z",
+  "scientific_execution": "full_cifar100_download_running; feature_extraction_and_classifier_fits_queued",
   "verified_completed_scientific_fits": 0,
+  "verified_completed_feature_extractions": 0,
   "planned_tuning_fits": 80,
   "planned_final_fits": 720,
   "software_validation": {
-    "unit_tests_passed": 71,
-    "scope": "synthetic fixtures only; not CUDA or scientific benchmark verification"
+    "unit_tests_passed": 79,
+    "location": "authorized_remote_CUDA_computer",
+    "duration_seconds": 44.156,
+    "scope": "synthetic fixtures; these are software checks, not benchmark outcomes"
+  },
+  "remote_cuda_probe": {
+    "passed": true,
+    "gpu": "NVIDIA A800 40GB Active",
+    "torch": "2.8.0+cu128",
+    "cuda": "12.8",
+    "scope": "tensor computation only; no experimental accuracy measured"
+  },
+  "active_dataset_pipeline": {
+    "dataset": "cifar100",
+    "source": "full official CIFAR-100 Python release",
+    "expected_train_rows": 50000,
+    "expected_confirmation_rows": 10000,
+    "conditions": [
+      "native",
+      "exponential_LT100"
+    ],
+    "archive_download": "in_progress_at_last_live_observation",
+    "downloaded_bytes_approximately": 12500000,
+    "archive_bytes_expected": 169001437,
+    "training_started_verified": false,
+    "queued_tuning_fits": 32,
+    "queued_final_fits": 288,
+    "encoders": [
+      "DeiT-S/16",
+      "DINOv2-S/14"
+    ],
+    "automatic_sequence": [
+      "verify_full_source",
+      "prepare",
+      "extract_frozen_features",
+      "fit"
+    ],
+    "confirmation_scoring": "locked_until_all_720_final_fits_across_all_datasets_are_verified"
   },
   "datasets": [
     "ImageNet-1K full source, native and separately named exponential LT-100",
     "CIFAR-100 native and exponential LT-100",
     "iNaturalist 2018 native"
   ],
+  "pending_dependencies": {
+    "imagenet1k": "approved full source location or official access route needed",
+    "inat2018": "official download awaits explicit acceptance of release terms"
+  },
+  "observation_limit": "AnyDesk subsequently closed the viewing connection with the stated reason \"due to license limitations\"; job progress after the last live observation has not been verified",
   "overleaf": "https://www.overleaf.com/project/6ad2ba2e3d7610b1cdfb6893",
   "manuscript_status": "six-page IEEE protocol; all new experimental outcomes Pending",
-  "execution_blocker": "authorized remote machine access unavailable",
-  "cleanup_status": "not_started; no study datasets have been downloaded on the experiment machine in this round",
+  "cleanup_status": "not_started; acquisition and experiment evidence must be retained until the full study and off-host export are verified",
   "cleanup_policy": "after complete grid, verified aggregation, and export, remove only study-owned dataset/archive/cache files and exported non-code run artifacts; preserve code and unrelated user data",
-  "manuscript_pdf_sha256": "4bd00fcc0f79364865565a51bf39810ce03ee6273ca716659c97f3ec35ce2607"
+  "manuscript_pdf_sha256": "4bd00fcc0f79364865565a51bf39810ce03ee6273ca716659c97f3ec35ce2607",
+  "recorded_utc": "2026-10-17T06:16:10.413316+00:00",
+  "observed_time_precision": "approximate_minute"
 }
