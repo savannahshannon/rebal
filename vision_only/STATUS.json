@@ -1,0 +1,22 @@
+{
+  "status": "prepared_not_executed",
+  "scientific_execution": "not_started",
+  "verified_completed_scientific_fits": 0,
+  "planned_tuning_fits": 80,
+  "planned_final_fits": 720,
+  "software_validation": {
+    "unit_tests_passed": 71,
+    "scope": "synthetic fixtures only; not CUDA or scientific benchmark verification"
+  },
+  "datasets": [
+    "ImageNet-1K full source, native and separately named exponential LT-100",
+    "CIFAR-100 native and exponential LT-100",
+    "iNaturalist 2018 native"
+  ],
+  "overleaf": "https://www.overleaf.com/project/6ad2ba2e3d7610b1cdfb6893",
+  "manuscript_status": "six-page IEEE protocol; all new experimental outcomes Pending",
+  "execution_blocker": "authorized remote machine access unavailable",
+  "cleanup_status": "not_started; no study datasets have been downloaded on the experiment machine in this round",
+  "cleanup_policy": "after complete grid, verified aggregation, and export, remove only study-owned dataset/archive/cache files and exported non-code run artifacts; preserve code and unrelated user data",
+  "manuscript_pdf_sha256": "4bd00fcc0f79364865565a51bf39810ce03ee6273ca716659c97f3ec35ce2607"
+}
