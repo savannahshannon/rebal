@@ -1,8 +1,8 @@
 {
-  "status": "remote_access_unavailable_current_progress_unverified",
-  "observed_utc": "2026-10-17T14:49:36.282673+00:00",
-  "scientific_execution": "Last successful remote audit verified active CIFAR tuning, two complete feature caches, one complete tuning fit and no complete final fits; current remote progress has not been checked.",
-  "verified_completed_scientific_fits": 1,
+  "status": "cifar_final_training_running_inat_acquisition_running",
+  "observed_utc": "2026-10-17T20:57:22.490066+00:00",
+  "scientific_execution": "Live remote audit verified 16 completed tuning fits and 138 completed final fits, each at 50 epochs. CIFAR final-seed training remains active on the A800 GPU. Full official iNaturalist 2018 acquisition is running; its training is queued behind verified source acquisition and an independent audit of all 288 CIFAR final checkpoints.",
+  "verified_completed_scientific_fits": 154,
   "verified_completed_feature_extractions": 2,
   "planned_tuning_fits": 80,
   "planned_final_fits": 720,
@@ -54,9 +54,9 @@
   ],
   "pending_dependencies": {
     "imagenet1k": "approved full source location or official access route needed",
-    "inat2018": "Terms confirmed; remote launch awaits legitimate access to the authorized CUDA computer."
+    "inat2018": "Official acquisition running; fitting waits for full source verification and independent validation of all 288 CIFAR final checkpoints."
   },
-  "observation_limit": "The observed_utc timestamp belongs to the last successful scientific checkpoint audit. No newer remote process, fit count, or download progress is verified.",
+  "observation_limit": "Completed-fit counts are checkpoint-verified lower bounds as of the audit timestamp; training continued during and after the audit. iNaturalist acquisition was observed active, but its full image archive and scientific training are not yet complete.",
   "overleaf": "https://www.overleaf.com/project/6ad2ba2e3d7610b1cdfb6893",
   "manuscript_status": "six-page IEEE protocol; all new experimental outcomes Pending",
   "cleanup_status": "not_started; experiment and retained evidence incomplete",
@@ -119,14 +119,40 @@
     }
   },
   "training_progress": {
-    "stage": "tuning",
-    "completed_tuning_fits_verified": 1,
-    "completed_final_fits_verified": 0,
-    "subsequent_tuning_fit_observed_running": true
+    "stage": "final",
+    "completed_tuning_fits_verified": 16,
+    "completed_final_fits_verified": 138,
+    "final_fit_observed_running": true,
+    "cifar_contexts": [
+      {
+        "regime": "native",
+        "encoder": "deit_small",
+        "tuning": 8,
+        "final": 72
+      },
+      {
+        "regime": "native",
+        "encoder": "dinov2_small",
+        "tuning": 8,
+        "final": 66
+      },
+      {
+        "regime": "lt100",
+        "encoder": "deit_small",
+        "tuning": 0,
+        "final": 0
+      },
+      {
+        "regime": "lt100",
+        "encoder": "dinov2_small",
+        "tuning": 0,
+        "final": 0
+      }
+    ]
   },
-  "recorded_utc": "2026-10-17T15:48:22.146012+00:00",
-  "verified_completed_tuning_fits": 1,
-  "verified_completed_final_fits": 0,
+  "recorded_utc": "2026-10-17T20:58:21.278763+00:00",
+  "verified_completed_tuning_fits": 16,
+  "verified_completed_final_fits": 138,
   "completed_counts_are_verified_lower_bounds": true,
   "checkpoint_validation": {
     "receipt_identity": true,
@@ -136,7 +162,7 @@
     "parameter_and_optimizer_finiteness": true,
     "confirmation_scored": false
   },
-  "remote_access_status": "Further remote control is unavailable after an AnyDesk license-limit closure. Restore legitimate access before another remote launch or progress check.",
+  "remote_access_status": "User-restored access verified; authorized remote CUDA session inspected live.",
   "next_dataset_pipeline": {
     "dataset": "inat2018",
     "full_source": true,
@@ -144,12 +170,26 @@
     "expected_confirmation_rows": 24426,
     "expected_classes": 8142,
     "official_download_terms_confirmed_by_user": true,
-    "download_launch_verified": false,
+    "download_launch_verified": true,
     "training_launch_verified": false,
-    "local_operations_helper": "prepared and independently reviewed; not deployed",
+    "local_operations_helper": "deployed and SHA-256 verified; acquisition active",
     "download_source": "https://github.com/visipedia/inat_comp/blob/master/2018/README.md#data",
     "queued_training_rule": "Only after independent validation of all 288 scheduled CIFAR final fits; do not score official confirmation early.",
     "operations_helper_synthetic_tests_passed": 5,
-    "operations_helper_test_scope": "software fixtures only; no local dataset acquisition or scientific training"
-  }
+    "operations_helper_test_scope": "software fixtures only; no local dataset acquisition or scientific training",
+    "stage": "acquisition",
+    "training_queued": true,
+    "acquisition_started_utc": "2026-10-17T20:56:26.160302+00:00",
+    "annotation_archives_checksum_verified": true,
+    "image_archive_checksum_verified": false,
+    "image_archive_download": {
+      "observed_utc": "2026-10-17T20:57:28.692046+00:00",
+      "observed_bytes": 931135488,
+      "total_bytes": 127945569561,
+      "status": "in_progress"
+    }
+  },
+  "checkpoint_counts_verified_utc": "2026-10-17T20:57:22.490066+00:00",
+  "latest_process_observation_utc": "2026-10-17T20:57:30+00:00",
+  "checkpoint_count_audit_status": "passed"
 }
