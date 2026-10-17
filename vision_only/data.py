@@ -388,28 +388,32 @@ def verify_manifest_files(manifest: Manifest) -> None:
 
 
 def exclude_training_exact_duplicates(manifest: Manifest) -> Manifest:
-    """Declare exclusions without shrinking the original full-source inventory."""
+    """Preserve official confirmation labels and declare training-only exclusions.
+
+    Every training overlap with confirmation is excluded regardless of labels.
+    Ambiguous training-only pixel groups are excluded in full; same-label groups
+    retain their lexicographically first sample ID. Source rows remain intact.
+    """
     validate_manifest(manifest)
-    confirmation = {}
+    confirmation = {sample.pixel_sha256 for sample in manifest.samples
+                    if sample.source_split == "confirmation"}
+    training = defaultdict(list)
     for sample in manifest.samples:
-        if sample.source_split == "confirmation":
-            previous = confirmation.setdefault(sample.pixel_sha256, sample)
-            require(previous.label == sample.label, "Conflicting labels in confirmation duplicate group")
-    seen = {}
+        if sample.source_split == "train":
+            training[sample.pixel_sha256].append(sample)
     exclusions = dict(manifest.exclusions)
-    for sample in manifest.samples:
-        if sample.source_split != "train":
-            continue
-        if sample.pixel_sha256 in confirmation:
-            require(confirmation[sample.pixel_sha256].label == sample.label,
-                    "Conflicting labels across train/evaluation exact duplicate")
-            exclusions[sample.sample_id] = "exact_pixel_overlap_with_official_confirmation"
-        elif sample.pixel_sha256 in seen:
-            require(seen[sample.pixel_sha256].label == sample.label,
-                    "Conflicting labels in training exact duplicate group")
-            exclusions[sample.sample_id] = "exact_training_pixel_duplicate_of:" + seen[sample.pixel_sha256].sample_id
+    for pixel_hash, samples in training.items():
+        if pixel_hash in confirmation:
+            for sample in samples:
+                exclusions[sample.sample_id] = "exact_pixel_overlap_with_official_confirmation"
+        elif len({sample.label for sample in samples}) > 1:
+            for sample in samples:
+                exclusions[sample.sample_id] = "conflicting_label_training_exact_pixel_group"
         else:
-            seen[sample.pixel_sha256] = sample
+            keeper = min(samples, key=lambda sample: sample.sample_id)
+            for sample in samples:
+                if sample.sample_id != keeper.sample_id:
+                    exclusions[sample.sample_id] = "exact_training_pixel_duplicate_of:" + keeper.sample_id
     return Manifest(manifest.dataset_id, manifest.scope, manifest.source_root, manifest.source_url,
                     manifest.class_names, manifest.source_class_ids, manifest.expected_counts,
                     manifest.source_files, manifest.samples, exclusions)
