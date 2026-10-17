@@ -5,7 +5,9 @@ models or experimental outcomes. No source dataset, CUDA execution, download,
 scientific fit, or external application is used.
 """
 import copy
+import contextlib
 import csv
+import io
 import itertools
 import json
 from pathlib import Path
@@ -123,6 +125,46 @@ class GlobalSealTests(unittest.TestCase):
             control.global_seal(self.root, self.study, "cpu", write=True)
         self.assertFalse((self.root / "global_confirmation_seal.json").exists())
 
+    def test_selected_fit_verifies_only_scheduled_runs_and_cannot_release_confirmation(self):
+        # All CIFAR fixture checkpoints exist, while a different dataset is
+        # incomplete. Scheduling CIFAR must neither inspect nor seal that grid.
+        (self.last_run() / "checkpoint.pt").unlink()
+        args = SimpleNamespace(work=self.root, study=self.study, device="cpu", datasets=["cifar100"])
+        with patch.object(run, "require_cuda"), patch.object(run, "train") as trained, \
+                patch.object(control, "global_seal", wraps=control.global_seal) as seal:
+            control.fit(args)
+            self.assertEqual(trained.call_count, 4)
+            self.assertTrue(all(call.args[0].manifest.stem == "cifar100" for call in trained.call_args_list))
+            seal.assert_not_called()
+        status = run.read_json(self.root / "execution_status.json")
+        self.assertEqual(status["status"], "selected_final_fits_trained")
+        self.assertEqual(status["scheduled_datasets"], ["cifar100"])
+        self.assertEqual(status["completed_scheduled_final_fits"], 288)
+        self.assertEqual(status["expected_final_fits"], 720)
+        self.assertFalse(status["all_final_fits_verified"])
+        self.assertFalse(status["confirmation_scored"])
+        self.assertNotIn("completed_final_fits", status)
+        self.assertNotIn("global_seal_fingerprint", status)
+        self.assertFalse((self.root / "global_confirmation_seal.json").exists())
+        with self.assertRaises((ValueError, OSError)):
+            control.global_seal(self.root, self.study, "cpu", write=True)
+        args.datasets = None
+        with patch.object(run, "require_cuda"), patch.object(run, "confirm") as confirmed:
+            with self.assertRaises((ValueError, OSError)):
+                control.confirm(args)
+            confirmed.assert_not_called()
+
+    def test_selected_fit_cannot_report_trained_from_an_incomplete_scheduled_checkpoint(self):
+        cifar = next(args for dataset, _, _, args in self.cells if dataset == "cifar100")
+        (cifar.out / "final" / self.spec["arms"][0] /
+         str(self.spec["training"]["final_seeds"][0]) / "checkpoint.pt").unlink()
+        args = SimpleNamespace(work=self.root, study=self.study, device="cpu", datasets=["cifar100"])
+        with patch.object(run, "require_cuda"), patch.object(run, "train"):
+            with self.assertRaises((ValueError, OSError)):
+                control.fit(args)
+        self.assertFalse((self.root / "execution_status.json").exists())
+        self.assertFalse((self.root / "global_confirmation_seal.json").exists())
+
     def test_global_seal_rejects_split_that_does_not_match_directory_condition(self):
         def wrong_context(args):
             values = list(self.fake_context(args))
@@ -227,6 +269,89 @@ class GlobalSealTests(unittest.TestCase):
                 control.analyze(args)
             self.assertFalse((self.root / "aggregate" / "complete.json").exists())
             run.write_json(first / "confirmed.json", original)
+
+
+class DatasetSchedulingTests(unittest.TestCase):
+    def setUp(self):
+        self.temporary = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temporary.cleanup)
+        self.root = Path(self.temporary.name)
+        self.paths = self.root / "private-paths.json"
+        run.write_json(self.paths, {"cifar100": {"root": str(self.root / "data" / "cifar100")}})
+        self.args = SimpleNamespace(work=self.root, study=run.DEFAULT_STUDY, paths=self.paths,
+            datasets=["cifar100"], device="cpu", batch_size=32, workers=0)
+
+    def test_scheduling_filter_preserves_declared_grid_and_context_order(self):
+        cells = list(control.contexts(self.root, self.args.study, "cpu", control.selected_datasets(self.args)))
+        self.assertEqual([(d, r, e) for d, r, e, _ in cells],
+            [("cifar100", regime, encoder) for regime in ("native", "lt100")
+             for encoder in ("deit_small", "dinov2_small")])
+        self.assertEqual(len(control.expected_run_ids(self.args.study)), 720)
+        self.assertEqual(len(list(control.contexts(self.root, self.args.study))), 10)
+        for selected in ([], ["cifar100", "cifar100"], ["tiny_imagenet"]):
+            self.args.datasets = selected
+            with self.subTest(selected=selected), self.assertRaises(ValueError):
+                control.selected_datasets(self.args)
+
+    def test_partial_prepare_inventories_only_selected_dataset_and_reports_scope(self):
+        manifest = SimpleNamespace(dataset_id="cifar100")
+        plan = SimpleNamespace(fingerprint="fixture-only")
+        with patch.object(run, "inventory") as inventory, \
+                patch.object(control.data, "load_manifest", return_value=manifest), \
+                patch.object(control.data, "make_partitions", return_value=plan) as partitions, \
+                patch.object(control.data, "save_partitions") as saved:
+            control.prepare(self.args)
+        inventory.assert_called_once()
+        self.assertEqual(inventory.call_args.args[0].dataset, "cifar100")
+        self.assertEqual([call.kwargs["lt_ratio"] for call in partitions.call_args_list], [None, 100.])
+        self.assertEqual([call.args[1].relative_to(self.root).as_posix() for call in saved.call_args_list],
+                         ["partitions/cifar100/native.json", "partitions/cifar100/lt100.json"])
+        status = run.read_json(self.root / "execution_status.json")
+        self.assertEqual(status["status"], "selected_datasets_prepared")
+        self.assertEqual(status["scheduled_datasets"], ["cifar100"])
+        self.assertEqual(status["expected_final_fits"], 720)
+        self.assertFalse(status["all_final_fits_verified"])
+        self.assertFalse(status["confirmation_scored"])
+        self.assertNotIn("completed_final_fits", status)
+
+    def test_prepare_requires_exactly_selected_paths_and_default_still_requires_all(self):
+        with patch.object(run, "inventory") as inventory:
+            self.args.datasets = None
+            with self.assertRaisesRegex(ValueError, "exactly the scheduled"):
+                control.prepare(self.args)
+            self.args.datasets = ["cifar100"]
+            run.write_json(self.paths, {"cifar100": {}, "imagenet1k": {}})
+            with self.assertRaisesRegex(ValueError, "exactly the scheduled"):
+                control.prepare(self.args)
+            inventory.assert_not_called()
+
+    def test_partial_extraction_reuses_each_selected_encoder_once(self):
+        with patch.object(run, "require_cuda"), patch.object(run, "extract") as extracted:
+            control.extract(self.args)
+        self.assertEqual(extracted.call_count, 2)
+        for call in extracted.call_args_list:
+            context = call.args[0]
+            self.assertEqual(context.manifest.stem, "cifar100")
+            self.assertEqual(context.out, context.cache)
+            self.assertEqual(context.batch_size, 32)
+
+    def test_filtered_global_cli_stages_are_rejected_before_any_owned_work(self):
+        from vision_only import manage
+        for stage in ("seal", "confirm", "analyze", "all"):
+            argv = ["vision_only.control", "--work", str(self.root), stage, "--datasets", "cifar100"]
+            with self.subTest(stage=stage), patch("sys.argv", argv), \
+                    patch.object(manage, "require_owned") as owned, contextlib.redirect_stderr(io.StringIO()):
+                with self.assertRaises(SystemExit) as error:
+                    control.main()
+                self.assertEqual(error.exception.code, 2)
+                owned.assert_not_called()
+
+    def test_direct_filtered_confirmation_and_analysis_are_rejected(self):
+        with patch.object(control, "global_seal") as seal:
+            for stage in (control.confirm, control.analyze):
+                with self.subTest(stage=stage.__name__), self.assertRaisesRegex(ValueError, "complete declared"):
+                    stage(self.args)
+            seal.assert_not_called()
 
 
 class StatisticalGateTests(unittest.TestCase):
