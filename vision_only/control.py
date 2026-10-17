@@ -25,9 +25,20 @@ REGIMES = (("imagenet1k", "native", None), ("imagenet1k", "lt100", 100.),
            ("inat2018", "native", None))
 
 
-def contexts(root, study, device="cuda"):
+def selected_datasets(args):
+    """An optional scheduling filter; it never changes the declared run grid."""
+    selected = getattr(args, "datasets", None)
+    if selected is None: return None
+    available = run.settings(args.study)["datasets"]
+    run.require(bool(selected) and len(set(selected)) == len(selected)
+                and set(selected) <= set(available), "Invalid or repeated dataset scheduling filter")
+    return tuple(dataset for dataset in available if dataset in selected)
+
+
+def contexts(root, study, device="cuda", datasets=None):
     spec = run.settings(study)
     for dataset, regime, _ in REGIMES:
+        if datasets is not None and dataset not in datasets: continue
         for encoder in spec["encoders"]:
             yield dataset, regime, encoder, SimpleNamespace(study=Path(study),
                 manifest=root / "manifests" / (dataset + ".json"),
@@ -45,7 +56,9 @@ def expected_run_ids(study):
 
 def prepare(args):
     paths, spec = run.read_json(args.paths), run.settings(args.study)
-    run.require(set(paths) == set(spec["datasets"]), "Exactly the three full datasets are required")
+    selected = selected_datasets(args)
+    required = set(spec["datasets"] if selected is None else selected)
+    run.require(set(paths) == required, "Paths must contain exactly the scheduled full datasets")
     for dataset, item in paths.items():
         path = args.work / "manifests" / (dataset + ".json")
         if path.exists():
@@ -56,6 +69,7 @@ def prepare(args):
             run.inventory(SimpleNamespace(dataset=dataset, root=Path(item["root"]),
                 train_json=item.get("train_json"), val_json=item.get("val_json"), out=path))
     for dataset, regime, ratio in REGIMES:
+        if dataset not in required: continue
         destination = args.work / "partitions" / dataset / (regime + ".json")
         manifest = data.load_manifest(args.work / "manifests" / (dataset + ".json"))
         expected = data.make_partitions(manifest, spec["development"]["split_seed"],
@@ -65,15 +79,22 @@ def prepare(args):
             run.require(data.load_partitions(destination, manifest).fingerprint == expected.fingerprint,
                         "Existing partition conflicts with declared protocol")
         else: data.save_partitions(expected, destination)
-    run.write_json(args.work / "execution_status.json", {"status": "prepared", "expected_final_fits":
-        len(expected_run_ids(args.study)), "completed_final_fits": 0, "confirmation_scored": False,
-        "study_sha256": run.digest(args.study), "scientific_source": run.code_identity()})
+    status = {"status": "prepared", "expected_final_fits": len(expected_run_ids(args.study)),
+        "completed_final_fits": 0, "confirmation_scored": False,
+        "study_sha256": run.digest(args.study), "scientific_source": run.code_identity()}
+    if selected is not None:
+        status.update(status="selected_datasets_prepared", scheduled_datasets=list(selected),
+                      all_final_fits_verified=False)
+        # Preparation does not inspect existing training checkpoints. Do not
+        # report a global completion count for an incremental preparation.
+        status.pop("completed_final_fits")
+    run.write_json(args.work / "execution_status.json", status)
 
 
 def extract(args):
     run.require_cuda(args.device)
     seen = set()
-    for dataset, _, encoder, context in contexts(args.work, args.study, args.device):
+    for dataset, _, encoder, context in contexts(args.work, args.study, args.device, selected_datasets(args)):
         if (dataset, encoder) in seen: continue
         seen.add((dataset, encoder))
         context.batch_size, context.workers, context.out = args.batch_size, args.workers, context.cache
@@ -112,9 +133,24 @@ def global_seal(root, study, device="cuda", write=False):
 
 def fit(args):
     run.require_cuda(args.device)
-    for _, _, _, context in contexts(args.work, args.study, args.device):
+    selected = selected_datasets(args)
+    completed = 0
+    for _, _, _, context in contexts(args.work, args.study, args.device, selected):
         if not (context.out / "selection.json").exists(): run.tune(context)
         run.train(context)
+        if selected is not None:
+            # Count actual validated checkpoints for this scheduling scope,
+            # never a global completion claim based on finished function calls.
+            spec, _, _, _, _, _, identity = run.context(context)
+            selection = run.selection_record(context.out, identity)
+            completed += len(run.confirmation_gate(context.out, spec, identity, selection))
+    if selected is not None:
+        run.write_json(args.work / "execution_status.json", {"status": "selected_final_fits_trained",
+            "scheduled_datasets": list(selected), "completed_scheduled_final_fits": completed,
+            "expected_final_fits": len(expected_run_ids(args.study)), "all_final_fits_verified": False,
+            "confirmation_scored": False, "study_sha256": run.digest(args.study),
+            "scientific_source": run.code_identity()})
+        return
     seal = global_seal(args.work, args.study, args.device, write=True)
     run.write_json(args.work / "execution_status.json", {"status": "all_final_fits_trained",
         "completed_final_fits": seal["completed_final_fits"], "confirmation_scored": False,
@@ -122,6 +158,7 @@ def fit(args):
 
 
 def confirm(args):
+    run.require(getattr(args, "datasets", None) is None, "Confirmation requires the complete declared dataset grid")
     run.require_cuda(args.device)
     seal = global_seal(args.work, args.study, args.device)
     for _, _, _, context in contexts(args.work, args.study, args.device):
@@ -158,6 +195,7 @@ def holm(values):
 
 
 def analyze(args):
+    run.require(getattr(args, "datasets", None) is None, "Analysis requires the complete declared dataset grid")
     spec = run.settings(args.study)
     seal = global_seal(args.work, args.study, args.device)
     all_metrics, comparisons = [], []
@@ -244,8 +282,13 @@ def main():
     parser.add_argument("--device", default="cuda")
     parser.add_argument("--batch-size", type=int, default=128)
     parser.add_argument("--workers", type=int, default=8)
+    parser.add_argument("--datasets", nargs="+", choices=tuple(run.settings(run.DEFAULT_STUDY)["datasets"]),
+                        help="Schedule only these datasets for prepare/extract/fit; the full grid is unchanged")
     parser.add_argument("stage", choices=("prepare", "extract", "fit", "seal", "confirm", "analyze", "all"))
     args = parser.parse_args()
+    if args.datasets is not None and args.stage not in ("prepare", "extract", "fit"):
+        parser.error("--datasets is allowed only for prepare, extract and fit; global stages require all datasets")
+    selected_datasets(args)
     from . import manage
     manage.require_owned(args.work, args.study)
     if args.stage in ("prepare", "all"):
