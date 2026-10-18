@@ -1,9 +1,9 @@
 {
-  "status": "cifar_final_training_running_inat_acquisition_running",
-  "observed_utc": "2026-10-17T20:57:22.490066+00:00",
-  "scientific_execution": "Live remote audit verified 16 completed tuning fits and 138 completed final fits, each at 50 epochs. CIFAR final-seed training remains active on the A800 GPU. Full official iNaturalist 2018 acquisition is running; its training is queued behind verified source acquisition and an independent audit of all 288 CIFAR final checkpoints.",
-  "verified_completed_scientific_fits": 154,
-  "verified_completed_feature_extractions": 2,
+  "status": "cifar_fitting_complete_inat_training_running_imagenet_download_running",
+  "observed_utc": "2026-10-18T07:00:26.290425+00:00",
+  "scientific_execution": "A live remote checkpoint audit verified 40 completed tuning fits and 348 completed final fits, each at 50 epochs, plus four complete frozen-feature caches. All 32 tuning and 288 final CIFAR fits are complete. Full-source iNaturalist 2018 fitting is active, with 8 tuning and 60 final fits verified so far. The official ImageNet archive download is active on the remote computer; its source validation and training have not started.",
+  "verified_completed_scientific_fits": 388,
+  "verified_completed_feature_extractions": 4,
   "planned_tuning_fits": 80,
   "planned_final_fits": 720,
   "software_validation": {
@@ -20,32 +20,27 @@
     "scope": "tensor computation only; no experimental accuracy measured"
   },
   "active_dataset_pipeline": {
-    "dataset": "cifar100",
-    "source": "full official CIFAR-100 Python release",
-    "expected_train_rows": 50000,
-    "expected_confirmation_rows": 10000,
+    "dataset": "inat2018",
+    "source": "full official iNaturalist 2018 release",
+    "expected_train_rows": 437513,
+    "expected_confirmation_rows": 24426,
+    "expected_classes": 8142,
     "conditions": [
-      "native",
-      "exponential_LT100"
+      "native"
     ],
     "archive_download": "complete_checksum_verified",
-    "downloaded_bytes_approximately": 169001437,
-    "archive_bytes_expected": 169001437,
+    "source_preparation": "verified_complete",
+    "feature_extraction": "both_encoders_complete_hash_verified",
     "training_started_verified": true,
-    "queued_tuning_fits": 32,
-    "queued_final_fits": 288,
+    "scheduled_tuning_fits": 16,
+    "scheduled_final_fits": 144,
+    "completed_tuning_fits_verified": 8,
+    "completed_final_fits_verified": 60,
     "encoders": [
       "DeiT-S/16",
       "DINOv2-S/14"
     ],
-    "automatic_sequence": [
-      "verify_full_source",
-      "prepare",
-      "extract_frozen_features",
-      "fit"
-    ],
-    "confirmation_scoring": "locked_until_all_720_final_fits_across_all_datasets_are_verified",
-    "source_preparation": "verified_complete"
+    "confirmation_scoring": "locked_until_all_720_final_fits_across_all_datasets_are_verified"
   },
   "datasets": [
     "ImageNet-1K full source, native and separately named exponential LT-100",
@@ -53,10 +48,10 @@
     "iNaturalist 2018 native"
   ],
   "pending_dependencies": {
-    "imagenet1k": "approved full source location or official access route needed",
-    "inat2018": "Official acquisition running; fitting waits for full source verification and independent validation of all 288 CIFAR final checkpoints."
+    "imagenet1k": "Complete the active official archive download, safely extract the classification source, verify official labels and full source inventories, then prepare, extract and fit both planned conditions.",
+    "inat2018": "Complete and validate the remaining scheduled fits. The full official source and both frozen-feature caches have been verified."
   },
-  "observation_limit": "Completed-fit counts are checkpoint-verified lower bounds as of the audit timestamp; training continued during and after the audit. iNaturalist acquisition was observed active, but its full image archive and scientific training are not yet complete.",
+  "observation_limit": "Completed-fit counts are checkpoint-verified lower bounds as of the audit timestamp; iNaturalist training continued during and after the audit. ImageNet archive acquisition was observed in progress, but no completed archive, extracted source inventory or ImageNet scientific fit is claimed. No official confirmation predictions or aggregate performance results have been produced.",
   "overleaf": "https://www.overleaf.com/project/6ad2ba2e3d7610b1cdfb6893",
   "manuscript_status": "six-page IEEE protocol; all new experimental outcomes Pending",
   "cleanup_status": "not_started; experiment and retained evidence incomplete",
@@ -105,23 +100,41 @@
     "verified_dataset_reused": true
   },
   "extraction": {
-    "deit_small": {
-      "rows": 60000,
-      "complete_receipt": true,
-      "cache_and_pilot_hashes_verified": true,
-      "confirmation_accuracy_scored": false
+    "cifar100": {
+      "deit_small": {
+        "rows": 60000,
+        "complete_receipt": true,
+        "cache_and_pilot_hashes_verified": true,
+        "confirmation_accuracy_scored": false
+      },
+      "dinov2_small": {
+        "rows": 60000,
+        "complete_receipt": true,
+        "cache_and_pilot_hashes_verified": true,
+        "confirmation_accuracy_scored": false
+      }
     },
-    "dinov2_small": {
-      "rows": 60000,
-      "complete_receipt": true,
-      "cache_and_pilot_hashes_verified": true,
-      "confirmation_accuracy_scored": false
-    }
+    "inat2018": {
+      "deit_small": {
+        "rows": 461939,
+        "complete_receipt": true,
+        "cache_and_pilot_hashes_verified": true,
+        "confirmation_accuracy_scored": false
+      },
+      "dinov2_small": {
+        "rows": 461939,
+        "complete_receipt": true,
+        "cache_and_pilot_hashes_verified": true,
+        "confirmation_accuracy_scored": false
+      }
+    },
+    "unique_complete_caches_verified": 4,
+    "full_source_contexts_verified": 6
   },
   "training_progress": {
     "stage": "final",
-    "completed_tuning_fits_verified": 16,
-    "completed_final_fits_verified": 138,
+    "completed_tuning_fits_verified": 40,
+    "completed_final_fits_verified": 348,
     "final_fit_observed_running": true,
     "cifar_contexts": [
       {
@@ -134,25 +147,40 @@
         "regime": "native",
         "encoder": "dinov2_small",
         "tuning": 8,
-        "final": 66
+        "final": 72
       },
       {
         "regime": "lt100",
         "encoder": "deit_small",
-        "tuning": 0,
-        "final": 0
+        "tuning": 8,
+        "final": 72
       },
       {
         "regime": "lt100",
+        "encoder": "dinov2_small",
+        "tuning": 8,
+        "final": 72
+      }
+    ],
+    "active_dataset": "inat2018",
+    "inat_contexts": [
+      {
+        "regime": "native",
+        "encoder": "deit_small",
+        "tuning": 8,
+        "final": 60
+      },
+      {
+        "regime": "native",
         "encoder": "dinov2_small",
         "tuning": 0,
         "final": 0
       }
     ]
   },
-  "recorded_utc": "2026-10-17T20:58:21.278763+00:00",
-  "verified_completed_tuning_fits": 16,
-  "verified_completed_final_fits": 138,
+  "recorded_utc": "2026-10-18T07:10:47.727737+00:00",
+  "verified_completed_tuning_fits": 40,
+  "verified_completed_final_fits": 348,
   "completed_counts_are_verified_lower_bounds": true,
   "checkpoint_validation": {
     "receipt_identity": true,
@@ -160,36 +188,101 @@
     "completed_epochs": 50,
     "optimizer_update_budget": true,
     "parameter_and_optimizer_finiteness": true,
-    "confirmation_scored": false
+    "confirmation_scored": false,
+    "source_partition_cache_and_pilot_identity": true,
+    "context_count": 6,
+    "unique_complete_feature_caches": 4
   },
   "remote_access_status": "User-restored access verified; authorized remote CUDA session inspected live.",
   "next_dataset_pipeline": {
-    "dataset": "inat2018",
+    "dataset": "imagenet1k",
     "full_source": true,
-    "expected_train_rows": 437513,
-    "expected_confirmation_rows": 24426,
-    "expected_classes": 8142,
+    "expected_train_rows": 1281167,
+    "expected_confirmation_rows": 50000,
+    "expected_classes": 1000,
+    "conditions": [
+      "native",
+      "exponential_LT100"
+    ],
+    "download_source": "https://www.kaggle.com/competitions/imagenet-object-localization-challenge/data",
     "official_download_terms_confirmed_by_user": true,
     "download_launch_verified": true,
+    "download_location": "authorized_remote_computer_only",
+    "archive_filename": "imagenet-object-localization-challenge.zip",
+    "archive_download": {
+      "observed_utc": "2026-10-18T07:09:00+00:00",
+      "status": "in_progress",
+      "browser_progress_display": "8.6 of 155 GB",
+      "progress_observation_limit": "Point-in-time browser and file observations; archive completion, integrity and source inventory are not yet verified.",
+      "observed_time_precision": "minute_from_remote_UI",
+      "network_interruption": "Browser transfer resumed; increased from 6.0 to 8.6 GB after Resume."
+    },
+    "source_inventory_verified": false,
     "training_launch_verified": false,
-    "local_operations_helper": "deployed and SHA-256 verified; acquisition active",
-    "download_source": "https://github.com/visipedia/inat_comp/blob/master/2018/README.md#data",
-    "queued_training_rule": "Only after independent validation of all 288 scheduled CIFAR final fits; do not score official confirmation early.",
-    "operations_helper_synthetic_tests_passed": 5,
-    "operations_helper_test_scope": "software fixtures only; no local dataset acquisition or scientific training",
     "stage": "acquisition",
-    "training_queued": true,
-    "acquisition_started_utc": "2026-10-17T20:56:26.160302+00:00",
-    "annotation_archives_checksum_verified": true,
-    "image_archive_checksum_verified": false,
-    "image_archive_download": {
-      "observed_utc": "2026-10-17T20:57:28.692046+00:00",
-      "observed_bytes": 931135488,
-      "total_bytes": 127945569561,
-      "status": "in_progress"
-    }
+    "confirmation_scoring": "locked_until_all_720_final_fits_across_all_datasets_are_verified",
+    "operations_helper": {
+      "status": "deployed_byte_verified_and_running_waiting_for_complete_browser_archive",
+      "launch_verified_utc": "2026-10-18T07:07:57.015909+00:00",
+      "synthetic_software_tests_passed": 16,
+      "official_devkit_downloaded_on_remote": true,
+      "official_devkit_publisher_checksum_verified": true,
+      "official_devkit_bytes": 2568145,
+      "official_devkit_classes_verified": 1000,
+      "official_devkit_validation_labels_verified": 50000,
+      "queue_rule": "After full source validation and independent validation of all 288 CIFAR and 144 iNaturalist final checkpoints, run frozen ImageNet prepare, feature extraction and fitting.",
+      "automatic_confirmation_scoring": false,
+      "scientific_source_modified": false
+    },
+    "training_queued": true
   },
-  "checkpoint_counts_verified_utc": "2026-10-17T20:57:22.490066+00:00",
-  "latest_process_observation_utc": "2026-10-17T20:57:30+00:00",
-  "checkpoint_count_audit_status": "passed"
+  "checkpoint_counts_verified_utc": "2026-10-18T07:00:26.290425+00:00",
+  "latest_process_observation_utc": "2026-10-18T07:00:26.290425+00:00",
+  "checkpoint_count_audit_status": "passed",
+  "completed_dataset_pipelines": [
+    {
+      "dataset": "cifar100",
+      "source": "full official CIFAR-100 Python release",
+      "expected_train_rows": 50000,
+      "expected_confirmation_rows": 10000,
+      "conditions": [
+        "native",
+        "exponential_LT100"
+      ],
+      "archive_download": "complete_checksum_verified",
+      "downloaded_bytes_approximately": 169001437,
+      "archive_bytes_expected": 169001437,
+      "training_started_verified": true,
+      "encoders": [
+        "DeiT-S/16",
+        "DINOv2-S/14"
+      ],
+      "automatic_sequence": [
+        "verify_full_source",
+        "prepare",
+        "extract_frozen_features",
+        "fit"
+      ],
+      "confirmation_scoring": "locked_until_all_720_final_fits_across_all_datasets_are_verified",
+      "source_preparation": "verified_complete",
+      "pipeline_status": "all_scheduled_fits_checkpoint_verified",
+      "completed_tuning_fits_verified": 32,
+      "completed_final_fits_verified": 288,
+      "scheduled_tuning_fits": 32,
+      "scheduled_final_fits": 288
+    }
+  ],
+  "inat_source_verification": {
+    "official_annotation_archives_checksum_verified": true,
+    "official_image_archive_checksum_verified": true,
+    "full_source_inventory_verified": true,
+    "train_rows": 437513,
+    "confirmation_rows": 24426,
+    "classes": 8142,
+    "source_ready_utc": "2026-10-17T22:56:18.176093+00:00",
+    "prepare_complete_utc": "2026-10-17T23:20:53.155804+00:00",
+    "extract_complete_utc": "2026-10-17T23:39:16.905792+00:00",
+    "fit_start_utc": "2026-10-17T23:39:16.905955+00:00",
+    "independent_current_context_hash_validation_passed": true
+  }
 }
