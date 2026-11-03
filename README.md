@@ -2,7 +2,7 @@
 
 ## Vision-only full-source version
 
-The `vision-only-fullscale` branch contains the [full-source vision study](vision_only/README.md) and [measured results](vision_only/FULL_SCALE_RESULTS_2026.md) for ImageNet-1K, CIFAR-100 and iNaturalist 2018. All 80 tuning and 720 final fits completed, passed the independent full-grid audit, and were followed by sealed confirmation and analysis. Paired-seed inference is conditional on fixed partitions. The [IEEE manuscript](vision_only/paper/main.tex) remains the prospective protocol; a results manuscript is in preparation. Dataset images, credentials and private connection details are excluded. Earlier studies below are historical evidence from their stated protocols.
+The `vision-only-fullscale` branch contains the [full-source vision study](vision_only/README.md) and [measured results](vision_only/FULL_SCALE_RESULTS_2026.md) for ImageNet-1K, CIFAR-100 and iNaturalist 2018. All 80 tuning and 720 final fits completed, passed the independent full-grid audit, and were followed by sealed confirmation and analysis. Paired-seed inference is conditional on fixed partitions. The [integrated results manuscript](vision_only/paper/results_2026/README.md) includes the completed 48-fit EQ and 192-fit generated-image follow-ups. [Numeric data and reproduction tools](vision_only/results/20261102/README.md) are available; the [original IEEE protocol](vision_only/paper/main.tex) is preserved. Dataset images, credentials and private connection details are excluded. Earlier studies below are historical evidence from their stated protocols.
 
 ## Larger-data extension (October 12, 2026)
 
