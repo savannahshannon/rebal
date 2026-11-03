@@ -1,6 +1,6 @@
 {
   "status": "full_grid_audited_confirmed_and_analyzed",
-  "observed_utc": "2026-11-03",
+  "observed_utc": "2026-11-03T06:12:22.684701+00:00",
   "study_id": "rebal-vision-fullscale-20261017-r2",
   "lineage": "fresh_A100_torch28",
   "counts": {
@@ -28,7 +28,7 @@
   "results_report": "FULL_SCALE_RESULTS_2026.md",
   "manuscript": "Integrated measured-results manuscript with both separate follow-ups; saved and compiled in Overleaf, 12 rendered pages reviewed.",
   "retained_export": "Archive and all retained members independently verified after transfer off the experiment computer.",
-  "cleanup": "Verified owned-data cleanup pending; code/results/archives retained.",
+  "cleanup": "Completed after verified off-computer exports. Only owned dataset, model-download, and feature-cache payloads removed; code, checkpoints, result metadata, audit evidence, and result archives retained.",
   "historical_note": "Earlier A800 and hosted T4 observations are historical and excluded from fresh A100 totals.",
   "manuscript_path": "paper/results_2026/main.tex",
   "followups": {
@@ -45,5 +45,15 @@
       "scope": "separate six-comparison family conditional on one bank and split"
     }
   },
-  "data_release": "results/20261102/README.md"
+  "data_release": "results/20261102/README.md",
+  "delivery_status": "reviewed_manuscript_and_numeric_results_published_cleanup_verified",
+  "cleanup_verification": {
+    "removed_payload_files": 1828445,
+    "removed_logical_bytes": 571652492465,
+    "retained_files_independently_rehashed": 10230,
+    "remaining_inventory_matches_retained_exactly": true,
+    "original_nine_scientific_files_unchanged": true,
+    "ownership_records_unchanged": true,
+    "failed_predecessor_scientifically_complete": false
+  }
 }
