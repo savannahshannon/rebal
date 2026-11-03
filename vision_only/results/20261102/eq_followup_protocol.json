@@ -1,0 +1,542 @@
+{
+  "cell_count": 48,
+  "cells": [
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_off__seed101__standard",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_eq__seed101__standard",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_off__seed101__standard",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_eq__seed101__standard",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_off__seed102__standard",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_eq__seed102__standard",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_off__seed102__standard",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_eq__seed102__standard",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_off__seed103__standard",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_eq__seed103__standard",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_off__seed103__standard",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_eq__seed103__standard",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__natural_balanced_off__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__natural_balanced_eq__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__uniform_off__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__uniform_eq__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__natural_balanced_off__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__natural_balanced_eq__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__uniform_off__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__uniform_eq__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__natural_balanced_off__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__natural_balanced_eq__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__uniform_off__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611021__uniform_eq__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611021,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__natural_balanced_off__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__natural_balanced_eq__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__uniform_off__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__uniform_eq__seed101__standard",
+      "seed": 101,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__natural_balanced_off__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__natural_balanced_eq__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__uniform_off__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__uniform_eq__seed102__standard",
+      "seed": 102,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__natural_balanced_off__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__natural_balanced_eq__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_off",
+      "eq": false,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__uniform_off__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.8,
+      "id": "s202611022__uniform_eq__seed103__standard",
+      "seed": 103,
+      "split_seed": 202611022,
+      "variant": "standard"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.01,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_eq__seed101__lower_coefficient",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "lower_coefficient"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.01,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_eq__seed101__lower_coefficient",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "lower_coefficient"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.01,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_eq__seed102__lower_coefficient",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "lower_coefficient"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.01,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_eq__seed102__lower_coefficient",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "lower_coefficient"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.01,
+      "eq_onset": 0.8,
+      "id": "s20261016__natural_balanced_eq__seed103__lower_coefficient",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "lower_coefficient"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.01,
+      "eq_onset": 0.8,
+      "id": "s20261016__uniform_eq__seed103__lower_coefficient",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "lower_coefficient"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.5,
+      "id": "s20261016__natural_balanced_eq__seed101__earlier_onset",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "earlier_onset"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.5,
+      "id": "s20261016__uniform_eq__seed101__earlier_onset",
+      "seed": 101,
+      "split_seed": 20261016,
+      "variant": "earlier_onset"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.5,
+      "id": "s20261016__natural_balanced_eq__seed102__earlier_onset",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "earlier_onset"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.5,
+      "id": "s20261016__uniform_eq__seed102__earlier_onset",
+      "seed": 102,
+      "split_seed": 20261016,
+      "variant": "earlier_onset"
+    },
+    {
+      "arm": "natural_balanced_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.5,
+      "id": "s20261016__natural_balanced_eq__seed103__earlier_onset",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "earlier_onset"
+    },
+    {
+      "arm": "uniform_eq",
+      "eq": true,
+      "eq_coefficient": 0.05,
+      "eq_onset": 0.5,
+      "id": "s20261016__uniform_eq__seed103__earlier_onset",
+      "seed": 103,
+      "split_seed": 20261016,
+      "variant": "earlier_onset"
+    }
+  ],
+  "config": {
+    "adapter_width": 256,
+    "batch_size": 256,
+    "epochs": 50,
+    "gradient_clip": 1.0,
+    "lr": 0.001,
+    "warmup_fraction": 0.1,
+    "weight_decay": 0.01
+  },
+  "cpu_threads": 2,
+  "data": "Full CIFAR-100 inventory; LT100 fit partitions; all 10000 official test rows",
+  "device": "cpu",
+  "encoder": "deit_small",
+  "evaluation": "All 48 final checkpoints and budgets validated and sealed before any new evaluation. Raw tau=0 readout; final epoch only; macro-F1 primary endpoint.",
+  "features_sha256": "8fe320ffa3d9dd3354ffb72072fd5dd219ddf07de59a1a2ebccfeab3bfb1fc51",
+  "frozen_utc": "2026-11-02T21:58:43.297013+00:00",
+  "input_hashes": {
+    "inputs/cifar100_public.json": "fce3716a3a9337f905e2cb96480baf769b6a1b0d908ea924af6ade446cc68679",
+    "inputs/primary_cache/complete.json": "f90ef710886d6d820353cce2b4f96a83f8196058ad12e946a1fdbd035586fa9c",
+    "inputs/primary_cache/features.npy": "8fe320ffa3d9dd3354ffb72072fd5dd219ddf07de59a1a2ebccfeab3bfb1fc51",
+    "inputs/primary_cache/pilot.json": "2eb8d7ab9582d93c58aba1322a79c726543081fbe178806b729cd921df8b2ff7"
+  },
+  "interpretation_limits": [
+    "Exploratory post-hoc study with three training seeds per split; no new confirmatory p-value claims.",
+    "Two additional split seeds jointly change development allocation and class-rank assignment.",
+    "The original official test set was evaluated in the completed primary study, so this follow-up is not a new pristine test collection.",
+    "Portable CPU training and algebraically equivalent vectorized EQ are new implementation/runtime evidence, not GPU byte-equivalence to primary fits.",
+    "Feature cache is reused read-only from its original verified model; no new encoder/source-image replication is claimed."
+  ],
+  "model_state_sha256": "4eb64c863c07e2999cebb8d053fb3777a560d63dbf991695c0883bf4e598dfa5",
+  "primary_source_hashes": {
+    "data.py": "6c12435797fd07ee31fae3c420eeb4e5456f1cb611388b4f7c64714207b1ed8a",
+    "run.py": "5c11827248acd18bf8bb733472802556007effe95b0636e8a541c86180e1393c"
+  },
+  "runtime": {
+    "Pillow": "11.3.0",
+    "numpy": "2.3.5",
+    "scipy": "1.16.3",
+    "timm": "1.0.30",
+    "torch": "2.8.0",
+    "torchvision": "0.23.0"
+  },
+  "schema_version": 1,
+  "scope": "Separate post-hoc frozen-feature EQ follow-up, not additional primary 800-fit evidence",
+  "selection": "Fixed LR .001 from primary selection, no new tuning and no confirmation-based choice. Every planned variant reported.",
+  "source_hashes": {
+    "experiment_core.py": "2df2a6ed0f4543573a3ed5796119b4cddc85122eb08271b33a7266a2401f4406",
+    "local_eq.py": "b5f100d5f09fb73722136e7e2648b2e4ce547d2cc03690322e2a9c762674f3f9",
+    "prepare_local_eq.py": "ae6ec550a85c138de70046c9c835d9b8eb82c5219ce504b55d5827a5ed97d956",
+    "test_experiment_core.py": "16e3fdc2514bc84cf331d0f3c05ca3427177eeaca881dbe38b4e27b4a77422e8"
+  },
+  "split_seeds": [
+    20261016,
+    202611021,
+    202611022
+  ],
+  "study_id": "rebal-eq-local-followup-20261102"
+}

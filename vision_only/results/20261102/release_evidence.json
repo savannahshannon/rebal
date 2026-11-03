@@ -1,0 +1,37 @@
+{
+  "release_date": "2026-11-03",
+  "scope": "image-free numeric data and manuscript",
+  "original_private_protocol_sha256": {
+    "eq": "051c4fe5baf3923520caf4e54cb593b363cd1026bee39746778fd7b743ad4183",
+    "generated": "27392d1caaa33f0782de19ba04589d760a32908aee0942710fee67a485c4d1fe"
+  },
+  "retained_archive_sha256": {
+    "primary": "495beb15c6b93a77680a811c30ef438bf354d1a797ea2823d5e4fbbad41c8dc0",
+    "eq": "97adeb39e3d893d74bb22da2b972eb0166c1f7fec6bdbefce646e010d0c84d57",
+    "generated": "3b509f64f252679905914f4e06c200a9c8c7cd778c88b04f4faf1b13eb9df6e1"
+  },
+  "files": {
+    "README.md": "7794defe972f9af2ce9fb7b6aa5920bcb176cfd94b891a195bde59aebaaa3964",
+    "vision_only/README.md": "31ff96a2fe96a5cddae7136a57f03ec571769aaa1ff27723914cc6b661cb8640",
+    "vision_only/STATUS.json": "130e9df97e358568a17b774bf6247c7b56873925da26c5e4cad936f4b9080926",
+    "vision_only/paper/results_2026/README.md": "038c466513080507684f4be8e582ba7e93adf813993d7369dd32d42f2a8da410",
+    "vision_only/paper/results_2026/REBAL_Integrated_Study_20261103.pdf": "7fbd0564c3e34e60a54bd7eff0b83060d2369b8dc0fb6c310c8edd348750fcb4",
+    "vision_only/paper/results_2026/eq_effects.pdf": "c92b602a512b8de36f320cc22e57ee132f390a7644741db83233ff223df66aae",
+    "vision_only/paper/results_2026/eq_followup_diagnostics.pdf": "f59681a74a799071d108cc178e87e461481e5dd6d095b8d86fca383c4599137c",
+    "vision_only/paper/results_2026/generated_dose_response.pdf": "cf60a6b683ce56c9d75934885fb16e66b38f8a1a677726f92beeb1813d69f74d",
+    "vision_only/paper/results_2026/main.tex": "c1f831c86e44a3d530ce5b01d2cf5a50e2e23baf27bec20b9247d956ef19dd5c",
+    "vision_only/results/20261102/README.md": "3b7a6f7acfb9e2cf0664fc084fa3555590ce8477366a18e62a00bde797e528f8",
+    "vision_only/results/20261102/eligibility_by_class.csv.gz": "bf7c5e942b84cbd4ce970968090e4fc1a8c69a47e4c0b6ac13bedaa502e989a1",
+    "vision_only/results/20261102/eq_followup_48_per_seed.csv": "aec95badd6ae3eded0b38249d7646d590cdf3d132eb4fef84b4c0821ab565be0",
+    "vision_only/results/20261102/eq_followup_protocol.json": "c63a939d6faec92d9fe5361ea08c8c5e80f4ab3f26c0c7ada4e937b3bb7882b5",
+    "vision_only/results/20261102/exploratory_10_sampler_interactions.json": "a6bed17650d0abc39a8a22203b675c449c41da40b0e732cdf5ebf2030038ccd5",
+    "vision_only/results/20261102/generated_192_per_seed.csv": "e1d68076c354d6012b8f5a05323b381f5b86dcc6160adf783bbf0682501d1f02",
+    "vision_only/results/20261102/generated_6_comparisons.json": "73a7b73f01c093b7220f051d81a2becc68687a290a0eefd4e4ed0d98655f99e5",
+    "vision_only/results/20261102/generated_condition_means.csv": "cfc2dffc73fdbbc5bc56837ff11055b5eba7fe5089dddbc99fb9c8da1e2b28aa",
+    "vision_only/results/20261102/generated_followup_protocol.json": "696e2f006d4d7262832510347a4860b60558248b94d2d0575f30f3a17abc30ee",
+    "vision_only/results/20261102/primary_30_comparisons.json": "a809b9facd8efffce8d2c3c976439349b1963c0a69dd0c3e0cb37adfc646e5b8",
+    "vision_only/results/20261102/primary_720_per_seed.csv": "8b343f56a4cd3369158086ba0bc0fc27f0c03c895ac111cc09749f07e27e9a17",
+    "vision_only/results/20261102/reproduce_tables.py": "f18b3853d9df01f9dcbe10f05e9f5ae83d92b7e847d13bc2bdef8206a6e05710",
+    "vision_only/results/20261102/retained_eq_diagnostics.csv": "af3f4a0f8ef9e99c4d7a82353ac31623cfd08c25436f04da7c1a9695af46799e"
+  }
+}

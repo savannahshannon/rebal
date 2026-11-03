@@ -1,0 +1,102 @@
+[
+  {
+    "dataset": "imagenet1k",
+    "regime": "native",
+    "encoder": "deit_small",
+    "effect_pp": -0.006504155859191063,
+    "ci_low_pp": -0.031829210071380745,
+    "ci_high_pp": 0.018820898352998622,
+    "p_exact": 0.57373046875,
+    "p_holm_exploratory_10": 1.0
+  },
+  {
+    "dataset": "imagenet1k",
+    "regime": "native",
+    "encoder": "dinov2_small",
+    "effect_pp": -0.01592948714571052,
+    "ci_low_pp": -0.03458086031125767,
+    "ci_high_pp": 0.002721886019836634,
+    "p_exact": 0.0869140625,
+    "p_holm_exploratory_10": 0.6083984375
+  },
+  {
+    "dataset": "imagenet1k",
+    "regime": "lt100",
+    "encoder": "deit_small",
+    "effect_pp": 0.38212119562162083,
+    "ci_low_pp": 0.33996565528684775,
+    "ci_high_pp": 0.4242767359563939,
+    "p_exact": 0.00048828125,
+    "p_holm_exploratory_10": 0.0048828125
+  },
+  {
+    "dataset": "imagenet1k",
+    "regime": "lt100",
+    "encoder": "dinov2_small",
+    "effect_pp": -0.019985696146715415,
+    "ci_low_pp": -0.05726985359102172,
+    "ci_high_pp": 0.017298461297590897,
+    "p_exact": 0.26611328125,
+    "p_holm_exploratory_10": 1.0
+  },
+  {
+    "dataset": "cifar100",
+    "regime": "native",
+    "encoder": "deit_small",
+    "effect_pp": -0.009475087475585564,
+    "ci_low_pp": -0.14104034571162127,
+    "ci_high_pp": 0.12209017076045015,
+    "p_exact": 0.87939453125,
+    "p_holm_exploratory_10": 1.0
+  },
+  {
+    "dataset": "cifar100",
+    "regime": "native",
+    "encoder": "dinov2_small",
+    "effect_pp": 0.037977709626503084,
+    "ci_low_pp": -0.05487775475426385,
+    "ci_high_pp": 0.13083317400727001,
+    "p_exact": 0.37841796875,
+    "p_holm_exploratory_10": 1.0
+  },
+  {
+    "dataset": "cifar100",
+    "regime": "lt100",
+    "encoder": "deit_small",
+    "effect_pp": 1.0562887520889694,
+    "ci_low_pp": 0.9562518719766347,
+    "ci_high_pp": 1.156325632201304,
+    "p_exact": 0.00048828125,
+    "p_holm_exploratory_10": 0.0048828125
+  },
+  {
+    "dataset": "cifar100",
+    "regime": "lt100",
+    "encoder": "dinov2_small",
+    "effect_pp": 1.1226519190213438,
+    "ci_low_pp": 1.0331040826381857,
+    "ci_high_pp": 1.2121997554045019,
+    "p_exact": 0.00048828125,
+    "p_holm_exploratory_10": 0.0048828125
+  },
+  {
+    "dataset": "inat2018",
+    "regime": "native",
+    "encoder": "deit_small",
+    "effect_pp": 0.018425908804615053,
+    "ci_low_pp": -0.05148559587508561,
+    "ci_high_pp": 0.08833741348431572,
+    "p_exact": 0.5673828125,
+    "p_holm_exploratory_10": 1.0
+  },
+  {
+    "dataset": "inat2018",
+    "regime": "native",
+    "encoder": "dinov2_small",
+    "effect_pp": -0.037154413622382074,
+    "ci_low_pp": -0.10366907473372167,
+    "ci_high_pp": 0.029360247488957523,
+    "p_exact": 0.24462890625,
+    "p_holm_exploratory_10": 1.0
+  }
+]
