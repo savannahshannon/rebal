@@ -1,6 +1,6 @@
 {
   "status": "full_grid_audited_confirmed_and_analyzed",
-  "observed_utc": "2026-11-02",
+  "observed_utc": "2026-11-03",
   "study_id": "rebal-vision-fullscale-20261017-r2",
   "lineage": "fresh_A100_torch28",
   "counts": {
@@ -26,8 +26,24 @@
   },
   "inference_scope": "Twelve paired optimization seeds under fixed partitions, not independent datasets; exact sign-flip tests assume paired symmetry or exchangeability.",
   "results_report": "FULL_SCALE_RESULTS_2026.md",
-  "manuscript": "Prospective IEEE protocol remains unchanged; measured results draft prepared but not integrated or compiled.",
+  "manuscript": "Integrated measured-results manuscript with both separate follow-ups; saved and compiled in Overleaf, 12 rendered pages reviewed.",
   "retained_export": "Archive and all retained members independently verified after transfer off the experiment computer.",
-  "cleanup": "not performed",
-  "historical_note": "Earlier A800 and hosted T4 observations are historical and excluded from fresh A100 totals."
+  "cleanup": "Verified owned-data cleanup pending; code/results/archives retained.",
+  "historical_note": "Earlier A800 and hosted T4 observations are historical and excluded from fresh A100 totals.",
+  "manuscript_path": "paper/results_2026/main.tex",
+  "followups": {
+    "eq": {
+      "fits": 48,
+      "status": "complete; predictions reproduced in CPU runtime",
+      "scope": "exploratory"
+    },
+    "generated": {
+      "fits": 192,
+      "generated_images": 35223,
+      "updates_per_fit": 1950,
+      "status": "complete; predictions and top-five rankings reproduced in original A100 evaluator",
+      "scope": "separate six-comparison family conditional on one bank and split"
+    }
+  },
+  "data_release": "results/20261102/README.md"
 }
